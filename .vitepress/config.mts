@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './scripts/generate-sidebar.mjs'
+import { generateNav } from './scripts/generate-nav.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,8 +13,8 @@ export default defineConfig({
     // 网站标题
     siteTitle: 'AI 阅读',
 
-    // 不使用顶部导航栏，完全依赖侧边栏
-    nav: [],
+    // 自动生成顶部导航（显示所有分类）
+    nav: generateNav(),
 
     // 自动生成侧边栏
     sidebar: generateSidebar() as any,
@@ -26,11 +27,11 @@ export default defineConfig({
           root: {
             translations: {
               button: {
-                buttonText: '搜索书籍',
-                buttonAriaLabel: '搜索书籍'
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索'
               },
               modal: {
-                noResultsText: '未找到相关书籍',
+                noResultsText: '未找到相关内容',
                 resetButtonTitle: '清除查询',
                 footer: {
                   selectText: '选择',
@@ -51,7 +52,7 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: '基于 VitePress 构建 | AI 驱动的知识分享',
+      message: '基于 VitePress 构建',
       copyright: 'Copyright © 2024-present'
     },
 
