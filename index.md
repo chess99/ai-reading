@@ -53,9 +53,15 @@ onMounted(async () => {
 
 const randomBook = () => {
   const allBooks = categories.value.flatMap(c => c.books)
+  console.log('Total books:', allBooks.length)
   if (allBooks.length > 0) {
     const random = allBooks[Math.floor(Math.random() * allBooks.length)]
-    window.location.href = random.path
+    console.log('Random book selected:', random)
+    console.log('Navigating to:', random.path)
+    // 使用 router 进行导航
+    router.go(random.path)
+  } else {
+    console.log('No books found')
   }
 }
 
