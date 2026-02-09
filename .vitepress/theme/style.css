@@ -154,15 +154,15 @@
 /* ===== 侧边栏样式 ===== */
 
 .VPSidebar {
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(10px);
-  border-right: 1px solid rgba(0, 0, 0, 0.06);
-  padding: 24px 0;
+  background: var(--vp-c-bg);
+  border-right: 1px solid var(--vp-c-divider);
+  padding: 16px 0;
+  width: 280px !important;
 }
 
 .dark .VPSidebar {
-  background: rgba(30, 30, 30, 0.98);
-  border-right-color: rgba(255, 255, 255, 0.1);
+  background: var(--vp-c-bg);
+  border-right-color: var(--vp-c-divider);
 }
 
 /* 侧边栏滚动条 */
@@ -210,15 +210,15 @@
 }
 
 .VPSidebarItem.is-active > .item > .link {
-  background: var(--vp-c-gradient-1);
-  color: white !important;
+  color: var(--vp-c-brand-1) !important;
   font-weight: 600;
+  background: transparent;
 }
 
 /* ===== 内容区域样式 ===== */
 
 .VPContent {
-  padding: 32px 64px;
+  padding: 32px 48px;
 }
 
 @media (max-width: 768px) {
@@ -229,7 +229,7 @@
 
 /* 文档内容 */
 .vp-doc {
-  max-width: 860px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

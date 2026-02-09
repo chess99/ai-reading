@@ -8,7 +8,6 @@ import { useRouter } from 'vitepress'
 
 const router = useRouter()
 const categories = ref([])
-const recentBooks = ref([])
 
 onMounted(async () => {
   // 获取所有页面数据
@@ -17,7 +16,6 @@ onMounted(async () => {
 
   // 解析分类和书籍
   const categoryMap = new Map()
-  const allBooks = []
 
   Object.keys(data).forEach(path => {
     if (path.endsWith('.md') && !path.includes('index.md') && path !== 'index.md') {
@@ -32,14 +30,12 @@ onMounted(async () => {
         const title = fileParts.slice(1).join('-') || fileName
 
         const book = {
-          path: '/' + path.replace('.md', '.html'),
+          path: '/' + path.replace('.md', ''),
           category,
           author,
           title,
           display: `${title} - ${author}`
         }
-
-        allBooks.push(book)
 
         if (!categoryMap.has(category)) {
           categoryMap.set(category, [])
@@ -53,16 +49,13 @@ onMounted(async () => {
   categories.value = Array.from(categoryMap.entries())
     .map(([name, books]) => ({ name, books, count: books.length }))
     .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
-
-  // 获取最近的书籍（模拟，实际可以从 git 历史获取）
-  recentBooks.value = allBooks.slice(0, 10)
 })
 
 const randomBook = () => {
   const allBooks = categories.value.flatMap(c => c.books)
   if (allBooks.length > 0) {
     const random = allBooks[Math.floor(Math.random() * allBooks.length)]
-    router.go(random.path)
+    window.location.href = random.path
   }
 }
 
@@ -88,54 +81,33 @@ const searchBooks = () => {
     </button>
   </div>
 
-  <!-- 分类网格 -->
-  <div class="categories-grid">
-    <div
+  <!-- 分类卡片 -->
+  <div class="categories-section">
+    <a
       v-for="category in categories"
       :key="category.name"
+      :href="`/${category.name}/`"
       class="category-card"
-      @click="router.go(`/${category.name}/`)"
     >
-      <div class="category-header">
-        <h3 class="category-name">{{ category.name }}</h3>
-        <span class="category-count">{{ category.count }} 本</span>
-      </div>
-      <div class="category-books">
-        <div
-          v-for="(book, index) in category.books.slice(0, 5)"
-          :key="index"
-          class="book-item"
-          @click.stop="router.go(book.path)"
-        >
-          <span class="book-title">{{ book.title }}</span>
-          <span class="book-author">{{ book.author }}</span>
-        </div>
-        <div v-if="category.books.length > 5" class="more-books">
-          还有 {{ category.books.length - 5 }} 本...
-        </div>
-      </div>
-    </div>
+      <div class="category-icon">📚</div>
+      <h3 class="category-name">{{ category.name }}</h3>
+      <p class="category-count">{{ category.count }} 本书籍</p>
+    </a>
   </div>
 </div>
 
 <style scoped>
 .home-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 48px 24px;
 }
 
 /* 搜索栏 */
 .search-bar {
   display: flex;
   gap: 16px;
-  margin-bottom: 32px;
-  position: sticky;
-  top: 0;
-  background: var(--vp-c-bg);
-  padding: 16px 0;
-  z-index: 10;
-  border-bottom: 1px solid var(--vp-c-divider);
+  margin-bottom: 48px;
 }
 
 .search-btn,
@@ -143,7 +115,7 @@ const searchBooks = () => {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 24px;
+  padding: 16px 28px;
   border: 2px solid var(--vp-c-brand-1);
   border-radius: 12px;
   background: var(--vp-c-bg);
@@ -164,7 +136,7 @@ const searchBooks = () => {
   background: var(--vp-c-brand-1);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
 }
 
 .search-btn .icon,
@@ -174,10 +146,10 @@ const searchBooks = () => {
 
 .search-btn .shortcut {
   margin-left: auto;
-  padding: 4px 8px;
+  padding: 4px 10px;
   background: var(--vp-c-bg-soft);
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -186,115 +158,89 @@ const searchBooks = () => {
   color: white;
 }
 
-/* 分类网格 */
-.categories-grid {
+/* 分类区域 */
+.categories-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
   background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
-  padding: 20px;
-  cursor: pointer;
+  border: 2px solid var(--vp-c-divider);
+  border-radius: 16px;
+  text-decoration: none;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .category-card:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  background: var(--vp-c-brand-soft);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
 }
 
-.category-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.category-icon {
+  font-size: 48px;
   margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--vp-c-brand-1);
+  filter: grayscale(0.3);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
 .category-name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  color: var(--vp-c-brand-1);
-  margin: 0;
+  color: var(--vp-c-text-1);
+  margin: 0 0 8px 0;
+  text-align: center;
 }
 
 .category-count {
   font-size: 14px;
   color: var(--vp-c-text-2);
-  background: var(--vp-c-brand-soft);
-  padding: 4px 12px;
-  border-radius: 12px;
-}
-
-.category-books {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.book-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.book-item:hover {
-  background: var(--vp-c-bg);
-}
-
-.book-title {
-  flex: 1;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--vp-c-text-1);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.book-author {
-  font-size: 12px;
-  color: var(--vp-c-text-2);
-  flex-shrink: 0;
-}
-
-.more-books {
-  font-size: 12px;
-  color: var(--vp-c-text-3);
-  text-align: center;
-  padding: 8px;
-  font-style: italic;
+  margin: 0;
 }
 
 /* 响应式 */
 @media (max-width: 768px) {
   .home-container {
-    padding: 16px;
+    padding: 24px 16px;
   }
 
   .search-bar {
     flex-direction: column;
   }
 
-  .categories-grid {
-    grid-template-columns: 1fr;
+  .categories-section {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+  }
+
+  .category-card {
+    padding: 24px 16px;
+  }
+
+  .category-icon {
+    font-size: 36px;
   }
 }
 
 /* 加载动画 */
-@keyframes fadeIn {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -303,7 +249,7 @@ const searchBooks = () => {
 }
 
 .category-card {
-  animation: fadeIn 0.4s ease;
+  animation: fadeInUp 0.5s ease;
 }
 
 .category-card:nth-child(1) { animation-delay: 0s; }

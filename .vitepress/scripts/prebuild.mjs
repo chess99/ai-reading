@@ -174,32 +174,148 @@ function processDirectory(dirPath) {
 }
 
 /**
- * 为每个分类目录创建索引页
+ * 为每个分类目录创建索引页（带书籍列表）
  */
 function createCategoryIndex(category) {
   const categoryPath = path.join(rootDir, category)
   const indexPath = path.join(categoryPath, 'index.md')
 
-  // 如果已存在索引页，不覆盖
-  if (fs.existsSync(indexPath)) {
-    return
+  // 获取该分类下的所有书籍
+  const books = []
+
+  function scanBooks(dirPath, relativePath = '') {
+    try {
+      const entries = fs.readdirSync(dirPath, { withFileTypes: true })
+
+      entries.forEach(entry => {
+        if (shouldIgnore(entry.name)) return
+
+        const fullPath = path.join(dirPath, entry.name)
+        const newRelativePath = relativePath ? `${relativePath}/${entry.name}` : entry.name
+
+        if (entry.isDirectory()) {
+          scanBooks(fullPath, newRelativePath)
+        } else if (entry.isFile() && entry.name.endsWith('.md') && entry.name !== 'index.md') {
+          const fileName = entry.name.replace('.md', '')
+          const parts = fileName.split('-')
+          const author = parts[0] || ''
+          const title = parts.slice(1).join('-') || fileName
+
+          books.push({
+            fileName: entry.name,
+            author,
+            title,
+            path: relativePath ? `${relativePath}/${entry.name}` : entry.name
+          })
+        }
+      })
+    } catch (error) {
+      console.error(`Error scanning books in ${dirPath}:`, error.message)
+    }
   }
+
+  scanBooks(categoryPath)
+
+  // 按书名排序
+  books.sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'))
+
+  // 生成书籍列表 HTML
+  const booksList = books.map(book =>
+    `  <a href="${book.fileName.replace('.md', '')}" class="book-link">
+    <span class="book-title">${book.title}</span>
+    <span class="book-author">${book.author}</span>
+  </a>`
+  ).join('\n')
 
   const indexContent = `---
 title: ${category}
 layout: page
 ---
 
-# ${category}
+<div class="category-index">
+  <h1 class="category-title">${category}</h1>
+  <p class="category-stats">共 ${books.length} 本书籍</p>
 
-::: tip
-这是 ${category} 分类的所有笔记。使用左侧导航栏浏览具体内容。
-:::
+  <div class="books-list">
+${booksList}
+  </div>
+</div>
+
+<style scoped>
+.category-index {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.category-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  margin: 0 0 8px 0;
+}
+
+.category-stats {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  margin: 0 0 32px 0;
+}
+
+.books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.book-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.book-link:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+
+.book-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  flex: 1;
+}
+
+.book-author {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .book-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .book-author {
+    margin-left: 0;
+    font-size: 13px;
+  }
+}
+</style>
 `
 
   try {
     fs.writeFileSync(indexPath, indexContent, 'utf-8')
-    console.log(`Created index for: ${category}`)
+    console.log(`Created index for: ${category} (${books.length} books)`)
   } catch (error) {
     console.error(`Error creating index for ${category}:`, error.message)
   }
