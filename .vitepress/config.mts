@@ -23,15 +23,26 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
+        // 提升标题权重，优先匹配标题
+        miniSearch: {
+          searchOptions: {
+            boost: {
+              title: 4,      // 标题权重最高
+              titles: 2,     // 二级标题
+              text: 1        // 正文内容
+            },
+            fuzzy: 0.2
+          }
+        },
         locales: {
           root: {
             translations: {
               button: {
-                buttonText: '搜索',
-                buttonAriaLabel: '搜索'
+                buttonText: '搜索书籍',
+                buttonAriaLabel: '搜索书籍'
               },
               modal: {
-                noResultsText: '未找到相关内容',
+                noResultsText: '未找到相关书籍',
                 resetButtonTitle: '清除查询',
                 footer: {
                   selectText: '选择',
@@ -68,18 +79,18 @@ export default defineConfig({
       label: '目录'
     },
 
-    // 最后更新时间
-    lastUpdated: {
-      text: '最后更新',
-      formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'short'
-      }
-    }
+    // 最后更新时间 - 已禁用
+    // lastUpdated: {
+    //   text: '最后更新',
+    //   formatOptions: {
+    //     dateStyle: 'short',
+    //     timeStyle: 'short'
+    //   }
+    // }
   },
 
-  // 启用最后更新时间
-  lastUpdated: true,
+  // 禁用最后更新时间
+  lastUpdated: false,
 
   // 忽略死链
   ignoreDeadLinks: true,
