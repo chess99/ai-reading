@@ -5,24 +5,16 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '../..')
 
-// 需要生成侧边栏的目录
-const categories = [
-  '个人成长',
-  '投资',
-  '商业管理',
-  '心理学',
-  '健康运动',
-  '社会科学',
-  '思维方式'
-]
-
 // 忽略的文件和目录
 const ignorePatterns = [
   'node_modules',
   '.vitepress',
   '.git',
   '.DS_Store',
-  'index.md'
+  'index.md',
+  'package.json',
+  'package-lock.json',
+  '.gitignore'
 ]
 
 /**
@@ -30,6 +22,33 @@ const ignorePatterns = [
  */
 function shouldIgnore(name) {
   return ignorePatterns.some(pattern => name.includes(pattern))
+}
+
+/**
+ * 判断是否是内容目录（包含 .md 文件的目录）
+ */
+function isContentDirectory(dirPath) {
+  try {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true })
+
+    // 检查是否有 .md 文件或子目录
+    return entries.some(entry => {
+      if (shouldIgnore(entry.name)) return false
+
+      if (entry.isFile() && entry.name.endsWith('.md')) {
+        return true
+      }
+
+      if (entry.isDirectory()) {
+        const subPath = path.join(dirPath, entry.name)
+        return isContentDirectory(subPath)
+      }
+
+      return false
+    })
+  } catch (error) {
+    return false
+  }
 }
 
 /**
@@ -115,10 +134,40 @@ function scanDirectory(dirPath, basePath = '') {
 }
 
 /**
+ * 自动发现所有内容分类目录
+ */
+function discoverCategories() {
+  const categories = []
+
+  try {
+    const entries = fs.readdirSync(rootDir, { withFileTypes: true })
+
+    entries.forEach(entry => {
+      if (!entry.isDirectory() || shouldIgnore(entry.name)) return
+
+      const dirPath = path.join(rootDir, entry.name)
+
+      // 检查是否是内容目录
+      if (isContentDirectory(dirPath)) {
+        categories.push(entry.name)
+      }
+    })
+
+    // 按中文拼音排序
+    categories.sort((a, b) => a.localeCompare(b, 'zh-CN'))
+  } catch (error) {
+    console.error('Error discovering categories:', error)
+  }
+
+  return categories
+}
+
+/**
  * 生成所有分类的侧边栏配置
  */
 export function generateSidebar() {
   const sidebar = {}
+  const categories = discoverCategories()
 
   categories.forEach(category => {
     const categoryPath = path.join(rootDir, category)

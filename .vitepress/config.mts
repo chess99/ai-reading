@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './scripts/generate-sidebar.mjs'
+import { generateNav } from './scripts/generate-nav.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,16 +11,8 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '个人成长', link: '/个人成长/' },
-      { text: '投资理财', link: '/投资/' },
-      { text: '商业管理', link: '/商业管理/' },
-      { text: '心理学', link: '/心理学/' },
-      { text: '健康运动', link: '/健康运动/' },
-      { text: '社会科学', link: '/社会科学/' },
-      { text: '思维方式', link: '/思维方式/' }
-    ],
+    // 自动生成导航栏
+    nav: generateNav(),
 
     // 自动生成侧边栏
     sidebar: generateSidebar() as any,
@@ -50,9 +43,9 @@ export default defineConfig({
       }
     },
 
-    // 社交链接
+    // 社交链接（可选，根据需要修改）
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/AI阅读' }
+      // { icon: 'github', link: 'https://github.com/yourusername/AI阅读' }
     ],
 
     // 页脚

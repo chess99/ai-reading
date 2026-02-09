@@ -6,27 +6,60 @@ import matter from 'gray-matter'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '../..')
 
-// 需要处理的目录
-const categories = [
-  '个人成长',
-  '投资',
-  '商业管理',
-  '心理学',
-  '健康运动',
-  '社会科学',
-  '思维方式'
-]
-
 // 忽略的文件和目录
 const ignorePatterns = [
   'node_modules',
   '.vitepress',
   '.git',
-  '.DS_Store'
+  '.DS_Store',
+  'package.json',
+  'package-lock.json',
+  '.gitignore'
 ]
 
 function shouldIgnore(name) {
   return ignorePatterns.some(pattern => name.includes(pattern))
+}
+
+/**
+ * 判断是否是内容目录（包含 .md 文件的目录）
+ */
+function isContentDirectory(dirPath) {
+  try {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true })
+    return entries.some(entry => {
+      if (shouldIgnore(entry.name)) return false
+      if (entry.isFile() && entry.name.endsWith('.md')) return true
+      if (entry.isDirectory()) {
+        const subPath = path.join(dirPath, entry.name)
+        return isContentDirectory(subPath)
+      }
+      return false
+    })
+  } catch (error) {
+    return false
+  }
+}
+
+/**
+ * 自动发现所有内容分类目录
+ */
+function discoverCategories() {
+  const categories = []
+  try {
+    const entries = fs.readdirSync(rootDir, { withFileTypes: true })
+    entries.forEach(entry => {
+      if (!entry.isDirectory() || shouldIgnore(entry.name)) return
+      const dirPath = path.join(rootDir, entry.name)
+      if (isContentDirectory(dirPath)) {
+        categories.push(entry.name)
+      }
+    })
+    categories.sort((a, b) => a.localeCompare(b, 'zh-CN'))
+  } catch (error) {
+    console.error('Error discovering categories:', error)
+  }
+  return categories
 }
 
 /**
@@ -55,10 +88,19 @@ function extractTags(content, frontmatter) {
 }
 
 /**
+ * 获取文件相对于根目录的分类路径
+ */
+function getCategory(filePath) {
+  const relativePath = path.relative(rootDir, filePath)
+  const parts = relativePath.split(path.sep)
+  return parts[0] || ''
+}
+
+/**
  * 处理单个 Markdown 文件
  * 如果没有 frontmatter，则添加基本的 frontmatter
  */
-function processMarkdownFile(filePath, category) {
+function processMarkdownFile(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf-8')
     const { data: frontmatter, content: markdownContent } = matter(content)
@@ -68,6 +110,9 @@ function processMarkdownFile(filePath, category) {
     const parts = fileName.split('-')
     const author = parts[0] || ''
     const title = parts.slice(1).join('-') || fileName
+
+    // 获取分类
+    const category = getCategory(filePath)
 
     // 提取标签
     const tags = extractTags(markdownContent, frontmatter)
@@ -88,7 +133,7 @@ function processMarkdownFile(filePath, category) {
     if (originalFrontmatter !== updatedFrontmatter) {
       const newContent = matter.stringify(markdownContent, newFrontmatter)
       fs.writeFileSync(filePath, newContent, 'utf-8')
-      console.log(`Updated: ${filePath}`)
+      console.log(`Updated: ${path.relative(rootDir, filePath)}`)
       return true
     }
 
@@ -102,7 +147,7 @@ function processMarkdownFile(filePath, category) {
 /**
  * 递归处理目录中的所有 Markdown 文件
  */
-function processDirectory(dirPath, category) {
+function processDirectory(dirPath) {
   let updatedCount = 0
 
   try {
@@ -114,9 +159,9 @@ function processDirectory(dirPath, category) {
       const fullPath = path.join(dirPath, entry.name)
 
       if (entry.isDirectory()) {
-        updatedCount += processDirectory(fullPath, category)
+        updatedCount += processDirectory(fullPath)
       } else if (entry.isFile() && entry.name.endsWith('.md')) {
-        if (processMarkdownFile(fullPath, category)) {
+        if (processMarkdownFile(fullPath)) {
           updatedCount++
         }
       }
@@ -161,10 +206,56 @@ layout: page
 }
 
 /**
+ * 生成首页的 features 配置
+ */
+function generateHomeFeatures() {
+  const categories = discoverCategories()
+  const indexPath = path.join(rootDir, 'index.md')
+
+  // 读取现有的 index.md
+  if (!fs.existsSync(indexPath)) {
+    console.log('index.md not found, skipping home features generation')
+    return
+  }
+
+  try {
+    const content = fs.readFileSync(indexPath, 'utf-8')
+    const { data: frontmatter, content: markdownContent } = matter(content)
+
+    // 为每个分类生成 feature
+    const features = categories.map(category => ({
+      title: category,
+      details: `${category}相关的阅读笔记`,
+      link: `/${category}/`
+    }))
+
+    // 更新 frontmatter
+    if (frontmatter.features) {
+      // 只更新缺失的分类
+      const existingTitles = new Set(frontmatter.features.map(f => f.title))
+      features.forEach(feature => {
+        if (!existingTitles.has(feature.title)) {
+          frontmatter.features.push(feature)
+        }
+      })
+    }
+
+    // 注意：这里不自动更新 index.md，避免覆盖用户自定义内容
+    // 如果需要，可以手动更新
+  } catch (error) {
+    console.error('Error generating home features:', error.message)
+  }
+}
+
+/**
  * 主函数
  */
 function main() {
   console.log('🚀 Starting prebuild process...\n')
+
+  const categories = discoverCategories()
+  console.log(`📁 Discovered ${categories.length} categories:`, categories.join(', '))
+  console.log()
 
   let totalUpdated = 0
 
@@ -173,13 +264,16 @@ function main() {
 
     if (fs.existsSync(categoryPath)) {
       console.log(`Processing category: ${category}`)
-      const updated = processDirectory(categoryPath, category)
+      const updated = processDirectory(categoryPath)
       totalUpdated += updated
 
       // 创建分类索引页
       createCategoryIndex(category)
     }
   })
+
+  // 生成首页 features（可选）
+  generateHomeFeatures()
 
   console.log(`\n✅ Prebuild completed! Updated ${totalUpdated} files.`)
 }
