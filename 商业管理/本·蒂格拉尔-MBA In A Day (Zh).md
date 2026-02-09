@@ -1,3 +1,9 @@
+---
+title: MBA In A Day (Zh)
+author: 本·蒂格拉尔
+category: 商业管理
+tags: []
+---
 
 (kimi + prompt)
 

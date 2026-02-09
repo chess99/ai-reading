@@ -1,0 +1,100 @@
+import { defineConfig } from 'vitepress'
+import { generateSidebar } from './scripts/generate-sidebar.mjs'
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: "AI 阅读笔记",
+  description: "个人知识库 - 记录阅读，沉淀思考",
+  lang: 'zh-CN',
+
+  // 主题配置
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '个人成长', link: '/个人成长/' },
+      { text: '投资理财', link: '/投资/' },
+      { text: '商业管理', link: '/商业管理/' },
+      { text: '心理学', link: '/心理学/' },
+      { text: '健康运动', link: '/健康运动/' },
+      { text: '社会科学', link: '/社会科学/' },
+      { text: '思维方式', link: '/思维方式/' }
+    ],
+
+    // 自动生成侧边栏
+    sidebar: generateSidebar() as any,
+
+    // 搜索配置
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换',
+                  closeText: '关闭'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    // 社交链接
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/yourusername/AI阅读' }
+    ],
+
+    // 页脚
+    footer: {
+      message: '基于 VitePress 构建',
+      copyright: 'Copyright © 2024-present'
+    },
+
+    // 文档页脚
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+
+    // 大纲配置
+    outline: {
+      level: [2, 3],
+      label: '目录'
+    },
+
+    // 最后更新时间
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'short'
+      }
+    }
+  },
+
+  // 启用最后更新时间
+  lastUpdated: true,
+
+  // 忽略死链
+  ignoreDeadLinks: true,
+
+  // Markdown 配置
+  markdown: {
+    lineNumbers: false,
+    theme: {
+      light: 'github-light',
+      dark: 'github-dark'
+    }
+  }
+})

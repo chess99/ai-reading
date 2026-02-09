@@ -1,3 +1,9 @@
+---
+title: Noise
+author: '丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦'
+category: 个人成长
+tags: []
+---
 这是一份关于丹尼尔·卡尼曼（Daniel Kahneman）、奥利维耶·西博尼（Olivier Sibony）和卡斯·R. 桑斯坦（Cass R. Sunstein）合著的《噪声》（*Noise: A Flaw in Human Judgment*）的详细知识精读与洞察总结。
 
 ---
