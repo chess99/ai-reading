@@ -1,4 +1,17 @@
-node_modules
+# Node
+node_modules/
+.astro-site/node_modules/
+
+# Astro
+.astro-site/.astro/
+dist/
+
+# Build
+.astro-site/dist/
+
+# VitePress (legacy)
 .vitepress/cache
 .vitepress/dist
+
+# System
 .DS_Store

@@ -13,26 +13,39 @@ AI 驱动的书籍解读与知识分享平台
 
 ## 项目结构
 
+零维护的纯净目录结构，书籍内容与工程文件完全分离：
+
 ```
 .
-├── src/
-│   ├── content/
-│   │   ├── config.ts          # Content Collections 配置
-│   │   └── books/             # 所有书籍 Markdown 文件
-│   │       ├── 投资/
-│   │       ├── 心理学/
-│   │       └── ...
-│   ├── layouts/
-│   │   └── BaseLayout.astro   # 基础布局
-│   ├── pages/
-│   │   ├── index.astro        # 首页
-│   │   ├── category/          # 分类页面
-│   │   └── books/             # 书籍详情页
-│   └── components/            # 可复用组件
-├── public/                    # 静态资源
-├── astro.config.mjs          # Astro 配置
-└── package.json
+├── books/                      # 📚 所有书籍内容（主体，零维护）
+│   ├── 投资/
+│   ├── 心理学/
+│   ├── 个人成长/
+│   ├── 健康运动/
+│   ├── 商业管理/
+│   ├── 思维方式/
+│   └── 社会科学/
+├── .astro-site/               # 🔧 网站工程文件（辅助）
+│   ├── src/
+│   │   ├── content/
+│   │   │   └── config.ts     # Glob Loader 配置
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   └── components/
+│   ├── public/
+│   ├── astro.config.mjs
+│   ├── package.json
+│   └── tsconfig.json
+├── dist/                      # 构建输出
+├── package.json               # 便捷脚本
+└── README.md
 ```
+
+**特点**：
+- ✅ 根目录清晰：书籍为主，工程为辅
+- ✅ **零维护**：添加新分类无需任何配置
+- ✅ 单一数据源：`books/` 是唯一的内容来源
+- ✅ 使用 Astro 5.0 Glob Loader 自动读取所有书籍
 
 ## 使用方法
 
@@ -61,7 +74,7 @@ npm run preview
 
 ## 添加新书籍
 
-只需在 `src/content/books/` 对应分类目录下创建 Markdown 文件：
+**零维护**：直接在 `books/` 对应分类目录下创建 Markdown 文件即可，新分类会自动识别！
 
 ```markdown
 ---
@@ -75,6 +88,14 @@ tags: [标签1, 标签2]
 ```
 
 文件名格式：`作者-书名.md`
+
+**添加新分类**（零维护）：
+```bash
+# 创建新分类目录，添加书籍，无需任何配置
+mkdir books/新分类
+echo "---\ntitle: 书名\nauthor: 作者\n---\n内容" > books/新分类/作者-书名.md
+# 刷新浏览器，新分类自动出现！
+```
 
 ## 自动化
 

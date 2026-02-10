@@ -1,0 +1,19 @@
+{
+  "name": "ai-reading",
+  "version": "2.0.0",
+  "description": "AI 阅读 - AI 驱动的书籍解读与知识分享平台",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "typescript": "^5.6.0"
+  }
+}
