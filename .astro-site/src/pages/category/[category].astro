@@ -25,6 +25,9 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const { books } = Astro.props;
 
+// 获取 base path
+const base = import.meta.env.BASE_URL;
+
 // 按标题排序
 const sortedBooks = books.sort((a, b) =>
   a.data.title.localeCompare(b.data.title, 'zh-CN')
@@ -41,7 +44,7 @@ const sortedBooks = books.sort((a, b) =>
     <div class="books-list">
       {sortedBooks.map((book) => {
         // id 是 "投资/作者-书名.md"，需要去掉 .md 后缀
-        const bookPath = `/books/${book.id.replace(/\.md$/, '')}`;
+        const bookPath = `${base}books/${book.id.replace(/\.md$/, '')}`;
         return (
           <a href={bookPath} class="book-card">
             <div class="book-info">

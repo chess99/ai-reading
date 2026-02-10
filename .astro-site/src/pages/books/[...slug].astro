@@ -19,6 +19,9 @@ const { Content } = await render(book);
 
 // id 是 "投资/作者-书名.md"，提取分类部分
 const category = book.id.split('/')[0];
+
+// 获取 base path
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={`${book.data.title} - ${book.data.author || ''} - AI 阅读`}>
@@ -26,9 +29,9 @@ const category = book.id.split('/')[0];
     <article class="book-article" data-pagefind-body>
       <!-- 面包屑导航 -->
       <nav class="breadcrumb" data-pagefind-ignore>
-        <a href="/">首页</a>
+        <a href={base}>首页</a>
         <span class="separator">/</span>
-        <a href={`/category/${encodeURIComponent(category)}`}>{category}</a>
+        <a href={base + "category/" + encodeURIComponent(category)}>{category}</a>
         <span class="separator">/</span>
         <span class="current">{book.data.title}</span>
       </nav>
@@ -43,7 +46,7 @@ const category = book.id.split('/')[0];
         <div class="book-meta">
           <span class="meta-item">
             <span class="meta-label">分类：</span>
-            <a href={`/category/${encodeURIComponent(category)}`} class="meta-link" data-pagefind-meta="category">{category}</a>
+            <a href={base + "category/" + encodeURIComponent(category)} class="meta-link" data-pagefind-meta="category">{category}</a>
           </span>
 
           {book.data.tags && book.data.tags.length > 0 && (
