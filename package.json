@@ -7,5 +7,8 @@
     "build": "cd .astro-site && npm run build",
     "preview": "cd .astro-site && npm run preview",
     "install": "cd .astro-site && npm install"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
   }
 }

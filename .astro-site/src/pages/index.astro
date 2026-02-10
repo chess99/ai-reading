@@ -40,7 +40,11 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
         />
         <span class="search-icon">🔍</span>
       </div>
-      <a href={randomBookPath} class="random-btn">
+      <a href="/search" class="search-btn" title="全文搜索">
+        <span class="icon">🔍</span>
+        <span class="text">全文搜索</span>
+      </a>
+      <a href={randomBookPath} class="random-btn" title="随机一本书">
         <span class="icon">🎲</span>
         <span class="text">随机一本</span>
       </a>
@@ -61,14 +65,37 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
     <!-- 分类卡片 -->
     <div class="categories-section">
       {categories.map((category) => (
-        <a href={`/category/${category}`} class="category-card">
+        <a href={`/category/${encodeURIComponent(category)}`} class="category-card" data-category={category}>
           <div class="category-icon">📚</div>
           <h3 class="category-name">{category}</h3>
           <p class="category-count">{booksByCategory[category].length} 本书籍</p>
         </a>
       ))}
     </div>
+
+    <!-- 搜索结果 -->
+    <div class="search-results" style="display: none;">
+      <div class="results-header">
+        <h2 class="results-title">搜索结果</h2>
+        <button class="clear-search">清除搜索</button>
+      </div>
+      <div class="results-list"></div>
+      <div class="no-results" style="display: none;">
+        <p>未找到匹配的书籍</p>
+      </div>
+    </div>
   </div>
+
+  <!-- 将所有书籍数据传递给客户端 -->
+  <script define:vars={{ allBooks: allBooks.map(book => ({
+    id: book.id.replace(/\.md$/, ''),
+    title: book.data.title,
+    author: book.data.author,
+    category: book.id.split('/')[0],
+    tags: book.data.tags || []
+  })) }}>
+    window.__BOOKS_DATA__ = allBooks;
+  </script>
 
   <style>
     .search-bar {
@@ -106,6 +133,7 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
       pointer-events: none;
     }
 
+    .search-btn,
     .random-btn {
       display: flex;
       align-items: center;
@@ -123,6 +151,7 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
       white-space: nowrap;
     }
 
+    .search-btn:hover,
     .random-btn:hover {
       background: var(--color-brand);
       color: white;
@@ -130,6 +159,7 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
       box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
     }
 
+    .search-btn .icon,
     .random-btn .icon {
       font-size: 20px;
     }
@@ -139,6 +169,14 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
       gap: 24px;
       margin-bottom: 48px;
       justify-content: center;
+      transition: opacity 0.3s, height 0.3s;
+    }
+
+    .stats.hidden {
+      opacity: 0;
+      height: 0;
+      margin: 0;
+      overflow: hidden;
     }
 
     .stat-item {
@@ -219,9 +257,111 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
       margin: 0;
     }
 
+    .search-results {
+      margin-top: 48px;
+    }
+
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .results-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin: 0;
+    }
+
+    .clear-search {
+      padding: 8px 16px;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .clear-search:hover {
+      border-color: var(--color-brand);
+      color: var(--color-brand);
+    }
+
+    .results-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .book-result {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .book-result:hover {
+      border-color: var(--color-brand);
+      background: rgba(102, 126, 234, 0.05);
+      transform: translateX(4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .book-info {
+      flex: 1;
+    }
+
+    .book-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 0 0 8px 0;
+    }
+
+    .book-meta {
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    .book-arrow {
+      font-size: 24px;
+      color: var(--color-brand);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 48px 24px;
+      color: var(--color-text-light);
+    }
+
+    .no-results p {
+      font-size: 16px;
+      margin: 0;
+    }
+
     @media (max-width: 768px) {
       .search-bar {
         flex-direction: column;
+      }
+
+      .search-btn .text,
+      .random-btn .text {
+        display: none;
+      }
+
+      .search-btn,
+      .random-btn {
+        padding: 16px;
+        justify-content: center;
       }
 
       .stats {
@@ -251,21 +391,75 @@ const randomBookPath = `/books/${randomBook.id.replace(/\.md$/, '')}`;
   <script>
     // 客户端搜索功能
     const searchInput = document.getElementById('search-input') as HTMLInputElement;
+    const statsSection = document.querySelector('.stats') as HTMLElement;
+    const categoriesSection = document.querySelector('.categories-section') as HTMLElement;
+    const searchResults = document.querySelector('.search-results') as HTMLElement;
+    const resultsList = document.querySelector('.results-list') as HTMLElement;
+    const noResults = document.querySelector('.no-results') as HTMLElement;
+    const clearSearchBtn = document.querySelector('.clear-search') as HTMLButtonElement;
+
+    // 获取所有书籍数据
+    const booksData = (window as any).__BOOKS_DATA__ || [];
+
+    function clearSearch() {
+      searchInput.value = '';
+      statsSection.classList.remove('hidden');
+      categoriesSection.style.display = 'grid';
+      searchResults.style.display = 'none';
+      resultsList.innerHTML = '';
+      noResults.style.display = 'none';
+    }
+
+    function performSearch(query: string) {
+      const lowerQuery = query.toLowerCase().trim();
+
+      if (!lowerQuery) {
+        clearSearch();
+        return;
+      }
+
+      // 搜索书籍
+      const results = booksData.filter((book: any) => {
+        const titleMatch = book.title?.toLowerCase().includes(lowerQuery);
+        const authorMatch = book.author?.toLowerCase().includes(lowerQuery);
+        const categoryMatch = book.category?.toLowerCase().includes(lowerQuery);
+        const tagsMatch = book.tags?.some((tag: string) => tag.toLowerCase().includes(lowerQuery));
+        return titleMatch || authorMatch || categoryMatch || tagsMatch;
+      });
+
+      // 隐藏统计和分类，显示搜索结果
+      statsSection.classList.add('hidden');
+      categoriesSection.style.display = 'none';
+      searchResults.style.display = 'block';
+
+      if (results.length === 0) {
+        resultsList.innerHTML = '';
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+        resultsList.innerHTML = results.map((book: any) => `
+          <a href="/books/${book.id}" class="book-result">
+            <div class="book-info">
+              <h3 class="book-title">${book.title}</h3>
+              <div class="book-meta">
+                ${book.author ? `${book.author} · ` : ''}${book.category}
+              </div>
+            </div>
+            <div class="book-arrow">→</div>
+          </a>
+        `).join('');
+      }
+    }
 
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
-        const query = (e.target as HTMLInputElement).value.toLowerCase();
-        const cards = document.querySelectorAll('.category-card');
-
-        cards.forEach((card) => {
-          const text = card.textContent?.toLowerCase() || '';
-          if (text.includes(query)) {
-            (card as HTMLElement).style.display = 'flex';
-          } else {
-            (card as HTMLElement).style.display = 'none';
-          }
-        });
+        const query = (e.target as HTMLInputElement).value;
+        performSearch(query);
       });
+    }
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', clearSearch);
     }
   </script>
 </BaseLayout>

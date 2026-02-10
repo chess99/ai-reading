@@ -23,27 +23,27 @@ const category = book.id.split('/')[0];
 
 <BaseLayout title={`${book.data.title} - ${book.data.author || ''} - AI 阅读`}>
   <div class="container">
-    <article class="book-article">
+    <article class="book-article" data-pagefind-body>
       <!-- 面包屑导航 -->
-      <nav class="breadcrumb">
+      <nav class="breadcrumb" data-pagefind-ignore>
         <a href="/">首页</a>
         <span class="separator">/</span>
-        <a href={`/category/${category}`}>{category}</a>
+        <a href={`/category/${encodeURIComponent(category)}`}>{category}</a>
         <span class="separator">/</span>
         <span class="current">{book.data.title}</span>
       </nav>
 
       <!-- 书籍元信息 -->
       <header class="book-header">
-        <h1 class="book-title">{book.data.title}</h1>
+        <h1 class="book-title" data-pagefind-meta="title">{book.data.title}</h1>
         {book.data.author && (
-          <p class="book-author">作者：{book.data.author}</p>
+          <p class="book-author" data-pagefind-meta="author">作者：{book.data.author}</p>
         )}
 
         <div class="book-meta">
           <span class="meta-item">
             <span class="meta-label">分类：</span>
-            <a href={`/category/${category}`} class="meta-link">{category}</a>
+            <a href={`/category/${encodeURIComponent(category)}`} class="meta-link" data-pagefind-meta="category">{category}</a>
           </span>
 
           {book.data.tags && book.data.tags.length > 0 && (
