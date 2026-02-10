@@ -27,7 +27,7 @@ const categories = Object.keys(booksByCategory).sort((a, b) =>
 // 生成随机书籍路径
 const randomBook = allBooks[Math.floor(Math.random() * allBooks.length)];
 // id 是带 .md 后缀的，需要去掉后缀
-const randomBookPath = `${base}books/${randomBook.id.replace(/\.md$/, '')}`;
+const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
 ---
 
 <BaseLayout title="AI 阅读 - 首页">
@@ -43,7 +43,7 @@ const randomBookPath = `${base}books/${randomBook.id.replace(/\.md$/, '')}`;
         />
         <span class="search-icon">🔍</span>
       </div>
-      <a href={`${base}search`} class="search-btn" title="全文搜索">
+      <a href={`${base}/search`} class="search-btn" title="全文搜索">
         <span class="icon">🔍</span>
         <span class="text">全文搜索</span>
       </a>
@@ -68,7 +68,7 @@ const randomBookPath = `${base}books/${randomBook.id.replace(/\.md$/, '')}`;
     <!-- 分类卡片 -->
     <div class="categories-section">
       {categories.map((category) => (
-        <a href={`${base}category/${encodeURIComponent(category)}`} class="category-card" data-category={category}>
+        <a href={`${base}/category/${encodeURIComponent(category)}`} class="category-card" data-category={category}>
           <div class="category-icon">📚</div>
           <h3 class="category-name">{category}</h3>
           <p class="category-count">{booksByCategory[category].length} 本书籍</p>
@@ -446,7 +446,7 @@ const randomBookPath = `${base}books/${randomBook.id.replace(/\.md$/, '')}`;
       } else {
         noResults.style.display = 'none';
         resultsList.innerHTML = results.map((book: any) => `
-          <a href="${baseUrl}books/${book.id}" class="book-result">
+          <a href="${baseUrl}/books/${book.id}" class="book-result">
             <div class="book-info">
               <h3 class="book-title">${book.title}</h3>
               <div class="book-meta">
