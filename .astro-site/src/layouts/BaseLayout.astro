@@ -5,6 +5,9 @@ interface Props {
 }
 
 const { title = 'AI 阅读', description = 'AI 驱动的书籍解读与知识分享平台' } = Astro.props;
+
+// 获取 base path
+const base = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -13,7 +16,7 @@ const { title = 'AI 阅读', description = 'AI 驱动的书籍解读与知识分
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -21,10 +24,10 @@ const { title = 'AI 阅读', description = 'AI 驱动的书籍解读与知识分
     <div class="app">
       <header class="header">
         <div class="container">
-          <a href="/" class="logo">AI 阅读</a>
+          <a href={base} class="logo">AI 阅读</a>
           <nav class="nav">
-            <a href="/">首页</a>
-            <a href="/books">所有书籍</a>
+            <a href={base}>首页</a>
+            <a href={base}>所有书籍</a>
           </nav>
         </div>
       </header>
