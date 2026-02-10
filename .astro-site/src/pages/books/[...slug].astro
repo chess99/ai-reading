@@ -1,0 +1,307 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+  return books.map((book) => ({
+    // id 是 "投资/作者-书名.md"，需要去掉 .md 后缀作为 slug
+    params: { slug: book.id.replace(/\.md$/, '') },
+    props: { book },
+  }));
+}
+
+const { book } = Astro.props;
+
+// With Glob Loader, we need to use render differently
+import { render } from 'astro:content';
+const { Content } = await render(book);
+
+// id 是 "投资/作者-书名.md"，提取分类部分
+const category = book.id.split('/')[0];
+---
+
+<BaseLayout title={`${book.data.title} - ${book.data.author || ''} - AI 阅读`}>
+  <div class="container">
+    <article class="book-article">
+      <!-- 面包屑导航 -->
+      <nav class="breadcrumb">
+        <a href="/">首页</a>
+        <span class="separator">/</span>
+        <a href={`/category/${category}`}>{category}</a>
+        <span class="separator">/</span>
+        <span class="current">{book.data.title}</span>
+      </nav>
+
+      <!-- 书籍元信息 -->
+      <header class="book-header">
+        <h1 class="book-title">{book.data.title}</h1>
+        {book.data.author && (
+          <p class="book-author">作者：{book.data.author}</p>
+        )}
+
+        <div class="book-meta">
+          <span class="meta-item">
+            <span class="meta-label">分类：</span>
+            <a href={`/category/${category}`} class="meta-link">{category}</a>
+          </span>
+
+          {book.data.tags && book.data.tags.length > 0 && (
+            <div class="book-tags">
+              {book.data.tags.map((tag) => (
+                <span class="tag">#{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </header>
+
+      <!-- 书籍内容 -->
+      <div class="book-content">
+        <Content />
+      </div>
+    </article>
+  </div>
+
+  <style>
+    .book-article {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    .breadcrumb a {
+      color: var(--color-brand);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      opacity: 0.7;
+    }
+
+    .separator {
+      color: var(--color-text-light);
+    }
+
+    .current {
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    .book-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    .book-title {
+      font-size: 40px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .book-author {
+      font-size: 18px;
+      color: var(--color-text-light);
+      margin-bottom: 24px;
+    }
+
+    .book-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .meta-item {
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    .meta-label {
+      font-weight: 500;
+    }
+
+    .meta-link {
+      color: var(--color-brand);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .meta-link:hover {
+      opacity: 0.7;
+    }
+
+    .book-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 6px 14px;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--color-brand);
+      font-weight: 500;
+    }
+
+    .book-content {
+      line-height: 1.8;
+    }
+
+    /* Markdown 内容样式 */
+    .book-content :global(h2) {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+      color: var(--color-text);
+    }
+
+    .book-content :global(h3) {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .book-content :global(h4) {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: var(--color-text);
+    }
+
+    .book-content :global(p) {
+      margin-bottom: 16px;
+      color: var(--color-text);
+    }
+
+    .book-content :global(ul),
+    .book-content :global(ol) {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    .book-content :global(li) {
+      margin-bottom: 8px;
+    }
+
+    .book-content :global(blockquote) {
+      margin: 24px 0;
+      padding: 16px 20px;
+      border-left: 4px solid var(--color-brand);
+      background: rgba(102, 126, 234, 0.05);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .book-content :global(code) {
+      padding: 2px 6px;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 0.9em;
+    }
+
+    .book-content :global(pre) {
+      margin: 24px 0;
+      padding: 16px;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      overflow-x: auto;
+    }
+
+    .book-content :global(pre code) {
+      padding: 0;
+      background: none;
+      border: none;
+    }
+
+    .book-content :global(a) {
+      color: var(--color-brand);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .book-content :global(a:hover) {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+
+    .book-content :global(img) {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      margin: 24px 0;
+    }
+
+    .book-content :global(table) {
+      width: 100%;
+      margin: 24px 0;
+      border-collapse: collapse;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .book-content :global(th) {
+      background: rgba(102, 126, 234, 0.1);
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      border: 1px solid var(--color-border);
+    }
+
+    .book-content :global(td) {
+      padding: 12px;
+      border: 1px solid var(--color-border);
+    }
+
+    .book-content :global(hr) {
+      margin: 32px 0;
+      border: none;
+      border-top: 2px solid var(--color-border);
+    }
+
+    @media (max-width: 768px) {
+      .book-title {
+        font-size: 32px;
+      }
+
+      .book-content :global(h2) {
+        font-size: 24px;
+      }
+
+      .book-content :global(h3) {
+        font-size: 20px;
+      }
+
+      .breadcrumb {
+        font-size: 13px;
+      }
+    }
+  </style>
+</BaseLayout>
