@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="全文搜索 - AI 阅读">
+  <div class="container">
+    <div class="search-page">
+      <h1 class="page-title">全文搜索</h1>
+      <p class="page-description">搜索书籍标题、作者、内容...</p>
+
+      <div id="search"></div>
+    </div>
+  </div>
+
+  <style>
+    .search-page {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .page-title {
+      font-size: 40px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+
+    .page-description {
+      font-size: 16px;
+      color: var(--color-text-light);
+      margin-bottom: 32px;
+    }
+
+    #search {
+      margin-top: 24px;
+    }
+
+    /* Pagefind 样式自定义 */
+    :global(.pagefind-ui__search-input) {
+      width: 100%;
+      padding: 16px 24px;
+      border: 2px solid var(--color-brand);
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.2s;
+      outline: none;
+    }
+
+    :global(.pagefind-ui__search-input:focus) {
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    }
+
+    :global(.pagefind-ui__result) {
+      padding: 20px;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      transition: all 0.2s;
+    }
+
+    :global(.pagefind-ui__result:hover) {
+      border-color: var(--color-brand);
+      background: rgba(102, 126, 234, 0.05);
+      transform: translateX(4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    :global(.pagefind-ui__result-title) {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+
+    :global(.pagefind-ui__result-excerpt) {
+      font-size: 14px;
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+  </style>
+
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        translations: {
+          placeholder: "搜索书籍内容...",
+          clear_search: "清除",
+          load_more: "加载更多结果",
+          search_label: "搜索",
+          filters_label: "筛选",
+          zero_results: "未找到匹配的结果",
+          many_results: "找到 [count] 个结果",
+          one_result: "找到 [count] 个结果",
+          alt_search: "搜索",
+          search_suggestion: "未找到匹配的结果。请尝试其他关键词。",
+          searching: "搜索中..."
+        }
+      });
+    });
+  </script>
+</BaseLayout>
