@@ -4,9 +4,6 @@ node_modules/
 
 # Astro
 .astro-site/.astro/
-dist/
-
-# Build
 .astro-site/dist/
 
 # System

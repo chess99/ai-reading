@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://chess99.github.io',
   base: '/ai-reading',
-  outDir: '../dist',
+  outDir: './dist',
   build: {
     format: 'directory'
   }

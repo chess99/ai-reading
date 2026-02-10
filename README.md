@@ -32,11 +32,11 @@ AI 驱动的书籍解读与知识分享平台
 │   │   ├── layouts/
 │   │   ├── pages/
 │   │   └── components/
+│   ├── dist/                  # 构建输出
 │   ├── public/
 │   ├── astro.config.mjs
 │   ├── package.json
 │   └── tsconfig.json
-├── dist/                      # 构建输出
 ├── package.json               # 便捷脚本
 └── README.md
 ```
@@ -64,7 +64,7 @@ npm run dev
 npm run build
 ```
 
-构建产物在 `dist/` 目录
+构建产物在 `.astro-site/dist/` 目录
 
 ### 预览
 
