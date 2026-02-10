@@ -9,9 +9,5 @@ dist/
 # Build
 .astro-site/dist/
 
-# VitePress (legacy)
-.vitepress/cache
-.vitepress/dist
-
 # System
 .DS_Store
