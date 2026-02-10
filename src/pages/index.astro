@@ -1,0 +1,270 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// 获取所有书籍
+const allBooks = await getCollection('books');
+
+// 按分类分组
+const booksByCategory = allBooks.reduce((acc, book) => {
+  // 从 slug 中提取分类 (例如: "投资/作者-书名" -> "投资")
+  const category = book.slug.split('/')[0];
+  if (!acc[category]) {
+    acc[category] = [];
+  }
+  acc[category].push(book);
+  return acc;
+}, {} as Record<string, typeof allBooks>);
+
+// 获取分类列表并排序
+const categories = Object.keys(booksByCategory).sort((a, b) =>
+  a.localeCompare(b, 'zh-CN')
+);
+
+// 生成随机书籍路径
+const randomBook = allBooks[Math.floor(Math.random() * allBooks.length)];
+const randomBookPath = `/books/${randomBook.slug}`;
+---
+
+<BaseLayout title="AI 阅读 - 首页">
+  <div class="container">
+    <!-- 搜索栏 -->
+    <div class="search-bar">
+      <div class="search-input-wrapper">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="搜索书籍标题、作者..."
+        />
+        <span class="search-icon">🔍</span>
+      </div>
+      <a href={randomBookPath} class="random-btn">
+        <span class="icon">🎲</span>
+        <span class="text">随机一本</span>
+      </a>
+    </div>
+
+    <!-- 统计信息 -->
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number">{allBooks.length}</span>
+        <span class="stat-label">本书籍</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{categories.length}</span>
+        <span class="stat-label">个分类</span>
+      </div>
+    </div>
+
+    <!-- 分类卡片 -->
+    <div class="categories-section">
+      {categories.map((category) => (
+        <a href={`/category/${category}`} class="category-card">
+          <div class="category-icon">📚</div>
+          <h3 class="category-name">{category}</h3>
+          <p class="category-count">{booksByCategory[category].length} 本书籍</p>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <style>
+    .search-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .search-input-wrapper {
+      flex: 1;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 28px 16px 50px;
+      border: 2px solid var(--color-brand);
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.2s;
+      outline: none;
+    }
+
+    .search-input:focus {
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      pointer-events: none;
+    }
+
+    .random-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 28px;
+      border: 2px solid var(--color-brand);
+      border-radius: var(--radius);
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .random-btn:hover {
+      background: var(--color-brand);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+    }
+
+    .random-btn .icon {
+      font-size: 20px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 48px;
+      justify-content: center;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 48px;
+      background: var(--color-bg-soft);
+      border-radius: var(--radius);
+      border: 1px solid var(--color-border);
+    }
+
+    .stat-number {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: var(--color-text-light);
+      margin-top: 4px;
+    }
+
+    .categories-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .category-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      background: var(--color-bg-soft);
+      border: 2px solid var(--color-border);
+      border-radius: 16px;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .category-card:hover {
+      border-color: var(--color-brand);
+      background: rgba(102, 126, 234, 0.05);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .category-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      filter: grayscale(0.3);
+      transition: all 0.3s;
+    }
+
+    .category-card:hover .category-icon {
+      filter: grayscale(0);
+      transform: scale(1.1);
+    }
+
+    .category-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin: 0 0 8px 0;
+      text-align: center;
+    }
+
+    .category-count {
+      font-size: 14px;
+      color: var(--color-text-light);
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .search-bar {
+        flex-direction: column;
+      }
+
+      .stats {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .stat-item {
+        padding: 16px 32px;
+      }
+
+      .categories-section {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 16px;
+      }
+
+      .category-card {
+        padding: 24px 16px;
+      }
+
+      .category-icon {
+        font-size: 36px;
+      }
+    }
+  </style>
+
+  <script>
+    // 客户端搜索功能
+    const searchInput = document.getElementById('search-input') as HTMLInputElement;
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = (e.target as HTMLInputElement).value.toLowerCase();
+        const cards = document.querySelectorAll('.category-card');
+
+        cards.forEach((card) => {
+          const text = card.textContent?.toLowerCase() || '';
+          if (text.includes(query)) {
+            (card as HTMLElement).style.display = 'flex';
+          } else {
+            (card as HTMLElement).style.display = 'none';
+          }
+        });
+      });
+    }
+  </script>
+</BaseLayout>

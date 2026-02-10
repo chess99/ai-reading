@@ -1,0 +1,154 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'AI 阅读', description = 'AI 驱动的书籍解读与知识分享平台' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <a href="/" class="logo">AI 阅读</a>
+          <nav class="nav">
+            <a href="/">首页</a>
+            <a href="/books">所有书籍</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <slot />
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>基于 Astro 构建 · Copyright © 2024-present</p>
+        </div>
+      </footer>
+    </div>
+
+    <style is:global>
+      :root {
+        --color-brand: #667eea;
+        --color-brand-dark: #764ba2;
+        --color-text: #2c3e50;
+        --color-text-light: #7f8c8d;
+        --color-bg: #ffffff;
+        --color-bg-soft: #f8f9fa;
+        --color-border: #e1e4e8;
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+        --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+        --radius: 12px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Microsoft YaHei', sans-serif;
+        line-height: 1.6;
+        color: var(--color-text);
+        background: var(--color-bg);
+      }
+
+      .app {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .header {
+        background: var(--color-bg);
+        border-bottom: 1px solid var(--color-border);
+        padding: 16px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+      }
+
+      .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        gap: 24px;
+      }
+
+      .nav a {
+        color: var(--color-text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+
+      .nav a:hover {
+        color: var(--color-brand);
+      }
+
+      .main {
+        flex: 1;
+        padding: 48px 0;
+      }
+
+      .footer {
+        background: var(--color-bg-soft);
+        border-top: 1px solid var(--color-border);
+        padding: 32px 0;
+        text-align: center;
+        color: var(--color-text-light);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 16px;
+        }
+
+        .nav {
+          gap: 16px;
+        }
+
+        .main {
+          padding: 24px 0;
+        }
+      }
+    </style>
+  </body>
+</html>
