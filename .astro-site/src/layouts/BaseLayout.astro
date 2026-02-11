@@ -15,9 +15,17 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- PWA -->
+    <link rel="manifest" href={`${base}/manifest.json`} />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="AI 阅读" />
+
     <title>{title}</title>
   </head>
   <body>
@@ -42,6 +50,22 @@ const base = import.meta.env.BASE_URL;
         </div>
       </footer>
     </div>
+
+    <!-- PWA Service Worker 注册 -->
+    <script define:vars={{ baseUrl: base }}>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register(baseUrl + '/sw.js', { scope: baseUrl + '/' })
+            .then((registration) => {
+              console.log('SW registered:', registration);
+            })
+            .catch((error) => {
+              console.log('SW registration failed:', error);
+            });
+        });
+      }
+    </script>
 
     <style is:global>
       :root {

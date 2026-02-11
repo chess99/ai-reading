@@ -172,8 +172,39 @@ A:
 3. **发布前测试**：运行 `npm run build && npm run preview` 完整测试
 4. **代码检查**：运行 `astro check` 检查类型错误
 
+## PWA 支持
+
+项目已配置为 PWA（渐进式 Web 应用），支持：
+- 离线访问
+- 添加到主屏幕
+- 独立的应用体验
+
+### PWA 配置
+
+- **Manifest**: `public/manifest.json`
+- **Service Worker**: `public/sw.js`
+- **作用域**: `/ai-reading/` （不影响 `https://cearl.cc/` 的其他路径）
+
+### 生成 PWA 图标
+
+需要将 `public/icon.svg` 转换为 PNG 格式：
+
+```bash
+# 使用 ImageMagick 或在线工具生成
+# 192x192
+convert -background none -resize 192x192 public/icon.svg public/icon-192.png
+
+# 512x512
+convert -background none -resize 512x512 public/icon.svg public/icon-512.png
+```
+
+或使用在线工具：
+- [RealFaviconGenerator](https://realfavicongenerator.net/)
+- [PWA Asset Generator](https://www.pwabuilder.com/)
+
 ## 相关链接
 
 - [Astro 文档](https://docs.astro.build/)
 - [Pagefind 文档](https://pagefind.app/)
+- [PWA 文档](https://web.dev/progressive-web-apps/)
 - [项目仓库](https://github.com/chess99/ai-reading)

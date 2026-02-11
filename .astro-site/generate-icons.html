@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>生成 PWA 图标</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    canvas {
+      border: 1px solid #ddd;
+      margin: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin: 10px 5px;
+    }
+    button:hover {
+      background: #5568d3;
+    }
+  </style>
+</head>
+<body>
+  <h1>生成 PWA 图标</h1>
+  <p>点击下面的按钮生成并下载图标</p>
+
+  <div>
+    <button onclick="generateIcon(192)">生成 192x192</button>
+    <button onclick="generateIcon(512)">生成 512x512</button>
+  </div>
+
+  <div id="preview"></div>
+
+  <script>
+    async function generateIcon(size) {
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d');
+
+      // 加载 SVG
+      const response = await fetch('./public/icon.svg');
+      const svgText = await response.text();
+      const blob = new Blob([svgText], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+
+      const img = new Image();
+      img.onload = () => {
+        ctx.drawImage(img, 0, 0, size, size);
+        URL.revokeObjectURL(url);
+
+        // 显示预览
+        const preview = document.getElementById('preview');
+        const previewCanvas = canvas.cloneNode();
+        previewCanvas.getContext('2d').drawImage(canvas, 0, 0);
+        preview.innerHTML = '';
+        preview.appendChild(previewCanvas);
+
+        // 下载
+        canvas.toBlob((blob) => {
+          const link = document.createElement('a');
+          link.download = `icon-${size}.png`;
+          link.href = URL.createObjectURL(blob);
+          link.click();
+        });
+      };
+      img.src = url;
+    }
+  </script>
+</body>
+</html>

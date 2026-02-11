@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景圆角矩形 -->
+  <rect width="512" height="512" rx="100" fill="url(#grad)"/>
+
+  <!-- 书本图标 -->
+  <g transform="translate(128, 128)">
+    <!-- 左页 -->
+    <path d="M 20 40 L 20 280 Q 20 300 40 300 L 128 300 L 128 40 Z" fill="white" opacity="0.9"/>
+    <!-- 右页 -->
+    <path d="M 128 40 L 128 300 L 216 300 Q 236 300 236 280 L 236 40 Z" fill="white" opacity="0.95"/>
+    <!-- 书脊 -->
+    <rect x="124" y="40" width="8" height="260" fill="white" opacity="0.7"/>
+    <!-- 书签 -->
+    <rect x="180" y="30" width="20" height="80" rx="4" fill="#ffd700"/>
+    <!-- 文字线条 -->
+    <line x1="50" y1="100" x2="110" y2="100" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="50" y1="130" x2="100" y2="130" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="50" y1="160" x2="110" y2="160" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="146" y1="100" x2="206" y2="100" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="146" y1="130" x2="196" y2="130" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="146" y1="160" x2="206" y2="160" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
