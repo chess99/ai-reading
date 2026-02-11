@@ -80,7 +80,10 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
     <div class="search-results" style="display: none;">
       <div class="results-header">
         <h2 class="results-title">搜索结果</h2>
-        <button class="clear-search">清除搜索</button>
+        <div class="results-actions">
+          <span class="results-count"></span>
+          <button class="clear-search">清除搜索</button>
+        </div>
       </div>
       <div class="results-list"></div>
       <div class="no-results" style="display: none;">
@@ -104,7 +107,7 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
     window.__BASE_URL__ = baseUrl;
   </script>
 
-  <style>
+  <style is:global>
     .search-bar {
       display: flex;
       gap: 16px;
@@ -118,13 +121,15 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
 
     .search-input {
       width: 100%;
-      padding: 16px 28px 16px 50px;
+      padding: 14px 28px 14px 50px;
       border: 2px solid var(--color-brand);
       border-radius: var(--radius);
       font-size: 16px;
       font-weight: 500;
       transition: all 0.2s;
       outline: none;
+      height: 56px;
+      box-sizing: border-box;
     }
 
     .search-input:focus {
@@ -138,6 +143,9 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       transform: translateY(-50%);
       font-size: 20px;
       pointer-events: none;
+      line-height: 1;
+      display: flex;
+      align-items: center;
     }
 
     .search-btn,
@@ -145,7 +153,7 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 16px 28px;
+      padding: 14px 28px;
       border: 2px solid var(--color-brand);
       border-radius: var(--radius);
       background: var(--color-bg);
@@ -156,6 +164,8 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       text-decoration: none;
       transition: all 0.2s;
       white-space: nowrap;
+      height: 56px;
+      box-sizing: border-box;
     }
 
     .search-btn:hover,
@@ -272,14 +282,25 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
     }
 
     .results-title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 700;
       color: var(--color-text);
       margin: 0;
+    }
+
+    .results-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .results-count {
+      font-size: 14px;
+      color: var(--color-text-light);
     }
 
     .clear-search {
@@ -302,6 +323,8 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       display: flex;
       flex-direction: column;
       gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .book-result {
@@ -334,19 +357,43 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       margin: 0 0 8px 0;
     }
 
-    .book-meta {
+    .book-author {
       font-size: 14px;
+      color: var(--color-text-light);
+      margin: 0 0 8px 0;
+    }
+
+    .book-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 4px 12px;
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      font-size: 12px;
       color: var(--color-text-light);
     }
 
     .book-arrow {
       font-size: 24px;
       color: var(--color-brand);
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 0.2s;
+    }
+
+    .book-result:hover .book-arrow {
+      opacity: 1;
+      transform: translateX(0);
     }
 
     .no-results {
       text-align: center;
-      padding: 48px 24px;
+      padding: 64px 24px;
       color: var(--color-text-light);
     }
 
@@ -357,19 +404,36 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
 
     @media (max-width: 768px) {
       .search-bar {
-        flex-direction: column;
+        flex-wrap: wrap;
       }
 
-      .search-btn .text,
-      .random-btn .text {
-        display: none;
+      .search-input-wrapper {
+        flex: 1 1 100%;
       }
 
       .search-btn,
       .random-btn {
-        padding: 16px;
-        justify-content: center;
+        flex: 1;
       }
+
+      .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .results-title {
+        font-size: 24px;
+      }
+
+      .book-result {
+        padding: 16px 20px;
+      }
+
+      .book-arrow {
+        display: none;
+      }
+
 
       .stats {
         flex-direction: column;
@@ -440,6 +504,12 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
       categoriesSection.style.display = 'none';
       searchResults.style.display = 'block';
 
+      // 更新结果计数
+      const resultsCount = document.querySelector('.results-count') as HTMLElement;
+      if (resultsCount) {
+        resultsCount.textContent = `共 ${results.length} 本书籍`;
+      }
+
       if (results.length === 0) {
         resultsList.innerHTML = '';
         noResults.style.display = 'block';
@@ -449,8 +519,10 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
           <a href="${baseUrl}/books/${book.id}" class="book-result">
             <div class="book-info">
               <h3 class="book-title">${book.title}</h3>
-              <div class="book-meta">
-                ${book.author ? `${book.author} · ` : ''}${book.category}
+              ${book.author ? `<p class="book-author">${book.author}</p>` : ''}
+              <div class="book-tags">
+                <span class="tag">${book.category}</span>
+                ${book.tags && book.tags.length > 0 ? book.tags.map((tag: string) => `<span class="tag">${tag}</span>`).join('') : ''}
               </div>
             </div>
             <div class="book-arrow">→</div>
