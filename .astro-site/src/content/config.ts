@@ -7,6 +7,8 @@ const books = defineCollection({
     base: new URL('../../../books', import.meta.url)
   }),
   schema: z.object({
+    // 持久化的 slug 标识符
+    slug: z.string(),
     // 只保留 tags，title/author/category 从文件路径解析
     tags: z.array(z.string()).optional(),
     // 可选的额外字段

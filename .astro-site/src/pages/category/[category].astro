@@ -46,8 +46,9 @@ const sortedBooks = books.sort((a, b) =>
 
     <div class="books-list">
       {sortedBooks.map((book) => {
-        // 使用 book.id 作为 URL（Astro 已清理特殊字符）
-        const bookPath = `${base}/books/${book.id}`;
+        // 优先使用 book.data.slug，回退到 book.id
+        const slug = book.data.slug || book.id.replace(/\.md$/, '');
+        const bookPath = `${base}/books/${slug}`;
         return (
           <a href={bookPath} class="book-card">
             <div class="book-info">

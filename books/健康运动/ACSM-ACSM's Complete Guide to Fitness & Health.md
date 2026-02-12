@@ -1,4 +1,5 @@
 ---
+slug: ACSM-ACSM's Complete Guide to Fitness & Health
 title: ACSM's Complete Guide to Fitness & Health
 author: ACSM
 category: 健康运动
