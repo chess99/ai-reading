@@ -6,8 +6,10 @@ import { parseBookInfo, formatAuthor } from '../../utils/bookParser';
 export async function getStaticPaths() {
   const books = await getCollection('books');
   return books.map((book) => {
+    // 优先使用 frontmatter 的 slug，回退到 book.id
+    const slug = book.data.slug || book.id.replace(/\.md$/, '');
     return {
-      params: { slug: book.id.replace(/\.md$/, '') },
+      params: { slug },
       props: { book },
     };
   });

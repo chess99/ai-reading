@@ -28,8 +28,9 @@ const categories = Object.keys(booksByCategory).sort((a, b) =>
 
 // 生成随机书籍路径
 const randomBook = allBooks[Math.floor(Math.random() * allBooks.length)];
-// 使用 book.id 作为 URL（Astro 已清理特殊字符）
-const randomBookPath = `${base}/books/${randomBook.id}`;
+// 优先使用 book.data.slug，回退到 book.id
+const randomBookSlug = randomBook.data.slug || randomBook.id.replace(/\.md$/, '');
+const randomBookPath = `${base}/books/${randomBookSlug}`;
 ---
 
 <BaseLayout title="AI 阅读 - 首页">
@@ -101,7 +102,7 @@ const randomBookPath = `${base}/books/${randomBook.id}`;
       const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
       const info = parseBookInfo(relativePath);
       return {
-        id: book.id,  // 使用 book.id（Astro 已清理特殊字符）
+        id: book.data.slug || book.id.replace(/\.md$/, ''),  // 优先使用 slug
         title: info.title,
         author: info.author,
         category: info.category,

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build && pagefind --site ./dist",
+    "validate": "npx tsx scripts/validateSlugs.ts",
+    "build": "npm run validate && astro check && astro build && pagefind --site ./dist",
     "preview": "astro preview",
     "astro": "astro"
   },
