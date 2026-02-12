@@ -1,19 +1,20 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseBookInfo, formatAuthor } from '../../utils/bookParser';
 
 export async function getStaticPaths() {
   const allBooks = await getCollection('books');
 
   // 按分类分组
   const booksByCategory = allBooks.reduce((acc, book) => {
-    const category = book.id.split('/')[0];
-    if (!acc[category]) {
-      acc[category] = [];
+    const info = parseBookInfo(book.id);
+    if (!acc[info.category]) {
+      acc[info.category] = [];
     }
-    acc[category].push(book);
+    acc[info.category].push({ ...book, info });
     return acc;
-  }, {} as Record<string, typeof allBooks>);
+  }, {} as Record<string, Array<typeof allBooks[0] & { info: ReturnType<typeof parseBookInfo> }>>);
 
   // 为每个分类生成路径
   return Object.keys(booksByCategory).map((category) => ({
@@ -30,7 +31,7 @@ const base = import.meta.env.BASE_URL;
 
 // 按标题排序
 const sortedBooks = books.sort((a, b) =>
-  a.data.title.localeCompare(b.data.title, 'zh-CN')
+  a.info.title.localeCompare(b.info.title, 'zh-CN')
 );
 ---
 
@@ -43,14 +44,13 @@ const sortedBooks = books.sort((a, b) =>
 
     <div class="books-list">
       {sortedBooks.map((book) => {
-        // id 是 "投资/作者-书名.md"，需要去掉 .md 后缀
-        const bookPath = `${base}/books/${book.id.replace(/\.md$/, '')}`;
+        const bookPath = `${base}/books/${book.info.slug}`;
         return (
           <a href={bookPath} class="book-card">
             <div class="book-info">
-              <h3 class="book-title">{book.data.title}</h3>
-              {book.data.author && (
-                <p class="book-author">{book.data.author}</p>
+              <h3 class="book-title">{book.info.title}</h3>
+              {book.info.author && (
+                <p class="book-author">{formatAuthor(book.info.author)}</p>
               )}
               {book.data.tags && book.data.tags.length > 0 && (
                 <div class="book-tags">

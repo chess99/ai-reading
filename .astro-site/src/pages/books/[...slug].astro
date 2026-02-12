@@ -1,52 +1,52 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseBookInfo, formatAuthor } from '../../utils/bookParser';
 
 export async function getStaticPaths() {
   const books = await getCollection('books');
-  return books.map((book) => ({
-    // id 是 "投资/作者-书名.md"，需要去掉 .md 后缀作为 slug
-    params: { slug: book.id.replace(/\.md$/, '') },
-    props: { book },
-  }));
+  return books.map((book) => {
+    const info = parseBookInfo(book.id);
+    return {
+      params: { slug: info.slug },
+      props: { book, info },
+    };
+  });
 }
 
-const { book } = Astro.props;
+const { book, info } = Astro.props;
 
 // With Glob Loader, we need to use render differently
 import { render } from 'astro:content';
 const { Content } = await render(book);
 
-// id 是 "投资/作者-书名.md"，提取分类部分
-const category = book.id.split('/')[0];
-
 // 获取 base path
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title={`${book.data.title} - ${book.data.author || ''} - AI 阅读`}>
+<BaseLayout title={`${info.title} - ${info.author || ''} - AI 阅读`}>
   <div class="container">
     <article class="book-article" data-pagefind-body>
       <!-- 面包屑导航 -->
       <nav class="breadcrumb" data-pagefind-ignore>
         <a href={base}>首页</a>
         <span class="separator">/</span>
-        <a href={`${base}/category/${encodeURIComponent(category)}`}>{category}</a>
+        <a href={`${base}/category/${encodeURIComponent(info.category)}`}>{info.category}</a>
         <span class="separator">/</span>
-        <span class="current">{book.data.title}</span>
+        <span class="current">{info.title}</span>
       </nav>
 
       <!-- 书籍元信息 -->
       <header class="book-header">
-        <h1 class="book-title" data-pagefind-meta="title">{book.data.title}</h1>
-        {book.data.author && (
-          <p class="book-author" data-pagefind-meta="author">作者：{book.data.author}</p>
+        <h1 class="book-title" data-pagefind-meta="title">{info.title}</h1>
+        {info.author && (
+          <p class="book-author" data-pagefind-meta="author">作者：{formatAuthor(info.author)}</p>
         )}
 
         <div class="book-meta">
           <span class="meta-item">
             <span class="meta-label">分类：</span>
-            <a href={`${base}/category/${encodeURIComponent(category)}`} class="meta-link" data-pagefind-meta="category">{category}</a>
+            <a href={`${base}/category/${encodeURIComponent(info.category)}`} class="meta-link" data-pagefind-meta="category">{info.category}</a>
           </span>
 
           {book.data.tags && book.data.tags.length > 0 && (
