@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { parseBookInfo } from '../utils/bookParser';
 
 // 获取 base path
 const base = import.meta.env.BASE_URL;
@@ -8,16 +9,15 @@ const base = import.meta.env.BASE_URL;
 // 获取所有书籍
 const allBooks = await getCollection('books');
 
-// 按分类分组
+// 解析书籍信息并按分类分组
 const booksByCategory = allBooks.reduce((acc, book) => {
-  // 从 id 中提取分类 (例如: "投资/作者-书名.md" -> "投资")
-  const category = book.id.split('/')[0];
-  if (!acc[category]) {
-    acc[category] = [];
+  const info = parseBookInfo(book.id);
+  if (!acc[info.category]) {
+    acc[info.category] = [];
   }
-  acc[category].push(book);
+  acc[info.category].push({ ...book, info });
   return acc;
-}, {} as Record<string, typeof allBooks>);
+}, {} as Record<string, Array<typeof allBooks[0] & { info: ReturnType<typeof parseBookInfo> }>>);
 
 // 获取分类列表并排序
 const categories = Object.keys(booksByCategory).sort((a, b) =>
@@ -26,8 +26,8 @@ const categories = Object.keys(booksByCategory).sort((a, b) =>
 
 // 生成随机书籍路径
 const randomBook = allBooks[Math.floor(Math.random() * allBooks.length)];
-// id 是带 .md 后缀的，需要去掉后缀
-const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
+const randomBookInfo = parseBookInfo(randomBook.id);
+const randomBookPath = `${base}/books/${randomBookInfo.slug}`;
 ---
 
 <BaseLayout title="AI 阅读 - 首页">
@@ -94,13 +94,16 @@ const randomBookPath = `${base}/books/${randomBook.id.replace(/\.md$/, '')}`;
 
   <!-- 将所有书籍数据传递给客户端 -->
   <script define:vars={{
-    allBooks: allBooks.map(book => ({
-      id: book.id.replace(/\.md$/, ''),
-      title: book.data.title,
-      author: book.data.author,
-      category: book.id.split('/')[0],
-      tags: book.data.tags || []
-    })),
+    allBooks: allBooks.map(book => {
+      const info = parseBookInfo(book.id);
+      return {
+        id: info.slug,
+        title: info.title,
+        author: info.author,
+        category: info.category,
+        tags: book.data.tags || []
+      };
+    }),
     baseUrl: base
   }}>
     window.__BOOKS_DATA__ = allBooks;

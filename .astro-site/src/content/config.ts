@@ -7,13 +7,11 @@ const books = defineCollection({
     base: new URL('../../../books', import.meta.url)
   }),
   schema: z.object({
-    title: z.string(),
-    author: z.string().optional(),
-    category: z.string().optional(),
+    // 只保留 tags，title/author/category 从文件路径解析
     tags: z.array(z.string()).optional(),
+    // 可选的额外字段
     rating: z.number().min(0).max(5).optional(),
     readDate: z.date().optional(),
-    layout: z.string().optional(),
   }),
 });
 
