@@ -11,7 +11,9 @@ const allBooks = await getCollection('books');
 
 // 解析书籍信息并按分类分组
 const booksByCategory = allBooks.reduce((acc, book) => {
-  const info = parseBookInfo(book.id);
+  // 从 filePath 中提取相对路径
+  const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
+  const info = parseBookInfo(relativePath);
   if (!acc[info.category]) {
     acc[info.category] = [];
   }
@@ -26,8 +28,8 @@ const categories = Object.keys(booksByCategory).sort((a, b) =>
 
 // 生成随机书籍路径
 const randomBook = allBooks[Math.floor(Math.random() * allBooks.length)];
-const randomBookInfo = parseBookInfo(randomBook.id);
-const randomBookPath = `${base}/books/${randomBookInfo.slug}`;
+// 使用 book.id 作为 URL（Astro 已清理特殊字符）
+const randomBookPath = `${base}/books/${randomBook.id}`;
 ---
 
 <BaseLayout title="AI 阅读 - 首页">
@@ -95,9 +97,11 @@ const randomBookPath = `${base}/books/${randomBookInfo.slug}`;
   <!-- 将所有书籍数据传递给客户端 -->
   <script define:vars={{
     allBooks: allBooks.map(book => {
-      const info = parseBookInfo(book.id);
+      // 从 filePath 中提取相对路径
+      const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
+      const info = parseBookInfo(relativePath);
       return {
-        id: info.slug,
+        id: book.id,  // 使用 book.id（Astro 已清理特殊字符）
         title: info.title,
         author: info.author,
         category: info.category,

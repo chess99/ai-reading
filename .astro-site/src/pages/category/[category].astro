@@ -8,7 +8,9 @@ export async function getStaticPaths() {
 
   // 按分类分组
   const booksByCategory = allBooks.reduce((acc, book) => {
-    const info = parseBookInfo(book.id);
+    // 从 filePath 中提取相对路径
+    const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
+    const info = parseBookInfo(relativePath);
     if (!acc[info.category]) {
       acc[info.category] = [];
     }
@@ -44,7 +46,8 @@ const sortedBooks = books.sort((a, b) =>
 
     <div class="books-list">
       {sortedBooks.map((book) => {
-        const bookPath = `${base}/books/${book.info.slug}`;
+        // 使用 book.id 作为 URL（Astro 已清理特殊字符）
+        const bookPath = `${base}/books/${book.id}`;
         return (
           <a href={bookPath} class="book-card">
             <div class="book-info">
