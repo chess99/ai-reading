@@ -26,11 +26,6 @@ const categories = Object.keys(booksByCategory).sort((a, b) =>
   a.localeCompare(b, 'zh-CN')
 );
 
-// 生成随机书籍路径
-const randomBook = allBooks[Math.floor(Math.random() * allBooks.length)];
-// 优先使用 book.data.slug，回退到 book.id
-const randomBookSlug = randomBook.data.slug || randomBook.id.replace(/\.md$/, '');
-const randomBookPath = `${base}/books/${randomBookSlug}`;
 ---
 
 <BaseLayout title="AI 阅读 - 首页">
@@ -50,10 +45,10 @@ const randomBookPath = `${base}/books/${randomBookSlug}`;
         <span class="icon">🔍</span>
         <span class="text">全文搜索</span>
       </a>
-      <a href={randomBookPath} class="random-btn" title="随机一本书">
+      <button id="random-btn" class="random-btn" title="随机一本书">
         <span class="icon">🎲</span>
         <span class="text">随机一本</span>
-      </a>
+      </button>
     </div>
 
     <!-- 统计信息 -->
@@ -548,6 +543,17 @@ const randomBookPath = `${base}/books/${randomBookSlug}`;
 
     if (clearSearchBtn) {
       clearSearchBtn.addEventListener('click', clearSearch);
+    }
+
+    // 随机一本书
+    const randomBtn = document.getElementById('random-btn') as HTMLButtonElement;
+    if (randomBtn) {
+      randomBtn.addEventListener('click', () => {
+        if (booksData.length > 0) {
+          const randomBook = booksData[Math.floor(Math.random() * booksData.length)];
+          window.location.href = `${baseUrl}/books/${randomBook.id}`;
+        }
+      });
     }
   </script>
 </BaseLayout>
