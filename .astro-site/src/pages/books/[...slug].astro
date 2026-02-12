@@ -6,15 +6,19 @@ import { parseBookInfo, formatAuthor } from '../../utils/bookParser';
 export async function getStaticPaths() {
   const books = await getCollection('books');
   return books.map((book) => {
-    const info = parseBookInfo(book.id);
     return {
-      params: { slug: info.slug },
-      props: { book, info },
+      params: { slug: book.id.replace(/\.md$/, '') },
+      props: { book },
     };
   });
 }
 
-const { book, info } = Astro.props;
+const { book } = Astro.props;
+
+// 从 filePath 中提取相对路径（移除 ../books/ 前缀）
+// 如果 filePath 不存在，回退到 book.id
+const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
+const info = parseBookInfo(relativePath);
 
 // With Glob Loader, we need to use render differently
 import { render } from 'astro:content';
