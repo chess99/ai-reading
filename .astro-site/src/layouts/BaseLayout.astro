@@ -27,7 +27,12 @@ const base = import.meta.env.BASE_URL;
           <a href={base} class="logo">AI 阅读</a>
           <nav class="nav">
             <a href={base}>首页</a>
-            <a href={base}>所有书籍</a>
+            <a href="https://cearl.cc/BookDistill/" target="_blank" rel="noopener noreferrer" class="external-link">
+              BookDistill
+              <svg class="external-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4.5M10.5 1.5V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
           </nav>
         </div>
       </header>
@@ -120,10 +125,28 @@ const base = import.meta.env.BASE_URL;
         text-decoration: none;
         font-weight: 500;
         transition: color 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
       }
 
       .nav a:hover {
         color: var(--color-brand);
+      }
+
+      .external-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .external-icon {
+        opacity: 0.6;
+        transition: opacity 0.2s;
+      }
+
+      .external-link:hover .external-icon {
+        opacity: 1;
       }
 
       .main {
