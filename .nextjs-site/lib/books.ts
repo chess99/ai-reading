@@ -3,10 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 
 export interface BookFrontmatter {
-  slug: string;
-  title: string;
-  author: string;
-  category: string;
+  slug?: string;
+  title?: string;
+  author?: string;
   tags?: string[];
 }
 
@@ -14,7 +13,8 @@ export interface Book {
   slug: string;
   title: string;
   author: string;
-  category: string;
+  category: string; // 显示用的分类路径,如 "商业管理/市场营销"
+  categoryPath: string[]; // 分类路径数组,如 ["商业管理", "市场营销"]
   tags: string[];
   content: string;
   filePath: string;
@@ -48,12 +48,23 @@ function parseFilename(filename: string): { author: string; title: string } {
 }
 
 /**
+ * Extract category path from file path
+ */
+function extractCategoryPath(filePath: string): string[] {
+  const relativePath = path.relative(BOOKS_DIR, path.dirname(filePath));
+  if (!relativePath || relativePath === '.') {
+    return [];
+  }
+  return relativePath.split(path.sep);
+}
+
+/**
  * Get all books from the books directory
  */
 export function getAllBooks(): Book[] {
   const books: Book[] = [];
 
-  function scanDirectory(dir: string, category: string = '') {
+  function scanDirectory(dir: string) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
 
     for (const entry of entries) {
@@ -61,7 +72,7 @@ export function getAllBooks(): Book[] {
 
       if (entry.isDirectory()) {
         // Recursively scan subdirectories
-        scanDirectory(fullPath, entry.name);
+        scanDirectory(fullPath);
       } else if (entry.isFile() && entry.name.endsWith('.md')) {
         try {
           const fileContent = fs.readFileSync(fullPath, 'utf-8');
@@ -71,11 +82,16 @@ export function getAllBooks(): Book[] {
           // Parse from filename as fallback
           const { author, title } = parseFilename(entry.name);
 
+          // Extract category from file path
+          const categoryPath = extractCategoryPath(fullPath);
+          const category = categoryPath.join('/') || '未分类';
+
           books.push({
             slug: frontmatter.slug || entry.name.replace(/\.md$/, ''),
             title: frontmatter.title || title,
             author: frontmatter.author || author,
-            category: frontmatter.category || category,
+            category,
+            categoryPath,
             tags: frontmatter.tags || [],
             content,
             filePath: fullPath,
@@ -121,24 +137,43 @@ export function getBooksByCategory(category: string): Book[] {
  */
 export function buildBookTree(): BookTreeNode[] {
   const books = getAllBooks();
-  const tree: BookTreeNode[] = [];
-  const categoryMap = new Map<string, BookTreeNode>();
+  const root: BookTreeNode[] = [];
 
-  // Group books by category
-  for (const book of books) {
-    if (!categoryMap.has(book.category)) {
-      const categoryNode: BookTreeNode = {
-        name: book.category,
+  // Helper function to get or create a category node
+  function getOrCreateCategory(
+    parent: BookTreeNode[],
+    categoryName: string,
+    fullPath: string
+  ): BookTreeNode {
+    let node = parent.find(n => n.name === categoryName && n.type === 'category');
+
+    if (!node) {
+      node = {
+        name: categoryName,
         type: 'category',
-        path: book.category,
+        path: fullPath,
         children: [],
       };
-      categoryMap.set(book.category, categoryNode);
-      tree.push(categoryNode);
+      parent.push(node);
     }
 
-    const categoryNode = categoryMap.get(book.category)!;
-    categoryNode.children!.push({
+    return node;
+  }
+
+  // Build the tree structure
+  for (const book of books) {
+    let currentLevel = root;
+    let pathSoFar = '';
+
+    // Navigate/create the category hierarchy
+    for (const categoryName of book.categoryPath) {
+      pathSoFar = pathSoFar ? `${pathSoFar}/${categoryName}` : categoryName;
+      const categoryNode = getOrCreateCategory(currentLevel, categoryName, pathSoFar);
+      currentLevel = categoryNode.children!;
+    }
+
+    // Add the book to the final level
+    currentLevel.push({
       name: `${book.author} - ${book.title}`,
       type: 'book',
       path: `/books/${book.slug}`,
@@ -146,13 +181,25 @@ export function buildBookTree(): BookTreeNode[] {
     });
   }
 
-  // Sort categories and books
-  tree.sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'));
-  tree.forEach(category => {
-    category.children?.sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'));
-  });
+  // Sort recursively
+  function sortTree(nodes: BookTreeNode[]) {
+    nodes.sort((a, b) => {
+      // Categories first, then books
+      if (a.type !== b.type) {
+        return a.type === 'category' ? -1 : 1;
+      }
+      return a.name.localeCompare(b.name, 'zh-CN');
+    });
 
-  return tree;
+    nodes.forEach(node => {
+      if (node.children) {
+        sortTree(node.children);
+      }
+    });
+  }
+
+  sortTree(root);
+  return root;
 }
 
 /**

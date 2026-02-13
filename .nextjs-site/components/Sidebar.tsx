@@ -66,23 +66,94 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
     return allBooks.filter(book => book.tags.includes(selectedTag));
   }, [selectedTag, allBooks]);
 
-  const toggleCategory = (categoryName: string) => {
+  const toggleCategory = (categoryPath: string) => {
     const newExpanded = new Set(expandedCategories);
-    if (newExpanded.has(categoryName)) {
-      newExpanded.delete(categoryName);
+    if (newExpanded.has(categoryPath)) {
+      newExpanded.delete(categoryPath);
     } else {
-      newExpanded.add(categoryName);
+      newExpanded.add(categoryPath);
     }
     setExpandedCategories(newExpanded);
   };
 
+  const getAllCategoryPaths = (nodes: BookTreeNode[], prefix = ''): string[] => {
+    const paths: string[] = [];
+    nodes.forEach(node => {
+      if (node.type === 'category') {
+        const path = prefix ? `${prefix}/${node.name}` : node.name;
+        paths.push(path);
+        if (node.children) {
+          paths.push(...getAllCategoryPaths(node.children, path));
+        }
+      }
+    });
+    return paths;
+  };
+
   const expandAll = () => {
-    const allCategories = new Set(bookTree.map(node => node.name));
-    setExpandedCategories(allCategories);
+    const allPaths = getAllCategoryPaths(bookTree);
+    setExpandedCategories(new Set(allPaths));
   };
 
   const collapseAll = () => {
     setExpandedCategories(new Set());
+  };
+
+  // 递归渲染树节点
+  const renderTreeNode = (node: BookTreeNode, parentPath: string, level: number = 0): React.ReactNode => {
+    const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
+    const isExpanded = expandedCategories.has(currentPath);
+    const indent = level * 12; // 每级缩进 12px
+
+    if (node.type === 'category') {
+      return (
+        <div key={currentPath}>
+          {/* Category */}
+          <button
+            onClick={() => toggleCategory(currentPath)}
+            className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-slate-100 rounded transition-colors"
+            style={{ paddingLeft: `${8 + indent}px` }}
+          >
+            <span className="text-slate-500 text-xs">
+              {isExpanded ? '▼' : '▶'}
+            </span>
+            <span className="font-medium text-slate-900">
+              {node.name}
+            </span>
+            <span className="ml-auto text-xs text-slate-400">
+              {node.children?.length || 0}
+            </span>
+          </button>
+
+          {/* Children */}
+          {isExpanded && node.children && (
+            <div className="space-y-0.5">
+              {node.children.map(child => renderTreeNode(child, currentPath, level + 1))}
+            </div>
+          )}
+        </div>
+      );
+    } else {
+      // Book node
+      return (
+        <Link
+          key={node.path}
+          href={node.path}
+          onClick={onClose}
+          className="sidebar-link"
+          style={{ paddingLeft: `${8 + indent + 16}px` }}
+        >
+          <div className="flex items-start gap-2">
+            <span className="text-xs text-slate-400 mt-0.5">
+              📖
+            </span>
+            <span className="flex-1 line-clamp-2">
+              {node.name}
+            </span>
+          </div>
+        </Link>
+      );
+    }
   };
 
   return (
@@ -191,48 +262,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
 
             {/* File Tree */}
             <div className="space-y-1">
-              {bookTree.map(category => (
-                <div key={category.name}>
-                  {/* Category */}
-                  <button
-                    onClick={() => toggleCategory(category.name)}
-                    className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-slate-100 rounded transition-colors"
-                  >
-                    <span className="text-slate-500 text-xs">
-                      {expandedCategories.has(category.name) ? '▼' : '▶'}
-                    </span>
-                    <span className="font-medium text-slate-900">
-                      {category.name}
-                    </span>
-                    <span className="ml-auto text-xs text-slate-400">
-                      {category.children?.length || 0}
-                    </span>
-                  </button>
-
-                  {/* Books */}
-                  {expandedCategories.has(category.name) && (
-                    <div className="ml-4 space-y-0.5">
-                      {category.children?.map(book => (
-                        <Link
-                          key={book.path}
-                          href={book.path}
-                          onClick={onClose}
-                          className="sidebar-link"
-                        >
-                          <div className="flex items-start gap-2">
-                            <span className="text-xs text-slate-400 mt-0.5">
-                              📖
-                            </span>
-                            <span className="flex-1 line-clamp-2">
-                              {book.name}
-                            </span>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+              {bookTree.map(node => renderTreeNode(node, ''))}
             </div>
           </div>
         )}

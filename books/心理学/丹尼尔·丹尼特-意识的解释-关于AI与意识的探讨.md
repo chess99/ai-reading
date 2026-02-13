@@ -2,7 +2,6 @@
 slug: yi-shi-de-jie-shi-guan-yu-a-i-yu-yi-shi-de-tan-tao
 title: 意识的解释-关于AI与意识的探讨
 author: 丹尼尔·丹尼特
-category: 心理学
 tags:
   - FF0000
 ---

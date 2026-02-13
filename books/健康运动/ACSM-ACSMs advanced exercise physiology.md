@@ -2,7 +2,6 @@
 slug: acsms-advanced-exercise-physiology
 title: ACSMs advanced exercise physiology
 author: ACSM
-category: 健康运动
 tags: []
 ---
 
