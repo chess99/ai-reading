@@ -1,5 +1,5 @@
 ---
-slug: 罗宾·夏玛-The 5am Club
+slug: the-5am-club
 title: The 5am Club
 author: 罗宾·夏玛
 category: 个人成长

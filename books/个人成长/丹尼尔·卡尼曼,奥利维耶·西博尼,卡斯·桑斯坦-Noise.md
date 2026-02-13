@@ -1,5 +1,5 @@
 ---
-slug: 丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-Noise
+slug: noise
 title: Noise
 author: '丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦'
 category: 个人成长
