@@ -26,18 +26,18 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: .astro-site/package-lock.json
+          cache-dependency-path: .nextjs-site/package-lock.json
 
       - name: Install dependencies
-        run: cd .astro-site && npm ci
+        run: cd .nextjs-site && npm ci
 
-      - name: Build with Astro
-        run: cd .astro-site && npm run build
+      - name: Build with Next.js
+        run: cd .nextjs-site && npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.astro-site/dist
+          path: ./.nextjs-site/out
 
   deploy:
     environment:
