@@ -12,9 +12,9 @@ export default function CategoryCard({ category, books }: CategoryCardProps) {
   return (
     <div className="surface-card surface-card-hover p-5 md:p-6 group">
       <div className="flex items-start gap-3 mb-4">
-        <div className="text-2xl md:text-3xl">📚</div>
+        <div className="text-2xl md:text-3xl transition-transform duration-200 group-hover:scale-105">📚</div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg md:text-xl font-semibold mb-1 truncate text-slate-900">
+          <h3 className="text-lg md:text-xl font-semibold mb-1 truncate text-slate-900 group-hover:text-brand transition-colors">
             {category}
           </h3>
           <p className="text-slate-500 text-xs md:text-sm">

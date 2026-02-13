@@ -99,11 +99,11 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
 
       {/* Search Results Dropdown */}
       {showResults && (
-        <div className="absolute top-full left-0 right-0 mt-2 surface-card max-h-96 overflow-y-auto z-50">
+        <div className="absolute top-full left-0 right-0 mt-2 surface-card surface-floating max-h-96 overflow-y-auto z-50">
           {filteredBooks.length > 0 ? (
             <>
-              <div className="p-3 border-b border-gray-100 flex items-center justify-between">
-                <span className="text-sm text-gray-600">
+              <div className="p-3 border-b border-slate-100 flex items-center justify-between">
+                <span className="text-sm text-slate-600">
                   找到 {filteredBooks.length} 个结果
                 </span>
                 <button
@@ -119,15 +119,15 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
                     key={book.slug}
                     href={`/books/${book.slug}`}
                     onClick={() => setShowResults(false)}
-                    className="block p-4 hover:bg-gray-50 transition-colors"
+                    className="block p-4 hover:bg-slate-50 transition-colors"
                   >
                     <div className="flex items-start gap-3">
                       <span className="text-2xl">📖</span>
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-gray-900 mb-1 truncate">
+                        <h3 className="font-semibold text-slate-900 mb-1 truncate">
                           {book.title}
                         </h3>
-                        <p className="text-sm text-gray-600 mb-2">
+                        <p className="text-sm text-slate-600 mb-2">
                           {book.author}
                         </p>
                         <div className="flex flex-wrap gap-1">
@@ -147,7 +147,7 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
               </div>
             </>
           ) : (
-            <div className="p-8 text-center text-gray-500">
+            <div className="p-8 text-center text-slate-500">
               <p>未找到匹配的书籍</p>
             </div>
           )}

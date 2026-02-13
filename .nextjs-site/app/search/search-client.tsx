@@ -87,7 +87,7 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
         {/* Search Results */}
         {keyword ? (
           <div>
-            <div className="mb-4 text-gray-600">
+            <div className="mb-4 text-slate-600">
               <span>找到 {searchResults.length} 个结果</span>
             </div>
 
@@ -121,12 +121,12 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
                               {book.category}
                             </span>
                             {matchType === 'title' && (
-                              <span className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">
+                              <span className="chip-success">
                                 标题匹配
                               </span>
                             )}
                             {matchType === 'content' && (
-                              <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">
+                              <span className="chip-info">
                                 内容匹配
                               </span>
                             )}

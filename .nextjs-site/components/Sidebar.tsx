@@ -106,7 +106,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
         `}
       >
         {/* Header - Only show on mobile */}
-        <div className="md:hidden p-4 border-b border-gray-200 flex items-center justify-between">
+        <div className="md:hidden p-4 border-b border-slate-200 flex items-center justify-between">
           <Link
             href="/"
             onClick={onClose}
@@ -116,10 +116,10 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
           </Link>
           <button
             onClick={onClose}
-            className="p-1 hover:bg-gray-100 rounded"
+            className="p-1 hover:bg-slate-100 rounded"
           >
             <svg
-              className="w-5 h-5 text-gray-600"
+              className="w-5 h-5 text-slate-600"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"

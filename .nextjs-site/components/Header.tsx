@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export default function Header({ onMenuClick, showMenuButton = true }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-[0_1px_0_rgba(148,163,184,0.14)]">
       <div className="container mx-auto px-3 md:px-4">
         <div className="flex items-center justify-between h-14 md:h-16">
           {/* Menu button for mobile */}
@@ -45,7 +45,7 @@ export default function Header({ onMenuClick, showMenuButton = true }: HeaderPro
           <nav className="flex items-center gap-3 md:gap-6">
             <Link
               href="/"
-              className="text-sm md:text-base text-slate-700 font-medium transition-colors hover:text-brand"
+              className="text-sm md:text-base text-slate-700 font-medium tracking-[0.01em] transition-colors hover:text-brand"
             >
               首页
             </Link>
@@ -53,7 +53,7 @@ export default function Header({ onMenuClick, showMenuButton = true }: HeaderPro
               href="https://cearl.cc/BookDistill/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1 text-sm md:text-base text-slate-700 font-medium transition-colors hover:text-brand"
+              className="hidden sm:inline-flex items-center gap-1 text-sm md:text-base text-slate-700 font-medium tracking-[0.01em] transition-colors hover:text-brand"
             >
               <span>BookDistill</span>
               <svg
