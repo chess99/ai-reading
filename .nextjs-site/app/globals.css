@@ -435,3 +435,8 @@ body {
 .markdown-content input[type="checkbox"] {
   @apply mr-2;
 }
+
+/* 目录组件样式 */
+.border-l-3 {
+  border-left-width: 3px;
+}

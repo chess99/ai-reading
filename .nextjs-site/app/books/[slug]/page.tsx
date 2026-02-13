@@ -1,11 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getAllBooks, getBookBySlug } from '@/lib/books';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw';
-import rehypeSanitize from 'rehype-sanitize';
-import rehypeHighlight from 'rehype-highlight';
 import 'highlight.js/styles/atom-one-dark.css';
+import BookPageClient from './page-client';
 
 interface BookPageProps {
   params: Promise<{ slug: string }>;
@@ -46,8 +42,8 @@ export default async function BookPage({ params }: BookPageProps) {
   }
 
   return (
-    <article className="page-container">
-      <div className="page-content-4xl">
+    <article className="container mx-auto px-4 py-6 md:py-8">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <header className="mb-8 md:mb-10 pb-6 border-b border-slate-200">
           <h1 className="heading-gradient text-3xl md:text-4xl font-bold mb-5">
@@ -76,15 +72,8 @@ export default async function BookPage({ params }: BookPageProps) {
           )}
         </header>
 
-        {/* Content */}
-        <div className="markdown-content">
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}
-          >
-            {book.content}
-          </ReactMarkdown>
-        </div>
+        {/* Content with TOC */}
+        <BookPageClient content={book.content} />
       </div>
     </article>
   );

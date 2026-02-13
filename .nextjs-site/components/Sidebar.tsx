@@ -213,7 +213,12 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                   {expandedCategories.has(category.name) && (
                     <div className="ml-4 space-y-0.5">
                       {category.children?.map(book => (
-                        <Link key={book.path} href={book.path} className="sidebar-link">
+                        <Link
+                          key={book.path}
+                          href={book.path}
+                          onClick={onClose}
+                          className="sidebar-link"
+                        >
                           <div className="flex items-start gap-2">
                             <span className="text-xs text-slate-400 mt-0.5">
                               📖
