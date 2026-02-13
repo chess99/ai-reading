@@ -65,6 +65,8 @@ npm run dev
 
 访问 http://localhost:3000/ai-reading
 
+说明：`/search` 全文搜索依赖构建产物中的 `pagefind` 索引，纯 `dev` 模式下不可用。
+
 ### 构建
 
 ```bash
@@ -72,15 +74,17 @@ cd .nextjs-site
 npm run build
 ```
 
-构建产物在 `.nextjs-site/out/` 目录
+构建产物在 `.nextjs-site/out/` 目录（含 `pagefind/` 搜索索引）
 
 ### 预览
 
 ```bash
 cd .nextjs-site
 npm run build
-npm run start
+npm run preview
 ```
+
+说明：`preview` 会在本地按 `/ai-reading` basePath 挂载 `out/`，用于还原线上访问路径。
 
 ## 添加新书籍
 

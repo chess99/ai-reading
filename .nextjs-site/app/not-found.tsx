@@ -1,6 +1,3 @@
-// input: next/link for route navigation and global Tailwind utility classes.
-// output: global 404 fallback UI for unmatched routes and notFound() calls.
-// pos: App Router root-level error boundary page; changes require syncing this header and app/README.md.
 import Link from 'next/link';
 
 const quickLinks = [

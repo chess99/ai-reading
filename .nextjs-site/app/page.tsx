@@ -1,9 +1,9 @@
-import { getAllBooks, getAllCategories } from '@/lib/books';
+import { getAllBookMetas, getAllCategories } from '@/lib/books';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
 
 export default function HomePage() {
-  const allBooks = getAllBooks();
+  const allBooks = getAllBookMetas();
   const categories = getAllCategories();
 
   return (

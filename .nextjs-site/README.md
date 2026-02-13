@@ -12,13 +12,25 @@ npm run dev
 
 访问 <http://localhost:3000/ai-reading>
 
+> 说明：`/search` 的全文搜索依赖 `pagefind` 索引，纯 `dev` 模式不包含该索引。
+
 ## 构建
 
 ```bash
 npm run build
 ```
 
-输出目录：`out/`
+输出目录：`out/`（包含 `pagefind/` 搜索索引）
+
+## 预览构建产物
+
+```bash
+npm run preview
+```
+
+访问 <http://localhost:4173/ai-reading>
+
+> 说明：预览命令会把 `out/` 挂载到 `/ai-reading` 路径，和线上 basePath 保持一致。
 
 ## 部署
 
@@ -47,8 +59,10 @@ npm run build
 │   ├── Header.tsx         # 顶部导航
 │   ├── Sidebar.tsx        # 侧边栏
 │   └── SearchBar.tsx      # 搜索栏
-├── lib/                   # 工具函数
+├── lib/                   # 数据与工具函数
 │   └── books.ts           # 书籍数据处理
+├── docs/                  # 开发与协作文档
+│   └── development.md     # 开发、构建与预览流程
 └── public/                # 静态资源
 ```
 

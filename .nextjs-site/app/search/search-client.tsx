@@ -1,65 +1,108 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import Link from 'next/link';
-import { Book } from '@/lib/books';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
-interface SearchPageClientProps {
-  books: Book[];
+interface PagefindResultData {
+  url: string;
+  excerpt: string;
+  meta?: {
+    title?: string;
+  };
 }
 
-export default function SearchPageClient({ books }: SearchPageClientProps) {
+interface SearchResultItem {
+  url: string;
+  title: string;
+  excerptHtml: string;
+}
+
+interface PagefindModule {
+  search: (term: string) => Promise<{
+    results: Array<{ data: () => Promise<PagefindResultData> }>;
+  }>;
+}
+
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+
+function normalizeResultUrl(url: string): string {
+  if (!url) return `${BASE_PATH}/`;
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  if (url.startsWith(BASE_PATH)) return url;
+  if (url.startsWith('/')) return `${BASE_PATH}${url}`;
+  return `${BASE_PATH}/${url}`;
+}
+
+export default function SearchPageClient() {
   const [keyword, setKeyword] = useState('');
+  const [results, setResults] = useState<SearchResultItem[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [isIndexReady, setIsIndexReady] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const pagefindRef = useRef<PagefindModule | null>(null);
 
-  // Full-text search in book content
-  const searchResults = useMemo(() => {
-    if (!keyword.trim()) return [];
+  const trimmedKeyword = useMemo(() => keyword.trim(), [keyword]);
 
-    const lowerKeyword = keyword.toLowerCase();
-    const results = books
-      .map(book => {
-        // Search in title, author, category, tags, and content
-        const titleMatch = book.title.toLowerCase().includes(lowerKeyword);
-        const authorMatch = book.author.toLowerCase().includes(lowerKeyword);
-        const categoryMatch = book.category.toLowerCase().includes(lowerKeyword);
-        const tagMatch = book.tags.some(tag => tag.toLowerCase().includes(lowerKeyword));
-        const contentMatch = book.content.toLowerCase().includes(lowerKeyword);
+  useEffect(() => {
+    let cancelled = false;
+    const run = async () => {
+      if (!trimmedKeyword) {
+        setResults([]);
+        setErrorMessage('');
+        return;
+      }
 
-        if (!titleMatch && !authorMatch && !categoryMatch && !tagMatch && !contentMatch) {
-          return null;
+      setIsSearching(true);
+      setErrorMessage('');
+      try {
+        if (!pagefindRef.current) {
+          const pagefindScriptUrl = `${BASE_PATH}/pagefind/pagefind.js`;
+          const imported = await import(/* webpackIgnore: true */ pagefindScriptUrl);
+          pagefindRef.current = (imported.default || imported) as PagefindModule;
+          if (!cancelled) {
+            setIsIndexReady(true);
+          }
         }
 
-        // Extract context around the keyword in content
-        let excerpt = '';
-        if (contentMatch) {
-          const contentLower = book.content.toLowerCase();
-          const index = contentLower.indexOf(lowerKeyword);
-          const start = Math.max(0, index - 100);
-          const end = Math.min(book.content.length, index + lowerKeyword.length + 100);
-          excerpt = book.content.substring(start, end);
-          if (start > 0) excerpt = '...' + excerpt;
-          if (end < book.content.length) excerpt = excerpt + '...';
+        const searchResponse = await pagefindRef.current.search(trimmedKeyword);
+        const detailList = await Promise.all(
+          searchResponse.results.slice(0, 50).map(result => result.data())
+        );
+
+        if (cancelled) return;
+        setResults(
+          detailList.map(item => ({
+            url: normalizeResultUrl(item.url),
+            title: item.meta?.title || '未命名书籍',
+            excerptHtml: item.excerpt || '',
+          }))
+        );
+      } catch {
+        if (!cancelled) {
+          setResults([]);
+          if (process.env.NODE_ENV === 'development') {
+            setErrorMessage('开发模式下请先执行 npm run build 生成 pagefind 索引，再使用 npm run preview 验证全文搜索。');
+          } else {
+            setErrorMessage('搜索索引加载失败，请稍后刷新页面重试。');
+          }
         }
+      } finally {
+        if (!cancelled) {
+          setIsSearching(false);
+        }
+      }
+    };
 
-        return {
-          book,
-          excerpt,
-          matchType: titleMatch ? 'title' : authorMatch ? 'author' : contentMatch ? 'content' : 'other',
-        };
-      })
-      .filter(Boolean);
-
-    return results;
-  }, [keyword, books]);
+    run();
+    return () => {
+      cancelled = true;
+    };
+  }, [trimmedKeyword]);
 
   return (
     <div className="page-container">
       <div className="page-content-4xl">
-        <h1 className="heading-gradient text-2xl md:text-3xl font-bold mb-8 md:mb-10">
-          全文搜索
-        </h1>
+        <h1 className="heading-gradient text-2xl md:text-3xl font-bold mb-8 md:mb-10">全文搜索</h1>
 
-        {/* Search Input */}
         <div className="mb-6 md:mb-8">
           <div className="relative">
             <input
@@ -82,83 +125,51 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
               </button>
             )}
           </div>
+          {isSearching && (
+            <p className="text-sm text-slate-500 mt-3">
+              {isIndexReady ? '正在检索...' : '正在加载搜索索引...'}
+            </p>
+          )}
+          {errorMessage && <p className="text-sm text-rose-600 mt-3">{errorMessage}</p>}
         </div>
 
-        {/* Search Results */}
-        {keyword ? (
+        {!trimmedKeyword ? (
+          <div className="text-center py-16">
+            <div className="text-6xl mb-4">📚</div>
+            <p className="text-slate-500 text-lg">输入关键词开始搜索</p>
+            <p className="text-slate-400 text-sm mt-2">全文检索基于静态索引，按需加载，避免首屏大包。</p>
+          </div>
+        ) : (
           <div>
             <div className="mb-4 text-slate-600">
-              <span>找到 {searchResults.length} 个结果</span>
+              <span>找到 {results.length} 个结果</span>
             </div>
-
-            {searchResults.length > 0 ? (
+            {results.length > 0 ? (
               <div className="space-y-6">
-                {searchResults.map(result => {
-                  if (!result) return null;
-                  const { book, excerpt, matchType } = result;
-                  return (
-                    <Link
-                      key={book.slug}
-                      href={`/books/${book.slug}`}
-                      className="surface-card surface-card-hover block p-6"
-                    >
-                      <div className="flex items-start gap-4">
-                        <div className="text-3xl">📖</div>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="text-xl font-semibold mb-2 text-slate-900">
-                            {book.title}
-                          </h3>
-                          <p className="text-slate-600 mb-3">
-                            作者：{book.author}
-                          </p>
-                          {excerpt && (
-                            <p className="text-sm text-slate-700 mb-3 line-clamp-3">
-                              {excerpt}
-                            </p>
-                          )}
-                          <div className="flex flex-wrap gap-2">
-                            <span className="chip-brand">
-                              {book.category}
-                            </span>
-                            {matchType === 'title' && (
-                              <span className="chip-success">
-                                标题匹配
-                              </span>
-                            )}
-                            {matchType === 'content' && (
-                              <span className="chip-info">
-                                内容匹配
-                              </span>
-                            )}
-                            {book.tags.slice(0, 3).map(tag => (
-                              <span key={tag} className="chip-muted">
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
+                {results.map(result => (
+                  <a key={result.url} href={result.url} className="surface-card surface-card-hover block p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="text-3xl">📖</div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-xl font-semibold mb-2 text-slate-900">{result.title}</h3>
+                        {result.excerptHtml && (
+                          <p
+                            className="text-sm text-slate-700 mb-2 line-clamp-3"
+                            dangerouslySetInnerHTML={{ __html: result.excerptHtml }}
+                          />
+                        )}
                       </div>
-                    </Link>
-                  );
-                })}
+                    </div>
+                  </a>
+                ))}
               </div>
             ) : (
               <div className="text-center py-16">
                 <div className="text-6xl mb-4">🔍</div>
                 <p className="text-slate-500 text-lg">未找到匹配的书籍</p>
-                <p className="text-slate-400 text-sm mt-2">
-                  试试其他关键词
-                </p>
+                <p className="text-slate-400 text-sm mt-2">试试其他关键词</p>
               </div>
             )}
-          </div>
-        ) : (
-          <div className="text-center py-16">
-            <div className="text-6xl mb-4">📚</div>
-            <p className="text-slate-500 text-lg">输入关键词开始搜索</p>
-            <p className="text-slate-400 text-sm mt-2">
-              支持搜索书籍标题、作者、分类、标签和全文内容
-            </p>
           </div>
         )}
       </div>

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { BookTreeNode, Book } from '@/lib/books';
+import { BookTreeNode, BookMeta } from '@/lib/books';
 
 interface SidebarProps {
   bookTree: BookTreeNode[];
@@ -22,7 +22,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
 
   // Get all books from tree
   const allBooks = useMemo(() => {
-    const books: Book[] = [];
+    const books: BookMeta[] = [];
     bookTree.forEach(category => {
       category.children?.forEach(node => {
         if (node.book) {

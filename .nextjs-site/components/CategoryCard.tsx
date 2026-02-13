@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { Book } from '@/lib/books';
+import { BookMeta } from '@/lib/books';
 
 interface CategoryCardProps {
   category: string;
-  books: Book[];
+  books: BookMeta[];
 }
 
 export default function CategoryCard({ category, books }: CategoryCardProps) {

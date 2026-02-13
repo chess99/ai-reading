@@ -2,10 +2,10 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { Book } from '@/lib/books';
+import { BookMeta } from '@/lib/books';
 
 interface SearchBarProps {
-  books: Book[];
+  books: BookMeta[];
   onRandomBook?: () => void;
   showFullSearch?: boolean;
 }

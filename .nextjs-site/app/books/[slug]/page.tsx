@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getAllBooks, getBookBySlug } from '@/lib/books';
+import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 
@@ -9,7 +9,7 @@ interface BookPageProps {
 
 // Generate static paths for all books
 export async function generateStaticParams() {
-  const books = getAllBooks();
+  const books = getAllBookMetas();
   return books.map(book => ({
     slug: book.slug,
   }));
@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 // Generate metadata for SEO
 export async function generateMetadata({ params }: BookPageProps) {
   const { slug } = await params;
-  const book = getBookBySlug(slug);
+  const book = getBookDetailBySlug(slug);
 
   if (!book) {
     return {
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: BookPageProps) {
 
 export default async function BookPage({ params }: BookPageProps) {
   const { slug } = await params;
-  const book = getBookBySlug(slug);
+  const book = getBookDetailBySlug(slug);
 
   if (!book) {
     notFound();
