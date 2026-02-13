@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-访问 http://localhost:3000/ai-reading
+访问 <http://localhost:3000/ai-reading>
 
 ## 构建
 
@@ -34,9 +34,10 @@ npm run build
 
 ## 目录结构
 
-```
+```text
 .nextjs-site/
 ├── app/                    # Next.js App Router 页面
+│   ├── not-found.tsx       # 全局 404 兜底页
 │   ├── layout.tsx         # 根布局
 │   ├── layout-client.tsx  # 客户端布局
 │   ├── page.tsx           # 首页
