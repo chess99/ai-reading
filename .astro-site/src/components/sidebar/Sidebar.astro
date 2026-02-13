@@ -1,0 +1,380 @@
+---
+/**
+ * 常驻侧边栏 - 使用 View Transitions 实现真正的常驻效果
+ * 参考 Obsidian 的设计
+ */
+import { getCollection } from 'astro:content';
+import { parseBookInfo } from '@/utils/bookParser';
+
+// 获取所有书籍数据
+const allBooks = await getCollection('books');
+
+// 按分类分组
+const booksByCategory = allBooks.reduce((acc, book) => {
+  const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
+  const info = parseBookInfo(relativePath);
+  if (!acc[info.category]) {
+    acc[info.category] = [];
+  }
+  acc[info.category].push({ ...book, info });
+  return acc;
+}, {} as Record<string, any[]>);
+
+// 分类列表
+const categories = Object.entries(booksByCategory)
+  .map(([name, books]) => ({
+    name,
+    count: books.length,
+    books: books.sort((a, b) => a.info.title.localeCompare(b.info.title, 'zh-CN')),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'));
+
+// 获取 base path
+const base = import.meta.env.BASE_URL;
+
+// 分类图标
+const categoryIcons: Record<string, string> = {
+  '个人成长': '🌱',
+  '健康运动': '💪',
+  '商业管理': '💼',
+  '投资': '💰',
+  '心理学': '🧠',
+  '思维方式': '🤔',
+  '社会科学': '🌍',
+};
+---
+
+<!-- 使用 transition:persist 使侧边栏在页面切换时保持状态 -->
+<aside class="sidebar" id="sidebar" transition:persist="sidebar">
+  <div class="sidebar-header">
+    <button class="sidebar-toggle" id="sidebar-toggle" aria-label="折叠侧边栏">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M3 8h10M8 3l5 5-5 5"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="sidebar-content">
+    <!-- 文件树 -->
+    <nav class="file-tree">
+      {
+        categories.map((category) => (
+          <div class="tree-folder" data-folder={category.name}>
+            <button class="folder-header" data-category={category.name}>
+              <svg class="folder-icon chevron" width="12" height="12" viewBox="0 0 12 12">
+                <path
+                  d="M4 2l4 4-4 4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+              <span class="folder-emoji">{categoryIcons[category.name] || '📚'}</span>
+              <span class="folder-name">{category.name}</span>
+              <span class="folder-count">{category.count}</span>
+            </button>
+            <div class="folder-content">
+              {category.books.map((book) => {
+                const slug = book.data.slug || book.id;
+                return (
+                  <a href={`${base}/books/${slug}`} class="file-item" data-slug={slug}>
+                    <svg class="file-icon" width="12" height="12" viewBox="0 0 12 12">
+                      <path
+                        d="M2 1h5l3 3v6a1 1 0 01-1 1H2a1 1 0 01-1-1V2a1 1 0 011-1z"
+                        stroke="currentColor"
+                        stroke-width="1"
+                        fill="none"
+                      />
+                    </svg>
+                    <span class="file-name">{book.info.title}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        ))
+      }
+    </nav>
+  </div>
+</aside>
+
+<script>
+  // 侧边栏折叠逻辑
+  function initSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('sidebar-toggle');
+
+    if (!sidebar || !toggleBtn) return;
+
+    // 从 localStorage 恢复状态
+    const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+    if (isCollapsed) {
+      sidebar.classList.add('collapsed');
+    }
+
+    // 折叠/展开
+    toggleBtn.addEventListener('click', () => {
+      const collapsed = sidebar.classList.toggle('collapsed');
+      localStorage.setItem('sidebar-collapsed', String(collapsed));
+    });
+
+    // 文件夹展开/折叠
+    const folderHeaders = document.querySelectorAll('.folder-header');
+    folderHeaders.forEach((header) => {
+      header.addEventListener('click', (e) => {
+        e.preventDefault();
+        const folder = header.closest('.tree-folder');
+        if (folder) {
+          const isExpanded = folder.classList.toggle('expanded');
+          const categoryName = header.getAttribute('data-category');
+          if (categoryName) {
+            // 保存展开状态
+            const expandedFolders = JSON.parse(
+              localStorage.getItem('expanded-folders') || '[]'
+            );
+            if (isExpanded) {
+              if (!expandedFolders.includes(categoryName)) {
+                expandedFolders.push(categoryName);
+              }
+            } else {
+              const index = expandedFolders.indexOf(categoryName);
+              if (index > -1) {
+                expandedFolders.splice(index, 1);
+              }
+            }
+            localStorage.setItem('expanded-folders', JSON.stringify(expandedFolders));
+          }
+        }
+      });
+    });
+
+    // 恢复文件夹展开状态
+    const expandedFolders = JSON.parse(localStorage.getItem('expanded-folders') || '[]');
+    expandedFolders.forEach((categoryName: string) => {
+      const folder = document.querySelector(`[data-folder="${categoryName}"]`);
+      if (folder) {
+        folder.classList.add('expanded');
+      }
+    });
+
+    // 高亮当前文件
+    const currentPath = window.location.pathname;
+    const fileItems = document.querySelectorAll('.file-item');
+    fileItems.forEach((item) => {
+      if (item.getAttribute('href') === currentPath) {
+        item.classList.add('active');
+        // 自动展开包含当前文件的文件夹
+        const folder = item.closest('.tree-folder');
+        if (folder) {
+          folder.classList.add('expanded');
+        }
+      }
+    });
+  }
+
+  // 初始化
+  initSidebar();
+
+  // View Transitions 页面加载后重新初始化
+  document.addEventListener('astro:page-load', () => {
+    initSidebar();
+  });
+</script>
+
+<style>
+  .sidebar {
+    position: fixed;
+    top: 60px; /* Header 高度 */
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    background: var(--color-bg, #ffffff);
+    border-right: 1px solid var(--color-border, #e1e4e8);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.25s ease;
+    z-index: 40;
+  }
+
+  .sidebar.collapsed {
+    width: 48px;
+  }
+
+  .sidebar-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 8px;
+    border-bottom: 1px solid var(--color-border, #e1e4e8);
+    flex-shrink: 0;
+  }
+
+  .sidebar-toggle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color-text-light, #7f8c8d);
+    transition: all 0.2s;
+  }
+
+  .sidebar-toggle:hover {
+    background: var(--color-bg-soft, #f8f9fa);
+    color: var(--color-text, #2c3e50);
+  }
+
+  .sidebar.collapsed .sidebar-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .sidebar.collapsed .sidebar-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* 文件树样式 */
+  .file-tree {
+    padding: 8px 0;
+  }
+
+  .tree-folder {
+    margin-bottom: 2px;
+  }
+
+  .folder-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--color-text, #2c3e50);
+    transition: background-color 0.15s;
+    text-align: left;
+  }
+
+  .folder-header:hover {
+    background: var(--color-bg-soft, #f8f9fa);
+  }
+
+  .folder-icon {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+
+  .tree-folder.expanded .folder-icon {
+    transform: rotate(90deg);
+  }
+
+  .folder-emoji {
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .folder-name {
+    flex: 1;
+    font-weight: 500;
+  }
+
+  .folder-count {
+    font-size: 11px;
+    color: var(--color-text-light, #7f8c8d);
+    background: var(--color-bg-soft, #f8f9fa);
+    padding: 2px 6px;
+    border-radius: 10px;
+  }
+
+  .folder-content {
+    display: none;
+    padding-left: 24px;
+  }
+
+  .tree-folder.expanded .folder-content {
+    display: block;
+  }
+
+  .file-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    font-size: 13px;
+    color: var(--color-text, #2c3e50);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.15s;
+    margin: 1px 0;
+  }
+
+  .file-item:hover {
+    background: var(--color-bg-soft, #f8f9fa);
+  }
+
+  .file-item.active {
+    background: var(--color-brand, #667eea);
+    color: white;
+  }
+
+  .file-item.active .file-icon {
+    color: white;
+  }
+
+  .file-icon {
+    flex-shrink: 0;
+    color: var(--color-text-light, #7f8c8d);
+  }
+
+  .file-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* 滚动条样式 */
+  .sidebar-content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .sidebar-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-content::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 4px;
+  }
+
+  .sidebar-content::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  /* 移动端隐藏 */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
+</style>

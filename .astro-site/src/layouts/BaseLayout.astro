@@ -1,10 +1,14 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import Sidebar from '@/components/sidebar/Sidebar.astro';
+
 interface Props {
   title?: string;
   description?: string;
   canonicalUrl?: string;
   ogImage?: string;
   ogType?: 'website' | 'article';
+  showSidebar?: boolean;
 }
 
 const {
@@ -13,6 +17,7 @@ const {
   canonicalUrl,
   ogImage,
   ogType = 'website',
+  showSidebar = false,
 } = Astro.props;
 
 // 获取 base path
@@ -47,10 +52,14 @@ const resolvedOgImage = ogImage && currentUrl
     <meta name="twitter:description" content={description} />
     {resolvedOgImage && <meta name="twitter:image" content={resolvedOgImage} />}
     <title>{title}</title>
+
+    <!-- View Transitions API -->
+    <ViewTransitions />
   </head>
   <body>
-    <div class="app">
-      <header class="header">
+    <div class="app" class:list={[{ 'has-sidebar': showSidebar }]}>
+      <!-- Header 使用 transition:persist 保持状态 -->
+      <header class="header" transition:persist="header">
         <div class="container">
           <a href={base} class="logo">AI 阅读</a>
           <nav class="nav">
@@ -65,10 +74,15 @@ const resolvedOgImage = ogImage && currentUrl
         </div>
       </header>
 
-      <main class="main">
+      <!-- 侧边栏 (使用 transition:persist 保持常驻) -->
+      {showSidebar && <Sidebar />}
+
+      <!-- 主内容区 (使用 transition:animate 添加过渡动画) -->
+      <main class="main" transition:animate="slide">
         <slot />
       </main>
 
+      <!-- Footer -->
       <footer class="footer">
         <div class="container">
           <p>基于 Astro 构建 · Copyright © 2024-present</p>
@@ -182,12 +196,31 @@ const resolvedOgImage = ogImage && currentUrl
         padding: 48px 0;
       }
 
+      /* 有侧边栏时的布局调整 */
+      .app.has-sidebar .main {
+        margin-left: 280px;
+        transition: margin-left 0.25s ease;
+      }
+
+      .app.has-sidebar .sidebar.collapsed ~ .main {
+        margin-left: 48px;
+      }
+
       .footer {
         background: var(--color-bg-soft);
         border-top: 1px solid var(--color-border);
         padding: 32px 0;
         text-align: center;
         color: var(--color-text-light);
+      }
+
+      .app.has-sidebar .footer {
+        margin-left: 280px;
+        transition: margin-left 0.25s ease;
+      }
+
+      .app.has-sidebar .sidebar.collapsed ~ * .footer {
+        margin-left: 48px;
       }
 
       @media (max-width: 768px) {
@@ -202,6 +235,28 @@ const resolvedOgImage = ogImage && currentUrl
         .main {
           padding: 24px 0;
         }
+
+        /* 移动端移除侧边栏边距 */
+        .app.has-sidebar .main,
+        .app.has-sidebar .footer {
+          margin-left: 0;
+        }
+      }
+
+      /* View Transitions 动画 */
+      @keyframes slide {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      [data-astro-transition='slide'] {
+        animation: slide 0.3s ease-out;
       }
     </style>
   </body>
