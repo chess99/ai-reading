@@ -1,0 +1,20 @@
+{
+  "name": "AI 阅读",
+  "short_name": "AI 阅读",
+  "description": "AI 驱动的书籍解读与知识分享平台",
+  "start_url": "/ai-reading/",
+  "scope": "/ai-reading/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/ai-reading/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -36,6 +36,12 @@ npm run preview
 
 将 `out/` 目录部署到静态托管服务（如 GitHub Pages）。
 
+## PWA
+
+- 已启用 `manifest.webmanifest` 与 `service worker`。
+- 入口路径与作用域固定为 `/ai-reading/`，与 `basePath` 对齐。
+- 可安装为桌面/移动端应用，离线时可回退到首页缓存。
+
 ## 技术栈
 
 - Next.js 16.1.6 (App Router + Turbopack)
@@ -63,7 +69,7 @@ npm run preview
 │   └── books.ts           # 书籍数据处理
 ├── docs/                  # 开发与协作文档
 │   └── development.md     # 开发、构建与预览流程
-└── public/                # 静态资源
+└── public/                # 静态资源与 PWA 资源
 ```
 
 ## 书籍数据

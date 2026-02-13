@@ -45,6 +45,15 @@ npm run preview
 - This command mounts `out/` under `/ai-reading` locally, matching production basePath.
 - Use this mode to verify full-text search behavior exactly as production.
 
+## PWA Verification
+
+After `npm run build` and `npm run preview`:
+
+1. Open `http://localhost:4173/ai-reading/`.
+2. Verify manifest is reachable at `http://localhost:4173/ai-reading/manifest.webmanifest`.
+3. In browser devtools, check service worker registration scope is `/ai-reading/`.
+4. Optionally test offline mode: static pages should fall back to cached homepage.
+
 ## Deploy
 
 Deploy the `out/` directory (including `out/pagefind/`) to static hosting.

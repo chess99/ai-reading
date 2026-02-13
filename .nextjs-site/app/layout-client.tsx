@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import { BookTreeNode } from '@/lib/books';
@@ -12,6 +12,18 @@ interface LayoutClientProps {
 
 export default function LayoutClient({ bookTree, children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    if (!('serviceWorker' in navigator)) {
+      return;
+    }
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+    const swPath = `${basePath}/sw.js`;
+    const scope = `${basePath}/`;
+    navigator.serviceWorker.register(swPath, { scope }).catch(() => {
+      // keep silent in production, SW is optional enhancement
+    });
+  }, []);
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
