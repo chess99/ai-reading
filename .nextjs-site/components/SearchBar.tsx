@@ -74,7 +74,10 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
         {showFullSearch && (
           <Link
             href="/search"
-            className="hidden md:flex items-center gap-2 px-6 h-12 md:h-14 bg-brand hover:bg-brand-dark text-white font-medium rounded-xl transition-colors"
+            className="hidden sm:flex items-center gap-2 px-4 md:px-6 h-12 md:h-14 text-white font-medium rounded-xl transition-colors whitespace-nowrap"
+            style={{ backgroundColor: '#667eea' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#764ba2'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#667eea'}
             title="全文搜索"
           >
             <span>🔍</span>
@@ -85,7 +88,8 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
         {/* Random Button */}
         <button
           onClick={onRandomBook || handleRandomBook}
-          className="flex items-center gap-2 px-4 md:px-6 h-12 md:h-14 bg-gradient-to-r from-brand to-brand-dark hover:opacity-90 text-white font-medium rounded-xl transition-opacity"
+          className="flex items-center gap-2 px-4 md:px-6 h-12 md:h-14 text-white font-medium rounded-xl transition-opacity hover:opacity-90 whitespace-nowrap"
+          style={{ background: 'linear-gradient(to right, #667eea, #764ba2)' }}
           title="随机一本书"
         >
           <span>🎲</span>
