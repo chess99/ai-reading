@@ -56,30 +56,48 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
   }, [keyword, books]);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-6 md:py-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
+        <h1
+          className="text-2xl md:text-3xl font-bold mb-6 md:mb-8"
+          style={{
+            background: 'linear-gradient(to right, #667eea, #764ba2)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
+        >
           全文搜索
         </h1>
 
         {/* Search Input */}
-        <div className="mb-8">
+        <div className="mb-6 md:mb-8">
           <div className="relative">
             <input
               type="text"
               value={keyword}
               onChange={e => setKeyword(e.target.value)}
               placeholder="搜索书籍标题、作者、内容..."
-              className="w-full h-14 pl-12 pr-4 border-2 border-brand rounded-xl text-base font-medium focus:outline-none focus:ring-4 focus:ring-brand/20 transition-all"
+              className="w-full h-14 pl-[50px] pr-4 border-2 rounded-xl text-base font-medium outline-none transition-all"
+              style={{
+                borderColor: '#667eea',
+                boxShadow: 'none',
+              }}
+              onFocus={(e) => {
+                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.2)';
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.boxShadow = 'none';
+              }}
               autoFocus
             />
-            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xl">
+            <span className="absolute left-[18px] top-1/2 -translate-y-1/2 text-xl flex items-center pointer-events-none">
               🔍
             </span>
             {keyword && (
               <button
                 onClick={() => setKeyword('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-lg"
               >
                 ✕
               </button>
