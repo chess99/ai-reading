@@ -22,15 +22,45 @@ const { book } = Astro.props;
 const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
 const info = parseBookInfo(relativePath);
 
+function extractShareDescription(markdown: string, maxLength = 140): string {
+  const withoutFrontmatter = markdown.replace(/^---[\s\S]*?---\s*/, '');
+  const plainText = withoutFrontmatter
+    .replace(/!\[[^\]]*]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[`*_>#-]/g, ' ')
+    .replace(/\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (plainText.length <= maxLength) {
+    return plainText;
+  }
+
+  return `${plainText.slice(0, maxLength).trim()}...`;
+}
+
 // With Glob Loader, we need to use render differently
 import { render } from 'astro:content';
 const { Content } = await render(book);
 
-// 获取 base path
+// 获取 base path 和完整 URL
 const base = import.meta.env.BASE_URL;
+const site = import.meta.env.SITE || 'https://cearl.cc';
+const slug = book.data.slug || book.id.replace(/\.md$/, '');
+const canonicalUrl = `${site}${base}/books/${slug}`;
+const ogImageUrl = `${site}${base}/og-default.jpg`;
+
+const pageTitle = `${info.title}${info.author ? ` - ${formatAuthor(info.author)}` : ''} - AI 阅读`;
+const pageDescription = extractShareDescription(book.body || '');
 ---
 
-<BaseLayout title={`${info.title} - ${info.author || ''} - AI 阅读`}>
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  ogImage={ogImageUrl}
+  ogType="article"
+>
   <div class="container">
     <article class="book-article" data-pagefind-body>
       <!-- 面包屑导航 -->
