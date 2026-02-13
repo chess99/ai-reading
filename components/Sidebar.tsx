@@ -1,21 +1,70 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { BookTreeNode } from '@/lib/books';
+import { BookTreeNode, Book } from '@/lib/books';
 
 interface SidebarProps {
   bookTree: BookTreeNode[];
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 type TabType = 'files' | 'search' | 'tags';
 
-export default function Sidebar({ bookTree }: SidebarProps) {
+export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<TabType>('files');
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
     new Set()
   );
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  // Get all books from tree
+  const allBooks = useMemo(() => {
+    const books: Book[] = [];
+    bookTree.forEach(category => {
+      category.children?.forEach(node => {
+        if (node.book) {
+          books.push(node.book);
+        }
+      });
+    });
+    return books;
+  }, [bookTree]);
+
+  // Get all tags with counts
+  const tags = useMemo(() => {
+    const tagCount = new Map<string, number>();
+    allBooks.forEach(book => {
+      book.tags.forEach(tag => {
+        tagCount.set(tag, (tagCount.get(tag) || 0) + 1);
+      });
+    });
+    return Array.from(tagCount.entries())
+      .map(([tag, count]) => ({ tag, count }))
+      .sort((a, b) => b.count - a.count);
+  }, [allBooks]);
+
+  // Filter books by search keyword
+  const searchResults = useMemo(() => {
+    if (!searchKeyword.trim()) return [];
+    const lowerKeyword = searchKeyword.toLowerCase();
+    return allBooks.filter(book => {
+      return (
+        book.title.toLowerCase().includes(lowerKeyword) ||
+        book.author.toLowerCase().includes(lowerKeyword) ||
+        book.category.toLowerCase().includes(lowerKeyword) ||
+        book.tags.some(tag => tag.toLowerCase().includes(lowerKeyword))
+      );
+    });
+  }, [searchKeyword, allBooks]);
+
+  // Filter books by tag
+  const booksByTag = useMemo(() => {
+    if (!selectedTag) return [];
+    return allBooks.filter(book => book.tags.includes(selectedTag));
+  }, [selectedTag, allBooks]);
 
   const toggleCategory = (categoryName: string) => {
     const newExpanded = new Set(expandedCategories);
@@ -37,13 +86,51 @@ export default function Sidebar({ bookTree }: SidebarProps) {
   };
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Header */}
-      <div className="p-4 border-b border-gray-200">
-        <h1 className="text-xl font-bold bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
-          AI Reading
-        </h1>
-      </div>
+    <>
+      {/* Mobile overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={onClose}
+        />
+      )}
+
+      {/* Sidebar */}
+      <div
+        className={`
+          fixed md:static inset-y-0 left-0 z-50
+          w-64 bg-white border-r border-gray-200
+          transform transition-transform duration-300 ease-in-out
+          flex flex-col h-full
+          ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+        `}
+      >
+        {/* Header */}
+        <div className="p-4 border-b border-gray-200 flex items-center justify-between">
+          <Link
+            href="/"
+            onClick={onClose}
+            className="text-xl font-bold bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          >
+            AI 阅读
+          </Link>
+          <button
+            onClick={onClose}
+            className="md:hidden p-1 hover:bg-gray-100 rounded"
+          >
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
 
       {/* Tab Navigation */}
       <div className="flex border-b border-gray-200">
@@ -158,20 +245,100 @@ export default function Sidebar({ bookTree }: SidebarProps) {
               onChange={e => setSearchKeyword(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
             />
-            <div className="mt-4 text-sm text-gray-500">
-              {searchKeyword
-                ? `搜索功能将在下一步实现`
-                : '输入关键词搜索书籍'}
-            </div>
+            {searchKeyword && (
+              <div className="mt-4 space-y-2">
+                {searchResults.length > 0 ? (
+                  <>
+                    <div className="text-xs text-gray-500 px-2">
+                      找到 {searchResults.length} 个结果
+                    </div>
+                    {searchResults.map(book => (
+                      <Link
+                        key={book.slug}
+                        href={`/books/${book.slug}`}
+                        onClick={onClose}
+                        className="block p-2 hover:bg-gray-50 rounded transition-colors"
+                      >
+                        <div className="text-sm font-medium text-gray-900 mb-1 line-clamp-1">
+                          {book.title}
+                        </div>
+                        <div className="text-xs text-gray-600 line-clamp-1">
+                          {book.author}
+                        </div>
+                        <div className="text-xs text-brand mt-1">
+                          {book.category}
+                        </div>
+                      </Link>
+                    ))}
+                  </>
+                ) : (
+                  <div className="text-sm text-gray-500 text-center py-8">
+                    未找到匹配的书籍
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         )}
 
         {activeTab === 'tags' && (
           <div className="p-4">
-            <div className="text-sm text-gray-500">标签功能将在下一步实现</div>
+            {selectedTag ? (
+              <>
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="font-medium text-gray-900">
+                    标签：{selectedTag}
+                  </h3>
+                  <button
+                    onClick={() => setSelectedTag(null)}
+                    className="text-xs text-brand hover:text-brand-dark"
+                  >
+                    返回
+                  </button>
+                </div>
+                <div className="space-y-2">
+                  {booksByTag.map(book => (
+                    <Link
+                      key={book.slug}
+                      href={`/books/${book.slug}`}
+                      onClick={onClose}
+                      className="block p-2 hover:bg-gray-50 rounded transition-colors"
+                    >
+                      <div className="text-sm font-medium text-gray-900 mb-1 line-clamp-1">
+                        {book.title}
+                      </div>
+                      <div className="text-xs text-gray-600 line-clamp-1">
+                        {book.author}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>
+                {tags.length > 0 ? (
+                  <div className="flex flex-wrap gap-2">
+                    {tags.map(({ tag, count }) => (
+                      <button
+                        key={tag}
+                        onClick={() => setSelectedTag(tag)}
+                        className="px-3 py-1.5 bg-gray-100 hover:bg-brand hover:text-white text-gray-700 text-sm rounded-lg transition-colors"
+                      >
+                        {tag} ({count})
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-sm text-gray-500 text-center py-8">
+                    暂无标签
+                  </div>
+                )}
+              </>
+            )}
           </div>
         )}
       </div>
-    </div>
+      </div>
+    </>
   );
 }
