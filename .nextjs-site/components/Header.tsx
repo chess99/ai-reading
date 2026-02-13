@@ -37,16 +37,22 @@ export default function Header({ onMenuClick, showMenuButton = true }: HeaderPro
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl font-bold bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="text-xl md:text-2xl font-bold hover:opacity-80 transition-opacity"
+            style={{
+              background: 'linear-gradient(to right, #667eea, #764ba2)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
           >
             AI 阅读
           </Link>
 
           {/* Navigation */}
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-4 md:gap-6">
             <Link
               href="/"
-              className="text-gray-700 hover:text-brand font-medium transition-colors"
+              className="text-sm md:text-base text-gray-700 font-medium transition-colors hover:text-[#667eea]"
             >
               首页
             </Link>
@@ -54,9 +60,9 @@ export default function Header({ onMenuClick, showMenuButton = true }: HeaderPro
               href="https://cearl.cc/BookDistill/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-gray-700 hover:text-brand font-medium transition-colors"
+              className="inline-flex items-center gap-1 text-sm md:text-base text-gray-700 font-medium transition-colors hover:text-[#667eea]"
             >
-              BookDistill
+              <span>BookDistill</span>
               <svg
                 className="w-3 h-3 opacity-60"
                 fill="none"
