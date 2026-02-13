@@ -105,18 +105,24 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
           ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}
       >
-        {/* Header */}
-        <div className="p-4 border-b border-gray-200 flex items-center justify-between">
+        {/* Header - Only show on mobile */}
+        <div className="md:hidden p-4 border-b border-gray-200 flex items-center justify-between">
           <Link
             href="/"
             onClick={onClose}
-            className="text-xl font-bold bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="text-xl font-bold hover:opacity-80 transition-opacity"
+            style={{
+              background: 'linear-gradient(to right, #667eea, #764ba2)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
           >
             AI 阅读
           </Link>
           <button
             onClick={onClose}
-            className="md:hidden p-1 hover:bg-gray-100 rounded"
+            className="p-1 hover:bg-gray-100 rounded"
           >
             <svg
               className="w-5 h-5 text-gray-600"

@@ -42,28 +42,39 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
   const handleRandomBook = () => {
     if (books.length === 0) return;
     const randomBook = books[Math.floor(Math.random() * books.length)];
-    window.location.href = `/books/${randomBook.slug}`;
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+    window.location.href = `${basePath}/books/${randomBook.slug}`;
   };
 
   return (
     <div className="relative">
-      <div className="flex gap-3 md:gap-4">
+      <div className="flex flex-wrap gap-4">
         {/* Search Input */}
-        <div className="flex-1 relative">
+        <div className="flex-1 min-w-[200px] relative">
           <input
             type="text"
             value={keyword}
             onChange={e => setKeyword(e.target.value)}
             placeholder="搜索书籍标题、作者..."
-            className="w-full h-12 md:h-14 pl-12 pr-4 border-2 border-brand rounded-xl text-base font-medium focus:outline-none focus:ring-4 focus:ring-brand/20 transition-all"
+            className="w-full h-14 pl-[50px] pr-4 border-2 rounded-xl text-base font-medium outline-none transition-all"
+            style={{
+              borderColor: '#667eea',
+              boxShadow: 'none',
+            }}
+            onFocus={(e) => {
+              e.currentTarget.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.2)';
+            }}
+            onBlur={(e) => {
+              e.currentTarget.style.boxShadow = 'none';
+            }}
           />
-          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xl">
+          <span className="absolute left-[18px] top-1/2 -translate-y-1/2 text-xl flex items-center pointer-events-none">
             🔍
           </span>
           {keyword && (
             <button
               onClick={handleClear}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-lg"
             >
               ✕
             </button>
@@ -74,13 +85,23 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
         {showFullSearch && (
           <Link
             href="/search"
-            className="hidden sm:flex items-center gap-2 px-4 md:px-6 h-12 md:h-14 text-white font-medium rounded-xl transition-colors whitespace-nowrap"
-            style={{ backgroundColor: '#667eea' }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#764ba2'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#667eea'}
+            className="flex items-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
+            style={{
+              borderColor: '#667eea',
+              backgroundColor: 'white',
+              color: '#2c3e50',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#667eea';
+              e.currentTarget.style.color = 'white';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'white';
+              e.currentTarget.style.color = '#2c3e50';
+            }}
             title="全文搜索"
           >
-            <span>🔍</span>
+            <span className="text-xl">🔍</span>
             <span>全文搜索</span>
           </Link>
         )}
@@ -88,12 +109,24 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
         {/* Random Button */}
         <button
           onClick={onRandomBook || handleRandomBook}
-          className="flex items-center gap-2 px-4 md:px-6 h-12 md:h-14 text-white font-medium rounded-xl transition-opacity hover:opacity-90 whitespace-nowrap"
-          style={{ background: 'linear-gradient(to right, #667eea, #764ba2)' }}
+          className="flex items-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
+          style={{
+            borderColor: '#667eea',
+            backgroundColor: 'white',
+            color: '#2c3e50',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#667eea';
+            e.currentTarget.style.color = 'white';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'white';
+            e.currentTarget.style.color = '#2c3e50';
+          }}
           title="随机一本书"
         >
-          <span>🎲</span>
-          <span className="hidden sm:inline">随机一本</span>
+          <span className="text-xl">🎲</span>
+          <span>随机一本</span>
         </button>
       </div>
 
