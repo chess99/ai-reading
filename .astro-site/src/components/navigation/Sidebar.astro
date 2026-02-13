@@ -1,0 +1,235 @@
+---
+/**
+ * 桌面端侧边栏
+ */
+import FileTree from './FileTree.astro';
+import SearchPanel from './SearchPanel.astro';
+import TagList from './TagList.astro';
+import type { TagData } from '@/utils/tagExtractor';
+
+interface CategoryData {
+  name: string;
+  count: number;
+}
+
+interface Props {
+  categories: CategoryData[];
+  tags: TagData[];
+  baseUrl: string;
+  currentView?: 'files' | 'search' | 'tags';
+  currentCategory?: string;
+}
+
+const { categories, tags, baseUrl, currentView = 'files', currentCategory } = Astro.props;
+---
+
+<aside class="sidebar" data-collapsed="false" role="complementary" aria-label="侧边栏">
+  <button class="sidebar-toggle" aria-label="切换侧边栏" title="切换侧边栏 (Cmd+B)">
+    <span class="toggle-icon">←</span>
+  </button>
+
+  <div class="sidebar-header">
+    <button
+      class:list={['view-tab', { active: currentView === 'files' }]}
+      data-view="files"
+      aria-label="文件视图"
+      aria-pressed={currentView === 'files'}
+      title="文件 (Alt+1)"
+    >
+      <span class="tab-icon">📁</span>
+      <span class="tab-label">Files</span>
+    </button>
+
+    <button
+      class:list={['view-tab', { active: currentView === 'search' }]}
+      data-view="search"
+      aria-label="搜索视图"
+      aria-pressed={currentView === 'search'}
+      title="搜索 (Alt+2, Cmd+K)"
+    >
+      <span class="tab-icon">🔍</span>
+      <span class="tab-label">Search</span>
+    </button>
+
+    <button
+      class:list={['view-tab', { active: currentView === 'tags' }]}
+      data-view="tags"
+      aria-label="标签视图"
+      aria-pressed={currentView === 'tags'}
+      title="标签 (Alt+3)"
+    >
+      <span class="tab-icon">🏷️</span>
+      <span class="tab-label">Tags</span>
+    </button>
+  </div>
+
+  <div class="sidebar-content">
+    <div
+      class:list={['view-panel', { active: currentView === 'files' }]}
+      data-view-panel="files"
+      aria-hidden={currentView !== 'files'}
+    >
+      <FileTree categories={categories} baseUrl={baseUrl} currentCategory={currentCategory} />
+    </div>
+
+    <div
+      class:list={['view-panel', { active: currentView === 'search' }]}
+      data-view-panel="search"
+      aria-hidden={currentView !== 'search'}
+    >
+      <SearchPanel baseUrl={baseUrl} />
+    </div>
+
+    <div
+      class:list={['view-panel', { active: currentView === 'tags' }]}
+      data-view-panel="tags"
+      aria-hidden={currentView !== 'tags'}
+    >
+      <TagList tags={tags} baseUrl={baseUrl} />
+    </div>
+  </div>
+</aside>
+
+<style>
+  .sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    border-right: 1px solid var(--border-color, #e5e7eb);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease, transform 0.3s ease;
+    z-index: 50;
+    flex-shrink: 0;
+  }
+
+  .sidebar[data-collapsed='true'] {
+    width: 48px;
+  }
+
+  .sidebar[data-collapsed='true'] .tab-label,
+  .sidebar[data-collapsed='true'] .sidebar-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sidebar-toggle {
+    position: absolute;
+    top: 12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-toggle:hover {
+    background: var(--hover-bg, #f3f4f6);
+  }
+
+  .sidebar[data-collapsed='true'] .sidebar-toggle {
+    transform: rotate(180deg);
+  }
+
+  .toggle-icon {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .sidebar-header {
+    display: flex;
+    border-bottom: 1px solid var(--border-color, #e5e7eb);
+    flex-shrink: 0;
+  }
+
+  .view-tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px 8px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-secondary, #6b7280);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .view-tab:hover {
+    background: var(--hover-bg, #f9fafb);
+    color: var(--text-color, #1f2937);
+  }
+
+  .view-tab.active {
+    color: var(--primary-color, #3b82f6);
+    border-bottom-color: var(--primary-color, #3b82f6);
+    background: var(--active-bg, #eff6ff);
+  }
+
+  .tab-icon {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .tab-label {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-content {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.3s ease;
+  }
+
+  .view-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  .view-panel.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 移动端隐藏 */
+  @media (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  /* 中等屏幕优化 */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+      width: 240px;
+    }
+
+    .sidebar[data-collapsed='true'] {
+      width: 48px;
+    }
+  }
+</style>

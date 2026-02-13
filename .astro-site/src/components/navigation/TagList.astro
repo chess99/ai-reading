@@ -1,0 +1,335 @@
+---
+/**
+ * 标签列表组件
+ */
+import type { TagData } from '@/utils/tagExtractor';
+
+interface Props {
+  tags: TagData[];
+  baseUrl: string;
+}
+
+const { tags, baseUrl } = Astro.props;
+---
+
+<div class="tag-list">
+  <div class="tag-header">
+    <h3 class="tag-title">标签</h3>
+    <button class="tag-search-toggle" aria-label="搜索标签">
+      🔍
+    </button>
+  </div>
+
+  <div class="tag-search" style="display: none;">
+    <input
+      type="text"
+      id="tag-filter"
+      class="tag-filter-input"
+      placeholder="筛选标签..."
+      autocomplete="off"
+    />
+  </div>
+
+  <div class="tag-items">
+    {
+      tags.map((tag) => (
+        <button
+          class="tag-item"
+          data-tag={tag.name}
+          data-count={tag.count}
+          data-books={JSON.stringify(tag.books)}
+        >
+          <span class="tag-name">{tag.name}</span>
+          <span class="tag-count">{tag.count}</span>
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="tag-empty" style="display: none;">
+    <p>未找到匹配的标签</p>
+  </div>
+
+  <div class="tag-details" style="display: none;">
+    <div class="tag-details-header">
+      <button class="tag-back" aria-label="返回">←</button>
+      <h4 class="tag-details-title"></h4>
+    </div>
+    <div class="tag-details-books"></div>
+  </div>
+</div>
+
+<script>
+  const searchToggle = document.querySelector<HTMLButtonElement>('.tag-search-toggle');
+  const searchBox = document.querySelector<HTMLElement>('.tag-search');
+  const filterInput = document.querySelector<HTMLInputElement>('#tag-filter');
+  const tagItems = document.querySelectorAll<HTMLElement>('.tag-item');
+  const emptyState = document.querySelector<HTMLElement>('.tag-empty');
+  const tagList = document.querySelector<HTMLElement>('.tag-items');
+  const tagDetails = document.querySelector<HTMLElement>('.tag-details');
+  const tagDetailsTitle = document.querySelector<HTMLElement>('.tag-details-title');
+  const tagDetailsBooks = document.querySelector<HTMLElement>('.tag-details-books');
+  const backButton = document.querySelector<HTMLButtonElement>('.tag-back');
+
+  let isSearchVisible = false;
+
+  // 切换搜索框
+  searchToggle?.addEventListener('click', () => {
+    isSearchVisible = !isSearchVisible;
+    if (searchBox) {
+      searchBox.style.display = isSearchVisible ? 'block' : 'none';
+    }
+    if (isSearchVisible) {
+      filterInput?.focus();
+    } else {
+      if (filterInput) {
+        filterInput.value = '';
+        filterInput.dispatchEvent(new Event('input'));
+      }
+    }
+  });
+
+  // 筛选标签
+  filterInput?.addEventListener('input', (e) => {
+    const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    tagItems.forEach((item) => {
+      const tagName = item.getAttribute('data-tag') || '';
+      const matches = tagName.toLowerCase().includes(query);
+      item.style.display = matches ? 'inline-flex' : 'none';
+      if (matches) visibleCount++;
+    });
+
+    if (emptyState) {
+      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  });
+
+  // ESC 关闭搜索
+  filterInput?.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchToggle?.click();
+    }
+  });
+
+  // 点击标签显示详情
+  tagItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      const tagName = item.getAttribute('data-tag') || '';
+      const booksJson = item.getAttribute('data-books') || '[]';
+      const books = JSON.parse(booksJson);
+
+      if (tagDetailsTitle) {
+        tagDetailsTitle.textContent = tagName;
+      }
+
+      if (tagDetailsBooks) {
+        tagDetailsBooks.innerHTML = books
+          .map(
+            (slug: string) =>
+              `<a href="${window.location.pathname.replace(/\/[^/]*$/, '')}/books/${slug}" class="book-link">${slug}</a>`
+          )
+          .join('');
+      }
+
+      if (tagList) tagList.style.display = 'none';
+      if (tagDetails) tagDetails.style.display = 'block';
+    });
+  });
+
+  // 返回按钮
+  backButton?.addEventListener('click', () => {
+    if (tagList) tagList.style.display = 'block';
+    if (tagDetails) tagDetails.style.display = 'none';
+  });
+</script>
+
+<style>
+  .tag-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .tag-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color, #e5e7eb);
+    flex-shrink: 0;
+  }
+
+  .tag-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color, #1f2937);
+  }
+
+  .tag-search-toggle {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  .tag-search-toggle:hover {
+    background-color: var(--hover-bg, #f3f4f6);
+  }
+
+  .tag-search {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color, #e5e7eb);
+    flex-shrink: 0;
+  }
+
+  .tag-filter-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .tag-filter-input:focus {
+    border-color: var(--primary-color, #3b82f6);
+  }
+
+  .tag-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-content: flex-start;
+  }
+
+  .tag-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--tag-bg, #f3f4f6);
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 16px;
+    font-size: 13px;
+    color: var(--text-color, #1f2937);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tag-item:hover {
+    background: var(--hover-bg, #e5e7eb);
+    border-color: var(--primary-color, #3b82f6);
+  }
+
+  .tag-name {
+    font-weight: 500;
+  }
+
+  .tag-count {
+    font-size: 11px;
+    color: var(--text-secondary, #6b7280);
+    background: white;
+    padding: 2px 6px;
+    border-radius: 8px;
+  }
+
+  .tag-empty {
+    padding: 32px 16px;
+    text-align: center;
+    color: var(--text-secondary, #6b7280);
+    font-size: 14px;
+  }
+
+  .tag-details {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-details-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color, #e5e7eb);
+    flex-shrink: 0;
+  }
+
+  .tag-back {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  .tag-back:hover {
+    background-color: var(--hover-bg, #f3f4f6);
+  }
+
+  .tag-details-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color, #1f2937);
+  }
+
+  .tag-details-books {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .book-link {
+    padding: 10px 12px;
+    background: var(--tag-bg, #f3f4f6);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-color, #1f2937);
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+
+  .book-link:hover {
+    background: var(--hover-bg, #e5e7eb);
+  }
+
+  /* 滚动条样式 */
+  .tag-items::-webkit-scrollbar,
+  .tag-details-books::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .tag-items::-webkit-scrollbar-track,
+  .tag-details-books::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .tag-items::-webkit-scrollbar-thumb,
+  .tag-details-books::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+
+  .tag-items::-webkit-scrollbar-thumb:hover,
+  .tag-details-books::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+</style>

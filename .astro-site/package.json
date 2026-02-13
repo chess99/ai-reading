@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
+    "@pagefind/default-ui": "^1.4.0",
     "pagefind": "^1.0.0",
     "pinyin-pro": "^3.28.0",
     "typescript": "^5.6.0"

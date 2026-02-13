@@ -1,10 +1,18 @@
 ---
+import NavigationShell from '@/components/navigation/NavigationShell.astro';
+import { getCollection } from 'astro:content';
+import { parseBookInfo } from '@/utils/bookParser';
+import { extractAllTags } from '@/utils/tagExtractor';
+
 interface Props {
   title?: string;
   description?: string;
   canonicalUrl?: string;
   ogImage?: string;
   ogType?: 'website' | 'article';
+  showNavigation?: boolean;
+  currentView?: 'files' | 'search' | 'tags';
+  currentCategory?: string;
 }
 
 const {
@@ -13,6 +21,9 @@ const {
   canonicalUrl,
   ogImage,
   ogType = 'website',
+  showNavigation = false,
+  currentView = 'files',
+  currentCategory,
 } = Astro.props;
 
 // 获取 base path
@@ -22,6 +33,32 @@ const resolvedCanonicalUrl = canonicalUrl || currentUrl;
 const resolvedOgImage = ogImage && currentUrl
   ? new URL(ogImage, currentUrl).toString()
   : undefined;
+
+// 准备导航数据
+let categories: any[] = [];
+let tags: any[] = [];
+
+if (showNavigation) {
+  const allBooks = await getCollection('books');
+
+  // 按分类分组
+  const booksByCategory = allBooks.reduce((acc, book) => {
+    const relativePath = (book.filePath || book.id).replace(/^\.\.\/books\//, '');
+    const info = parseBookInfo(relativePath);
+    if (!acc[info.category]) {
+      acc[info.category] = [];
+    }
+    acc[info.category].push({ ...book, info });
+    return acc;
+  }, {} as Record<string, any[]>);
+
+  categories = Object.entries(booksByCategory).map(([name, books]) => ({
+    name,
+    count: books.length,
+  }));
+
+  tags = extractAllTags(allBooks);
+}
 ---
 
 <!DOCTYPE html>
@@ -65,9 +102,21 @@ const resolvedOgImage = ogImage && currentUrl
         </div>
       </header>
 
-      <main class="main">
-        <slot />
-      </main>
+      {showNavigation ? (
+        <NavigationShell
+          categories={categories}
+          tags={tags}
+          baseUrl={base}
+          currentView={currentView}
+          currentCategory={currentCategory}
+        >
+          <slot />
+        </NavigationShell>
+      ) : (
+        <main class="main">
+          <slot />
+        </main>
+      )}
 
       <footer class="footer">
         <div class="container">
@@ -89,6 +138,18 @@ const resolvedOgImage = ogImage && currentUrl
         --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
         --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
         --radius: 12px;
+
+        /* 导航系统颜色变量 */
+        --primary-color: #3b82f6;
+        --text-color: #1f2937;
+        --text-secondary: #6b7280;
+        --border-color: #e5e7eb;
+        --hover-bg: #f3f4f6;
+        --active-bg: #dbeafe;
+        --tag-bg: #f3f4f6;
+        --count-bg: #f3f4f6;
+        --tips-bg: #f9fafb;
+        --result-bg: #f9fafb;
       }
 
       * {

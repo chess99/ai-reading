@@ -1,0 +1,192 @@
+---
+/**
+ * 导航外壳 - 整合侧边栏和底部 Tab 栏
+ */
+import Sidebar from './Sidebar.astro';
+import TabBar from './TabBar.astro';
+import FileTree from './FileTree.astro';
+import SearchPanel from './SearchPanel.astro';
+import TagList from './TagList.astro';
+import type { TagData } from '@/utils/tagExtractor';
+
+interface CategoryData {
+  name: string;
+  count: number;
+}
+
+interface Props {
+  categories: CategoryData[];
+  tags: TagData[];
+  baseUrl: string;
+  currentView?: 'files' | 'search' | 'tags';
+  currentCategory?: string;
+}
+
+const { categories, tags, baseUrl, currentView = 'files', currentCategory } = Astro.props;
+---
+
+<div class="navigation-shell">
+  <!-- 桌面端侧边栏 -->
+  <Sidebar
+    categories={categories}
+    tags={tags}
+    baseUrl={baseUrl}
+    currentView={currentView}
+    currentCategory={currentCategory}
+  />
+
+  <!-- 主内容区 -->
+  <div class="main-content-wrapper">
+    <!-- 移动端视图面板 -->
+    <div class="mobile-panels">
+      <div
+        class:list={['mobile-panel', { active: currentView === 'files' }]}
+        data-view-panel="files"
+        aria-hidden={currentView !== 'files'}
+      >
+        <div class="mobile-panel-header">
+          <h2 class="mobile-panel-title">分类</h2>
+        </div>
+        <div class="mobile-panel-content">
+          <FileTree
+            categories={categories}
+            baseUrl={baseUrl}
+            currentCategory={currentCategory}
+          />
+        </div>
+      </div>
+
+      <div
+        class:list={['mobile-panel', { active: currentView === 'search' }]}
+        data-view-panel="search"
+        aria-hidden={currentView !== 'search'}
+      >
+        <div class="mobile-panel-header">
+          <h2 class="mobile-panel-title">搜索</h2>
+        </div>
+        <div class="mobile-panel-content">
+          <SearchPanel baseUrl={baseUrl} />
+        </div>
+      </div>
+
+      <div
+        class:list={['mobile-panel', { active: currentView === 'tags' }]}
+        data-view-panel="tags"
+        aria-hidden={currentView !== 'tags'}
+      >
+        <div class="mobile-panel-header">
+          <h2 class="mobile-panel-title">标签</h2>
+        </div>
+        <div class="mobile-panel-content">
+          <TagList tags={tags} baseUrl={baseUrl} />
+        </div>
+      </div>
+    </div>
+
+    <!-- 页面主内容 -->
+    <main class="page-content">
+      <slot />
+    </main>
+  </div>
+
+  <!-- 移动端底部 Tab 栏 -->
+  <TabBar currentView={currentView} />
+</div>
+
+<!-- 导入状态管理脚本 -->
+<script src="@/scripts/navigationState.ts"></script>
+
+<style>
+  .navigation-shell {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .main-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  /* 移动端面板 */
+  .mobile-panels {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .navigation-shell {
+      flex-direction: column;
+      padding-bottom: 64px; /* Tab 栏高度 */
+    }
+
+    .mobile-panels {
+      display: block;
+      position: relative;
+      min-height: calc(100vh - 64px - 60px); /* 减去 Tab 栏和 Header */
+    }
+
+    .mobile-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      background: white;
+    }
+
+    .mobile-panel.active {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+    }
+
+    .mobile-panel-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-color, #e5e7eb);
+      flex-shrink: 0;
+    }
+
+    .mobile-panel-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+      color: var(--text-color, #1f2937);
+    }
+
+    .mobile-panel-content {
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .page-content {
+      display: none;
+    }
+  }
+
+  /* 桌面端 */
+  @media (min-width: 768px) {
+    .page-content {
+      flex: 1;
+      padding: 24px 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  /* 安全区域适配 */
+  @supports (padding-bottom: env(safe-area-inset-bottom)) {
+    @media (max-width: 767px) {
+      .navigation-shell {
+        padding-bottom: calc(64px + env(safe-area-inset-bottom));
+      }
+    }
+  }
+</style>

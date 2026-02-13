@@ -1,0 +1,217 @@
+---
+/**
+ * 文件树组件 - 显示分类目录
+ */
+interface CategoryData {
+  name: string;
+  count: number;
+}
+
+interface Props {
+  categories: CategoryData[];
+  baseUrl: string;
+  currentCategory?: string;
+}
+
+const { categories, baseUrl, currentCategory } = Astro.props;
+
+// 分类图标映射
+const categoryIcons: Record<string, string> = {
+  '个人成长': '🌱',
+  '健康运动': '💪',
+  '商业管理': '💼',
+  '投资': '💰',
+  '心理学': '🧠',
+  '思维方式': '🤔',
+  '社会科学': '🌍',
+};
+
+// 按名称排序
+const sortedCategories = [...categories].sort((a, b) =>
+  a.name.localeCompare(b.name, 'zh-CN')
+);
+---
+
+<div class="file-tree">
+  <div class="tree-search">
+    <input
+      type="text"
+      id="tree-filter"
+      class="tree-filter-input"
+      placeholder="筛选分类..."
+      autocomplete="off"
+    />
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <div class="tree-items">
+    {
+      sortedCategories.map((cat) => (
+        <a
+          href={`${baseUrl}/category/${cat.name}`}
+          class:list={['tree-item', { active: currentCategory === cat.name }]}
+          data-category={cat.name}
+        >
+          <span class="tree-icon">{categoryIcons[cat.name] || '📚'}</span>
+          <span class="tree-label">{cat.name}</span>
+          <span class="tree-count">{cat.count}</span>
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="tree-empty" style="display: none;">
+    <p>未找到匹配的分类</p>
+  </div>
+</div>
+
+<script>
+  const filterInput = document.querySelector<HTMLInputElement>('#tree-filter');
+  const treeItems = document.querySelectorAll<HTMLElement>('.tree-item');
+  const emptyState = document.querySelector<HTMLElement>('.tree-empty');
+
+  if (filterInput && treeItems.length > 0) {
+    filterInput.addEventListener('input', (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+      let visibleCount = 0;
+
+      treeItems.forEach((item) => {
+        const category = item.getAttribute('data-category') || '';
+        const matches = category.toLowerCase().includes(query);
+        item.style.display = matches ? 'flex' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      // 显示/隐藏空状态
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    });
+
+    // 清除按钮 (Escape)
+    filterInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        filterInput.value = '';
+        filterInput.dispatchEvent(new Event('input'));
+        filterInput.blur();
+      }
+    });
+  }
+</script>
+
+<style>
+  .file-tree {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .tree-search {
+    position: relative;
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color, #e5e7eb);
+    flex-shrink: 0;
+  }
+
+  .tree-filter-input {
+    width: 100%;
+    padding: 8px 32px 8px 12px;
+    font-size: 14px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .tree-filter-input:focus {
+    border-color: var(--primary-color, #3b82f6);
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .tree-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  .tree-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-color, #1f2937);
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+
+  .tree-item:hover {
+    background-color: var(--hover-bg, #f3f4f6);
+  }
+
+  .tree-item.active {
+    background-color: var(--active-bg, #dbeafe);
+    color: var(--primary-color, #3b82f6);
+    font-weight: 500;
+  }
+
+  .tree-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .tree-label {
+    flex: 1;
+    font-size: 14px;
+  }
+
+  .tree-count {
+    font-size: 12px;
+    color: var(--text-secondary, #6b7280);
+    background: var(--count-bg, #f3f4f6);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  .tree-item.active .tree-count {
+    background: var(--primary-color, #3b82f6);
+    color: white;
+  }
+
+  .tree-empty {
+    padding: 32px 16px;
+    text-align: center;
+    color: var(--text-secondary, #6b7280);
+    font-size: 14px;
+  }
+
+  /* 滚动条样式 */
+  .tree-items::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .tree-items::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .tree-items::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+
+  .tree-items::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+</style>
