@@ -46,6 +46,8 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
     window.location.href = `${basePath}/books/${randomBook.slug}`;
   };
 
+  const actionsLayoutClass = showFullSearch ? 'grid-cols-2' : 'grid-cols-1';
+
   return (
     <div className="relative">
       <div className="flex flex-col sm:flex-row gap-4">
@@ -72,12 +74,12 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
         </div>
 
         {/* Buttons Row */}
-        <div className="flex gap-4">
+        <div className={`w-full sm:w-auto grid ${actionsLayoutClass} sm:flex gap-4`}>
           {/* Full Search Button */}
           {showFullSearch && (
             <Link
               href="/search"
-              className="btn-outline-brand flex-1 sm:flex-none flex items-center justify-center gap-3"
+              className="btn-outline-brand w-full sm:w-auto flex items-center justify-center gap-3"
               title="全文搜索"
             >
               <span className="text-xl">🔍</span>
@@ -88,7 +90,7 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
           {/* Random Button */}
           <button
             onClick={onRandomBook || handleRandomBook}
-            className="btn-outline-brand flex-1 sm:flex-none flex items-center justify-center gap-3"
+            className="btn-outline-brand w-full sm:w-auto flex items-center justify-center gap-3"
             title="随机一本书"
           >
             <span className="text-xl">🎲</span>
