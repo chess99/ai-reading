@@ -99,7 +99,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
       <div
         className={`
           fixed md:static inset-y-0 left-0 z-50
-          w-64 bg-white border-r border-gray-200
+          w-64 bg-white border-r border-slate-200
           transform transition-transform duration-300 ease-in-out
           flex flex-col h-full
           ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
@@ -110,13 +110,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
           <Link
             href="/"
             onClick={onClose}
-            className="text-xl font-bold hover:opacity-80 transition-opacity"
-            style={{
-              background: 'linear-gradient(to right, #667eea, #764ba2)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}
+            className="text-xl font-bold hover:opacity-80 transition-opacity heading-gradient"
           >
             AI 阅读
           </Link>
@@ -139,13 +133,13 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
         </div>
 
       {/* Tab Navigation */}
-      <div className="flex border-b border-gray-200">
+      <div className="flex border-b border-slate-200">
         <button
           onClick={() => setActiveTab('files')}
           className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
             activeTab === 'files'
               ? 'text-brand border-b-2 border-brand'
-              : 'text-gray-600 hover:text-gray-900'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           文件
@@ -155,7 +149,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
           className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
             activeTab === 'search'
               ? 'text-brand border-b-2 border-brand'
-              : 'text-gray-600 hover:text-gray-900'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           搜索
@@ -165,7 +159,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
           className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
             activeTab === 'tags'
               ? 'text-brand border-b-2 border-brand'
-              : 'text-gray-600 hover:text-gray-900'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           标签
@@ -180,7 +174,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
             <div className="flex gap-2 mb-2 px-2">
               <button
                 onClick={expandAll}
-                className="text-xs text-gray-600 hover:text-brand"
+                className="text-xs text-slate-600 hover:text-brand"
                 title="展开全部"
               >
                 展开全部
@@ -188,7 +182,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
               <span className="text-gray-300">|</span>
               <button
                 onClick={collapseAll}
-                className="text-xs text-gray-600 hover:text-brand"
+                className="text-xs text-slate-600 hover:text-brand"
                 title="折叠全部"
               >
                 折叠全部
@@ -202,15 +196,15 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                   {/* Category */}
                   <button
                     onClick={() => toggleCategory(category.name)}
-                    className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-gray-100 rounded transition-colors"
+                    className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-slate-100 rounded transition-colors"
                   >
-                    <span className="text-gray-500 text-xs">
+                    <span className="text-slate-500 text-xs">
                       {expandedCategories.has(category.name) ? '▼' : '▶'}
                     </span>
-                    <span className="font-medium text-gray-900">
+                    <span className="font-medium text-slate-900">
                       {category.name}
                     </span>
-                    <span className="ml-auto text-xs text-gray-400">
+                    <span className="ml-auto text-xs text-slate-400">
                       {category.children?.length || 0}
                     </span>
                   </button>
@@ -219,22 +213,9 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                   {expandedCategories.has(category.name) && (
                     <div className="ml-4 space-y-0.5">
                       {category.children?.map(book => (
-                        <Link
-                          key={book.path}
-                          href={book.path}
-                          className="block px-2 py-1.5 text-sm text-gray-700 rounded transition-colors"
-                          style={{ color: '#374151' }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundColor = 'rgba(102, 126, 234, 0.1)';
-                            e.currentTarget.style.color = '#667eea';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.backgroundColor = 'transparent';
-                            e.currentTarget.style.color = '#374151';
-                          }}
-                        >
+                        <Link key={book.path} href={book.path} className="sidebar-link">
                           <div className="flex items-start gap-2">
-                            <span className="text-xs text-gray-400 mt-0.5">
+                            <span className="text-xs text-slate-400 mt-0.5">
                               📖
                             </span>
                             <span className="flex-1 line-clamp-2">
@@ -258,13 +239,13 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
               placeholder="搜索书籍、作者、标签..."
               value={searchKeyword}
               onChange={e => setSearchKeyword(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
             />
             {searchKeyword && (
               <div className="mt-4 space-y-2">
                 {searchResults.length > 0 ? (
                   <>
-                    <div className="text-xs text-gray-500 px-2">
+                    <div className="text-xs text-slate-500 px-2">
                       找到 {searchResults.length} 个结果
                     </div>
                     {searchResults.map(book => (
@@ -272,12 +253,12 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                         key={book.slug}
                         href={`/books/${book.slug}`}
                         onClick={onClose}
-                        className="block p-2 hover:bg-gray-50 rounded transition-colors"
+                        className="block p-2 hover:bg-slate-50 rounded transition-colors"
                       >
-                        <div className="text-sm font-medium text-gray-900 mb-1 line-clamp-1">
+                        <div className="text-sm font-medium text-slate-900 mb-1 line-clamp-1">
                           {book.title}
                         </div>
-                        <div className="text-xs text-gray-600 line-clamp-1">
+                        <div className="text-xs text-slate-600 line-clamp-1">
                           {book.author}
                         </div>
                         <div className="text-xs text-brand mt-1">
@@ -287,7 +268,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                     ))}
                   </>
                 ) : (
-                  <div className="text-sm text-gray-500 text-center py-8">
+                  <div className="text-sm text-slate-500 text-center py-8">
                     未找到匹配的书籍
                   </div>
                 )}
@@ -301,7 +282,7 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
             {selectedTag ? (
               <>
                 <div className="mb-4 flex items-center justify-between">
-                  <h3 className="font-medium text-gray-900">
+                  <h3 className="font-medium text-slate-900">
                     标签：{selectedTag}
                   </h3>
                   <button
@@ -317,12 +298,12 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                       key={book.slug}
                       href={`/books/${book.slug}`}
                       onClick={onClose}
-                      className="block p-2 hover:bg-gray-50 rounded transition-colors"
+                      className="block p-2 hover:bg-slate-50 rounded transition-colors"
                     >
-                      <div className="text-sm font-medium text-gray-900 mb-1 line-clamp-1">
+                      <div className="text-sm font-medium text-slate-900 mb-1 line-clamp-1">
                         {book.title}
                       </div>
-                      <div className="text-xs text-gray-600 line-clamp-1">
+                      <div className="text-xs text-slate-600 line-clamp-1">
                         {book.author}
                       </div>
                     </Link>
@@ -337,22 +318,14 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                       <button
                         key={tag}
                         onClick={() => setSelectedTag(tag)}
-                        className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-lg transition-colors"
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.backgroundColor = '#667eea';
-                          e.currentTarget.style.color = 'white';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.backgroundColor = '#f3f4f6';
-                          e.currentTarget.style.color = '#374151';
-                        }}
+                        className="sidebar-tag-button"
                       >
                         {tag} ({count})
                       </button>
                     ))}
                   </div>
                 ) : (
-                  <div className="text-sm text-gray-500 text-center py-8">
+                  <div className="text-sm text-slate-500 text-center py-8">
                     暂无标签
                   </div>
                 )}

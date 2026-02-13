@@ -10,23 +10,14 @@ interface CategoryCardProps {
 
 export default function CategoryCard({ category, books }: CategoryCardProps) {
   return (
-    <div
-      className="p-4 md:p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all group"
-      style={{ borderColor: '#e5e7eb' }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#e5e7eb';
-      }}
-    >
-      <div className="flex items-start gap-3 mb-3 md:mb-4">
+    <div className="surface-card surface-card-hover p-5 md:p-6 group">
+      <div className="flex items-start gap-3 mb-4">
         <div className="text-2xl md:text-3xl">📚</div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg md:text-xl font-semibold mb-1 truncate">
+          <h3 className="text-lg md:text-xl font-semibold mb-1 truncate text-slate-900">
             {category}
           </h3>
-          <p className="text-gray-500 text-xs md:text-sm">
+          <p className="text-slate-500 text-xs md:text-sm">
             {books.length} 本书籍
           </p>
         </div>
@@ -36,13 +27,13 @@ export default function CategoryCard({ category, books }: CategoryCardProps) {
           <Link
             key={book.slug}
             href={`/books/${book.slug}`}
-            className="block text-xs md:text-sm text-gray-700 truncate transition-colors hover:text-[#667eea]"
+            className="block text-xs md:text-sm text-slate-700 truncate transition-colors hover:text-brand"
           >
             • {book.title}
           </Link>
         ))}
         {books.length > 3 && (
-          <div className="text-xs md:text-sm text-gray-400 pt-1">
+          <div className="text-xs md:text-sm text-slate-400 pt-1">
             还有 {books.length - 3} 本...
           </div>
         )}

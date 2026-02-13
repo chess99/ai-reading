@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
 
 interface HeaderProps {
   onMenuClick?: () => void;
@@ -10,7 +9,7 @@ interface HeaderProps {
 
 export default function Header({ onMenuClick, showMenuButton = true }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
       <div className="container mx-auto px-3 md:px-4">
         <div className="flex items-center justify-between h-14 md:h-16">
           {/* Menu button for mobile */}
@@ -37,22 +36,16 @@ export default function Header({ onMenuClick, showMenuButton = true }: HeaderPro
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl md:text-2xl font-bold hover:opacity-80 transition-opacity"
-            style={{
-              background: 'linear-gradient(to right, #667eea, #764ba2)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}
+            className="text-xl md:text-2xl font-bold hover:opacity-80 transition-opacity heading-gradient"
           >
             AI 阅读
           </Link>
 
           {/* Navigation */}
-          <nav className="flex items-center gap-4 md:gap-6">
+          <nav className="flex items-center gap-3 md:gap-6">
             <Link
               href="/"
-              className="text-sm md:text-base text-gray-700 font-medium transition-colors hover:text-[#667eea]"
+              className="text-sm md:text-base text-slate-700 font-medium transition-colors hover:text-brand"
             >
               首页
             </Link>
@@ -60,7 +53,7 @@ export default function Header({ onMenuClick, showMenuButton = true }: HeaderPro
               href="https://cearl.cc/BookDistill/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm md:text-base text-gray-700 font-medium transition-colors hover:text-[#667eea]"
+              className="hidden sm:inline-flex items-center gap-1 text-sm md:text-base text-slate-700 font-medium transition-colors hover:text-brand"
             >
               <span>BookDistill</span>
               <svg

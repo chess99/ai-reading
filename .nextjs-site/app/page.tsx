@@ -7,55 +7,43 @@ export default function HomePage() {
   const categories = getAllCategories();
 
   return (
-    <div className="container mx-auto px-4 py-6 md:py-8">
-      <div className="max-w-6xl mx-auto">
+    <div className="page-container">
+      <div className="page-content-6xl">
         {/* Search Bar */}
-        <div className="mb-8 md:mb-12">
+        <div className="mb-10 md:mb-14">
           <SearchBar books={allBooks} />
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-12">
-          <div
-            className="p-4 md:p-6 rounded-xl"
-            style={{ background: 'linear-gradient(to bottom right, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))' }}
-          >
-            <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: '#667eea' }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 mb-10 md:mb-14">
+          <div className="stat-card p-4 md:p-5">
+            <div className="text-2xl md:text-3xl font-bold mb-1 text-brand">
               {allBooks.length}
             </div>
-            <div className="text-xs md:text-sm text-gray-600">本书籍</div>
+            <div className="text-xs md:text-sm text-slate-600">本书籍</div>
           </div>
-          <div
-            className="p-4 md:p-6 rounded-xl"
-            style={{ background: 'linear-gradient(to bottom right, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))' }}
-          >
-            <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: '#667eea' }}>
+          <div className="stat-card p-4 md:p-5">
+            <div className="text-2xl md:text-3xl font-bold mb-1 text-brand">
               {categories.length}
             </div>
-            <div className="text-xs md:text-sm text-gray-600">个分类</div>
+            <div className="text-xs md:text-sm text-slate-600">个分类</div>
           </div>
-          <div
-            className="p-4 md:p-6 rounded-xl"
-            style={{ background: 'linear-gradient(to bottom right, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))' }}
-          >
-            <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: '#667eea' }}>
+          <div className="stat-card p-4 md:p-5">
+            <div className="text-2xl md:text-3xl font-bold mb-1 text-brand">
               {new Set(allBooks.map(b => b.author)).size}
             </div>
-            <div className="text-xs md:text-sm text-gray-600">位作者</div>
+            <div className="text-xs md:text-sm text-slate-600">位作者</div>
           </div>
-          <div
-            className="p-4 md:p-6 rounded-xl"
-            style={{ background: 'linear-gradient(to bottom right, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))' }}
-          >
-            <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: '#667eea' }}>AI</div>
-            <div className="text-xs md:text-sm text-gray-600">驱动解读</div>
+          <div className="stat-card p-4 md:p-5">
+            <div className="text-2xl md:text-3xl font-bold mb-1 text-brand">AI</div>
+            <div className="text-xs md:text-sm text-slate-600">驱动解读</div>
           </div>
         </div>
 
         {/* Categories */}
         <div>
-          <h2 className="text-2xl font-bold mb-6">浏览分类</h2>
-          <div className="grid gap-3 md:gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-slate-900">浏览分类</h2>
+          <div className="grid gap-4 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
             {categories.map(category => {
               const categoryBooks = allBooks.filter(
                 book => book.category === category

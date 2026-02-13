@@ -46,46 +46,29 @@ export default async function BookPage({ params }: BookPageProps) {
   }
 
   return (
-    <article className="container mx-auto px-4 py-6 md:py-8">
-      <div className="max-w-4xl mx-auto">
+    <article className="page-container">
+      <div className="page-content-4xl">
         {/* Header */}
-        <header className="mb-6 md:mb-8 pb-6 border-b border-gray-200">
-          <h1
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{
-              background: 'linear-gradient(to right, #667eea, #764ba2)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}
-          >
+        <header className="mb-8 md:mb-10 pb-6 border-b border-slate-200">
+          <h1 className="heading-gradient text-3xl md:text-4xl font-bold mb-5">
             {book.title}
           </h1>
-          <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm md:text-base text-gray-600">
+          <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm md:text-base text-slate-600">
             <div className="flex items-center gap-2">
               <span className="font-medium">作者：</span>
               <span>{book.author}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-medium">分类：</span>
-              <span
-                className="px-2 py-1 text-sm rounded"
-                style={{
-                  backgroundColor: 'rgba(102, 126, 234, 0.1)',
-                  color: '#667eea',
-                }}
-              >
+              <span className="chip-brand">
                 {book.category}
               </span>
             </div>
           </div>
           {book.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-3 md:mt-4">
+            <div className="flex flex-wrap gap-2 mt-4">
               {book.tags.map(tag => (
-                <span
-                  key={tag}
-                  className="px-2 py-1 bg-gray-100 text-gray-600 text-xs md:text-sm rounded"
-                >
+                <span key={tag} className="chip-muted">
                   {tag}
                 </span>
               ))}

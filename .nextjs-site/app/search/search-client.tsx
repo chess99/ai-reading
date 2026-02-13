@@ -10,13 +10,11 @@ interface SearchPageClientProps {
 
 export default function SearchPageClient({ books }: SearchPageClientProps) {
   const [keyword, setKeyword] = useState('');
-  const [isSearching, setIsSearching] = useState(false);
 
   // Full-text search in book content
   const searchResults = useMemo(() => {
     if (!keyword.trim()) return [];
 
-    setIsSearching(true);
     const lowerKeyword = keyword.toLowerCase();
     const results = books
       .map(book => {
@@ -51,22 +49,13 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
       })
       .filter(Boolean);
 
-    setIsSearching(false);
     return results;
   }, [keyword, books]);
 
   return (
-    <div className="container mx-auto px-4 py-6 md:py-8">
-      <div className="max-w-4xl mx-auto">
-        <h1
-          className="text-2xl md:text-3xl font-bold mb-6 md:mb-8"
-          style={{
-            background: 'linear-gradient(to right, #667eea, #764ba2)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}
-        >
+    <div className="page-container">
+      <div className="page-content-4xl">
+        <h1 className="heading-gradient text-2xl md:text-3xl font-bold mb-8 md:mb-10">
           全文搜索
         </h1>
 
@@ -78,17 +67,7 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
               value={keyword}
               onChange={e => setKeyword(e.target.value)}
               placeholder="搜索书籍标题、作者、内容..."
-              className="w-full h-14 pl-[50px] pr-4 border-2 rounded-xl text-base font-medium outline-none transition-all"
-              style={{
-                borderColor: '#667eea',
-                boxShadow: 'none',
-              }}
-              onFocus={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.2)';
-              }}
-              onBlur={(e) => {
-                e.currentTarget.style.boxShadow = 'none';
-              }}
+              className="input-brand"
               autoFocus
             />
             <span className="absolute left-[18px] top-1/2 -translate-y-1/2 text-xl flex items-center pointer-events-none">
@@ -109,11 +88,7 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
         {keyword ? (
           <div>
             <div className="mb-4 text-gray-600">
-              {isSearching ? (
-                <span>搜索中...</span>
-              ) : (
-                <span>找到 {searchResults.length} 个结果</span>
-              )}
+              <span>找到 {searchResults.length} 个结果</span>
             </div>
 
             {searchResults.length > 0 ? (
@@ -125,24 +100,24 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
                     <Link
                       key={book.slug}
                       href={`/books/${book.slug}`}
-                      className="block p-6 border border-gray-200 rounded-xl hover:border-brand hover:shadow-lg transition-all"
+                      className="surface-card surface-card-hover block p-6"
                     >
                       <div className="flex items-start gap-4">
                         <div className="text-3xl">📖</div>
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                          <h3 className="text-xl font-semibold mb-2 text-slate-900">
                             {book.title}
                           </h3>
-                          <p className="text-gray-600 mb-3">
+                          <p className="text-slate-600 mb-3">
                             作者：{book.author}
                           </p>
                           {excerpt && (
-                            <p className="text-sm text-gray-700 mb-3 line-clamp-3">
+                            <p className="text-sm text-slate-700 mb-3 line-clamp-3">
                               {excerpt}
                             </p>
                           )}
                           <div className="flex flex-wrap gap-2">
-                            <span className="px-2 py-1 bg-brand/10 text-brand text-xs rounded">
+                            <span className="chip-brand">
                               {book.category}
                             </span>
                             {matchType === 'title' && (
@@ -156,10 +131,7 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
                               </span>
                             )}
                             {book.tags.slice(0, 3).map(tag => (
-                              <span
-                                key={tag}
-                                className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded"
-                              >
+                              <span key={tag} className="chip-muted">
                                 {tag}
                               </span>
                             ))}
@@ -173,8 +145,8 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
             ) : (
               <div className="text-center py-16">
                 <div className="text-6xl mb-4">🔍</div>
-                <p className="text-gray-500 text-lg">未找到匹配的书籍</p>
-                <p className="text-gray-400 text-sm mt-2">
+                <p className="text-slate-500 text-lg">未找到匹配的书籍</p>
+                <p className="text-slate-400 text-sm mt-2">
                   试试其他关键词
                 </p>
               </div>
@@ -183,8 +155,8 @@ export default function SearchPageClient({ books }: SearchPageClientProps) {
         ) : (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">📚</div>
-            <p className="text-gray-500 text-lg">输入关键词开始搜索</p>
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-slate-500 text-lg">输入关键词开始搜索</p>
+            <p className="text-slate-400 text-sm mt-2">
               支持搜索书籍标题、作者、分类、标签和全文内容
             </p>
           </div>

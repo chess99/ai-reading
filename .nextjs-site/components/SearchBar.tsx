@@ -56,17 +56,7 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
             value={keyword}
             onChange={e => setKeyword(e.target.value)}
             placeholder="搜索书籍标题、作者..."
-            className="w-full h-14 pl-[50px] pr-4 border-2 rounded-xl text-base font-medium outline-none transition-all"
-            style={{
-              borderColor: '#667eea',
-              boxShadow: 'none',
-            }}
-            onFocus={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.2)';
-            }}
-            onBlur={(e) => {
-              e.currentTarget.style.boxShadow = 'none';
-            }}
+            className="input-brand"
           />
           <span className="absolute left-[18px] top-1/2 -translate-y-1/2 text-xl flex items-center pointer-events-none">
             🔍
@@ -87,20 +77,7 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
           {showFullSearch && (
             <Link
               href="/search"
-              className="flex-1 sm:flex-none flex items-center justify-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
-              style={{
-                borderColor: '#667eea',
-                backgroundColor: 'white',
-                color: '#2c3e50',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#667eea';
-                e.currentTarget.style.color = 'white';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'white';
-                e.currentTarget.style.color = '#2c3e50';
-              }}
+              className="btn-outline-brand flex-1 sm:flex-none flex items-center justify-center gap-3"
               title="全文搜索"
             >
               <span className="text-xl">🔍</span>
@@ -111,20 +88,7 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
           {/* Random Button */}
           <button
             onClick={onRandomBook || handleRandomBook}
-            className="flex-1 sm:flex-none flex items-center justify-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
-            style={{
-              borderColor: '#667eea',
-              backgroundColor: 'white',
-              color: '#2c3e50',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#667eea';
-              e.currentTarget.style.color = 'white';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'white';
-              e.currentTarget.style.color = '#2c3e50';
-            }}
+            className="btn-outline-brand flex-1 sm:flex-none flex items-center justify-center gap-3"
             title="随机一本书"
           >
             <span className="text-xl">🎲</span>
@@ -135,7 +99,7 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
 
       {/* Search Results Dropdown */}
       {showResults && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg max-h-96 overflow-y-auto z-50">
+        <div className="absolute top-full left-0 right-0 mt-2 surface-card max-h-96 overflow-y-auto z-50">
           {filteredBooks.length > 0 ? (
             <>
               <div className="p-3 border-b border-gray-100 flex items-center justify-between">
@@ -167,14 +131,11 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
                           {book.author}
                         </p>
                         <div className="flex flex-wrap gap-1">
-                          <span className="px-2 py-0.5 bg-brand/10 text-brand text-xs rounded">
+                          <span className="chip-brand px-2 py-0.5 text-xs">
                             {book.category}
                           </span>
                           {book.tags.slice(0, 2).map(tag => (
-                            <span
-                              key={tag}
-                              className="px-2 py-0.5 bg-gray-100 text-gray-600 text-xs rounded"
-                            >
+                            <span key={tag} className="chip-muted px-2 py-0.5 text-xs">
                               {tag}
                             </span>
                           ))}
