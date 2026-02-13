@@ -1,5 +1,5 @@
 ---
-slug: 布鲁斯·C.格林沃尔德-价值投资
+slug: jia-zhi-tou-zi
 title: 价值投资：从格雷厄姆到巴菲特
 author: 布鲁斯·C.格林沃尔德
 category: 投资

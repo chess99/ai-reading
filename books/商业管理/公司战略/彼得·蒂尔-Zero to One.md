@@ -1,5 +1,5 @@
 ---
-slug: 彼得·蒂尔-Zero to One
+slug: zero-to-one
 title: Zero to One
 author: 彼得·蒂尔
 category: 商业管理

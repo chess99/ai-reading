@@ -1,5 +1,5 @@
 ---
-slug: 本·蒂格拉尔-MBA In A Day (En)
+slug: mba-in-a-day-en
 title: MBA In A Day (En)
 author: 本·蒂格拉尔
 category: 商业管理
