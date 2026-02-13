@@ -5,6 +5,7 @@ node_modules/
 .nextjs-site/node_modules/
 .nextjs-site/.next/
 .nextjs-site/out/
+.nextjs-site/next-env.d.ts
 
 # Astro (legacy)
 .astro-site/
