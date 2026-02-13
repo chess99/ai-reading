@@ -222,7 +222,16 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                         <Link
                           key={book.path}
                           href={book.path}
-                          className="block px-2 py-1.5 text-sm text-gray-700 hover:bg-brand/10 hover:text-brand rounded transition-colors"
+                          className="block px-2 py-1.5 text-sm text-gray-700 rounded transition-colors"
+                          style={{ color: '#374151' }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.backgroundColor = 'rgba(102, 126, 234, 0.1)';
+                            e.currentTarget.style.color = '#667eea';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.backgroundColor = 'transparent';
+                            e.currentTarget.style.color = '#374151';
+                          }}
                         >
                           <div className="flex items-start gap-2">
                             <span className="text-xs text-gray-400 mt-0.5">
@@ -328,7 +337,15 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
                       <button
                         key={tag}
                         onClick={() => setSelectedTag(tag)}
-                        className="px-3 py-1.5 bg-gray-100 hover:bg-brand hover:text-white text-gray-700 text-sm rounded-lg transition-colors"
+                        className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-lg transition-colors"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#667eea';
+                          e.currentTarget.style.color = 'white';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = '#f3f4f6';
+                          e.currentTarget.style.color = '#374151';
+                        }}
                       >
                         {tag} ({count})
                       </button>
