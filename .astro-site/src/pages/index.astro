@@ -26,9 +26,16 @@ const categories = Object.keys(booksByCategory).sort((a, b) =>
   a.localeCompare(b, 'zh-CN')
 );
 
+// 生成 OG 图片 URL
+const site = import.meta.env.SITE || 'https://cearl.cc';
+const ogImageUrl = `${site}${base}/og-default.jpg`;
 ---
 
-<BaseLayout title="AI 阅读 - 首页">
+<BaseLayout
+  title="AI 阅读 - 首页"
+  description="用 AI 精读好书，提炼知识精华。收录了投资、心理学、个人成长、商业管理等领域的优质书籍。"
+  ogImage={ogImageUrl}
+>
   <div class="container">
     <!-- 搜索栏 -->
     <div class="search-bar">

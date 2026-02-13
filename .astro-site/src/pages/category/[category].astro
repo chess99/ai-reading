@@ -35,9 +35,17 @@ const base = import.meta.env.BASE_URL;
 const sortedBooks = books.sort((a, b) =>
   a.info.title.localeCompare(b.info.title, 'zh-CN')
 );
+
+// 生成 OG 图片 URL
+const site = import.meta.env.SITE || 'https://cearl.cc';
+const ogImageUrl = `${site}${base}/og-default.jpg`;
 ---
 
-<BaseLayout title={`${category} - AI 阅读`}>
+<BaseLayout
+  title={`${category} - AI 阅读`}
+  description={`浏览 ${category} 分类下的 ${books.length} 本书籍`}
+  ogImage={ogImageUrl}
+>
   <div class="container">
     <div class="category-header">
       <h1 class="category-title">{category}</h1>
