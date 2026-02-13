@@ -28,7 +28,7 @@ export interface BookTreeNode {
   book?: Book;
 }
 
-const BOOKS_DIR = path.join(process.cwd(), 'books');
+const BOOKS_DIR = path.join(process.cwd(), '..', 'books');
 
 /**
  * Parse book info from filename: 作者-书名.md

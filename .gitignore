@@ -2,8 +2,9 @@
 node_modules/
 
 # Next.js
-.next/
-out/
+.nextjs-site/node_modules/
+.nextjs-site/.next/
+.nextjs-site/out/
 
 # Astro (legacy)
 .astro-site/
