@@ -1,10 +1,20 @@
 # Node
 node_modules/
-.astro-site/node_modules/
 
-# Astro
-.astro-site/.astro/
-.astro-site/dist/
+# Next.js
+.next/
+out/
+
+# Astro (legacy)
+.astro-site/
 
 # System
 .DS_Store
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
