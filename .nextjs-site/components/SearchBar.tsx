@@ -48,9 +48,9 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
 
   return (
     <div className="relative">
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         {/* Search Input */}
-        <div className="flex-1 min-w-[200px] relative">
+        <div className="flex-1 relative">
           <input
             type="text"
             value={keyword}
@@ -81,11 +81,37 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
           )}
         </div>
 
-        {/* Full Search Button */}
-        {showFullSearch && (
-          <Link
-            href="/search"
-            className="flex items-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
+        {/* Buttons Row */}
+        <div className="flex gap-4">
+          {/* Full Search Button */}
+          {showFullSearch && (
+            <Link
+              href="/search"
+              className="flex-1 sm:flex-none flex items-center justify-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
+              style={{
+                borderColor: '#667eea',
+                backgroundColor: 'white',
+                color: '#2c3e50',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#667eea';
+                e.currentTarget.style.color = 'white';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'white';
+                e.currentTarget.style.color = '#2c3e50';
+              }}
+              title="全文搜索"
+            >
+              <span className="text-xl">🔍</span>
+              <span>全文搜索</span>
+            </Link>
+          )}
+
+          {/* Random Button */}
+          <button
+            onClick={onRandomBook || handleRandomBook}
+            className="flex-1 sm:flex-none flex items-center justify-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
             style={{
               borderColor: '#667eea',
               backgroundColor: 'white',
@@ -99,35 +125,12 @@ export default function SearchBar({ books, onRandomBook, showFullSearch = true }
               e.currentTarget.style.backgroundColor = 'white';
               e.currentTarget.style.color = '#2c3e50';
             }}
-            title="全文搜索"
+            title="随机一本书"
           >
-            <span className="text-xl">🔍</span>
-            <span>全文搜索</span>
-          </Link>
-        )}
-
-        {/* Random Button */}
-        <button
-          onClick={onRandomBook || handleRandomBook}
-          className="flex items-center gap-3 px-7 h-14 border-2 rounded-xl font-semibold transition-all whitespace-nowrap"
-          style={{
-            borderColor: '#667eea',
-            backgroundColor: 'white',
-            color: '#2c3e50',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#667eea';
-            e.currentTarget.style.color = 'white';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = 'white';
-            e.currentTarget.style.color = '#2c3e50';
-          }}
-          title="随机一本书"
-        >
-          <span className="text-xl">🎲</span>
-          <span>随机一本</span>
-        </button>
+            <span className="text-xl">🎲</span>
+            <span>随机一本</span>
+          </button>
+        </div>
       </div>
 
       {/* Search Results Dropdown */}
