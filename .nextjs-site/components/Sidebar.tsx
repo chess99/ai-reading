@@ -6,37 +6,20 @@ import { BookTreeNode, BookMeta } from '@/lib/books';
 
 interface SidebarProps {
   bookTree: BookTreeNode[];
+  allBooks: BookMeta[];
   isOpen: boolean;
   onClose: () => void;
 }
 
 type TabType = 'files' | 'search' | 'tags';
 
-export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
+export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<TabType>('files');
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
     new Set()
   );
   const [searchKeyword, setSearchKeyword] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-
-  // Get all books from tree (recursively)
-  const allBooks = useMemo(() => {
-    const books: BookMeta[] = [];
-
-    const extractBooks = (nodes: BookTreeNode[]) => {
-      nodes.forEach(node => {
-        if (node.type === 'book' && node.book) {
-          books.push(node.book);
-        } else if (node.type === 'category' && node.children) {
-          extractBooks(node.children);
-        }
-      });
-    };
-
-    extractBooks(bookTree);
-    return books;
-  }, [bookTree]);
 
   // Get all tags with counts
   const tags = useMemo(() => {

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LayoutClient from './layout-client';
-import { buildBookTree } from '@/lib/books';
+import { buildBookTree, getAllBookMetas } from '@/lib/books';
 
 export const metadata: Metadata = {
   title: 'AI 阅读 - AI 驱动的书籍解读与知识分享平台',
@@ -29,11 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const bookTree = buildBookTree();
+  const allBooks = getAllBookMetas();
 
   return (
     <html lang="zh-CN">
       <body>
-        <LayoutClient bookTree={bookTree}>
+        <LayoutClient bookTree={bookTree} allBooks={allBooks}>
           {children}
         </LayoutClient>
       </body>

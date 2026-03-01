@@ -3,14 +3,15 @@
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
-import { BookTreeNode } from '@/lib/books';
+import { BookTreeNode, BookMeta } from '@/lib/books';
 
 interface LayoutClientProps {
   bookTree: BookTreeNode[];
+  allBooks: BookMeta[];
   children: React.ReactNode;
 }
 
-export default function LayoutClient({ bookTree, children }: LayoutClientProps) {
+export default function LayoutClient({ bookTree, allBooks, children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function LayoutClient({ bookTree, children }: LayoutClientProps) 
         {/* Sidebar */}
         <Sidebar
           bookTree={bookTree}
+          allBooks={allBooks}
           isOpen={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
         />
