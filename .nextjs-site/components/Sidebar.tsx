@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 
 interface SidebarProps {
@@ -14,12 +15,21 @@ interface SidebarProps {
 type TabType = 'files' | 'search' | 'tags';
 
 export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: SidebarProps) {
+  const pathname = usePathname();
   const [activeTab, setActiveTab] = useState<TabType>('files');
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
     new Set()
   );
   const [searchKeyword, setSearchKeyword] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [autoReveal, setAutoReveal] = useState(() => {
+    // 从 localStorage 读取 auto-reveal 设置
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('sidebar-auto-reveal');
+      return saved === 'true';
+    }
+    return false;
+  });
 
   // Get all tags with counts
   const tags = useMemo(() => {
@@ -87,6 +97,56 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
     setExpandedCategories(new Set());
   };
 
+  // 查找当前打开的书籍及其路径
+  const findCurrentBook = () => {
+    if (!pathname.startsWith('/books/')) return null;
+
+    const slug = pathname.replace('/books/', '').replace(/\/$/, '');
+    const book = allBooks.find(b => b.slug === slug);
+    if (!book) return null;
+
+    // 构建该书籍的完整分类路径
+    const categoryPaths: string[] = [];
+    let pathSoFar = '';
+    for (const categoryName of book.categoryPath) {
+      pathSoFar = pathSoFar ? `${pathSoFar}/${categoryName}` : categoryName;
+      categoryPaths.push(pathSoFar);
+    }
+
+    return { book, categoryPaths };
+  };
+
+  // Reveal active file: 展开到当前书籍
+  const revealActiveFile = () => {
+    const current = findCurrentBook();
+    if (!current) return;
+
+    // 展开所有父分类
+    setExpandedCategories(new Set(current.categoryPaths));
+
+    // 滚动到当前书籍（延迟一下等待 DOM 更新）
+    setTimeout(() => {
+      const activeLink = document.querySelector('.sidebar-link-active');
+      if (activeLink) {
+        activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+  };
+
+  // Auto-reveal: 路径变化时自动展开
+  useEffect(() => {
+    if (autoReveal && pathname.startsWith('/books/')) {
+      revealActiveFile();
+    }
+  }, [pathname, autoReveal]);
+
+  // 保存 auto-reveal 设置到 localStorage
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('sidebar-auto-reveal', String(autoReveal));
+    }
+  }, [autoReveal]);
+
   // 递归渲染树节点
   const renderTreeNode = (node: BookTreeNode, parentPath: string, level: number = 0): React.ReactNode => {
     const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
@@ -123,12 +183,13 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
       );
     } else {
       // Book node
+      const isActive = pathname === node.path || pathname === node.path + '/';
       return (
         <Link
           key={node.path}
           href={node.path}
           onClick={onClose}
-          className="sidebar-link"
+          className={`sidebar-link ${isActive ? 'sidebar-link-active' : ''}`}
           style={{ paddingLeft: `${8 + indent + 16}px` }}
         >
           <div className="flex items-start gap-2">
@@ -230,7 +291,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
         {activeTab === 'files' && (
           <div className="p-2">
             {/* Toolbar */}
-            <div className="flex gap-2 mb-2 px-2">
+            <div className="flex items-center gap-2 mb-2 px-2">
               <button
                 onClick={expandAll}
                 className="text-xs text-slate-600 hover:text-brand"
@@ -246,6 +307,48 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
               >
                 折叠全部
               </button>
+
+              {/* Icon buttons */}
+              <div className="ml-auto flex items-center gap-1">
+                {/* Auto-reveal toggle */}
+                <button
+                  onClick={() => setAutoReveal(!autoReveal)}
+                  className={`p-1.5 rounded hover:bg-slate-100 transition-colors ${
+                    autoReveal ? 'text-brand' : 'text-slate-400'
+                  }`}
+                  title="自动定位当前文件"
+                  aria-label="自动定位当前文件"
+                >
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" strokeWidth="2" />
+                    <line x1="3" y1="15" x2="21" y2="15" strokeWidth="2" />
+                  </svg>
+                </button>
+
+                {/* Reveal active file */}
+                <button
+                  onClick={revealActiveFile}
+                  className="p-1.5 rounded hover:bg-slate-100 text-slate-400 hover:text-brand transition-colors"
+                  title="定位到当前文件"
+                  aria-label="定位到当前文件"
+                >
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="10" strokeWidth="2" />
+                    <circle cx="12" cy="12" r="3" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             {/* File Tree */}
