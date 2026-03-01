@@ -1,6 +1,7 @@
 import { getAllBookMetas, getAllCategories } from '@/lib/books';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
+import ContinueReading from '@/components/ContinueReading';
 
 export default function HomePage() {
   const allBooks = getAllBookMetas();
@@ -9,6 +10,9 @@ export default function HomePage() {
   return (
     <div className="page-container">
       <div className="page-content-6xl">
+        {/* Continue Reading */}
+        <ContinueReading />
+
         {/* Search Bar */}
         <div className="mb-10 md:mb-14">
           <SearchBar books={allBooks} />

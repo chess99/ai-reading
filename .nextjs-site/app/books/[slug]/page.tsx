@@ -73,7 +73,12 @@ export default async function BookPage({ params }: BookPageProps) {
         </header>
 
         {/* Content with TOC */}
-        <BookPageClient content={book.content} />
+        <BookPageClient
+          content={book.content}
+          bookSlug={book.slug}
+          bookTitle={book.title}
+          bookAuthor={book.author}
+        />
       </div>
     </article>
   );

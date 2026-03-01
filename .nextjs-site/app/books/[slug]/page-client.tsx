@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
@@ -8,13 +9,28 @@ import rehypeSanitize from 'rehype-sanitize';
 import rehypeHighlight from 'rehype-highlight';
 import TableOfContents from '@/components/TableOfContents';
 import BookLayout from '@/components/BookLayout';
+import { saveReadingState } from '@/lib/reading-state';
 
 interface BookPageClientProps {
   content: string;
+  bookSlug: string;
+  bookTitle: string;
+  bookAuthor: string;
 }
 
-export default function BookPageClient({ content }: BookPageClientProps) {
+export default function BookPageClient({ content, bookSlug, bookTitle, bookAuthor }: BookPageClientProps) {
   const [isTocOpen, setIsTocOpen] = useState(false);
+  const pathname = usePathname();
+
+  // 保存阅读状态
+  useEffect(() => {
+    saveReadingState({
+      bookSlug,
+      bookTitle,
+      bookAuthor,
+      timestamp: Date.now(),
+    });
+  }, [bookSlug, bookTitle, bookAuthor]);
 
   return (
     <BookLayout onTocToggle={() => setIsTocOpen(true)}>

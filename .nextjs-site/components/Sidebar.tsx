@@ -22,14 +22,15 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
   );
   const [searchKeyword, setSearchKeyword] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [autoReveal, setAutoReveal] = useState(() => {
-    // 从 localStorage 读取 auto-reveal 设置
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('sidebar-auto-reveal');
-      return saved === 'true';
+  const [autoReveal, setAutoReveal] = useState(false);
+
+  // 从 localStorage 读取 auto-reveal 设置
+  useEffect(() => {
+    const saved = localStorage.getItem('sidebar-auto-reveal');
+    if (saved !== null) {
+      setAutoReveal(saved === 'true');
     }
-    return false;
-  });
+  }, []);
 
   // Get all tags with counts
   const tags = useMemo(() => {
