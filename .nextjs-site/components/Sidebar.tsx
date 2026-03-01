@@ -313,7 +313,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
                 {/* Auto-reveal toggle */}
                 <button
                   onClick={() => setAutoReveal(!autoReveal)}
-                  className={`p-1.5 rounded hover:bg-slate-100 transition-colors ${
+                  className={`p-1.5 rounded hover:bg-slate-100 transition-colors cursor-pointer ${
                     autoReveal ? 'text-brand' : 'text-slate-400'
                   }`}
                   title="自动定位当前文件"
@@ -334,7 +334,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
                 {/* Reveal active file */}
                 <button
                   onClick={revealActiveFile}
-                  className="p-1.5 rounded hover:bg-slate-100 text-slate-400 hover:text-brand transition-colors"
+                  className="p-1.5 rounded hover:bg-slate-100 text-slate-400 hover:text-brand transition-colors cursor-pointer"
                   title="定位到当前文件"
                   aria-label="定位到当前文件"
                 >
