@@ -189,9 +189,27 @@ body {
   @apply px-3 py-1.5 text-sm rounded-lg transition-colors bg-slate-100 text-slate-700 hover:bg-brand hover:text-white;
 }
 
+/* 更新通知动画 */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .surface-card-hover,
-  .btn-outline-brand {
+  .btn-outline-brand,
+  .animate-slide-up {
+    animation: none;
     transition: none;
   }
 }

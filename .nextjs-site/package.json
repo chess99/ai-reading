@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && pagefind --site out",
+    "build": "node scripts/generate-manifest.js && next build && pagefind --site out",
     "preview": "node scripts/preview.mjs",
     "lint": "next lint"
   },

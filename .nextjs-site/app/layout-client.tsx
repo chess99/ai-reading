@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
+import UpdateNotification from '@/components/UpdateNotification';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 
 interface LayoutClientProps {
@@ -49,6 +50,9 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
           {children}
         </main>
       </div>
+
+      {/* Update notification */}
+      <UpdateNotification />
     </div>
   );
 }
