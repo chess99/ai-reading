@@ -20,16 +20,21 @@ export default function Sidebar({ bookTree, isOpen, onClose }: SidebarProps) {
   const [searchKeyword, setSearchKeyword] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
-  // Get all books from tree
+  // Get all books from tree (recursively)
   const allBooks = useMemo(() => {
     const books: BookMeta[] = [];
-    bookTree.forEach(category => {
-      category.children?.forEach(node => {
-        if (node.book) {
+
+    const extractBooks = (nodes: BookTreeNode[]) => {
+      nodes.forEach(node => {
+        if (node.type === 'book' && node.book) {
           books.push(node.book);
+        } else if (node.type === 'category' && node.children) {
+          extractBooks(node.children);
         }
       });
-    });
+    };
+
+    extractBooks(bookTree);
     return books;
   }, [bookTree]);
 
