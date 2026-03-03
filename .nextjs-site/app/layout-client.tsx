@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import UpdateNotification from '@/components/UpdateNotification';
+import SettingsDialog from '@/components/SettingsDialog';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 
 interface LayoutClientProps {
@@ -14,6 +15,7 @@ interface LayoutClientProps {
 
 export default function LayoutClient({ bookTree, allBooks, children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   useEffect(() => {
     if (!('serviceWorker' in navigator)) {
@@ -32,6 +34,7 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
       {/* Header */}
       <Header
         onMenuClick={() => setSidebarOpen(true)}
+        onSettingsClick={() => setSettingsOpen(true)}
         showMenuButton={true}
       />
 
@@ -53,6 +56,13 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
 
       {/* Update notification */}
       <UpdateNotification />
+
+      {/* Settings dialog */}
+      <SettingsDialog
+        isOpen={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
+        allBooks={allBooks}
+      />
     </div>
   );
 }
