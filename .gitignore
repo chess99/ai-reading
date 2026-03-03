@@ -6,6 +6,7 @@ node_modules/
 .nextjs-site/.next/
 .nextjs-site/out/
 .nextjs-site/next-env.d.ts
+.nextjs-site/public/build-manifest.json
 
 # Astro (legacy)
 .astro-site/
