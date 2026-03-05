@@ -7,11 +7,17 @@
 ```typescript
 export const analyticsConfig = {
   baidu: {
-    enabled: true,  // 设置为 false 可禁用统计
+    // 默认仅在生产环境启用，避免开发时污染数据
+    enabled: process.env.NODE_ENV === 'production',
     siteId: '8864588cde35a2181784b07b34f770f9',  // 替换为你的站点 ID
   },
 };
 ```
+
+**注意**：
+- 开发环境（`npm run dev`）不会加载统计，避免污染数据和控制台警告
+- 生产构建（`npm run build`）会自动启用统计
+- 如需在开发环境测试，可临时改为 `enabled: true`
 
 构建并部署后，约 20-30 分钟可在 [百度统计后台](https://tongji.baidu.com/) 查看数据。
 
@@ -92,9 +98,13 @@ A:
 3. 等待 20-30 分钟，百度统计有延迟
 4. 打开浏览器开发者工具，查看是否有请求到 `hm.baidu.com`
 
-**Q: 本地开发时能看到统计吗？**
+**Q: 开发环境看到跨域警告怎么办？**
 
-A: 可以，但建议在生产环境测试，避免污染数据。
+A: 默认配置下开发环境不会加载统计，不会有警告。如果临时启用了统计，跨域警告是正常的，百度统计使用 JSONP 和 Image 方式发送数据，不受 CORS 限制，数据已成功发送。
+
+**Q: 如何在开发环境测试统计？**
+
+A: 将 `enabled` 临时改为 `true`，或使用 `npm run build && npm run preview` 预览生产构建。
 
 **Q: 如何完全禁用统计？**
 

@@ -19,7 +19,8 @@ export interface AnalyticsConfig {
 // 统一配置入口
 export const analyticsConfig: AnalyticsConfig = {
   baidu: {
-    enabled: true, // 设置为 false 可以完全禁用百度统计
+    // 开发环境可以设为 false 避免污染数据和控制台警告
+    enabled: process.env.NODE_ENV === 'production', // 仅在生产环境启用
     siteId: '8864588cde35a2181784b07b34f770f9',
   },
 };
