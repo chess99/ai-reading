@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { ReadingEvents } from '@/lib/analytics';
 
 interface SettingsDialogProps {
   isOpen: boolean;
@@ -42,6 +43,9 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
     const newValue = !offlineMode;
     setOfflineMode(newValue);
     localStorage.setItem('offline-mode', String(newValue));
+
+    // 追踪离线模式切换事件
+    ReadingEvents.trackOfflineMode(newValue);
 
     if (newValue) {
       // 开启离线模式，开始预缓存所有书籍

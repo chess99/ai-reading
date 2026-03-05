@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { ReadingEvents } from '@/lib/analytics';
 
 interface PagefindResultData {
   url: string;
@@ -69,13 +70,19 @@ export default function SearchPageClient() {
         );
 
         if (cancelled) return;
-        setResults(
-          detailList.map(item => ({
-            url: normalizeResultUrl(item.url),
-            title: item.meta?.title || '未命名书籍',
-            excerptHtml: item.excerpt || '',
-          }))
-        );
+
+        const searchResults = detailList.map(item => ({
+          url: normalizeResultUrl(item.url),
+          title: item.meta?.title || '未命名书籍',
+          excerptHtml: item.excerpt || '',
+        }));
+
+        setResults(searchResults);
+
+        // 追踪搜索事件（只在有结果时追踪，避免过多无效搜索）
+        if (searchResults.length > 0) {
+          ReadingEvents.trackSearch(trimmedKeyword);
+        }
       } catch {
         if (!cancelled) {
           setResults([]);

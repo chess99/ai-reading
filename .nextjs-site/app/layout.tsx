@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LayoutClient from './layout-client';
+import BaiduAnalytics from '@/components/BaiduAnalytics';
 import { buildBookTree, getAllBookMetas } from '@/lib/books';
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body>
+        <BaiduAnalytics />
         <LayoutClient bookTree={bookTree} allBooks={allBooks}>
           {children}
         </LayoutClient>

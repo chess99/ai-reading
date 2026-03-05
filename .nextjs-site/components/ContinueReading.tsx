@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getReadingState, type ReadingState } from '@/lib/reading-state';
+import { ReadingEvents } from '@/lib/analytics';
 
 export default function ContinueReading() {
   const [readingState, setReadingState] = useState<ReadingState | null>(null);
@@ -11,6 +12,12 @@ export default function ContinueReading() {
     const state = getReadingState();
     setReadingState(state);
   }, []);
+
+  const handleClick = () => {
+    if (readingState) {
+      ReadingEvents.trackContinueReading(readingState.bookSlug);
+    }
+  };
 
   if (!readingState) {
     return null;
@@ -23,6 +30,7 @@ export default function ContinueReading() {
       <Link
         href={`/books/${readingState.bookSlug}`}
         className="block group"
+        onClick={handleClick}
       >
         <div className="surface-card p-5 md:p-6 border-2 border-transparent hover:border-brand/30 transition-all duration-300">
           <div className="flex items-start gap-4">

@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { ReadingEvents } from '@/lib/analytics';
 
 interface TocItem {
   id: string;
@@ -16,6 +18,7 @@ interface TableOfContentsProps {
 export default function TableOfContents({ isOpen, onClose }: TableOfContentsProps) {
   const [toc, setToc] = useState<TocItem[]>([]);
   const [activeId, setActiveId] = useState<string>('');
+  const pathname = usePathname();
 
   useEffect(() => {
     // 提取文章中的标题
@@ -154,6 +157,11 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
       if (history.pushState) {
         history.pushState(null, '', `#${id}`);
       }
+
+      // 追踪章节切换事件
+      const bookSlug = pathname.split('/').pop() || '';
+      const chapterTitle = element.textContent || id;
+      ReadingEvents.trackChapterChange(bookSlug, chapterTitle);
 
       // 移动端点击后关闭抽屉
       if (window.innerWidth < 1024) {
