@@ -1,59 +1,59 @@
-# Development Guide
+# 开发指南
 
-This project is a static-exported Next.js site. Content comes from `../books`, while the web app lives in `.nextjs-site`.
+本项目是基于 Next.js 的静态导出站点。书籍内容位于 `../books` 目录，Web 应用位于 `.nextjs-site` 目录。
 
-## Requirements
+## 环境要求
 
 - Node.js 20+
 - npm 10+
 
-## Install
+## 安装依赖
 
 ```bash
 cd .nextjs-site
 npm install
 ```
 
-## Run In Development
+## 开发模式
 
 ```bash
 npm run dev
 ```
 
-- Local URL: `http://localhost:3000/ai-reading`
-- Hot reload works for UI and content updates.
-- Full-text search on `/search` uses Pagefind index files and is not available in pure dev mode.
+- 访问地址：`http://localhost:3000/ai-reading`
+- 支持热重载（UI 和内容更新）
+- 注意：`/search` 的全文搜索依赖 Pagefind 索引，开发模式下不可用
 
-## Build
+## 构建
 
 ```bash
 npm run build
 ```
 
-This command does two things:
+该命令会执行两个操作：
 
-1. Builds static pages into `out/`
-2. Generates Pagefind index into `out/pagefind/`
+1. 将静态页面构建到 `out/` 目录
+2. 生成 Pagefind 搜索索引到 `out/pagefind/` 目录
 
-## Preview Production Output
+## 预览构建产物
 
 ```bash
 npm run preview
 ```
 
-- Preview URL: `http://localhost:4173/ai-reading`
-- This command mounts `out/` under `/ai-reading` locally, matching production basePath.
-- Use this mode to verify full-text search behavior exactly as production.
+- 预览地址：`http://localhost:4173/ai-reading`
+- 该命令将 `out/` 目录挂载到 `/ai-reading` 路径，与生产环境的 basePath 一致
+- 使用此模式可以验证全文搜索功能是否正常
 
-## PWA Verification
+## PWA 验证
 
-After `npm run build` and `npm run preview`:
+执行 `npm run build` 和 `npm run preview` 后：
 
-1. Open `http://localhost:4173/ai-reading/`.
-2. Verify manifest is reachable at `http://localhost:4173/ai-reading/manifest.webmanifest`.
-3. In browser devtools, check service worker registration scope is `/ai-reading/`.
-4. Optionally test offline mode: static pages should fall back to cached homepage.
+1. 打开 `http://localhost:4173/ai-reading/`
+2. 验证 manifest 可访问：`http://localhost:4173/ai-reading/manifest.webmanifest`
+3. 在浏览器开发者工具中检查 Service Worker 注册作用域为 `/ai-reading/`
+4. 可选：测试离线模式，静态页面应回退到缓存的首页
 
-## Deploy
+## 部署
 
-Deploy the `out/` directory (including `out/pagefind/`) to static hosting.
+将 `out/` 目录（包含 `out/pagefind/`）部署到静态托管服务。

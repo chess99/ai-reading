@@ -1,8 +1,8 @@
-# Next.js Site
+# AI 阅读 - Next.js 站点
 
-Next.js 实现的 AI 阅读网站。
+基于 Next.js 的 AI 驱动书籍解读平台。
 
-## 开发
+## 快速开始
 
 ```bash
 cd .nextjs-site
@@ -12,66 +12,72 @@ npm run dev
 
 访问 <http://localhost:3000/ai-reading>
 
-> 说明：`/search` 的全文搜索依赖 `pagefind` 索引，纯 `dev` 模式不包含该索引。
-
-## 构建
+## 构建与部署
 
 ```bash
-npm run build
+npm run build    # 构建静态站点到 out/ 目录
+npm run preview  # 预览构建产物
 ```
 
-输出目录：`out/`（包含 `pagefind/` 搜索索引）
-
-## 预览构建产物
-
-```bash
-npm run preview
-```
-
-访问 <http://localhost:4173/ai-reading>
-
-> 说明：预览命令会把 `out/` 挂载到 `/ai-reading` 路径，和线上 basePath 保持一致。
-
-## 部署
-
-将 `out/` 目录部署到静态托管服务（如 GitHub Pages）。
-
-## PWA
-
-- 已启用 `manifest.webmanifest` 与 `service worker`。
-- 入口路径与作用域固定为 `/ai-reading/`，与 `basePath` 对齐。
-- 可安装为桌面/移动端应用，离线时可回退到首页缓存。
+部署 `out/` 目录到静态托管服务（如 GitHub Pages）。
 
 ## 技术栈
 
-- Next.js 16.1.6 (App Router + Turbopack)
-- React 19.2.4
-- TypeScript 5.9.3
-- Tailwind CSS 4.1.18
-- Static Site Generation (SSG)
+- Next.js 16 (App Router + Static Export)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- PWA (Service Worker + Manifest)
+- Pagefind (全文搜索)
 
 ## 目录结构
 
-```text
-.nextjs-site/
-├── app/                    # Next.js App Router 页面
-│   ├── not-found.tsx       # 全局 404 兜底页
-│   ├── layout.tsx         # 根布局
-│   ├── layout-client.tsx  # 客户端布局
-│   ├── page.tsx           # 首页
-│   ├── books/[slug]/      # 书籍详情页
-│   └── search/            # 全文搜索页
-├── components/            # React 组件
-│   ├── Header.tsx         # 顶部导航
-│   ├── Sidebar.tsx        # 侧边栏
-│   └── SearchBar.tsx      # 搜索栏
-├── lib/                   # 数据与工具函数
-│   └── books.ts           # 书籍数据处理
-├── docs/                  # 开发与协作文档
-│   └── development.md     # 开发、构建与预览流程
-└── public/                # 静态资源与 PWA 资源
 ```
+.nextjs-site/
+├── app/              # Next.js 页面
+├── components/       # React 组件
+├── lib/              # 工具函数与配置
+│   ├── books.ts          # 书籍数据处理
+│   ├── analytics.ts      # 统计追踪
+│   └── analytics-config.ts  # 统计配置
+├── docs/             # 开发文档
+└── public/           # 静态资源
+```
+
+## 功能特性
+
+- ✅ 静态站点生成 (SSG)
+- ✅ PWA 支持（可安装、离线访问）
+- ✅ 全文搜索
+- ✅ 响应式设计
+- ✅ 百度统计集成
+
+## 配置
+
+### 统计配置
+
+编辑 `lib/analytics-config.ts`：
+
+```typescript
+export const analyticsConfig = {
+  baidu: {
+    enabled: true,  // 开启/关闭统计
+    siteId: 'YOUR_SITE_ID',  // 替换为你的站点 ID
+  },
+};
+```
+
+详见 [docs/analytics.md](docs/analytics.md)
+
+## 开发文档
+
+- [开发指南](docs/development.md) - 开发、构建、预览流程
+- [统计配置](docs/analytics.md) - 百度统计集成说明
 
 ## 书籍数据
 
 书籍 Markdown 文件位于 `../books/` 目录。
+
+## License
+
+MIT
