@@ -22,7 +22,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
   );
   const [searchKeyword, setSearchKeyword] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [autoReveal, setAutoReveal] = useState(false);
+  const [autoReveal, setAutoReveal] = useState(true);
 
   // 从 localStorage 读取 auto-reveal 设置
   useEffect(() => {
