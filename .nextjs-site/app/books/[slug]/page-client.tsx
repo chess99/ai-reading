@@ -33,7 +33,7 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
   }, [bookSlug, bookTitle, bookAuthor]);
 
   return (
-    <BookLayout onTocToggle={() => setIsTocOpen(true)}>
+    <BookLayout onTocToggle={() => setIsTocOpen(true)} shareTitle={`${bookTitle} - ${bookAuthor}`}>
       <div className="flex gap-0 lg:gap-8 xl:gap-12 relative">
         {/* 主内容区 */}
         <div className="flex-1 min-w-0 max-w-4xl">

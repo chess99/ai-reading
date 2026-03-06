@@ -26,10 +26,17 @@ export async function generateMetadata({ params }: BookPageProps) {
     };
   }
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+
   return {
     title: `${book.title} - ${book.author} | AI 阅读`,
     description: `${book.title} by ${book.author} - AI 驱动的书籍解读`,
     keywords: [book.title, book.author, book.category, ...book.tags],
+    openGraph: {
+      title: `${book.title} - ${book.author}`,
+      description: `AI 驱动的书籍解读`,
+      images: [`${basePath}/icon.png`],
+    },
   };
 }
 
