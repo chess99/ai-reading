@@ -1,5 +1,7 @@
 'use client';
 
+import { trackEvent } from '@/lib/analytics';
+
 interface BookLayoutProps {
   children: React.ReactNode;
   onTocToggle: () => void;
@@ -14,6 +16,7 @@ export default function BookLayout({ children, onTocToggle, shareTitle }: BookLa
         title: shareTitle,
         url: window.location.href,
       });
+      trackEvent('分享', '分享书籍', shareTitle);
     } catch {
       // 用户取消分享，忽略
     }
