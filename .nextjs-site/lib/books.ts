@@ -16,6 +16,7 @@ export interface BookMeta {
   category: string;
   categoryPath: string[];
   tags: string[];
+  addedAt: number;
 }
 
 export interface BookDetail extends BookMeta {
@@ -62,6 +63,7 @@ function toBookMeta(book: BookDetail): BookMeta {
     category: book.category,
     categoryPath: book.categoryPath,
     tags: book.tags,
+    addedAt: book.addedAt,
   };
 }
 
@@ -88,6 +90,7 @@ function loadBookDetails(): BookDetail[] {
         const frontmatter = data as Partial<BookFrontmatter>;
         const { author, title } = parseFilename(entry.name);
         const categoryPath = extractCategoryPath(fullPath);
+        const stat = fs.statSync(fullPath);
         books.push({
           slug: frontmatter.slug || entry.name.replace(/\.md$/, ''),
           title: frontmatter.title || title,
@@ -95,6 +98,7 @@ function loadBookDetails(): BookDetail[] {
           category: categoryPath.join('/') || '未分类',
           categoryPath,
           tags: frontmatter.tags || [],
+          addedAt: stat.mtimeMs,
           content,
           filePath: fullPath,
         });
@@ -188,6 +192,13 @@ export function getAllTags(): { tag: string; count: number }[] {
   return Array.from(tagCount.entries())
     .map(([tag, count]) => ({ tag, count }))
     .sort((a, b) => b.count - a.count);
+}
+
+export function getLatestBooks(n = 6): BookMeta[] {
+  return getAllBookMetas()
+    .slice()
+    .sort((a, b) => b.addedAt - a.addedAt)
+    .slice(0, n);
 }
 
 export function searchBooks(keyword: string): BookMeta[] {

@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import { BookMeta } from '@/lib/books';
+import BookCard from './BookCard';
 
 interface CategoryCardProps {
   category: string;
@@ -10,33 +10,18 @@ interface CategoryCardProps {
 
 export default function CategoryCard({ category, books }: CategoryCardProps) {
   return (
-    <div className="surface-card surface-card-hover p-5 md:p-6 group">
-      <div className="flex items-start gap-3 mb-4">
-        <div className="text-2xl md:text-3xl transition-transform duration-200 group-hover:scale-105">📚</div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg md:text-xl font-semibold mb-1 truncate text-slate-900 group-hover:text-brand transition-colors">
-            {category}
-          </h3>
-          <p className="text-slate-500 text-xs md:text-sm">
-            {books.length} 本书籍
-          </p>
-        </div>
+    <div className="mb-8 md:mb-10">
+      <div className="flex items-center gap-3 mb-3">
+        <span className="text-xl">📚</span>
+        <h3 className="text-base md:text-lg font-semibold text-slate-900">{category}</h3>
+        <span className="text-xs text-slate-400 mt-0.5">{books.length} 本</span>
       </div>
-      <div className="space-y-1.5 md:space-y-2">
-        {books.slice(0, 3).map(book => (
-          <Link
-            key={book.slug}
-            href={`/books/${book.slug}`}
-            className="block text-xs md:text-sm text-slate-700 truncate transition-colors hover:text-brand"
-          >
-            • {book.title}
-          </Link>
-        ))}
-        {books.length > 3 && (
-          <div className="text-xs md:text-sm text-slate-400 pt-1">
-            还有 {books.length - 3} 本...
+      <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0 snap-x snap-mandatory scrollbar-none">
+        {books.map(book => (
+          <div key={book.slug} className="snap-start">
+            <BookCard book={book} />
           </div>
-        )}
+        ))}
       </div>
     </div>
   );

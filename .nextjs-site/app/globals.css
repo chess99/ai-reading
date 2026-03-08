@@ -466,3 +466,11 @@ body {
 .border-l-3 {
   border-left-width: 3px;
 }
+
+/* 横向滚动容器隐藏滚动条 */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

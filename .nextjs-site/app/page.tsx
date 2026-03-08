@@ -1,11 +1,13 @@
-import { getAllBookMetas, getAllCategories } from '@/lib/books';
+import { getAllBookMetas, getAllCategories, getLatestBooks } from '@/lib/books';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
 import ContinueReading from '@/components/ContinueReading';
+import NewBooks from '@/components/NewBooks';
 
 export default function HomePage() {
   const allBooks = getAllBookMetas();
   const categories = getAllCategories();
+  const latestBooks = getLatestBooks(10);
 
   return (
     <div className="page-container">
@@ -17,6 +19,9 @@ export default function HomePage() {
         <div className="mb-10 md:mb-14">
           <SearchBar books={allBooks} />
         </div>
+
+        {/* New Books */}
+        <NewBooks books={latestBooks} />
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 mb-10 md:mb-14">
@@ -46,21 +51,22 @@ export default function HomePage() {
 
         {/* Categories */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-slate-900">浏览分类</h2>
-          <div className="grid gap-4 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map(category => {
-              const categoryBooks = allBooks.filter(
-                book => book.category === category
-              );
-              return (
-                <CategoryCard
-                  key={category}
-                  category={category}
-                  books={categoryBooks}
-                />
-              );
-            })}
-          </div>
+          <h2 className="text-lg md:text-xl font-bold mb-6 text-slate-900 flex items-center gap-2">
+            <span className="w-1 h-5 rounded-full bg-gradient-to-b from-brand to-brand-dark inline-block" />
+            浏览分类
+          </h2>
+          {categories.map(category => {
+            const categoryBooks = allBooks.filter(
+              book => book.category === category
+            );
+            return (
+              <CategoryCard
+                key={category}
+                category={category}
+                books={categoryBooks}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
