@@ -23,7 +23,7 @@ export default function BookCard({ book, showNew = false }: BookCardProps) {
       )}
       {/* 书脊色块 */}
       <div className="w-8 h-1.5 rounded-full bg-gradient-to-r from-brand to-brand-dark mb-1 opacity-70" />
-      <h3 className="text-sm font-semibold text-slate-900 group-hover:text-brand transition-colors line-clamp-3 leading-snug flex-1">
+      <h3 className="text-sm font-semibold text-slate-900 group-hover:text-brand transition-colors line-clamp-2 leading-snug h-[2.625rem]">
         {book.title}
       </h3>
       <p className="text-xs text-slate-500 truncate">{book.author}</p>
