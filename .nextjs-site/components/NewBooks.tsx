@@ -16,12 +16,16 @@ export default function NewBooks({ books }: NewBooksProps) {
           最新上架
         </h2>
       </div>
-      <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0 snap-x snap-mandatory scrollbar-none">
-        {books.map(book => (
-          <div key={book.slug} className="snap-start">
-            <BookCard book={book} showNew />
-          </div>
-        ))}
+      <div className="flex overflow-x-auto pb-2 -mx-4 md:mx-0 snap-x snap-mandatory scrollbar-none">
+        <div className="flex-shrink-0 w-4 md:hidden" />
+        <div className="flex gap-3">
+          {books.map(book => (
+            <div key={book.slug} className="snap-start">
+              <BookCard book={book} showNew />
+            </div>
+          ))}
+        </div>
+        <div className="flex-shrink-0 w-4 md:hidden" />
       </div>
     </div>
   );
