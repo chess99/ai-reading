@@ -16,11 +16,11 @@ export default function CategoryCard({ category, books }: CategoryCardProps) {
         <h3 className="text-base md:text-lg font-semibold text-slate-900">{category}</h3>
         <span className="text-xs text-slate-400 mt-0.5">{books.length} 本</span>
       </div>
-      <div className="flex overflow-x-auto pb-2 -mx-4 md:mx-0 snap-x snap-mandatory scrollbar-none">
+      <div className="flex overflow-x-auto pb-2 -mx-4 md:mx-0 scrollbar-none">
         <div className="flex-shrink-0 w-4 md:hidden" />
         <div className="flex gap-3">
           {books.map(book => (
-            <div key={book.slug} className="snap-start">
+            <div key={book.slug}>
               <BookCard book={book} />
             </div>
           ))}
