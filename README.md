@@ -90,26 +90,11 @@ npm run preview
 
 **零维护**：直接在 `books/` 对应分类目录下创建 Markdown 文件即可，新分类会自动识别！
 
-```markdown
----
-title: 书名
-author: 作者
-category: 分类
-tags: [标签1, 标签2]
----
+文件名格式：`作者-书名.md`，支持子分类（在分类目录下创建子目录）。
 
-书籍内容...
-```
+详细的文件格式规范、frontmatter 字段说明和内容结构建议，见：
 
-文件名格式：`作者-书名.md`
-
-**添加新分类**（零维护）：
-```bash
-# 创建新分类目录，添加书籍，无需任何配置
-mkdir books/新分类
-echo "---\ntitle: 书名\nauthor: 作者\n---\n内容" > books/新分类/作者-书名.md
-# 刷新浏览器，新分类自动出现！
-```
+📄 [书籍内容规范](.nextjs-site/docs/book-format.md)
 
 ## 自动化
 
