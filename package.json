@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix .nextjs-site",
+    "build": "npm run build --prefix .nextjs-site",
+    "preview": "npm run preview --prefix .nextjs-site",
+    "slugify": "node .nextjs-site/scripts/slugify.js",
+    "prepare": "husky && git config core.hooksPath .husky"
+  },
+  "devDependencies": {
+    "husky": "^9.0.0"
+  }
+}
