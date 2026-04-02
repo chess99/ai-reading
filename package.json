@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix .nextjs-site",
-    "build": "npm run build --prefix .nextjs-site",
-    "preview": "npm run preview --prefix .nextjs-site",
+    "dev": "cd .nextjs-site && npm run dev",
+    "build": "cd .nextjs-site && npm run build",
+    "preview": "cd .nextjs-site && npm run preview",
     "slugify": "node .nextjs-site/scripts/slugify.js",
     "prepare": "husky && git config core.hooksPath .husky"
   },

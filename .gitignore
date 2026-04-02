@@ -1,5 +1,11 @@
 # Node
 node_modules/
+# 根目录的 lock 文件不应提交：
+# Next.js Turbopack 会把含 package.json + lock 文件的目录识别为 workspace root，
+# 导致 @import "tailwindcss" 从根目录解析而非 .nextjs-site/，引发样式异常
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Next.js
 .nextjs-site/node_modules/
