@@ -7,6 +7,7 @@ export interface BookFrontmatter {
   title?: string;
   author?: string;
   tags?: string[];
+  date?: string;
 }
 
 export interface BookMeta {
@@ -91,6 +92,9 @@ function loadBookDetails(): BookDetail[] {
         const { author, title } = parseFilename(entry.name);
         const categoryPath = extractCategoryPath(fullPath);
         const stat = fs.statSync(fullPath);
+        const addedAt = frontmatter.date
+          ? new Date(frontmatter.date).getTime()
+          : stat.mtimeMs;
         books.push({
           slug: frontmatter.slug || entry.name.replace(/\.md$/, ''),
           title: frontmatter.title || title,
@@ -98,7 +102,7 @@ function loadBookDetails(): BookDetail[] {
           category: categoryPath.join('/') || '未分类',
           categoryPath,
           tags: frontmatter.tags || [],
-          addedAt: stat.mtimeMs,
+          addedAt,
           content,
           filePath: fullPath,
         });

@@ -3,6 +3,7 @@ slug: zero-to-one
 title: Zero to One
 author: 彼得·蒂尔
 tags: []
+date: '2025-07-18'
 ---
 
 ### Preface: Zero to One

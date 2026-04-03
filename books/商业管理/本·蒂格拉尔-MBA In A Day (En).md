@@ -3,6 +3,7 @@ slug: mba-in-a-day-en
 title: MBA In A Day (En)
 author: 本·蒂格拉尔
 tags: []
+date: '2025-07-18'
 ---
 
 (kimi + prompt)

@@ -3,6 +3,7 @@ slug: acsms-advanced-exercise-physiology
 title: ACSMs advanced exercise physiology
 author: ACSM
 tags: []
+date: '2025-07-18'
 ---
 
 The provided PDF, "ACSM's Advanced Exercise Physiology," is a comprehensive textbook designed for advanced undergraduate and graduate students in the field of exercise physiology. Below is a summary of the main points from the preface and the first chapter, which offers historical context for the development of exercise physiology.

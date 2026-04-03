@@ -3,6 +3,7 @@ slug: acsm-s-complete-guide-to-fitness-health
 title: ACSM's Complete Guide to Fitness & Health
 author: ACSM
 tags: []
+date: '2025-07-18'
 ---
 
 (GPTs - Books Summarizer)

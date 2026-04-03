@@ -26,6 +26,7 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
     "next": "^16.1.6",
+    "pinyin-pro": "^3.28.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-markdown": "^10.1.0",
@@ -40,8 +41,8 @@
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.24",
     "pagefind": "^1.4.0",
-    "serve": "^14.2.4",
     "postcss": "^8.5.6",
+    "serve": "^14.2.4",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }

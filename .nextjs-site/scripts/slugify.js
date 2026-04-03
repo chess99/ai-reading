@@ -117,7 +117,7 @@ function main() {
     process.exit(1);
   }
 
-  // 写入自动生成的 slug
+  // 写入自动生成的 slug 和 date
   if (CHECK_ONLY) {
     if (toWrite.length > 0) {
       console.error(`\n❌ 以下文件缺少 slug，请运行 node .nextjs-site/scripts/slugify.js 自动生成：`);
@@ -128,10 +128,11 @@ function main() {
     }
   } else {
     for (const { filePath, slug, data, content } of toWrite) {
-      const newFrontmatter = { slug, ...data };
+      const today = new Date().toISOString().slice(0, 10);
+      const newFrontmatter = { slug, date: today, ...data };
       const newContent = matter.stringify(content, newFrontmatter);
       fs.writeFileSync(filePath, newContent, 'utf-8');
-      console.log(`✅ 已生成 slug：${path.relative(BOOKS_DIR, filePath)} → ${slug}`);
+      console.log(`✅ 已生成 slug + date：${path.relative(BOOKS_DIR, filePath)} → ${slug} (${today})`);
     }
     if (toWrite.length === 0) {
       console.log('✅ 所有文件 slug 完整，无冲突');
