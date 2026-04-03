@@ -1,6 +1,10 @@
 ---
-slug: acsm-s-complete-guide-to-fitness-health
-
+slug: null
+date: '2025-07-18'
+title: ACSM's Complete Guide to Fitness & Health
+author: ACSM
+tags:
+  - 健康
 ---
 
 # ACSM健身与健康完全指南

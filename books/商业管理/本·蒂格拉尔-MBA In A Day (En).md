@@ -2,7 +2,7 @@
 slug: mba-in-a-day-en
 title: MBA In A Day (En)
 author: 本·蒂格拉尔
-tags: []
+tags: [管理, 商业策略]
 date: '2025-07-18'
 ---
 

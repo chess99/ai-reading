@@ -1,6 +1,9 @@
 ---
 slug: the-5-am-club
-
+title: The 5am Club
+author: 罗宾·夏玛
+tags: [个人成长]
+date: '2025-07-18'
 ---
 
 # 《凌晨5點俱樂部》知識蒸餾

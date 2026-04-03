@@ -1,6 +1,9 @@
 ---
 slug: zero-to-one
-
+title: Zero to One
+author: 彼得·蒂尔
+tags: [创业, 商业策略]
+date: '2025-07-18'
 ---
 
 # 从0到1
