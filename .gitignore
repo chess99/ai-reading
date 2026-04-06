@@ -17,6 +17,12 @@ pnpm-lock.yaml
 # Astro (legacy)
 .astro-site/
 
+# Raw book files (epub/pdf/mobi — binary, large, not tracked)
+raw-books/*.epub
+raw-books/*.pdf
+raw-books/*.mobi
+raw-books/*.azw3
+
 # System
 .DS_Store
 
