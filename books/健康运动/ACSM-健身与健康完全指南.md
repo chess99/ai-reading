@@ -1,10 +1,9 @@
 ---
-slug: null
+slug: acsm-jian-shen-yu-jian-kang-wan-quan-zhi-nan
 date: '2025-07-18'
-title: ACSM's Complete Guide to Fitness & Health
+title: ACSM健身与健康完全指南
 author: ACSM
-tags:
-  - 健康
+tags: [健康运动]
 ---
 
 # ACSM健身与健康完全指南
