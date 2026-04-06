@@ -4,9 +4,12 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeHighlight from 'rehype-highlight';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import TableOfContents from '@/components/TableOfContents';
 import BookLayout from '@/components/BookLayout';
 import { saveReadingState } from '@/lib/reading-state';
@@ -39,8 +42,8 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
         <div className="flex-1 min-w-0 max-w-4xl">
           <div className="markdown-content">
             <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}
+              remarkPlugins={[remarkGfm, remarkMath]}
+              rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeKatex, rehypeHighlight]}
             >
               {content}
             </ReactMarkdown>
