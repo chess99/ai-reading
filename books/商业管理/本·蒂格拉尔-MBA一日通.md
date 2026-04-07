@@ -1,6 +1,6 @@
 ---
-slug: mba-in-a-day-zh
-title: MBA In A Day (Zh)
+slug: mba-yi-ri-tong
+title: MBA一日通
 author: 本·蒂格拉尔
 tags: [管理, 商业策略]
 date: '2025-07-18'
