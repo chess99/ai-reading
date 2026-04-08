@@ -3,6 +3,20 @@ import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 
+function injectBookLinks(content: string, currentSlug: string): string {
+  const books = getAllBookMetas();
+  const titleToSlug = new Map(
+    books
+      .filter(b => b.slug !== currentSlug)
+      .map(b => [b.title, b.slug])
+  );
+
+  return content.replace(/《([^》]+)》/g, (match, title) => {
+    const slug = titleToSlug.get(title);
+    return slug ? `[${match}](/books/${slug})` : match;
+  });
+}
+
 interface BookPageProps {
   params: Promise<{ slug: string }>;
 }
@@ -81,7 +95,7 @@ export default async function BookPage({ params }: BookPageProps) {
 
         {/* Content with TOC */}
         <BookPageClient
-          content={book.content}
+          content={injectBookLinks(book.content, book.slug)}
           bookSlug={book.slug}
           bookTitle={book.title}
           bookAuthor={book.author}
