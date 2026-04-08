@@ -13,6 +13,7 @@ pnpm-lock.yaml
 .nextjs-site/out/
 .nextjs-site/next-env.d.ts
 .nextjs-site/public/build-manifest.json
+.nextjs-site/tsconfig.tsbuildinfo
 
 # Astro (legacy)
 .astro-site/
