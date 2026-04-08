@@ -4,6 +4,7 @@ import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 
 function injectBookLinks(content: string, currentSlug: string): string {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
   const books = getAllBookMetas();
   const titleToSlug = new Map(
     books
@@ -13,7 +14,7 @@ function injectBookLinks(content: string, currentSlug: string): string {
 
   return content.replace(/《([^》]+)》/g, (match, title) => {
     const slug = titleToSlug.get(title);
-    return slug ? `[${match}](/books/${slug})` : match;
+    return slug ? `[${match}](${basePath}/books/${slug})` : match;
   });
 }
 

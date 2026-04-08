@@ -1,5 +1,11 @@
 # ai-reading 书库规范
 
+## 部署
+
+GitHub Pages，仓库名 `ai-reading`，所有路径以 `/ai-reading` 为前缀。
+next.config.ts 已配置 `basePath: '/ai-reading'`。
+代码中手动拼接路径时统一用 `process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading'`，不要硬编码裸路径。
+
 ## 书籍文件命名规范
 
 文件路径：`books/<分类>/<作者>-<书名>.md`
