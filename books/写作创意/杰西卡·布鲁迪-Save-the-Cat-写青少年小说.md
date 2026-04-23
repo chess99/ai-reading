@@ -1,14 +1,12 @@
 ---
+slug: save-the-cat-xie-qing-shao-nian-xiao-shuo
 title: Save the Cat! 写青少年小说
-author: Jessica Brody
-tags: ["小说写作", "青少年文学", "Save the Cat", "故事结构", "人物塑造", "Blake Snyder"]
-date: 2026-04-23
+author: 杰西卡·布鲁迪
+tags: [写作, 小说写作, 故事结构, 人物塑造]
+date: '2026-04-23'
 ---
 
 # Save the Cat! 写青少年小说
-
-> **Save the Cat! Writes a Young Adult Novel** by Jessica Brody  
-> 中文提炼版 · 基于本书前400k字符
 
 ---
 
