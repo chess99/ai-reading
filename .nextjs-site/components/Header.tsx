@@ -70,25 +70,6 @@ export default function Header({ onMenuClick, onSettingsClick, showMenuButton = 
                 />
               </svg>
             </button>
-            <a
-              href="https://cearl.cc/BookDistill/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1 text-sm md:text-base text-slate-700 font-medium tracking-[0.01em] transition-colors hover:text-brand"
-            >
-              <span>BookDistill</span>
-              <svg
-                className="w-3 h-3 opacity-60"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 12 12"
-                stroke="currentColor"
-              >
-                <path d="M10.5 1.5L1.5 10.5M10.5 1.5H4.5M10.5 1.5V7.5" />
-              </svg>
-            </a>
           </nav>
         </div>
       </div>
