@@ -12,7 +12,7 @@ import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 import TableOfContents from '@/components/TableOfContents';
 import BookLayout from '@/components/BookLayout';
-import { saveReadingState } from '@/lib/reading-state';
+import { saveToHistory } from '@/lib/reading-state';
 
 interface BookPageClientProps {
   content: string;
@@ -27,7 +27,7 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
 
   // 保存阅读状态
   useEffect(() => {
-    saveReadingState({
+    saveToHistory({
       bookSlug,
       bookTitle,
       bookAuthor,
