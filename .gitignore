@@ -24,6 +24,9 @@ raw-books/*.pdf
 raw-books/*.mobi
 raw-books/*.azw3
 
+# Superpowers brainstorming artifacts
+.superpowers/
+
 # System
 .DS_Store
 
