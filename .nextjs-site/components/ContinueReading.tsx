@@ -3,10 +3,9 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+
 import { getReadingHistory, type ReadingState } from '@/lib/reading-state';
 import { ReadingEvents } from '@/lib/analytics';
-
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
 
 export default function ContinueReading() {
   const [current, setCurrent] = useState<ReadingState | null>(null);
@@ -36,7 +35,7 @@ export default function ContinueReading() {
 
     // 同时跳转（不等动画）
     ReadingEvents.trackContinueReading(item.bookSlug);
-    router.push(`${BASE_PATH}/books/${item.bookSlug}`);
+    router.push(`/books/${item.bookSlug}`);
   }
 
   return (
@@ -45,7 +44,7 @@ export default function ContinueReading() {
 
         {/* 主行 */}
         <Link
-          href={`${BASE_PATH}/books/${current.bookSlug}`}
+          href={`/books/${current.bookSlug}`}
           className="flex items-center gap-4 p-5 md:p-6 group transition-colors duration-150 hover:bg-violet-50"
           onClick={handleMainClick}
         >
