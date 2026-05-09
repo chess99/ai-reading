@@ -42,6 +42,7 @@ export function getReadingHistory(): ReadingState[] {
     return JSON.parse(saved) as ReadingState[];
   } catch (error) {
     console.error('Failed to load reading history:', error);
+    localStorage.removeItem(HISTORY_KEY);
     return [];
   }
 }

@@ -11,6 +11,7 @@ export default function ContinueReading() {
   const [current, setCurrent] = useState<ReadingState | null>(null);
   const [rest, setRest] = useState<ReadingState[]>([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [fadeKey, setFadeKey] = useState(0);
   const router = useRouter();
 
   useEffect(() => {
@@ -28,9 +29,10 @@ export default function ContinueReading() {
   }
 
   function handleHistoryClick(item: ReadingState) {
-    // 乐观更新：立即切换主卡片
+    // 乐观更新：切换主卡片内容，触发淡入动画
     setCurrent(item);
     setRest([current!, ...rest.filter(r => r.bookSlug !== item.bookSlug)]);
+    setFadeKey(k => k + 1);
     setIsOpen(false);
 
     // 同时跳转（不等动画）
@@ -56,8 +58,12 @@ export default function ContinueReading() {
             </svg>
           </div>
 
-          {/* 文字 */}
-          <div className="flex-1 min-w-0">
+          {/* 文字：key 变化时触发 fadeIn 动画 */}
+          <div
+            key={fadeKey}
+            className="flex-1 min-w-0"
+            style={{ animation: fadeKey > 0 ? 'fadeIn 120ms ease-out' : undefined }}
+          >
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-sm font-medium text-slate-500 uppercase tracking-wide">继续阅读</h3>
               <span className="text-xs text-slate-400">·</span>
@@ -69,8 +75,8 @@ export default function ContinueReading() {
             <p className="text-sm md:text-base text-slate-600">{current.bookAuthor}</p>
           </div>
 
-          {/* 箭头 */}
-          <div className="flex-shrink-0 text-slate-400 group-hover:text-brand group-hover:translate-x-1 transition-all">
+          {/* 箭头：右移 2px */}
+          <div className="flex-shrink-0 text-slate-400 group-hover:text-brand group-hover:translate-x-0.5 transition-all">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -103,7 +109,7 @@ export default function ContinueReading() {
             <div
               className="overflow-hidden transition-all duration-[280ms]"
               style={{
-                maxHeight: isOpen ? `${rest.length * 44 + 16}px` : '0px',
+                maxHeight: isOpen ? `${rest.length * 44 + 20}px` : '0px',
                 transitionTimingFunction: 'cubic-bezier(0.4,0,0.2,1)',
               }}
             >
@@ -111,7 +117,7 @@ export default function ContinueReading() {
                 {rest.map(item => (
                   <button
                     key={item.bookSlug}
-                    className="flex items-center gap-3 px-3 py-2 rounded-lg text-left hover:bg-violet-50 transition-colors group/item w-full"
+                    className="flex items-center gap-3 px-3 py-2 rounded-lg text-left hover:bg-violet-50 hover:translate-x-0.5 transition-all group/item w-full"
                     onClick={() => handleHistoryClick(item)}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0" />
