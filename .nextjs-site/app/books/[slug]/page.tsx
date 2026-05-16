@@ -3,6 +3,8 @@ import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 
+const BASE_URL = 'https://reading.cearl.cc';
+
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
   const titleToSlug = new Map(
@@ -36,18 +38,41 @@ export async function generateMetadata({ params }: BookPageProps) {
 
   if (!book) {
     return {
-      title: '书籍未找到 - AI Reading',
+      title: '书籍未找到 - AI 阅读',
     };
   }
 
+  const pageUrl = `${BASE_URL}/books/${slug}/`;
+  const description = `《${book.title}》作者 ${book.author}，AI 提炼的核心知识与洞见。分类：${book.category}。`;
+
   return {
     title: `${book.title} - ${book.author} | AI 阅读`,
-    description: `${book.title} by ${book.author} - AI 驱动的书籍解读`,
+    description,
     keywords: [book.title, book.author, book.category, ...book.tags],
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
       title: `${book.title} - ${book.author}`,
-      description: `AI 驱动的书籍解读`,
-      images: ['/icon.png'],
+      description,
+      url: pageUrl,
+      type: 'article',
+      locale: 'zh_CN',
+      siteName: 'AI 阅读',
+      images: [
+        {
+          url: `${BASE_URL}/icon.png`,
+          width: 512,
+          height: 512,
+          alt: book.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary',
+      title: `${book.title} - ${book.author}`,
+      description,
+      images: [`${BASE_URL}/icon.png`],
     },
   };
 }
@@ -60,8 +85,27 @@ export default async function BookPage({ params }: BookPageProps) {
     notFound();
   }
 
+  const pageUrl = `${BASE_URL}/books/${slug}/`;
+  const bookJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Book',
+    name: book.title,
+    author: {
+      '@type': 'Person',
+      name: book.author,
+    },
+    url: pageUrl,
+    inLanguage: 'zh-CN',
+    genre: book.category,
+    keywords: book.tags.join(', '),
+  };
+
   return (
     <article className="container mx-auto px-4 py-6 md:py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd) }}
+      />
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <header className="mb-8 md:mb-10 pb-6 border-b border-slate-200">
