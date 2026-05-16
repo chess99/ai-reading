@@ -4,7 +4,7 @@ import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 
 function injectBookLinks(content: string, currentSlug: string): string {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+  const basePath = '';
   const books = getAllBookMetas();
   const titleToSlug = new Map(
     books
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: BookPageProps) {
     };
   }
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+  const basePath = '';
 
   return {
     title: `${book.title} - ${book.author} | AI 阅读`,

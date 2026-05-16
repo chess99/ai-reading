@@ -1,11 +1,9 @@
-import { cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
 
 const cwd = process.cwd();
 const outDir = path.join(cwd, 'out');
-const previewRoot = path.join(cwd, '.preview-site');
-const mountedSiteDir = path.join(previewRoot, 'ai-reading');
 const serveEntry = path.join(cwd, 'node_modules', 'serve', 'build', 'main.js');
 
 if (!existsSync(outDir)) {
@@ -17,13 +15,9 @@ if (!existsSync(serveEntry)) {
   process.exit(1);
 }
 
-rmSync(previewRoot, { recursive: true, force: true });
-mkdirSync(previewRoot, { recursive: true });
-cpSync(outDir, mountedSiteDir, { recursive: true });
-
 const server = spawn(
   process.execPath,
-  [serveEntry, '.preview-site', '-l', '4173', '--no-port-switching'],
+  [serveEntry, outDir, '-l', '4173', '--no-port-switching'],
   {
     stdio: 'inherit',
   }

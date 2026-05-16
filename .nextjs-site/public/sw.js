@@ -1,10 +1,10 @@
-const CACHE_NAME = 'ai-reading-v1';
-const BASE_PATH = '/ai-reading';
+const CACHE_NAME = 'reading-v1';
+const BASE_PATH = '';
 const MANIFEST_URL = `${BASE_PATH}/build-manifest.json`;
 const PRECACHE_URLS = [
-  `${BASE_PATH}/`,
-  `${BASE_PATH}/manifest.webmanifest`,
-  `${BASE_PATH}/icon.svg`,
+  `/`,
+  `/manifest.webmanifest`,
+  `/icon.svg`,
 ];
 
 let currentManifest = null;

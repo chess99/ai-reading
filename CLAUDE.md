@@ -2,9 +2,9 @@
 
 ## 部署
 
-GitHub Pages，仓库名 `ai-reading`，所有路径以 `/ai-reading` 为前缀。
-next.config.ts 已配置 `basePath: '/ai-reading'`。
-代码中手动拼接路径时统一用 `process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading'`，不要硬编码裸路径。
+GitHub Pages，自定义域名 `reading.cearl.cc`，站点部署在域名根路径 `/`。
+next.config.ts 无 `basePath` 配置。
+代码中路径直接使用绝对路径（如 `/books/slug/`），不需要拼接前缀。
 
 ## 书籍文件命名规范
 

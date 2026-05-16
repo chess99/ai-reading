@@ -2,7 +2,6 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export', // 静态导出
-  basePath: '/ai-reading',
   images: {
     unoptimized: true, // 静态导出需要
   },

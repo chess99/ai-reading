@@ -28,7 +28,7 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
     if (!('caches' in window)) return;
 
     try {
-      const cache = await caches.open('ai-reading-v1');
+      const cache = await caches.open('reading-v1');
       const requests = await cache.keys();
       const bookRequests = requests.filter(req =>
         req.url.includes('/books/') && !req.url.includes('__next')
@@ -62,7 +62,7 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
     setIsPrefetching(true);
     setPrefetchProgress(0);
 
-    const bookUrls = allBooks.map(book => `/ai-reading/books/${book.slug}/`);
+    const bookUrls = allBooks.map(book => `/books/${book.slug}/`);
     const batchSize = 5; // 每次缓存 5 本
 
     for (let i = 0; i < bookUrls.length; i += batchSize) {

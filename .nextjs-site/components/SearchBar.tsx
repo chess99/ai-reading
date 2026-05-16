@@ -48,8 +48,7 @@ export default function SearchBar({
   const handleRandomBook = () => {
     if (books.length === 0) return;
     const randomBook = books[Math.floor(Math.random() * books.length)];
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/ai-reading";
-    window.location.href = `${basePath}/books/${randomBook.slug}`;
+    window.location.href = `/books/${randomBook.slug}`;
   };
 
   const actionsLayoutClass = showFullSearch ? "grid-cols-2" : "grid-cols-1";

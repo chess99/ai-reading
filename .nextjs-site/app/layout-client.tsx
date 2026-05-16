@@ -21,9 +21,8 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
     if (!('serviceWorker' in navigator)) {
       return;
     }
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
-    const swPath = `${basePath}/sw.js`;
-    const scope = `${basePath}/`;
+    const swPath = '/sw.js';
+    const scope = '/';
     navigator.serviceWorker.register(swPath, { scope }).catch(() => {
       // keep silent in production, SW is optional enhancement
     });

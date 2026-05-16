@@ -23,7 +23,7 @@ interface PagefindModule {
   }>;
 }
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '/ai-reading';
+const BASE_PATH = '';
 
 function normalizeResultUrl(url: string): string {
   if (!url) return `${BASE_PATH}/`;
