@@ -137,7 +137,6 @@ self.addEventListener('fetch', event => {
   const url = new URL(request.url);
   // 跳过外部请求（如百度统计等第三方服务）
   if (url.origin !== self.location.origin) return;
-  if (!url.pathname.startsWith(BASE_PATH)) return;
 
   // 导航请求（HTML 页面）
   if (request.mode === 'navigate') {

@@ -23,14 +23,11 @@ interface PagefindModule {
   }>;
 }
 
-const BASE_PATH = '';
-
 function normalizeResultUrl(url: string): string {
-  if (!url) return `${BASE_PATH}/`;
+  if (!url) return '/';
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
-  if (url.startsWith(BASE_PATH)) return url;
-  if (url.startsWith('/')) return `${BASE_PATH}${url}`;
-  return `${BASE_PATH}/${url}`;
+  if (url.startsWith('/')) return url;
+  return `/${url}`;
 }
 
 export default function SearchPageClient() {
@@ -56,7 +53,7 @@ export default function SearchPageClient() {
       setErrorMessage('');
       try {
         if (!pagefindRef.current) {
-          const pagefindScriptUrl = `${BASE_PATH}/pagefind/pagefind.js`;
+          const pagefindScriptUrl = `/pagefind/pagefind.js`;
           const imported = await import(/* webpackIgnore: true */ pagefindScriptUrl);
           pagefindRef.current = (imported.default || imported) as PagefindModule;
           if (!cancelled) {

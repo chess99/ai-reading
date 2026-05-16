@@ -4,7 +4,6 @@ import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 
 function injectBookLinks(content: string, currentSlug: string): string {
-  const basePath = '';
   const books = getAllBookMetas();
   const titleToSlug = new Map(
     books
@@ -14,7 +13,7 @@ function injectBookLinks(content: string, currentSlug: string): string {
 
   return content.replace(/《([^》]+)》/g, (match, title) => {
     const slug = titleToSlug.get(title);
-    return slug ? `[${match}](${basePath}/books/${slug})` : match;
+    return slug ? `[${match}](/books/${slug})` : match;
   });
 }
 
@@ -41,8 +40,6 @@ export async function generateMetadata({ params }: BookPageProps) {
     };
   }
 
-  const basePath = '';
-
   return {
     title: `${book.title} - ${book.author} | AI 阅读`,
     description: `${book.title} by ${book.author} - AI 驱动的书籍解读`,
@@ -50,7 +47,7 @@ export async function generateMetadata({ params }: BookPageProps) {
     openGraph: {
       title: `${book.title} - ${book.author}`,
       description: `AI 驱动的书籍解读`,
-      images: [`${basePath}/icon.png`],
+      images: ['/icon.png'],
     },
   };
 }
