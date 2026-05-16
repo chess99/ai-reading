@@ -8,8 +8,5 @@ AI 阅读收录了投资、心理学、个人成长、商业管理、思维方�
 
 ## Key Pages
 
-- [首页](https://reading.cearl.cc/) — 书籍分类浏览与搜索入口
-- [投资类书籍](https://reading.cearl.cc/) — 股票投资、价值投资、量化交易等经典著作
-- [心理学类书籍](https://reading.cearl.cc/) — 认知科学、行为经济学、心理健康相关书籍
-- [个人成长类书籍](https://reading.cearl.cc/) — 习惯养成、效率提升、自我管理经典
+- [首页](https://reading.cearl.cc/) — 书籍分类浏览入口，含投资、心理学、个人成长、商业管理等 10 个分类
 - [全文搜索](https://reading.cearl.cc/search/) — 在全部书籍内容中搜索关键词

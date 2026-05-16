@@ -1,16 +1,15 @@
 import type { MetadataRoute } from 'next';
 import { getAllBookMetas } from '@/lib/books';
+import { BASE_URL } from '@/lib/config';
 
 export const dynamic = 'force-static';
-
-const BASE_URL = 'https://reading.cearl.cc';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const books = getAllBookMetas();
 
   const bookEntries: MetadataRoute.Sitemap = books.map(book => ({
     url: `${BASE_URL}/books/${book.slug}/`,
-    lastModified: book.addedAt ? new Date(book.addedAt) : new Date(),
+    lastModified: new Date(book.addedAt),
     changeFrequency: 'monthly',
     priority: 0.8,
   }));

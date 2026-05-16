@@ -2,8 +2,7 @@ import { notFound } from 'next/navigation';
 import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
-
-const BASE_URL = 'https://reading.cearl.cc';
+import { BASE_URL } from '@/lib/config';
 
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
@@ -104,7 +103,7 @@ export default async function BookPage({ params }: BookPageProps) {
     <article className="container mx-auto px-4 py-6 md:py-8">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd).replace(/</g, '\\u003c') }}
       />
       <div className="max-w-7xl mx-auto">
         {/* Header */}

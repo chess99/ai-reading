@@ -3,8 +3,7 @@ import './globals.css';
 import LayoutClient from './layout-client';
 import BaiduAnalytics from '@/components/BaiduAnalytics';
 import { buildBookTree, getAllBookMetas } from '@/lib/books';
-
-const BASE_URL = 'https://reading.cearl.cc';
+import { BASE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'AI 阅读 - AI 驱动的书籍解读与知识分享平台',
@@ -90,7 +89,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }}
         />
       </head>
       <body>
