@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-- 访问地址：`http://localhost:3000/ai-reading`
+- 访问地址：`http://localhost:3000`
 - 支持热重载（UI 和内容更新）
 - 注意：`/search` 的全文搜索依赖 Pagefind 索引，开发模式下不可用
 
@@ -41,17 +41,16 @@ npm run build
 npm run preview
 ```
 
-- 预览地址：`http://localhost:4173/ai-reading`
-- 该命令将 `out/` 目录挂载到 `/ai-reading` 路径，与生产环境的 basePath 一致
+- 预览地址：`http://localhost:4173`
 - 使用此模式可以验证全文搜索功能是否正常
 
 ## PWA 验证
 
 执行 `npm run build` 和 `npm run preview` 后：
 
-1. 打开 `http://localhost:4173/ai-reading/`
-2. 验证 manifest 可访问：`http://localhost:4173/ai-reading/manifest.webmanifest`
-3. 在浏览器开发者工具中检查 Service Worker 注册作用域为 `/ai-reading/`
+1. 打开 `http://localhost:4173/`
+2. 验证 manifest 可访问：`http://localhost:4173/manifest.webmanifest`
+3. 在浏览器开发者工具中检查 Service Worker 注册作用域为 `/`
 4. 可选：测试离线模式，静态页面应回退到缓存的首页
 
 ## 部署

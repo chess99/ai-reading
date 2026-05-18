@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-访问 <http://localhost:3000/ai-reading>
+访问 <http://localhost:3000>
 
 ## 构建与部署
 

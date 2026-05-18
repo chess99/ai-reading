@@ -37,3 +37,4 @@ raw-books/*.azw3
 # IDE
 .vscode/
 .idea/
+.gstack/
