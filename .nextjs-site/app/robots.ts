@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'PerplexityBot', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
     ],
-    sitemap: 'https://reading.cearl.cc/sitemap.xml',
+    sitemap: 'https://read.cearl.cc/sitemap.xml',
   };
 }

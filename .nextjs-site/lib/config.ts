@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://reading.cearl.cc';
+export const BASE_URL = 'https://read.cearl.cc';
