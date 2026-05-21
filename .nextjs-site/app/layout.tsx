@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   manifest: '/manifest.webmanifest',
   icons: {
     icon: '/icon.svg',
-    apple: '/icon.svg',
+    apple: '/icon.png',
   },
   appleWebApp: {
     capable: true,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#f4efe6',
+  themeColor: '#9a6b2f',
 };
 
 const websiteJsonLd = {

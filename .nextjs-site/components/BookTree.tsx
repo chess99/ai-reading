@@ -17,18 +17,6 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
   const pathname = usePathname();
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filterKeyword, setFilterKeyword] = useState('');
-  const [autoReveal, setAutoReveal] = useState(true);
-
-  useEffect(() => {
-    const saved = localStorage.getItem('sidebar-auto-reveal');
-    if (saved !== null) setAutoReveal(saved === 'true');
-  }, []);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('sidebar-auto-reveal', String(autoReveal));
-    }
-  }, [autoReveal]);
 
   const filteredTree = useMemo(() => {
     if (!filterKeyword.trim()) return bookTree;
@@ -109,9 +97,9 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
   };
 
   useEffect(() => {
-    if (autoReveal && pathname.startsWith('/books/')) revealActiveFile();
+    if (pathname.startsWith('/books/')) revealActiveFile();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname, autoReveal]);
+  }, [pathname]);
 
   const toggleCategory = (categoryPath: string) => {
     const next = new Set(expandedCategories);
@@ -189,31 +177,6 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         <button onClick={expandAll} className="text-xs font-medium text-stone-600 hover:text-brand">展开全部</button>
         <span className="text-stone-300">/</span>
         <button onClick={collapseAll} className="text-xs font-medium text-stone-600 hover:text-brand">折叠全部</button>
-        <div className="ml-auto flex items-center gap-1">
-          <button
-            onClick={() => setAutoReveal(!autoReveal)}
-            className={`p-1.5 rounded hover:bg-stone-100 transition-colors cursor-pointer ${autoReveal ? 'text-brand' : 'text-stone-400'}`}
-            title="自动定位当前文件"
-            aria-label="自动定位当前文件"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2" />
-              <line x1="3" y1="9" x2="21" y2="9" strokeWidth="2" />
-              <line x1="3" y1="15" x2="21" y2="15" strokeWidth="2" />
-            </svg>
-          </button>
-          <button
-            onClick={revealActiveFile}
-            className="p-1.5 rounded hover:bg-stone-100 text-stone-400 hover:text-brand transition-colors cursor-pointer"
-            title="定位到当前文件"
-            aria-label="定位到当前文件"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" strokeWidth="2" />
-              <circle cx="12" cy="12" r="3" fill="currentColor" />
-            </svg>
-          </button>
-        </div>
       </div>
 
       <div className="flex-1 overflow-auto p-2 space-y-1">
