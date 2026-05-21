@@ -53,7 +53,7 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
         </div>
 
         {/* Main content — pb-16 on mobile to clear fixed BottomNav */}
-        <main className="flex-1 overflow-auto pb-16 md:pb-0">
+        <main className="flex-1 overflow-auto overflow-x-hidden pb-16 md:pb-0">
           {children}
         </main>
       </div>

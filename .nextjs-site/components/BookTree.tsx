@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BookTreeNode, BookMeta } from '@/lib/books';
+import { BookIcon, ChevronRightIcon, CloseIcon, SearchIcon } from '@/components/Icons';
 
 interface BookTreeProps {
   bookTree: BookTreeNode[];
@@ -129,12 +130,12 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         <div key={currentPath}>
           <button
             onClick={() => toggleCategory(currentPath)}
-            className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-slate-100 rounded transition-colors"
+            className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-stone-100 rounded-md transition-colors"
             style={{ paddingLeft: `${8 + indent}px` }}
           >
-            <span className="text-slate-500 text-xs">{isExpanded ? '▼' : '▶'}</span>
-            <span className="font-medium text-slate-900">{node.name}</span>
-            <span className="ml-auto text-xs text-slate-400">{node.children?.length ?? 0}</span>
+            <ChevronRightIcon className={`w-3.5 h-3.5 text-stone-500 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
+            <span className="font-semibold text-stone-900">{node.name}</span>
+            <span className="ml-auto text-xs text-stone-400 tabular-nums">{node.children?.length ?? 0}</span>
           </button>
           {isExpanded && node.children && (
             <div className="space-y-0.5">
@@ -155,7 +156,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         style={{ paddingLeft: `${8 + indent + 16}px` }}
       >
         <div className="flex items-start gap-2">
-          <span className="text-xs text-slate-400 mt-0.5">📖</span>
+          <BookIcon className="w-3.5 h-3.5 text-stone-400 mt-0.5 flex-shrink-0" />
           <span className="flex-1 line-clamp-2">{node.name}</span>
         </div>
       </Link>
@@ -165,37 +166,33 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
   return (
     <div className="flex flex-col h-full">
       {showFilterInput && (
-        <div className="px-3 py-2 border-b border-slate-100">
+        <div className="px-3 py-2 border-b border-stone-100">
           <div className="relative">
             <input
               type="text"
               value={filterKeyword}
               onChange={e => setFilterKeyword(e.target.value)}
               placeholder="搜索书名、作者..."
-              className="w-full pl-8 pr-3 py-1.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-slate-50"
-            />
-            <svg className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
+            className="w-full pl-8 pr-3 py-2 text-sm border border-stone-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-brand/15 focus:border-brand/50 bg-[#fffdf8]"
+          />
+            <SearchIcon className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400" />
             {filterKeyword && (
-              <button onClick={() => setFilterKeyword('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+              <button onClick={() => setFilterKeyword('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600" aria-label="清除筛选">
+                <CloseIcon className="w-3.5 h-3.5" />
               </button>
             )}
           </div>
         </div>
       )}
 
-      <div className="flex items-center gap-2 px-4 py-2 border-b border-slate-100">
-        <button onClick={expandAll} className="text-xs text-slate-600 hover:text-brand">展开全部</button>
-        <span className="text-gray-300">|</span>
-        <button onClick={collapseAll} className="text-xs text-slate-600 hover:text-brand">折叠全部</button>
+      <div className="flex items-center gap-2 px-4 py-2 border-b border-stone-100">
+        <button onClick={expandAll} className="text-xs font-medium text-stone-600 hover:text-brand">展开全部</button>
+        <span className="text-stone-300">/</span>
+        <button onClick={collapseAll} className="text-xs font-medium text-stone-600 hover:text-brand">折叠全部</button>
         <div className="ml-auto flex items-center gap-1">
           <button
             onClick={() => setAutoReveal(!autoReveal)}
-            className={`p-1.5 rounded hover:bg-slate-100 transition-colors cursor-pointer ${autoReveal ? 'text-brand' : 'text-slate-400'}`}
+            className={`p-1.5 rounded hover:bg-stone-100 transition-colors cursor-pointer ${autoReveal ? 'text-brand' : 'text-stone-400'}`}
             title="自动定位当前文件"
             aria-label="自动定位当前文件"
           >
@@ -207,7 +204,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
           </button>
           <button
             onClick={revealActiveFile}
-            className="p-1.5 rounded hover:bg-slate-100 text-slate-400 hover:text-brand transition-colors cursor-pointer"
+            className="p-1.5 rounded hover:bg-stone-100 text-stone-400 hover:text-brand transition-colors cursor-pointer"
             title="定位到当前文件"
             aria-label="定位到当前文件"
           >
@@ -222,7 +219,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
       <div className="flex-1 overflow-auto p-2 space-y-1">
         {filteredTree.length > 0
           ? filteredTree.map(node => renderNode(node, ''))
-          : <p className="text-sm text-slate-400 text-center py-8">没有匹配的书籍</p>
+          : <p className="text-sm text-stone-400 text-center py-8">没有匹配的书籍</p>
         }
       </div>
     </div>

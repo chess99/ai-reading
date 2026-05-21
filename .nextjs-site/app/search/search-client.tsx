@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { BookMeta } from '@/lib/books';
 import { ReadingEvents } from '@/lib/analytics';
+import { BookIcon, CloseIcon, SearchIcon } from '@/components/Icons';
 
 type SearchTab = 'books' | 'fulltext';
 
@@ -124,21 +125,22 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
             className="input-brand"
             autoFocus
           />
-          <span className="absolute left-[18px] top-1/2 -translate-y-1/2 text-xl flex items-center pointer-events-none">
-            🔍
+          <span className="absolute left-[17px] top-1/2 -translate-y-1/2 flex items-center pointer-events-none text-stone-500">
+            <SearchIcon className="w-5 h-5" />
           </span>
           {keyword && (
             <button
               onClick={() => setKeyword('')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-lg"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700 p-1 rounded-md hover:bg-stone-100"
+              aria-label="清除搜索"
             >
-              ✕
+              <CloseIcon className="w-4 h-4" />
             </button>
           )}
         </div>
 
         {/* Tabs */}
-        <div className="flex border-b border-slate-200 mb-6">
+        <div className="flex border-b border-stone-200 mb-6">
           {(['books', 'fulltext'] as const).map(tab => (
             <button
               key={tab}
@@ -146,7 +148,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
               className={`px-5 py-2.5 text-sm font-medium transition-colors ${
                 activeTab === tab
                   ? 'text-brand border-b-2 border-brand'
-                  : 'text-slate-500 hover:text-slate-700'
+                  : 'text-stone-500 hover:text-stone-700'
               }`}
             >
               {tab === 'books' ? '书名' : '正文'}
@@ -159,20 +161,24 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
           <>
             {!keyword.trim() ? (
               <div className="text-center py-16">
-                <div className="text-6xl mb-4">📚</div>
-                <p className="text-slate-500 text-lg">输入关键词搜索书名、作者、分类</p>
+                <div className="icon-tile w-14 h-14 mx-auto mb-4">
+                  <BookIcon className="w-7 h-7" />
+                </div>
+                <p className="px-4 text-stone-500 text-base md:text-lg">输入关键词搜索书名、作者、分类</p>
               </div>
             ) : bookResults.length > 0 ? (
               <>
-                <p className="text-sm text-slate-500 mb-4">找到 {bookResults.length} 个结果</p>
+                <p className="text-sm text-stone-500 mb-4">找到 {bookResults.length} 个结果</p>
                 <div className="space-y-3">
                   {bookResults.map(book => (
                     <Link key={book.slug} href={`/books/${book.slug}`} className="surface-card surface-card-hover block p-4">
                       <div className="flex items-start gap-3">
-                        <span className="text-2xl">📖</span>
+                        <span className="icon-tile w-10 h-10 flex-shrink-0">
+                          <BookIcon className="w-5 h-5" />
+                        </span>
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-semibold text-slate-900 mb-1 truncate">{book.title}</h3>
-                          <p className="text-sm text-slate-600 mb-2">{book.author}</p>
+                          <h3 className="font-bold text-stone-950 mb-1 truncate">{book.title}</h3>
+                          <p className="text-sm text-stone-600 mb-2">{book.author}</p>
                           <div className="flex flex-wrap gap-1">
                             <span className="chip-brand px-2 py-0.5 text-xs">{book.category}</span>
                             {book.tags.slice(0, 2).map(tag => (
@@ -187,9 +193,11 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
               </>
             ) : (
               <div className="text-center py-16">
-                <div className="text-6xl mb-4">🔍</div>
-                <p className="text-slate-500 text-lg">未找到匹配的书籍</p>
-                <p className="text-slate-400 text-sm mt-2">试试其他关键词</p>
+                <div className="icon-tile w-14 h-14 mx-auto mb-4">
+                  <SearchIcon className="w-7 h-7" />
+                </div>
+                <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
+                <p className="text-stone-400 text-sm mt-2">试试其他关键词</p>
               </div>
             )}
           </>
@@ -206,20 +214,24 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
             {errorMessage && <p className="text-sm text-rose-600 mt-3 mb-4">{errorMessage}</p>}
             {!trimmedKeyword ? (
               <div className="text-center py-16">
-                <div className="text-6xl mb-4">📚</div>
-                <p className="text-slate-500 text-lg">输入关键词搜索书摘内容</p>
-                <p className="text-slate-400 text-sm mt-2">全文检索基于静态索引，按需加载，避免首屏大包。</p>
+                <div className="icon-tile w-14 h-14 mx-auto mb-4">
+                  <BookIcon className="w-7 h-7" />
+                </div>
+                <p className="px-4 text-stone-500 text-base md:text-lg">输入关键词搜索书摘内容</p>
+                <p className="text-stone-400 text-sm mt-2">全文检索基于静态索引，按需加载，避免首屏大包。</p>
               </div>
             ) : fulltextResults.length > 0 ? (
               <>
-                <p className="text-sm text-slate-500 mb-4">找到 {fulltextResults.length} 个结果</p>
+                <p className="text-sm text-stone-500 mb-4">找到 {fulltextResults.length} 个结果</p>
                 <div className="space-y-6">
                   {fulltextResults.map(result => (
                     <a key={result.url} href={result.url} className="surface-card surface-card-hover block p-6">
                       <div className="flex items-start gap-4">
-                        <div className="text-3xl">📖</div>
+                        <span className="icon-tile w-10 h-10 flex-shrink-0">
+                          <BookIcon className="w-5 h-5" />
+                        </span>
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-xl font-semibold mb-2 text-slate-900">{result.title}</h3>
+                          <h3 className="text-xl font-bold mb-2 text-stone-950">{result.title}</h3>
                           {result.excerptHtml && (
                             <p
                               className="text-sm text-slate-700 mb-2 line-clamp-3"
@@ -234,9 +246,11 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
               </>
             ) : !isSearching ? (
               <div className="text-center py-16">
-                <div className="text-6xl mb-4">🔍</div>
-                <p className="text-slate-500 text-lg">未找到匹配的书籍</p>
-                <p className="text-slate-400 text-sm mt-2">试试其他关键词</p>
+                <div className="icon-tile w-14 h-14 mx-auto mb-4">
+                  <SearchIcon className="w-7 h-7" />
+                </div>
+                <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
+                <p className="text-stone-400 text-sm mt-2">试试其他关键词</p>
               </div>
             ) : null}
           </>

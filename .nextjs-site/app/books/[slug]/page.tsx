@@ -100,40 +100,12 @@ export default async function BookPage({ params }: BookPageProps) {
   };
 
   return (
-    <article className="container mx-auto px-4 py-6 md:py-8">
+    <article className="mx-auto w-full px-4 py-6 md:px-8 md:py-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd).replace(/</g, '\\u003c') }}
       />
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <header className="mb-8 md:mb-10 pb-6 border-b border-slate-200">
-          <h1 className="heading-gradient text-3xl md:text-4xl font-bold mb-5">
-            {book.title}
-          </h1>
-          <div className="flex flex-wrap items-center gap-3 md:gap-4 text-sm md:text-base text-slate-600">
-            <div className="flex items-center gap-2">
-              <span className="font-medium">作者：</span>
-              <span>{book.author}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-medium">分类：</span>
-              <span className="chip-brand">
-                {book.category}
-              </span>
-            </div>
-          </div>
-          {book.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-4">
-              {book.tags.map(tag => (
-                <span key={tag} className="chip-muted">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          )}
-        </header>
-
         {/* Content with TOC */}
         <BookPageClient
           content={injectBookLinks(book.content, book.slug)}

@@ -75,17 +75,17 @@ export default function SettingsContent({ allBooks }: SettingsContentProps) {
   return (
     <div className="space-y-6">
       {/* 离线模式 */}
-      <div>
+      <div className="surface-card p-4">
         <div className="flex items-start justify-between mb-3">
           <div className="flex-1">
-            <h3 className="font-semibold text-slate-900 mb-1">离线模式</h3>
-            <p className="text-sm text-slate-600">开启后将下载所有书籍供离线阅读（约 10MB）</p>
+            <h3 className="font-bold text-stone-950 mb-1">离线模式</h3>
+            <p className="text-sm text-stone-600">开启后将下载所有书籍供离线阅读（约 10MB）</p>
           </div>
           <button
             onClick={handleOfflineModeToggle}
             disabled={isPrefetching}
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 ${
-              offlineMode ? 'bg-brand' : 'bg-slate-300'
+              offlineMode ? 'bg-brand' : 'bg-stone-300'
             } ${isPrefetching ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${offlineMode ? 'translate-x-6' : 'translate-x-1'}`} />
@@ -93,41 +93,41 @@ export default function SettingsContent({ allBooks }: SettingsContentProps) {
         </div>
         {isPrefetching && (
           <div className="mt-3">
-            <div className="flex items-center justify-between text-sm text-slate-600 mb-2">
+            <div className="flex items-center justify-between text-sm text-stone-600 mb-2">
               <span>下载中...</span>
               <span>{prefetchProgress}%</span>
             </div>
-            <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
+            <div className="h-2 bg-stone-200 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-brand to-brand-dark transition-all duration-300"
+                className="h-full bg-brand transition-all duration-300"
                 style={{ width: `${prefetchProgress}%` }}
               />
             </div>
           </div>
         )}
-        <div className="mt-3 p-3 bg-slate-50 rounded-lg">
+        <div className="mt-3 p-3 bg-stone-50 rounded-lg">
           <div className="flex items-center justify-between text-sm">
-            <span className="text-slate-600">已缓存书籍</span>
-            <span className="font-medium text-slate-900">{cachedCount} / {allBooks.length}</span>
+            <span className="text-stone-600">已缓存书籍</span>
+            <span className="font-semibold text-stone-950">{cachedCount} / {allBooks.length}</span>
           </div>
         </div>
       </div>
 
       {/* 存储管理 */}
-      <div>
-        <h3 className="font-semibold text-slate-900 mb-3">存储管理</h3>
+      <div className="surface-card p-4">
+        <h3 className="font-bold text-stone-950 mb-3">存储管理</h3>
         <button
           onClick={handleClearCache}
-          className="w-full px-4 py-2.5 border-2 border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition-colors"
+          className="w-full px-4 py-2.5 border border-stone-200 text-stone-700 rounded-lg font-semibold hover:bg-stone-50 transition-colors active:scale-[0.99]"
         >
           清除所有缓存
         </button>
       </div>
 
       {/* 关于 */}
-      <div>
-        <h3 className="font-semibold text-slate-900 mb-3">关于</h3>
-        <div className="space-y-2 text-sm text-slate-600">
+      <div className="surface-card p-4">
+        <h3 className="font-bold text-stone-950 mb-3">关于</h3>
+        <div className="space-y-2 text-sm text-stone-600">
           <p>AI 阅读 - AI 驱动的书籍解读平台</p>
           <p>当前收录：{allBooks.length} 本书籍</p>
           <p>

@@ -15,7 +15,7 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
     <>
       {/* 遮罩层 */}
       <div
-        className="fixed inset-0 bg-black/50 z-50 backdrop-blur-sm"
+        className="fixed inset-0 bg-stone-950/45 z-50 backdrop-blur-sm"
         onClick={onClose}
       />
 
@@ -26,15 +26,15 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
           onClick={e => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between">
-            <h2 className="text-xl font-bold text-slate-900">设置</h2>
+          <div className="sticky top-0 bg-[#fffdf8] border-b border-stone-200 px-6 py-4 flex items-center justify-between">
+            <h2 className="text-xl font-black text-stone-950">设置</h2>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-slate-100 rounded-lg transition-colors"
+              className="p-2 hover:bg-stone-100 rounded-lg transition-colors"
               aria-label="关闭"
             >
               <svg
-                className="w-5 h-5 text-slate-500"
+                className="w-5 h-5 text-stone-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

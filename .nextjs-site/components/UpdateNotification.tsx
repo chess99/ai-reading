@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { CloseIcon } from '@/components/Icons';
 
 interface BookUpdate {
   slug: string;
@@ -19,10 +20,10 @@ export default function UpdateNotification() {
       const { type, count, updates: bookUpdates } = event.data;
 
       if (type === 'BOOKS_UPDATED') {
-        console.log(`📚 发现 ${count} 本书籍有更新`);
+        console.log(`发现 ${count} 本书籍有更新`);
         setUpdates(bookUpdates || []);
       } else if (type === 'UPDATE_COMPLETE') {
-        console.log(`✅ 已更新 ${count} 本书籍`);
+        console.log(`已更新 ${count} 本书籍`);
         setIsUpdating(false);
         setUpdates([]);
       }
@@ -57,10 +58,10 @@ export default function UpdateNotification() {
 
   return (
     <div className="fixed bottom-4 right-4 z-50 max-w-sm animate-slide-up">
-      <div className="surface-card shadow-2xl rounded-xl p-5 border-2 border-brand/20">
+      <div className="surface-card p-5 border-brand/20">
         {/* Header */}
         <div className="flex items-start gap-3 mb-4">
-          <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center text-white">
+          <div className="flex-shrink-0 w-10 h-10 icon-tile">
             <svg
               className="w-5 h-5"
               fill="none"
@@ -76,31 +77,19 @@ export default function UpdateNotification() {
             </svg>
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-slate-900 mb-1">
+            <h3 className="font-bold text-stone-950 mb-1">
               发现内容更新
             </h3>
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-stone-600">
               有 {updates.length} 本书籍有新内容
             </p>
           </div>
           <button
             onClick={handleDismiss}
-            className="flex-shrink-0 p-1 hover:bg-slate-100 rounded transition-colors"
+            className="flex-shrink-0 p-1 hover:bg-stone-100 rounded transition-colors"
             aria-label="关闭"
           >
-            <svg
-              className="w-5 h-5 text-slate-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <CloseIcon className="w-5 h-5 text-stone-400" />
           </button>
         </div>
 
@@ -110,12 +99,12 @@ export default function UpdateNotification() {
             {updates.map(book => (
               <div
                 key={book.slug}
-                className="text-sm p-2 bg-slate-50 rounded-lg"
+                className="text-sm p-2 bg-stone-50 rounded-lg"
               >
-                <div className="font-medium text-slate-900 line-clamp-1">
+                <div className="font-medium text-stone-950 line-clamp-1">
                   {book.title}
                 </div>
-                <div className="text-xs text-slate-500">
+                <div className="text-xs text-stone-500">
                   {book.author}
                 </div>
               </div>
@@ -128,7 +117,7 @@ export default function UpdateNotification() {
           <button
             onClick={handleUpdate}
             disabled={isUpdating}
-            className="flex-1 px-4 py-2.5 bg-gradient-to-r from-brand to-brand-dark text-white rounded-lg font-medium hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 px-4 py-2.5 bg-stone-900 text-[#fffdf8] rounded-lg font-semibold hover:bg-stone-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isUpdating ? (
               <span className="flex items-center justify-center gap-2">
@@ -159,7 +148,7 @@ export default function UpdateNotification() {
           </button>
           <button
             onClick={handleDismiss}
-            className="px-4 py-2.5 border-2 border-slate-200 text-slate-600 rounded-lg font-medium hover:bg-slate-50 transition-colors"
+            className="px-4 py-2.5 border border-stone-200 text-stone-600 rounded-lg font-semibold hover:bg-stone-50 transition-colors"
           >
             稍后
           </button>

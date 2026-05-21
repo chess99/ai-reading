@@ -66,14 +66,14 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
       <div
         className={`
           fixed md:static inset-y-0 left-0 z-50
-          w-64 bg-white border-r border-slate-200
+          w-72 bg-[#fffdf8] border-r border-stone-200/90
           transform transition-transform duration-300 ease-in-out
           flex flex-col h-full
           ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}
       >
         {/* Header - Only show on mobile */}
-        <div className="md:hidden p-4 border-b border-slate-200 flex items-center justify-between">
+        <div className="md:hidden p-4 border-b border-stone-200 flex items-center justify-between">
           <Link
             href="/"
             onClick={onClose}
@@ -100,13 +100,13 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
         </div>
 
       {/* Tab Navigation */}
-      <div className="flex border-b border-slate-200">
+      <div className="flex border-b border-stone-200 bg-[#fffdf8]">
         <button
           onClick={() => setActiveTab('files')}
           className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
             activeTab === 'files'
               ? 'text-brand border-b-2 border-brand'
-              : 'text-slate-600 hover:text-slate-900'
+              : 'text-stone-600 hover:text-stone-900'
           }`}
         >
           文件
@@ -116,7 +116,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
           className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
             activeTab === 'search'
               ? 'text-brand border-b-2 border-brand'
-              : 'text-slate-600 hover:text-slate-900'
+              : 'text-stone-600 hover:text-stone-900'
           }`}
         >
           搜索
@@ -126,7 +126,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
           className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
             activeTab === 'tags'
               ? 'text-brand border-b-2 border-brand'
-              : 'text-slate-600 hover:text-slate-900'
+              : 'text-stone-600 hover:text-stone-900'
           }`}
         >
           标签
@@ -150,7 +150,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
               placeholder="搜索书籍、作者、标签..."
               value={searchKeyword}
               onChange={e => setSearchKeyword(e.target.value)}
-              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+              className="w-full px-3 py-2 border border-stone-300 rounded-lg bg-[#fffdf8] focus:outline-none focus:ring-4 focus:ring-brand/15 focus:border-brand/50"
             />
             {searchKeyword && (
               <div className="mt-4 space-y-2">
@@ -209,7 +209,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
                       key={book.slug}
                       href={`/books/${book.slug}`}
                       onClick={onClose}
-                      className="block p-2 hover:bg-slate-50 rounded transition-colors"
+                      className="block p-2 hover:bg-stone-50 rounded transition-colors"
                     >
                       <div className="text-sm font-medium text-slate-900 mb-1 line-clamp-1">
                         {book.title}

@@ -9,19 +9,16 @@ export default function NotFoundPage() {
   return (
     <div className="page-container">
       <div className="page-content-4xl">
-        <section className="relative overflow-hidden rounded-3xl border border-slate-200/70 bg-white/95 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-          <div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-indigo-300/25 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-violet-300/25 blur-3xl" />
-
+        <section className="surface-card relative overflow-hidden">
           <div className="relative px-6 py-10 md:px-12 md:py-14">
-            <div className="mb-6 inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-xs font-semibold tracking-wide text-indigo-700">
+            <div className="mb-6 inline-flex items-center rounded-md border border-brand/20 bg-brand/10 px-3 py-1.5 text-xs font-black tracking-wide text-brand">
               ERROR 404 · PAGE NOT FOUND
             </div>
 
-            <h1 className="heading-gradient mb-4 text-3xl font-extrabold leading-tight md:text-5xl">
+            <h1 className="mb-4 text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-5xl">
               这个页面暂时迷路了
             </h1>
-            <p className="max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
+            <p className="max-w-2xl text-base leading-7 text-stone-600 md:text-lg">
               你访问的路径不存在，可能链接已更新或地址输入有误。可以返回首页继续阅读，或使用搜索快速找到目标书籍与内容。
             </p>
 
@@ -31,7 +28,7 @@ export default function NotFoundPage() {
               </Link>
               <Link
                 href="/search"
-                className="inline-flex h-14 items-center justify-center rounded-xl border border-slate-200 px-7 font-semibold text-slate-700 transition-all hover:-translate-y-px hover:border-indigo-300 hover:text-indigo-700 hover:shadow-[0_8px_20px_rgba(99,102,241,0.14)]"
+                className="inline-flex h-12 items-center justify-center rounded-lg border border-stone-200 px-5 font-semibold text-stone-700 transition-all hover:-translate-y-px hover:border-brand/40 hover:text-brand hover:bg-stone-50"
               >
                 前往搜索
               </Link>
@@ -39,9 +36,9 @@ export default function NotFoundPage() {
 
             <div className="mt-10 grid gap-3 md:grid-cols-2">
               {quickLinks.map(link => (
-                <Link key={link.href} href={link.href} className="surface-card surface-card-hover block rounded-2xl p-4">
-                  <p className="text-sm font-semibold text-slate-900">{link.label}</p>
-                  <p className="mt-1 text-sm text-slate-500">{link.desc}</p>
+                <Link key={link.href} href={link.href} className="surface-card surface-card-hover block p-4">
+                  <p className="text-sm font-bold text-stone-950">{link.label}</p>
+                  <p className="mt-1 text-sm text-stone-500">{link.desc}</p>
                 </Link>
               ))}
             </div>

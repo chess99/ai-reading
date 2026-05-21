@@ -14,21 +14,21 @@ export default function BookCard({ book, showNew = false }: BookCardProps) {
   return (
     <Link
       href={`/books/${book.slug}`}
-      className="group flex-shrink-0 w-40 md:w-44 surface-card surface-card-hover p-4 flex flex-col gap-2 relative"
+      className="group flex-shrink-0 w-40 md:w-48 surface-card surface-card-hover p-4 flex flex-col gap-2.5 relative min-h-[168px]"
     >
       {isNew && (
-        <span className="absolute top-2.5 right-2.5 text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-brand text-white leading-none">
+        <span className="absolute top-3 right-3 text-[10px] font-black px-1.5 py-0.5 rounded bg-stone-900 text-[#fffdf8] leading-none tracking-wide">
           NEW
         </span>
       )}
       {/* 书脊色块 */}
-      <div className="w-8 h-1.5 rounded-full bg-gradient-to-r from-brand to-brand-dark mb-1 opacity-70" />
-      <h3 className="text-sm font-semibold text-slate-900 group-hover:text-brand transition-colors line-clamp-2 leading-snug h-[2.625rem]">
+      <div className="w-9 h-1 rounded-full bg-brand mb-1 opacity-75" />
+      <h3 className="text-sm md:text-[15px] font-bold text-stone-950 group-hover:text-brand transition-colors line-clamp-2 leading-snug min-h-[2.625rem]">
         {book.title}
       </h3>
-      <p className="text-xs text-slate-500 truncate">{book.author}</p>
+      <p className="text-xs text-stone-500 truncate">{book.author}</p>
       {book.categoryPath.length > 0 && (
-        <span className="chip-muted self-start text-[11px] truncate max-w-full">
+        <span className="chip-muted self-start text-[11px] truncate max-w-full mt-auto">
           {book.categoryPath[book.categoryPath.length - 1]}
         </span>
       )}

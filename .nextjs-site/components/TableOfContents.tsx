@@ -189,8 +189,8 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
         className={`
           fixed lg:relative top-0 lg:top-0 right-0 h-screen lg:h-auto
           w-80 lg:w-full
-          bg-white lg:bg-transparent
-          border-l lg:border-l-0 border-gray-200
+          bg-[#fffdf8] lg:bg-transparent
+          border-l lg:border-l-0 border-stone-200
           transition-transform duration-300 ease-in-out
           z-50 lg:z-0
           ${isOpen ? 'translate-x-0 shadow-2xl' : 'translate-x-full lg:translate-x-0'}
@@ -202,7 +202,7 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
           <div className="flex items-center justify-between mb-6 lg:hidden pb-4 border-b border-gray-200">
             <div className="flex items-center gap-2">
               <svg
-                className="w-5 h-5 text-[#667eea]"
+                className="w-5 h-5 text-brand"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -214,11 +214,11 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-              <h2 className="text-lg font-bold text-gray-900">目录</h2>
+              <h2 className="text-lg font-bold text-stone-950">目录</h2>
             </div>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-2 hover:bg-stone-100 rounded-lg transition-colors"
               aria-label="关闭目录"
             >
               <svg
@@ -238,9 +238,9 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
           </div>
 
           {/* 桌面端标题 */}
-          <div className="hidden lg:flex items-center gap-2 mb-4 pb-3 border-b border-gray-200">
+          <div className="hidden lg:flex items-center gap-2 mb-4 pb-3 border-b border-stone-200">
             <svg
-              className="w-4 h-4 text-[#667eea]"
+              className="w-4 h-4 text-brand"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -252,7 +252,7 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-            <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
+            <h2 className="text-sm font-black text-stone-950 tracking-wide">
               目录
             </h2>
           </div>
@@ -273,8 +273,8 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
                       ${item.level === 4 ? 'pl-9 text-xs' : ''}
                       ${
                         activeId === item.id
-                          ? 'bg-gradient-to-r from-[#667eea]/10 to-[#764ba2]/10 text-[#667eea] font-medium border-l-3 border-[#667eea] shadow-sm'
-                          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50/80 border-l-3 border-transparent'
+                          ? 'bg-brand/10 text-brand font-semibold border-l-3 border-brand shadow-sm'
+                          : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50/80 border-l-3 border-transparent'
                       }
                     `}
                   >
@@ -298,7 +298,7 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
                 onClose();
               }
             }}
-            className="w-full px-4 py-2.5 text-sm font-medium text-gray-600 hover:text-[#667eea] hover:bg-gray-50 rounded-lg transition-all border border-gray-200 hover:border-[#667eea]/30 flex items-center justify-center gap-2 group"
+            className="w-full px-4 py-2.5 text-sm font-medium text-stone-600 hover:text-brand hover:bg-stone-50 rounded-lg transition-all border border-stone-200 hover:border-brand/30 flex items-center justify-center gap-2 group"
           >
             <svg
               className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform"

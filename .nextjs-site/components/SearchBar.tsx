@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { BookMeta } from "@/lib/books";
+import { BookIcon, CloseIcon, SearchIcon, ShuffleIcon } from "@/components/Icons";
 
 interface SearchBarProps {
   books: BookMeta[];
@@ -51,7 +52,7 @@ export default function SearchBar({
     window.location.href = `/books/${randomBook.slug}`;
   };
 
-  const actionsLayoutClass = showFullSearch ? "grid-cols-2" : "grid-cols-1";
+  const actionsLayoutClass = showFullSearch ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1";
 
   return (
     <div>
@@ -65,15 +66,16 @@ export default function SearchBar({
             placeholder="搜索书籍标题、作者..."
             className="input-brand"
           />
-          <span className="absolute left-[18px] top-1/2 -translate-y-1/2 text-xl flex items-center pointer-events-none">
-            🔍
+          <span className="absolute left-[17px] top-1/2 -translate-y-1/2 flex items-center pointer-events-none text-stone-500">
+            <SearchIcon className="w-5 h-5" />
           </span>
           {keyword && (
             <button
               onClick={handleClear}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-lg"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700 p-1 rounded-md hover:bg-stone-100"
+              aria-label="清除搜索"
             >
-              ✕
+              <CloseIcon className="w-4 h-4" />
             </button>
           )}
 
@@ -99,10 +101,12 @@ export default function SearchBar({
                         key={book.slug}
                         href={`/books/${book.slug}`}
                         onClick={() => setShowResults(false)}
-                        className="block p-4 hover:bg-slate-50 transition-colors"
-                      >
-                        <div className="flex items-start gap-3">
-                          <span className="text-2xl">📖</span>
+                      className="block p-4 hover:bg-stone-50 transition-colors"
+                    >
+                      <div className="flex items-start gap-3">
+                          <span className="icon-tile w-10 h-10 flex-shrink-0">
+                            <BookIcon className="w-5 h-5" />
+                          </span>
                           <div className="flex-1 min-w-0">
                             <h3 className="font-semibold text-slate-900 mb-1 truncate">
                               {book.title}
@@ -149,7 +153,7 @@ export default function SearchBar({
               className="btn-outline-brand w-full sm:w-auto flex items-center justify-center gap-3"
               title="全文搜索"
             >
-              <span className="text-xl">🔍</span>
+              <SearchIcon className="w-5 h-5" />
               <span>全文搜索</span>
             </Link>
           )}
@@ -160,7 +164,7 @@ export default function SearchBar({
             className="btn-outline-brand w-full sm:w-auto flex items-center justify-center gap-3"
             title="随机一本书"
           >
-            <span className="text-xl">🎲</span>
+            <ShuffleIcon className="w-5 h-5" />
             <span>随机一本</span>
           </button>
         </div>

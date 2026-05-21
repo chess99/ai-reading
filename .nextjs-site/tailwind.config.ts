@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#667eea',
-          dark: '#764ba2',
+          DEFAULT: '#9a6b2f',
+          dark: '#4f3a23',
         },
       },
       typography: {
@@ -20,17 +20,17 @@ const config: Config = {
             maxWidth: 'none',
             color: '#374151',
             a: {
-              color: '#667eea',
+              color: '#9a6b2f',
               '&:hover': {
-                color: '#764ba2',
+                color: '#4f3a23',
               },
             },
             strong: {
               color: '#111827',
             },
             code: {
-              color: '#667eea',
-              backgroundColor: '#f3f4f6',
+              color: '#9a6b2f',
+              backgroundColor: '#f4efe6',
               padding: '0.25rem 0.375rem',
               borderRadius: '0.25rem',
               fontWeight: '400',
@@ -46,8 +46,8 @@ const config: Config = {
               color: '#e5e7eb',
             },
             blockquote: {
-              borderLeftColor: '#667eea',
-              color: '#6b7280',
+              borderLeftColor: '#9a6b2f',
+              color: '#6f6254',
             },
           },
         },
