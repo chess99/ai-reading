@@ -2,7 +2,7 @@
 
 ## 部署
 
-GitHub Pages，自定义域名 `reading.cearl.cc`，站点部署在域名根路径 `/`。
+GitHub Pages，自定义域名 `read.cearl.cc`，站点部署在域名根路径 `/`。
 next.config.ts 无 `basePath` 配置。
 代码中路径直接使用绝对路径（如 `/books/slug/`），不需要拼接前缀。
 
