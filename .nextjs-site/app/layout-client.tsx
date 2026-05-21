@@ -34,7 +34,6 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
       <Header
         onMenuClick={() => setSidebarOpen(true)}
         onSettingsClick={() => setSettingsOpen(true)}
-        showMenuButton={true}
       />
 
       {/* Main layout */}
