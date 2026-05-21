@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
+import BottomNav from '@/components/BottomNav';
 import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
 import { BookTreeNode, BookMeta } from '@/lib/books';
@@ -16,46 +18,48 @@ interface LayoutClientProps {
 export default function LayoutClient({ bookTree, allBooks, children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Derive book title for Header when on a book page
+  const bookSlug = pathname.startsWith('/books/')
+    ? pathname.replace('/books/', '').replace(/\/$/, '')
+    : null;
+  const currentBook = bookSlug ? (allBooks.find(b => b.slug === bookSlug) ?? null) : null;
+  const isBookPage = currentBook !== null;
 
   useEffect(() => {
-    if (!('serviceWorker' in navigator)) {
-      return;
-    }
-    const swPath = '/sw.js';
-    const scope = '/';
-    navigator.serviceWorker.register(swPath, { scope }).catch(() => {
-      // keep silent in production, SW is optional enhancement
-    });
+    if (!('serviceWorker' in navigator)) return;
+    navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
   }, []);
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      {/* Header */}
       <Header
+        mode={isBookPage ? 'book' : 'home'}
+        bookTitle={currentBook?.title}
         onMenuClick={() => setSidebarOpen(true)}
         onSettingsClick={() => setSettingsOpen(true)}
       />
 
-      {/* Main layout */}
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar */}
-        <Sidebar
-          bookTree={bookTree}
-          allBooks={allBooks}
-          isOpen={sidebarOpen}
-          onClose={() => setSidebarOpen(false)}
-        />
+        {/* Sidebar: desktop only */}
+        <div className="hidden md:block">
+          <Sidebar
+            bookTree={bookTree}
+            allBooks={allBooks}
+            isOpen={sidebarOpen}
+            onClose={() => setSidebarOpen(false)}
+          />
+        </div>
 
-        {/* Main content area */}
-        <main className="flex-1 overflow-auto">
+        {/* Main content — pb-16 on mobile to clear fixed BottomNav */}
+        <main className="flex-1 overflow-auto pb-16 md:pb-0">
           {children}
         </main>
       </div>
 
-      {/* Update notification */}
+      <BottomNav />
       <UpdateNotification />
-
-      {/* Settings dialog */}
       <SettingsDialog
         isOpen={settingsOpen}
         onClose={() => setSettingsOpen(false)}
