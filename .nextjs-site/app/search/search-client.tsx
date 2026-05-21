@@ -115,6 +115,11 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
   return (
     <div className="page-container">
       <div className="page-content-4xl">
+        <div className="mb-5">
+          <p className="text-xs font-black tracking-[0.16em] text-brand mb-2">SEARCH</p>
+          <h1 className="text-2xl md:text-3xl font-black tracking-tight text-stone-950">搜索</h1>
+        </div>
+
         {/* Search input */}
         <div className="mb-4 relative">
           <input
@@ -207,7 +212,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
         {activeTab === 'fulltext' && (
           <>
             {isSearching && (
-              <p className="text-sm text-slate-500 mt-3 mb-4">
+              <p className="text-sm text-stone-500 mt-3 mb-4">
                 {isIndexReady ? '正在检索...' : '正在加载搜索索引...'}
               </p>
             )}
@@ -234,7 +239,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                           <h3 className="text-xl font-bold mb-2 text-stone-950">{result.title}</h3>
                           {result.excerptHtml && (
                             <p
-                              className="text-sm text-slate-700 mb-2 line-clamp-3"
+                              className="text-sm text-stone-700 mb-2 line-clamp-3"
                               dangerouslySetInnerHTML={{ __html: result.excerptHtml }}
                             />
                           )}

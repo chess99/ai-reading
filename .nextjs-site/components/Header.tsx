@@ -34,7 +34,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#fffdf8]/88 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)]">
+    <header className={`sticky top-0 z-50 bg-[#fffdf8]/88 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
       <div className="mx-auto w-full px-4 md:px-8">
         <div className="flex items-center justify-between h-14 md:h-16">
 
