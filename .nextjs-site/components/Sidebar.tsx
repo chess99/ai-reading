@@ -144,7 +144,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
         )}
 
         {activeTab === 'search' && (
-          <div className="p-4">
+          <div className="flex-1 overflow-auto p-4">
             <input
               type="text"
               placeholder="搜索书籍、作者、标签..."
@@ -189,7 +189,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
         )}
 
         {activeTab === 'tags' && (
-          <div className="p-4">
+          <div className="flex-1 overflow-auto p-4">
             {selectedTag ? (
               <>
                 <div className="mb-4 flex items-center justify-between">

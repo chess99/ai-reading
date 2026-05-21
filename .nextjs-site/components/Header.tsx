@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { trackEvent } from '@/lib/analytics';
 
 interface HeaderProps {
   mode?: 'home' | 'book';
@@ -25,6 +26,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
     if (typeof navigator === 'undefined' || !navigator.share) return;
     try {
       await navigator.share({ title: bookTitle, url: window.location.href });
+      trackEvent('分享', '分享书籍', bookTitle);
     } catch {
       // user cancelled
     }
