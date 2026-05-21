@@ -16,7 +16,7 @@ interface LayoutClientProps {
 }
 
 export default function LayoutClient({ bookTree, allBooks, children }: LayoutClientProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -37,13 +37,13 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
       <Header
         mode={isBookPage ? 'book' : 'home'}
         bookTitle={currentBook?.title}
-        onMenuClick={() => setSidebarOpen(true)}
+        onMenuClick={() => setSidebarOpen(open => !open)}
         onSettingsClick={() => setSettingsOpen(true)}
       />
 
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar: desktop only */}
-        <div className="hidden md:block">
+        {/* Sidebar: desktop workspace navigation */}
+        <div className={`${sidebarOpen ? 'hidden md:block' : 'hidden'}`}>
           <Sidebar
             bookTree={bookTree}
             allBooks={allBooks}

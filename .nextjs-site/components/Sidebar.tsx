@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 import BookTree from '@/components/BookTree';
+import { CloseIcon } from '@/components/Icons';
 
 interface SidebarProps {
   bookTree: BookTreeNode[];
@@ -12,11 +13,10 @@ interface SidebarProps {
   onClose: () => void;
 }
 
-type TabType = 'files' | 'search' | 'tags';
+type TabType = 'files' | 'tags';
 
 export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<TabType>('files');
-  const [searchKeyword, setSearchKeyword] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   // Get all tags with counts
@@ -31,20 +31,6 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
       .map(([tag, count]) => ({ tag, count }))
       .sort((a, b) => b.count - a.count);
   }, [allBooks]);
-
-  // Filter books by search keyword
-  const searchResults = useMemo(() => {
-    if (!searchKeyword.trim()) return [];
-    const lowerKeyword = searchKeyword.toLowerCase();
-    return allBooks.filter(book => {
-      return (
-        book.title.toLowerCase().includes(lowerKeyword) ||
-        book.author.toLowerCase().includes(lowerKeyword) ||
-        book.category.toLowerCase().includes(lowerKeyword) ||
-        book.tags.some(tag => tag.toLowerCase().includes(lowerKeyword))
-      );
-    });
-  }, [searchKeyword, allBooks]);
 
   // Filter books by tag
   const booksByTag = useMemo(() => {
@@ -66,66 +52,47 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
       <div
         className={`
           fixed md:static inset-y-0 left-0 z-50
-          w-72 bg-[#fffdf8] border-r border-stone-200/90
+          w-80 bg-[#fffdf8] border-r border-stone-200/90
           transform transition-transform duration-300 ease-in-out
           flex flex-col h-full
           ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}
       >
-        {/* Header - Only show on mobile */}
-        <div className="md:hidden p-4 border-b border-stone-200 flex items-center justify-between">
+        <div className="p-4 border-b border-stone-200 flex items-center justify-between">
           <Link
             href="/"
             onClick={onClose}
-            className="text-xl font-bold hover:opacity-80 transition-opacity heading-gradient"
+            className="min-w-0 hover:opacity-80 transition-opacity"
           >
-            AI 阅读
+            <span className="block text-xs font-black tracking-[0.16em] text-brand">LIBRARY</span>
+            <span className="block text-lg font-black text-stone-950">书库索引</span>
           </Link>
           <button
             onClick={onClose}
-            className="p-1 hover:bg-slate-100 rounded"
+            className="md:hidden p-2 hover:bg-stone-100 rounded-lg transition-colors"
+            aria-label="关闭侧边栏"
           >
-            <svg
-              className="w-5 h-5 text-slate-600"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
+            <CloseIcon className="w-5 h-5 text-stone-600" />
           </button>
         </div>
 
       {/* Tab Navigation */}
-      <div className="flex border-b border-stone-200 bg-[#fffdf8]">
+      <div className="grid grid-cols-2 gap-1 border-b border-stone-200 bg-[#fffdf8] p-2">
         <button
           onClick={() => setActiveTab('files')}
-          className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+          className={`rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
             activeTab === 'files'
-              ? 'text-brand border-b-2 border-brand'
+              ? 'bg-brand/10 text-brand'
               : 'text-stone-600 hover:text-stone-900'
           }`}
         >
-          文件
-        </button>
-        <button
-          onClick={() => setActiveTab('search')}
-          className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
-            activeTab === 'search'
-              ? 'text-brand border-b-2 border-brand'
-              : 'text-stone-600 hover:text-stone-900'
-          }`}
-        >
-          搜索
+          目录
         </button>
         <button
           onClick={() => setActiveTab('tags')}
-          className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+          className={`rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
             activeTab === 'tags'
-              ? 'text-brand border-b-2 border-brand'
+              ? 'bg-brand/10 text-brand'
               : 'text-stone-600 hover:text-stone-900'
           }`}
         >
@@ -143,57 +110,12 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
           />
         )}
 
-        {activeTab === 'search' && (
-          <div className="flex-1 overflow-auto p-4">
-            <input
-              type="text"
-              placeholder="搜索书籍、作者、标签..."
-              value={searchKeyword}
-              onChange={e => setSearchKeyword(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 rounded-lg bg-[#fffdf8] focus:outline-none focus:ring-4 focus:ring-brand/15 focus:border-brand/50"
-            />
-            {searchKeyword && (
-              <div className="mt-4 space-y-2">
-                {searchResults.length > 0 ? (
-                  <>
-                    <div className="text-xs text-slate-500 px-2">
-                      找到 {searchResults.length} 个结果
-                    </div>
-                    {searchResults.map(book => (
-                      <Link
-                        key={book.slug}
-                        href={`/books/${book.slug}`}
-                        onClick={onClose}
-                        className="block p-2 hover:bg-slate-50 rounded transition-colors"
-                      >
-                        <div className="text-sm font-medium text-slate-900 mb-1 line-clamp-1">
-                          {book.title}
-                        </div>
-                        <div className="text-xs text-slate-600 line-clamp-1">
-                          {book.author}
-                        </div>
-                        <div className="text-xs text-brand mt-1">
-                          {book.category}
-                        </div>
-                      </Link>
-                    ))}
-                  </>
-                ) : (
-                  <div className="text-sm text-slate-500 text-center py-8">
-                    未找到匹配的书籍
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-        )}
-
         {activeTab === 'tags' && (
           <div className="flex-1 overflow-auto p-4">
             {selectedTag ? (
               <>
                 <div className="mb-4 flex items-center justify-between">
-                  <h3 className="font-medium text-slate-900">
+                  <h3 className="font-bold text-stone-950">
                     标签：{selectedTag}
                   </h3>
                   <button
@@ -211,10 +133,10 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
                       onClick={onClose}
                       className="block p-2 hover:bg-stone-50 rounded transition-colors"
                     >
-                      <div className="text-sm font-medium text-slate-900 mb-1 line-clamp-1">
+                      <div className="text-sm font-semibold text-stone-950 mb-1 line-clamp-1">
                         {book.title}
                       </div>
-                      <div className="text-xs text-slate-600 line-clamp-1">
+                      <div className="text-xs text-stone-600 line-clamp-1">
                         {book.author}
                       </div>
                     </Link>
@@ -236,7 +158,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
                     ))}
                   </div>
                 ) : (
-                  <div className="text-sm text-slate-500 text-center py-8">
+                  <div className="text-sm text-stone-500 text-center py-8">
                     暂无标签
                   </div>
                 )}

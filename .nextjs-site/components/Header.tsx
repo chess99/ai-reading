@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { trackEvent } from '@/lib/analytics';
-import { MenuIcon, SettingsIcon } from '@/components/Icons';
+import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon } from '@/components/Icons';
 
 interface HeaderProps {
   mode?: 'home' | 'book';
@@ -14,6 +14,17 @@ interface HeaderProps {
 
 export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettingsClick }: HeaderProps) {
   const router = useRouter();
+  const pathname = usePathname();
+  const desktopNav = [
+    { href: '/', label: '首页', icon: HomeIcon },
+    { href: '/library', label: '书库', icon: LibraryIcon },
+    { href: '/search', label: '搜索', icon: SearchIcon },
+  ] as const;
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname.startsWith(href);
+  };
 
   const handleBack = () => {
     if (typeof window !== 'undefined' && window.history.length > 1) {
@@ -34,20 +45,26 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
   };
 
   return (
-    <header className={`sticky top-0 z-50 bg-[#fffdf8]/88 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
+    <header className={`sticky top-0 z-50 bg-[#fffdf8]/90 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
       <div className="mx-auto w-full px-4 md:px-8">
         <div className="flex items-center justify-between h-14 md:h-16">
 
           {/* ── Left slot ──────────────────────────────────── */}
 
           {/* Desktop: hamburger always (for sidebar) */}
-          <button
-            onClick={onMenuClick}
-            className="hidden md:flex p-2 -ml-2 hover:bg-stone-100 rounded-lg transition-colors text-stone-700 active:scale-95"
-            aria-label="Toggle menu"
-          >
-            <MenuIcon className="w-6 h-6" />
-          </button>
+          <div className="hidden md:flex items-center gap-3 min-w-0">
+            <button
+              onClick={onMenuClick}
+              className="p-2 -ml-2 hover:bg-stone-100 rounded-lg transition-colors text-stone-700 active:scale-95"
+              aria-label="切换侧边栏"
+              title="切换侧边栏"
+            >
+              <MenuIcon className="w-5 h-5" />
+            </button>
+            <Link href="/" className="text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
+              AI 阅读
+            </Link>
+          </div>
 
           {/* Mobile home mode: no left element (logo is centered) */}
 
@@ -70,23 +87,37 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
             <div className="md:hidden w-[56px]" />
           )}
 
-          {/* ── Center: Logo / Book title ────────────────── */}
-          {mode === 'book' ? (
-            <>
-              {/* Mobile: book title */}
+          {/* ── Center: Mobile title / desktop page nav ───── */}
+          <div className="flex flex-1 items-center justify-center min-w-0 px-2">
+            {mode === 'book' ? (
               <span className="md:hidden flex-1 text-center text-sm font-semibold text-stone-950 truncate px-2">
                 {bookTitle}
               </span>
-              {/* Desktop: logo */}
-              <Link href="/" className="hidden md:block text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
+            ) : (
+              <Link href="/" className="md:hidden text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
                 AI 阅读
               </Link>
-            </>
-          ) : (
-            <Link href="/" className="text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
-              AI 阅读
-            </Link>
-          )}
+            )}
+
+            <nav className="hidden md:flex items-center gap-1 rounded-lg border border-stone-200/80 bg-[#fffdf8]/70 p-1">
+              {desktopNav.map(item => {
+                const Icon = item.icon;
+                const active = isActive(item.href);
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`flex h-9 items-center gap-2 rounded-md px-3 text-sm font-semibold transition-colors ${
+                      active ? 'bg-brand/10 text-brand' : 'text-stone-600 hover:bg-stone-100 hover:text-stone-950'
+                    }`}
+                  >
+                    <Icon className="w-4 h-4" />
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </nav>
+          </div>
 
           {/* ── Right slot ─────────────────────────────────── */}
           <div className="flex items-center gap-1 md:gap-3 min-w-[56px] justify-end">
@@ -107,7 +138,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
             {/* Settings: desktop always + mobile home mode */}
             <button
               onClick={onSettingsClick}
-              className={`p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95 ${mode === 'book' ? 'hidden md:block' : ''}`}
+              className={`p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95`}
               aria-label="设置"
               title="设置"
             >
