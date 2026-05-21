@@ -1,78 +1,30 @@
 'use client';
 
-import { trackEvent } from '@/lib/analytics';
-
 interface BookLayoutProps {
   children: React.ReactNode;
   onTocToggle: () => void;
-  shareTitle?: string;
 }
 
-export default function BookLayout({ children, onTocToggle, shareTitle }: BookLayoutProps) {
-  const handleShare = async () => {
-    if (!navigator.share) return;
-    try {
-      await navigator.share({
-        title: shareTitle,
-        url: window.location.href,
-      });
-      trackEvent('分享', '分享书籍', shareTitle);
-    } catch {
-      // 用户取消分享，忽略
-    }
-  };
-
-  const canShare = typeof navigator !== 'undefined' && !!navigator.share;
-
+export default function BookLayout({ children, onTocToggle }: BookLayoutProps) {
   return (
     <>
-      {/* 右下角悬浮按钮组 */}
-      <div className="fixed bottom-6 right-6 lg:hidden z-40 flex flex-col gap-3">
-        {/* 分享按钮 */}
-        {canShare && (
-          <button
-            onClick={handleShare}
-            className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl transition-all border border-gray-200 hover:border-[#667eea]/50 flex items-center justify-center group"
-            aria-label="分享"
-          >
-            <svg
-              className="w-5 h-5 text-slate-700 group-hover:text-[#667eea] transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
-              />
-            </svg>
-          </button>
-        )}
-
-        {/* TOC Toggle Button */}
+      {/* TOC toggle FAB — bottom adjusted to clear mobile bottom nav */}
+      <div className="fixed bottom-20 right-4 md:bottom-6 md:right-6 lg:hidden z-40">
         <button
           onClick={onTocToggle}
-          className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl transition-all border border-gray-200 hover:border-[#667eea]/50 flex items-center justify-center group"
+          className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl transition-all border border-gray-200 hover:border-brand/50 flex items-center justify-center group"
           aria-label="打开目录"
         >
           <svg
-            className="w-5 h-5 text-slate-700 group-hover:text-[#667eea] transition-colors"
+            className="w-5 h-5 text-slate-700 group-hover:text-brand transition-colors"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </button>
       </div>
-
       {children}
     </>
   );

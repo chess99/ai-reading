@@ -140,6 +140,7 @@ export default async function BookPage({ params }: BookPageProps) {
           bookSlug={book.slug}
           bookTitle={book.title}
           bookAuthor={book.author}
+          bookTags={book.tags}
         />
       </div>
     </article>

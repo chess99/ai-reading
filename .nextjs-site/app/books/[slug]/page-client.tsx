@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -19,13 +19,12 @@ interface BookPageClientProps {
   bookSlug: string;
   bookTitle: string;
   bookAuthor: string;
+  bookTags: string[];
 }
 
-export default function BookPageClient({ content, bookSlug, bookTitle, bookAuthor }: BookPageClientProps) {
+export default function BookPageClient({ content, bookSlug, bookTitle, bookAuthor, bookTags }: BookPageClientProps) {
   const [isTocOpen, setIsTocOpen] = useState(false);
-  const pathname = usePathname();
 
-  // 保存阅读状态
   useEffect(() => {
     saveToHistory({
       bookSlug,
@@ -36,9 +35,9 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
   }, [bookSlug, bookTitle, bookAuthor]);
 
   return (
-    <BookLayout onTocToggle={() => setIsTocOpen(true)} shareTitle={`${bookTitle} - ${bookAuthor}`}>
+    <BookLayout onTocToggle={() => setIsTocOpen(true)}>
       <div className="flex gap-0 lg:gap-8 xl:gap-12 relative">
-        {/* 主内容区 */}
+        {/* Main content */}
         <div className="flex-1 min-w-0 max-w-4xl">
           <div className="markdown-content">
             <ReactMarkdown
@@ -48,16 +47,31 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
               {content}
             </ReactMarkdown>
           </div>
+
+          {/* Tag chips */}
+          {bookTags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-slate-100">
+              {bookTags.map(tag => (
+                <Link
+                  key={tag}
+                  href={`/search?q=${encodeURIComponent(tag)}&tab=books`}
+                  className="chip-brand hover:bg-brand hover:text-white transition-colors cursor-pointer text-sm"
+                >
+                  {tag}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* 桌面端大纲区域 - 固定在右侧 */}
+        {/* Desktop TOC sidebar */}
         <div className="hidden lg:block lg:w-64 xl:w-72 flex-shrink-0">
           <div className="sticky top-20">
             <TableOfContents isOpen={true} onClose={() => {}} />
           </div>
         </div>
 
-        {/* 移动端大纲 */}
+        {/* Mobile TOC */}
         <div className="lg:hidden">
           <TableOfContents isOpen={isTocOpen} onClose={() => setIsTocOpen(false)} />
         </div>
