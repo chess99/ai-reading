@@ -80,6 +80,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
       <div className="grid grid-cols-2 gap-1 border-b border-stone-200 bg-[#fffdf8] p-2">
         <button
           onClick={() => setActiveTab('files')}
+          aria-pressed={activeTab === 'files'}
           className={`rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
             activeTab === 'files'
               ? 'bg-brand/10 text-brand'
@@ -90,6 +91,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
         </button>
         <button
           onClick={() => setActiveTab('tags')}
+          aria-pressed={activeTab === 'tags'}
           className={`rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
             activeTab === 'tags'
               ? 'bg-brand/10 text-brand'

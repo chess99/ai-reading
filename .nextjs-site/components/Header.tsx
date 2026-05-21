@@ -107,6 +107,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
                   <Link
                     key={item.href}
                     href={item.href}
+                    aria-current={active ? 'page' : undefined}
                     className={`flex h-9 items-center gap-2 rounded-md px-3 text-sm font-semibold transition-colors ${
                       active ? 'bg-brand/10 text-brand' : 'text-stone-600 hover:bg-stone-100 hover:text-stone-950'
                     }`}
@@ -138,7 +139,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
             {/* Settings: desktop always + mobile home mode */}
             <button
               onClick={onSettingsClick}
-              className={`p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95`}
+              className={`${mode === 'book' ? 'hidden md:block' : ''} p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95`}
               aria-label="设置"
               title="设置"
             >

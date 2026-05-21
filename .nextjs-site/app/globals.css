@@ -144,7 +144,7 @@ body::before {
 
 .input-brand:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 0 0 4px rgba(154, 107, 47, 0.18);
 }
 
 .chip-brand {
