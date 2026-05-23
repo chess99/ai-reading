@@ -108,7 +108,6 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
           <BookTree
             bookTree={bookTree}
             allBooks={allBooks}
-            onBookClick={onClose}
           />
         )}
 
@@ -132,7 +131,6 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
                     <Link
                       key={book.slug}
                       href={`/books/${book.slug}`}
-                      onClick={onClose}
                       className="block p-2 hover:bg-stone-50 rounded transition-colors"
                     >
                       <div className="text-sm font-semibold text-stone-950 mb-1 line-clamp-1">
