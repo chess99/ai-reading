@@ -202,7 +202,10 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                   <SearchIcon className="w-7 h-7" />
                 </div>
                 <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
-                <p className="text-stone-400 text-sm mt-2">试试其他关键词</p>
+                <p className="text-stone-400 text-sm mt-2 mb-5">试试其他关键词，或者提交一本想看的书。</p>
+                <Link href="/request-book" className="btn-outline-brand inline-flex items-center justify-center">
+                  申请加入书库
+                </Link>
               </div>
             )}
           </>
@@ -255,7 +258,10 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                   <SearchIcon className="w-7 h-7" />
                 </div>
                 <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
-                <p className="text-stone-400 text-sm mt-2">试试其他关键词</p>
+                <p className="text-stone-400 text-sm mt-2 mb-5">试试其他关键词，或者提交一本想看的书。</p>
+                <Link href="/request-book" className="btn-outline-brand inline-flex items-center justify-center">
+                  申请加入书库
+                </Link>
               </div>
             ) : null}
           </>

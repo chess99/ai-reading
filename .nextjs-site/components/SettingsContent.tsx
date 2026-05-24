@@ -7,6 +7,24 @@ interface SettingsContentProps {
   allBooks: { slug: string; title: string; author: string }[];
 }
 
+const feedbackIssueUrl =
+  'https://github.com/chess99/ai-reading/issues/new?' +
+  new URLSearchParams({
+    title: '反馈：',
+    body: [
+      '## 反馈类型',
+      '<!-- Bug / 体验建议 / 内容问题 / 其他 -->',
+      '',
+      '## 具体描述',
+      '',
+      '## 相关页面',
+      '<!-- 如果方便，请粘贴出现问题的页面链接 -->',
+      '',
+      '## 设备与浏览器',
+      '<!-- 例如：iPhone Safari / Windows Chrome -->',
+    ].join('\n'),
+  }).toString();
+
 export default function SettingsContent({ allBooks }: SettingsContentProps) {
   const [offlineMode, setOfflineMode] = useState(false);
   const [isPrefetching, setIsPrefetching] = useState(false);
@@ -122,6 +140,22 @@ export default function SettingsContent({ allBooks }: SettingsContentProps) {
         >
           清除所有缓存
         </button>
+      </div>
+
+      {/* 反馈 */}
+      <div className="surface-card p-4">
+        <h3 className="font-bold text-stone-950 mb-1">反馈与问题</h3>
+        <p className="mb-3 text-sm leading-6 text-stone-600">
+          发现 Bug、内容问题或交互不顺，可以通过 GitHub Issue 留下反馈。
+        </p>
+        <a
+          href={feedbackIssueUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-outline-brand inline-flex w-full items-center justify-center"
+        >
+          提交反馈
+        </a>
       </div>
 
       {/* 关于 */}
