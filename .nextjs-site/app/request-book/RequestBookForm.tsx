@@ -26,7 +26,7 @@ export default function RequestBookForm() {
   return (
     <div
       ref={containerRef}
-      className="min-h-[1060px] overflow-hidden bg-[#fffdf8] md:rounded-lg md:border md:border-stone-200/80 md:shadow-[0_20px_48px_-34px_rgba(79,58,35,0.5)]"
+      className="min-h-[1060px] overflow-hidden bg-transparent"
     />
   );
 }
