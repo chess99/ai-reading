@@ -442,27 +442,35 @@ body::before {
 }
 
 /* 表格样式 */
-.markdown-content table {
-  @apply w-full my-6;
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
+.markdown-table-wrapper {
+  @apply my-6;
   overflow-x: auto;
   border-radius: 8px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(79, 58, 35, 0.16);
+  background: #fffdf8;
+}
+
+.markdown-content table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .markdown-content thead {
-  background: linear-gradient(to bottom, #f7fafc, #edf2f7);
+  background: linear-gradient(to bottom, rgba(244, 239, 230, 0.92), rgba(244, 239, 230, 0.72));
 }
 
 .markdown-content th {
-  @apply px-4 py-3 text-left font-semibold text-gray-700 border-b-2 border-gray-300;
+  @apply px-4 py-3 text-left font-semibold;
+  color: #4f3a23;
+  border-bottom: 1px solid rgba(79, 58, 35, 0.22);
   white-space: nowrap;
 }
 
 .markdown-content td {
-  @apply px-4 py-3 border-b border-gray-200;
+  @apply px-4 py-3;
+  border-bottom: 1px solid rgba(79, 58, 35, 0.12);
 }
 
 .markdown-content tbody tr {
@@ -470,7 +478,7 @@ body::before {
 }
 
 .markdown-content tbody tr:hover {
-  background-color: #f7fafc;
+  background-color: rgba(154, 107, 47, 0.06);
 }
 
 .markdown-content tbody tr:last-child td {

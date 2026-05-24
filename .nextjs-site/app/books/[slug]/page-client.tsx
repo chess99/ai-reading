@@ -50,6 +50,13 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkMath]}
               rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeKatex, rehypeHighlight]}
+              components={{
+                table: ({ children, ...props }) => (
+                  <div className="markdown-table-wrapper">
+                    <table {...props}>{children}</table>
+                  </div>
+                ),
+              }}
             >
               {displayContent}
             </ReactMarkdown>
