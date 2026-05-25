@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
@@ -8,6 +8,7 @@ import BottomNav from '@/components/BottomNav';
 import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
 import { BookTreeNode, BookMeta } from '@/lib/books';
+import { updateNavigationHistory } from '@/lib/navigation-history';
 
 interface LayoutClientProps {
   bookTree: BookTreeNode[];
@@ -18,6 +19,7 @@ interface LayoutClientProps {
 export default function LayoutClient({ bookTree, allBooks, children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const isInitialNavigation = useRef(true);
   const pathname = usePathname();
 
   // Derive book title for Header when on a book page
@@ -31,6 +33,15 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
     if (!('serviceWorker' in navigator)) return;
     navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
   }, []);
+
+  useEffect(() => {
+    updateNavigationHistory(window.sessionStorage, pathname, {
+      isInitialLoad: isInitialNavigation.current,
+      referrer: document.referrer,
+      origin: window.location.origin,
+    });
+    isInitialNavigation.current = false;
+  }, [pathname]);
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">

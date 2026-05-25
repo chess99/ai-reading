@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { trackEvent } from '@/lib/analytics';
+import { getStoredPreviousPath } from '@/lib/navigation-history';
 import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon } from '@/components/Icons';
 
 interface HeaderProps {
@@ -27,10 +28,10 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
   };
 
   const handleBack = () => {
-    if (typeof window !== 'undefined' && window.history.length > 1) {
+    if (typeof window !== 'undefined' && getStoredPreviousPath(window.sessionStorage)) {
       router.back();
     } else {
-      router.push('/');
+      router.replace('/');
     }
   };
 
