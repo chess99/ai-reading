@@ -147,30 +147,23 @@ export default function SettingsContent({ allBooks }: SettingsContentProps) {
       <div className="surface-card p-4">
         <h3 className="font-bold text-stone-950 mb-1">建议与反馈</h3>
         <p className="mb-3 text-sm leading-6 text-stone-600">
-          找不到想看的书，或遇到使用问题，可以在这里提交。
+          没有找到想看的书？可以提交书名和作者，请求补充到书库。
         </p>
-        <div className="space-y-2">
-          <Link
-            href="/request-book"
-            className="flex items-center justify-between rounded-lg border border-brand/20 bg-brand/10 px-4 py-3 text-left transition-colors hover:bg-brand/15 active:scale-[0.99]"
-          >
-            <span>
-              <span className="block text-sm font-bold text-stone-950">申请加入书库</span>
-              <span className="mt-0.5 block text-sm text-stone-600">提交希望补充到书库的书籍线索</span>
-            </span>
-            <span className="ml-3 text-lg text-brand" aria-hidden="true">→</span>
-          </Link>
+        <Link
+          href="/request-book"
+          className="btn-outline-brand inline-flex w-full items-center justify-center bg-stone-900 text-[#fffdf8] hover:bg-stone-800 hover:text-[#fffdf8]"
+        >
+          申请加入书库
+        </Link>
+        <div className="mt-3 border-t border-stone-200/80 pt-3">
           <a
             href={feedbackIssueUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between rounded-lg border border-stone-200 bg-[#fffdf8] px-4 py-3 text-left transition-colors hover:border-brand/30 hover:bg-stone-50 active:scale-[0.99]"
+            className="flex items-center justify-between gap-3 rounded-md px-1 py-1 text-sm transition-colors hover:text-brand"
           >
-            <span>
-              <span className="block text-sm font-bold text-stone-950">提交反馈</span>
-              <span className="mt-0.5 block text-sm text-stone-600">报告 Bug、内容错误或使用体验问题</span>
-            </span>
-            <span className="ml-3 text-lg text-stone-400" aria-hidden="true">→</span>
+            <span className="text-stone-600">遇到 Bug、内容错误或体验问题？</span>
+            <span className="font-bold text-brand whitespace-nowrap">提交反馈 →</span>
           </a>
         </div>
       </div>
