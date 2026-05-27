@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { BRAND_NAME } from '@/lib/brand';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 import BookTree from '@/components/BookTree';
 import { CloseIcon } from '@/components/Icons';
@@ -65,7 +66,7 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
             className="min-w-0 hover:opacity-80 transition-opacity"
           >
             <span className="block text-xs font-black tracking-[0.16em] text-brand">LIBRARY</span>
-            <span className="block text-lg font-black text-stone-950">书库索引</span>
+            <span className="block text-lg font-black text-stone-950">{BRAND_NAME}</span>
           </Link>
           <button
             onClick={onClose}

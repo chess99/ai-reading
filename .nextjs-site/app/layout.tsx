@@ -4,11 +4,12 @@ import LayoutClient from './layout-client';
 import BaiduAnalytics from '@/components/BaiduAnalytics';
 import { buildBookTree, getAllBookMetas } from '@/lib/books';
 import { BASE_URL } from '@/lib/config';
+import { BRAND_NAME, SITE_DESCRIPTION, SITE_TITLE } from '@/lib/brand';
 
 export const metadata: Metadata = {
-  title: 'AI 阅读 - AI 驱动的书籍解读与知识分享平台',
-  description: '用 AI 精读好书，提炼知识精华。收录了投资、心理学、个人成长、商业管理等领域的优质书籍。',
-  keywords: ['AI', '读书', '书籍解读', '知识分享', '投资', '心理学', '个人成长', '商业管理'],
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  keywords: ['晨笙阅读', '书籍解读', '读书笔记', 'AI 辅助阅读', '好书精读', '投资', '心理学', '个人成长', '商业管理'],
   manifest: '/manifest.webmanifest',
   icons: {
     icon: '/icon.svg',
@@ -16,17 +17,17 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable: true,
-    title: 'AI 阅读',
+    title: BRAND_NAME,
     statusBarStyle: 'default',
   },
   alternates: {
     canonical: BASE_URL + '/',
   },
   openGraph: {
-    title: 'AI 阅读 - AI 驱动的书籍解读与知识分享平台',
-    description: '用 AI 精读好书，提炼知识精华。收录了投资、心理学、个人成长、商业管理等领域的优质书籍。',
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     url: BASE_URL + '/',
-    siteName: 'AI 阅读',
+    siteName: BRAND_NAME,
     type: 'website',
     locale: 'zh_CN',
     images: [
@@ -34,14 +35,14 @@ export const metadata: Metadata = {
         url: BASE_URL + '/icon.png',
         width: 512,
         height: 512,
-        alt: 'AI 阅读',
+        alt: BRAND_NAME,
       },
     ],
   },
   twitter: {
     card: 'summary',
-    title: 'AI 阅读 - AI 驱动的书籍解读与知识分享平台',
-    description: '用 AI 精读好书，提炼知识精华。收录了投资、心理学、个人成长、商业管理等领域的优质书籍。',
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: [BASE_URL + '/icon.png'],
   },
 };
@@ -55,9 +56,9 @@ const websiteJsonLd = {
   '@graph': [
     {
       '@type': 'WebSite',
-      name: 'AI 阅读',
+      name: BRAND_NAME,
       url: BASE_URL,
-      description: '用 AI 精读好书，提炼知识精华。收录投资、心理学、个人成长、商业管理等领域优质书籍。',
+      description: SITE_DESCRIPTION,
       inLanguage: 'zh-CN',
       potentialAction: {
         '@type': 'SearchAction',
@@ -70,7 +71,7 @@ const websiteJsonLd = {
     },
     {
       '@type': 'Organization',
-      name: 'AI 阅读',
+      name: BRAND_NAME,
       url: BASE_URL,
     },
   ],

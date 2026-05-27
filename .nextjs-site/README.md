@@ -1,4 +1,4 @@
-# AI 阅读 - Next.js 站点
+# 晨笙阅读 - Next.js 站点
 
 基于 Next.js 的 AI 驱动书籍解读平台。
 

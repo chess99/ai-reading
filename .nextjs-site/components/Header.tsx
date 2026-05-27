@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { trackEvent } from '@/lib/analytics';
 import { getStoredPreviousPath } from '@/lib/navigation-history';
 import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon } from '@/components/Icons';
+import { BRAND_NAME } from '@/lib/brand';
 
 interface HeaderProps {
   mode?: 'home' | 'book';
@@ -63,7 +64,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
               <MenuIcon className="w-5 h-5" />
             </button>
             <Link href="/" className="text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
-              AI 阅读
+              {BRAND_NAME}
             </Link>
           </div>
 
@@ -96,7 +97,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
               </span>
             ) : (
               <Link href="/" className="md:hidden text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
-                AI 阅读
+                {BRAND_NAME}
               </Link>
             )}
 

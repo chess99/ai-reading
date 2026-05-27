@@ -1,8 +1,9 @@
 import RequestBookForm from './RequestBookForm';
+import { BRAND_NAME } from '@/lib/brand';
 
 export const metadata = {
-  title: '申请加入书库 - AI 阅读',
-  description: '提交希望补充到 AI 阅读书库的书籍线索。',
+  title: `申请加入书库 - ${BRAND_NAME}`,
+  description: `提交希望补充到${BRAND_NAME}书库的书籍线索。`,
 };
 
 export default function RequestBookPage() {

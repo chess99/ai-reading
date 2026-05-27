@@ -3,9 +3,11 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReadingEvents } from '@/lib/analytics';
+import { BRAND_TAGLINE } from '@/lib/brand';
 
 interface SettingsContentProps {
   allBooks: { slug: string; title: string; author: string }[];
+  onNavigate?: () => void;
 }
 
 const feedbackIssueUrl =
@@ -26,7 +28,7 @@ const feedbackIssueUrl =
     ].join('\n'),
   }).toString();
 
-export default function SettingsContent({ allBooks }: SettingsContentProps) {
+export default function SettingsContent({ allBooks, onNavigate }: SettingsContentProps) {
   const [offlineMode, setOfflineMode] = useState(false);
   const [isPrefetching, setIsPrefetching] = useState(false);
   const [cachedCount, setCachedCount] = useState(0);
@@ -151,6 +153,7 @@ export default function SettingsContent({ allBooks }: SettingsContentProps) {
         </p>
         <Link
           href="/request-book"
+          onClick={onNavigate}
           className="btn-outline-brand inline-flex w-full items-center justify-center bg-stone-900 text-[#fffdf8] hover:bg-stone-800 hover:text-[#fffdf8]"
         >
           申请加入书库
@@ -171,19 +174,26 @@ export default function SettingsContent({ allBooks }: SettingsContentProps) {
       {/* 关于 */}
       <div className="surface-card p-4">
         <h3 className="font-bold text-stone-950 mb-3">关于</h3>
-        <div className="space-y-2 text-sm text-stone-600">
-          <p>AI 阅读 - AI 驱动的书籍解读平台</p>
+        <div className="space-y-2 text-sm leading-6 text-stone-600">
+          <p>{BRAND_TAGLINE}</p>
           <p>当前收录：{allBooks.length} 本书籍</p>
-          <p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 border-t border-stone-200/80 pt-3">
+            <Link
+              href="/about"
+              onClick={onNavigate}
+              className="font-semibold text-brand hover:underline"
+            >
+              关于晨笙阅读
+            </Link>
             <a
               href="https://github.com/chess99/ai-reading"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand hover:underline"
+              className="font-semibold text-brand hover:underline"
             >
               GitHub 仓库
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </div>

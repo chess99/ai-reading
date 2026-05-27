@@ -3,6 +3,7 @@ import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 import { BASE_URL } from '@/lib/config';
+import { BRAND_NAME } from '@/lib/brand';
 
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
@@ -37,17 +38,17 @@ export async function generateMetadata({ params }: BookPageProps) {
 
   if (!book) {
     return {
-      title: '书籍未找到 - AI 阅读',
+      title: `书籍未找到 - ${BRAND_NAME}`,
     };
   }
 
   const pageUrl = `${BASE_URL}/books/${slug}/`;
-  const description = `《${book.title}》作者 ${book.author}，AI 提炼的核心知识与洞见。分类：${book.category}。`;
+  const description = `《${book.title}》书籍解读：作者 ${book.author}。由 AI 辅助整理并经人工校审，提炼核心观点、关键框架与实践洞见。分类：${book.category}。`;
 
   return {
-    title: `${book.title} - ${book.author} | AI 阅读`,
+    title: `《${book.title}》书籍解读：核心观点与读书笔记 | ${BRAND_NAME}`,
     description,
-    keywords: [book.title, book.author, book.category, ...book.tags],
+    keywords: [book.title, book.author, '书籍解读', '读书笔记', '核心观点', book.category, ...book.tags],
     alternates: {
       canonical: pageUrl,
     },
@@ -57,7 +58,7 @@ export async function generateMetadata({ params }: BookPageProps) {
       url: pageUrl,
       type: 'article',
       locale: 'zh_CN',
-      siteName: 'AI 阅读',
+      siteName: BRAND_NAME,
       images: [
         {
           url: `${BASE_URL}/icon.png`,
@@ -87,16 +88,47 @@ export default async function BookPage({ params }: BookPageProps) {
   const pageUrl = `${BASE_URL}/books/${slug}/`;
   const bookJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Book',
-    name: book.title,
-    author: {
-      '@type': 'Person',
-      name: book.author,
-    },
-    url: pageUrl,
-    inLanguage: 'zh-CN',
-    genre: book.category,
-    keywords: book.tags.join(', '),
+    '@graph': [
+      {
+        '@type': 'Book',
+        name: book.title,
+        author: {
+          '@type': 'Person',
+          name: book.author,
+        },
+        inLanguage: 'zh-CN',
+        genre: book.category,
+        keywords: book.tags.join(', '),
+      },
+      {
+        '@type': 'Article',
+        headline: `《${book.title}》书籍解读：核心观点与读书笔记`,
+        description: `由 AI 辅助整理并经人工校审的《${book.title}》书籍解读，提炼核心观点、关键框架与实践洞见。`,
+        url: pageUrl,
+        inLanguage: 'zh-CN',
+        datePublished: new Date(book.addedAt).toISOString(),
+        dateModified: new Date(book.addedAt).toISOString(),
+        author: {
+          '@type': 'Organization',
+          name: BRAND_NAME,
+          url: BASE_URL,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: BRAND_NAME,
+          url: BASE_URL,
+        },
+        about: {
+          '@type': 'Book',
+          name: book.title,
+          author: {
+            '@type': 'Person',
+            name: book.author,
+          },
+        },
+        keywords: ['书籍解读', '读书笔记', '核心观点', book.category, ...book.tags].join(', '),
+      },
+    ],
   };
 
   return (

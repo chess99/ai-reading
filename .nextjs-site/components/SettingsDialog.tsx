@@ -46,7 +46,7 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
 
           {/* Content */}
           <div className="p-6">
-            <SettingsContent allBooks={allBooks} />
+            <SettingsContent allBooks={allBooks} onNavigate={onClose} />
           </div>
         </div>
       </div>
