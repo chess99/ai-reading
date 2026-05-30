@@ -7,6 +7,16 @@ import matter from 'gray-matter';
 const repoRoot = path.resolve(new URL('../..', import.meta.url).pathname);
 const topicsDir = path.join(repoRoot, 'topics');
 const booksDir = path.join(repoRoot, 'books');
+const expectedTopicSlugs = new Set([
+  'zhong-da-jue-ce',
+  'cong-0-dao-1-zuo-chan-pin',
+  'xi-tong-yu-fu-za-xing',
+  'ke-chi-xu-xi-guan',
+  'pian-jian-yu-qun-ti-ying-xiang',
+  'li-jie-qin-mi-guan-xi',
+  'chuang-shang-yu-zi-wo-xiu-fu',
+  'ti-gao-shen-du-gong-zuo-neng-li',
+]);
 
 function scanMarkdownFiles(dir) {
   const files = [];
@@ -36,7 +46,7 @@ test('topic markdown files follow the structured recommendation model', () => {
   assert.equal(existsSync(topicsDir), true, 'topics/ directory should exist');
 
   const topicFiles = scanMarkdownFiles(topicsDir);
-  assert.equal(topicFiles.length, 2, 'v1 should ship exactly two topic articles');
+  assert.equal(topicFiles.length, expectedTopicSlugs.size, 'first batch should ship eight topic articles');
 
   const slugs = new Set();
   const bookSlugs = loadBookSlugs();
@@ -49,6 +59,7 @@ test('topic markdown files follow the structured recommendation model', () => {
     assert.match(data.slug, /^[a-z0-9-]+$/, `${relativePath} slug should be URL-safe`);
     assert.equal(slugs.has(data.slug), false, `${relativePath} slug should be unique`);
     slugs.add(data.slug);
+    assert.equal(expectedTopicSlugs.has(data.slug), true, `${relativePath} slug should be in the first topic batch`);
 
     assert.equal(typeof data.title, 'string', `${relativePath} should have a title`);
     assert.equal(typeof data.description, 'string', `${relativePath} should have a description`);
@@ -72,4 +83,6 @@ test('topic markdown files follow the structured recommendation model', () => {
       }
     }
   }
+
+  assert.deepEqual(slugs, expectedTopicSlugs, 'first topic batch should include the expected slugs');
 });
