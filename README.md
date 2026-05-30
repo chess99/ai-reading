@@ -63,7 +63,7 @@ npm install
 npm run dev
 ```
 
-访问 http://localhost:3000/ai-reading
+访问 http://localhost:3000/
 
 说明：`/search` 全文搜索依赖构建产物中的 `pagefind` 索引，纯 `dev` 模式下不可用。
 
@@ -84,7 +84,7 @@ npm run build
 npm run preview
 ```
 
-说明：`preview` 会在本地按 `/ai-reading` basePath 挂载 `out/`，用于还原线上访问路径。
+说明：`preview` 会在本地以站点根路径挂载 `out/`，用于还原线上访问路径。
 
 ## 添加新书籍
 
