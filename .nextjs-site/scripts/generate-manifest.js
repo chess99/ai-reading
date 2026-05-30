@@ -14,6 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BOOKS_DIR = path.join(__dirname, '..', '..', 'books');
+const TOPICS_DIR = path.join(__dirname, '..', '..', 'topics');
 const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'build-manifest.json');
 
 function generateHash(content) {
@@ -71,15 +72,71 @@ function scanBooks(dir) {
   return books;
 }
 
+function scanTopics(dir) {
+  const topics = {};
+
+  if (!fs.existsSync(dir)) {
+    return topics;
+  }
+
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith('.md')) {
+      continue;
+    }
+
+    const fullPath = path.join(dir, entry.name);
+    try {
+      const content = fs.readFileSync(fullPath, 'utf-8');
+      const hash = generateHash(content);
+      const slug = entry.name.replace(/\.md$/, '');
+      const titleMatch = content.match(/^title:\s*(.+)$/m);
+      const title = titleMatch ? titleMatch[1].replace(/^['"]|['"]$/g, '') : slug;
+
+      topics[slug] = {
+        hash,
+        title,
+        author: '主题阅读',
+        path: path.relative(dir, fullPath),
+      };
+    } catch (error) {
+      console.error(`Error processing ${fullPath}:`, error.message);
+    }
+  }
+
+  return topics;
+}
+
 function generateManifest() {
   console.log('🔨 Generating build manifest...');
 
   const books = scanBooks(BOOKS_DIR);
+  const topics = scanTopics(TOPICS_DIR);
+  const content = {};
+
+  for (const [slug, info] of Object.entries(books)) {
+    content[`/books/${slug}/`] = {
+      ...info,
+      type: 'book',
+      url: `/books/${slug}/`,
+    };
+  }
+
+  for (const [slug, info] of Object.entries(topics)) {
+    content[`/topics/${slug}/`] = {
+      ...info,
+      type: 'topic',
+      url: `/topics/${slug}/`,
+    };
+  }
+
   const manifest = {
     version: new Date().toISOString(),
     buildTime: Date.now(),
     booksCount: Object.keys(books).length,
+    topicsCount: Object.keys(topics).length,
     books,
+    topics,
+    content,
   };
 
   // 确保 public 目录存在
@@ -90,7 +147,7 @@ function generateManifest() {
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(manifest, null, 2));
 
-  console.log(`✅ Manifest generated: ${Object.keys(books).length} books`);
+  console.log(`✅ Manifest generated: ${Object.keys(books).length} books, ${Object.keys(topics).length} topics`);
   console.log(`📝 Output: ${OUTPUT_FILE}`);
 }
 

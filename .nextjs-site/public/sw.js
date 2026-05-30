@@ -44,11 +44,27 @@ async function loadManifest() {
     const response = await fetch(MANIFEST_URL);
     if (response.ok) {
       currentManifest = await response.json();
-      console.log('[SW] Manifest loaded:', currentManifest.booksCount, 'books');
+      console.log('[SW] Manifest loaded:', currentManifest.booksCount, 'books,', currentManifest.topicsCount || 0, 'topics');
     }
   } catch (error) {
     console.error('[SW] Failed to load manifest:', error);
   }
+}
+
+function getManifestContent(manifest) {
+  if (manifest.content) {
+    return manifest.content;
+  }
+
+  const content = {};
+  for (const [slug, info] of Object.entries(manifest.books || {})) {
+    content[`/books/${slug}/`] = {
+      ...info,
+      type: 'book',
+      url: `/books/${slug}/`,
+    };
+  }
+  return content;
 }
 
 // 启动定期更新检查
@@ -82,34 +98,38 @@ async function checkForUpdates() {
       return;
     }
 
-    // 找出更新的书籍
+    // 找出更新的内容
     const updates = [];
-    for (const [slug, info] of Object.entries(newManifest.books)) {
-      const oldInfo = currentManifest.books[slug];
+    const oldContent = getManifestContent(currentManifest);
+    const newContent = getManifestContent(newManifest);
+    for (const [url, info] of Object.entries(newContent)) {
+      const oldInfo = oldContent[url];
       if (!oldInfo || oldInfo.hash !== info.hash) {
         updates.push({
-          slug,
+          url: info.url || url,
+          slug: (info.url || url).split('/').filter(Boolean).pop(),
           title: info.title,
           author: info.author,
+          type: info.type,
         });
       }
     }
 
     if (updates.length > 0) {
-      console.log('[SW] Found updates:', updates.length, 'books');
+      console.log('[SW] Found updates:', updates.length, 'items');
 
       // 通知所有客户端
       const clients = await self.clients.matchAll();
       clients.forEach(client => {
         client.postMessage({
-          type: 'BOOKS_UPDATED',
+          type: 'CONTENT_UPDATED',
           count: updates.length,
           updates,
         });
       });
-
-      currentManifest = newManifest;
     }
+
+    currentManifest = newManifest;
   } catch (error) {
     console.error('[SW] Check updates failed:', error);
   }
@@ -207,6 +227,17 @@ self.addEventListener('message', async event => {
       }
       break;
 
+    case 'UPDATE_CONTENT':
+      // 更新指定内容页面
+      if (data && data.urls) {
+        await updateContent(data.urls);
+        event.source.postMessage({
+          type: 'UPDATE_COMPLETE',
+          count: data.urls.length,
+        });
+      }
+      break;
+
     case 'SKIP_WAITING':
       // 立即激活新版本
       self.skipWaiting();
@@ -250,6 +281,23 @@ async function updateBooks(slugs) {
       }
     } catch (error) {
       console.error('[SW] Update failed:', slug, error);
+    }
+  }
+}
+
+// 更新指定内容
+async function updateContent(urls) {
+  const cache = await caches.open(CACHE_NAME);
+
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, { cache: 'reload' });
+      if (response.ok) {
+        await cache.put(url, response);
+        console.log('[SW] Updated:', url);
+      }
+    } catch (error) {
+      console.error('[SW] Update failed:', url, error);
     }
   }
 }

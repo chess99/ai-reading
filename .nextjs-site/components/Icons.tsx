@@ -19,6 +19,15 @@ export function LibraryIcon({ className = 'w-5 h-5' }: IconProps) {
   );
 }
 
+export function TopicIcon({ className = 'w-5 h-5' }: IconProps) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M4.5 6.5h15M6.5 4.5v15M10 9h8M10 13h6M10 17h4" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M4.5 6.5A2 2 0 0 1 6.5 4.5h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-11Z" />
+    </svg>
+  );
+}
+
 export function SearchIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

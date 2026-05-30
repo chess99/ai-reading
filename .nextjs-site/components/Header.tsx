@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { trackEvent } from '@/lib/analytics';
 import { getStoredPreviousPath } from '@/lib/navigation-history';
-import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon } from '@/components/Icons';
+import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
 import { BRAND_NAME } from '@/lib/brand';
 
 interface HeaderProps {
@@ -19,6 +19,7 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
   const pathname = usePathname();
   const desktopNav = [
     { href: '/', label: '首页', icon: HomeIcon },
+    { href: '/topics', label: '主题', icon: TopicIcon },
     { href: '/library', label: '书库', icon: LibraryIcon },
     { href: '/search', label: '搜索', icon: SearchIcon },
   ] as const;

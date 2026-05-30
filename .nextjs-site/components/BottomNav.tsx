@@ -2,13 +2,18 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { HomeIcon, LibraryIcon, SettingsIcon } from '@/components/Icons';
+import { HomeIcon, LibraryIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
 
 const tabs = [
   {
     href: '/',
     label: '首页',
     icon: HomeIcon,
+  },
+  {
+    href: '/topics',
+    label: '主题',
+    icon: TopicIcon,
   },
   {
     href: '/library',
@@ -32,7 +37,7 @@ export default function BottomNav() {
 
   return (
     <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#fffdf8]/92 backdrop-blur-xl border-t border-stone-200/90 shadow-[0_-18px_40px_-30px_rgba(79,58,35,0.8)]">
-      <div className="grid grid-cols-3 px-2 pb-[env(safe-area-inset-bottom)]">
+      <div className="grid grid-cols-4 px-2 pb-[env(safe-area-inset-bottom)]">
         {tabs.map(tab => {
           const active = isActive(tab.href);
           const Icon = tab.icon;

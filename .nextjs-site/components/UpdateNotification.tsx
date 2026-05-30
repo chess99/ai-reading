@@ -3,14 +3,16 @@
 import { useEffect, useState } from 'react';
 import { CloseIcon } from '@/components/Icons';
 
-interface BookUpdate {
+interface ContentUpdate {
   slug: string;
   title: string;
-  author: string;
+  author?: string;
+  url?: string;
+  type?: 'book' | 'topic';
 }
 
 export default function UpdateNotification() {
-  const [updates, setUpdates] = useState<BookUpdate[]>([]);
+  const [updates, setUpdates] = useState<ContentUpdate[]>([]);
   const [isUpdating, setIsUpdating] = useState(false);
 
   useEffect(() => {
@@ -19,11 +21,11 @@ export default function UpdateNotification() {
     const handleMessage = (event: MessageEvent) => {
       const { type, count, updates: bookUpdates } = event.data;
 
-      if (type === 'BOOKS_UPDATED') {
-        console.log(`发现 ${count} 本书籍有更新`);
+      if (type === 'BOOKS_UPDATED' || type === 'CONTENT_UPDATED') {
+        console.log(`发现 ${count} 项内容有更新`);
         setUpdates(bookUpdates || []);
       } else if (type === 'UPDATE_COMPLETE') {
-        console.log(`已更新 ${count} 本书籍`);
+        console.log(`已更新 ${count} 项内容`);
         setIsUpdating(false);
         setUpdates([]);
       }
@@ -40,8 +42,16 @@ export default function UpdateNotification() {
     if (!navigator.serviceWorker.controller) return;
 
     setIsUpdating(true);
+    const urls = updates.map(u => u.url).filter((url): url is string => Boolean(url));
 
-    // 发送更新请求
+    if (urls.length > 0) {
+      navigator.serviceWorker.controller.postMessage({
+        type: 'UPDATE_CONTENT',
+        data: { urls },
+      });
+      return;
+    }
+
     navigator.serviceWorker.controller.postMessage({
       type: 'UPDATE_BOOKS',
       data: {
@@ -81,7 +91,7 @@ export default function UpdateNotification() {
               发现内容更新
             </h3>
             <p className="text-sm text-stone-600">
-              有 {updates.length} 本书籍有新内容
+              有 {updates.length} 项内容有新内容
             </p>
           </div>
           <button
@@ -105,7 +115,7 @@ export default function UpdateNotification() {
                   {book.title}
                 </div>
                 <div className="text-xs text-stone-500">
-                  {book.author}
+                  {book.author || (book.type === 'topic' ? '主题阅读' : '书籍提炼')}
                 </div>
               </div>
             ))}

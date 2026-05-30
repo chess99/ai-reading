@@ -1,0 +1,36 @@
+import Link from 'next/link';
+import { TopicMeta } from '@/lib/topics';
+
+interface TopicCardProps {
+  topic: TopicMeta;
+  compact?: boolean;
+}
+
+export default function TopicCard({ topic, compact = false }: TopicCardProps) {
+  return (
+    <Link
+      href={`/topics/${topic.slug}`}
+      className={`group surface-card surface-card-hover block ${compact ? 'p-5 min-w-[280px] md:min-w-[340px]' : 'p-5 md:p-6'}`}
+    >
+      <div className="mb-4 flex items-center justify-between gap-3">
+        <span className="text-[11px] font-black tracking-[0.16em] text-brand">TOPIC</span>
+        <span className="chip-muted text-[11px] flex-shrink-0">{topic.bookCount} 本书</span>
+      </div>
+      <h3 className="text-lg md:text-xl font-black tracking-tight text-stone-950 group-hover:text-brand transition-colors">
+        {topic.title}
+      </h3>
+      <p className={`mt-3 text-sm leading-6 text-stone-600 ${compact ? 'line-clamp-2' : ''}`}>
+        {topic.description}
+      </p>
+      {topic.tags.length > 0 && (
+        <div className="mt-5 flex flex-wrap gap-2">
+          {topic.tags.slice(0, 3).map(tag => (
+            <span key={tag} className="chip-brand text-xs">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </Link>
+  );
+}

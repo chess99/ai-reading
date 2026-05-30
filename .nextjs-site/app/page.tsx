@@ -1,13 +1,16 @@
 import { getAllBookMetas, getAllCategories, getLatestBooks } from '@/lib/books';
+import { getLatestTopics } from '@/lib/topics';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
 import ContinueReading from '@/components/ContinueReading';
 import NewBooks from '@/components/NewBooks';
+import TopicReading from '@/components/TopicReading';
 
 export default function HomePage() {
   const allBooks = getAllBookMetas();
   const categories = getAllCategories();
   const latestBooks = getLatestBooks(10);
+  const latestTopics = getLatestTopics(3);
 
   return (
     <div className="page-container">
@@ -22,6 +25,9 @@ export default function HomePage() {
 
         {/* New Books */}
         <NewBooks books={latestBooks} />
+
+        {/* Topic Reading */}
+        <TopicReading topics={latestTopics} />
 
         {/* Categories */}
         <div>
