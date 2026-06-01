@@ -1,4 +1,4 @@
-# Topic Reading Panorama V4 Implementation Plan
+# Topic Reading Panorama V5 Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -12,7 +12,7 @@
 
 ## Review Status
 
-This plan is not approved for implementation yet. It is the canonical V4 draft for later review.
+This plan is not approved for implementation yet. It is the canonical V5 draft for later review.
 
 Independent review feedback has been incorporated:
 
@@ -21,22 +21,32 @@ Independent review feedback has been incorporated:
 - The published 8 topics are no longer treated as fixed pages.
 - Topic book counts are variable. Compact topics can use 5-6 books; standard topics use 7-9 books; complex topics use 10-12 books. If a topic needs more than 12 books, split it.
 - Repeated books now have a first-pass role table. A book can be a core book in one topic and an extension or bridge book in another, but later batch plans must keep that role explicit.
-- Current published pages may contain recommendations for books not yet in the library. V4 migration must either add those books first or leave the old page untouched until it can be replaced cleanly.
+- Current published pages may contain recommendations for books not yet in the library. V5 migration must either add those books first or leave the old page untouched until it can be replaced cleanly.
+- The final review does not expand topic count. It only tightens title style, topic boundaries, and visibly misplaced book paths.
 
 This plan does not delete live topic files. Deletion, redirect, or slug replacement must happen in a later explicit migration batch.
 
 ## Published Topic Reconstruction Matrix
 
-| Current Topic | V4 Decision | Target Placement | Book-List Direction |
+| Current Topic | V5 Decision | Target Placement | Book-List Direction |
 |---|---|---|---|
 | `如何做重大决策` | Keep and deepen | 思维、判断与复杂性 | Center on high-stakes personal and organizational decisions. Keep 《怎样决定大事》《思考，快与慢》《噪声》《决断力》《超级预测》《对赌》 as the main spine; use systems books as extension. |
 | `如何理解系统与复杂性` | Keep and narrow | 思维、判断与复杂性 | Focus on feedback, emergence, scale, and organizational learning. Move pure uncertainty books to the risk topic. |
 | `如何建立可持续习惯` | Keep and tighten | 自我管理与学习 | Build around behavior design, motivation, self-control, and environment design. Remove generic self-help from the core path. |
 | `如何识别偏见与群体影响` | Rename | 思维、判断与复杂性 | Rename to `如何理解偏见、从众与服从`. Keep cognition plus social influence; separate structural inequality into social topics. |
-| `从0到1做产品` | Replace through split | 商业、产品与创业 | Do not keep the old title as an independent planning topic. Use `如何验证产品机会`, `如何做好产品发现`, and `如何把产品从 0 做到 1`; the last one replaces the published page when migration happens. |
+| `从0到1做产品` | Replace through split | 商业、产品与创业 | Do not keep the old title as an independent planning topic. Use `如何验证产品机会`, `如何做好产品发现`, and `产品从 0 到 1`; the last one replaces the published page when migration happens. |
 | `如何理解亲密关系` | Keep and improve | 关系、沟通与家庭 | Use attachment, marriage research, emotional bonding, communication, and love philosophy. Remove manipulative dating books from the core list. |
 | `如何面对创伤与自我修复` | Keep with boundary | 心理、情绪与修复 | Focus on trauma, recovery, body memory, attachment, and professional boundary. Do not mix decision books into the core path. |
 | `如何提高深度工作能力` | Keep and broaden | 自我管理与学习 | Cover attention, cognitive load, task systems, deliberate practice, recovery, and slow productivity. |
+
+## First Migration Priority
+
+The first implementation batch should handle the 8 published topics before adding more net-new public pages. These pages already define the user-facing baseline, so the site should not carry old book paths after the new panorama is approved.
+
+- Replace the published `从0到1做产品` page with `产品从 0 到 1`.
+- Rename or replace `如何识别偏见与群体影响` with `为什么人会从众和服从`.
+- Update `如何做重大决策`, `什么是系统思维`, `如何建立可持续习惯`, `亲密关系阅读路径`, `如何面对创伤与自我修复`, and `如何提高深度工作能力` to match this plan's book paths.
+- Do not retain old core books that this matrix has moved to extension roles.
 
 ## Source Signals
 
@@ -55,7 +65,7 @@ Reference links:
 
 ## Non-Negotiable Content Rules
 
-- Topic titles must be real reader questions, preferably in the form `如何...`.
+- Topic titles must be reader-centered and problem-driven. Use a mixed style: `如何...`, `怎样...`, `为什么...`, `什么是...`, `看懂...`, or concise noun-style reading paths when that sounds more natural.
 - Topic count per domain is not fixed. The taxonomy must optimize coverage and reader usefulness, not visual symmetry.
 - Book count per topic is determined by problem complexity: 5-6 for compact topics, 7-9 for standard topics, 10-12 for complex topics.
 - Book order is intentional: entry book first, then core framework, then system coverage, then practice, critique, or advanced reference.
@@ -110,11 +120,11 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 | 《思考，快与慢》 | 如何做重大决策 | bias、行为经济学、证据判断主题中作为 bridge |
 | 《噪声》 | 如何做重大决策 | 预测、证据判断主题中作为 bridge |
 | 《反脆弱》 | 如何理解概率、风险与预测 | 痛苦意义、投资风险主题中作为 bridge |
-| 《系统之美》 | 如何理解系统与复杂性 | 重大决策、未来不确定性主题中作为 bridge |
+| 《系统之美》 | 什么是系统思维 | 重大决策、未来不确定性主题中作为 bridge |
 | 《深度工作》 | 如何提高深度工作能力 | 长期职业资本主题中作为 bridge |
 | 《掌控习惯》 | 如何建立可持续习惯 | 健康生活、长期学习主题中作为 bridge |
-| 《亲密关系》 | 如何理解亲密关系 | 有毒关系、幸福主题中作为 bridge |
-| 《依恋》 | 如何理解亲密关系 | 创伤修复、儿童安全感主题中作为 bridge |
+| 《亲密关系》 | 亲密关系阅读路径 | 有毒关系、幸福主题中作为 bridge |
+| 《依恋》 | 亲密关系阅读路径 | 创伤修复、儿童安全感主题中作为 bridge |
 | 《身体从未忘记》 | 如何面对创伤与自我修复 | 压力恢复、有毒关系主题中作为 bridge |
 | 《影响力》 | 如何做增长与营销 | 偏见、谈判主题中作为 bridge |
 | 《事实》 | 如何建立批判性思维 | 证据判断、公共讨论主题中作为 bridge |
@@ -136,11 +146,11 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《怎样决定大事》 → 《决断力》 → 《思考，快与慢》 → 《噪声》 → 《超级预测》 → 《对赌》 → 《助推》 → 《清单革命》
 
-#### 2. 如何理解系统与复杂性
+#### 2. 什么是系统思维
 
 阅读路径： 《系统之美》 → 《控制论与科学方法论》 → 《第五项修炼》 → 《复杂》 → 《规模》 → 《混沌》 → 《弹性》 → 《复杂经济学》
 
-#### 3. 如何理解偏见、从众与服从
+#### 3. 为什么人会从众和服从
 
 阅读路径： 《社会心理学》 → 《偏见的本质》 → 《社会性动物》 → 《社会认知心理学》 → 《影响力》 → 《服从权威》 → 《路西法效应》 → 《乌合之众》 → 《盲点》
 
@@ -152,7 +162,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《随机漫步的傻瓜》 → 《超级预测》 → 《噪声》 → 《黑天鹅》 → 《风险、不确定性与利润》 → 《反脆弱》 → 《对赌》
 
-#### 6. 如何建立统计与证据判断能力
+#### 6. 怎样判断证据是否可靠
 
 阅读路径： 《赤裸裸的统计学》 → 《女士品茶》 → 《为什么》 → 《因果推断》 → 《事实》 → 《这才是心理学》 → 《学会提问》 → 《噪声》
 
@@ -160,7 +170,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《别逗了费曼先生》 → 《世界观》 → 《科学革命的结构》 → 《无穷的开始》 → 《这才是心理学》 → 《思维模型》
 
-#### 8. 如何识别伪科学与坏证据
+#### 8. 识别伪科学与坏证据
 
 阅读路径： 《这才是心理学》 → 《学会提问》 → 《事实》 → 《赤裸裸的统计学》 → 《为什么》 → 《科学革命的结构》
 
@@ -184,7 +194,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《如何阅读一本书》 → 《认知天性》 → 《学习之道》 → 《刻意练习》 → 《心流》 → 《掌控习惯》 → 《终身成长》
 
-#### 13. 如何建立阅读与输出系统
+#### 13. 阅读与输出系统
 
 阅读路径： 《如何阅读一本书》 → 《卡片笔记写作法》 → 《金字塔原理》 → 《学会提问》 → 《风格感觉》 → 《写作这回事》 → 《第二大脑》
 
@@ -204,7 +214,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《蛤蟆先生去看心理医生》 → 《情绪急救》 → 《情绪是什么》 → 《伯恩斯新情绪疗法》 → 《身体从未忘记》 → 《我们为什么要睡觉》
 
-#### 17. 如何理解焦虑与抑郁
+#### 17. 理解焦虑与抑郁
 
 阅读路径： 《伯恩斯新情绪疗法》 → 《幸福的陷阱》 → 《也许你该找个人聊聊》 → 《蛤蟆先生去看心理医生》 → 《我们为什么要睡觉》
 
@@ -224,7 +234,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本主题只做阅读路径，不替代专业医疗、心理咨询或危机干预。
 
-#### 21. 如何面对丧失、哀伤与死亡
+#### 21. 面对丧失、哀伤与死亡
 
 阅读路径： 《最好的告别》 → 《当呼吸化为空气》 → 《活出生命的意义》 → 《相约星期二》 → 《生死课》 → 《也许你该找个人聊聊》
 
@@ -232,15 +242,15 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《活出生命的意义》 → 《当下的力量》 → 《人生的智慧》 → 《反脆弱》 → 《悉达多》 → 《最小阻力之路》
 
-#### 23. 如何理解成瘾与自我控制
+#### 23. 成瘾与自我控制
 
-阅读路径： 《上瘾》 → 《自控力》 → 《多巴胺国度》 → 《欲罢不能》 → 《稀缺》 → 《习惯的力量》
+阅读路径： 《多巴胺国度》 → 《欲罢不能》 → 《自控力》 → 《稀缺》 → 《习惯的力量》 → 《上瘾》
 
 ### 4. 关系、沟通与家庭
 
 **二级组：亲密关系 / 关系冲突 / 亲子与家庭 / 教育与成长**
 
-#### 24. 如何理解亲密关系
+#### 24. 亲密关系阅读路径
 
 阅读路径： 《亲密关系》 → 《依恋》 → 《幸福的婚姻》 → 《抱紧我》 → 《爱的艺术》 → 《沟通的本质》 → 《非暴力沟通》
 
@@ -276,7 +286,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 **二级组：职业资本 / 管理与领导 / 团队协作 / 组织系统与权力**
 
-#### 32. 如何做职业选择
+#### 32. 职业选择阅读路径
 
 阅读路径： 《远见》 → 《职业锚》 → 《你的降落伞是什么颜色》 → 《优秀到不能被忽视》 → 《一人企业》 → 《每周工作4小时》
 
@@ -296,9 +306,9 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《关键对话》 → 《高难度谈话》 → 《非暴力沟通》 → 《谈判力》 → 《横向领导力》 → 《团队协作的五大障碍》
 
-#### 37. 如何理解组织运转
+#### 37. 看懂组织运转
 
-阅读路径： 《组织行为学》 → 《科学管理原理》 → 《走出危机》 → 《丰田之道》 → 《精益思想》 → 《原则》
+阅读路径： 《组织行为学》 → 《走出危机》 → 《丰田之道》 → 《精益思想》 → 《科学管理原理》 → 《原则》
 
 #### 38. 如何理解组织中的权力与政治
 
@@ -322,9 +332,11 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 #### 42. 如何做好产品发现
 
-阅读路径： 《启示录》 → 《用户故事地图》 → 《精益产品手册》 → 《俞军产品方法论》 → 《用户体验要素》 → 《设计心理学》 → 《上瘾》
+阅读路径： 《启示录》 → 《用户故事地图》 → 《精益产品手册》 → 《俞军产品方法论》 → 《用户体验要素》 → 《设计心理学》 → 《设计冲刺》
 
-#### 43. 如何把产品从 0 做到 1
+边界说明：本主题讲“做什么解法”，不讲增长成瘾或商业模式。
+
+#### 43. 产品从 0 到 1
 
 阅读路径： 《从零到一》 → 《精益创业》 → 《四步创业法》 → 《客户开发入门》 → 《启示录》 → 《用户故事地图》 → 《产品开发流程原理》 → 《创业维艰》
 
@@ -362,9 +374,9 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 **二级组：财务常识 / 投资风险 / 经济运行 / 消费社会 / 阶层机会**
 
-#### 51. 如何建立财务常识
+#### 51. 建立财务常识
 
-阅读路径： 《小狗钱钱》 → 《富爸爸穷爸爸》 → 《邻家的百万富翁》 → 《金钱心理学》 → 《投资最重要的事》 → 《财务自由之路》
+阅读路径： 《小狗钱钱》 → 《巴比伦最富有的人》 → 《富爸爸穷爸爸》 → 《邻家的百万富翁》 → 《金钱心理学》 → 《财务自由之路》
 
 #### 52. 如何理解投资风险
 
@@ -374,7 +386,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《小岛经济学》 → 《像经济学家一样思考》 → 《经济学原理》 → 《置身事内》 → 《贫穷的本质》 → 《国富论》 → 《就业、利息和货币通论》
 
-#### 54. 如何理解消费主义
+#### 54. 看懂消费主义
 
 阅读路径： 《有闲阶级论》 → 《工作、消费主义和新穷人》 → 《娱乐至死》 → 《消费社会》 → 《债：第一个5000年》
 
@@ -392,7 +404,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 **二级组：社会制度 / 法律公共生活 / 历史文明 / 技术与现代性 / 文学人文**
 
-#### 57. 如何理解社会分层与共同生活
+#### 57. 社会分层与共同生活
 
 阅读路径： 《乡土中国》 → 《社会学的想象力》 → 《社会分工论》 → 《贫穷的本质》 → 《社会共通资本》 → 《城市的胜利》
 
@@ -404,7 +416,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《权力》 → 《旧制度与大革命》 → 《权力与繁荣》 → 《通往奴役之路》 → 《法治及其本土资源》 → 《看得见的正义》
 
-#### 60. 如何理解现代国家与官僚体系
+#### 60. 现代国家与官僚体系
 
 阅读路径： 《旧制度与大革命》 → 《中国历代政治得失》 → 《法治及其本土资源》 → 《国家为什么会失败》 → 《置身事内》 → 《权力与繁荣》
 
@@ -418,19 +430,19 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《初识传播学》 → 《理解媒介》 → 《娱乐至死》 → 《注意力商人》 → 《乌合之众》 → 《事实》 → 《学会提问》
 
-#### 63. 如何理解中国社会的现代转型
+#### 63. 中国社会的现代转型
 
 阅读路径： 《乡土中国》 → 《中国历代政治得失》 → 《万历十五年》 → 《中国近代史》 → 《叫魂》 → 《枢纽》 → 《置身事内》
 
-#### 64. 如何理解中国历史
+#### 64. 中国历史入门
 
-阅读路径： 《中国历代政治得失》 → 《万历十五年》 → 《叫魂》 → 《中国近代史》 → 《曾国藩传》 → 《枢纽》
+阅读路径： 《中国通史》 → 《中国历代政治得失》 → 《万历十五年》 → 《叫魂》 → 《中国近代史》 → 《枢纽》
 
 #### 65. 如何理解世界历史
 
-阅读路径： 《全球通史》 → 《人类简史》 → 《枪炮、病菌与钢铁》 → 《丝绸之路》 → 《文明的冲突》 → 《世界秩序》
+阅读路径： 《全球通史》 → 《人类简史》 → 《枪炮、病菌与钢铁》 → 《丝绸之路》 → 《大国的兴衰》 → 《世界秩序》
 
-#### 66. 如何理解城市、空间与生活方式
+#### 66. 城市、空间与生活方式
 
 阅读路径： 《美国大城市的死与生》 → 《城市的胜利》 → 《社会共通资本》 → 《乡土中国》 → 《工作、消费主义和新穷人》 → 《有闲阶级论》
 
@@ -438,19 +450,23 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《枪炮、病菌与钢铁》 → 《大国的兴衰》 → 《文明的冲突》 → 《国家为什么会失败》 → 《世界秩序》 → 《人类简史》
 
-#### 68. 如何理解平台、算法与注意力经济
+#### 68. 看懂平台、算法与注意力经济
 
 阅读路径： 《娱乐至死》 → 《注意力商人》 → 《过滤泡》 → 《监视资本主义时代》 → 《算法霸权》 → 《平台革命》 → 《理解媒介》
 
-#### 69. 如何理解 AI 与技术变革
+#### 69. AI 技术变革读什么
 
 阅读路径： 《技术的本质》 → 《必然》 → 《AI 2041》 → 《生命3.0》 → 《对齐问题》 → 《未来呼啸而来》
 
-#### 70. 如何理解技术社会的伦理风险
+边界说明：本主题只讲技术范式和产业变化；治理与公共风险放在下一主题。
+
+#### 70. 技术社会的伦理风险
 
 阅读路径： 《技术的本质》 → 《娱乐至死》 → 《监视资本主义时代》 → 《算法霸权》 → 《对齐问题》 → 《开放社会及其敌人》
 
-#### 71. 如何进入文学阅读
+边界说明：本主题聚焦监控、算法偏见、治理和公共风险，不重复讲 AI 技术趋势。
+
+#### 71. 文学阅读入门
 
 阅读路径： 《如何阅读一本小说》 → 《小说面面观》 → 《文学理论入门》 → 《文学回忆录》 → 《文学的故事》 → 《文学讲稿》
 
@@ -466,7 +482,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《掌控习惯》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《身体使用手册》 → 《精力管理》 → 《超越百岁》
 
-#### 74. 如何面对衰老
+#### 74. 面对衰老
 
 阅读路径： 《超越百岁》 → 《最好的告别》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《当呼吸化为空气》
 
@@ -486,7 +502,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本领域只做阅读路径，不替代医疗、营养或运动处方。
 
-#### 78. 如何开始写作
+#### 78. 开始写作
 
 阅读路径： 《写作这回事》 → 《写作的战争》 → 《字字珠玑》 → 《风格感觉》 → 《成为作家》 → 《小说写作指南》
 
@@ -502,9 +518,9 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 阅读路径： 《像艺术家一样思考》 → 《写作的战争》 → 《最小阻力之路》 → 《创造力》 → 《艺术的故事》 → 《禅与摩托车维修艺术》
 
-#### 82. 如何建立人生哲学
+#### 82. 人生哲学入门
 
-阅读路径： 《人生的智慧》 → 《论语》 → 《道德经》 → 《沉思录》 → 《尼各马可伦理学》 → 《悉达多》
+阅读路径： 《苏菲的世界》 → 《人生的智慧》 → 《沉思录》 → 《论语》 → 《道德经》 → 《尼各马可伦理学》 → 《悉达多》
 
 #### 83. 如何理解幸福
 
@@ -523,7 +539,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 - Read: `docs/superpowers/plans/2026-06-01-topic-reading-panorama.md`
 - Create: `docs/superpowers/plans/YYYY-MM-DD-topic-batch-N.md`
 
-- [ ] Select one batch of 4-8 topics from this V4 panorama.
+- [ ] Select one batch of 4-8 topics from this V5 panorama.
 - [ ] For each selected topic, confirm whether it is new, replaces a published topic, renames a published topic, splits a published topic, or merges multiple published topics.
 - [ ] Verify every selected topic has a final approved title and a final approved book list.
 - [ ] Assign each repeated book a `core`, `extension`, or `bridge` role.
@@ -590,8 +606,10 @@ Only stage and commit files created or modified by that implementation batch. Pr
 
 - The plan records 84 topic candidates across 9 domains.
 - The 8 published topics are included in the same evaluation system and are not treated as immutable.
+- The 8 published topics are marked as the first migration priority before adding more net-new public pages.
 - The product topic is explicitly split into opportunity validation, product discovery, product 0-to-1, growth, and platform/network-effect themes.
 - Topic book counts vary by problem complexity instead of forcing a fixed number.
+- Topic titles use mixed reader-centered forms instead of a uniform `如何...` template.
 - The plan allows future batches to update, split, merge, rename, redirect, or remove published topic files through explicit migration decisions.
 - The plan requires every future approved topic recommendation to use `status: in_library`.
 - The plan requires all books in an approved topic to be present in the book library before topic publication.
