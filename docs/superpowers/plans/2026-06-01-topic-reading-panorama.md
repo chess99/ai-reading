@@ -1,35 +1,45 @@
-# Topic Reading Panorama Implementation Plan
+# Topic Reading Panorama V3 Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Archive a reviewable full-spectrum topic reading roadmap that expands beyond the current 8 published topics and can be reviewed before any Markdown topic articles are created.
+**Goal:** Rebuild topic reading into a full-site roadmap. The roadmap starts from reader problems, not from the current book database. The 8 published topics are included in the same review system and may be kept, renamed, split, merged, or replaced in later implementation batches.
 
-**Architecture:** This document is the source planning artifact for future topic batches. It defines a 12-domain, 48-topic panorama, with complete candidate book lists for each topic. After review approval, future implementation must create missing book entries first, then publish topic Markdown with every recommended book linked as `in_library`.
+**Architecture:** This is a reviewable planning artifact, not a publish-ready batch. It defines the target taxonomy, topic-level book lists, depth rules, and migration rules. Future implementation must first bring every recommended book into `books/`, then publish topic Markdown using only `status: in_library`.
 
-**Tech Stack:** Markdown planning document in `docs/superpowers/plans/`; future implementation uses the existing `topics/*.md` content model, Next.js static generation, and existing topic validation tests.
+**Tech Stack:** Markdown planning document in `docs/superpowers/plans/`; future implementation uses the existing `topics/*.md` model, Next.js static generation, and topic content validation tests.
 
 ---
 
 ## Review Status
 
-This plan is not approved for implementation yet. It is an archived draft for later content review.
+This plan is not approved for implementation yet. It is the canonical V3 draft for later review.
 
-The existing 8 published topics remain unchanged in this plan:
+Independent review feedback has been incorporated:
 
-- `如何做重大决策`
-- `如何理解系统与复杂性`
-- `如何建立可持续习惯`
-- `如何识别偏见与群体影响`
-- `从0到1做产品`
-- `如何理解亲密关系`
-- `如何面对创伤与自我修复`
-- `如何提高深度工作能力`
+- The taxonomy is reduced from 12 domains to 9 stronger domains.
+- The published 8 topics are no longer treated as fixed pages.
+- Topic book counts are variable. Compact topics can use 5-6 books; standard topics use 7-9 books; complex topics use 10-12 books. If a topic needs more than 12 books, split it.
+- Repeated books must have roles. A book can be a core book in one topic and an extension book in another, but the later batch plan must make that role explicit.
+- Current published pages may contain recommendations for books not yet in the library. V3 migration must either add those books first or leave the old page untouched until it can be replaced cleanly.
 
-Future topic implementation must not create duplicate or near-duplicate replacements for these 8 topics. If a future topic overlaps one of these 8, it must be renamed to answer a different primary question before implementation.
+This plan does not delete live topic files. Deletion, redirect, or slug replacement must happen in a later explicit migration batch.
+
+## Published Topic Reconstruction Matrix
+
+| Current Topic | V3 Decision | Target Placement | Book-List Direction |
+|---|---|---|---|
+| `如何做重大决策` | Keep and deepen | 思维、判断与复杂性 | Center on high-stakes personal and organizational decisions. Keep 《怎样决定大事》《思考，快与慢》《噪声》《决断力》《超级预测》《对赌》 as the main spine; use systems books as extension. |
+| `如何理解系统与复杂性` | Keep and narrow | 思维、判断与复杂性 | Focus on feedback, emergence, scale, and organizational learning. Move pure uncertainty books to the risk topic. |
+| `如何建立可持续习惯` | Keep and tighten | 自我管理与学习 | Build around behavior design, motivation, self-control, and environment design. Remove generic self-help from the core path. |
+| `如何识别偏见与群体影响` | Rename | 思维、判断与复杂性 | Rename to `如何理解偏见、从众与服从`. Keep cognition plus social influence; separate structural inequality into social topics. |
+| `从0到1做产品` | Split | 商业、产品与创业 | Keep `如何验证产品机会` as the entry path. Split product discovery, product delivery, and growth into separate topics. |
+| `如何理解亲密关系` | Keep and improve | 关系、沟通与家庭 | Use attachment, marriage research, emotional bonding, communication, and love philosophy. Remove manipulative dating books from the core list. |
+| `如何面对创伤与自我修复` | Keep with boundary | 心理、情绪与修复 | Focus on trauma, recovery, body memory, attachment, and professional boundary. Do not mix decision books into the core path. |
+| `如何提高深度工作能力` | Keep and broaden | 自我管理与学习 | Cover attention, cognitive load, task systems, deliberate practice, recovery, and slow productivity. |
 
 ## Source Signals
 
-The panorama borrows category signals from public knowledge-service platforms, then converts them into problem-driven reading themes.
+The panorama borrows category signals from knowledge-service platforms, then converts them into problem-driven reading themes.
 
 - 得到：lifelong learning, business, management, product thinking, finance, history, modern thought, and daily book listening.
 - 帆书/樊登读书：mindset, management, workplace, family, humanities, entrepreneurship, psychology, parenting, investment, social science, and health.
@@ -44,260 +54,377 @@ Reference links:
 
 ## Non-Negotiable Content Rules
 
-- Topic titles must be real reader questions in the form `如何...`.
+- Topic titles must be real reader questions, preferably in the form `如何...`.
+- Topic count per domain is not fixed. The taxonomy must optimize coverage and reader usefulness, not visual symmetry.
+- Book count per topic is determined by problem complexity: 5-6 for compact topics, 7-9 for standard topics, 10-12 for complex topics.
+- Book order is intentional: entry book first, then core framework, then system coverage, then practice, critique, or advanced reference.
 - Approved topics must use `status: in_library` for every recommendation.
-- Before publishing an approved topic, every recommended book must either already exist in `books/` or be added to `books/` with a valid slug.
-- Published topic Markdown must use `status: in_library` for every book recommendation.
-- Each topic uses 5-8 books according to the size of the problem. Do not force all lists to the same length.
-- The order of books in a topic is intentional: entry book first, then core framework, then expansion, then practice or reflection.
-- Book titles use common Chinese names. Author names and final slugs are verified during the future implementation batch.
+- Before publishing an approved topic, every recommended book must already exist in `books/` or be added to `books/` with a valid slug.
 - Medical, mental health, legal, and investment topics must include a reader-facing boundary note in the article body.
+- Book titles use common Chinese names. Author names and final slugs are verified during the future implementation batch.
+- A book that appears in multiple themes must be assigned one of three roles during implementation: `core`, `extension`, or `bridge`. The public page does not need to show this role.
 
-## Division Review
+## Domain Depth Standard
 
-The 12-domain structure is retained, but the boundaries are sharpened:
+Each domain must support three reader layers:
 
-- `个人成长与自我管理` handles self-understanding, attention, learning, time, and habit systems.
-- `心理、情绪与关系` handles inner experience and adult relationships. Parenting topics stay out of this domain.
-- `家庭、亲子与教育` handles parent-child relationships, development, adolescence, and home learning environments.
-- `职场、管理与组织` handles individual careers, teams, management, and organizational systems.
-- `商业、创业与产品` handles value creation, customers, product, marketing, growth, and company building.
-- `金钱、投资与经济` handles personal finance, investment risk, economic logic, and consumption systems.
-- `社会、法律与公共生活` handles social structure, public institutions, justice, power, and everyday legal literacy.
-- `历史、人文与文明` handles historical explanation, civilization, literature, culture, and media.
-- `科学、技术与未来` handles scientific thinking, technological change, information environments, and uncertainty.
-- `健康、身体与生活方式` handles sleep, nutrition, exercise, aging, and embodied wellbeing.
-- `写作、表达与创造` handles writing, storytelling, speaking, and creative practice.
-- `哲学、意义与人生` handles freedom, responsibility, suffering, happiness, and life philosophy.
+- `入门层`: quickly build vocabulary and avoid common misunderstandings.
+- `框架层`: form a stable mental model of the topic.
+- `系统层`: connect the topic to adjacent disciplines, institutions, constraints, and long-term consequences.
 
-## Independent Review Changes
+Any future batch that only contains entry-level popular books fails the depth bar. Any future batch that only contains classics and textbooks fails the accessibility bar.
 
-An independent clean-context review was applied after the first refinement pass. The review confirmed that the 12-domain structure can remain, but required tighter topic boundaries and several book-list corrections.
-
-- Renamed topics 17, 25, 31, 45, and 46 to reduce overlap and clarify the core question.
-- Reworked topics 18, 20, 23, 27, 34, and 39 because their original paths mixed levels, duplicated books, or relied on unstable book choices.
-- Adjusted topics 1, 2, 5, 6, 12, 16, 36, and 48 to reduce repeated books and improve entry-to-advanced progression.
-- Kept topics 3, 4, 7, 9-15, 19, 21, 22, 24, 28-30, 32, 33, 35, 37, 38, 40-44, and 47 as structurally sound, with only future title and slug verification needed before implementation.
+| Domain | Required Depth |
+|---|---|
+| 思维、判断与复杂性 | Cognitive bias, evidence, probability, decision process, system feedback, group influence, uncertainty. |
+| 自我管理与学习 | Habit, attention, energy, learning science, knowledge management, action resistance, personal operating system. |
+| 心理、情绪与修复 | Emotion, self-worth, anxiety, trauma, grief, meaning, recovery boundary. |
+| 关系、沟通与家庭 | Attachment, intimacy, conflict, family system, parenting, adolescence, education. |
+| 职业、管理与组织 | Career capital, management, collaboration, leadership, organizational design, power and politics. |
+| 商业、产品与创业 | Customer problem, opportunity validation, discovery, delivery, growth, strategy, business model, design. |
+| 金钱、经济与消费 | Personal finance, investing, risk, macroeconomics, consumption, inequality, financial boundary. |
+| 社会、法律、历史与文明 | Institutions, law, media, public reasoning, China, world history, cities, culture, literature, political freedom, technology society, modern transformation. |
+| 健康、身体、意义与创造 | Sleep, exercise, nutrition, stress, aging, death, writing, story, creativity, philosophy, happiness. |
 
 ## Panorama
 
-### 1. 个人成长与自我管理
+### 1. 思维、判断与复杂性
 
-#### 1. 如何建立自我认知
+#### 1. 如何做重大决策
 
-阅读路径： 《被讨厌的勇气》 → 《自卑与超越》 → 《终身成长》 → 《性格的陷阱》 → 《思考，快与慢》 → 《原则》
+阅读路径： 《怎样决定大事》 → 《决断力》 → 《思考，快与慢》 → 《噪声》 → 《超级预测》 → 《对赌》 → 《助推》 → 《清单革命》 → 《反脆弱》 → 《系统之美》
 
-#### 2. 如何停止精神内耗
+#### 2. 如何理解系统与复杂性
 
-阅读路径： 《也许你该找个人聊聊》 → 《伯恩斯新情绪疗法》 → 《幸福的陷阱》 → 《拖延心理学》 → 《认知觉醒》 → 《当下的力量》
+阅读路径： 《系统之美》 → 《控制论与科学方法论》 → 《第五项修炼》 → 《复杂》 → 《规模》 → 《混沌》 → 《弹性》 → 《复杂经济学》
 
-#### 3. 如何管理时间与精力
+#### 3. 如何理解偏见、从众与服从
 
-阅读路径： 《精力管理》 → 《搞定》 → 《精要主义》 → 《深度工作》 → 《高效能人士的七个习惯》 → 《慢生产力》
+阅读路径： 《社会心理学》 → 《偏见的本质》 → 《社会性动物》 → 《社会认知心理学》 → 《影响力》 → 《服从权威》 → 《路西法效应》 → 《乌合之众》 → 《盲点》
 
-#### 4. 如何长期坚持学习
+#### 4. 如何建立批判性思维
 
-阅读路径： 《如何阅读一本书》 → 《认知天性》 → 《学习之道》 → 《刻意练习》 → 《心流》 → 《掌控习惯》
+阅读路径： 《学会提问》 → 《批判性思维工具》 → 《超越感觉》 → 《事实》 → 《思考，快与慢》 → 《清醒思考的艺术》 → 《思维模型》
 
-### 2. 心理、情绪与关系
+#### 5. 如何理解概率、风险与预测
 
-#### 5. 如何理解情绪
+阅读路径： 《随机漫步的傻瓜》 → 《超级预测》 → 《噪声》 → 《黑天鹅》 → 《风险、不确定性与利润》 → 《反脆弱》 → 《对赌》
+
+#### 6. 如何建立统计与证据判断能力
+
+阅读路径： 《赤裸裸的统计学》 → 《女士品茶》 → 《为什么》 → 《因果推断》 → 《事实》 → 《这才是心理学》 → 《学会提问》 → 《噪声》
+
+#### 7. 如何建立科学思维
+
+阅读路径： 《别逗了费曼先生》 → 《世界观》 → 《科学革命的结构》 → 《无穷的开始》 → 《这才是心理学》 → 《思维模型》
+
+#### 8. 如何理解平台、算法与注意力经济
+
+阅读路径： 《娱乐至死》 → 《注意力商人》 → 《过滤泡》 → 《监视资本主义时代》 → 《算法霸权》 → 《平台革命》 → 《事实》 → 《深度工作》
+
+### 2. 自我管理与学习
+
+#### 9. 如何建立可持续习惯
+
+阅读路径： 《掌控习惯》 → 《习惯的力量》 → 《微习惯》 → 《福格行为模型》 → 《自控力》 → 《驱动力》
+
+#### 10. 如何提高深度工作能力
+
+阅读路径： 《深度工作》 → 《心流》 → 《刻意练习》 → 《搞定》 → 《精力管理》 → 《找回专注力》 → 《慢生产力》 → 《稀缺》
+
+#### 11. 如何管理时间与精力
+
+阅读路径： 《精力管理》 → 《搞定》 → 《精要主义》 → 《高效能人士的七个习惯》 → 《每周工作4小时》 → 《慢生产力》
+
+#### 12. 如何长期坚持学习
+
+阅读路径： 《如何阅读一本书》 → 《认知天性》 → 《学习之道》 → 《刻意练习》 → 《心流》 → 《掌控习惯》 → 《终身成长》
+
+#### 13. 如何建立个人知识管理系统
+
+阅读路径： 《如何阅读一本书》 → 《卡片笔记写作法》 → 《金字塔原理》 → 《学会提问》 → 《风格感觉》 → 《写作这回事》 → 《第二大脑》
+
+#### 14. 如何摆脱拖延与行动阻力
+
+阅读路径： 《拖延心理学》 → 《微习惯》 → 《福格行为模型》 → 《幸福的陷阱》 → 《掌控习惯》 → 《搞定》 → 《写作的战争》
+
+#### 15. 如何建立自我认知
+
+阅读路径： 《被讨厌的勇气》 → 《自卑与超越》 → 《终身成长》 → 《性格的陷阱》 → 《原则》 → 《也许你该找个人聊聊》
+
+### 3. 心理、情绪与修复
+
+#### 16. 如何理解情绪
 
 阅读路径： 《蛤蟆先生去看心理医生》 → 《情绪急救》 → 《情绪是什么》 → 《伯恩斯新情绪疗法》 → 《身体从未忘记》 → 《我们为什么要睡觉》
 
-#### 6. 如何建立稳定的自尊
+#### 17. 如何停止精神内耗
+
+阅读路径： 《也许你该找个人聊聊》 → 《伯恩斯新情绪疗法》 → 《幸福的陷阱》 → 《拖延心理学》 → 《认知觉醒》 → 《当下的力量》
+
+#### 18. 如何建立稳定的自尊
 
 阅读路径： 《被讨厌的勇气》 → 《自尊》 → 《自卑与超越》 → 《终身成长》 → 《也许你该找个人聊聊》
 
-#### 7. 如何处理冲突与沟通
+#### 19. 如何面对创伤与自我修复
 
-阅读路径： 《沟通的本质》 → 《非暴力沟通》 → 《关键对话》 → 《高难度谈话》 → 《谈判力》 → 《影响力》
+阅读路径： 《身体从未忘记》 → 《创伤与复原》 → 《唤醒老虎》 → 《不原谅也没关系》 → 《依恋》 → 《也许你该找个人聊聊》 → 《我们为什么要睡觉》
 
-#### 8. 如何识别有毒关系
+边界说明：本主题只做阅读路径，不替代专业医疗、心理咨询或危机干预。
+
+#### 20. 如何面对丧失、哀伤与死亡
+
+阅读路径： 《最好的告别》 → 《当呼吸化为空气》 → 《活出生命的意义》 → 《相约星期二》 → 《生死课》 → 《也许你该找个人聊聊》
+
+#### 21. 如何在痛苦中重建意义
+
+阅读路径： 《活出生命的意义》 → 《当下的力量》 → 《人生的智慧》 → 《反脆弱》 → 《悉达多》 → 《最小阻力之路》
+
+#### 22. 如何理解成瘾与自我控制
+
+阅读路径： 《上瘾》 → 《自控力》 → 《多巴胺国度》 → 《欲罢不能》 → 《稀缺》 → 《习惯的力量》
+
+### 4. 关系、沟通与家庭
+
+#### 23. 如何理解亲密关系
+
+阅读路径： 《亲密关系》 → 《依恋》 → 《幸福的婚姻》 → 《抱紧我》 → 《爱的艺术》 → 《沟通的本质》 → 《非暴力沟通》
+
+#### 24. 如何识别有毒关系
 
 阅读路径： 《亲密关系》 → 《依恋》 → 《煤气灯效应》 → 《情绪勒索》 → 《身体从未忘记》 → 《不原谅也没关系》
 
-### 3. 家庭、亲子与教育
+#### 25. 如何处理冲突与高难度沟通
 
-#### 9. 如何做足够好的父母
+阅读路径： 《沟通的本质》 → 《非暴力沟通》 → 《关键对话》 → 《高难度谈话》 → 《谈判力》 → 《影响力》
+
+#### 26. 如何做足够好的父母
 
 阅读路径： 《园丁与木匠》 → 《正面管教》 → 《游戏力》 → 《如何说孩子才会听，怎么听孩子才肯说》 → 《孩子，把你的手给我》 → 《读懂孩子的心》
 
-#### 10. 如何陪孩子建立安全感
+#### 27. 如何陪孩子建立安全感
 
 阅读路径： 《依恋》 → 《给孩子一生的安全感》 → 《童年的秘密》 → 《完整的成长》 → 《孩子：挑战》 → 《最温柔的教养》
 
-#### 11. 如何理解青春期
+#### 28. 如何理解青春期
 
 阅读路径： 《解码青春期》 → 《与青春期和解》 → 《养育男孩》 → 《养育女孩》 → 《孩子，把你的手给我》
 
-#### 12. 如何打造家庭学习环境
+#### 29. 如何打造家庭学习环境
 
 阅读路径： 《朗读手册》 → 《打造儿童阅读环境》 → 《阅读的力量》 → 《好妈妈胜过好老师》 → 《终身幼儿园》
 
-### 4. 职场、管理与组织
+#### 30. 如何理解教育与成长
 
-#### 13. 如何成为有效管理者
+阅读路径： 《爱弥儿》 → 《民主主义与教育》 → 《童年的秘密》 → 《园丁与木匠》 → 《终身幼儿园》 → 《认知天性》
 
-阅读路径： 《卓有成效的管理者》 → 《管理的实践》 → 《经理人员的职能》 → 《领导梯队》 → 《可复制的领导力》 → 《高绩效教练》
+### 5. 职业、管理与组织
 
-#### 14. 如何做好团队协作
-
-阅读路径： 《团队协作的五大障碍》 → 《关键对话》 → 《横向领导力》 → 《无畏的组织》 → 《赋能》 → 《重新定义团队》
-
-#### 15. 如何理解组织运转
-
-阅读路径： 《组织行为学》 → 《科学管理原理》 → 《走出危机》 → 《丰田之道》 → 《精益思想》 → 《原则》
-
-#### 16. 如何做职业选择
+#### 31. 如何做职业选择
 
 阅读路径： 《远见》 → 《职业锚》 → 《你的降落伞是什么颜色》 → 《优秀到不能被忽视》 → 《一人企业》 → 《每周工作4小时》
 
-### 5. 商业、创业与产品
+#### 32. 如何建立长期职业资本
 
-#### 17. 如何设计并验证商业模式
+阅读路径： 《优秀到不能被忽视》 → 《刻意练习》 → 《深度工作》 → 《远见》 → 《精要主义》 → 《原则》 → 《一人企业》
 
-阅读路径： 《商业模式新生代》 → 《客户开发入门》 → 《精益创业》 → 《从零到一》 → 《创新者的窘境》 → 《好战略，坏战略》
+#### 33. 如何成为有效管理者
 
-#### 18. 如何做用户研究
+阅读路径： 《卓有成效的管理者》 → 《管理的实践》 → 《经理人员的职能》 → 《领导梯队》 → 《可复制的领导力》 → 《高绩效教练》
 
-阅读路径： 《妈妈测试》 → 《用户访谈》 → 《客户开发入门》 → 《用户故事地图》 → 《精益产品手册》 → 《启示录》
+#### 34. 如何做好团队协作
 
-#### 19. 如何做增长与营销
+阅读路径： 《团队协作的五大障碍》 → 《关键对话》 → 《横向领导力》 → 《无畏的组织》 → 《赋能》 → 《重新定义团队》
+
+#### 35. 如何理解组织运转
+
+阅读路径： 《组织行为学》 → 《科学管理原理》 → 《走出危机》 → 《丰田之道》 → 《精益思想》 → 《原则》
+
+#### 36. 如何理解组织中的权力与政治
+
+阅读路径： 《权力》 → 《权力与影响力》 → 《组织行为学》 → 《原则》 → 《经理人员的职能》 → 《领导梯队》 → 《旧制度与大革命》
+
+#### 37. 如何建立领导力
+
+阅读路径： 《领导梯队》 → 《高绩效教练》 → 《第五项修炼》 → 《原则》 → 《从优秀到卓越》 → 《赋能》
+
+#### 38. 如何推动组织变革
+
+阅读路径： 《变革之心》 → 《第五项修炼》 → 《创新者的窘境》 → 《从优秀到卓越》 → 《走出危机》 → 《重新定义公司》
+
+### 6. 商业、产品与创业
+
+#### 39. 如何验证产品机会
+
+阅读路径： 《精益创业》 → 《四步创业法》 → 《客户开发入门》 → 《妈妈测试》 → 《用户访谈》 → 《从零到一》 → 《商业模式新生代》
+
+#### 40. 如何做好产品发现
+
+阅读路径： 《启示录》 → 《用户故事地图》 → 《精益产品手册》 → 《俞军产品方法论》 → 《用户体验要素》 → 《设计心理学》 → 《上瘾》
+
+#### 41. 如何把产品从 0 做到 1
+
+阅读路径： 《从零到一》 → 《精益创业》 → 《四步创业法》 → 《客户开发入门》 → 《启示录》 → 《用户故事地图》 → 《产品开发流程原理》 → 《创业维艰》
+
+#### 42. 如何理解设计与用户体验
+
+阅读路径： 《设计心理学》 → 《用户体验要素》 → 《简约至上》 → 《点石成金》 → 《写给大家看的设计书》 → 《用户故事地图》 → 《启示录》
+
+#### 43. 如何做增长与营销
 
 阅读路径： 《定位》 → 《影响力》 → 《引爆点》 → 《增长黑客》 → 《营销管理》 → 《病毒式循环》
 
-#### 20. 如何理解公司经营
+#### 44. 如何设计并验证商业模式
+
+阅读路径： 《商业模式新生代》 → 《客户开发入门》 → 《精益创业》 → 《从零到一》 → 《创新者的窘境》 → 《好战略，坏战略》
+
+#### 45. 如何理解公司经营
 
 阅读路径： 《创业维艰》 → 《财务智慧》 → 《竞争战略》 → 《从优秀到卓越》 → 《基业长青》 → 《原则》 → 《小米创业思考》
 
-### 6. 金钱、投资与经济
+#### 46. 如何理解商业竞争与战略
 
-#### 21. 如何建立财务常识
+阅读路径： 《竞争战略》 → 《好战略，坏战略》 → 《创新者的窘境》 → 《定位》 → 《规模》 → 《只有偏执狂才能生存》
+
+#### 47. 如何理解平台与网络效应
+
+阅读路径： 《平台革命》 → 《从零到一》 → 《规模》 → 《引爆点》 → 《竞争战略》 → 《监视资本主义时代》
+
+### 7. 金钱、经济与消费
+
+#### 48. 如何建立财务常识
 
 阅读路径： 《小狗钱钱》 → 《富爸爸穷爸爸》 → 《邻家的百万富翁》 → 《金钱心理学》 → 《投资最重要的事》 → 《穷查理宝典》
 
-#### 22. 如何理解投资风险
+#### 49. 如何理解投资风险
 
 阅读路径： 《随机漫步的傻瓜》 → 《聪明的投资者》 → 《投资最重要的事》 → 《安全边际》 → 《黑天鹅》 → 《反脆弱》
 
-#### 23. 如何理解经济运行
+#### 50. 如何理解经济运行
 
 阅读路径： 《小岛经济学》 → 《像经济学家一样思考》 → 《经济学原理》 → 《置身事内》 → 《贫穷的本质》 → 《国富论》 → 《就业、利息和货币通论》
 
-#### 24. 如何理解消费主义
+#### 51. 如何理解消费主义
 
 阅读路径： 《有闲阶级论》 → 《工作、消费主义和新穷人》 → 《娱乐至死》 → 《消费社会》 → 《债：第一个5000年》
 
-### 7. 社会、法律与公共生活
+#### 52. 如何理解财富、阶层与机会
 
-#### 25. 如何理解社会分层与共同生活
+阅读路径： 《邻家的百万富翁》 → 《贫穷的本质》 → 《稀缺》 → 《资本论》 → 《21世纪资本论》 → 《社会学的想象力》
+
+#### 53. 如何理解行为经济学
+
+阅读路径： 《助推》 → 《怪诞行为学》 → 《思考，快与慢》 → 《稀缺》 → 《金钱心理学》 → 《错误的行为》
+
+边界说明：本领域只做阅读路径，不构成投资建议。
+
+### 8. 社会、法律、历史与文明
+
+#### 54. 如何理解社会分层与共同生活
 
 阅读路径： 《乡土中国》 → 《社会学的想象力》 → 《社会分工论》 → 《贫穷的本质》 → 《社会共通资本》 → 《城市的胜利》
 
-#### 26. 如何理解公平与正义
+#### 55. 如何理解公平与正义
 
 阅读路径： 《公正》 → 《洞穴奇案》 → 《正义之心》 → 《正义论》 → 《论人类不平等的起源和基础》 → 《通往奴役之路》
 
-#### 27. 如何识别制度与权力
+#### 56. 如何识别制度与权力
 
 阅读路径： 《权力》 → 《旧制度与大革命》 → 《权力与繁荣》 → 《通往奴役之路》 → 《法治及其本土资源》 → 《看得见的正义》
 
-#### 28. 如何建立法律常识
+#### 57. 如何建立法律常识
 
 阅读路径： 《学点法律避点坑》 → 《洞穴奇案》 → 《看得见的正义》 → 《刑法学讲义》 → 《民法典与日常生活》 → 《法治及其本土资源》
 
-### 8. 历史、人文与文明
+边界说明：本主题只做阅读路径，不构成法律建议。
 
-#### 29. 如何理解中国历史
+#### 58. 如何理解媒体、舆论与公共讨论
+
+阅读路径： 《初识传播学》 → 《理解媒介》 → 《娱乐至死》 → 《注意力商人》 → 《乌合之众》 → 《事实》 → 《学会提问》
+
+#### 59. 如何理解中国社会的现代转型
+
+阅读路径： 《乡土中国》 → 《中国历代政治得失》 → 《万历十五年》 → 《中国近代史》 → 《叫魂》 → 《枢纽》 → 《置身事内》
+
+#### 60. 如何理解中国历史
 
 阅读路径： 《中国历代政治得失》 → 《万历十五年》 → 《叫魂》 → 《中国近代史》 → 《曾国藩传》 → 《枢纽》
 
-#### 30. 如何理解世界历史
+#### 61. 如何理解世界历史
 
 阅读路径： 《全球通史》 → 《人类简史》 → 《枪炮、病菌与钢铁》 → 《丝绸之路》 → 《文明的冲突》 → 《世界秩序》
 
-#### 31. 如何进入经典文学世界
+#### 62. 如何理解城市、空间与生活方式
 
-阅读路径： 《如何阅读一本小说》 → 《小说面面观》 → 《文学理论入门》 → 《文学回忆录》 → 《傲慢与偏见》 → 《红与黑》 → 《平凡的世界》
+阅读路径： 《美国大城市的死与生》 → 《城市的胜利》 → 《社会共通资本》 → 《乡土中国》 → 《工作、消费主义和新穷人》 → 《有闲阶级论》
 
-#### 32. 如何理解文化与传播
+#### 63. 如何理解文明兴衰
 
-阅读路径： 《初识传播学》 → 《理解媒介》 → 《娱乐至死》 → 《童年的消逝》 → 《乌合之众》 → 《我们赖以生存的隐喻》
+阅读路径： 《枪炮、病菌与钢铁》 → 《大国的兴衰》 → 《文明的冲突》 → 《国家为什么会失败》 → 《世界秩序》 → 《人类简史》
 
-### 9. 科学、技术与未来
-
-#### 33. 如何建立科学思维
-
-阅读路径： 《学会提问》 → 《别逗了费曼先生》 → 《世界观》 → 《科学革命的结构》 → 《无穷的开始》 → 《思维模型》
-
-#### 34. 如何理解 AI 与技术变革
+#### 64. 如何理解 AI 与技术变革
 
 阅读路径： 《技术的本质》 → 《人工智能：一种现代的方法》 → 《生命3.0》 → 《AI 2041》 → 《对齐问题》 → 《必然》 → 《未来呼啸而来》
 
-#### 35. 如何应对信息过载
+#### 65. 如何理解技术社会的伦理风险
 
-阅读路径： 《娱乐至死》 → 《注意力商人》 → 《事实》 → 《学会提问》 → 《清单革命》 → 《深度工作》
+阅读路径： 《技术的本质》 → 《娱乐至死》 → 《监视资本主义时代》 → 《算法霸权》 → 《对齐问题》 → 《开放社会及其敌人》
 
-#### 36. 如何面对未来不确定性
+#### 66. 如何进入经典文学世界
 
-阅读路径： 《超级预测》 → 《噪声》 → 《黑天鹅》 → 《反脆弱》 → 《系统之美》 → 《未来简史》 → 《今日简史》
+阅读路径： 《如何阅读一本小说》 → 《小说面面观》 → 《文学理论入门》 → 《文学回忆录》 → 《傲慢与偏见》 → 《红与黑》 → 《平凡的世界》
 
-### 10. 健康、身体与生活方式
+#### 67. 如何理解政治自由与开放社会
 
-#### 37. 如何建立健康生活方式
+阅读路径： 《论自由》 → 《自由论》 → 《开放社会及其敌人》 → 《通往奴役之路》 → 《人的境况》 → 《旧制度与大革命》
 
-阅读路径： 《掌控习惯》 → 《我们为什么要睡觉》 → 《深度营养》 → 《身体使用手册》 → 《运动改造大脑》 → 《超越百岁》
+### 9. 健康、身体、意义与创造
 
-#### 38. 如何理解运动与体能
+#### 68. 如何建立健康生活方式
+
+阅读路径： 《掌控习惯》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《身体使用手册》 → 《精力管理》 → 《超越百岁》
+
+#### 69. 如何理解运动与体能
 
 阅读路径： 《无器械健身》 → 《ACSM健身与健康完全指南》 → 《身体使用手册》 → 《施瓦辛格健身全书》 → 《耐力》 → 《ACSM高级运动生理学》
 
-#### 39. 如何理解饮食与代谢
+#### 70. 如何理解饮食与代谢
 
-阅读路径： 《营养学：概念与争论》 → 《深度营养》 → 《我们为什么会生病》 → 《肥胖代码》 → 《超越百岁》
+阅读路径： 《营养学：概念与争论》 → 《我们为什么会生病》 → 《肥胖代码》 → 《深度营养》 → 《超越百岁》
 
-边界说明：本主题只做阅读路径，不替代医生、注册营养师或临床治疗建议。
+#### 71. 如何理解压力、恢复与身体信号
 
-#### 40. 如何面对衰老与死亡
+阅读路径： 《身体从未忘记》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《身体使用手册》 → 《精力管理》 → 《超越百岁》
 
-阅读路径： 《最好的告别》 → 《当呼吸化为空气》 → 《活好》 → 《相约星期二》 → 《超越百岁》 → 《生死课》
+边界说明：本领域只做阅读路径，不替代医疗、营养或运动处方。
 
-### 11. 写作、表达与创造
-
-#### 41. 如何开始写作
+#### 72. 如何开始写作
 
 阅读路径： 《写作这回事》 → 《写作的战争》 → 《字字珠玑》 → 《风格感觉》 → 《成为作家》 → 《小说写作指南》
 
-#### 42. 如何讲好故事
+#### 73. 如何讲好故事
 
 阅读路径： 《故事》 → 《救猫咪》 → 《电影剧本写作基础》 → 《千面英雄》 → 《故事工程》 → 《小说课》
 
-#### 43. 如何提升表达与演讲
+#### 74. 如何提升表达与演讲
 
-阅读路径： 《高情商聊天术》 → 《金字塔原理》 → 《演讲的力量》 → 《说服》 → 《关键对话》 → 《非暴力沟通》
+阅读路径： 《金字塔原理》 → 《演讲的力量》 → 《关键对话》 → 《非暴力沟通》 → 《说服》 → 《沟通的本质》
 
-#### 44. 如何做创意工作
+#### 75. 如何做创意工作
 
 阅读路径： 《像艺术家一样思考》 → 《写作的战争》 → 《最小阻力之路》 → 《创造力》 → 《艺术的故事》 → 《禅与摩托车维修艺术》
 
-### 12. 哲学、意义与人生
-
-#### 45. 如何理解政治自由
-
-阅读路径： 《论自由》 → 《自由论》 → 《通往奴役之路》 → 《人的境况》 → 《旧制度与大革命》 → 《开放社会及其敌人》
-
-#### 46. 如何在痛苦中重建意义
-
-阅读路径： 《也许你该找个人聊聊》 → 《活出生命的意义》 → 《当下的力量》 → 《最小阻力之路》 → 《反脆弱》
-
-#### 47. 如何建立人生哲学
+#### 76. 如何建立人生哲学
 
 阅读路径： 《人生的智慧》 → 《论语》 → 《道德经》 → 《沉思录》 → 《尼各马可伦理学》 → 《悉达多》
 
-#### 48. 如何理解幸福
+#### 77. 如何理解幸福
 
 阅读路径： 《幸福的方法》 → 《真实的幸福》 → 《心流》 → 《亲密关系》 → 《被讨厌的勇气》 → 《人生的智慧》
+
+#### 78. 如何理解环境、气候与可持续生活
+
+阅读路径： 《寂静的春天》 → 《增长的极限》 → 《小即是美》 → 《失控的农业》 → 《气候经济与人类未来》 → 《社会共通资本》
 
 ## Future Implementation Plan
 
@@ -308,10 +435,11 @@ An independent clean-context review was applied after the first refinement pass.
 - Read: `docs/superpowers/plans/2026-06-01-topic-reading-panorama.md`
 - Create: `docs/superpowers/plans/YYYY-MM-DD-topic-batch-N.md`
 
-- [ ] Select one batch of 4-8 topics from this panorama.
-- [ ] Remove any topic whose primary question duplicates the existing 8 published topics.
+- [ ] Select one batch of 4-8 topics from this V3 panorama.
+- [ ] For each selected topic, confirm whether it is new, replaces a published topic, renames a published topic, splits a published topic, or merges multiple published topics.
 - [ ] Verify every selected topic has a final approved title and a final approved book list.
-- [ ] Record review notes in a new batch implementation plan.
+- [ ] Assign each repeated book a `core`, `extension`, or `bridge` role.
+- [ ] Record review notes and migration decisions in a new batch implementation plan.
 
 ### Task 2: Prepare Books Before Topic Publication
 
@@ -330,10 +458,11 @@ An independent clean-context review was applied after the first refinement pass.
 
 **Files:**
 
-- Create: `topics/<slug>.md`
+- Create or update: `topics/<slug>.md`
 - Update: `.nextjs-site/tests/topics-content.test.mjs`
 
 - [ ] Create one topic Markdown file per approved topic.
+- [ ] Update, redirect, or remove superseded published topic files only when the batch plan explicitly says so.
 - [ ] Use the existing topic frontmatter model.
 - [ ] Set every recommendation to `status: in_library`.
 - [ ] Include `slug` for every book recommendation.
@@ -351,11 +480,11 @@ cd /Users/zcs/Notes/ai-reading/.nextjs-site && npm run build
 
 **Browser checks:**
 
-- `/topics/` shows the new approved topics.
-- Every new topic detail page renders the guide body.
+- `/topics/` shows the approved topic set after migration.
+- Every topic detail page renders the guide body.
 - Every recommended book has a working `阅读提炼` link.
 - No topic page displays any non-library status label.
-- `/sitemap.xml` includes every new topic URL.
+- `/sitemap.xml` includes all current topic URLs and excludes removed topic URLs.
 
 ### Task 5: Commit the Batch
 
@@ -364,15 +493,18 @@ cd /Users/zcs/Notes/ai-reading/.nextjs-site && npm run build
 ```bash
 git status --short
 git add books book-scores.md topics .nextjs-site/tests/topics-content.test.mjs
-git commit -m "feat: add topic reading batch N"
+git commit -m "feat: update topic reading batch N"
 ```
 
 Only stage and commit files created or modified by that implementation batch. Preserve unrelated user changes.
 
 ## Self-Review Checklist
 
-- The plan records 48 new topic candidates across 12 domains.
-- The plan excludes implementation changes to the existing 8 published topics.
+- The plan records 78 topic candidates across 9 domains.
+- The 8 published topics are included in the same evaluation system and are not treated as immutable.
+- The product topic is explicitly split into opportunity validation, product discovery, product 0-to-1, growth, and platform/network-effect themes.
+- Topic book counts vary by problem complexity instead of forcing a fixed number.
+- The plan allows future batches to update, split, merge, rename, redirect, or remove published topic files through explicit migration decisions.
 - The plan requires every future approved topic recommendation to use `status: in_library`.
 - The plan requires all books in an approved topic to be present in the book library before topic publication.
 - The plan contains no open-ended example-based expansion rule for existing topics.
