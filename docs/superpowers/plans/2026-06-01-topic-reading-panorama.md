@@ -70,17 +70,26 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 - `写作、表达与创造` handles writing, storytelling, speaking, and creative practice.
 - `哲学、意义与人生` handles freedom, responsibility, suffering, happiness, and life philosophy.
 
+## Independent Review Changes
+
+An independent clean-context review was applied after the first refinement pass. The review confirmed that the 12-domain structure can remain, but required tighter topic boundaries and several book-list corrections.
+
+- Renamed topics 17, 25, 31, 45, and 46 to reduce overlap and clarify the core question.
+- Reworked topics 18, 20, 23, 27, 34, and 39 because their original paths mixed levels, duplicated books, or relied on unstable book choices.
+- Adjusted topics 1, 2, 5, 6, 12, 16, 36, and 48 to reduce repeated books and improve entry-to-advanced progression.
+- Kept topics 3, 4, 7, 9-15, 19, 21, 22, 24, 28-30, 32, 33, 35, 37, 38, 40-44, and 47 as structurally sound, with only future title and slug verification needed before implementation.
+
 ## Panorama
 
 ### 1. 个人成长与自我管理
 
 #### 1. 如何建立自我认知
 
-阅读路径： 《被讨厌的勇气》 → 《自卑与超越》 → 《终身成长》 → 《思考，快与慢》 → 《原则》 → 《自我分析》
+阅读路径： 《被讨厌的勇气》 → 《自卑与超越》 → 《终身成长》 → 《性格的陷阱》 → 《思考，快与慢》 → 《原则》
 
 #### 2. 如何停止精神内耗
 
-阅读路径： 《也许你该找个人聊聊》 → 《伯恩斯新情绪疗法》 → 《幸福的陷阱》 → 《自卑与超越》 → 《不原谅也没关系》 → 《当下的力量》
+阅读路径： 《也许你该找个人聊聊》 → 《伯恩斯新情绪疗法》 → 《幸福的陷阱》 → 《拖延心理学》 → 《认知觉醒》 → 《当下的力量》
 
 #### 3. 如何管理时间与精力
 
@@ -94,11 +103,11 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 5. 如何理解情绪
 
-阅读路径： 《蛤蟆先生去看心理医生》 → 《情绪急救》 → 《伯恩斯新情绪疗法》 → 《身体从未忘记》 → 《我们为什么要睡觉》
+阅读路径： 《蛤蟆先生去看心理医生》 → 《情绪急救》 → 《情绪是什么》 → 《伯恩斯新情绪疗法》 → 《身体从未忘记》 → 《我们为什么要睡觉》
 
 #### 6. 如何建立稳定的自尊
 
-阅读路径： 《被讨厌的勇气》 → 《自尊》 → 《自卑与超越》 → 《终身成长》 → 《也许你该找个人聊聊》 → 《不原谅也没关系》
+阅读路径： 《被讨厌的勇气》 → 《自尊》 → 《自卑与超越》 → 《终身成长》 → 《也许你该找个人聊聊》
 
 #### 7. 如何处理冲突与沟通
 
@@ -124,7 +133,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 12. 如何打造家庭学习环境
 
-阅读路径： 《朗读手册》 → 《打造儿童阅读环境》 → 《如何阅读一本书》 → 《好妈妈胜过好老师》 → 《终身幼儿园》
+阅读路径： 《朗读手册》 → 《打造儿童阅读环境》 → 《阅读的力量》 → 《好妈妈胜过好老师》 → 《终身幼儿园》
 
 ### 4. 职场、管理与组织
 
@@ -142,17 +151,17 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 16. 如何做职业选择
 
-阅读路径： 《远见》 → 《你的降落伞是什么颜色》 → 《优秀到不能被忽视》 → 《一人企业》 → 《每周工作4小时》
+阅读路径： 《远见》 → 《职业锚》 → 《你的降落伞是什么颜色》 → 《优秀到不能被忽视》 → 《一人企业》 → 《每周工作4小时》
 
 ### 5. 商业、创业与产品
 
-#### 17. 如何理解商业模式
+#### 17. 如何设计并验证商业模式
 
-阅读路径： 《商业模式新生代》 → 《从零到一》 → 《精益创业》 → 《创新者的窘境》 → 《定位》 → 《好战略，坏战略》
+阅读路径： 《商业模式新生代》 → 《客户开发入门》 → 《精益创业》 → 《从零到一》 → 《创新者的窘境》 → 《好战略，坏战略》
 
 #### 18. 如何做用户研究
 
-阅读路径： 《用户体验要素》 → 《设计心理学》 → 《客户开发入门》 → 《用户故事地图》 → 《精益产品手册》 → 《启示录》
+阅读路径： 《妈妈测试》 → 《用户访谈》 → 《客户开发入门》 → 《用户故事地图》 → 《精益产品手册》 → 《启示录》
 
 #### 19. 如何做增长与营销
 
@@ -160,7 +169,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 20. 如何理解公司经营
 
-阅读路径： 《创业维艰》 → 《小米创业思考》 → 《从优秀到卓越》 → 《基业长青》 → 《原则》 → 《艰难的事》
+阅读路径： 《创业维艰》 → 《财务智慧》 → 《竞争战略》 → 《从优秀到卓越》 → 《基业长青》 → 《原则》 → 《小米创业思考》
 
 ### 6. 金钱、投资与经济
 
@@ -174,7 +183,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 23. 如何理解经济运行
 
-阅读路径： 《小岛经济学》 → 《经济学原理》 → 《国富论》 → 《就业、利息和货币通论》 → 《政治经济学及赋税原理》 → 《置身事内》
+阅读路径： 《小岛经济学》 → 《像经济学家一样思考》 → 《经济学原理》 → 《置身事内》 → 《贫穷的本质》 → 《国富论》 → 《就业、利息和货币通论》
 
 #### 24. 如何理解消费主义
 
@@ -182,9 +191,9 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 ### 7. 社会、法律与公共生活
 
-#### 25. 如何理解社会结构
+#### 25. 如何理解社会分层与共同生活
 
-阅读路径： 《乡土中国》 → 《社会分工论》 → 《社会共通资本》 → 《城市的胜利》 → 《枪炮、病菌与钢铁》 → 《人的境况》
+阅读路径： 《乡土中国》 → 《社会学的想象力》 → 《社会分工论》 → 《贫穷的本质》 → 《社会共通资本》 → 《城市的胜利》
 
 #### 26. 如何理解公平与正义
 
@@ -192,7 +201,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 27. 如何识别制度与权力
 
-阅读路径： 《乌合之众》 → 《服从权威》 → 《路西法效应》 → 《旧制度与大革命》 → 《权力与繁荣》 → 《人的境况》
+阅读路径： 《权力》 → 《旧制度与大革命》 → 《权力与繁荣》 → 《通往奴役之路》 → 《法治及其本土资源》 → 《看得见的正义》
 
 #### 28. 如何建立法律常识
 
@@ -208,9 +217,9 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 阅读路径： 《全球通史》 → 《人类简史》 → 《枪炮、病菌与钢铁》 → 《丝绸之路》 → 《文明的冲突》 → 《世界秩序》
 
-#### 31. 如何读懂经典文学
+#### 31. 如何进入经典文学世界
 
-阅读路径： 《如何阅读一本小说》 → 《文学回忆录》 → 《月亮与六便士》 → 《傲慢与偏见》 → 《红与黑》 → 《平凡的世界》
+阅读路径： 《如何阅读一本小说》 → 《小说面面观》 → 《文学理论入门》 → 《文学回忆录》 → 《傲慢与偏见》 → 《红与黑》 → 《平凡的世界》
 
 #### 32. 如何理解文化与传播
 
@@ -224,7 +233,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 34. 如何理解 AI 与技术变革
 
-阅读路径： 《技术的本质》 → 《必然》 → 《未来呼啸而来》 → 《智能时代》 → 《生命3.0》 → 《AI 3.0》
+阅读路径： 《技术的本质》 → 《人工智能：一种现代的方法》 → 《生命3.0》 → 《AI 2041》 → 《对齐问题》 → 《必然》 → 《未来呼啸而来》
 
 #### 35. 如何应对信息过载
 
@@ -232,7 +241,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 36. 如何面对未来不确定性
 
-阅读路径： 《超级预测》 → 《黑天鹅》 → 《反脆弱》 → 《未来简史》 → 《今日简史》 → 《原则》
+阅读路径： 《超级预测》 → 《噪声》 → 《黑天鹅》 → 《反脆弱》 → 《系统之美》 → 《未来简史》 → 《今日简史》
 
 ### 10. 健康、身体与生活方式
 
@@ -246,7 +255,9 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 39. 如何理解饮食与代谢
 
-阅读路径： 《深度营养》 → 《我们为什么会生病》 → 《肥胖代码》 → 《救命饮食》 → 《超越百岁》
+阅读路径： 《营养学：概念与争论》 → 《深度营养》 → 《我们为什么会生病》 → 《肥胖代码》 → 《超越百岁》
+
+边界说明：本主题只做阅读路径，不替代医生、注册营养师或临床治疗建议。
 
 #### 40. 如何面对衰老与死亡
 
@@ -272,13 +283,13 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 ### 12. 哲学、意义与人生
 
-#### 45. 如何理解自由与责任
+#### 45. 如何理解政治自由
 
-阅读路径： 《被讨厌的勇气》 → 《论自由》 → 《存在主义是一种人道主义》 → 《人的境况》 → 《通往奴役之路》 → 《有限与无限的游戏》
+阅读路径： 《论自由》 → 《自由论》 → 《通往奴役之路》 → 《人的境况》 → 《旧制度与大革命》 → 《开放社会及其敌人》
 
-#### 46. 如何面对人生低谷
+#### 46. 如何在痛苦中重建意义
 
-阅读路径： 《也许你该找个人聊聊》 → 《活出生命的意义》 → 《当下的力量》 → 《不原谅也没关系》 → 《最小阻力之路》 → 《反脆弱》
+阅读路径： 《也许你该找个人聊聊》 → 《活出生命的意义》 → 《当下的力量》 → 《最小阻力之路》 → 《反脆弱》
 
 #### 47. 如何建立人生哲学
 
@@ -286,7 +297,7 @@ The 12-domain structure is retained, but the boundaries are sharpened:
 
 #### 48. 如何理解幸福
 
-阅读路径： 《幸福的方法》 → 《真实的幸福》 → 《心流》 → 《亲密关系》 → 《被讨厌的勇气》 → 《最好的告别》
+阅读路径： 《幸福的方法》 → 《真实的幸福》 → 《心流》 → 《亲密关系》 → 《被讨厌的勇气》 → 《人生的智慧》
 
 ## Future Implementation Plan
 
