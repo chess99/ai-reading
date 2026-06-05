@@ -186,10 +186,6 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
             </span>
             <span className="font-bold text-brand">→</span>
           </Link>
-          <div className="flex items-center justify-between gap-3 py-2.5">
-            <span className="text-stone-600">当前收录</span>
-            <span className="font-semibold text-stone-950">{allBooks.length} 本书籍</span>
-          </div>
           <a
             href="https://github.com/chess99/ai-reading"
             target="_blank"

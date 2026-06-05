@@ -20,4 +20,5 @@ test('settings page groups about as site information after feedback utilities', 
   assert.ok(feedbackIndex < siteInfoIndex, 'Site information should be the final group.');
   assert.ok(siteInfoIndex < aboutIndex, 'About should live inside site information.');
   assert.doesNotMatch(settingsSource, /了解整理方式/, 'Settings should not oversell the about entry.');
+  assert.doesNotMatch(settingsSource, /当前收录/, 'Site information should avoid redundant library-size stats.');
 });
