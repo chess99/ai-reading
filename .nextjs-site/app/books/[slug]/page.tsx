@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: BookPageProps) {
       siteName: BRAND_NAME,
       images: [
         {
-          url: `${BASE_URL}/icon.png`,
+          url: `${BASE_URL}/share-image.png`,
           width: 512,
           height: 512,
           alt: book.title,
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: BookPageProps) {
       card: 'summary',
       title: `${book.title} - ${book.author}`,
       description,
-      images: [`${BASE_URL}/icon.png`],
+      images: [`${BASE_URL}/share-image.png`],
     },
   };
 }

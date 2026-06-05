@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   manifest: '/manifest.webmanifest',
   icons: {
     icon: '/icon.svg',
-    apple: '/icon.png',
+    apple: '/apple-touch-icon.png',
   },
   appleWebApp: {
     capable: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     images: [
       {
-        url: BASE_URL + '/icon.png',
+        url: BASE_URL + '/share-image.png',
         width: 512,
         height: 512,
         alt: BRAND_NAME,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [BASE_URL + '/icon.png'],
+    images: [BASE_URL + '/share-image.png'],
   },
 };
 

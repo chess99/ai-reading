@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
       siteName: BRAND_NAME,
       images: [
         {
-          url: `${BASE_URL}/icon.png`,
+          url: `${BASE_URL}/share-image.png`,
           width: 512,
           height: 512,
           alt: topic.title,
