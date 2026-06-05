@@ -10,6 +10,7 @@ import rehypeHighlight from 'rehype-highlight';
 import rehypeKatex from 'rehype-katex';
 import 'highlight.js/styles/atom-one-dark.css';
 import 'katex/dist/katex.min.css';
+import { ChevronRightIcon } from '@/components/Icons';
 import { BRAND_NAME } from '@/lib/brand';
 import { BASE_URL } from '@/lib/config';
 import { getAllTopicMetas, getTopicDetailBySlug } from '@/lib/topics';
@@ -72,9 +73,9 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
   const displayContent = topic.content.replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
   const pageUrl = `${BASE_URL}/topics/${topic.slug}/`;
-  const recommendationCardBaseClass = 'group block rounded-lg border border-stone-200/80 bg-[#fffdf8] p-4';
+  const recommendationCardBaseClass = 'block rounded-lg border border-stone-200/80 bg-[#fffdf8] p-4';
   const recommendationCardClass =
-    `${recommendationCardBaseClass} transition-all duration-200 hover:border-brand/35 hover:shadow-[0_16px_34px_-26px_rgba(79,58,35,0.55)]`;
+    `group ${recommendationCardBaseClass} cursor-pointer transition-all duration-200 hover:border-brand/35 hover:shadow-[0_16px_34px_-26px_rgba(79,58,35,0.55)]`;
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -152,32 +153,33 @@ export default async function TopicPage({ params }: TopicPageProps) {
               </div>
               <div className="space-y-3">
                 {topic.books.map((book, index) => {
+                  const linkedBook = book.status === 'in_library' && book.book ? book.book : null;
                   const cardContent = (
                     <>
                       <div className="mb-2 flex items-start justify-between gap-3">
                         <span className="chip-muted text-[11px]">{book.role}</span>
-                        <span className="text-xs font-bold text-stone-400">{String(index + 1).padStart(2, '0')}</span>
+                        <span className="inline-flex items-center gap-1 text-xs font-bold text-stone-400">
+                          {String(index + 1).padStart(2, '0')}
+                          {linkedBook && (
+                            <ChevronRightIcon className="h-3.5 w-3.5 text-brand opacity-70 transition-transform group-hover:translate-x-0.5 group-hover:opacity-100" />
+                          )}
+                        </span>
                       </div>
                       <h3 className="font-black leading-snug text-stone-950 transition-colors group-hover:text-brand">
                         《{book.title}》
                       </h3>
                       <p className="mt-1 text-xs text-stone-500">{book.author}</p>
                       <p className="mt-3 text-sm leading-6 text-stone-600">{book.reason}</p>
-                      {book.status === 'in_library' && book.book && (
-                        <span className="mt-3 inline-flex text-sm font-semibold text-brand transition-colors group-hover:text-brand-dark">
-                          读书笔记
-                        </span>
-                      )}
                     </>
                   );
 
-                  if (book.status === 'in_library' && book.book) {
+                  if (linkedBook) {
                     return (
                       <Link
                         key={`${book.title}-${index}`}
-                        href={`/books/${book.book.slug}`}
+                        href={`/books/${linkedBook.slug}`}
                         className={recommendationCardClass}
-                        aria-label={`打开《${book.title}》读书笔记`}
+                        aria-label={`打开《${book.title}》`}
                       >
                         {cardContent}
                       </Link>

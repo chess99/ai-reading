@@ -26,25 +26,16 @@ export default function TopicReading({ topics }: TopicReadingProps) {
           ))}
           <Link
             href="/topics"
-            className="group surface-card surface-card-hover flex min-w-[280px] md:min-w-[340px] flex-col p-5"
+            className="group flex min-w-[144px] md:min-w-[160px] flex-col justify-center rounded-lg border border-dashed border-brand/30 bg-[#fffdf8]/70 px-4 py-5 transition-all duration-200 hover:border-brand/55 hover:bg-brand/10"
             aria-label="查看全部主题阅读"
           >
-            <div className="mb-4 flex items-center justify-between gap-3">
-              <span className="text-[11px] font-black tracking-[0.16em] text-brand">TOPIC</span>
-              <span className="chip-muted text-[11px] flex-shrink-0">全部</span>
-            </div>
-            <h3 className="text-lg md:text-xl font-black tracking-tight text-stone-950 transition-colors group-hover:text-brand">
-              更多主题阅读
-            </h3>
-            <p className="mt-3 text-sm leading-6 text-stone-600">
-              按真实问题浏览完整阅读路径，继续找到下一组适合深入的书。
-            </p>
-            <div className="mt-5 flex items-center gap-2">
-              <span className="chip-brand inline-flex items-center gap-1 text-xs">
-                查看全部主题
-                <ChevronRightIcon className="h-3.5 w-3.5" />
-              </span>
-            </div>
+            <span className="text-sm font-black tracking-tight text-stone-950 transition-colors group-hover:text-brand">
+              全部主题
+            </span>
+            <span className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-brand">
+              继续浏览
+              <ChevronRightIcon className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </span>
           </Link>
         </div>
         <div className="flex-shrink-0 w-4 md:hidden" />
