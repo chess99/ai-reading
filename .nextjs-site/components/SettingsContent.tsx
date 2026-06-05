@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReadingEvents } from '@/lib/analytics';
-import { BRAND_TAGLINE } from '@/lib/brand';
+import { BRAND_NAME } from '@/lib/brand';
 
 interface SettingsContentProps {
   allBooks: { slug: string; title: string; author: string }[];
@@ -95,36 +95,6 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
 
   return (
     <div className="space-y-6">
-      {/* 关于 */}
-      <div className="surface-card p-4">
-        <p className="mb-2 text-[11px] font-black tracking-[0.16em] text-brand">ABOUT</p>
-        <h3 className="font-bold text-stone-950 mb-1">关于晨笙阅读</h3>
-        <p className="mb-3 text-sm leading-6 text-stone-600">
-          {BRAND_TAGLINE}。了解内容如何整理、与原书的关系，以及什么场景适合使用。
-        </p>
-        <div className="flex items-center justify-between gap-3 rounded-lg bg-stone-50 px-3 py-2 text-sm">
-          <span className="text-stone-600">当前收录</span>
-          <span className="font-semibold text-stone-950">{allBooks.length} 本书籍</span>
-        </div>
-        <div className="mt-3 flex flex-wrap gap-3 border-t border-stone-200/80 pt-3">
-          <Link
-            href="/about"
-            onClick={onNavigate}
-            className="inline-flex h-10 flex-1 items-center justify-center rounded-lg bg-stone-900 px-4 text-sm font-semibold text-[#fffdf8] transition-colors hover:bg-stone-800"
-          >
-            了解整理方式
-          </Link>
-          <a
-            href="https://github.com/chess99/ai-reading"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-10 items-center justify-center rounded-lg border border-stone-200 px-4 text-sm font-semibold text-stone-700 transition-colors hover:border-brand hover:text-brand"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-
       {/* 离线模式 */}
       <div className="surface-card p-4">
         <div className="flex items-start justify-between mb-3">
@@ -175,9 +145,9 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
         </button>
       </div>
 
-      {/* 建议与反馈 */}
+      {/* 反馈与补充 */}
       <div className="surface-card p-4">
-        <h3 className="font-bold text-stone-950 mb-1">建议与反馈</h3>
+        <h3 className="font-bold text-stone-950 mb-1">反馈与补充</h3>
         <p className="mb-3 text-sm leading-6 text-stone-600">
           没有找到想看的书？可以提交书名和作者，请求补充到书库。
         </p>
@@ -201,6 +171,36 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
         </div>
       </div>
 
+      {/* 站点信息 */}
+      <div className="surface-card p-4">
+        <h3 className="font-bold text-stone-950 mb-3">站点信息</h3>
+        <div className="divide-y divide-stone-200/80 text-sm">
+          <Link
+            href="/about"
+            onClick={onNavigate}
+            className="flex items-center justify-between gap-3 rounded-md py-2.5 transition-colors hover:text-brand"
+          >
+            <span>
+              <span className="block font-semibold text-stone-950">关于{BRAND_NAME}</span>
+              <span className="mt-0.5 block leading-5 text-stone-500">内容整理方式、使用边界与质量标准</span>
+            </span>
+            <span className="font-bold text-brand">→</span>
+          </Link>
+          <div className="flex items-center justify-between gap-3 py-2.5">
+            <span className="text-stone-600">当前收录</span>
+            <span className="font-semibold text-stone-950">{allBooks.length} 本书籍</span>
+          </div>
+          <a
+            href="https://github.com/chess99/ai-reading"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between gap-3 rounded-md py-2.5 transition-colors hover:text-brand"
+          >
+            <span className="font-semibold text-stone-700">GitHub 仓库</span>
+            <span className="font-bold text-brand">→</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

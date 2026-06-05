@@ -14,3 +14,11 @@ test('about page introduces the original-book boundary before usage guidance', (
     'Original-book boundary should appear before usage guidance because it defines the page promise.',
   );
 });
+
+test('about page stays focused on content positioning instead of operations', () => {
+  const aboutSource = readFileSync(new URL('../app/about/page.tsx', import.meta.url), 'utf8');
+
+  assert.doesNotMatch(aboutSource, /反馈与申请书籍/, 'About should not duplicate operational feedback entry points.');
+  assert.doesNotMatch(aboutSource, /申请加入书库/, 'Book requests belong in settings, not about.');
+  assert.doesNotMatch(aboutSource, /搜索书库/, 'Search navigation belongs in product navigation, not about.');
+});

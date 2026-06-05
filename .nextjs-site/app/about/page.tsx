@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME, BRAND_TAGLINE, CONTENT_PROCESS_SUMMARY } from '@/lib/brand';
 
@@ -178,21 +177,6 @@ export default function AboutPage() {
                 <p className="text-sm leading-7 text-stone-600">{item.body}</p>
               </article>
             ))}
-          </div>
-        </section>
-
-        <section className="surface-card p-5 md:p-6">
-          <h2 className="mb-3 text-xl font-bold text-stone-950">反馈与申请书籍</h2>
-          <p className="mb-5 text-sm leading-7 text-stone-700 md:text-base">
-            如果你发现内容错误、表述不清，或希望补充某本书，可以提交反馈或申请加入书库。
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/request-book" className="btn-outline-brand inline-flex h-11 items-center justify-center px-5">
-              申请加入书库
-            </Link>
-            <Link href="/search" className="inline-flex h-11 items-center justify-center rounded-lg border border-stone-200 px-5 text-sm font-semibold text-stone-700 transition-colors hover:border-brand hover:text-brand">
-              搜索书库
-            </Link>
           </div>
         </section>
       </div>
