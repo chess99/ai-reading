@@ -23,6 +23,17 @@ export default function TopicReading({ topics }: TopicReadingProps) {
           {topics.map(topic => (
             <TopicCard key={topic.slug} topic={topic} compact />
           ))}
+          <Link
+            href="/topics"
+            className="group surface-card surface-card-hover flex min-w-[180px] md:min-w-[220px] flex-col justify-between p-5"
+            aria-label="查看全部主题阅读"
+          >
+            <span className="text-[11px] font-black tracking-[0.16em] text-brand">ALL TOPICS</span>
+            <span className="mt-6 text-base font-black tracking-tight text-stone-950 transition-colors group-hover:text-brand">
+              查看全部主题
+            </span>
+            <span className="mt-2 text-sm leading-6 text-stone-500">更多阅读路径</span>
+          </Link>
         </div>
         <div className="flex-shrink-0 w-4 md:hidden" />
       </div>

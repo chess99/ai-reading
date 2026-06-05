@@ -72,6 +72,9 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
   const displayContent = topic.content.replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
   const pageUrl = `${BASE_URL}/topics/${topic.slug}/`;
+  const recommendationCardBaseClass = 'group block rounded-lg border border-stone-200/80 bg-[#fffdf8] p-4';
+  const recommendationCardClass =
+    `${recommendationCardBaseClass} transition-all duration-200 hover:border-brand/35 hover:shadow-[0_16px_34px_-26px_rgba(79,58,35,0.55)]`;
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -148,25 +151,45 @@ export default async function TopicPage({ params }: TopicPageProps) {
                 <h2 className="text-xl font-black tracking-tight text-stone-950">荐读路径</h2>
               </div>
               <div className="space-y-3">
-                {topic.books.map((book, index) => (
-                  <div key={`${book.title}-${index}`} className="rounded-lg border border-stone-200/80 bg-[#fffdf8] p-4">
-                    <div className="mb-2 flex items-start justify-between gap-3">
-                      <span className="chip-muted text-[11px]">{book.role}</span>
-                      <span className="text-xs font-bold text-stone-400">{String(index + 1).padStart(2, '0')}</span>
-                    </div>
-                    <h3 className="font-black leading-snug text-stone-950">《{book.title}》</h3>
-                    <p className="mt-1 text-xs text-stone-500">{book.author}</p>
-                    <p className="mt-3 text-sm leading-6 text-stone-600">{book.reason}</p>
-                    {book.status === 'in_library' && book.book && (
+                {topic.books.map((book, index) => {
+                  const cardContent = (
+                    <>
+                      <div className="mb-2 flex items-start justify-between gap-3">
+                        <span className="chip-muted text-[11px]">{book.role}</span>
+                        <span className="text-xs font-bold text-stone-400">{String(index + 1).padStart(2, '0')}</span>
+                      </div>
+                      <h3 className="font-black leading-snug text-stone-950 transition-colors group-hover:text-brand">
+                        《{book.title}》
+                      </h3>
+                      <p className="mt-1 text-xs text-stone-500">{book.author}</p>
+                      <p className="mt-3 text-sm leading-6 text-stone-600">{book.reason}</p>
+                      {book.status === 'in_library' && book.book && (
+                        <span className="mt-3 inline-flex text-sm font-semibold text-brand transition-colors group-hover:text-brand-dark">
+                          读书笔记
+                        </span>
+                      )}
+                    </>
+                  );
+
+                  if (book.status === 'in_library' && book.book) {
+                    return (
                       <Link
+                        key={`${book.title}-${index}`}
                         href={`/books/${book.book.slug}`}
-                        className="mt-3 inline-flex text-sm font-semibold text-brand hover:text-brand-dark transition-colors"
+                        className={recommendationCardClass}
+                        aria-label={`打开《${book.title}》读书笔记`}
                       >
-                        阅读提炼
+                        {cardContent}
                       </Link>
-                    )}
-                  </div>
-                ))}
+                    );
+                  }
+
+                  return (
+                    <div key={`${book.title}-${index}`} className={recommendationCardBaseClass}>
+                      {cardContent}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </aside>
