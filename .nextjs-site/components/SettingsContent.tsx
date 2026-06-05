@@ -95,6 +95,36 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
 
   return (
     <div className="space-y-6">
+      {/* 关于 */}
+      <div className="surface-card p-4">
+        <p className="mb-2 text-[11px] font-black tracking-[0.16em] text-brand">ABOUT</p>
+        <h3 className="font-bold text-stone-950 mb-1">关于晨笙阅读</h3>
+        <p className="mb-3 text-sm leading-6 text-stone-600">
+          {BRAND_TAGLINE}。了解内容如何整理、与原书的关系，以及什么场景适合使用。
+        </p>
+        <div className="flex items-center justify-between gap-3 rounded-lg bg-stone-50 px-3 py-2 text-sm">
+          <span className="text-stone-600">当前收录</span>
+          <span className="font-semibold text-stone-950">{allBooks.length} 本书籍</span>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-3 border-t border-stone-200/80 pt-3">
+          <Link
+            href="/about"
+            onClick={onNavigate}
+            className="inline-flex h-10 flex-1 items-center justify-center rounded-lg bg-stone-900 px-4 text-sm font-semibold text-[#fffdf8] transition-colors hover:bg-stone-800"
+          >
+            了解整理方式
+          </Link>
+          <a
+            href="https://github.com/chess99/ai-reading"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-10 items-center justify-center rounded-lg border border-stone-200 px-4 text-sm font-semibold text-stone-700 transition-colors hover:border-brand hover:text-brand"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+
       {/* 离线模式 */}
       <div className="surface-card p-4">
         <div className="flex items-start justify-between mb-3">
@@ -171,31 +201,6 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
         </div>
       </div>
 
-      {/* 关于 */}
-      <div className="surface-card p-4">
-        <h3 className="font-bold text-stone-950 mb-3">关于</h3>
-        <div className="space-y-2 text-sm leading-6 text-stone-600">
-          <p>{BRAND_TAGLINE}</p>
-          <p>当前收录：{allBooks.length} 本书籍</p>
-          <div className="flex flex-wrap gap-x-4 gap-y-1 border-t border-stone-200/80 pt-3">
-            <Link
-              href="/about"
-              onClick={onNavigate}
-              className="font-semibold text-brand hover:underline"
-            >
-              关于晨笙阅读
-            </Link>
-            <a
-              href="https://github.com/chess99/ai-reading"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-brand hover:underline"
-            >
-              GitHub 仓库
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
