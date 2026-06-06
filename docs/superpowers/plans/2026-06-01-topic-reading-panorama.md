@@ -1,4 +1,4 @@
-# Topic Reading Panorama V7 Review Plan
+# Topic Reading Panorama V8 Review Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -12,33 +12,33 @@
 
 ## Review Status
 
-This plan is not approved for implementation yet. It is the canonical V7 draft for later review.
+This plan is not approved for implementation yet. It is the canonical V8 draft for later review.
 
-This V7 revision answers three review questions:
+This V8 revision answers three review questions:
 
-1. **Is the topic division reasonable?** Yes, with two guardrails. First, domains must be reader-problem domains, not bookstore shelves. Second, a domain may be broad only if its second-level groups clearly separate entry, framework, and system questions. V7 keeps 10 domains, but renames the history domain to include humanities and treats `健康、身体与生命议题` as a two-part domain: body/health on one side, aging/death/happiness/philosophy/environment on the other.
-2. **Are books inside each list reasonable?** Mostly yes after rebalancing. V7 keeps variable list lengths, makes compact paths intentionally compact, and prevents every topic from becoming a 6-book template. The current count distribution is: 10 compact 6-book paths, 30 seven-book paths, 29 eight-book paths, 7 nine-book paths, and 4 ten-book system paths.
+1. **Is the topic division reasonable?** Yes after splitting two overloaded buckets. Domains must be reader-problem domains, not bookstore shelves. A domain may be broad only if its second-level groups clearly separate entry, framework, and system questions. V8 uses 12 domains by splitting V7's `历史、文明、技术与人文` into history/civilization, technology/AI/media, and humanities/philosophy, and by moving happiness/life philosophy out of the health bucket.
+2. **Are books inside each list reasonable?** Mostly yes after rebalancing. V8 keeps variable list lengths, makes compact paths intentionally compact, and prevents every topic from becoming a 6-book template. The current count distribution is: 10 compact 6-book paths, 30 seven-book paths, 29 eight-book paths, 7 nine-book paths, and 4 ten-book system paths.
 3. **Are domains deep and systematic enough?** Yes as a full-site roadmap, but not every topic needs the same depth. Each domain must contain at least one entry path, one framework path, and one system/critique path. A future batch that publishes only entry-level lists from a domain is incomplete even if each individual topic looks coherent.
 
-The final panorama now uses **10 domains and 80 topic candidates**. Topic count is still large because the file is a full-site roadmap, but it is not a publishing batch. Future batches should select 4-8 topics at a time.
+The final panorama now uses **12 domains and 80 topic candidates**. Topic count is still large because the file is a full-site roadmap, but it is not a publishing batch. Future batches should select 4-8 topics at a time.
 
 This plan does not delete live topic files. Deletion, redirect, or slug replacement must happen in a later explicit migration batch.
 
-## Key V7 Decisions
+## Key V8 Decisions
 
-- Split V5's overloaded society/history domain into `社会、法律与公共生活` and `历史、文明、技术与人文`.
-- Rename the history domain to `历史、文明、技术与人文` because the final group includes literature and humanities. This prevents literary reading from being hidden inside a technology-heavy bucket.
-- Split V5's overloaded health/meaning/creation domain by moving writing, expression, and creativity into `自我管理、学习与创造`; health, aging, death, happiness, philosophy, and climate remain together only because they all answer "how to live" questions. Within the domain, body-function topics and life-meaning topics must not be mixed in the same book list.
-- Merge overlapping evidence topics. V5 had `如何建立批判性思维`, `怎样判断证据是否可靠`, `如何建立科学思维`, and `识别伪科学与坏证据`; V7 keeps one strong evidence path and one science-worldview path.
+- Split V5's overloaded society/history domain into `社会、法律与公共生活`, `历史、文明与世界格局`, `科技、AI 与媒介环境`, and `文学、人文与人生哲学`.
+- Do not hide humanities inside a technology/history bucket. Literature, art, happiness, and philosophy are their own reader-facing domain because their purpose is interpretation, meaning, and aesthetic judgment, not trend tracking.
+- Split V5's overloaded health/meaning/creation domain by moving writing, expression, and creativity into `自我管理、学习与创造`; moving happiness and life philosophy into `文学、人文与人生哲学`; and keeping sleep, exercise, nutrition, stress, aging, disease, and climate in `健康、身体与可持续生活`.
+- Merge overlapping evidence topics. V5 had `如何建立批判性思维`, `怎样判断证据是否可靠`, `如何建立科学思维`, and `识别伪科学与坏证据`; V8 keeps one strong evidence path and one science-worldview path.
 - Keep product work as a ladder, not a cluster of near-duplicates: opportunity validation -> product discovery -> 0-to-1 -> product organization/delivery -> growth/strategy/platform.
 - Keep the 8 published topics in the first migration priority, but no current page is sacred. The product page should be replaced through a split, and the bias/group-influence page should be renamed.
 - Book-list length is no longer visually normalized. Compact topics use 5-6 books, standard topics use 7-9, and complex/system topics use 10-12.
 - A repeated book must have one clear role per topic: `core`, `bridge`, or `extension`. A later batch can revise these roles, but must record why.
-- Current published topics are inputs, not constraints. V7 keeps or deepens six of the eight, replaces the product page through a split, and renames the bias/group-influence page to make the reader problem clearer.
+- Current published topics are inputs, not constraints. V8 keeps or deepens six of the eight, replaces the product page through a split, and renames the bias/group-influence page to make the reader problem clearer.
 
 ## Published Topic Reconstruction Matrix
 
-| Current Topic | V7 Decision | Target Placement | Migration Direction |
+| Current Topic | V8 Decision | Target Placement | Migration Direction |
 |---|---|---|---|
 | `如何做重大决策` | Keep and deepen | 思维、判断与科学 | Keep as first-batch topic. Add decision process, judgment noise, probability updating, system consequences, and execution checks. |
 | `如何理解系统与复杂性` | Keep, rename, and narrow | 思维、判断与科学 | Rename toward `什么是系统思维与复杂性`. Keep feedback, emergence, scale, and resilience; move pure uncertainty books to risk topic. |
@@ -61,7 +61,7 @@ The first implementation batch should handle the 8 published topics before addin
 
 ## Published Topic Book-List Audit
 
-This audit is the concrete answer to "the existing 8 topic lists may be deleted." V7 does not delete files in this planning pass, but it stops treating the current pages as the canonical structure.
+This audit is the concrete answer to "the existing 8 topic lists may be deleted." V8 does not delete files in this planning pass, but it stops treating the current pages as the canonical structure.
 
 | Published Topic | Keep Core | Move Out Of Core | Add Or Promote | Reason |
 |---|---|---|---|---|
@@ -81,6 +81,8 @@ The panorama borrows category signals from knowledge-service platforms, then con
 - 得到：lifelong learning, business, management, product thinking, finance, history, modern thought, and daily book listening.
 - 帆书/樊登读书：mindset, management, workplace, family, humanities, entrepreneurship, psychology, parenting, investment, social science, and health.
 - 喜马拉雅：health psychology, daily life, children growth, learning motivation, humanities, social science, business finance, history, parenting, and relationships.
+- Coursera/edX category signals: business, social sciences, health, humanities, personal development, data/computer science, and language/arts are separated at the platform level, which supports splitting technology, humanities, and health instead of forcing them into one mixed domain.
+- Five Books-style editorial signals: topic curation works best when public life, history, philosophy, literature, science, economics, and psychology remain separately browsable, then are connected through individual reading paths.
 
 Reference links:
 
@@ -88,6 +90,9 @@ Reference links:
 - [帆书书籍解读](https://www.fanshu.cn/intro/read)
 - [帆书延伸学习](https://www.fanshu.cn/intro/learn)
 - [喜马拉雅有声阅读报告](https://biz.tom.com/202404/1840213107.html)
+- [Coursera Browse](https://www.coursera.org/browse)
+- [edX Courses](https://www.edx.org/search)
+- [Five Books Categories](https://fivebooks.com/categories/)
 
 ## Non-Negotiable Content Rules
 
@@ -123,7 +128,7 @@ Book-list lengths are intentionally uneven:
 | Standard learning path | 7-9 books | If two different reader goals are mixed. |
 | Complex/system topic | 10-12 books | If the list exceeds 12 or has two independent disciplines. |
 
-Current V7 length audit:
+Current V8 length audit:
 
 | Book Count | Number Of Topics | Interpretation |
 |---:|---:|---|
@@ -153,8 +158,10 @@ Any future batch that only contains entry-level popular books fails the depth ba
 | 商业、产品与创业 | Customer problem, opportunity validation, discovery, delivery, growth, strategy, business model, platform effects. |
 | 金钱、投资与经济 | Personal finance, investing, valuation, market risk, trading psychology, macroeconomics, consumption, inequality. |
 | 社会、法律与公共生活 | Institutions, law, justice, media, public reasoning, cities, gender, social structure. |
-| 历史、文明、技术与人文 | China, world history, civilization, technology society, AI, algorithmic risk, literature and humanities. |
-| 健康、身体与生命议题 | Sleep, exercise, nutrition, stress, aging, death, happiness, philosophy, environment, sustainable life. |
+| 历史、文明与世界格局 | China, world history, civilization dynamics, international order, institutional comparison, long-term historical forces. |
+| 科技、AI 与媒介环境 | Technology society, AI transformation, algorithmic risk, platform power, attention economy, digital public life. |
+| 文学、人文与人生哲学 | Literature, art, philosophy, happiness, life wisdom, meaning, interpretive reading. |
+| 健康、身体与可持续生活 | Sleep, exercise, nutrition, stress, aging, disease, care, environment, sustainable life. |
 
 ## Domain Subgroups
 
@@ -168,12 +175,14 @@ Any future batch that only contains entry-level popular books fails the depth ba
 | 商业、产品与创业 | 产品机会 / 产品发现 / 产品组织 / 增长营销 / 战略经营 / 平台网络 |
 | 金钱、投资与经济 | 财务常识 / 长期投资 / 价值投资 / 交易与周期 / 经济运行 / 消费社会 / 阶层机会 |
 | 社会、法律与公共生活 | 社会制度 / 公平正义 / 法律常识 / 媒体公共讨论 / 城市空间 / 性别结构 |
-| 历史、文明、技术与人文 | 中国历史 / 世界历史 / 文明兴衰 / 技术社会 / AI 变革 / 平台算法 / 文学人文 |
-| 健康、身体与生命议题 | 健康生活 / 压力恢复 / 运动体能 / 饮食代谢 / 衰老疾病 / 幸福哲学 / 环境气候 |
+| 历史、文明与世界格局 | 中国历史 / 世界历史 / 文明兴衰 / 国际秩序 |
+| 科技、AI 与媒介环境 | 技术社会 / AI 变革 / 平台算法 / 注意力风险 / 数字公共生活 |
+| 文学、人文与人生哲学 | 文学阅读 / 艺术审美 / 幸福哲学 / 人生哲学 |
+| 健康、身体与可持续生活 | 健康生活 / 压力恢复 / 运动体能 / 饮食代谢 / 衰老疾病 / 环境气候 |
 
 ## Domain Coverage Audit
 
-| Domain | V7 Verdict | Depth Check |
+| Domain | V8 Verdict | Depth Check |
 |---|---|---|
 | 思维、判断与科学 | Keep | Complete enough: decision, evidence, causality, science, systems, risk, and group influence are separated instead of collapsed into "thinking better." |
 | 自我管理、学习与创造 | Keep | Complete enough: habits, attention, time/energy, learning, notes/output, action resistance, writing, and creative work form a usable ladder. |
@@ -183,8 +192,10 @@ Any future batch that only contains entry-level popular books fails the depth ba
 | 商业、产品与创业 | Keep and publish carefully | Deepest domain by design. Product topics must be published as a ladder, not as overlapping pages competing for the same books. |
 | 金钱、投资与经济 | Keep with boundary | Systematic enough: personal finance, long-term investing, value investing, trading risk, macroeconomics, consumption, and inequality are separated. All investment pages need boundary notes. |
 | 社会、法律与公共生活 | Keep | Complete enough after the history split: institutions, justice, law, media, city, and gender each have a distinct public-life question. |
-| 历史、文明、技术与人文 | Keep after rename | The rename fixes the old mismatch. The domain now covers historical orientation, civilization dynamics, technology, AI, algorithmic risk, and humanities. |
-| 健康、身体与生命议题 | Keep with internal split | Acceptable only if future batches keep body topics and life-meaning topics distinct. Nutrition and medical-adjacent pages require evidence review and boundary notes. |
+| 历史、文明与世界格局 | Split and keep | More coherent after technology and humanities are removed. The domain now covers historical orientation, civilization dynamics, China/world comparison, and geopolitical order. |
+| 科技、AI 与媒介环境 | Split and keep | Systematic enough only if AI trend books, platform power, algorithmic risk, attention markets, and media theory remain separate reading problems. |
+| 文学、人文与人生哲学 | Split and keep | Gives interpretation, aesthetics, happiness, and philosophy enough room without smuggling them into health or technology. |
+| 健康、身体与可持续生活 | Split and keep with boundary | More coherent after happiness/philosophy move out. Nutrition and medical-adjacent pages require evidence review and boundary notes. |
 
 ## High-Frequency Book Role Table
 
@@ -653,9 +664,9 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 梯度说明：保持 6 本。先看性别秩序，再进入女性处境、数据偏见、结构机制、亲密关系和社会学视角。
 
-### 9. 历史、文明、技术与人文
+### 9. 历史、文明与世界格局
 
-**二级组：中国历史 / 世界历史 / 文明兴衰 / 技术社会 / AI 变革 / 平台算法 / 文学人文**
+**二级组：中国历史 / 世界历史 / 文明兴衰 / 国际秩序**
 
 #### 65. 中国社会的现代转型
 
@@ -681,6 +692,10 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 梯度说明：从地理和经济力量入门，再看文化冲突、制度质量、国际秩序、人类叙事、开放社会和增长边界。
 
+### 10. 科技、AI 与媒介环境
+
+**二级组：技术社会 / AI 变革 / 平台算法 / 注意力风险 / 数字公共生活**
+
 #### 69. 技术社会读什么
 
 阅读路径： 《技术的本质》 → 《必然》 → 《失控》 → 《理解媒介》 → 《娱乐至死》 → 《监视资本主义时代》 → 《平台革命》 → 《未来呼啸而来》
@@ -703,17 +718,33 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本主题聚焦监控、算法偏见、治理和公共风险，不重复讲 AI 技术趋势。
 
+### 11. 文学、人文与人生哲学
+
+**二级组：文学阅读 / 艺术审美 / 幸福哲学 / 人生哲学**
+
 #### 72. 文学与人文阅读入门
 
 阅读路径： 《如何阅读一本小说》 → 《小说面面观》 → 《文学理论入门》 → 《文学回忆录》 → 《文学的故事》 → 《文学讲稿》 → 《艺术的故事》
 
 梯度说明：先学会阅读小说，再进入叙事形式、文学理论、文学史、讲稿和艺术史。
 
-### 10. 健康、身体与生命议题
+#### 73. 如何理解幸福
 
-**二级组：健康生活 / 压力恢复 / 运动体能 / 饮食代谢 / 衰老疾病 / 幸福哲学 / 环境气候**
+阅读路径： 《幸福的方法》 → 《真实的幸福》 → 《心流》 → 《亲密关系》 → 《被讨厌的勇气》 → 《人生的智慧》 → 《尼各马可伦理学》
 
-#### 73. 如何建立健康生活方式
+梯度说明：从积极心理学进入沉浸体验、关系、自我接纳、人生智慧和德性伦理。
+
+#### 74. 人生哲学入门
+
+阅读路径： 《苏菲的世界》 → 《人生的智慧》 → 《沉思录》 → 《论语》 → 《道德经》 → 《尼各马可伦理学》 → 《悉达多》 → 《人的境况》
+
+梯度说明：先用哲学故事进入，再看人生智慧、斯多葛、儒道、德性伦理、精神追寻和行动空间。
+
+### 12. 健康、身体与可持续生活
+
+**二级组：健康生活 / 压力恢复 / 运动体能 / 饮食代谢 / 衰老疾病 / 环境气候**
+
+#### 75. 如何建立健康生活方式
 
 阅读路径： 《掌控习惯》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《身体使用手册》 → 《ACSM健身与健康完全指南》 → 《精力管理》 → 《超越百岁》 → 《身体从未忘记》
 
@@ -721,7 +752,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本主题只做阅读路径，不替代医疗、营养或运动处方。
 
-#### 74. 如何理解压力、恢复与身体信号
+#### 76. 如何理解压力、恢复与身体信号
 
 阅读路径： 《身体从未忘记》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《身体使用手册》 → 《精力管理》 → 《超越百岁》 → 《多巴胺国度》 → 《幸福的陷阱》
 
@@ -729,7 +760,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本主题只做阅读路径，不替代医疗、营养或运动处方。
 
-#### 75. 如何理解运动与体能
+#### 77. 如何理解运动与体能
 
 阅读路径： 《无器械健身》 → 《ACSM健身与健康完全指南》 → 《身体使用手册》 → 《施瓦辛格健身全书》 → 《耐力》 → 《ACSM高级运动生理学》 → 《生理学》
 
@@ -737,7 +768,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本主题只做阅读路径，不替代医疗、营养或运动处方。
 
-#### 76. 如何理解饮食与代谢
+#### 78. 如何理解饮食与代谢
 
 阅读路径： 《营养学：概念与争论》 → 《我们为什么会生病》 → 《肥胖代码》 → 《深度营养》 → 《超越百岁》 → 《生理学》
 
@@ -745,25 +776,13 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 边界说明：本主题只做阅读路径，不替代医疗、营养或运动处方。
 
-#### 77. 面对衰老、疾病与照护
+#### 79. 面对衰老、疾病与照护
 
 阅读路径： 《超越百岁》 → 《最好的告别》 → 《当呼吸化为空气》 → 《我们为什么要睡觉》 → 《运动改造大脑》 → 《活出生命的意义》 → 《生死课》
 
 梯度说明：从长寿医学进入照护、疾病经验、睡眠运动、意义支撑和临终沟通。
 
 边界说明：本主题只做阅读路径，不替代医疗建议或临终照护决策。
-
-#### 78. 如何理解幸福
-
-阅读路径： 《幸福的方法》 → 《真实的幸福》 → 《心流》 → 《亲密关系》 → 《被讨厌的勇气》 → 《人生的智慧》 → 《尼各马可伦理学》
-
-梯度说明：从积极心理学进入沉浸体验、关系、自我接纳、人生智慧和德性伦理。
-
-#### 79. 人生哲学入门
-
-阅读路径： 《苏菲的世界》 → 《人生的智慧》 → 《沉思录》 → 《论语》 → 《道德经》 → 《尼各马可伦理学》 → 《悉达多》 → 《人的境况》
-
-梯度说明：先用哲学故事进入，再看人生智慧、斯多葛、儒道、德性伦理、精神追寻和行动空间。
 
 #### 80. 如何理解环境、气候与可持续生活
 
@@ -773,7 +792,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 
 ## Deleted, Merged, Or Renamed From V5
 
-| V5 Topic | V7 Treatment | Reason |
+| V5 Topic | V8 Treatment | Reason |
 |---|---|---|
 | `识别伪科学与坏证据` | Merge into `如何建立批判性与证据判断` | The book list heavily overlapped with critical thinking and evidence evaluation. |
 | `怎样判断证据是否可靠` | Merge into `如何建立批判性与证据判断` | The evidence path is stronger as one 10-book system list. |
@@ -794,7 +813,7 @@ These roles are planning defaults. Future batch plans may revise them, but each 
 - Read: `docs/superpowers/plans/2026-06-01-topic-reading-panorama.md`
 - Create: `docs/superpowers/plans/YYYY-MM-DD-topic-batch-N.md`
 
-- [ ] Select one batch of 4-8 topics from this V7 panorama.
+- [ ] Select one batch of 4-8 topics from this V8 panorama.
 - [ ] For each selected topic, confirm whether it is new, replaces a published topic, renames a published topic, splits a published topic, or merges multiple published topics.
 - [ ] Verify every selected topic has a final approved title and a final approved book list.
 - [ ] Explain the learning gradient of every selected list in one sentence.
@@ -861,7 +880,7 @@ Only stage and commit files created or modified by that implementation batch. Pr
 
 ## Self-Review Checklist
 
-- The plan records 80 topic candidates across 10 domains.
+- The plan records 80 topic candidates across 12 domains.
 - The plan includes a domain coverage audit, not only a topic list.
 - The plan includes a book-count audit showing that 6-book lists are intentionally compact rather than a default template.
 - The 8 published topics are included in the same evaluation system and are not treated as immutable.
