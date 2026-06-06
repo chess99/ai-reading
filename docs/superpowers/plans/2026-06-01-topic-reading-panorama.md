@@ -1,4 +1,4 @@
-# Topic Reading Panorama V9.1 Review Plan
+# Topic Reading Panorama V9.2 Review Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -12,18 +12,18 @@
 
 ## Review Status
 
-This plan is not approved for implementation yet. It is the canonical V9.1 draft for later review.
+This plan is not approved for implementation yet. It is the canonical V9.2 draft for later review.
 
-V9.1 answers the user's review request directly:
+V9.2 answers the user's review request directly:
 
 1. **Book-list categories are reasonable after one consolidation pass.** The panorama keeps 12 first-level domains because the project needs separate browsing surfaces for thinking, personal work, psychology, relationships, career, business, money, public life, history, technology, humanities, and health. These are reader-problem domains, not bookstore shelves. A domain may be broad only when its second-level groups separate entry, framework, and system questions.
-2. **Book lists are no longer normalized by appearance.** V9.1 uses intentionally uneven list sizes: compact paths use 5-6 books, standard paths use 7-8 books, and complex/system paths use 9-10 books. A topic with 6 books is allowed only when the reader problem is narrow. A broad topic with only 6 books is treated as underbuilt.
+2. **Book lists are no longer normalized by appearance.** V9.2 uses intentionally uneven list sizes: compact paths use 5-6 books, standard paths use 7-8 books, and complex/system paths use 9-10 books. A topic with 6 books is allowed only when the reader problem is narrow. A broad topic with only 6 books is treated as underbuilt.
 3. **Each domain has enough depth for a full-site roadmap.** Every domain includes at least one entry path, one framework path, and one system/critique path. This prevents the library from becoming either a light self-help shelf or an inaccessible classics list.
 4. **The 8 published topics are inputs, not constraints.** Six are kept and deepened, one is renamed, and the product topic keeps its slug while being retitled and rebuilt as the consolidated 0-to-1 path. Existing topic files may be removed later, but only in an explicit migration batch after replacement pages and required books are ready.
 
-The final V9.1 panorama uses **12 domains and 73 topic candidates**. This is a full-site roadmap, not a publication batch. Future batches should select **4-8 topics** at a time. V9.1 incorporates a clean-context review pass by tightening overlapping product/relationship clusters, reducing two overbuilt thinking lists, and strengthening high-risk boundary rules.
+The final V9.2 panorama uses **12 domains and 73 topic candidates**. This is a full-site roadmap, not a publication batch. Future batches should select **4-8 topics** at a time. V9.2 keeps system-level book paths intact where depth is justified, while tightening publication sequencing and high-risk boundary rules.
 
-## Key V9.1 Decisions
+## Key V9.2 Decisions
 
 - Keep the 12-domain structure from V8, but make the taxonomy more operational: each domain now has an entry/framework/system distribution instead of only a topic count.
 - Keep humanities separate from technology, history, and health. Literature, art, happiness, and philosophy answer interpretation and meaning questions, not trend-tracking questions.
@@ -75,15 +75,15 @@ Book-list lengths are intentionally uneven:
 | Standard learning path | 7-8 books | If two different reader goals are mixed. |
 | Complex/system topic | 9-10 books | If the list exceeds 10 or has two independent disciplines. |
 
-V9.1 length audit:
+V9.2 length audit:
 
 | Book Count | Number Of Topics | Interpretation |
 |---:|---:|---|
 | 6 | 15 | Narrow practical or boundary-sensitive topics. |
 | 7 | 26 | Normal single-problem paths. |
-| 8 | 27 | Standard system paths with adjacent-domain coverage. |
+| 8 | 25 | Standard system paths with adjacent-domain coverage. |
 | 9 | 3 | Deeper interdisciplinary paths. |
-| 10 | 2 | Full system paths: deep work and product 0-to-1. |
+| 10 | 4 | Full system paths: major decision-making, evidence judgment, deep work, and product 0-to-1. |
 
 ## Domain Depth Standard
 
@@ -104,7 +104,7 @@ V9.1 length audit:
 
 ## Domain Coverage Audit
 
-| Domain | Topic Count | Entry / Framework / System Split | V9.1 Verdict |
+| Domain | Topic Count | Entry / Framework / System Split | V9.2 Verdict |
 |---|---:|---|---|
 | 思维、判断与科学 | 6 | 1 / 3 / 2 | Strong. Decision, evidence, systems, risk, science, and group influence are separated. |
 | 自我管理、学习与创造 | 6 | 2 / 3 / 1 | Strong. Practical enough for entry, with writing/creation as output depth. |
@@ -121,7 +121,7 @@ V9.1 length audit:
 
 ## Published Topic Reconstruction Matrix
 
-| Current File | Current Topic | V9.1 Decision | Target Placement | Migration Direction |
+| Current File | Current Topic | V9.2 Decision | Target Placement | Migration Direction |
 |---|---|---|---|---|
 | `topics/zhong-da-jue-ce.md` | `如何做重大决策` | Keep and deepen | 思维、判断与科学 | Keep as first-batch topic. Reorder from decision process to bias/noise, prediction, execution checks, system consequences, and uncertainty exposure. |
 | `topics/xi-tong-yu-fu-za-xing.md` | `如何理解系统与复杂性` | Keep, rename, and narrow | 思维、判断与科学 | Rename toward `什么是系统思维与复杂性`. Move pure uncertainty books to risk topic. |
@@ -146,7 +146,7 @@ The first implementation batch should handle the 8 published topics before addin
 
 | Published Topic | Keep Core | Move Out Of Core | Add Or Promote | Reason |
 |---|---|---|---|---|
-| `如何做重大决策` | 《怎样决定大事》, 《决断力》, 《思考，快与慢》, 《噪声》, 《超级预测》, 《对赌》, 《清单革命》, 《反脆弱》 | 《助推》 and 《系统之美》 become bridge books unless the batch explicitly needs organization/design depth. | Promote planned books before publishing revised page. | The path should stay centered on decision process, judgment quality, probability updating,复盘, execution防错, and uncertainty exposure. |
+| `如何做重大决策` | 《怎样决定大事》, 《决断力》, 《思考，快与慢》, 《噪声》, 《超级预测》, 《对赌》, 《助推》, 《清单革命》, 《系统之美》, 《反脆弱》 | None | Promote planned books before publishing revised page. | The path should run from process to bias/noise, probability updating, execution checks, system consequences, and uncertainty exposure. |
 | `如何理解系统与复杂性` | 《系统之美》, 《控制论与科学方法论》, 《第五项修炼》, 《复杂》, 《规模》, 《混沌》, 《复杂经济学》, 《弹性》 | 《黑天鹅》 becomes risk bridge; 《思维模型》 becomes science-worldview bridge. | Promote 《第五项修炼》, 《复杂》, 《规模》. | The topic should be about feedback, emergence, scale, adaptation, and resilience. |
 | `如何建立可持续习惯` | 《掌控习惯》, 《习惯的力量》, 《微习惯》, 《福格行为模型》, 《拖延心理学》, 《自控力》, 《驱动力》, 《精要主义》 | 《认知觉醒》 becomes learning/output bridge. | Promote 《自控力》 and 《驱动力》. | The path needs behavior design, action friction, self-control, motivation, and goal pruning. |
 | `如何识别偏见与群体影响` | 《社会心理学》, 《偏见的本质》, 《社会性动物》, 《社会认知心理学》, 《影响力》, 《服从权威》, 《路西法效应》, 《盲点》 | 《乌合之众》 becomes critical historical bridge, not core framework. | Rename topic and promote 《服从权威》, 《盲点》. | Keep the action-oriented title style: the reader problem is识别偏见、从众、服从和情境压力. |
@@ -183,9 +183,9 @@ The first implementation batch should handle the 8 published topics before addin
 
 | Layer | Topic | Reading Path | Gradient |
 |---|---|---|---|
-| 框架 | 如何做重大决策 | 《怎样决定大事》 -> 《决断力》 -> 《思考，快与慢》 -> 《噪声》 -> 《超级预测》 -> 《对赌》 -> 《清单革命》 -> 《反脆弱》 | 先建立重大选择流程，再校准偏差和噪声，随后处理概率更新、复盘、执行防错和不可测不确定性。 |
+| 框架 | 如何做重大决策 | 《怎样决定大事》 -> 《决断力》 -> 《思考，快与慢》 -> 《噪声》 -> 《超级预测》 -> 《对赌》 -> 《助推》 -> 《清单革命》 -> 《系统之美》 -> 《反脆弱》 | 先建立重大选择流程，再校准偏差和噪声，随后处理概率更新、复盘、选择架构、执行防错，最后进入系统反馈和不确定暴露。 |
 | 框架 | 什么是系统思维与复杂性 | 《系统之美》 -> 《控制论与科学方法论》 -> 《第五项修炼》 -> 《复杂》 -> 《规模》 -> 《混沌》 -> 《复杂经济学》 -> 《弹性》 | 从反馈、控制和组织学习进入，再理解涌现、尺度、非线性和复杂经济系统，最后回到适应力。 |
-| 系统 | 如何建立批判性与证据判断 | 《学会提问》 -> 《批判性思维工具》 -> 《超越感觉》 -> 《事实》 -> 《赤裸裸的统计学》 -> 《为什么》 -> 《这才是心理学》 -> 《噪声》 | 从提问和论证入门，进入数据、统计、因果、心理学证据和专家判断噪声；《女士品茶》《因果推断》可在高阶批次中作为 extension。 |
+| 系统 | 如何建立批判性与证据判断 | 《学会提问》 -> 《批判性思维工具》 -> 《超越感觉》 -> 《事实》 -> 《赤裸裸的统计学》 -> 《女士品茶》 -> 《为什么》 -> 《因果推断》 -> 《这才是心理学》 -> 《噪声》 | 从提问和论证入门，进入统计、实验、因果和心理学证据，再用噪声视角检查专家判断。 |
 | 框架 | 如何识别偏见、从众与服从 | 《社会心理学》 -> 《偏见的本质》 -> 《社会性动物》 -> 《社会认知心理学》 -> 《影响力》 -> 《服从权威》 -> 《路西法效应》 -> 《盲点》 | 从社会心理学主干进入分类、归因、说服、权威、角色和隐性偏见。 |
 | 系统 | 如何理解概率、风险与预测 | 《随机漫步的傻瓜》 -> 《超级预测》 -> 《噪声》 -> 《黑天鹅》 -> 《风险、不确定性与利润》 -> 《反脆弱》 -> 《对赌》 -> 《投资最重要的事》 | 先区分运气、概率和可校准预测，再理解噪声、极端事件和不可测不确定性，最后进入暴露面和投资风险。 |
 | 入门 | 如何建立科学世界观 | 《别逗了费曼先生》 -> 《世界观》 -> 《科学革命的结构》 -> 《无穷的开始》 -> 《这才是心理学》 -> 《技术的本质》 | 先用科学家故事进入科学精神，再理解范式、解释、证据差异和技术演化。 |
@@ -210,7 +210,7 @@ The first implementation batch should handle the 8 published topics before addin
 | Layer | Topic | Reading Path | Gradient |
 |---|---|---|---|
 | 入门 | 如何理解情绪 | 《蛤蟆先生去看心理医生》 -> 《情绪急救》 -> 《情绪是什么》 -> 《伯恩斯新情绪疗法》 -> 《幸福的陷阱》 -> 《身体从未忘记》 -> 《我们为什么要睡觉》 | 从通俗咨询故事进入情绪识别，再补上认知疗法、接纳承诺、身体反应和睡眠。 |
-| 入门 | 理解焦虑与抑郁的自助边界 | 《伯恩斯新情绪疗法》 -> 《幸福的陷阱》 -> 《也许你该找个人聊聊》 -> 《蛤蟆先生去看心理医生》 -> 《我们为什么要睡觉》 -> 《运动改造大脑》 | 先理解认知、回避和接纳，再看到咨询现场、睡眠、运动和日常支持；睡眠和运动只作为辅助恢复条件，不作为治疗路径。 |
+| 入门 | 理解焦虑与抑郁 | 《伯恩斯新情绪疗法》 -> 《幸福的陷阱》 -> 《也许你该找个人聊聊》 -> 《蛤蟆先生去看心理医生》 -> 《我们为什么要睡觉》 -> 《运动改造大脑》 | 先理解认知、回避和接纳，再看到咨询现场、睡眠、运动和日常支持；睡眠和运动只作为辅助恢复条件，不作为治疗路径。 |
 | 框架 | 如何停止精神内耗 | 《也许你该找个人聊聊》 -> 《伯恩斯新情绪疗法》 -> 《幸福的陷阱》 -> 《拖延心理学》 -> 《被讨厌的勇气》 -> 《认知觉醒》 -> 《当下的力量》 | 从真实咨询和认知模式进入，再处理回避、拖延、边界、元认知和当下经验。 |
 | 框架 | 如何建立稳定的自尊 | 《被讨厌的勇气》 -> 《自尊》 -> 《自卑与超越》 -> 《终身成长》 -> 《性格的陷阱》 -> 《也许你该找个人聊聊》 | 从课题分离和自我接纳开始，再看自尊机制、补偿心理、成长型思维、早期图式和咨询关系。 |
 | 框架 | 如何面对创伤与自我修复 | 《身体从未忘记》 -> 《创伤与复原》 -> 《唤醒老虎》 -> 《不原谅也没关系》 -> 《依恋》 -> 《抱紧我》 -> 《也许你该找个人聊聊》 -> 《我们为什么要睡觉》 -> 《运动改造大脑》 | 先理解创伤如何留在身体和关系中，再看复原阶段、躯体经验、复杂性创伤、依恋、关系安全和身体恢复。 |
@@ -348,11 +348,11 @@ Boundary note: health topics are reading paths only and do not replace medical a
 
 ## Deleted, Merged, Or Renamed From V8
 
-| V8 Topic | V9.1 Treatment | Reason |
+| V8 Topic | V9.2 Treatment | Reason |
 |---|---|---|
 | `如何摆脱拖延与行动阻力` | Merge into `如何建立可持续习惯`, `如何提高深度工作能力`, and `如何停止精神内耗` | The old topic had three different reader problems: behavior design, attention work, and emotional avoidance. |
 | `开始写作` and `如何做创意工作` | Merge into `写作与创意工作` | Writing and creative work share resistance, practice, style, and output concerns at this roadmap depth. |
-| `如何理解青春期` | Merge into future parenting/education batch, not kept as a first-class V9.1 topic | The current library does not yet support a deep enough standalone adolescence path. |
+| `如何理解青春期` | Merge into future parenting/education batch, not kept as a first-class V9.2 topic | The current library does not yet support a deep enough standalone adolescence path. |
 | `如何理解设计与用户体验` | Move inside `如何做好产品发现` | UX is important, but the current book coverage works better as product-discovery depth than as a separate public page. |
 | `如何理解公司经营` and `如何设计并验证商业模式` | Merge into `如何设计商业模式与理解公司经营` | Keeps business model, finance, pricing, and company operation in one system path. |
 | `如何理解商业竞争与战略` and `如何理解平台与网络效应` | Merge into `如何理解商业竞争、战略与平台效应` | Avoids two thin strategy pages that compete for the same books. |
@@ -369,7 +369,7 @@ Boundary note: health topics are reading paths only and do not replace medical a
 - Read: `docs/superpowers/plans/2026-06-01-topic-reading-panorama.md`
 - Create: `docs/superpowers/plans/YYYY-MM-DD-topic-batch-N.md`
 
-- [ ] Select one batch of 4-8 topics from this V9.1 panorama.
+- [ ] Select one batch of 4-8 topics from this V9.2 panorama.
 - [ ] For each selected topic, confirm whether it is new, replaces a published topic, renames a published topic, splits a published topic, or merges multiple published topics.
 - [ ] Verify every selected topic has a final approved title and a final approved book list.
 - [ ] Explain the learning gradient of every selected list in one sentence.
