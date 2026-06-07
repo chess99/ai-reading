@@ -6,14 +6,14 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 169 个唯一待入库书名：159 个候选可优先尝试下载，10 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 169 个唯一待入库书名：160 个候选可优先尝试下载，9 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 21世纪资本论 | candidate_ready | 标题精确 | epub | 5.61 MB | 2017 | Chinese | [21世纪资本论](https://z-lib.fm/book/dZ64Xx1Jgo/21%E4%B8%96%E7%BA%AA%E8%B5%84%E6%9C%AC%E8%AE%BA.html) | 看懂消费主义、财富与阶层机会 |
 | 爱的艺术 | candidate_ready | 标题精确 | epub | 549 KB | 2019 | Chinese | [爱的艺术](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) | 亲密关系阅读路径 |
 | 巴比伦最富有的人 | candidate_ready | 标题精确 | epub | 3.12 MB | 2026 | Chinese | [巴比伦最富有的人](https://z-lib.fm/book/WZpmq35M0R/%E5%B7%B4%E6%AF%94%E4%BC%A6%E6%9C%80%E5%AF%8C%E6%9C%89%E7%9A%84%E4%BA%BA.html) | 建立财务常识 |
-| 抱紧我 | needs_manual_review | 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认 | pdf | 12.49 MB | 2010 | Chinese | [亲爱的我们别吵了](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) | 如何面对创伤与自我修复、如何处理亲密关系中的冲突、亲密关系阅读路径 |
+| 抱紧我 | candidate_ready | 书目复核：候选《亲爱的，我们别吵了》对应 Sue Johnson 的 Hold Me Tight，可作为《抱紧我》同书候选优先尝试；当前 z-lib 详情页曾出现 ERR_CONNECTION_CLOSED，需下载时重试。 | pdf | 12.49 MB | 2010 | Chinese | [亲爱的我们别吵了](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) | 如何面对创伤与自我修复、如何处理亲密关系中的冲突、亲密关系阅读路径 |
 | 必然 | candidate_ready | 标题精确 | epub | 2.46 MB | 2016 | Chinese | [必然](https://z-lib.fm/book/dZ69j2dbAo/%E5%BF%85%E7%84%B6.html) | 技术社会读什么 |
 | 变革之心 | candidate_ready | 标题精确 | epub | 1.25 MB | 2024 | Chinese | [变革之心](https://z-lib.fm/book/vAyYOY3DAE/%E5%8F%98%E9%9D%A9%E4%B9%8B%E5%BF%83.html) | 如何理解组织中的权力与变革 |
 | 禅与摩托车维修艺术 | candidate_ready | 标题精确 | epub | 956 KB | 2018 | Chinese | [禅与摩托车维修艺术](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) | 艺术与审美入门 |

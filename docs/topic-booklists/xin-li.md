@@ -12,14 +12,14 @@ date: '2026-06-07'
 - 唯一书名：34
 - 已入库引用：30
 - 待入库唯一书名：18
-- z-lib 可优先尝试：15
-- z-lib 需复核/换源：3
+- z-lib 可优先尝试：16
+- z-lib 需复核/换源：2
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
-| 抱紧我 | 1 | 如何面对创伤与自我修复 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认；[pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
+| 抱紧我 | 1 | 如何面对创伤与自我修复 | 候选: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 创伤与复原 | 1 | 如何面对创伤与自我修复 | 候选: [azw3 842 KB 2015](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) |
 | 当呼吸化为空气 | 1 | 面对丧失、哀伤与死亡 | 需复核: 详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。；[epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 当下的力量 | 1 | 如何停止精神内耗 | 需复核: 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。；[epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
@@ -119,7 +119,7 @@ date: '2026-06-07'
 | 唤醒老虎 | 躯体经验路径 | planned | 待补 | 候选: [epub 5.79 MB 2016](https://z-lib.fm/book/dAKM9oX107/%E5%94%A4%E9%86%92%E8%80%81%E8%99%8E%E5%90%AF%E5%8A%A8%E8%87%AA%E6%88%91%E7%96%97%E6%84%88%E6%9C%AC%E8%83%BD.html) |
 | 不原谅也没关系 | 复杂创伤边界 | in_library | 皮特·沃克 | bu-yuan-liang-ye-mei-guan-xi / books/心理学/皮特·沃克-不原谅也没关系.md |
 | 依恋 | 关系安全框架 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
-| 抱紧我 | 亲密关系修复 | planned | 待补 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认；[pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
+| 抱紧我 | 亲密关系修复 | planned | 待补 | 候选: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 也许你该找个人聊聊 | 咨询关系参照 | in_library | 洛莉·戈特利布 | ye-xu-ni-gai-zhao-ge-ren-liao-liao / books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md |
 | 我们为什么要睡觉 | 睡眠恢复条件 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
 | 运动改造大脑 | 身体恢复支持 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |

@@ -340,7 +340,7 @@
   },
   {
     "title": "抱紧我",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何面对创伤与自我修复",
       "如何处理亲密关系中的冲突",
@@ -448,7 +448,12 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 16901,
-    "reviewNote": "仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认"
+    "reviewNote": "书目复核：候选《亲爱的，我们别吵了》对应 Sue Johnson 的 Hold Me Tight，可作为《抱紧我》同书候选优先尝试；当前 z-lib 详情页曾出现 ERR_CONNECTION_CLOSED，需下载时重试。",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "selectedUrl": "https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html",
+      "reason": "download.ts page.goto 返回 net::ERR_CONNECTION_CLOSED，未能进入解析。"
+    }
   },
   {
     "title": "必然",

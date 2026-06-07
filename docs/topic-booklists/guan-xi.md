@@ -12,15 +12,15 @@ date: '2026-06-07'
 - 唯一书名：28
 - 已入库引用：20
 - 待入库唯一书名：20
-- z-lib 可优先尝试：19
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：20
+- z-lib 需复核/换源：0
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 爱的艺术 | 1 | 亲密关系阅读路径 | 候选: [epub 549 KB 2019](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
-| 抱紧我 | 2 | 亲密关系阅读路径、如何处理亲密关系中的冲突 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认；[pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
+| 抱紧我 | 2 | 亲密关系阅读路径、如何处理亲密关系中的冲突 | 候选: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 给孩子一生的安全感 | 1 | 如何理解儿童安全感与教育成长 | 候选: [epub 3.99 MB 2023](https://z-lib.fm/book/YAJYPqbYgw/%E7%BB%99%E5%AD%A9%E5%AD%90%E4%B8%80%E7%94%9F%E7%9A%84%E5%AE%89%E5%85%A8%E6%84%9F.html) |
 | 孩子，把你的手给我 | 1 | 如何做足够好的父母 | 候选: [epub 199 KB 2016](https://z-lib.fm/book/pZ8xMzoLZ9/%E5%AD%A9%E5%AD%90%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%89%8B%E7%BB%99%E6%88%91.html) |
 | 孩子：挑战 | 1 | 如何做足够好的父母 | 候选: [epub 565 KB 2017](https://z-lib.fm/book/20rdBOLGAX/%E5%AD%A9%E5%AD%90%E6%8C%91%E6%88%98.html) |
@@ -51,7 +51,7 @@ date: '2026-06-07'
 | 亲密关系 | 关系总览 | in_library | 罗兰·米勒 | qin-mi-guan-xi / books/心理学/罗兰·米勒-亲密关系.md |
 | 依恋 | 安全感框架 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
 | 幸福的婚姻 | 长期关系研究 | planned | 待补 | 候选: [epub 8.42 MB 0](https://z-lib.fm/book/pZ882RzNZ9/%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%A9%9A%E5%A7%BB%E5%85%A8%E6%96%B0%E5%8D%87%E7%BA%A7%E7%89%88.html) |
-| 抱紧我 | 情绪循环 | planned | 待补 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认；[pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
+| 抱紧我 | 情绪循环 | planned | 待补 | 候选: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 爱的艺术 | 爱的哲学 | planned | 待补 | 候选: [epub 549 KB 2019](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
 | 沟通的本质 | 沟通机制 | in_library | 罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特 | gou-tong-de-ben-zhi / books/心理学/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md |
 | 非暴力沟通 | 表达练习 | in_library | 马歇尔·卢森堡 | fei-bao-li-gou-tong / books/心理学/马歇尔·卢森堡-非暴力沟通.md |
@@ -66,7 +66,7 @@ date: '2026-06-07'
 | 亲密关系 | 冲突总览 | in_library | 罗兰·米勒 | qin-mi-guan-xi / books/心理学/罗兰·米勒-亲密关系.md |
 | 依恋 | 依恋需求 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
 | 幸福的婚姻 | 修复研究 | planned | 待补 | 候选: [epub 8.42 MB 0](https://z-lib.fm/book/pZ882RzNZ9/%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%A9%9A%E5%A7%BB%E5%85%A8%E6%96%B0%E5%8D%87%E7%BA%A7%E7%89%88.html) |
-| 抱紧我 | 情绪聚焦 | planned | 待补 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认；[pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
+| 抱紧我 | 情绪聚焦 | planned | 待补 | 候选: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 非暴力沟通 | 表达方法 | in_library | 马歇尔·卢森堡 | fei-bao-li-gou-tong / books/心理学/马歇尔·卢森堡-非暴力沟通.md |
 | 高难度谈话 | 困难议题 | in_library | 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉 | gao-nan-du-tan-hua / books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md |
 | 关键对话 | 高风险对话 | in_library | 科里·帕特森 | guan-jian-dui-hua / books/心理学/科里·帕特森-关键对话.md |
