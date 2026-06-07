@@ -352,21 +352,16 @@
     ],
     "count": 3,
     "selected": {
-      "score": 232,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "上海抱紧我",
+      "score": 100,
+      "title": "亲爱的我们别吵了",
       "author": "",
-      "format": "epub",
-      "fileSize": "767 KB",
-      "year": "0",
+      "format": "pdf",
+      "fileSize": "12.49 MB",
+      "year": "2010",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -453,7 +448,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 16901,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认"
   },
   {
     "title": "必然",
@@ -914,7 +909,7 @@
   },
   {
     "title": "禅与摩托车维修艺术",
-    "status": "not_found",
+    "status": "candidate_ready",
     "refs": [
       "艺术与审美入门"
     ],
@@ -925,11 +920,23 @@
     "error": "page.goto: net::ERR_ABORTED at https://z-lib.fm/s/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF\nCall log:\n\u001b[2m  - navigating to \"https://z-lib.fm/s/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF\", waiting until \"domcontentloaded\"\u001b[22m\n",
     "searchedAt": "2026-06-07",
     "elapsedMs": 2791,
-    "reviewNote": "未命中"
+    "reviewNote": "标题精确",
+    "selected": {
+      "score": 300,
+      "title": "禅与摩托车维修艺术",
+      "author": "",
+      "format": "epub",
+      "fileSize": "956 KB",
+      "year": "2018",
+      "language": "Chinese",
+      "bookUrl": "https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html",
+      "rating": "",
+      "quality": ""
+    }
   },
   {
     "title": "超级预测",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何理解概率、风险与预测",
       "如何做重大决策"
@@ -939,21 +946,16 @@
     ],
     "count": 2,
     "selected": {
-      "score": 231,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "剪刀石头布如何成为超级预测者",
+      "score": 300,
+      "title": "超预测",
       "author": "",
       "format": "epub",
-      "fileSize": "5.05 MB",
-      "year": "2018",
+      "fileSize": "663 KB",
+      "year": "2016",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/DAaeR4q3A3/%E5%89%AA%E5%88%80%E7%9F%B3%E5%A4%B4%E5%B8%83%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E8%B6%85%E7%BA%A7%E9%A2%84%E6%B5%8B%E8%80%85.html",
-      "rating": "0.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -1039,7 +1041,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 16570,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "中文出版题名为《超预测》"
   },
   {
     "title": "超越感觉",
@@ -3263,7 +3265,7 @@
   },
   {
     "title": "风格感觉",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "写作与创意工作",
       "阅读、笔记与输出系统"
@@ -3273,12 +3275,7 @@
     ],
     "count": 2,
     "selected": {
-      "score": 266,
-      "reasons": [
-        "Chinese",
-        "compact prefix",
-        "format epub"
-      ],
+      "score": 300,
       "title": "风格感觉21世纪写作指南",
       "author": "",
       "format": "epub",
@@ -3286,8 +3283,8 @@
       "year": "2018",
       "language": "Chinese",
       "bookUrl": "https://z-lib.fm/book/n0zOpqKzgk/%E9%A3%8E%E6%A0%BC%E6%84%9F%E8%A7%8921%E4%B8%96%E7%BA%AA%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -3373,11 +3370,11 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 21516,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含副标题"
   },
   {
     "title": "风险、不确定性与利润",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何理解概率、风险与预测"
     ],
@@ -3386,21 +3383,16 @@
     ],
     "count": 1,
     "selected": {
-      "score": 42,
-      "reasons": [
-        "Chinese",
-        "title mismatch",
-        "format epub"
-      ],
-      "title": "风险不确定性与利润 汉译世界学术名著丛书",
+      "score": 300,
+      "title": "风险不确定性与利润",
       "author": "",
       "format": "epub",
-      "fileSize": "531 KB",
+      "fileSize": "496 KB",
       "year": "2010",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/W0EVyzz8gl/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6-%E6%B1%89%E8%AF%91%E4%B8%96%E7%95%8C%E5%AD%A6%E6%9C%AF%E5%90%8D%E8%91%97%E4%B8%9B%E4%B9%A6.html",
-      "rating": "0.0",
-      "quality": "0.0"
+      "bookUrl": "https://z-lib.fm/book/DgXLr63wgq/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -3487,7 +3479,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 19546,
-    "reviewNote": "标题不匹配"
+    "reviewNote": "标点差异"
   },
   {
     "title": "服从权威",
@@ -3830,7 +3822,7 @@
   },
   {
     "title": "赋能",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何建立产品组织与交付系统",
       "如何建立领导力与团队协作"
@@ -3841,21 +3833,16 @@
     ],
     "count": 2,
     "selected": {
-      "score": 238,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "ai赋能ai时代生存与发展的10大原则",
+      "score": 300,
+      "title": "赋能打造应对不确定性的敏捷团队",
       "author": "",
       "format": "epub",
-      "fileSize": "3.92 MB",
-      "year": "2025",
+      "fileSize": "779 KB",
+      "year": "2017",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/YAJpKJ6M0w/ai%E8%B5%8B%E8%83%BDai%E6%97%B6%E4%BB%A3%E7%94%9F%E5%AD%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%9A%8410%E5%A4%A7%E5%8E%9F%E5%88%99.html",
-      "rating": "5.0",
-      "quality": "4.5"
+      "bookUrl": "https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -3941,7 +3928,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 20117,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含副标题"
   },
   {
     "title": "高绩效教练",
@@ -4287,7 +4274,7 @@
   },
   {
     "title": "搞定",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何提高深度工作能力",
       "如何管理时间、精力与个人系统"
@@ -4297,21 +4284,16 @@
     ],
     "count": 2,
     "selected": {
-      "score": 254,
-      "reasons": [
-        "Chinese",
-        "compact prefix",
-        "format epub"
-      ],
-      "title": "搞定13",
+      "score": 300,
+      "title": "搞定 无压工作的艺术",
       "author": "",
       "format": "epub",
-      "fileSize": "2.55 MB",
+      "fileSize": "2.22 MB",
       "year": "2016",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/dAKYD8Dp07/%E6%90%9E%E5%AE%9A13.html",
-      "rating": "5.0",
-      "quality": "0.0"
+      "bookUrl": "https://z-lib.fm/book/R0PpmoLn09/%E6%90%9E%E5%AE%9A-%E6%97%A0%E5%8E%8B%E5%B7%A5%E4%BD%9C%E7%9A%84%E8%89%BA%E6%9C%AF.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -4397,7 +4379,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 21404,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含副标题"
   },
   {
     "title": "给孩子一生的安全感",
@@ -4517,7 +4499,7 @@
   },
   {
     "title": "工作、消费主义和新穷人",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "城市、空间与生活方式",
       "看懂消费主义、财富与阶层机会"
@@ -4528,12 +4510,7 @@
     ],
     "count": 2,
     "selected": {
-      "score": 62,
-      "reasons": [
-        "Chinese",
-        "title mismatch",
-        "format epub"
-      ],
+      "score": 300,
       "title": "工作消费主义和新穷人 work consumerism and the new poor",
       "author": "",
       "format": "epub",
@@ -4541,8 +4518,8 @@
       "year": "2021",
       "language": "Chinese",
       "bookUrl": "https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -4628,7 +4605,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 20393,
-    "reviewNote": "标题不匹配"
+    "reviewNote": "标点差异"
   },
   {
     "title": "公正",
@@ -4745,7 +4722,7 @@
   },
   {
     "title": "怪诞行为学",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何理解行为经济学与金钱心理"
     ],
@@ -4754,21 +4731,16 @@
     ],
     "count": 1,
     "selected": {
-      "score": 266,
-      "reasons": [
-        "Chinese",
-        "compact prefix",
-        "format epub"
-      ],
-      "title": "怪诞行为学5理智与金钱",
+      "score": 300,
+      "title": "怪诞行为学可预测的非理性",
       "author": "",
       "format": "epub",
-      "fileSize": "778 KB",
-      "year": "2018",
+      "fileSize": "1.60 MB",
+      "year": "2014",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/m03QkJpaA6/%E6%80%AA%E8%AF%9E%E8%A1%8C%E4%B8%BA%E5%AD%A65%E7%90%86%E6%99%BA%E4%B8%8E%E9%87%91%E9%92%B1.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/mAvKrE68Zl/%E6%80%AA%E8%AF%9E%E8%A1%8C%E4%B8%BA%E5%AD%A6%E5%8F%AF%E9%A2%84%E6%B5%8B%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -4854,7 +4826,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 19577,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含副标题"
   },
   {
     "title": "关键对话",
@@ -6010,7 +5982,7 @@
   },
   {
     "title": "混沌",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "什么是系统思维与复杂性"
     ],
@@ -6019,21 +5991,16 @@
     ],
     "count": 1,
     "selected": {
-      "score": 237,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "混沌技术复杂性和互联网的未来",
+      "score": 300,
+      "title": "混沌开创一门新科学图灵图书",
       "author": "",
       "format": "epub",
-      "fileSize": "4.88 MB",
-      "year": "2022",
+      "fileSize": "4.16 MB",
+      "year": "2021",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/pZ8Q75OR09/%E6%B7%B7%E6%B2%8C%E6%8A%80%E6%9C%AF%E5%A4%8D%E6%9D%82%E6%80%A7%E5%92%8C%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E6%9C%AA%E6%9D%A5.html",
-      "rating": "5.0",
-      "quality": "4.5"
+      "bookUrl": "https://z-lib.fm/book/mAvJ3kEXAl/%E6%B7%B7%E6%B2%8C%E5%BC%80%E5%88%9B%E4%B8%80%E9%97%A8%E6%96%B0%E7%A7%91%E5%AD%A6%E5%9B%BE%E7%81%B5%E5%9B%BE%E4%B9%A6.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -6119,7 +6086,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 19300,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含副标题"
   },
   {
     "title": "活出生命的意义",
@@ -6241,7 +6208,7 @@
   },
   {
     "title": "即将到来的浪潮",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "普通人如何理解 AI 变革",
       "AI 风险、治理与技术权力"
@@ -6251,22 +6218,16 @@
     ],
     "count": 2,
     "selected": {
-      "score": -94,
-      "reasons": [
-        "unsupported format",
-        "language english",
-        "exact title",
-        "format fb2"
-      ],
-      "title": "即将到来的浪潮",
+      "score": 300,
+      "title": "浪潮将至技术权力与未来的冲击",
       "author": "",
-      "format": "fb2",
-      "fileSize": "2.73 MB",
-      "year": "2018",
-      "language": "english",
-      "bookUrl": "https://z-lib.fm/book/dAKQXGopp0/%E5%8D%B3%E5%B0%86%E5%88%B0%E6%9D%A5%E7%9A%84%E6%B5%AA%E6%BD%AE.html",
-      "rating": "4.9",
-      "quality": "5.0"
+      "format": "epub",
+      "fileSize": "999 KB",
+      "year": "0",
+      "language": "Chinese",
+      "bookUrl": "https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -6289,7 +6250,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 21183,
-    "reviewNote": "格式 fb2 暂不支持"
+    "reviewNote": "中文出版题名为《浪潮将至》"
   },
   {
     "title": "技术的本质",
@@ -6575,7 +6536,7 @@
   },
   {
     "title": "叫魂",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "中国历史入门",
       "中国社会的现代转型"
@@ -6585,21 +6546,16 @@
     ],
     "count": 2,
     "selected": {
-      "score": 235,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
+      "score": 300,
       "title": "叫魂1768年中国妖术大恐慌",
       "author": "",
       "format": "epub",
-      "fileSize": "2.53 MB",
-      "year": "2012",
+      "fileSize": "485 KB",
+      "year": "2014",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/OZOM6rPMgx/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -6685,7 +6641,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 21352,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含副标题"
   },
   {
     "title": "金钱心理学",
@@ -7451,7 +7407,7 @@
   },
   {
     "title": "就业、利息和货币通论",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何理解经济运行"
     ],
@@ -7460,12 +7416,7 @@
     ],
     "count": 1,
     "selected": {
-      "score": 62,
-      "reasons": [
-        "Chinese",
-        "title mismatch",
-        "format epub"
-      ],
+      "score": 300,
       "title": "就业利息和货币通论",
       "author": "",
       "format": "epub",
@@ -7473,8 +7424,8 @@
       "year": "2020",
       "language": "Chinese",
       "bookUrl": "https://z-lib.fm/book/N0Wamr8RAq/%E5%B0%B1%E4%B8%9A%E5%88%A9%E6%81%AF%E5%92%8C%E8%B4%A7%E5%B8%81%E9%80%9A%E8%AE%BA.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -7560,7 +7511,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 20290,
-    "reviewNote": "标题不匹配"
+    "reviewNote": "标点差异"
   },
   {
     "title": "决断力",
@@ -10172,7 +10123,7 @@
   },
   {
     "title": "启示录",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "产品从 0 到 1",
       "如何做好产品发现",
@@ -10183,21 +10134,16 @@
     ],
     "count": 3,
     "selected": {
-      "score": 237,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "异类不一样的成功启示录第三版",
+      "score": 300,
+      "title": "启示录 打造用户喜爱的产品",
       "author": "",
       "format": "epub",
-      "fileSize": "2.27 MB",
-      "year": "2020",
+      "fileSize": "483 KB",
+      "year": "2011",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/qA9ebzzjAL/%E5%BC%82%E7%B1%BB%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E6%88%90%E5%8A%9F%E5%90%AF%E7%A4%BA%E5%BD%95%E7%AC%AC%E4%B8%89%E7%89%88.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -10283,7 +10229,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 21112,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "产品书完整题名"
   },
   {
     "title": "气候经济与人类未来",
@@ -14447,7 +14393,7 @@
   },
   {
     "title": "为什么",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何建立批判性与证据判断"
     ],
@@ -14456,21 +14402,16 @@
     ],
     "count": 1,
     "selected": {
-      "score": 238,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "世上为什么要有图书馆",
+      "score": 300,
+      "title": "为什么",
       "author": "",
       "format": "epub",
-      "fileSize": "1.05 MB",
-      "year": "2024",
+      "fileSize": "4.65 MB",
+      "year": "2019",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/XZqkJa6Egp/%E4%B8%96%E4%B8%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%9B%BE%E4%B9%A6%E9%A6%86.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/WZpkrBR4AR/%E4%B8%BA%E4%BB%80%E4%B9%88.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -14556,7 +14497,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 18210,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "作者查询后标题精确"
   },
   {
     "title": "文明的冲突",
@@ -20854,7 +20795,7 @@
   },
   {
     "title": "自尊",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何建立稳定的自尊"
     ],
@@ -20863,21 +20804,16 @@
     ],
     "count": 1,
     "selected": {
-      "score": 235,
-      "reasons": [
-        "Chinese",
-        "contains title",
-        "format epub"
-      ],
-      "title": "稳定内核修炼指南如何拥有健康的自尊和他尊",
+      "score": 300,
+      "title": "自尊原书第4版",
       "author": "",
-      "format": "epub",
-      "fileSize": "5.57 MB",
-      "year": "2025",
+      "format": "mobi",
+      "fileSize": "3.85 MB",
+      "year": "2018",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/N0WnkxVXZq/%E7%A8%B3%E5%AE%9A%E5%86%85%E6%A0%B8%E4%BF%AE%E7%82%BC%E6%8C%87%E5%8D%97%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E5%81%A5%E5%BA%B7%E7%9A%84%E8%87%AA%E5%B0%8A%E5%92%8C%E4%BB%96%E5%B0%8A.html",
-      "rating": "2.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/DgXmYVRbAq/%E8%87%AA%E5%B0%8A%E5%8E%9F%E4%B9%A6%E7%AC%AC4%E7%89%88.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -20963,7 +20899,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 23789,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "标题含版本"
   },
   {
     "title": "最好的告别",

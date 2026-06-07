@@ -11,14 +11,14 @@ date: '2026-06-07'
 - 书籍引用：33
 - 已入库引用：5
 - 待入库唯一书名：24
-- z-lib 可优先尝试：23
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：24
+- z-lib 需复核/换源：0
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
-| 禅与摩托车维修艺术 | 1 | 艺术与审美入门 | not_found |
+| 禅与摩托车维修艺术 | 1 | 艺术与审美入门 | 候选: [epub 956 KB 2018](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) |
 | 沉思录 | 2 | 人生哲学入门、如何读懂痛苦、自由与意义 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
 | 当下的力量 | 1 | 如何读懂痛苦、自由与意义 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 道德经 | 1 | 人生哲学入门 | 候选: [epub 609 KB 2021](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) |
@@ -111,4 +111,4 @@ date: '2026-06-07'
 | 像艺术家一样思考 | 观察训练 | planned | 待补 | 候选: [epub 258 KB 2003](https://z-lib.fm/book/XAnK34nXZd/%E5%83%8F%E8%89%BA%E6%9C%AF%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83.html) |
 | 美的历程 | 中国美学 | planned | 待补 | 候选: [epub 4.44 MB 2009](https://z-lib.fm/book/dAKqd4ka07/%E7%BE%8E%E7%9A%84%E5%8E%86%E7%A8%8B.html) |
 | 谈美 | 美学入门 | planned | 待补 | 候选: [epub 7.07 MB 2025](https://z-lib.fm/book/vAyxmLJmgE/%E8%B0%88%E7%BE%8E.html) |
-| 禅与摩托车维修艺术 | 技艺精神 | planned | 待补 | not_found |
+| 禅与摩托车维修艺术 | 技艺精神 | planned | 待补 | 候选: [epub 956 KB 2018](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) |

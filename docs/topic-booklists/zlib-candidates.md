@@ -6,20 +6,20 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 192 个唯一待入库书名：172 个候选可优先尝试下载，19 个需要人工复核或换候选，1 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 192 个唯一待入库书名：187 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 21世纪资本论 | candidate_ready | 标题精确 | epub | 5.61 MB | 2017 | Chinese | [21世纪资本论](https://z-lib.fm/book/dZ64Xx1Jgo/21%E4%B8%96%E7%BA%AA%E8%B5%84%E6%9C%AC%E8%AE%BA.html) | 看懂消费主义、财富与阶层机会 |
 | 爱的艺术 | candidate_ready | 标题精确 | epub | 549 KB | 2019 | Chinese | [爱的艺术](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) | 亲密关系阅读路径 |
 | 巴比伦最富有的人 | candidate_ready | 标题精确 | epub | 3.12 MB | 2026 | Chinese | [巴比伦最富有的人](https://z-lib.fm/book/WZpmq35M0R/%E5%B7%B4%E6%AF%94%E4%BC%A6%E6%9C%80%E5%AF%8C%E6%9C%89%E7%9A%84%E4%BA%BA.html) | 建立财务常识 |
-| 抱紧我 | needs_manual_review | 标题包含目标词但不够精确 | epub | 767 KB | 0 | Chinese | [上海抱紧我](https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html) | 如何面对创伤与自我修复、如何处理亲密关系中的冲突、亲密关系阅读路径 |
+| 抱紧我 | needs_manual_review | 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认 | pdf | 12.49 MB | 2010 | Chinese | [亲爱的我们别吵了](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) | 如何面对创伤与自我修复、如何处理亲密关系中的冲突、亲密关系阅读路径 |
 | 必然 | candidate_ready | 标题精确 | epub | 2.46 MB | 2016 | Chinese | [必然](https://z-lib.fm/book/dZ69j2dbAo/%E5%BF%85%E7%84%B6.html) | 技术社会读什么 |
 | 变革之心 | candidate_ready | 标题精确 | epub | 1.25 MB | 2024 | Chinese | [变革之心](https://z-lib.fm/book/vAyYOY3DAE/%E5%8F%98%E9%9D%A9%E4%B9%8B%E5%BF%83.html) | 如何理解组织中的权力与变革 |
 | 伯恩斯新情绪疗法 | candidate_ready | 标题精确 | epub | 3.36 MB | 2014 | Chinese | [伯恩斯新情绪疗法](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) | 理解焦虑与抑郁、如何停止精神内耗、如何理解情绪 |
 | 不原谅也没关系 | candidate_ready | 标题精确 | epub | 779 KB | 2022 | Chinese | [不原谅也没关系](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) | 如何面对创伤与自我修复、如何识别关系中的安全、边界与退出风险 |
-| 禅与摩托车维修艺术 | not_found | 未命中 |  |  |  |  |  | 艺术与审美入门 |
-| 超级预测 | needs_manual_review | 标题包含目标词但不够精确 | epub | 5.05 MB | 2018 | Chinese | [剪刀石头布如何成为超级预测者](https://z-lib.fm/book/DAaeR4q3A3/%E5%89%AA%E5%88%80%E7%9F%B3%E5%A4%B4%E5%B8%83%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E8%B6%85%E7%BA%A7%E9%A2%84%E6%B5%8B%E8%80%85.html) | 如何理解概率、风险与预测、如何做重大决策 |
+| 禅与摩托车维修艺术 | candidate_ready | 标题精确 | epub | 956 KB | 2018 | Chinese | [禅与摩托车维修艺术](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) | 艺术与审美入门 |
+| 超级预测 | candidate_ready | 中文出版题名为《超预测》 | epub | 663 KB | 2016 | Chinese | [超预测](https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html) | 如何理解概率、风险与预测、如何做重大决策 |
 | 超越感觉 | candidate_ready | 标题精确 | epub | 793 KB | 2015 | Chinese | [超越感觉](https://z-lib.fm/book/Q0Yo4owBAy/%E8%B6%85%E8%B6%8A%E6%84%9F%E8%A7%89.html) | 如何建立批判性与证据判断 |
 | 沉思录 | candidate_ready | 标题精确 | epub | 243 KB | 2018 | Chinese | [沉思录](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) | 成瘾、自控与意义重建、人生哲学入门、如何读懂痛苦、自由与意义 |
 | 成为作家 | candidate_ready | 标题精确 | epub | 6.77 MB | 2011 | Chinese | [成为作家](https://z-lib.fm/book/OZOX4GND0x/%E6%88%90%E4%B8%BA%E4%BD%9C%E5%AE%B6.html) | 写作与创意工作 |
@@ -40,20 +40,20 @@ date: '2026-06-07'
 | 法治及其本土资源 | candidate_ready | 标题精确 | epub | 510 KB | 2013 | Chinese | [法治及其本土资源](https://z-lib.fm/book/YAJ8DVwV0w/%E6%B3%95%E6%B2%BB%E5%8F%8A%E5%85%B6%E6%9C%AC%E5%9C%9F%E8%B5%84%E6%BA%90.html) | 如何建立法律常识、如何识别制度与权力 |
 | 非暴力沟通 | candidate_ready | 标题精确 | epub | 311 KB | 2015 | Chinese | [非暴力沟通](https://z-lib.fm/book/WZxpyBMRZV/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A.html) | 如何提升沟通与表达、如何处理亲密关系中的冲突、亲密关系阅读路径 |
 | 肥胖代码 | candidate_ready | 标题精确 | epub | 2.01 MB | 2019 | Chinese | [肥胖代码](https://z-lib.fm/book/4gMqjyXPg8/%E8%82%A5%E8%83%96%E4%BB%A3%E7%A0%81.html) | 如何理解饮食与代谢 |
-| 风格感觉 | needs_manual_review | 标题包含目标词但不够精确 | epub | 8.62 MB | 2018 | Chinese | [风格感觉21世纪写作指南](https://z-lib.fm/book/n0zOpqKzgk/%E9%A3%8E%E6%A0%BC%E6%84%9F%E8%A7%8921%E4%B8%96%E7%BA%AA%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.html) | 写作与创意工作、阅读、笔记与输出系统 |
-| 风险、不确定性与利润 | needs_manual_review | 标题不匹配 | epub | 531 KB | 2010 | Chinese | [风险不确定性与利润 汉译世界学术名著丛书](https://z-lib.fm/book/W0EVyzz8gl/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6-%E6%B1%89%E8%AF%91%E4%B8%96%E7%95%8C%E5%AD%A6%E6%9C%AF%E5%90%8D%E8%91%97%E4%B8%9B%E4%B9%A6.html) | 如何理解概率、风险与预测 |
+| 风格感觉 | candidate_ready | 标题含副标题 | epub | 8.62 MB | 2018 | Chinese | [风格感觉21世纪写作指南](https://z-lib.fm/book/n0zOpqKzgk/%E9%A3%8E%E6%A0%BC%E6%84%9F%E8%A7%8921%E4%B8%96%E7%BA%AA%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.html) | 写作与创意工作、阅读、笔记与输出系统 |
+| 风险、不确定性与利润 | candidate_ready | 标点差异 | epub | 496 KB | 2010 | Chinese | [风险不确定性与利润](https://z-lib.fm/book/DgXLr63wgq/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6.html) | 如何理解概率、风险与预测 |
 | 服从权威 | candidate_ready | 标题精确 | epub | 995 KB | 2005 | english | [服从权威](https://z-lib.fm/book/Y0LEdKPPdg/%E6%9C%8D%E4%BB%8E%E6%9D%83%E5%A8%81.html) | 如何识别偏见、从众与服从 |
 | 复杂 | candidate_ready | 标题精确 | epub | 9.55 MB | 2018 | Chinese | [复杂](https://z-lib.fm/book/m035R6D4A6/%E5%A4%8D%E6%9D%82.html) | 什么是系统思维与复杂性 |
 | 复杂经济学 | candidate_ready | 标题含副标题/版本 | epub | 9.50 MB | 2018 | Chinese | [复杂经济学经济思想的新框架](https://z-lib.fm/book/nOZOEdVmgx/%E5%A4%8D%E6%9D%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%BB%8F%E6%B5%8E%E6%80%9D%E6%83%B3%E7%9A%84%E6%96%B0%E6%A1%86%E6%9E%B6.html) | 什么是系统思维与复杂性 |
-| 赋能 | needs_manual_review | 标题包含目标词但不够精确 | epub | 3.92 MB | 2025 | Chinese | [ai赋能ai时代生存与发展的10大原则](https://z-lib.fm/book/YAJpKJ6M0w/ai%E8%B5%8B%E8%83%BDai%E6%97%B6%E4%BB%A3%E7%94%9F%E5%AD%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%9A%8410%E5%A4%A7%E5%8E%9F%E5%88%99.html) | 如何建立产品组织与交付系统、如何建立领导力与团队协作 |
+| 赋能 | candidate_ready | 标题含副标题 | epub | 779 KB | 2017 | Chinese | [赋能打造应对不确定性的敏捷团队](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) | 如何建立产品组织与交付系统、如何建立领导力与团队协作 |
 | 高绩效教练 | candidate_ready | 标题含副标题/版本 | epub | 11.31 MB | 2019 | Chinese | [高绩效教练原书第5版](https://z-lib.fm/book/XZm6kp4V0P/%E9%AB%98%E7%BB%A9%E6%95%88%E6%95%99%E7%BB%83%E5%8E%9F%E4%B9%A6%E7%AC%AC5%E7%89%88.html) | 如何建立领导力与团队协作、如何成为有效管理者 |
 | 高难度谈话 | candidate_ready | 标题精确 | epub | 1.54 MB | 2014 | Chinese | [高难度谈话](https://z-lib.fm/book/W0E9m3Od0l/%E9%AB%98%E9%9A%BE%E5%BA%A6%E8%B0%88%E8%AF%9D.html) | 如何提升沟通与表达、如何识别关系中的安全、边界与退出风险、如何处理亲密关系中的冲突 |
 | 高效能人士的七个习惯 | candidate_ready | 标题精确 | epub | 2.36 MB | 2018 | Chinese | [高效能人士的七个习惯](https://z-lib.fm/book/9W0BraQk0X/%E9%AB%98%E6%95%88%E8%83%BD%E4%BA%BA%E5%A3%AB%E7%9A%84%E4%B8%83%E4%B8%AA%E4%B9%A0%E6%83%AF.html) | 如何管理时间、精力与个人系统 |
-| 搞定 | needs_manual_review | 标题包含目标词但不够精确 | epub | 2.55 MB | 2016 | Chinese | [搞定13](https://z-lib.fm/book/dAKYD8Dp07/%E6%90%9E%E5%AE%9A13.html) | 如何提高深度工作能力、如何管理时间、精力与个人系统 |
+| 搞定 | candidate_ready | 标题含副标题 | epub | 2.22 MB | 2016 | Chinese | [搞定 无压工作的艺术](https://z-lib.fm/book/R0PpmoLn09/%E6%90%9E%E5%AE%9A-%E6%97%A0%E5%8E%8B%E5%B7%A5%E4%BD%9C%E7%9A%84%E8%89%BA%E6%9C%AF.html) | 如何提高深度工作能力、如何管理时间、精力与个人系统 |
 | 给孩子一生的安全感 | candidate_ready | 标题精确 | epub | 3.99 MB | 2023 | Chinese | [给孩子一生的安全感](https://z-lib.fm/book/YAJYPqbYgw/%E7%BB%99%E5%AD%A9%E5%AD%90%E4%B8%80%E7%94%9F%E7%9A%84%E5%AE%89%E5%85%A8%E6%84%9F.html) | 如何理解儿童安全感与教育成长 |
-| 工作、消费主义和新穷人 | needs_manual_review | 标题不匹配 | epub | 343 KB | 2021 | Chinese | [工作消费主义和新穷人 work consumerism and the new poor](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) | 城市、空间与生活方式、看懂消费主义、财富与阶层机会 |
+| 工作、消费主义和新穷人 | candidate_ready | 标点差异 | epub | 343 KB | 2021 | Chinese | [工作消费主义和新穷人 work consumerism and the new poor](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) | 城市、空间与生活方式、看懂消费主义、财富与阶层机会 |
 | 公正 | candidate_ready | 标题精确 | mobi | 638 KB | 2012 | Chinese | [公正](https://z-lib.fm/book/PAl99BdvZq/%E5%85%AC%E6%AD%A3.html) | 如何理解公平与正义 |
-| 怪诞行为学 | needs_manual_review | 标题包含目标词但不够精确 | epub | 778 KB | 2018 | Chinese | [怪诞行为学5理智与金钱](https://z-lib.fm/book/m03QkJpaA6/%E6%80%AA%E8%AF%9E%E8%A1%8C%E4%B8%BA%E5%AD%A65%E7%90%86%E6%99%BA%E4%B8%8E%E9%87%91%E9%92%B1.html) | 如何理解行为经济学与金钱心理 |
+| 怪诞行为学 | candidate_ready | 标题含副标题 | epub | 1.60 MB | 2014 | Chinese | [怪诞行为学可预测的非理性](https://z-lib.fm/book/mAvKrE68Zl/%E6%80%AA%E8%AF%9E%E8%A1%8C%E4%B8%BA%E5%AD%A6%E5%8F%AF%E9%A2%84%E6%B5%8B%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7.html) | 如何理解行为经济学与金钱心理 |
 | 关键对话 | candidate_ready | 标题含副标题/版本 | epub | 720 KB | 2012 | Chinese | [关键对话如何高效能沟通](https://z-lib.fm/book/zYAJmnMBgw/%E5%85%B3%E9%94%AE%E5%AF%B9%E8%AF%9D%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E8%83%BD%E6%B2%9F%E9%80%9A.html) | 如何提升沟通与表达、如何建立领导力与团队协作、如何处理亲密关系中的冲突、如何成为有效管理者 |
 | 管理的实践 | candidate_ready | 标题精确 | epub | 1.27 MB | 2009 | Chinese | [管理的实践](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) | 如何成为有效管理者 |
 | 规模 | candidate_ready | 标题精确 | epub | 6.35 MB | 2018 | Chinese | [规模](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) | 如何理解商业竞争、战略与平台效应、什么是系统思维与复杂性 |
@@ -64,13 +64,13 @@ date: '2026-06-07'
 | 孩子：挑战 | candidate_ready | 标题精确 | epub | 565 KB | 2017 | Chinese | [孩子挑战](https://z-lib.fm/book/20rdBOLGAX/%E5%AD%A9%E5%AD%90%E6%8C%91%E6%88%98.html) | 如何做足够好的父母 |
 | 好战略，坏战略 | candidate_ready | 标题精确 | epub | 1.20 MB | 2012 | Chinese | [好战略坏战略](https://z-lib.fm/book/wgeDdVOn07/%E5%A5%BD%E6%88%98%E7%95%A5%E5%9D%8F%E6%88%98%E7%95%A5.html) | 如何理解商业竞争、战略与平台效应 |
 | 唤醒老虎 | candidate_ready | 标题含副标题/版本 | epub | 5.79 MB | 2016 | Chinese | [唤醒老虎启动自我疗愈本能](https://z-lib.fm/book/dAKM9oX107/%E5%94%A4%E9%86%92%E8%80%81%E8%99%8E%E5%90%AF%E5%8A%A8%E8%87%AA%E6%88%91%E7%96%97%E6%84%88%E6%9C%AC%E8%83%BD.html) | 如何面对创伤与自我修复 |
-| 混沌 | needs_manual_review | 标题包含目标词但不够精确 | epub | 4.88 MB | 2022 | Chinese | [混沌技术复杂性和互联网的未来](https://z-lib.fm/book/pZ8Q75OR09/%E6%B7%B7%E6%B2%8C%E6%8A%80%E6%9C%AF%E5%A4%8D%E6%9D%82%E6%80%A7%E5%92%8C%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E6%9C%AA%E6%9D%A5.html) | 什么是系统思维与复杂性 |
+| 混沌 | candidate_ready | 标题含副标题 | epub | 4.16 MB | 2021 | Chinese | [混沌开创一门新科学图灵图书](https://z-lib.fm/book/mAvJ3kEXAl/%E6%B7%B7%E6%B2%8C%E5%BC%80%E5%88%9B%E4%B8%80%E9%97%A8%E6%96%B0%E7%A7%91%E5%AD%A6%E5%9B%BE%E7%81%B5%E5%9B%BE%E4%B9%A6.html) | 什么是系统思维与复杂性 |
 | 活出生命的意义 | candidate_ready | 标题精确 | epub | 1.04 MB | 2019 | Chinese | [活出生命的意义](https://z-lib.fm/book/DgXjKMdQZq/%E6%B4%BB%E5%87%BA%E7%94%9F%E5%91%BD%E7%9A%84%E6%84%8F%E4%B9%89.html) | 成瘾、自控与意义重建、面对丧失、哀伤与死亡、面对衰老、疾病与照护、如何读懂痛苦、自由与意义 |
-| 即将到来的浪潮 | needs_manual_review | 格式 fb2 暂不支持 | fb2 | 2.73 MB | 2018 | english | [即将到来的浪潮](https://z-lib.fm/book/dAKQXGopp0/%E5%8D%B3%E5%B0%86%E5%88%B0%E6%9D%A5%E7%9A%84%E6%B5%AA%E6%BD%AE.html) | 普通人如何理解 AI 变革、AI 风险、治理与技术权力 |
+| 即将到来的浪潮 | candidate_ready | 中文出版题名为《浪潮将至》 | epub | 999 KB | 0 | Chinese | [浪潮将至技术权力与未来的冲击](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) | 普通人如何理解 AI 变革、AI 风险、治理与技术权力 |
 | 技术的本质 | candidate_ready | 标题含副标题/版本 | epub | 7.89 MB | 2018 | Chinese | [技术的本质技术是什么它是如何进化的经典版](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) | 普通人如何理解 AI 变革、技术社会读什么、如何建立科学世界观 |
 | 寂静的春天 | candidate_ready | 标题精确 | epub | 2.77 MB | 2007 | Chinese | [寂静的春天](https://z-lib.fm/book/vAyQ3wxmAE/%E5%AF%82%E9%9D%99%E7%9A%84%E6%98%A5%E5%A4%A9.html) | 如何理解环境、气候与可持续生活 |
 | 监视资本主义时代 | candidate_ready | 标题精确 | mobi | 3.28 MB | 2009 | english | [监视资本主义时代](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) | AI 风险、治理与技术权力、技术社会读什么、如何理解商业竞争、战略与平台效应、看懂平台、算法与注意力风险 |
-| 叫魂 | needs_manual_review | 标题包含目标词但不够精确 | epub | 2.53 MB | 2012 | Chinese | [叫魂1768年中国妖术大恐慌](https://z-lib.fm/book/OZOM6rPMgx/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) | 中国历史入门、中国社会的现代转型 |
+| 叫魂 | candidate_ready | 标题含副标题 | epub | 485 KB | 2014 | Chinese | [叫魂1768年中国妖术大恐慌](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) | 中国历史入门、中国社会的现代转型 |
 | 金钱心理学 | candidate_ready | 标题精确 | pdf | 2.09 MB | 1987 | Chinese | [金钱心理学](https://z-lib.fm/book/XZqkWbPbgp/%E9%87%91%E9%92%B1%E5%BF%83%E7%90%86%E5%AD%A6.html) | 建立财务常识、普通人如何长期投资、如何理解行为经济学与金钱心理 |
 | 金字塔原理 | candidate_ready | 标题精确 | epub | 6.54 MB | 2014 | Chinese | [金字塔原理](https://z-lib.fm/book/zZ4QpebR0b/%E9%87%91%E5%AD%97%E5%A1%94%E5%8E%9F%E7%90%86.html) | 如何提升沟通与表达、阅读、笔记与输出系统 |
 | 经济学原理 | candidate_ready | 标题精确 | epub | 733 KB | 2011 | Chinese | [经济学原理](https://z-lib.fm/book/jZkLW17K03/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html) | 如何理解经济运行 |
@@ -78,7 +78,7 @@ date: '2026-06-07'
 | 精力管理 | candidate_ready | 标题精确 | epub | 2.84 MB | 2015 | Chinese | [精力管理](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) | 如何建立健康生活方式、如何管理时间、精力与个人系统、如何理解压力、恢复与身体信号 |
 | 精益产品手册 | needs_manual_review | 标题不匹配 | pdf | 50.31 MB | 2017 | Chinese | [如何开发一个好产品 精益产品开发实战手册](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) | 如何做好产品发现 |
 | 旧制度与大革命 | candidate_ready | 标题精确 | epub | 5.37 MB | 2013 | Chinese | [旧制度与大革命](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) | 如何识别制度与权力、中国社会的现代转型 |
-| 就业、利息和货币通论 | needs_manual_review | 标题不匹配 | epub | 825 KB | 2020 | Chinese | [就业利息和货币通论](https://z-lib.fm/book/N0Wamr8RAq/%E5%B0%B1%E4%B8%9A%E5%88%A9%E6%81%AF%E5%92%8C%E8%B4%A7%E5%B8%81%E9%80%9A%E8%AE%BA.html) | 如何理解经济运行 |
+| 就业、利息和货币通论 | candidate_ready | 标点差异 | epub | 825 KB | 2020 | Chinese | [就业利息和货币通论](https://z-lib.fm/book/N0Wamr8RAq/%E5%B0%B1%E4%B8%9A%E5%88%A9%E6%81%AF%E5%92%8C%E8%B4%A7%E5%B8%81%E9%80%9A%E8%AE%BA.html) | 如何理解经济运行 |
 | 决断力 | candidate_ready | 标题含副标题/版本 | epub | 376 KB | 2014 | Chinese | [决断力如何在生活与工作中做出更好的选择](https://z-lib.fm/book/lgGajEO8ZV/%E5%86%B3%E6%96%AD%E5%8A%9B%E5%A6%82%E4%BD%95%E5%9C%A8%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%81%9A%E5%87%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%80%89%E6%8B%A9.html) | 如何做重大决策 |
 | 卡片笔记写作法 | candidate_ready | 标题含副标题/版本 | epub | 924 KB | 2021 | Chinese | [卡片笔记写作法 如何实现从阅读到写作](https://z-lib.fm/book/dAorw91wgV/%E5%8D%A1%E7%89%87%E7%AC%94%E8%AE%B0%E5%86%99%E4%BD%9C%E6%B3%95-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%BB%8E%E9%98%85%E8%AF%BB%E5%88%B0%E5%86%99%E4%BD%9C.html) | 阅读、笔记与输出系统 |
 | 开放社会及其敌人 | candidate_ready | 标题精确 | epub | 510 KB | 1999 | Chinese | [开放社会及其敌人](https://z-lib.fm/book/Y0LdrV8X0K/%E5%BC%80%E6%94%BE%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E6%95%8C%E4%BA%BA.html) | AI 风险、治理与技术权力、如何理解公平与正义、如何理解国际秩序与地缘风险、如何读懂痛苦、自由与意义 |
@@ -103,7 +103,7 @@ date: '2026-06-07'
 | 女士品茶 | candidate_ready | 标题精确 | epub | 305 KB | 2010 | Chinese | [女士品茶](https://z-lib.fm/book/W0BX1pxrAX/%E5%A5%B3%E5%A3%AB%E5%93%81%E8%8C%B6.html) | 如何建立批判性与证据判断 |
 | 批判性思维工具 | candidate_ready | 标题精确 | epub | 2.46 MB | 2013 | Chinese | [批判性思维工具](https://z-lib.fm/book/Wwge6BonA7/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7.html) | 如何建立批判性与证据判断 |
 | 平台革命 | candidate_ready | 标题含副标题/版本 | epub | 3.31 MB | 2017 | Chinese | [平台革命改变世界的商业模式](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) | 技术社会读什么、如何理解商业竞争、战略与平台效应、看懂平台、算法与注意力风险 |
-| 启示录 | needs_manual_review | 标题包含目标词但不够精确 | epub | 2.27 MB | 2020 | Chinese | [异类不一样的成功启示录第三版](https://z-lib.fm/book/qA9ebzzjAL/%E5%BC%82%E7%B1%BB%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E6%88%90%E5%8A%9F%E5%90%AF%E7%A4%BA%E5%BD%95%E7%AC%AC%E4%B8%89%E7%89%88.html) | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 |
+| 启示录 | candidate_ready | 产品书完整题名 | epub | 483 KB | 2011 | Chinese | [启示录 打造用户喜爱的产品](https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html) | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 |
 | 气候经济与人类未来 | candidate_ready | 标题精确 | epub | 2.14 MB | 2021 | Chinese | [气候经济与人类未来](https://z-lib.fm/book/WZpRqxQegR/%E6%B0%94%E5%80%99%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5.html) | 如何理解环境、气候与可持续生活 |
 | 情绪急救 | candidate_ready | 标题含副标题/版本 | epub | 782 KB | 2015 | Chinese | [情绪急救应对各种日常心理伤害的策略与方法](https://z-lib.fm/book/7A5V27odZ5/%E6%83%85%E7%BB%AA%E6%80%A5%E6%95%91%E5%BA%94%E5%AF%B9%E5%90%84%E7%A7%8D%E6%97%A5%E5%B8%B8%E5%BF%83%E7%90%86%E4%BC%A4%E5%AE%B3%E7%9A%84%E7%AD%96%E7%95%A5%E4%B8%8E%E6%96%B9%E6%B3%95.html) | 如何理解情绪 |
 | 情绪勒索 | candidate_ready | 标题精确 | epub | 654 KB | 2017 | Chinese | [情绪勒索](https://z-lib.fm/book/PAl9r6v4Zq/%E6%83%85%E7%BB%AA%E5%8B%92%E7%B4%A2.html) | 如何识别关系中的安全、边界与退出风险 |
@@ -141,7 +141,7 @@ date: '2026-06-07'
 | 团队协作的五大障碍 | candidate_ready | 标题精确 | epub | 726 KB | 2022 | Chinese | [团队协作的五大障碍](https://z-lib.fm/book/zZ45wvyG0b/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E7%9A%84%E4%BA%94%E5%A4%A7%E9%9A%9C%E7%A2%8D.html) | 如何建立领导力与团队协作 |
 | 完整的成长 | candidate_ready | 标题含副标题/版本 | epub | 209 KB | 0 | Chinese | [完整的成长儿童生命的自我创造](https://z-lib.fm/book/kZboemPY0R/%E5%AE%8C%E6%95%B4%E7%9A%84%E6%88%90%E9%95%BF%E5%84%BF%E7%AB%A5%E7%94%9F%E5%91%BD%E7%9A%84%E8%87%AA%E6%88%91%E5%88%9B%E9%80%A0.html) | 如何理解儿童安全感与教育成长 |
 | 万历十五年 | candidate_ready | 标题精确 | epub | 1.69 MB | 2014 | Chinese | [万历十五年](https://z-lib.fm/book/zZ465QORgb/%E4%B8%87%E5%8E%86%E5%8D%81%E4%BA%94%E5%B9%B4.html) | 中国历史入门、中国社会的现代转型 |
-| 为什么 | needs_manual_review | 标题包含目标词但不够精确 | epub | 1.05 MB | 2024 | Chinese | [世上为什么要有图书馆](https://z-lib.fm/book/XZqkJa6Egp/%E4%B8%96%E4%B8%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%9B%BE%E4%B9%A6%E9%A6%86.html) | 如何建立批判性与证据判断 |
+| 为什么 | candidate_ready | 作者查询后标题精确 | epub | 4.65 MB | 2019 | Chinese | [为什么](https://z-lib.fm/book/WZpkrBR4AR/%E4%B8%BA%E4%BB%80%E4%B9%88.html) | 如何建立批判性与证据判断 |
 | 文明的冲突 | candidate_ready | 标题含副标题/版本 | epub | 1.45 MB | 2009 | Chinese | [文明的冲突与世界秩序的重建](https://z-lib.fm/book/m033dM5D06/%E6%96%87%E6%98%8E%E7%9A%84%E5%86%B2%E7%AA%81%E4%B8%8E%E4%B8%96%E7%95%8C%E7%A7%A9%E5%BA%8F%E7%9A%84%E9%87%8D%E5%BB%BA.html) | 如何理解国际秩序与地缘风险、如何理解文明兴衰 |
 | 文学的故事 | candidate_ready | 标题精确 | mobi | 7.11 MB | 2009 | english | [文学的故事](https://z-lib.fm/book/WZx1jVlEO0/%E6%96%87%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B.html) | 文学与人文阅读入门 |
 | 文学回忆录 | candidate_ready | 标题精确 | epub | 1.46 MB | 2014 | Chinese | [文学回忆录](https://z-lib.fm/book/4gMoyJPoZ8/%E6%96%87%E5%AD%A6%E5%9B%9E%E5%BF%86%E5%BD%95.html) | 文学与人文阅读入门 |
@@ -199,6 +199,6 @@ date: '2026-06-07'
 | 注意力商人 | candidate_ready | 标题精确 | epub | 695 KB | 2018 | Chinese | [注意力商人](https://z-lib.fm/book/OZOpaQdp0x/%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%95%86%E4%BA%BA.html) | 如何理解媒体、舆论与公共讨论、看懂平台、算法与注意力风险 |
 | 自卑与超越 | candidate_ready | 标题精确 | epub | 748 KB | 2022 | Chinese | [自卑与超越](https://z-lib.fm/book/dZ686jWQgo/%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A.html) | 如何建立稳定的自尊 |
 | 自控力 | candidate_ready | 标题精确 | epub | 401 KB | 2012 | Chinese | [自控力](https://z-lib.fm/book/XAn2W4XJAd/%E8%87%AA%E6%8E%A7%E5%8A%9B.html) | 成瘾、自控与意义重建、如何建立可持续习惯 |
-| 自尊 | needs_manual_review | 标题包含目标词但不够精确 | epub | 5.57 MB | 2025 | Chinese | [稳定内核修炼指南如何拥有健康的自尊和他尊](https://z-lib.fm/book/N0WnkxVXZq/%E7%A8%B3%E5%AE%9A%E5%86%85%E6%A0%B8%E4%BF%AE%E7%82%BC%E6%8C%87%E5%8D%97%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E5%81%A5%E5%BA%B7%E7%9A%84%E8%87%AA%E5%B0%8A%E5%92%8C%E4%BB%96%E5%B0%8A.html) | 如何建立稳定的自尊 |
+| 自尊 | candidate_ready | 标题含版本 | mobi | 3.85 MB | 2018 | Chinese | [自尊原书第4版](https://z-lib.fm/book/DgXmYVRbAq/%E8%87%AA%E5%B0%8A%E5%8E%9F%E4%B9%A6%E7%AC%AC4%E7%89%88.html) | 如何建立稳定的自尊 |
 | 最好的告别 | candidate_ready | 标题精确 | epub | 223 KB | 2018 | Chinese | [最好的告别](https://z-lib.fm/book/zZ24JrlqgE/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%91%8A%E5%88%AB.html) | 面对丧失、哀伤与死亡、面对衰老、疾病与照护 |
 | AI 2041 | candidate_ready | 标题含副标题/版本 | epub | 4.70 MB | 2021 | Traditional Chinese | [ai 2041 預見10個未來新世界](https://z-lib.fm/book/lgGpJb4yAV/ai-2041-%E9%A0%90%E8%A6%8B10%E5%80%8B%E6%9C%AA%E4%BE%86%E6%96%B0%E4%B8%96%E7%95%8C.html) | 普通人如何理解 AI 变革 |

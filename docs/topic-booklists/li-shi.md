@@ -11,8 +11,8 @@ date: '2026-06-07'
 - 书籍引用：36
 - 已入库引用：8
 - 待入库唯一书名：17
-- z-lib 可优先尝试：16
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：17
+- z-lib 需复核/换源：0
 
 ## 待入库书目
 
@@ -20,7 +20,7 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 大国的兴衰 | 3 | 如何理解国际秩序与地缘风险、如何理解世界历史、如何理解文明兴衰 | 候选: [pdf 39.27 MB 1989](https://z-lib.fm/book/VZw4zpae0m/%E5%A4%A7%E5%9B%BD%E7%9A%84%E5%85%B4%E8%A1%B0.html) |
 | 国家为什么会失败 | 2 | 如何理解国际秩序与地缘风险、如何理解文明兴衰 | 候选: [mobi 7.50 MB 2013](https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html) |
-| 叫魂 | 2 | 中国历史入门、中国社会的现代转型 | 复核: [epub 2.53 MB 2012](https://z-lib.fm/book/OZOM6rPMgx/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
+| 叫魂 | 2 | 中国历史入门、中国社会的现代转型 | 候选: [epub 485 KB 2014](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
 | 旧制度与大革命 | 1 | 中国社会的现代转型 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 开放社会及其敌人 | 1 | 如何理解国际秩序与地缘风险 | 候选: [epub 510 KB 1999](https://z-lib.fm/book/Y0LdrV8X0K/%E5%BC%80%E6%94%BE%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E6%95%8C%E4%BA%BA.html) |
 | 全球通史 | 1 | 如何理解世界历史 | 候选: [epub 10.69 MB 2017](https://z-lib.fm/book/XZmJ3Lo80P/%E5%85%A8%E7%90%83%E9%80%9A%E5%8F%B2%E4%BB%8E%E5%8F%B2%E5%89%8D%E5%8F%B2%E5%88%B0%E4%BA%8C%E5%8D%81%E4%B8%80%E4%B8%96%E7%BA%AA%E7%AC%AC7%E7%89%88%E4%BF%AE%E8%AE%A2%E7%89%88.html) |
@@ -89,7 +89,7 @@ date: '2026-06-07'
 | 中国通史 | 通史骨架 | planned | 待补 | 候选: [epub 12.26 MB 2016](https://z-lib.fm/book/jAD6L2W30k/%E4%B8%AD%E5%9B%BD%E9%80%9A%E5%8F%B2.html) |
 | 中国历代政治得失 | 制度线索 | planned | 待补 | 候选: [epub 477 KB 2022](https://z-lib.fm/book/rAdVVPLm0B/%E4%B8%AD%E5%9B%BD%E5%8E%86%E4%BB%A3%E6%94%BF%E6%B2%BB%E5%BE%97%E5%A4%B1.html) |
 | 万历十五年 | 明代切片 | planned | 待补 | 候选: [epub 1.69 MB 2014](https://z-lib.fm/book/zZ465QORgb/%E4%B8%87%E5%8E%86%E5%8D%81%E4%BA%94%E5%B9%B4.html) |
-| 叫魂 | 清代社会 | planned | 待补 | 复核: [epub 2.53 MB 2012](https://z-lib.fm/book/OZOM6rPMgx/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
+| 叫魂 | 清代社会 | planned | 待补 | 候选: [epub 485 KB 2014](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
 | 中国近代史 | 近代变局 | planned | 待补 | 候选: [mobi 10.60 MB 2011](https://z-lib.fm/book/Q0YLLjnBZy/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E5%8F%B2.html) |
 | 枢纽 | 转折解释 | planned | 待补 | 候选: [epub 934 KB 2018](https://z-lib.fm/book/dAok6m5KAV/%E6%9E%A2%E7%BA%BD.html) |
 | 曾国藩传 | 人物收束 | in_library | 张宏杰 | ceng-guo-fan-chuan / books/历史传记/张宏杰-曾国藩传.md |
@@ -104,7 +104,7 @@ date: '2026-06-07'
 | 中国历代政治得失 | 制度传统 | planned | 待补 | 候选: [epub 477 KB 2022](https://z-lib.fm/book/rAdVVPLm0B/%E4%B8%AD%E5%9B%BD%E5%8E%86%E4%BB%A3%E6%94%BF%E6%B2%BB%E5%BE%97%E5%A4%B1.html) |
 | 万历十五年 | 明代切片 | planned | 待补 | 候选: [epub 1.69 MB 2014](https://z-lib.fm/book/zZ465QORgb/%E4%B8%87%E5%8E%86%E5%8D%81%E4%BA%94%E5%B9%B4.html) |
 | 中国近代史 | 近代变局 | planned | 待补 | 候选: [mobi 10.60 MB 2011](https://z-lib.fm/book/Q0YLLjnBZy/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E5%8F%B2.html) |
-| 叫魂 | 基层恐慌 | planned | 待补 | 复核: [epub 2.53 MB 2012](https://z-lib.fm/book/OZOM6rPMgx/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
+| 叫魂 | 基层恐慌 | planned | 待补 | 候选: [epub 485 KB 2014](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
 | 枢纽 | 历史枢纽 | planned | 待补 | 候选: [epub 934 KB 2018](https://z-lib.fm/book/dAok6m5KAV/%E6%9E%A2%E7%BA%BD.html) |
 | 置身事内 | 当代治理 | in_library | 兰小欢 | zhi-shen-shi-nei / books/社会科学/经济学/兰小欢-置身事内.md |
 | 旧制度与大革命 | 比较收束 | planned | 待补 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |

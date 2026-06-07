@@ -11,8 +11,8 @@ date: '2026-06-07'
 - 书籍引用：49
 - 已入库引用：22
 - 待入库唯一书名：23
-- z-lib 可优先尝试：22
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：23
+- z-lib 需复核/换源：0
 
 ## 待入库书目
 
@@ -20,7 +20,7 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 第二性 | 1 | 如何理解性别与社会结构 | 候选: [epub 1.50 MB 2025](https://z-lib.fm/book/rAdd6ePWAB/%E7%AC%AC%E4%BA%8C%E6%80%A7.html) |
 | 法治及其本土资源 | 2 | 如何建立法律常识、如何识别制度与权力 | 候选: [epub 510 KB 2013](https://z-lib.fm/book/YAJ8DVwV0w/%E6%B3%95%E6%B2%BB%E5%8F%8A%E5%85%B6%E6%9C%AC%E5%9C%9F%E8%B5%84%E6%BA%90.html) |
-| 工作、消费主义和新穷人 | 1 | 城市、空间与生活方式 | 复核: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
+| 工作、消费主义和新穷人 | 1 | 城市、空间与生活方式 | 候选: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
 | 公正 | 1 | 如何理解公平与正义 | 候选: [mobi 638 KB 2012](https://z-lib.fm/book/PAl99BdvZq/%E5%85%AC%E6%AD%A3.html) |
 | 国家为什么会失败 | 1 | 如何识别制度与权力 | 候选: [mobi 7.50 MB 2013](https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html) |
 | 过滤泡 | 1 | 如何理解媒体、舆论与公共讨论 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
@@ -54,7 +54,7 @@ date: '2026-06-07'
 | 城市的胜利 | 城市经济 | in_library | 爱德华·格莱泽 | cheng-shi-de-sheng-li / books/社会科学/爱德华·格莱泽-城市的胜利.md |
 | 社会共通资本 | 公共条件 | in_library | 宇泽弘文 | she-hui-gong-tong-zi-ben / books/社会科学/宇泽弘文-社会共通资本.md |
 | 乡土中国 | 乡土对照 | planned | 待补 | 候选: [epub 6.95 MB 2012](https://z-lib.fm/book/601M8DVl04/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD.html) |
-| 工作、消费主义和新穷人 | 工作消费 | planned | 待补 | 复核: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
+| 工作、消费主义和新穷人 | 工作消费 | planned | 待补 | 候选: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
 | 有闲阶级论 | 阶层展示 | in_library | 托斯丹·凡勃伦 | you-xian-jie-ji-lun / books/社会科学/托斯丹·凡勃伦-有闲阶级论.md |
 
 ### 如何建立法律常识

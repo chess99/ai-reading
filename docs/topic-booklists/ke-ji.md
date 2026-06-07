@@ -11,8 +11,8 @@ date: '2026-06-07'
 - 书籍引用：33
 - 已入库引用：8
 - 待入库唯一书名：16
-- z-lib 可优先尝试：15
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：16
+- z-lib 需复核/换源：0
 
 ## 待入库书目
 
@@ -21,7 +21,7 @@ date: '2026-06-07'
 | 必然 | 1 | 技术社会读什么 | 候选: [epub 2.46 MB 2016](https://z-lib.fm/book/dZ69j2dbAo/%E5%BF%85%E7%84%B6.html) |
 | 对齐问题 | 1 | AI 风险、治理与技术权力 | 候选: [mobi 6.16 MB 2020](https://z-lib.fm/book/DAadqWa33g/%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98.html) |
 | 过滤泡 | 2 | 看懂平台、算法与注意力风险、数字公共生活与信息网络 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
-| 即将到来的浪潮 | 2 | 普通人如何理解 AI 变革、AI 风险、治理与技术权力 | 复核: [fb2 2.73 MB 2018](https://z-lib.fm/book/dAKQXGopp0/%E5%8D%B3%E5%B0%86%E5%88%B0%E6%9D%A5%E7%9A%84%E6%B5%AA%E6%BD%AE.html) |
+| 即将到来的浪潮 | 2 | 普通人如何理解 AI 变革、AI 风险、治理与技术权力 | 候选: [epub 999 KB 0](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) |
 | 技术的本质 | 2 | 技术社会读什么、普通人如何理解 AI 变革 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
 | 监视资本主义时代 | 3 | 技术社会读什么、看懂平台、算法与注意力风险、AI 风险、治理与技术权力 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
 | 开放社会及其敌人 | 1 | AI 风险、治理与技术权力 | 候选: [epub 510 KB 1999](https://z-lib.fm/book/Y0LdrV8X0K/%E5%BC%80%E6%94%BE%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E6%95%8C%E4%BA%BA.html) |
@@ -74,7 +74,7 @@ date: '2026-06-07'
 | 人机共智 | 协作入口 | planned | 待补 | 候选: [pdf 7.55 MB 2006](https://z-lib.fm/book/E0RYrXVJMZ/%E4%BA%BA%E6%9C%BA%E5%85%B1%E6%99%BA.html) |
 | AI 2041 | 场景想象 | planned | 待补 | 候选: [epub 4.70 MB 2021](https://z-lib.fm/book/lgGpJb4yAV/ai-2041-%E9%A0%90%E8%A6%8B10%E5%80%8B%E6%9C%AA%E4%BE%86%E6%96%B0%E4%B8%96%E7%95%8C.html) |
 | 生命3.0 | 智能边界 | planned | 待补 | 候选: [epub 8.52 MB 2018](https://z-lib.fm/book/QAVRwj19AG/%E7%94%9F%E5%91%BD30.html) |
-| 即将到来的浪潮 | 扩散风险 | planned | 待补 | 复核: [fb2 2.73 MB 2018](https://z-lib.fm/book/dAKQXGopp0/%E5%8D%B3%E5%B0%86%E5%88%B0%E6%9D%A5%E7%9A%84%E6%B5%AA%E6%BD%AE.html) |
+| 即将到来的浪潮 | 扩散风险 | planned | 待补 | 候选: [epub 999 KB 0](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) |
 | 未来呼啸而来 | 产业变化 | in_library | 彼得·戴曼迪斯,史蒂芬·科特勒 | wei-lai-hu-xiao-er-lai / books/社会科学/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md |
 | 技术的本质 | 技术演化 | planned | 待补 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
 
@@ -98,7 +98,7 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 即将到来的浪潮 | 扩散风险 | planned | 待补 | 复核: [fb2 2.73 MB 2018](https://z-lib.fm/book/dAKQXGopp0/%E5%8D%B3%E5%B0%86%E5%88%B0%E6%9D%A5%E7%9A%84%E6%B5%AA%E6%BD%AE.html) |
+| 即将到来的浪潮 | 扩散风险 | planned | 待补 | 候选: [epub 999 KB 0](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) |
 | 对齐问题 | 目标对齐 | planned | 待补 | 候选: [mobi 6.16 MB 2020](https://z-lib.fm/book/DAadqWa33g/%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98.html) |
 | 算法霸权 | 算法歧视 | planned | 待补 | 候选: [epub 538 KB 2018](https://z-lib.fm/book/W0BXBP2QAX/%E7%AE%97%E6%B3%95%E9%9C%B8%E6%9D%83.html) |
 | 监视资本主义时代 | 数据权力 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |

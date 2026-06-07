@@ -11,8 +11,8 @@ date: '2026-06-07'
 - 书籍引用：46
 - 已入库引用：23
 - 待入库唯一书名：17
-- z-lib 可优先尝试：15
-- z-lib 需复核/换源：2
+- z-lib 可优先尝试：16
+- z-lib 需复核/换源：1
 
 ## 待入库书目
 
@@ -20,7 +20,7 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 变革之心 | 1 | 如何理解组织中的权力与变革 | 候选: [epub 1.25 MB 2024](https://z-lib.fm/book/vAyYOY3DAE/%E5%8F%98%E9%9D%A9%E4%B9%8B%E5%BF%83.html) |
 | 第五项修炼 | 1 | 看懂组织运转 | 候选: [epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
-| 赋能 | 1 | 如何建立领导力与团队协作 | 复核: [epub 3.92 MB 2025](https://z-lib.fm/book/YAJpKJ6M0w/ai%E8%B5%8B%E8%83%BDai%E6%97%B6%E4%BB%A3%E7%94%9F%E5%AD%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%9A%8410%E5%A4%A7%E5%8E%9F%E5%88%99.html) |
+| 赋能 | 1 | 如何建立领导力与团队协作 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 高绩效教练 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 候选: [epub 11.31 MB 2019](https://z-lib.fm/book/XZm6kp4V0P/%E9%AB%98%E7%BB%A9%E6%95%88%E6%95%99%E7%BB%83%E5%8E%9F%E4%B9%A6%E7%AC%AC5%E7%89%88.html) |
 | 关键对话 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 候选: [epub 720 KB 2012](https://z-lib.fm/book/zYAJmnMBgw/%E5%85%B3%E9%94%AE%E5%AF%B9%E8%AF%9D%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E8%83%BD%E6%B2%9F%E9%80%9A.html) |
 | 管理的实践 | 1 | 如何成为有效管理者 | 候选: [epub 1.27 MB 2009](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) |
@@ -79,7 +79,7 @@ date: '2026-06-07'
 | 团队协作的五大障碍 | 团队失效 | planned | 待补 | 候选: [epub 726 KB 2022](https://z-lib.fm/book/zZ45wvyG0b/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E7%9A%84%E4%BA%94%E5%A4%A7%E9%9A%9C%E7%A2%8D.html) |
 | 关键对话 | 分歧处理 | planned | 待补 | 候选: [epub 720 KB 2012](https://z-lib.fm/book/zYAJmnMBgw/%E5%85%B3%E9%94%AE%E5%AF%B9%E8%AF%9D%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E8%83%BD%E6%B2%9F%E9%80%9A.html) |
 | 无畏的组织 | 心理安全 | planned | 待补 | 复核: [fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
-| 赋能 | 授权协作 | planned | 待补 | 复核: [epub 3.92 MB 2025](https://z-lib.fm/book/YAJpKJ6M0w/ai%E8%B5%8B%E8%83%BDai%E6%97%B6%E4%BB%A3%E7%94%9F%E5%AD%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%9A%8410%E5%A4%A7%E5%8E%9F%E5%88%99.html) |
+| 赋能 | 授权协作 | planned | 待补 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 重新定义团队 | 团队结构 | planned | 待补 | 候选: [epub 4.07 MB 2015](https://z-lib.fm/book/XAnlBoo70d/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%9B%A2%E9%98%9F%E8%B0%B7%E6%AD%8C%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C.html) |
 | 权力 | 权力现实 | in_library | 杰弗瑞·菲佛 | quan-li / books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md |
 

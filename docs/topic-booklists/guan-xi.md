@@ -19,7 +19,7 @@ date: '2026-06-07'
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 爱的艺术 | 1 | 亲密关系阅读路径 | 候选: [epub 549 KB 2019](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
-| 抱紧我 | 2 | 亲密关系阅读路径、如何处理亲密关系中的冲突 | 复核: [epub 767 KB 0](https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html) |
+| 抱紧我 | 2 | 亲密关系阅读路径、如何处理亲密关系中的冲突 | 复核: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 不原谅也没关系 | 1 | 如何识别关系中的安全、边界与退出风险 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
 | 非暴力沟通 | 3 | 亲密关系阅读路径、如何处理亲密关系中的冲突、如何提升沟通与表达 | 候选: [epub 311 KB 2015](https://z-lib.fm/book/WZxpyBMRZV/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A.html) |
 | 高难度谈话 | 3 | 如何处理亲密关系中的冲突、如何识别关系中的安全、边界与退出风险、如何提升沟通与表达 | 候选: [epub 1.54 MB 2014](https://z-lib.fm/book/W0E9m3Od0l/%E9%AB%98%E9%9A%BE%E5%BA%A6%E8%B0%88%E8%AF%9D.html) |
@@ -54,7 +54,7 @@ date: '2026-06-07'
 | 亲密关系 | 关系总览 | in_library | 罗兰·米勒 | qin-mi-guan-xi / books/心理学/罗兰·米勒-亲密关系.md |
 | 依恋 | 安全感框架 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
 | 幸福的婚姻 | 长期关系研究 | planned | 待补 | 候选: [epub 8.42 MB 0](https://z-lib.fm/book/pZ882RzNZ9/%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%A9%9A%E5%A7%BB%E5%85%A8%E6%96%B0%E5%8D%87%E7%BA%A7%E7%89%88.html) |
-| 抱紧我 | 情绪循环 | planned | 待补 | 复核: [epub 767 KB 0](https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html) |
+| 抱紧我 | 情绪循环 | planned | 待补 | 复核: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 爱的艺术 | 爱的哲学 | planned | 待补 | 候选: [epub 549 KB 2019](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
 | 沟通的本质 | 沟通机制 | in_library | 罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特 | gou-tong-de-ben-zhi / books/心理学/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md |
 | 非暴力沟通 | 表达练习 | planned | 待补 | 候选: [epub 311 KB 2015](https://z-lib.fm/book/WZxpyBMRZV/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A.html) |
@@ -69,7 +69,7 @@ date: '2026-06-07'
 | 亲密关系 | 冲突总览 | in_library | 罗兰·米勒 | qin-mi-guan-xi / books/心理学/罗兰·米勒-亲密关系.md |
 | 依恋 | 依恋需求 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
 | 幸福的婚姻 | 修复研究 | planned | 待补 | 候选: [epub 8.42 MB 0](https://z-lib.fm/book/pZ882RzNZ9/%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%A9%9A%E5%A7%BB%E5%85%A8%E6%96%B0%E5%8D%87%E7%BA%A7%E7%89%88.html) |
-| 抱紧我 | 情绪聚焦 | planned | 待补 | 复核: [epub 767 KB 0](https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html) |
+| 抱紧我 | 情绪聚焦 | planned | 待补 | 复核: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 非暴力沟通 | 表达方法 | planned | 待补 | 候选: [epub 311 KB 2015](https://z-lib.fm/book/WZxpyBMRZV/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A.html) |
 | 高难度谈话 | 困难议题 | planned | 待补 | 候选: [epub 1.54 MB 2014](https://z-lib.fm/book/W0E9m3Od0l/%E9%AB%98%E9%9A%BE%E5%BA%A6%E8%B0%88%E8%AF%9D.html) |
 | 关键对话 | 高风险对话 | planned | 待补 | 候选: [epub 720 KB 2012](https://z-lib.fm/book/zYAJmnMBgw/%E5%85%B3%E9%94%AE%E5%AF%B9%E8%AF%9D%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E8%83%BD%E6%B2%9F%E9%80%9A.html) |

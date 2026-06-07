@@ -11,14 +11,14 @@ date: '2026-06-07'
 - 书籍引用：49
 - 已入库引用：13
 - 待入库唯一书名：25
-- z-lib 可优先尝试：23
-- z-lib 需复核/换源：2
+- z-lib 可优先尝试：24
+- z-lib 需复核/换源：1
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
-| 抱紧我 | 1 | 如何面对创伤与自我修复 | 复核: [epub 767 KB 0](https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html) |
+| 抱紧我 | 1 | 如何面对创伤与自我修复 | 复核: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 伯恩斯新情绪疗法 | 3 | 理解焦虑与抑郁、如何理解情绪、如何停止精神内耗 | 候选: [epub 3.36 MB 2014](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) |
 | 不原谅也没关系 | 1 | 如何面对创伤与自我修复 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
 | 沉思录 | 1 | 成瘾、自控与意义重建 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
@@ -41,7 +41,7 @@ date: '2026-06-07'
 | 终身成长 | 1 | 如何建立稳定的自尊 | 候选: [epub 473 KB 2017](https://z-lib.fm/book/k07kk9m40J/%E7%BB%88%E8%BA%AB%E6%88%90%E9%95%BF.html) |
 | 自卑与超越 | 1 | 如何建立稳定的自尊 | 候选: [epub 748 KB 2022](https://z-lib.fm/book/dZ686jWQgo/%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A.html) |
 | 自控力 | 1 | 成瘾、自控与意义重建 | 候选: [epub 401 KB 2012](https://z-lib.fm/book/XAn2W4XJAd/%E8%87%AA%E6%8E%A7%E5%8A%9B.html) |
-| 自尊 | 1 | 如何建立稳定的自尊 | 复核: [epub 5.57 MB 2025](https://z-lib.fm/book/N0WnkxVXZq/%E7%A8%B3%E5%AE%9A%E5%86%85%E6%A0%B8%E4%BF%AE%E7%82%BC%E6%8C%87%E5%8D%97%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E5%81%A5%E5%BA%B7%E7%9A%84%E8%87%AA%E5%B0%8A%E5%92%8C%E4%BB%96%E5%B0%8A.html) |
+| 自尊 | 1 | 如何建立稳定的自尊 | 候选: [mobi 3.85 MB 2018](https://z-lib.fm/book/DgXmYVRbAq/%E8%87%AA%E5%B0%8A%E5%8E%9F%E4%B9%A6%E7%AC%AC4%E7%89%88.html) |
 | 最好的告别 | 1 | 面对丧失、哀伤与死亡 | 候选: [epub 223 KB 2018](https://z-lib.fm/book/zZ24JrlqgE/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%91%8A%E5%88%AB.html) |
 
 ## 主题明细
@@ -94,7 +94,7 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 被讨厌的勇气 | 边界入口 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md |
-| 自尊 | 自尊机制 | planned | 待补 | 复核: [epub 5.57 MB 2025](https://z-lib.fm/book/N0WnkxVXZq/%E7%A8%B3%E5%AE%9A%E5%86%85%E6%A0%B8%E4%BF%AE%E7%82%BC%E6%8C%87%E5%8D%97%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E5%81%A5%E5%BA%B7%E7%9A%84%E8%87%AA%E5%B0%8A%E5%92%8C%E4%BB%96%E5%B0%8A.html) |
+| 自尊 | 自尊机制 | planned | 待补 | 候选: [mobi 3.85 MB 2018](https://z-lib.fm/book/DgXmYVRbAq/%E8%87%AA%E5%B0%8A%E5%8E%9F%E4%B9%A6%E7%AC%AC4%E7%89%88.html) |
 | 自卑与超越 | 补偿心理 | planned | 待补 | 候选: [epub 748 KB 2022](https://z-lib.fm/book/dZ686jWQgo/%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A.html) |
 | 终身成长 | 成长心态 | planned | 待补 | 候选: [epub 473 KB 2017](https://z-lib.fm/book/k07kk9m40J/%E7%BB%88%E8%BA%AB%E6%88%90%E9%95%BF.html) |
 | 性格的陷阱 | 早期图式 | planned | 待补 | 候选: [epub 2.99 MB 2019](https://z-lib.fm/book/rAd3J9r8gB/%E6%80%A7%E6%A0%BC%E7%9A%84%E9%99%B7%E9%98%B1%E5%A6%82%E4%BD%95%E4%BF%AE%E8%A1%A5%E7%AB%A5%E5%B9%B4%E5%BD%A2%E6%88%90%E7%9A%84%E6%80%A7%E6%A0%BC%E7%BC%BA%E9%99%B7.html) |
@@ -125,7 +125,7 @@ date: '2026-06-07'
 | 唤醒老虎 | 躯体经验路径 | planned | 待补 | 候选: [epub 5.79 MB 2016](https://z-lib.fm/book/dAKM9oX107/%E5%94%A4%E9%86%92%E8%80%81%E8%99%8E%E5%90%AF%E5%8A%A8%E8%87%AA%E6%88%91%E7%96%97%E6%84%88%E6%9C%AC%E8%83%BD.html) |
 | 不原谅也没关系 | 复杂创伤边界 | planned | 待补 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
 | 依恋 | 关系安全框架 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
-| 抱紧我 | 亲密关系修复 | planned | 待补 | 复核: [epub 767 KB 0](https://z-lib.fm/book/VZwbGVDnAm/%E4%B8%8A%E6%B5%B7%E6%8A%B1%E7%B4%A7%E6%88%91.html) |
+| 抱紧我 | 亲密关系修复 | planned | 待补 | 复核: [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 也许你该找个人聊聊 | 咨询关系参照 | planned | 待补 | 候选: [epub 752 KB 2021](https://z-lib.fm/book/lgGMWod6ZV/%E4%B9%9F%E8%AE%B8%E4%BD%A0%E8%AF%A5%E6%89%BE%E4%B8%AA%E4%BA%BA%E8%81%8A%E8%81%8A.html) |
 | 我们为什么要睡觉 | 睡眠恢复条件 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
 | 运动改造大脑 | 身体恢复支持 | planned | 待补 | 候选: [epub 658 KB 2023](https://z-lib.fm/book/DAaK9mX303/%E8%BF%90%E5%8A%A8%E6%94%B9%E9%80%A0%E5%A4%A7%E8%84%91.html) |
