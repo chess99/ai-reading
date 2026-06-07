@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 177 个唯一待入库书名：172 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 174 个唯一待入库书名：169 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -116,8 +116,6 @@ date: '2026-06-07'
 | 失控 | candidate_ready | 标题精确 | epub | 2.08 MB | 2016 | Chinese | [失控](https://z-lib.fm/book/m03QMp84A6/%E5%A4%B1%E6%8E%A7.html) | 技术社会读什么 |
 | 失控的农业 | candidate_ready | 标题含副标题/版本 | pdf | 16.64 MB | 2019 | Chinese | [失控的农业廉价肉品的真实代价](https://z-lib.fm/book/dAKXbj62Z7/%E5%A4%B1%E6%8E%A7%E7%9A%84%E5%86%9C%E4%B8%9A%E5%BB%89%E4%BB%B7%E8%82%89%E5%93%81%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BB%A3%E4%BB%B7.html) | 如何理解环境、气候与可持续生活 |
 | 世界观 | candidate_ready | 标题含副标题/版本 | epub | 2.15 MB | 2018 | Chinese | [世界观 现代人必须要懂的科学哲学和科学史](https://z-lib.fm/book/GlgGx3aKAV/%E4%B8%96%E7%95%8C%E8%A7%82-%E7%8E%B0%E4%BB%A3%E4%BA%BA%E5%BF%85%E9%A1%BB%E8%A6%81%E6%87%82%E7%9A%84%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6%E5%92%8C%E7%A7%91%E5%AD%A6%E5%8F%B2.html) | 如何建立科学世界观 |
-| 世界秩序 | candidate_ready | 标题精确 | epub | 415 KB | 2015 | Chinese | [世界秩序](https://z-lib.fm/book/vAyQ88G6AE/%E4%B8%96%E7%95%8C%E7%A7%A9%E5%BA%8F.html) | 如何理解国际秩序与地缘风险、如何理解世界历史、如何理解文明兴衰 |
-| 事实 | candidate_ready | 标题精确 | epub | 6.99 MB | 2019 | Chinese | [事实](https://z-lib.fm/book/XAnKDpxwZd/%E4%BA%8B%E5%AE%9E.html) | 如何理解媒体、舆论与公共讨论、数字公共生活与信息网络、如何建立批判性与证据判断 |
 | 枢纽 | candidate_ready | 标题精确 | epub | 934 KB | 2018 | Chinese | [枢纽](https://z-lib.fm/book/dAok6m5KAV/%E6%9E%A2%E7%BA%BD.html) | 中国历史入门、中国社会的现代转型 |
 | 说服 | candidate_ready | 标题精确 | epub | 278 KB | 2018 | Chinese | [说服](https://z-lib.fm/book/QAV3MRv7ZG/%E8%AF%B4%E6%9C%8D.html) | 如何提升沟通与表达 |
 | 丝绸之路 | candidate_ready | 标题含副标题/版本 | epub | 19.79 MB | 2016 | Chinese | [丝绸之路 一部全新的世界史](https://z-lib.fm/book/LaZQe7lqZ8/%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF-%E4%B8%80%E9%83%A8%E5%85%A8%E6%96%B0%E7%9A%84%E4%B8%96%E7%95%8C%E5%8F%B2.html) | 如何理解世界历史 |
@@ -138,7 +136,6 @@ date: '2026-06-07'
 | 我们为什么会生病 | candidate_ready | 标题精确 | epub | 1.82 MB | 2018 | Chinese | [我们为什么会生病](https://z-lib.fm/book/jZkaGvqNg3/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E7%94%9F%E7%97%85.html) | 如何理解饮食与代谢 |
 | 无畏的组织 | needs_manual_review | 格式 fb2 暂不支持 | fb2 | 6.21 MB | 2016 | english | [无畏的组织](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) | 如何建立产品组织与交付系统、如何建立领导力与团队协作、如何成为有效管理者 |
 | 悉达多 | candidate_ready | 标题精确 | epub | 4.84 MB | 2025 | Chinese | [悉达多](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) | 人生哲学入门、如何读懂痛苦、自由与意义 |
-| 乡土中国 | candidate_ready | 标题精确 | epub | 6.95 MB | 2012 | Chinese | [乡土中国](https://z-lib.fm/book/601M8DVl04/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD.html) | 城市、空间与生活方式、社会学如何看共同生活、中国社会的现代转型 |
 | 相约星期二 | candidate_ready | 标题精确 | epub | 239 KB | 2007 | Chinese | [相约星期二](https://z-lib.fm/book/qA9Pyjo9gL/%E7%9B%B8%E7%BA%A6%E6%98%9F%E6%9C%9F%E4%BA%8C.html) | 面对丧失、哀伤与死亡 |
 | 像艺术家一样思考 | candidate_ready | 标题精确 | epub | 258 KB | 2003 | Chinese | [像艺术家一样思考](https://z-lib.fm/book/XAnK34nXZd/%E5%83%8F%E8%89%BA%E6%9C%AF%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83.html) | 写作与创意工作、艺术与审美入门 |
 | 消费社会 | candidate_ready | 标题精确 | epub | 444 KB | 2014 | Chinese | [消费社会](https://z-lib.fm/book/rAdEoKl8ZB/%E6%B6%88%E8%B4%B9%E7%A4%BE%E4%BC%9A.html) | 看懂消费主义、财富与阶层机会 |

@@ -27,10 +27,12 @@ books:
     reason: 把城市生活接到公共资本、基础设施和共同资源维护上。
     status: in_library
   - title: 乡土中国
-    author: 待补
+    author: 费孝通
+    slug: xiang-tu-zhong-guo
+    path: books/社会科学/费孝通-乡土中国.md
     role: 乡土对照
     reason: 用乡土关系对照城市流动性，帮助读者理解空间变化带来的关系变化。
-    status: planned
+    status: in_library
   - title: 工作、消费主义和新穷人
     author: 待补
     role: 工作消费

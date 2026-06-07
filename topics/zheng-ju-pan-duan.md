@@ -25,10 +25,12 @@ books:
     reason: 处理直觉、情绪和个人经验的局限，让批判性不只针对别人。
     status: planned
   - title: 事实
-    author: 待补
+    author: 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德
+    slug: shi-shi
+    path: books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md
     role: 数据直觉入口
     reason: 用全球事实和误判案例提醒读者，常识感受经常需要被数据校正。
-    status: planned
+    status: in_library
   - title: 赤裸裸的统计学
     author: 待补
     role: 统计语言基础

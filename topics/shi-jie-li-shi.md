@@ -37,10 +37,12 @@ books:
     reason: 用经济、军事和财政压力理解霸权更替。
     status: planned
   - title: 世界秩序
-    author: 待补
+    author: 亨利·基辛格
+    slug: shi-jie-zhi-xu
+    path: books/社会科学/亨利·基辛格-世界秩序.md
     role: 秩序框架
     reason: 把历史经验接到国际秩序、外交传统和大国关系。
-    status: planned
+    status: in_library
   - title: 未来简史
     author: 尤瓦尔·赫拉利
     slug: wei-lai-jian-shi

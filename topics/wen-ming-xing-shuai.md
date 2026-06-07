@@ -30,10 +30,12 @@ books:
     reason: 把文明兴衰接到包容性制度和汲取性制度的长期后果。
     status: planned
   - title: 世界秩序
-    author: 待补
+    author: 亨利·基辛格
+    slug: shi-jie-zhi-xu
+    path: books/社会科学/亨利·基辛格-世界秩序.md
     role: 秩序视角
     reason: 说明文明和国家如何理解合法性、均势与国际秩序。
-    status: planned
+    status: in_library
   - title: 人类简史
     author: 尤瓦尔·赫拉利
     slug: ren-lei-jian-shi

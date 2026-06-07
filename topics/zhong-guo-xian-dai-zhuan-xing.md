@@ -8,10 +8,12 @@ group: 中国历史
 date: '2026-06-06'
 books:
   - title: 乡土中国
-    author: 待补
+    author: 费孝通
+    slug: xiang-tu-zhong-guo
+    path: books/社会科学/费孝通-乡土中国.md
     role: 乡土起点
     reason: 从基层关系和乡土秩序进入中国社会转型的底层背景。
-    status: planned
+    status: in_library
   - title: 中国历代政治得失
     author: 待补
     role: 制度传统

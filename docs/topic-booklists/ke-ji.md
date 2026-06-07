@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：5
 - 书籍引用：33
 - 唯一书名：22
-- 已入库引用：16
-- 待入库唯一书名：12
-- z-lib 可优先尝试：12
+- 已入库引用：17
+- 待入库唯一书名：11
+- z-lib 可优先尝试：11
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -27,7 +27,6 @@ date: '2026-06-07'
 | 人机共智 | 1 | 普通人如何理解 AI 变革 | 候选: [pdf 7.55 MB 2006](https://z-lib.fm/book/E0RYrXVJMZ/%E4%BA%BA%E6%9C%BA%E5%85%B1%E6%99%BA.html) |
 | 生命3.0 | 1 | 普通人如何理解 AI 变革 | 候选: [epub 8.52 MB 2018](https://z-lib.fm/book/QAVRwj19AG/%E7%94%9F%E5%91%BD30.html) |
 | 失控 | 1 | 技术社会读什么 | 候选: [epub 2.08 MB 2016](https://z-lib.fm/book/m03QMp84A6/%E5%A4%B1%E6%8E%A7.html) |
-| 事实 | 1 | 数字公共生活与信息网络 | 候选: [epub 6.99 MB 2019](https://z-lib.fm/book/XAnKDpxwZd/%E4%BA%8B%E5%AE%9E.html) |
 | 算法霸权 | 2 | AI 风险、治理与技术权力、看懂平台、算法与注意力风险 | 候选: [epub 538 KB 2018](https://z-lib.fm/book/W0BXBP2QAX/%E7%AE%97%E6%B3%95%E9%9C%B8%E6%9D%83.html) |
 | 注意力商人 | 1 | 看懂平台、算法与注意力风险 | 候选: [epub 695 KB 2018](https://z-lib.fm/book/OZOpaQdp0x/%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%95%86%E4%BA%BA.html) |
 | AI 2041 | 1 | 普通人如何理解 AI 变革 | 候选: [epub 4.70 MB 2021](https://z-lib.fm/book/lgGpJb4yAV/ai-2041-%E9%A0%90%E8%A6%8B10%E5%80%8B%E6%9C%AA%E4%BE%86%E6%96%B0%E4%B8%96%E7%95%8C.html) |
@@ -98,6 +97,6 @@ date: '2026-06-07'
 | 理解媒介 | 媒介形式 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
 | 初识传播学 | 传播基础 | in_library | 埃姆·格里芬 | chu-shi-chuan-bo-xue / books/社会科学/埃姆·格里芬-初识传播学.md |
 | 过滤泡 | 信息筛选 | planned | 待补 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
-| 事实 | 事实判断 | planned | 待补 | 候选: [epub 6.99 MB 2019](https://z-lib.fm/book/XAnKDpxwZd/%E4%BA%8B%E5%AE%9E.html) |
+| 事实 | 事实判断 | in_library | 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德 | shi-shi / books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md |
 | 学会提问 | 批判提问 | in_library | 尼尔·布朗,斯图尔特·基利 | xue-hui-ti-wen / books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md |
 | 人的境况 | 公共行动 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |

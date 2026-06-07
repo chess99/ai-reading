@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：50
 - 唯一书名：43
-- 已入库引用：25
-- 待入库唯一书名：22
-- z-lib 可优先尝试：22
+- 已入库引用：26
+- 待入库唯一书名：21
+- z-lib 可优先尝试：21
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -36,7 +36,6 @@ date: '2026-06-07'
 | 女士品茶 | 1 | 如何建立批判性与证据判断 | 候选: [epub 305 KB 2010](https://z-lib.fm/book/W0BX1pxrAX/%E5%A5%B3%E5%A3%AB%E5%93%81%E8%8C%B6.html) |
 | 批判性思维工具 | 1 | 如何建立批判性与证据判断 | 候选: [epub 2.46 MB 2013](https://z-lib.fm/book/Wwge6BonA7/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7.html) |
 | 世界观 | 1 | 如何建立科学世界观 | 候选: [epub 2.15 MB 2018](https://z-lib.fm/book/GlgGx3aKAV/%E4%B8%96%E7%95%8C%E8%A7%82-%E7%8E%B0%E4%BB%A3%E4%BA%BA%E5%BF%85%E9%A1%BB%E8%A6%81%E6%87%82%E7%9A%84%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6%E5%92%8C%E7%A7%91%E5%AD%A6%E5%8F%B2.html) |
-| 事实 | 1 | 如何建立批判性与证据判断 | 候选: [epub 6.99 MB 2019](https://z-lib.fm/book/XAnKDpxwZd/%E4%BA%8B%E5%AE%9E.html) |
 | 随机漫步的傻瓜 | 1 | 如何理解概率、风险与预测 | 候选: [epub 660 KB 2016](https://z-lib.fm/book/n0zbVLwv0k/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C.html) |
 | 为什么 | 1 | 如何建立批判性与证据判断 | 候选: [epub 4.65 MB 2019](https://z-lib.fm/book/WZpkrBR4AR/%E4%B8%BA%E4%BB%80%E4%B9%88.html) |
 | 因果推断 | 1 | 如何建立批判性与证据判断 | 候选: [epub 4.93 MB 2022](https://z-lib.fm/book/601WjwDRA4/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.html) |
@@ -111,7 +110,7 @@ date: '2026-06-07'
 | 学会提问 | 提问入口 | in_library | 尼尔·布朗,斯图尔特·基利 | xue-hui-ti-wen / books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md |
 | 批判性思维工具 | 论证框架 | planned | 待补 | 候选: [epub 2.46 MB 2013](https://z-lib.fm/book/Wwge6BonA7/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7.html) |
 | 超越感觉 | 主观感受校正 | planned | 待补 | 候选: [epub 793 KB 2015](https://z-lib.fm/book/Q0Yo4owBAy/%E8%B6%85%E8%B6%8A%E6%84%9F%E8%A7%89.html) |
-| 事实 | 数据直觉入口 | planned | 待补 | 候选: [epub 6.99 MB 2019](https://z-lib.fm/book/XAnKDpxwZd/%E4%BA%8B%E5%AE%9E.html) |
+| 事实 | 数据直觉入口 | in_library | 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德 | shi-shi / books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md |
 | 赤裸裸的统计学 | 统计语言基础 | planned | 待补 | 候选: [epub 1.30 MB 2013](https://z-lib.fm/book/dAoeQNRm0V/%E8%B5%A4%E8%A3%B8%E8%A3%B8%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AD%A6.html) |
 | 女士品茶 | 实验思想入口 | planned | 待补 | 候选: [epub 305 KB 2010](https://z-lib.fm/book/W0BX1pxrAX/%E5%A5%B3%E5%A3%AB%E5%93%81%E8%8C%B6.html) |
 | 为什么 | 因果图思维 | planned | 待补 | 候选: [epub 4.65 MB 2019](https://z-lib.fm/book/WZpkrBR4AR/%E4%B8%BA%E4%BB%80%E4%B9%88.html) |

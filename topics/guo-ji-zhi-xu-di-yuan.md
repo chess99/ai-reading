@@ -8,10 +8,12 @@ group: 国际秩序
 date: '2026-06-06'
 books:
   - title: 世界秩序
-    author: 待补
+    author: 亨利·基辛格
+    slug: shi-jie-zhi-xu
+    path: books/社会科学/亨利·基辛格-世界秩序.md
     role: 秩序入口
     reason: 先建立不同文明和国家关于秩序、均势与合法性的基本图景。
-    status: planned
+    status: in_library
   - title: 大国的兴衰
     author: 待补
     role: 兴衰背景

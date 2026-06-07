@@ -34,10 +34,12 @@ books:
     reason: 解释个性化信息环境如何影响公共事实。
     status: planned
   - title: 事实
-    author: 待补
+    author: 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德
+    slug: shi-shi
+    path: books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md
     role: 事实判断
     reason: 用数据和事实核查视角校正对世界的直觉误判。
-    status: planned
+    status: in_library
   - title: 学会提问
     author: 尼尔·布朗,斯图尔特·基利
     slug: xue-hui-ti-wen

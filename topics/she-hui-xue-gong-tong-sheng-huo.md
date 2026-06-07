@@ -8,10 +8,12 @@ group: 社会制度
 date: '2026-06-06'
 books:
   - title: 乡土中国
-    author: 待补
+    author: 费孝通
+    slug: xiang-tu-zhong-guo
+    path: books/社会科学/费孝通-乡土中国.md
     role: 基层入口
     reason: 放在开头，是为了先让读者看到差序格局、熟人社会和礼俗秩序怎样影响共同生活。
-    status: planned
+    status: in_library
   - title: 社会学的想象力
     author: 待补
     role: 社会学眼光
