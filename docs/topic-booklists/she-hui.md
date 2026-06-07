@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：49
 - 唯一书名：40
-- 已入库引用：27
-- 待入库唯一书名：19
-- z-lib 可优先尝试：19
+- 已入库引用：29
+- 待入库唯一书名：17
+- z-lib 可优先尝试：17
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -23,8 +23,6 @@ date: '2026-06-07'
 | 法治及其本土资源 | 2 | 如何建立法律常识、如何识别制度与权力 | 候选: [epub 510 KB 2013](https://z-lib.fm/book/YAJ8DVwV0w/%E6%B3%95%E6%B2%BB%E5%8F%8A%E5%85%B6%E6%9C%AC%E5%9C%9F%E8%B5%84%E6%BA%90.html) |
 | 工作、消费主义和新穷人 | 1 | 城市、空间与生活方式 | 候选: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
 | 公正 | 1 | 如何理解公平与正义 | 候选: [mobi 638 KB 2012](https://z-lib.fm/book/PAl99BdvZq/%E5%85%AC%E6%AD%A3.html) |
-| 国家为什么会失败 | 1 | 如何识别制度与权力 | 候选: [mobi 7.50 MB 2013](https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html) |
-| 过滤泡 | 1 | 如何理解媒体、舆论与公共讨论 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
 | 旧制度与大革命 | 1 | 如何识别制度与权力 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 看不见的女性 | 1 | 如何理解性别与社会结构 | 候选: [epub 498 KB 2022](https://z-lib.fm/book/qA9WK9zE0L/%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E5%A5%B3%E6%80%A7.html) |
 | 看得见的正义 | 2 | 如何建立法律常识、如何识别制度与权力 | 候选: [epub 1.16 MB 2013](https://z-lib.fm/book/R0P113ykg9/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E6%AD%A3%E4%B9%89.html) |
@@ -32,7 +30,7 @@ date: '2026-06-07'
 | 民法典与日常生活 | 1 | 如何建立法律常识 | 候选: [epub 526 KB 2020](https://z-lib.fm/book/N0WaQNBLAq/%E6%B0%91%E6%B3%95%E5%85%B8%E4%B8%8E%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB.html) |
 | 权力与繁荣 | 1 | 如何识别制度与权力 | 候选: [epub 506 KB 2017](https://z-lib.fm/book/DgXe4kvQAq/%E6%9D%83%E5%8A%9B%E4%B8%8E%E7%B9%81%E8%8D%A3.html) |
 | 社会分工论 | 1 | 社会学如何看共同生活 | 候选: [pdf 3.87 MB 0](https://z-lib.fm/book/vAyKoPyV0E/%E7%A4%BE%E4%BC%9A%E5%88%86%E5%B7%A5%E8%AE%BA.html) |
-| 社会学的想象力 | 2 | 社会学如何看共同生活、如何理解性别与社会结构 | 候选: [epub 542 KB 2017](https://z-lib.fm/book/3gN8mDP2ZY/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%83%B3%E8%B1%A1%E5%8A%9B.html) |
+| 社会学的想象力 | 2 | 如何理解性别与社会结构、社会学如何看共同生活 | 候选: [epub 542 KB 2017](https://z-lib.fm/book/3gN8mDP2ZY/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%83%B3%E8%B1%A1%E5%8A%9B.html) |
 | 刑法学讲义 | 1 | 如何建立法律常识 | 候选: [epub 513 KB 2020](https://z-lib.fm/book/m033eW6906/%E5%88%91%E6%B3%95%E5%AD%A6%E8%AE%B2%E4%B9%89.html) |
 | 性别打结 | 1 | 如何理解性别与社会结构 | 候选: [epub 2.30 MB 2025](https://z-lib.fm/book/pZ8REX8kg9/%E6%80%A7%E5%88%AB%E6%89%93%E7%BB%93.html) |
 | 正义论 | 1 | 如何理解公平与正义 | 候选: [epub 1.37 MB 2012](https://z-lib.fm/book/20rlVYWRAX/%E6%AD%A3%E4%B9%89%E8%AE%BA.html) |
@@ -94,22 +92,7 @@ date: '2026-06-07'
 | 乌合之众 | 群体舆论 | in_library | 古斯塔夫·勒庞 | wu-he-zhi-zhong / books/商业管理/组织行为学/古斯塔夫·勒庞-乌合之众.md |
 | 事实 | 事实校准 | in_library | 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德 | shi-shi / books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md |
 | 学会提问 | 提问工具 | in_library | 尼尔·布朗,斯图尔特·基利 | xue-hui-ti-wen / books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md |
-| 过滤泡 | 算法环境 | planned | 待补 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
-
-### 社会学如何看共同生活
-
-来源：topics/she-hui-xue-gong-tong-sheng-huo.md
-
-| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
-| --- | --- | --- | --- | --- |
-| 乡土中国 | 基层入口 | in_library | 费孝通 | xiang-tu-zhong-guo / books/社会科学/费孝通-乡土中国.md |
-| 社会学的想象力 | 社会学眼光 | planned | 待补 | 候选: [epub 542 KB 2017](https://z-lib.fm/book/3gN8mDP2ZY/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%83%B3%E8%B1%A1%E5%8A%9B.html) |
-| 社会分工论 | 分工框架 | planned | 待补 | 候选: [pdf 3.87 MB 0](https://z-lib.fm/book/vAyKoPyV0E/%E7%A4%BE%E4%BC%9A%E5%88%86%E5%B7%A5%E8%AE%BA.html) |
-| 贫穷的本质 | 贫困机制 | in_library | 阿比吉特·班纳吉、埃斯特·迪弗洛 | pin-qiong-de-ben-zhi / books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md |
-| 社会共通资本 | 公共资本 | in_library | 宇泽弘文 | she-hui-gong-tong-zi-ben / books/社会科学/宇泽弘文-社会共通资本.md |
-| 城市的胜利 | 城市视角 | in_library | 爱德华·格莱泽 | cheng-shi-de-sheng-li / books/社会科学/爱德华·格莱泽-城市的胜利.md |
-| 厌女 | 性别切面 | in_library | 上野千鹤子 | yan-nv / books/社会科学/上野千鹤子-厌女.md |
-| 置身事内 | 制度收束 | in_library | 兰小欢 | zhi-shen-shi-nei / books/社会科学/经济学/兰小欢-置身事内.md |
+| 过滤泡 | 算法环境 | in_library | 伊莱·帕里泽 | guo-lv-pao / books/社会科学/伊莱·帕里泽-过滤泡.md |
 
 ### 如何理解性别与社会结构
 
@@ -133,8 +116,23 @@ date: '2026-06-07'
 | 权力 | 权力入口 | in_library | 杰弗瑞·菲佛 | quan-li / books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md |
 | 旧制度与大革命 | 转型切片 | planned | 待补 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 权力与繁荣 | 国家激励 | planned | 待补 | 候选: [epub 506 KB 2017](https://z-lib.fm/book/DgXe4kvQAq/%E6%9D%83%E5%8A%9B%E4%B8%8E%E7%B9%81%E8%8D%A3.html) |
-| 国家为什么会失败 | 制度比较 | planned | 待补 | 候选: [mobi 7.50 MB 2013](https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html) |
+| 国家为什么会失败 | 制度比较 | in_library | 德隆·阿西莫格鲁,詹姆斯·罗宾逊 | guo-jia-wei-shen-me-hui-shi-bai / books/社会科学/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md |
 | 通往奴役之路 | 自由警戒 | in_library | 弗里德里希·哈耶克 | tong-wang-nu-yi-zhi-lu / books/社会科学/弗里德里希·哈耶克-通往奴役之路.md |
 | 法治及其本土资源 | 本土法治 | planned | 待补 | 候选: [epub 510 KB 2013](https://z-lib.fm/book/YAJ8DVwV0w/%E6%B3%95%E6%B2%BB%E5%8F%8A%E5%85%B6%E6%9C%AC%E5%9C%9F%E8%B5%84%E6%BA%90.html) |
 | 看得见的正义 | 司法公共性 | planned | 待补 | 候选: [epub 1.16 MB 2013](https://z-lib.fm/book/R0P113ykg9/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E6%AD%A3%E4%B9%89.html) |
 | 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
+
+### 社会学如何看共同生活
+
+来源：topics/she-hui-xue-gong-tong-sheng-huo.md
+
+| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
+| --- | --- | --- | --- | --- |
+| 乡土中国 | 基层入口 | in_library | 费孝通 | xiang-tu-zhong-guo / books/社会科学/费孝通-乡土中国.md |
+| 社会学的想象力 | 社会学眼光 | planned | 待补 | 候选: [epub 542 KB 2017](https://z-lib.fm/book/3gN8mDP2ZY/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%83%B3%E8%B1%A1%E5%8A%9B.html) |
+| 社会分工论 | 分工框架 | planned | 待补 | 候选: [pdf 3.87 MB 0](https://z-lib.fm/book/vAyKoPyV0E/%E7%A4%BE%E4%BC%9A%E5%88%86%E5%B7%A5%E8%AE%BA.html) |
+| 贫穷的本质 | 贫困机制 | in_library | 阿比吉特·班纳吉、埃斯特·迪弗洛 | pin-qiong-de-ben-zhi / books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md |
+| 社会共通资本 | 公共资本 | in_library | 宇泽弘文 | she-hui-gong-tong-zi-ben / books/社会科学/宇泽弘文-社会共通资本.md |
+| 城市的胜利 | 城市视角 | in_library | 爱德华·格莱泽 | cheng-shi-de-sheng-li / books/社会科学/爱德华·格莱泽-城市的胜利.md |
+| 厌女 | 性别切面 | in_library | 上野千鹤子 | yan-nv / books/社会科学/上野千鹤子-厌女.md |
+| 置身事内 | 制度收束 | in_library | 兰小欢 | zhi-shen-shi-nei / books/社会科学/经济学/兰小欢-置身事内.md |

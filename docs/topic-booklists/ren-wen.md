@@ -71,19 +71,6 @@ date: '2026-06-07'
 | 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
 | 开放社会及其敌人 | 社会边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/哲学/卡尔·波普尔-开放社会及其敌人.md |
 
-### 文学与人文阅读入门
-
-来源：topics/wen-xue-ren-wen.md
-
-| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
-| --- | --- | --- | --- | --- |
-| 如何阅读一本小说 | 小说入口 | planned | 待补 | 候选: [epub 623 KB 2015](https://z-lib.fm/book/wgeDvbM307/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4.html) |
-| 小说面面观 | 叙事形式 | planned | 待补 | 候选: [epub 274 KB 2016](https://z-lib.fm/book/N0WrLLm9Zq/%E5%B0%8F%E8%AF%B4%E9%9D%A2%E9%9D%A2%E8%A7%82.html) |
-| 文学理论入门 | 理论框架 | planned | 待补 | 候选: [epub 1.58 MB 2012](https://z-lib.fm/book/XAnlB9pR0d/%E6%96%87%E5%AD%A6%E7%90%86%E8%AE%BA%E5%85%A5%E9%97%A8.html) |
-| 文学回忆录 | 文学经验 | planned | 待补 | 候选: [epub 1.46 MB 2014](https://z-lib.fm/book/4gMoyJPoZ8/%E6%96%87%E5%AD%A6%E5%9B%9E%E5%BF%86%E5%BD%95.html) |
-| 文学的故事 | 文学史 | planned | 待补 | 候选: [mobi 7.11 MB 2009](https://z-lib.fm/book/WZx1jVlEO0/%E6%96%87%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B.html) |
-| 文学讲稿 | 细读示范 | planned | 待补 | 候选: [epub 893 KB 2018](https://z-lib.fm/book/dAokqNKQAV/%E6%96%87%E5%AD%A6%E8%AE%B2%E7%A8%BF%E8%87%AA%E5%88%B6.html) |
-
 ### 如何理解幸福
 
 来源：topics/xing-fu.md
@@ -97,6 +84,19 @@ date: '2026-06-07'
 | 被讨厌的勇气 | 自我接纳 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md |
 | 人生的智慧 | 人生判断 | planned | 待补 | 候选: [epub 7.58 MB 2014](https://z-lib.fm/book/W0EVee81gl/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7.html) |
 | 尼各马可伦理学 | 德性伦理 | planned | 待补 | 候选: [epub 334 KB 2008](https://z-lib.fm/book/E0RoqVbqgd/%E5%B0%BC%E5%90%84%E9%A9%AC%E5%8F%AF%E4%BC%A6%E7%90%86%E5%AD%A6.html) |
+
+### 文学与人文阅读入门
+
+来源：topics/wen-xue-ren-wen.md
+
+| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
+| --- | --- | --- | --- | --- |
+| 如何阅读一本小说 | 小说入口 | planned | 待补 | 候选: [epub 623 KB 2015](https://z-lib.fm/book/wgeDvbM307/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4.html) |
+| 小说面面观 | 叙事形式 | planned | 待补 | 候选: [epub 274 KB 2016](https://z-lib.fm/book/N0WrLLm9Zq/%E5%B0%8F%E8%AF%B4%E9%9D%A2%E9%9D%A2%E8%A7%82.html) |
+| 文学理论入门 | 理论框架 | planned | 待补 | 候选: [epub 1.58 MB 2012](https://z-lib.fm/book/XAnlB9pR0d/%E6%96%87%E5%AD%A6%E7%90%86%E8%AE%BA%E5%85%A5%E9%97%A8.html) |
+| 文学回忆录 | 文学经验 | planned | 待补 | 候选: [epub 1.46 MB 2014](https://z-lib.fm/book/4gMoyJPoZ8/%E6%96%87%E5%AD%A6%E5%9B%9E%E5%BF%86%E5%BD%95.html) |
+| 文学的故事 | 文学史 | planned | 待补 | 候选: [mobi 7.11 MB 2009](https://z-lib.fm/book/WZx1jVlEO0/%E6%96%87%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B.html) |
+| 文学讲稿 | 细读示范 | planned | 待补 | 候选: [epub 893 KB 2018](https://z-lib.fm/book/dAokqNKQAV/%E6%96%87%E5%AD%A6%E8%AE%B2%E7%A8%BF%E8%87%AA%E5%88%B6.html) |
 
 ### 艺术与审美入门
 

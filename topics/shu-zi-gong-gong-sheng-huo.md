@@ -12,47 +12,49 @@ books:
     slug: zhi-ren-zhi-shang
     path: books/社会科学/尤瓦尔·赫拉利-智人之上.md
     role: 信息网络史
-    reason: 从信息网络的历史变化进入数字公共生活问题。
+    reason: "从信息网络的历史变化进入数字公共生活问题。"
     status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie
     path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介形式
-    reason: 说明媒介形式如何改变人的感知、表达和关系。
+    reason: "说明媒介形式如何改变人的感知、表达和关系。"
     status: in_library
   - title: 初识传播学
     author: 埃姆·格里芬
     slug: chu-shi-chuan-bo-xue
     path: books/社会科学/埃姆·格里芬-初识传播学.md
     role: 传播基础
-    reason: 提供传播过程、受众和媒介效果的基础语言。
+    reason: "提供传播过程、受众和媒介效果的基础语言。"
     status: in_library
   - title: 过滤泡
-    author: 待补
+    author: 伊莱·帕里泽
+    slug: guo-lv-pao
+    path: books/社会科学/伊莱·帕里泽-过滤泡.md
     role: 信息筛选
-    reason: 解释个性化信息环境如何影响公共事实。
-    status: planned
+    reason: "解释个性化信息环境如何影响公共事实。"
+    status: in_library
   - title: 事实
     author: 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德
     slug: shi-shi
     path: books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md
     role: 事实判断
-    reason: 用数据和事实核查视角校正对世界的直觉误判。
+    reason: "用数据和事实核查视角校正对世界的直觉误判。"
     status: in_library
   - title: 学会提问
     author: 尼尔·布朗,斯图尔特·基利
     slug: xue-hui-ti-wen
     path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 批判提问
-    reason: 提供识别论证、证据和假设的具体方法。
+    reason: "提供识别论证、证据和假设的具体方法。"
     status: in_library
   - title: 人的境况
     author: 汉娜·阿伦特
     slug: ren-de-jing-kuang
     path: books/哲学/汉娜·阿伦特-人的境况.md
     role: 公共行动
-    reason: 把信息网络问题连接到公共空间、行动和共同生活。
+    reason: "把信息网络问题连接到公共空间、行动和共同生活。"
     status: in_library
 ---
 

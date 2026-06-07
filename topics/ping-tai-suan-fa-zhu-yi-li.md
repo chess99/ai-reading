@@ -12,41 +12,43 @@ books:
     slug: yu-le-zhi-si
     path: books/社会科学/尼尔·波兹曼-娱乐至死.md
     role: 媒介入口
-    reason: 先看媒介形式如何把公共讨论推向娱乐化。
+    reason: "先看媒介形式如何把公共讨论推向娱乐化。"
     status: in_library
   - title: 注意力商人
     author: 待补
     role: 注意力商业
-    reason: 解释注意力如何被捕获、包装和出售。
+    reason: "解释注意力如何被捕获、包装和出售。"
     status: planned
   - title: 过滤泡
-    author: 待补
+    author: 伊莱·帕里泽
+    slug: guo-lv-pao
+    path: books/社会科学/伊莱·帕里泽-过滤泡.md
     role: 信息茧房
-    reason: 说明个性化推荐如何改变信息接触和公共事实。
-    status: planned
+    reason: "说明个性化推荐如何改变信息接触和公共事实。"
+    status: in_library
   - title: 监视资本主义时代
     author: 待补
     role: 数据监控
-    reason: 把注意力机制连接到行为数据和预测商业。
+    reason: "把注意力机制连接到行为数据和预测商业。"
     status: planned
   - title: 算法霸权
     author: 待补
     role: 算法伤害
-    reason: 用算法决策案例呈现偏见、责任和制度风险。
+    reason: "用算法决策案例呈现偏见、责任和制度风险。"
     status: planned
   - title: 平台革命
     author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
     slug: ping-tai-ge-ming
     path: books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
     role: 平台治理
-    reason: 解释平台规则、网络效应和生态治理如何运作。
+    reason: "解释平台规则、网络效应和生态治理如何运作。"
     status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie
     path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介理论
-    reason: 回到媒介形式本身，整理前面各书的共同基础。
+    reason: "回到媒介形式本身，整理前面各书的共同基础。"
     status: in_library
 ---
 

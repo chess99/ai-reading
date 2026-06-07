@@ -47,6 +47,21 @@ date: '2026-06-07'
 | 金钱心理学 | 行为风险 | planned | 待补 | 候选: [pdf 2.09 MB 1987](https://z-lib.fm/book/XZqkWbPbgp/%E9%87%91%E9%92%B1%E5%BF%83%E7%90%86%E5%AD%A6.html) |
 | 一本书读懂财报 | 财报入口 | in_library | 肖星 | yi-ben-shu-du-dong-cai-bao / books/投资/价值投资/肖星-一本书读懂财报.md |
 
+### 看懂消费主义、财富与阶层机会
+
+来源：topics/xiao-fei-zhu-yi-jie-ceng.md
+
+| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
+| --- | --- | --- | --- | --- |
+| 有闲阶级论 | 炫耀消费入口 | in_library | 托斯丹·凡勃伦 | you-xian-jie-ji-lun / books/社会科学/托斯丹·凡勃伦-有闲阶级论.md |
+| 工作、消费主义和新穷人 | 消费社会批判 | planned | 待补 | 候选: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
+| 消费社会 | 符号消费 | planned | 待补 | 候选: [epub 444 KB 2014](https://z-lib.fm/book/rAdEoKl8ZB/%E6%B6%88%E8%B4%B9%E7%A4%BE%E4%BC%9A.html) |
+| 邻家的百万富翁 | 财富行为校准 | planned | 待补 | 候选: [epub 755 KB 2017](https://z-lib.fm/book/jAD4GdDVAk/%E9%82%BB%E5%AE%B6%E7%9A%84%E7%99%BE%E4%B8%87%E5%AF%8C%E7%BF%81.html) |
+| 贫穷的本质 | 贫困机制 | in_library | 阿比吉特·班纳吉、埃斯特·迪弗洛 | pin-qiong-de-ben-zhi / books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md |
+| 稀缺 | 认知带宽 | in_library | 塞德希尔·穆来纳森,埃尔德·沙菲尔 | xi-que / books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md |
+| 21世纪资本论 | 不平等结构 | planned | 待补 | 候选: [epub 5.61 MB 2017](https://z-lib.fm/book/dZ64Xx1Jgo/21%E4%B8%96%E7%BA%AA%E8%B5%84%E6%9C%AC%E8%AE%BA.html) |
+| 置身事内 | 中国制度环境 | in_library | 兰小欢 | zhi-shen-shi-nei / books/社会科学/经济学/兰小欢-置身事内.md |
+
 ### 普通人如何长期投资
 
 来源：topics/chang-qi-tou-zi.md
@@ -106,21 +121,6 @@ date: '2026-06-07'
 | 国富论 | 古典源头 | in_library | 亚当·斯密 | guo-fu-lun / books/社会科学/亚当·斯密-国富论.md |
 | 就业、利息和货币通论 | 宏观转折 | planned | 待补 | 候选: [epub 825 KB 2020](https://z-lib.fm/book/N0Wamr8RAq/%E5%B0%B1%E4%B8%9A%E5%88%A9%E6%81%AF%E5%92%8C%E8%B4%A7%E5%B8%81%E9%80%9A%E8%AE%BA.html) |
 | 债：第一个5000年 | 债务历史 | planned | 待补 | 候选: [epub 885 KB 2012](https://z-lib.fm/book/zZ46oQa4gb/%E5%80%BA%E7%AC%AC%E4%B8%80%E4%B8%AA5000%E5%B9%B4.html) |
-
-### 看懂消费主义、财富与阶层机会
-
-来源：topics/xiao-fei-zhu-yi-jie-ceng.md
-
-| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
-| --- | --- | --- | --- | --- |
-| 有闲阶级论 | 炫耀消费入口 | in_library | 托斯丹·凡勃伦 | you-xian-jie-ji-lun / books/社会科学/托斯丹·凡勃伦-有闲阶级论.md |
-| 工作、消费主义和新穷人 | 消费社会批判 | planned | 待补 | 候选: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
-| 消费社会 | 符号消费 | planned | 待补 | 候选: [epub 444 KB 2014](https://z-lib.fm/book/rAdEoKl8ZB/%E6%B6%88%E8%B4%B9%E7%A4%BE%E4%BC%9A.html) |
-| 邻家的百万富翁 | 财富行为校准 | planned | 待补 | 候选: [epub 755 KB 2017](https://z-lib.fm/book/jAD4GdDVAk/%E9%82%BB%E5%AE%B6%E7%9A%84%E7%99%BE%E4%B8%87%E5%AF%8C%E7%BF%81.html) |
-| 贫穷的本质 | 贫困机制 | in_library | 阿比吉特·班纳吉、埃斯特·迪弗洛 | pin-qiong-de-ben-zhi / books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md |
-| 稀缺 | 认知带宽 | in_library | 塞德希尔·穆来纳森,埃尔德·沙菲尔 | xi-que / books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md |
-| 21世纪资本论 | 不平等结构 | planned | 待补 | 候选: [epub 5.61 MB 2017](https://z-lib.fm/book/dZ64Xx1Jgo/21%E4%B8%96%E7%BA%AA%E8%B5%84%E6%9C%AC%E8%AE%BA.html) |
-| 置身事内 | 中国制度环境 | in_library | 兰小欢 | zhi-shen-shi-nei / books/社会科学/经济学/兰小欢-置身事内.md |
 
 ### 如何理解行为经济学与金钱心理
 

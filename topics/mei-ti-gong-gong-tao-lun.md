@@ -12,53 +12,55 @@ books:
     slug: chu-shi-chuan-bo-xue
     path: books/社会科学/埃姆·格里芬-初识传播学.md
     role: 传播入口
-    reason: 先提供传播学的基本问题，让读者知道信息如何被生产、传递和接收。
+    reason: "先提供传播学的基本问题，让读者知道信息如何被生产、传递和接收。"
     status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie
     path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介框架
-    reason: 说明媒介形式本身会改变感知、表达和社会组织。
+    reason: "说明媒介形式本身会改变感知、表达和社会组织。"
     status: in_library
   - title: 娱乐至死
     author: 尼尔·波兹曼
     slug: yu-le-zhi-si
     path: books/社会科学/尼尔·波兹曼-娱乐至死.md
     role: 娱乐化警戒
-    reason: 用电视和公共话语的变化提醒读者，信息形式会改变公共讨论质量。
+    reason: "用电视和公共话语的变化提醒读者，信息形式会改变公共讨论质量。"
     status: in_library
   - title: 注意力商人
     author: 待补
     role: 注意力经济
-    reason: 揭示商业模式如何捕获注意力，并重塑媒体、广告和平台行为。
+    reason: "揭示商业模式如何捕获注意力，并重塑媒体、广告和平台行为。"
     status: planned
   - title: 乌合之众
     author: 古斯塔夫·勒庞
     slug: wu-he-zhi-zhong
     path: books/商业管理/组织行为学/古斯塔夫·勒庞-乌合之众.md
     role: 群体舆论
-    reason: 作为历史性的群体心理文本，帮助读者辨认舆论中的感染、暗示和极化。
+    reason: "作为历史性的群体心理文本，帮助读者辨认舆论中的感染、暗示和极化。"
     status: in_library
   - title: 事实
     author: 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德
     slug: shi-shi
     path: books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md
     role: 事实校准
-    reason: 提供数据与事实判断习惯，避免公共讨论只剩立场交换。
+    reason: "提供数据与事实判断习惯，避免公共讨论只剩立场交换。"
     status: in_library
   - title: 学会提问
     author: 尼尔·布朗,斯图尔特·基利
     slug: xue-hui-ti-wen
     path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 提问工具
-    reason: 把读者从接收信息转向检查论证、证据和遗漏前提。
+    reason: "把读者从接收信息转向检查论证、证据和遗漏前提。"
     status: in_library
   - title: 过滤泡
-    author: 待补
+    author: 伊莱·帕里泽
+    slug: guo-lv-pao
+    path: books/社会科学/伊莱·帕里泽-过滤泡.md
     role: 算法环境
-    reason: 收束到信息茧房和个性化推荐，检查数字公共讨论的结构风险。
-    status: planned
+    reason: "收束到信息茧房和个性化推荐，检查数字公共讨论的结构风险。"
+    status: in_library
 ---
 
 # 如何理解媒体、舆论与公共讨论

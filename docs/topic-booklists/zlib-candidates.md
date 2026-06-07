@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 171 个唯一待入库书名：166 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 169 个唯一待入库书名：163 个候选可优先尝试下载，6 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -49,8 +49,6 @@ date: '2026-06-07'
 | 怪诞行为学 | candidate_ready | 标题含副标题 | epub | 1.60 MB | 2014 | Chinese | [怪诞行为学可预测的非理性](https://z-lib.fm/book/mAvKrE68Zl/%E6%80%AA%E8%AF%9E%E8%A1%8C%E4%B8%BA%E5%AD%A6%E5%8F%AF%E9%A2%84%E6%B5%8B%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7.html) | 如何理解行为经济学与金钱心理 |
 | 管理的实践 | candidate_ready | 标题精确 | epub | 1.27 MB | 2009 | Chinese | [管理的实践](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) | 如何成为有效管理者 |
 | 规模 | candidate_ready | 标题精确 | epub | 6.35 MB | 2018 | Chinese | [规模](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) | 如何理解商业竞争、战略与平台效应、什么是系统思维与复杂性 |
-| 国家为什么会失败 | candidate_ready | 标题精确 | mobi | 7.50 MB | 2013 | Chinese | [国家为什么会失败](https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html) | 如何理解国际秩序与地缘风险、如何理解文明兴衰、如何识别制度与权力 |
-| 过滤泡 | candidate_ready | 标题精确 | epub | 9.40 MB | 2012 | english | [过滤泡](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) | 如何理解媒体、舆论与公共讨论、看懂平台、算法与注意力风险、数字公共生活与信息网络 |
 | 蛤蟆先生去看心理医生 | candidate_ready | 标题精确 | epub | 330 KB | 2020 | Chinese | [蛤蟆先生去看心理医生](https://z-lib.fm/book/wgeeP9Q3g7/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%8C%BB%E7%94%9F.html) | 理解焦虑与抑郁、如何理解情绪 |
 | 孩子，把你的手给我 | candidate_ready | 标题精确 | epub | 199 KB | 2016 | Chinese | [孩子把你的手给我](https://z-lib.fm/book/pZ8xMzoLZ9/%E5%AD%A9%E5%AD%90%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%89%8B%E7%BB%99%E6%88%91.html) | 如何做足够好的父母 |
 | 孩子：挑战 | candidate_ready | 标题精确 | epub | 565 KB | 2017 | Chinese | [孩子挑战](https://z-lib.fm/book/20rdBOLGAX/%E5%AD%A9%E5%AD%90%E6%8C%91%E6%88%98.html) | 如何做足够好的父母 |
@@ -151,7 +149,7 @@ date: '2026-06-07'
 | 因果推断 | candidate_ready | 标题含副标题/版本 | epub | 4.93 MB | 2022 | Chinese | [因果推断与机器学习](https://z-lib.fm/book/601WjwDRA4/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.html) | 如何建立批判性与证据判断 |
 | 引爆点 | candidate_ready | 标题含副标题/版本 | epub | 499 KB | 2020 | Chinese | [引爆点第五版](https://z-lib.fm/book/Y0LdyjK70K/%E5%BC%95%E7%88%86%E7%82%B9%E7%AC%AC%E4%BA%94%E7%89%88.html) | 如何做增长与营销 |
 | 营养学：概念与争论 | candidate_ready | 标题含副标题/版本 | pdf | 9.90 MB | 2004 | Chinese | [营养学 概念与争论 第8版](https://z-lib.fm/book/zZ4OGYwWAb/%E8%90%A5%E5%85%BB%E5%AD%A6-%E6%A6%82%E5%BF%B5%E4%B8%8E%E4%BA%89%E8%AE%BA-%E7%AC%AC8%E7%89%88.html) | 如何理解饮食与代谢 |
-| 用户故事地图 | candidate_ready | 标题精确 | pdf | 46.91 MB | 2016 | Chinese | [用户故事地图](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 |
+| 用户故事地图 | needs_manual_review | 已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理 | pdf | 46.91 MB | 2016 | Chinese | [用户故事地图](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 |
 | 用户体验要素 | candidate_ready | 标题含副标题/版本 | epub | 1.76 MB | 2011 | Chinese | [用户体验要素 以用户为中心的产品设计](https://z-lib.fm/book/20r3JbDGgX/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1.html) | 如何做好产品发现 |
 | 优秀到不能被忽视 | candidate_ready | 标题精确 | epub | 1.12 MB | 2018 | Chinese | [优秀到不能被忽视](https://z-lib.fm/book/Y0LXjQMk0K/%E4%BC%98%E7%A7%80%E5%88%B0%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%BF%BD%E8%A7%86.html) | 职业选择阅读路径、如何建立长期职业资本 |
 | 游戏力 | candidate_ready | 标题精确 | epub | 361 KB | 0 | Chinese | [游戏力](https://z-lib.fm/book/OZOMeQLpgx/%E6%B8%B8%E6%88%8F%E5%8A%9B.html) | 如何做足够好的父母 |

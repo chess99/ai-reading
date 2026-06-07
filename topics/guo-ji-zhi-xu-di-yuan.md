@@ -12,41 +12,43 @@ books:
     slug: shi-jie-zhi-xu
     path: books/社会科学/亨利·基辛格-世界秩序.md
     role: 秩序入口
-    reason: 先建立不同文明和国家关于秩序、均势与合法性的基本图景。
+    reason: "先建立不同文明和国家关于秩序、均势与合法性的基本图景。"
     status: in_library
   - title: 大国的兴衰
     author: 待补
     role: 兴衰背景
-    reason: 用经济、军事和财政能力解释大国实力变化。
+    reason: "用经济、军事和财政能力解释大国实力变化。"
     status: planned
   - title: 文明的冲突
     author: 待补
     role: 文明张力
-    reason: 提供文化和文明边界视角，用于辨认身份政治与冲突叙事。
+    reason: "提供文化和文明边界视角，用于辨认身份政治与冲突叙事。"
     status: planned
   - title: 注定一战
     author: 待补
     role: 冲突模型
-    reason: 用修昔底德陷阱讨论崛起国与守成国之间的战略风险。
+    reason: "用修昔底德陷阱讨论崛起国与守成国之间的战略风险。"
     status: planned
   - title: 国家为什么会失败
-    author: 待补
+    author: 德隆·阿西莫格鲁,詹姆斯·罗宾逊
+    slug: guo-jia-wei-shen-me-hui-shi-bai
+    path: books/社会科学/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
     role: 制度竞争
-    reason: 把地缘风险接到国家制度、发展能力和长期稳定性。
-    status: planned
+    reason: "把地缘风险接到国家制度、发展能力和长期稳定性。"
+    status: in_library
   - title: 开放社会及其敌人
     author: 卡尔·波普尔
     slug: kai-fang-she-hui-ji-qi-di-ren
     path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 开放社会
-    reason: 提醒读者国际竞争也涉及开放制度、批评能力和极权风险。
+    reason: "提醒读者国际竞争也涉及开放制度、批评能力和极权风险。"
     status: in_library
   - title: 未来简史
     author: 尤瓦尔·赫拉利
     slug: wei-lai-jian-shi
     path: books/社会科学/尤瓦尔·赫拉利-未来简史.md
     role: 未来风险
-    reason: 收束到技术、算法和人类未来的不确定性，扩展传统地缘视角。
+    reason: "收束到技术、算法和人类未来的不确定性，扩展传统地缘视角。"
     status: in_library
 ---
 

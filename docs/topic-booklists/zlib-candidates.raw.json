@@ -4260,244 +4260,6 @@
     "reviewNote": "标题精确"
   },
   {
-    "title": "国家为什么会失败",
-    "status": "candidate_ready",
-    "refs": [
-      "如何理解国际秩序与地缘风险",
-      "如何理解文明兴衰",
-      "如何识别制度与权力"
-    ],
-    "domains": [
-      "历史",
-      "社会"
-    ],
-    "count": 3,
-    "selected": {
-      "score": 285,
-      "reasons": [
-        "Chinese",
-        "exact title",
-        "format mobi"
-      ],
-      "title": "国家为什么会失败",
-      "author": "",
-      "format": "mobi",
-      "fileSize": "7.50 MB",
-      "year": "2013",
-      "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html",
-      "rating": "5.0",
-      "quality": "5.0"
-    },
-    "alternatives": [
-      {
-        "score": 285,
-        "title": "国家为什么会失败",
-        "format": "mobi",
-        "fileSize": "7.50 MB",
-        "year": "2013",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/jAD4kMXyAk/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5.html",
-        "reasons": [
-          "Chinese",
-          "exact title",
-          "format mobi"
-        ]
-      },
-      {
-        "score": 265,
-        "title": "国家为什么会失败权力富裕与贫困的根源简体中英对照",
-        "format": "epub",
-        "fileSize": "9.38 MB",
-        "year": "2014",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/WZxpeE7RZV/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5%E6%9D%83%E5%8A%9B%E5%AF%8C%E8%A3%95%E4%B8%8E%E8%B4%AB%E5%9B%B0%E7%9A%84%E6%A0%B9%E6%BA%90%E7%AE%80%E4%BD%93%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7.html",
-        "reasons": [
-          "Chinese",
-          "compact prefix",
-          "format epub"
-        ]
-      },
-      {
-        "score": 265,
-        "title": "国家为什么会失败中英对照优化目录最优版",
-        "format": "epub",
-        "fileSize": "9.10 MB",
-        "year": "2014",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/rAdR87p70B/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7%E4%BC%98%E5%8C%96%E7%9B%AE%E5%BD%95%E6%9C%80%E4%BC%98%E7%89%88.html",
-        "reasons": [
-          "Chinese",
-          "compact prefix",
-          "format epub"
-        ]
-      },
-      {
-        "score": 260,
-        "title": "国家为什么会失败中英对照",
-        "format": "epub",
-        "fileSize": "9.38 MB",
-        "year": "2014",
-        "language": "Chinese",
-        "rating": "0.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/XZqp3GKDAp/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7.html",
-        "reasons": [
-          "Chinese",
-          "compact prefix",
-          "format epub"
-        ]
-      },
-      {
-        "score": 254,
-        "title": "国家为什么会失败权力富裕与贫困的根源",
-        "format": "epub",
-        "fileSize": "339 KB",
-        "year": "2017",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "0.0",
-        "bookUrl": "https://z-lib.fm/book/20r3XDWmgX/%E5%9B%BD%E5%AE%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%A4%B1%E8%B4%A5%E6%9D%83%E5%8A%9B%E5%AF%8C%E8%A3%95%E4%B8%8E%E8%B4%AB%E5%9B%B0%E7%9A%84%E6%A0%B9%E6%BA%90.html",
-        "reasons": [
-          "Chinese",
-          "compact prefix",
-          "format epub"
-        ]
-      }
-    ],
-    "searchedAt": "2026-06-07",
-    "elapsedMs": 19818,
-    "reviewNote": "标题精确"
-  },
-  {
-    "title": "过滤泡",
-    "status": "candidate_ready",
-    "refs": [
-      "如何理解媒体、舆论与公共讨论",
-      "看懂平台、算法与注意力风险",
-      "数字公共生活与信息网络"
-    ],
-    "domains": [
-      "社会",
-      "科技"
-    ],
-    "count": 3,
-    "selected": {
-      "score": 195,
-      "reasons": [
-        "language english",
-        "exact title",
-        "format epub"
-      ],
-      "title": "过滤泡",
-      "author": "",
-      "format": "epub",
-      "fileSize": "9.40 MB",
-      "year": "2012",
-      "language": "english",
-      "bookUrl": "https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html",
-      "rating": "4.9",
-      "quality": "5.0"
-    },
-    "alternatives": [
-      {
-        "score": 195,
-        "title": "过滤泡",
-        "format": "epub",
-        "fileSize": "9.40 MB",
-        "year": "2012",
-        "language": "english",
-        "rating": "4.9",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html",
-        "reasons": [
-          "language english",
-          "exact title",
-          "format epub"
-        ]
-      },
-      {
-        "score": 157,
-        "title": "过滤泡互联网对我们的隐秘操纵 新闻与传播学译丛学术前沿系列",
-        "format": "epub",
-        "fileSize": "366 KB",
-        "year": "2020",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/WZp6BVQBgR/%E8%BF%87%E6%BB%A4%E6%B3%A1%E4%BA%92%E8%81%94%E7%BD%91%E5%AF%B9%E6%88%91%E4%BB%AC%E7%9A%84%E9%9A%90%E7%A7%98%E6%93%8D%E7%BA%B5-%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E8%AF%91%E4%B8%9B%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF%E7%B3%BB%E5%88%97.html",
-        "reasons": [
-          "Chinese",
-          "contains title",
-          "possibly collection/marketing title",
-          "format epub"
-        ]
-      },
-      {
-        "score": 130,
-        "title": "过滤泡互联网对我们的隐秘操纵 新闻与传播学译丛学术前沿系列",
-        "format": "mobi",
-        "fileSize": "554 KB",
-        "year": "2020",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "0.0",
-        "bookUrl": "https://z-lib.fm/book/6016aB2Gg4/%E8%BF%87%E6%BB%A4%E6%B3%A1%E4%BA%92%E8%81%94%E7%BD%91%E5%AF%B9%E6%88%91%E4%BB%AC%E7%9A%84%E9%9A%90%E7%A7%98%E6%93%8D%E7%BA%B5-%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E8%AF%91%E4%B8%9B%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF%E7%B3%BB%E5%88%97.html",
-        "reasons": [
-          "Chinese",
-          "contains title",
-          "possibly collection/marketing title",
-          "format mobi"
-        ]
-      },
-      {
-        "score": 124,
-        "title": "过滤泡互联网对我们的隐秘操纵 新闻与传播学译丛学术前沿系列",
-        "format": "pdf",
-        "fileSize": "1.71 MB",
-        "year": "2020",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "4.5",
-        "bookUrl": "https://z-lib.fm/book/jZkGeMP6Z3/%E8%BF%87%E6%BB%A4%E6%B3%A1%E4%BA%92%E8%81%94%E7%BD%91%E5%AF%B9%E6%88%91%E4%BB%AC%E7%9A%84%E9%9A%90%E7%A7%98%E6%93%8D%E7%BA%B5-%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E8%AF%91%E4%B8%9B%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF%E7%B3%BB%E5%88%97.html",
-        "reasons": [
-          "Chinese",
-          "contains title",
-          "possibly collection/marketing title",
-          "format pdf",
-          "small pdf"
-        ]
-      },
-      {
-        "score": 112,
-        "title": "过滤泡互联网对我们的隐秘操纵 新闻与传播学译丛学术前沿系列",
-        "format": "pdf",
-        "fileSize": "1.72 MB",
-        "year": "2020",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "0.0",
-        "bookUrl": "https://z-lib.fm/book/W0BoRxYygX/%E8%BF%87%E6%BB%A4%E6%B3%A1%E4%BA%92%E8%81%94%E7%BD%91%E5%AF%B9%E6%88%91%E4%BB%AC%E7%9A%84%E9%9A%90%E7%A7%98%E6%93%8D%E7%BA%B5-%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E8%AF%91%E4%B8%9B%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF%E7%B3%BB%E5%88%97.html",
-        "reasons": [
-          "Chinese",
-          "contains title",
-          "possibly collection/marketing title",
-          "format pdf",
-          "small pdf"
-        ]
-      }
-    ],
-    "searchedAt": "2026-06-07",
-    "elapsedMs": 19391,
-    "reviewNote": "标题精确"
-  },
-  {
     "title": "蛤蟆先生去看心理医生",
     "status": "candidate_ready",
     "refs": [
@@ -15373,7 +15135,7 @@
   },
   {
     "title": "用户故事地图",
-    "status": "candidate_ready",
+    "status": "needs_manual_review",
     "refs": [
       "产品从 0 到 1",
       "如何做好产品发现",
@@ -15455,7 +15217,13 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 18125,
-    "reviewNote": "标题精确"
+    "reviewNote": "已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "pdfUrl": "https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html",
+      "txtUrl": "https://z-lib.fm/book/wgeQm2kDXg/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html",
+      "reason": "PDF 解析文本约 1.1 万字且主要为重复水印；TXT 页面无可见下载按钮。"
+    }
   },
   {
     "title": "用户体验要素",

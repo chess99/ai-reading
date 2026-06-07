@@ -12,46 +12,48 @@ books:
     slug: quan-li
     path: books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md
     role: 权力入口
-    reason: 先让读者直面权力如何取得、维持和影响组织与公共生活。
+    reason: "先让读者直面权力如何取得、维持和影响组织与公共生活。"
     status: in_library
   - title: 旧制度与大革命
     author: 待补
     role: 转型切片
-    reason: 用法国革命前后的制度连续性，说明权力变化不等于旧结构自动消失。
+    reason: "用法国革命前后的制度连续性，说明权力变化不等于旧结构自动消失。"
     status: planned
   - title: 权力与繁荣
     author: 待补
     role: 国家激励
-    reason: 解释统治者激励、产权和秩序如何影响社会繁荣。
+    reason: "解释统治者激励、产权和秩序如何影响社会繁荣。"
     status: planned
   - title: 国家为什么会失败
-    author: 待补
+    author: 德隆·阿西莫格鲁,詹姆斯·罗宾逊
+    slug: guo-jia-wei-shen-me-hui-shi-bai
+    path: books/社会科学/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
     role: 制度比较
-    reason: 把权力问题推进到包容性制度、汲取性制度和长期发展差异。
-    status: planned
+    reason: "把权力问题推进到包容性制度、汲取性制度和长期发展差异。"
+    status: in_library
   - title: 通往奴役之路
     author: 弗里德里希·哈耶克
     slug: tong-wang-nu-yi-zhi-lu
     path: books/社会科学/弗里德里希·哈耶克-通往奴役之路.md
     role: 自由警戒
-    reason: 提醒读者制度设计中的控制冲动可能怎样积累成自由损失。
+    reason: "提醒读者制度设计中的控制冲动可能怎样积累成自由损失。"
     status: in_library
   - title: 法治及其本土资源
     author: 待补
     role: 本土法治
-    reason: 把抽象法治放回中国经验，观察正式规则和本土资源如何互动。
+    reason: "把抽象法治放回中国经验，观察正式规则和本土资源如何互动。"
     status: planned
   - title: 看得见的正义
     author: 待补
     role: 司法公共性
-    reason: 用程序、可见性和说理要求检查权力是否受到公开约束。
+    reason: "用程序、可见性和说理要求检查权力是否受到公开约束。"
     status: planned
   - title: 人的境况
     author: 汉娜·阿伦特
     slug: ren-de-jing-kuang
     path: books/哲学/汉娜·阿伦特-人的境况.md
     role: 行动空间
-    reason: 从公共行动和人的处境收束，提醒制度不只是结构，也塑造人的参与可能。
+    reason: "从公共行动和人的处境收束，提醒制度不只是结构，也塑造人的参与可能。"
     status: in_library
 ---
 
