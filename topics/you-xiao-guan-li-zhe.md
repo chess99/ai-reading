@@ -42,10 +42,12 @@ books:
     reason: 用提问、目标和反馈帮助团队成员承担责任。
     status: planned
   - title: 关键对话
-    author: 待补
+    author: 科里·帕特森
+    slug: guan-jian-dui-hua
+    path: books/心理学/科里·帕特森-关键对话.md
     role: 管理沟通
     reason: 处理绩效、冲突、承诺和分歧中的高风险谈话。
-    status: planned
+    status: in_library
   - title: 无畏的组织
     author: 待补
     role: 心理安全

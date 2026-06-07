@@ -25,10 +25,12 @@ books:
     reason: 识别缺乏信任、害怕冲突、承诺不足、逃避责任和不重视结果。
     status: planned
   - title: 关键对话
-    author: 待补
+    author: 科里·帕特森
+    slug: guan-jian-dui-hua
+    path: books/心理学/科里·帕特森-关键对话.md
     role: 分歧处理
     reason: 帮助团队在高情绪、高分歧场景下保持有效对话。
-    status: planned
+    status: in_library
   - title: 无畏的组织
     author: 待补
     role: 心理安全

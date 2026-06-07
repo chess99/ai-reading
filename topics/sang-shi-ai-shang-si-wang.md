@@ -18,10 +18,12 @@ books:
     reason: 让读者看见生命计划被疾病打断时，意义如何被重新组织。
     status: planned
   - title: 活出生命的意义
-    author: 待补
+    author: 维克多·E·弗兰克尔
+    slug: huo-chu-sheng-ming-de-yi-yi
+    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
     role: 意义支撑
     reason: 在不可控处境中理解意义、责任和承受力。
-    status: planned
+    status: in_library
   - title: 相约星期二
     author: 待补
     role: 告别对话

@@ -37,10 +37,12 @@ books:
     reason: 用提示、惯常行为和奖励理解重复行为如何形成。
     status: in_library
   - title: 活出生命的意义
-    author: 待补
+    author: 维克多·E·弗兰克尔
+    slug: huo-chu-sheng-ming-de-yi-yi
+    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
     role: 意义支撑
     reason: 把改变行为和意义、责任、生活方向连接起来。
-    status: planned
+    status: in_library
   - title: 反脆弱
     author: 纳西姆·塔勒布
     slug: fan-cui-ruo

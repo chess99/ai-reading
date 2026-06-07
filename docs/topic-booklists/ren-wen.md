@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：5
 - 书籍引用：33
 - 唯一书名：28
-- 已入库引用：5
-- 待入库唯一书名：24
-- z-lib 可优先尝试：24
+- 已入库引用：7
+- 待入库唯一书名：22
+- z-lib 可优先尝试：22
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -23,8 +23,6 @@ date: '2026-06-07'
 | 沉思录 | 2 | 人生哲学入门、如何读懂痛苦、自由与意义 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
 | 当下的力量 | 1 | 如何读懂痛苦、自由与意义 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 道德经 | 1 | 人生哲学入门 | 候选: [epub 609 KB 2021](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) |
-| 活出生命的意义 | 1 | 如何读懂痛苦、自由与意义 | 候选: [epub 1.04 MB 2019](https://z-lib.fm/book/DgXjKMdQZq/%E6%B4%BB%E5%87%BA%E7%94%9F%E5%91%BD%E7%9A%84%E6%84%8F%E4%B9%89.html) |
-| 开放社会及其敌人 | 1 | 如何读懂痛苦、自由与意义 | 候选: [epub 510 KB 1999](https://z-lib.fm/book/Y0LdrV8X0K/%E5%BC%80%E6%94%BE%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E6%95%8C%E4%BA%BA.html) |
 | 论语 | 1 | 人生哲学入门 | 候选: [epub 58 KB 0](https://z-lib.fm/book/dZ62aN11Zo/%E8%AE%BA%E8%AF%AD.html) |
 | 美的历程 | 1 | 艺术与审美入门 | 候选: [epub 4.44 MB 2009](https://z-lib.fm/book/dAKqd4ka07/%E7%BE%8E%E7%9A%84%E5%8E%86%E7%A8%8B.html) |
 | 尼各马可伦理学 | 2 | 人生哲学入门、如何理解幸福 | 候选: [epub 334 KB 2008](https://z-lib.fm/book/E0RoqVbqgd/%E5%B0%BC%E5%90%84%E9%A9%AC%E5%8F%AF%E4%BC%A6%E7%90%86%E5%AD%A6.html) |
@@ -67,12 +65,25 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 活出生命的意义 | 苦难意义 | planned | 待补 | 候选: [epub 1.04 MB 2019](https://z-lib.fm/book/DgXjKMdQZq/%E6%B4%BB%E5%87%BA%E7%94%9F%E5%91%BD%E7%9A%84%E6%84%8F%E4%B9%89.html) |
+| 活出生命的意义 | 苦难意义 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |
 | 悉达多 | 精神追寻 | planned | 待补 | 候选: [epub 4.84 MB 2025](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) |
 | 沉思录 | 内在自由 | planned | 待补 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
 | 当下的力量 | 当下经验 | planned | 待补 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
-| 开放社会及其敌人 | 社会边界 | planned | 待补 | 候选: [epub 510 KB 1999](https://z-lib.fm/book/Y0LdrV8X0K/%E5%BC%80%E6%94%BE%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E6%95%8C%E4%BA%BA.html) |
+| 开放社会及其敌人 | 社会边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/哲学/卡尔·波普尔-开放社会及其敌人.md |
+
+### 文学与人文阅读入门
+
+来源：topics/wen-xue-ren-wen.md
+
+| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
+| --- | --- | --- | --- | --- |
+| 如何阅读一本小说 | 小说入口 | planned | 待补 | 候选: [epub 623 KB 2015](https://z-lib.fm/book/wgeDvbM307/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4.html) |
+| 小说面面观 | 叙事形式 | planned | 待补 | 候选: [epub 274 KB 2016](https://z-lib.fm/book/N0WrLLm9Zq/%E5%B0%8F%E8%AF%B4%E9%9D%A2%E9%9D%A2%E8%A7%82.html) |
+| 文学理论入门 | 理论框架 | planned | 待补 | 候选: [epub 1.58 MB 2012](https://z-lib.fm/book/XAnlB9pR0d/%E6%96%87%E5%AD%A6%E7%90%86%E8%AE%BA%E5%85%A5%E9%97%A8.html) |
+| 文学回忆录 | 文学经验 | planned | 待补 | 候选: [epub 1.46 MB 2014](https://z-lib.fm/book/4gMoyJPoZ8/%E6%96%87%E5%AD%A6%E5%9B%9E%E5%BF%86%E5%BD%95.html) |
+| 文学的故事 | 文学史 | planned | 待补 | 候选: [mobi 7.11 MB 2009](https://z-lib.fm/book/WZx1jVlEO0/%E6%96%87%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B.html) |
+| 文学讲稿 | 细读示范 | planned | 待补 | 候选: [epub 893 KB 2018](https://z-lib.fm/book/dAokqNKQAV/%E6%96%87%E5%AD%A6%E8%AE%B2%E7%A8%BF%E8%87%AA%E5%88%B6.html) |
 
 ### 如何理解幸福
 
@@ -87,19 +98,6 @@ date: '2026-06-07'
 | 被讨厌的勇气 | 自我接纳 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md |
 | 人生的智慧 | 人生判断 | planned | 待补 | 候选: [epub 7.58 MB 2014](https://z-lib.fm/book/W0EVee81gl/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7.html) |
 | 尼各马可伦理学 | 德性伦理 | planned | 待补 | 候选: [epub 334 KB 2008](https://z-lib.fm/book/E0RoqVbqgd/%E5%B0%BC%E5%90%84%E9%A9%AC%E5%8F%AF%E4%BC%A6%E7%90%86%E5%AD%A6.html) |
-
-### 文学与人文阅读入门
-
-来源：topics/wen-xue-ren-wen.md
-
-| 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
-| --- | --- | --- | --- | --- |
-| 如何阅读一本小说 | 小说入口 | planned | 待补 | 候选: [epub 623 KB 2015](https://z-lib.fm/book/wgeDvbM307/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4.html) |
-| 小说面面观 | 叙事形式 | planned | 待补 | 候选: [epub 274 KB 2016](https://z-lib.fm/book/N0WrLLm9Zq/%E5%B0%8F%E8%AF%B4%E9%9D%A2%E9%9D%A2%E8%A7%82.html) |
-| 文学理论入门 | 理论框架 | planned | 待补 | 候选: [epub 1.58 MB 2012](https://z-lib.fm/book/XAnlB9pR0d/%E6%96%87%E5%AD%A6%E7%90%86%E8%AE%BA%E5%85%A5%E9%97%A8.html) |
-| 文学回忆录 | 文学经验 | planned | 待补 | 候选: [epub 1.46 MB 2014](https://z-lib.fm/book/4gMoyJPoZ8/%E6%96%87%E5%AD%A6%E5%9B%9E%E5%BF%86%E5%BD%95.html) |
-| 文学的故事 | 文学史 | planned | 待补 | 候选: [mobi 7.11 MB 2009](https://z-lib.fm/book/WZx1jVlEO0/%E6%96%87%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B.html) |
-| 文学讲稿 | 细读示范 | planned | 待补 | 候选: [epub 893 KB 2018](https://z-lib.fm/book/dAokqNKQAV/%E6%96%87%E5%AD%A6%E8%AE%B2%E7%A8%BF%E8%87%AA%E5%88%B6.html) |
 
 ### 艺术与审美入门
 

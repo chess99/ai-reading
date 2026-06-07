@@ -33,10 +33,12 @@ books:
     reason: 把地缘风险接到国家制度、发展能力和长期稳定性。
     status: planned
   - title: 开放社会及其敌人
-    author: 待补
+    author: 卡尔·波普尔
+    slug: kai-fang-she-hui-ji-qi-di-ren
+    path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 开放社会
     reason: 提醒读者国际竞争也涉及开放制度、批评能力和极权风险。
-    status: planned
+    status: in_library
   - title: 未来简史
     author: 尤瓦尔·赫拉利
     slug: wei-lai-jian-shi

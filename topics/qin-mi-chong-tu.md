@@ -42,10 +42,12 @@ books:
     reason: 处理事实争议、感受冲突和身份威胁同时存在的谈话。
     status: planned
   - title: 关键对话
-    author: 待补
+    author: 科里·帕特森
+    slug: guan-jian-dui-hua
+    path: books/心理学/科里·帕特森-关键对话.md
     role: 高风险对话
     reason: 在情绪高、分歧大、后果重的场景里建立更稳定的对话条件。
-    status: planned
+    status: in_library
 ---
 
 # 如何处理亲密关系中的冲突

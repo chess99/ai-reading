@@ -8,10 +8,12 @@ group: 人生哲学
 date: '2026-06-06'
 books:
   - title: 活出生命的意义
-    author: 待补
+    author: 维克多·E·弗兰克尔
+    slug: huo-chu-sheng-ming-de-yi-yi
+    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
     role: 苦难意义
     reason: 从极端处境中讨论人如何保留意义感和选择。
-    status: planned
+    status: in_library
   - title: 悉达多
     author: 待补
     role: 精神追寻
@@ -35,10 +37,12 @@ books:
     reason: 把自由放进劳动、工作、行动和公共世界中理解。
     status: in_library
   - title: 开放社会及其敌人
-    author: 待补
+    author: 卡尔·波普尔
+    slug: kai-fang-she-hui-ji-qi-di-ren
+    path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 社会边界
     reason: 提醒意义和自由也依赖开放社会中的权力约束。
-    status: planned
+    status: in_library
 ---
 
 # 如何读懂痛苦、自由与意义

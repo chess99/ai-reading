@@ -20,10 +20,12 @@ books:
     reason: 把评价和指责拆成观察、感受、需要与请求。
     status: planned
   - title: 关键对话
-    author: 待补
+    author: 科里·帕特森
+    slug: guan-jian-dui-hua
+    path: books/心理学/科里·帕特森-关键对话.md
     role: 高风险对话
     reason: 处理分歧大、情绪强、后果重时如何维持对话安全。
-    status: planned
+    status: in_library
   - title: 高难度谈话
     author: 待补
     role: 困难议题

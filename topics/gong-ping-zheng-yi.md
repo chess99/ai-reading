@@ -44,10 +44,12 @@ books:
     reason: 提醒读者福利、管制和自由之间存在真实张力，不能只保留喜欢的一端。
     status: in_library
   - title: 开放社会及其敌人
-    author: 待补
+    author: 卡尔·波普尔
+    slug: kai-fang-she-hui-ji-qi-di-ren
+    path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 开放社会
     reason: 放在末尾，用来检查正义理想如何面对极权诱惑、历史决定论和制度防错。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解公平与正义

@@ -39,10 +39,12 @@ books:
     reason: 从认知、情绪和身体功能角度理解运动的长期价值。
     status: in_library
   - title: 活出生命的意义
-    author: 待补
+    author: 维克多·E·弗兰克尔
+    slug: huo-chu-sheng-ming-de-yi-yi
+    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
     role: 意义支撑
     reason: 处理疾病和限制中仍然可能存在的意义感。
-    status: planned
+    status: in_library
   - title: 生死课
     author: 待补
     role: 临终沟通

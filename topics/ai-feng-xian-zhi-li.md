@@ -28,10 +28,12 @@ books:
     reason: 把算法风险放入行为数据、预测市场和商业激励中理解。
     status: planned
   - title: 开放社会及其敌人
-    author: 待补
+    author: 卡尔·波普尔
+    slug: kai-fang-she-hui-ji-qi-di-ren
+    path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 政治边界
     reason: 提供开放社会、权力约束和反集权的政治哲学框架。
-    status: planned
+    status: in_library
   - title: 智人之上
     author: 尤瓦尔·赫拉利
     slug: zhi-ren-zhi-shang
