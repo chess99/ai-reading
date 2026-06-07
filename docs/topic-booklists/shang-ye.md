@@ -12,8 +12,8 @@ date: '2026-06-07'
 - 唯一书名：38
 - 已入库引用：40
 - 待入库唯一书名：14
-- z-lib 可优先尝试：10
-- z-lib 需复核/换源：4
+- z-lib 可优先尝试：12
+- z-lib 需复核/换源：2
 
 ## 待入库书目
 
@@ -23,11 +23,11 @@ date: '2026-06-07'
 | 规模 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [epub 6.35 MB 2018](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) |
 | 好战略，坏战略 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [epub 1.20 MB 2012](https://z-lib.fm/book/wgeDdVOn07/%E5%A5%BD%E6%88%98%E7%95%A5%E5%9D%8F%E6%88%98%E7%95%A5.html) |
 | 监视资本主义时代 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
-| 精益产品手册 | 1 | 如何做好产品发现 | 需复核: 标题不匹配；[pdf 50.31 MB 2017](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) |
+| 精益产品手册 | 1 | 如何做好产品发现 | 候选: [epub 4.65 MB 2015](https://z-lib.fm/book/7W0ELQMkZl/the-lean-product-playbook-how-to-innovate-with-minimum-viable-products-and-rapid-customer-feedback.html) |
 | 妈妈测试 | 2 | 产品从 0 到 1、如何验证产品机会 | 候选: [azw3 5.01 MB 2010](https://z-lib.fm/book/E0RYrXY9MZ/%E5%A6%88%E5%A6%88%E6%B5%8B%E8%AF%95.html) |
 | 商业模式新生代 | 2 | 如何设计商业模式与理解公司经营、如何验证产品机会 | 候选: [epub 11.38 MB 2011](https://z-lib.fm/book/dAod7eRBZV/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E6%96%B0%E7%94%9F%E4%BB%A3.html) |
 | 设计冲刺 | 1 | 如何做好产品发现 | 候选: [epub 12.01 MB 2017](https://z-lib.fm/book/Q0Y5MlRn0y/%E8%AE%BE%E8%AE%A1%E5%86%B2%E5%88%BA.html) |
-| 设计心理学 | 1 | 如何做好产品发现 | 需复核: 标题包含目标词但不够精确；[epub 13.58 MB 2015](https://z-lib.fm/book/zZ4N2Ddxgb/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A6-4%E5%8D%B7%E8%A3%85.html) |
+| 设计心理学 | 1 | 如何做好产品发现 | 候选: [epub 4.76 MB 2016](https://z-lib.fm/book/DgXLyaqqgq/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A61%E6%97%A5%E5%B8%B8%E7%9A%84%E8%AE%BE%E8%AE%A1.html) |
 | 无畏的组织 | 1 | 如何建立产品组织与交付系统 | 需复核: 格式 fb2 暂不支持；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
 | 引爆点 | 1 | 如何做增长与营销 | 候选: [epub 499 KB 2020](https://z-lib.fm/book/Y0LdyjK70K/%E5%BC%95%E7%88%86%E7%82%B9%E7%AC%AC%E4%BA%94%E7%89%88.html) |
 | 用户故事地图 | 3 | 产品从 0 到 1、如何建立产品组织与交付系统、如何做好产品发现 | 需复核: 已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理；[pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
@@ -121,10 +121,10 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 启示录 | 产品发现 | in_library | Marty Cagan | qi-shi-lu / books/创业产品/Marty Cagan-启示录.md |
 | 用户故事地图 | 用户任务 | planned | 待补 | 需复核: 已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理；[pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
-| 精益产品手册 | 产品市场匹配 | planned | 待补 | 需复核: 标题不匹配；[pdf 50.31 MB 2017](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) |
+| 精益产品手册 | 产品市场匹配 | planned | 待补 | 候选: [epub 4.65 MB 2015](https://z-lib.fm/book/7W0ELQMkZl/the-lean-product-playbook-how-to-innovate-with-minimum-viable-products-and-rapid-customer-feedback.html) |
 | 俞军产品方法论 | 用户价值 | in_library | 俞军 | yu-jun-chan-pin-fang-fa-lun / books/创业产品/俞军-俞军产品方法论.md |
 | 用户体验要素 | 体验层次 | planned | 待补 | 候选: [epub 1.76 MB 2011](https://z-lib.fm/book/20r3JbDGgX/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1.html) |
-| 设计心理学 | 行为心理 | planned | 待补 | 需复核: 标题包含目标词但不够精确；[epub 13.58 MB 2015](https://z-lib.fm/book/zZ4N2Ddxgb/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A6-4%E5%8D%B7%E8%A3%85.html) |
+| 设计心理学 | 行为心理 | planned | 待补 | 候选: [epub 4.76 MB 2016](https://z-lib.fm/book/DgXLyaqqgq/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A61%E6%97%A5%E5%B8%B8%E7%9A%84%E8%AE%BE%E8%AE%A1.html) |
 | 设计冲刺 | 冲刺验证 | planned | 待补 | 候选: [epub 12.01 MB 2017](https://z-lib.fm/book/Q0Y5MlRn0y/%E8%AE%BE%E8%AE%A1%E5%86%B2%E5%88%BA.html) |
 | 产品开发流程原理 | 开发流动 | in_library | 唐纳德·莱纳特森 | chan-pin-kai-fa-liu-cheng-yuan-li / books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md |
 

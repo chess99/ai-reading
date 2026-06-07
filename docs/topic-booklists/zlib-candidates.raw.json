@@ -5749,7 +5749,7 @@
   },
   {
     "title": "精益产品手册",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何做好产品发现"
     ],
@@ -5758,22 +5758,21 @@
     ],
     "count": 1,
     "selected": {
-      "score": -39,
+      "score": 240,
       "reasons": [
-        "Chinese",
-        "title mismatch",
-        "format pdf",
-        "large pdf"
+        "English original title",
+        "original book for 精益产品手册",
+        "format epub"
       ],
-      "title": "如何开发一个好产品 精益产品开发实战手册",
-      "author": "",
-      "format": "pdf",
-      "fileSize": "50.31 MB",
-      "year": "2017",
-      "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html",
-      "rating": "0.0",
-      "quality": "0.0"
+      "title": "the lean product playbook how to innovate with minimum viable products and rapid customer feedback",
+      "author": "Dan Olsen",
+      "format": "epub",
+      "fileSize": "4.65 MB",
+      "year": "2015",
+      "language": "English",
+      "bookUrl": "https://z-lib.fm/book/7W0ELQMkZl/the-lean-product-playbook-how-to-innovate-with-minimum-viable-products-and-rapid-customer-feedback.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -5813,7 +5812,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 20112,
-    "reviewNote": "标题不匹配"
+    "reviewNote": "作者/原题复核：目标书对应 Dan Olsen 的 The Lean Product Playbook；未找到中文精确题名时，可优先尝试英文 EPUB 原书。"
   },
   {
     "title": "旧制度与大革命",
@@ -10116,7 +10115,7 @@
   },
   {
     "title": "设计心理学",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何做好产品发现"
     ],
@@ -10125,21 +10124,21 @@
     ],
     "count": 1,
     "selected": {
-      "score": 265,
+      "score": 260,
       "reasons": [
         "Chinese",
-        "compact prefix",
+        "topic-specific volume 1",
         "format epub"
       ],
-      "title": "设计心理学 4卷装",
-      "author": "",
+      "title": "设计心理学1日常的设计",
+      "author": "唐纳德·诺曼",
       "format": "epub",
-      "fileSize": "13.58 MB",
-      "year": "2015",
+      "fileSize": "4.76 MB",
+      "year": "2016",
       "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/zZ4N2Ddxgb/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A6-4%E5%8D%B7%E8%A3%85.html",
-      "rating": "5.0",
-      "quality": "5.0"
+      "bookUrl": "https://z-lib.fm/book/DgXLyaqqgq/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A61%E6%97%A5%E5%B8%B8%E7%9A%84%E8%AE%BE%E8%AE%A1.html",
+      "rating": "",
+      "quality": ""
     },
     "alternatives": [
       {
@@ -10225,7 +10224,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 20038,
-    "reviewNote": "标题包含目标词但不够精确"
+    "reviewNote": "复搜后改选更精确候选：《设计心理学1：日常的设计》匹配 topic 中可供性、反馈、映射和错误的阅读目的，优于 4 卷套装。"
   },
   {
     "title": "社会分工论",

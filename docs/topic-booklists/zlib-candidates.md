@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 169 个唯一待入库书名：160 个候选可优先尝试下载，9 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 169 个唯一待入库书名：162 个候选可优先尝试下载，7 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -63,7 +63,7 @@ date: '2026-06-07'
 | 金字塔原理 | candidate_ready | 标题精确 | epub | 6.54 MB | 2014 | Chinese | [金字塔原理](https://z-lib.fm/book/zZ4QpebR0b/%E9%87%91%E5%AD%97%E5%A1%94%E5%8E%9F%E7%90%86.html) | 如何提升沟通与表达、阅读、笔记与输出系统 |
 | 经济学原理 | candidate_ready | 标题精确 | epub | 733 KB | 2011 | Chinese | [经济学原理](https://z-lib.fm/book/jZkLW17K03/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html) | 如何理解经济运行 |
 | 经理人员的职能 | candidate_ready | 标题精确 | pdf | 9.64 MB | 1997 | Chinese | [经理人员的职能](https://z-lib.fm/book/DgXNBPOmZq/%E7%BB%8F%E7%90%86%E4%BA%BA%E5%91%98%E7%9A%84%E8%81%8C%E8%83%BD.html) | 如何成为有效管理者、看懂组织运转 |
-| 精益产品手册 | needs_manual_review | 标题不匹配 | pdf | 50.31 MB | 2017 | Chinese | [如何开发一个好产品 精益产品开发实战手册](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) | 如何做好产品发现 |
+| 精益产品手册 | candidate_ready | 作者/原题复核：目标书对应 Dan Olsen 的 The Lean Product Playbook；未找到中文精确题名时，可优先尝试英文 EPUB 原书。 | epub | 4.65 MB | 2015 | English | [the lean product playbook how to innovate with minimum viable products and rapid customer feedback](https://z-lib.fm/book/7W0ELQMkZl/the-lean-product-playbook-how-to-innovate-with-minimum-viable-products-and-rapid-customer-feedback.html) | 如何做好产品发现 |
 | 旧制度与大革命 | needs_manual_review | 详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。 | epub | 5.37 MB | 2013 | Chinese | [旧制度与大革命](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) | 如何识别制度与权力、中国社会的现代转型 |
 | 就业、利息和货币通论 | candidate_ready | 标点差异 | epub | 825 KB | 2020 | Chinese | [就业利息和货币通论](https://z-lib.fm/book/N0Wamr8RAq/%E5%B0%B1%E4%B8%9A%E5%88%A9%E6%81%AF%E5%92%8C%E8%B4%A7%E5%B8%81%E9%80%9A%E8%AE%BA.html) | 如何理解经济运行 |
 | 决断力 | candidate_ready | 标题含副标题/版本 | epub | 376 KB | 2014 | Chinese | [决断力如何在生活与工作中做出更好的选择](https://z-lib.fm/book/lgGajEO8ZV/%E5%86%B3%E6%96%AD%E5%8A%9B%E5%A6%82%E4%BD%95%E5%9C%A8%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%81%9A%E5%87%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%80%89%E6%8B%A9.html) | 如何做重大决策 |
@@ -103,7 +103,7 @@ date: '2026-06-07'
 | 如何阅读一本小说 | candidate_ready | 标题精确 | epub | 623 KB | 2015 | Chinese | [如何阅读一本小说](https://z-lib.fm/book/wgeDvbM307/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4.html) | 文学与人文阅读入门 |
 | 商业模式新生代 | candidate_ready | 标题精确 | epub | 11.38 MB | 2011 | Chinese | [商业模式新生代](https://z-lib.fm/book/dAod7eRBZV/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E6%96%B0%E7%94%9F%E4%BB%A3.html) | 如何验证产品机会、如何设计商业模式与理解公司经营 |
 | 设计冲刺 | candidate_ready | 标题精确 | epub | 12.01 MB | 2017 | Chinese | [设计冲刺](https://z-lib.fm/book/Q0Y5MlRn0y/%E8%AE%BE%E8%AE%A1%E5%86%B2%E5%88%BA.html) | 如何做好产品发现 |
-| 设计心理学 | needs_manual_review | 标题包含目标词但不够精确 | epub | 13.58 MB | 2015 | Chinese | [设计心理学 4卷装](https://z-lib.fm/book/zZ4N2Ddxgb/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A6-4%E5%8D%B7%E8%A3%85.html) | 如何做好产品发现 |
+| 设计心理学 | candidate_ready | 复搜后改选更精确候选：《设计心理学1：日常的设计》匹配 topic 中可供性、反馈、映射和错误的阅读目的，优于 4 卷套装。 | epub | 4.76 MB | 2016 | Chinese | [设计心理学1日常的设计](https://z-lib.fm/book/DgXLyaqqgq/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A61%E6%97%A5%E5%B8%B8%E7%9A%84%E8%AE%BE%E8%AE%A1.html) | 如何做好产品发现 |
 | 社会分工论 | candidate_ready | 标题精确 | pdf | 3.87 MB | 0 | Chinese | [社会分工论](https://z-lib.fm/book/vAyKoPyV0E/%E7%A4%BE%E4%BC%9A%E5%88%86%E5%B7%A5%E8%AE%BA.html) | 社会学如何看共同生活 |
 | 社会学的想象力 | candidate_ready | 标题精确 | epub | 542 KB | 2017 | Chinese | [社会学的想象力](https://z-lib.fm/book/3gN8mDP2ZY/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%83%B3%E8%B1%A1%E5%8A%9B.html) | 社会学如何看共同生活、如何理解性别与社会结构 |
 | 生命3.0 | candidate_ready | 标题精确 | epub | 8.52 MB | 2018 | Chinese | [生命30](https://z-lib.fm/book/QAVRwj19AG/%E7%94%9F%E5%91%BD30.html) | 普通人如何理解 AI 变革 |
