@@ -8,10 +8,12 @@ group: 产品组织
 date: '2026-06-06'
 books:
   - title: 启示录
-    author: 待补
+    author: Marty Cagan
+    slug: qi-shi-lu
+    path: books/创业产品/Marty Cagan-启示录.md
     role: 产品组织
     reason: 先建立现代产品团队的职责、协作方式和产品发现要求。
-    status: planned
+    status: in_library
   - title: 产品开发流程原理
     author: 唐纳德·莱纳特森
     slug: chan-pin-kai-fa-liu-cheng-yuan-li

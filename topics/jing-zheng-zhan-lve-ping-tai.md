@@ -39,10 +39,12 @@ books:
     reason: 说明规模、网络和城市化等规律如何改变成本、增长和组织边界。
     status: planned
   - title: 平台革命
-    author: 待补
+    author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
+    slug: ping-tai-ge-ming
+    path: books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
     role: 平台结构
     reason: 系统解释双边市场、网络效应、治理规则和平台竞争。
-    status: planned
+    status: in_library
   - title: 从零到一
     author: 彼得·蒂尔,布莱克·马斯特斯
     slug: cong-ling-dao-yi

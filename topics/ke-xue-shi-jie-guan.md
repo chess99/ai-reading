@@ -37,10 +37,12 @@ books:
     reason: 用心理学作为案例，训练读者区分科学证据、伪科学和流行解释。
     status: planned
   - title: 技术的本质
-    author: 待补
+    author: 布莱恩·阿瑟
+    slug: ji-shu-de-ben-zhi
+    path: books/社会科学/布莱恩·阿瑟-技术的本质.md
     role: 技术演化收束
     reason: 最后连接科学、知识和技术组合，说明技术不是孤立发明，而是演化系统。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立科学世界观

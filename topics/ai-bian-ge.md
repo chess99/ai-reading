@@ -35,10 +35,12 @@ books:
     reason: 把 AI 放进更广泛的技术加速和产业重组中理解。
     status: in_library
   - title: 技术的本质
-    author: 待补
+    author: 布莱恩·阿瑟
+    slug: ji-shu-de-ben-zhi
+    path: books/社会科学/布莱恩·阿瑟-技术的本质.md
     role: 技术演化
     reason: 回到技术如何组合与演进，避免只追逐最新工具。
-    status: planned
+    status: in_library
 ---
 
 # 普通人如何理解 AI 变革

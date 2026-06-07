@@ -35,10 +35,12 @@ books:
     reason: 用算法决策案例呈现偏见、责任和制度风险。
     status: planned
   - title: 平台革命
-    author: 待补
+    author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
+    slug: ping-tai-ge-ming
+    path: books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
     role: 平台治理
     reason: 解释平台规则、网络效应和生态治理如何运作。
-    status: planned
+    status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie

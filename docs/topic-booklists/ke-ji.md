@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：5
 - 书籍引用：33
 - 唯一书名：22
-- 已入库引用：12
-- 待入库唯一书名：14
-- z-lib 可优先尝试：14
+- 已入库引用：16
+- 待入库唯一书名：12
+- z-lib 可优先尝试：12
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -23,9 +23,7 @@ date: '2026-06-07'
 | 对齐问题 | 1 | AI 风险、治理与技术权力 | 候选: [mobi 6.16 MB 2020](https://z-lib.fm/book/DAadqWa33g/%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98.html) |
 | 过滤泡 | 2 | 看懂平台、算法与注意力风险、数字公共生活与信息网络 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
 | 即将到来的浪潮 | 2 | 普通人如何理解 AI 变革、AI 风险、治理与技术权力 | 候选: [epub 999 KB 0](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) |
-| 技术的本质 | 2 | 普通人如何理解 AI 变革、技术社会读什么 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
 | 监视资本主义时代 | 3 | AI 风险、治理与技术权力、技术社会读什么、看懂平台、算法与注意力风险 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
-| 平台革命 | 2 | 技术社会读什么、看懂平台、算法与注意力风险 | 候选: [epub 3.31 MB 2017](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) |
 | 人机共智 | 1 | 普通人如何理解 AI 变革 | 候选: [pdf 7.55 MB 2006](https://z-lib.fm/book/E0RYrXVJMZ/%E4%BA%BA%E6%9C%BA%E5%85%B1%E6%99%BA.html) |
 | 生命3.0 | 1 | 普通人如何理解 AI 变革 | 候选: [epub 8.52 MB 2018](https://z-lib.fm/book/QAVRwj19AG/%E7%94%9F%E5%91%BD30.html) |
 | 失控 | 1 | 技术社会读什么 | 候选: [epub 2.08 MB 2016](https://z-lib.fm/book/m03QMp84A6/%E5%A4%B1%E6%8E%A7.html) |
@@ -47,7 +45,7 @@ date: '2026-06-07'
 | 生命3.0 | 智能边界 | planned | 待补 | 候选: [epub 8.52 MB 2018](https://z-lib.fm/book/QAVRwj19AG/%E7%94%9F%E5%91%BD30.html) |
 | 即将到来的浪潮 | 扩散风险 | planned | 待补 | 候选: [epub 999 KB 0](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) |
 | 未来呼啸而来 | 产业变化 | in_library | 彼得·戴曼迪斯,史蒂芬·科特勒 | wei-lai-hu-xiao-er-lai / books/社会科学/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md |
-| 技术的本质 | 技术演化 | planned | 待补 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
+| 技术的本质 | 技术演化 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会科学/布莱恩·阿瑟-技术的本质.md |
 
 ### AI 风险、治理与技术权力
 
@@ -68,13 +66,13 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 技术的本质 | 技术演化 | planned | 待补 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
+| 技术的本质 | 技术演化 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会科学/布莱恩·阿瑟-技术的本质.md |
 | 必然 | 网络趋势 | planned | 待补 | 候选: [epub 2.46 MB 2016](https://z-lib.fm/book/dZ69j2dbAo/%E5%BF%85%E7%84%B6.html) |
 | 失控 | 复杂系统 | planned | 待补 | 候选: [epub 2.08 MB 2016](https://z-lib.fm/book/m03QMp84A6/%E5%A4%B1%E6%8E%A7.html) |
 | 理解媒介 | 媒介环境 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
 | 娱乐至死 | 娱乐化风险 | in_library | 尼尔·波兹曼 | yu-le-zhi-si / books/社会科学/尼尔·波兹曼-娱乐至死.md |
 | 监视资本主义时代 | 数据权力 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
-| 平台革命 | 平台结构 | planned | 待补 | 候选: [epub 3.31 MB 2017](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) |
+| 平台革命 | 平台结构 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
 
 ### 看懂平台、算法与注意力风险
 
@@ -87,7 +85,7 @@ date: '2026-06-07'
 | 过滤泡 | 信息茧房 | planned | 待补 | 候选: [epub 9.40 MB 2012](https://z-lib.fm/book/qA9OPLpMJ0/%E8%BF%87%E6%BB%A4%E6%B3%A1.html) |
 | 监视资本主义时代 | 数据监控 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
 | 算法霸权 | 算法伤害 | planned | 待补 | 候选: [epub 538 KB 2018](https://z-lib.fm/book/W0BXBP2QAX/%E7%AE%97%E6%B3%95%E9%9C%B8%E6%9D%83.html) |
-| 平台革命 | 平台治理 | planned | 待补 | 候选: [epub 3.31 MB 2017](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) |
+| 平台革命 | 平台治理 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
 | 理解媒介 | 媒介理论 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
 
 ### 数字公共生活与信息网络

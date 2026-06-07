@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：58
 - 唯一书名：38
-- 已入库引用：34
-- 待入库唯一书名：17
-- z-lib 可优先尝试：14
+- 已入库引用：38
+- 待入库唯一书名：15
+- z-lib 可优先尝试：12
 - z-lib 需复核/换源：3
 
 ## 待入库书目
@@ -26,8 +26,6 @@ date: '2026-06-07'
 | 监视资本主义时代 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
 | 精益产品手册 | 1 | 如何做好产品发现 | 需复核: 标题不匹配; [pdf 50.31 MB 2017](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) |
 | 妈妈测试 | 2 | 产品从 0 到 1、如何验证产品机会 | 候选: [azw3 5.01 MB 2010](https://z-lib.fm/book/E0RYrXY9MZ/%E5%A6%88%E5%A6%88%E6%B5%8B%E8%AF%95.html) |
-| 平台革命 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [epub 3.31 MB 2017](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) |
-| 启示录 | 3 | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 | 候选: [epub 483 KB 2011](https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html) |
 | 商业模式新生代 | 2 | 如何验证产品机会、如何设计商业模式与理解公司经营 | 候选: [epub 11.38 MB 2011](https://z-lib.fm/book/dAod7eRBZV/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E6%96%B0%E7%94%9F%E4%BB%A3.html) |
 | 设计冲刺 | 1 | 如何做好产品发现 | 候选: [epub 12.01 MB 2017](https://z-lib.fm/book/Q0Y5MlRn0y/%E8%AE%BE%E8%AE%A1%E5%86%B2%E5%88%BA.html) |
 | 设计心理学 | 1 | 如何做好产品发现 | 需复核: 标题包含目标词但不够精确; [epub 13.58 MB 2015](https://z-lib.fm/book/zZ4N2Ddxgb/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A6-4%E5%8D%B7%E8%A3%85.html) |
@@ -50,7 +48,7 @@ date: '2026-06-07'
 | 四步创业法 | 客户开发 | in_library | 史蒂夫·布兰克 | si-bu-chuang-ye-fa / books/创业产品/史蒂夫·布兰克-四步创业法.md |
 | 客户开发入门 | 用户访谈 | in_library | 辛迪·阿尔瓦雷斯 | ke-hu-kai-fa-ru-men / books/创业产品/辛迪·阿尔瓦雷斯-客户开发入门.md |
 | 妈妈测试 | 访谈校准 | planned | 待补 | 候选: [azw3 5.01 MB 2010](https://z-lib.fm/book/E0RYrXY9MZ/%E5%A6%88%E5%A6%88%E6%B5%8B%E8%AF%95.html) |
-| 启示录 | 产品发现 | planned | 待补 | 候选: [epub 483 KB 2011](https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html) |
+| 启示录 | 产品发现 | in_library | Marty Cagan | qi-shi-lu / books/创业产品/Marty Cagan-启示录.md |
 | 用户故事地图 | 需求组织 | planned | 待补 | 候选: [pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
 | 产品开发流程原理 | 交付系统 | in_library | 唐纳德·莱纳特森 | chan-pin-kai-fa-liu-cheng-yuan-li / books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md |
 | 创业维艰 | 创业管理 | planned | 待补 | 候选: [epub 2.06 MB 2016](https://z-lib.fm/book/N0WrVerqZq/%E5%88%9B%E4%B8%9A%E7%BB%B4%E8%89%B0.html) |
@@ -62,7 +60,7 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 启示录 | 产品发现 | planned | 待补 | 候选: [epub 483 KB 2011](https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html) |
+| 启示录 | 产品发现 | in_library | Marty Cagan | qi-shi-lu / books/创业产品/Marty Cagan-启示录.md |
 | 用户故事地图 | 用户任务 | planned | 待补 | 候选: [pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
 | 精益产品手册 | 产品市场匹配 | planned | 待补 | 需复核: 标题不匹配; [pdf 50.31 MB 2017](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) |
 | 俞军产品方法论 | 用户价值 | in_library | 俞军 | yu-jun-chan-pin-fang-fa-lun / books/创业产品/俞军-俞军产品方法论.md |
@@ -91,7 +89,7 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 启示录 | 产品组织 | planned | 待补 | 候选: [epub 483 KB 2011](https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html) |
+| 启示录 | 产品组织 | in_library | Marty Cagan | qi-shi-lu / books/创业产品/Marty Cagan-启示录.md |
 | 产品开发流程原理 | 开发流动 | in_library | 唐纳德·莱纳特森 | chan-pin-kai-fa-liu-cheng-yuan-li / books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md |
 | 用户故事地图 | 需求组织 | planned | 待补 | 候选: [pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
 | 精益思维 | 精益交付 | in_library | 詹姆斯·沃麦克,丹尼尔·琼斯 | jing-yi-si-wei / books/商业管理/詹姆斯·沃麦克-精益思维.md |
@@ -111,7 +109,7 @@ date: '2026-06-07'
 | 创新者的窘境 | 创新冲击 | in_library | 克莱顿·克里斯坦森 | chuang-xin-zhe-de-jiong-jing / books/商业管理/公司战略/克莱顿·克里斯坦森-创新者的窘境.md |
 | 定位 | 心智位置 | in_library | 阿尔·里斯,杰克·特劳特 | ding-wei / books/商业管理/市场营销/阿尔·里斯,杰克·特劳特-定位.md |
 | 规模 | 规模规律 | planned | 待补 | 候选: [epub 6.35 MB 2018](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) |
-| 平台革命 | 平台结构 | planned | 待补 | 候选: [epub 3.31 MB 2017](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) |
+| 平台革命 | 平台结构 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
 | 从零到一 | 垄断命题 | in_library | 彼得·蒂尔,布莱克·马斯特斯 | cong-ling-dao-yi / books/商业管理/公司战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md |
 | 监视资本主义时代 | 风险收束 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
 

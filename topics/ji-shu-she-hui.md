@@ -8,10 +8,12 @@ group: 技术社会
 date: '2026-06-06'
 books:
   - title: 技术的本质
-    author: 待补
+    author: 布莱恩·阿瑟
+    slug: ji-shu-de-ben-zhi
+    path: books/社会科学/布莱恩·阿瑟-技术的本质.md
     role: 技术演化
     reason: 先把技术看成会组合、演进和扩散的系统，而不是单个工具。
-    status: planned
+    status: in_library
   - title: 必然
     author: 待补
     role: 网络趋势
@@ -42,10 +44,12 @@ books:
     reason: 解释平台如何把行为数据、预测和商业利益连接起来。
     status: planned
   - title: 平台革命
-    author: 待补
+    author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
+    slug: ping-tai-ge-ming
+    path: books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
     role: 平台结构
     reason: 用平台商业和治理机制补足技术社会的组织形态。
-    status: planned
+    status: in_library
 ---
 
 # 技术社会读什么

@@ -8,10 +8,12 @@ group: 产品发现
 date: '2026-06-06'
 books:
   - title: 启示录
-    author: 待补
+    author: Marty Cagan
+    slug: qi-shi-lu
+    path: books/创业产品/Marty Cagan-启示录.md
     role: 产品发现
     reason: 先建立现代产品团队如何发现机会、定义价值和降低风险。
-    status: planned
+    status: in_library
   - title: 用户故事地图
     author: 待补
     role: 用户任务

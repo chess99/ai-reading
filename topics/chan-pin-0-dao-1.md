@@ -41,10 +41,12 @@ books:
     reason: 训练团队问出不会被客套、想象和礼貌误导的问题。
     status: planned
   - title: 启示录
-    author: 待补
+    author: Marty Cagan
+    slug: qi-shi-lu
+    path: books/创业产品/Marty Cagan-启示录.md
     role: 产品发现
     reason: 把客户理解转化为现代产品团队的发现、判断和职责。
-    status: planned
+    status: in_library
   - title: 用户故事地图
     author: 待补
     role: 需求组织

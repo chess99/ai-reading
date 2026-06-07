@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：50
 - 唯一书名：43
-- 已入库引用：24
-- 待入库唯一书名：23
-- z-lib 可优先尝试：23
+- 已入库引用：25
+- 待入库唯一书名：22
+- z-lib 可优先尝试：22
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -30,7 +30,6 @@ date: '2026-06-07'
 | 复杂经济学 | 1 | 什么是系统思维与复杂性 | 候选: [epub 9.50 MB 2018](https://z-lib.fm/book/nOZOEdVmgx/%E5%A4%8D%E6%9D%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%BB%8F%E6%B5%8E%E6%80%9D%E6%83%B3%E7%9A%84%E6%96%B0%E6%A1%86%E6%9E%B6.html) |
 | 规模 | 1 | 什么是系统思维与复杂性 | 候选: [epub 6.35 MB 2018](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) |
 | 混沌 | 1 | 什么是系统思维与复杂性 | 候选: [epub 4.16 MB 2021](https://z-lib.fm/book/mAvJ3kEXAl/%E6%B7%B7%E6%B2%8C%E5%BC%80%E5%88%9B%E4%B8%80%E9%97%A8%E6%96%B0%E7%A7%91%E5%AD%A6%E5%9B%BE%E7%81%B5%E5%9B%BE%E4%B9%A6.html) |
-| 技术的本质 | 1 | 如何建立科学世界观 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
 | 决断力 | 1 | 如何做重大决策 | 候选: [epub 376 KB 2014](https://z-lib.fm/book/lgGajEO8ZV/%E5%86%B3%E6%96%AD%E5%8A%9B%E5%A6%82%E4%BD%95%E5%9C%A8%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%81%9A%E5%87%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%80%89%E6%8B%A9.html) |
 | 科学革命的结构 | 1 | 如何建立科学世界观 | 候选: [epub 282 KB 2012](https://z-lib.fm/book/rAdvM7270B/%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%E7%9A%84%E7%BB%93%E6%9E%84.html) |
 | 盲点 | 1 | 如何识别偏见、从众与服从 | 候选: [epub 931 KB 2016](https://z-lib.fm/book/rAdGbNWGgB/%E7%9B%B2%E7%82%B9.html) |
@@ -71,7 +70,7 @@ date: '2026-06-07'
 | 科学革命的结构 | 范式转换 | planned | 待补 | 候选: [epub 282 KB 2012](https://z-lib.fm/book/rAdvM7270B/%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%E7%9A%84%E7%BB%93%E6%9E%84.html) |
 | 无穷的开始 | 解释与进步 | in_library | 戴维·多伊奇 | wu-qiong-de-kai-shi / books/哲学/戴维·多伊奇-无穷的开始.md |
 | 这才是心理学 | 证据边界练习 | planned | 待补 | 候选: [epub 416 KB 2015](https://z-lib.fm/book/R0P57Ddkg9/%E8%BF%99%E6%89%8D%E6%98%AF%E5%BF%83%E7%90%86%E5%AD%A6%E7%9C%8B%E7%A9%BF%E4%BC%AA%E5%BF%83%E7%90%86%E5%AD%A6%E7%9A%84%E6%9C%AC%E8%B4%A8.html) |
-| 技术的本质 | 技术演化收束 | planned | 待补 | 候选: [epub 7.89 MB 2018](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) |
+| 技术的本质 | 技术演化收束 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会科学/布莱恩·阿瑟-技术的本质.md |
 
 ### 如何识别偏见、从众与服从
 

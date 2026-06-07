@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 180 个唯一待入库书名：175 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 177 个唯一待入库书名：172 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,7 +61,6 @@ date: '2026-06-07'
 | 唤醒老虎 | candidate_ready | 标题含副标题/版本 | epub | 5.79 MB | 2016 | Chinese | [唤醒老虎启动自我疗愈本能](https://z-lib.fm/book/dAKM9oX107/%E5%94%A4%E9%86%92%E8%80%81%E8%99%8E%E5%90%AF%E5%8A%A8%E8%87%AA%E6%88%91%E7%96%97%E6%84%88%E6%9C%AC%E8%83%BD.html) | 如何面对创伤与自我修复 |
 | 混沌 | candidate_ready | 标题含副标题 | epub | 4.16 MB | 2021 | Chinese | [混沌开创一门新科学图灵图书](https://z-lib.fm/book/mAvJ3kEXAl/%E6%B7%B7%E6%B2%8C%E5%BC%80%E5%88%9B%E4%B8%80%E9%97%A8%E6%96%B0%E7%A7%91%E5%AD%A6%E5%9B%BE%E7%81%B5%E5%9B%BE%E4%B9%A6.html) | 什么是系统思维与复杂性 |
 | 即将到来的浪潮 | candidate_ready | 中文出版题名为《浪潮将至》 | epub | 999 KB | 0 | Chinese | [浪潮将至技术权力与未来的冲击](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) | 普通人如何理解 AI 变革、AI 风险、治理与技术权力 |
-| 技术的本质 | candidate_ready | 标题含副标题/版本 | epub | 7.89 MB | 2018 | Chinese | [技术的本质技术是什么它是如何进化的经典版](https://z-lib.fm/book/jAD4d8W3Ak/%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E5%8C%96%E7%9A%84%E7%BB%8F%E5%85%B8%E7%89%88.html) | 普通人如何理解 AI 变革、技术社会读什么、如何建立科学世界观 |
 | 寂静的春天 | candidate_ready | 标题精确 | epub | 2.77 MB | 2007 | Chinese | [寂静的春天](https://z-lib.fm/book/vAyQ3wxmAE/%E5%AF%82%E9%9D%99%E7%9A%84%E6%98%A5%E5%A4%A9.html) | 如何理解环境、气候与可持续生活 |
 | 监视资本主义时代 | candidate_ready | 标题精确 | mobi | 3.28 MB | 2009 | english | [监视资本主义时代](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) | AI 风险、治理与技术权力、技术社会读什么、如何理解商业竞争、战略与平台效应、看懂平台、算法与注意力风险 |
 | 叫魂 | candidate_ready | 标题含副标题 | epub | 485 KB | 2014 | Chinese | [叫魂1768年中国妖术大恐慌](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) | 中国历史入门、中国社会的现代转型 |
@@ -93,8 +92,6 @@ date: '2026-06-07'
 | 你的降落伞是什么颜色 | candidate_ready | 标题精确 | epub | 7.58 MB | 2018 | Chinese | [你的降落伞是什么颜色](https://z-lib.fm/book/XZm6KxWb0P/%E4%BD%A0%E7%9A%84%E9%99%8D%E8%90%BD%E4%BC%9E%E6%98%AF%E4%BB%80%E4%B9%88%E9%A2%9C%E8%89%B2.html) | 职业选择阅读路径 |
 | 女士品茶 | candidate_ready | 标题精确 | epub | 305 KB | 2010 | Chinese | [女士品茶](https://z-lib.fm/book/W0BX1pxrAX/%E5%A5%B3%E5%A3%AB%E5%93%81%E8%8C%B6.html) | 如何建立批判性与证据判断 |
 | 批判性思维工具 | candidate_ready | 标题精确 | epub | 2.46 MB | 2013 | Chinese | [批判性思维工具](https://z-lib.fm/book/Wwge6BonA7/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7.html) | 如何建立批判性与证据判断 |
-| 平台革命 | candidate_ready | 标题含副标题/版本 | epub | 3.31 MB | 2017 | Chinese | [平台革命改变世界的商业模式](https://z-lib.fm/book/Y0LdjxlV0K/%E5%B9%B3%E5%8F%B0%E9%9D%A9%E5%91%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html) | 技术社会读什么、如何理解商业竞争、战略与平台效应、看懂平台、算法与注意力风险 |
-| 启示录 | candidate_ready | 产品书完整题名 | epub | 483 KB | 2011 | Chinese | [启示录 打造用户喜爱的产品](https://z-lib.fm/book/qA9ezQBdAL/%E5%90%AF%E7%A4%BA%E5%BD%95-%E6%89%93%E9%80%A0%E7%94%A8%E6%88%B7%E5%96%9C%E7%88%B1%E7%9A%84%E4%BA%A7%E5%93%81.html) | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 |
 | 气候经济与人类未来 | candidate_ready | 标题精确 | epub | 2.14 MB | 2021 | Chinese | [气候经济与人类未来](https://z-lib.fm/book/WZpRqxQegR/%E6%B0%94%E5%80%99%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5.html) | 如何理解环境、气候与可持续生活 |
 | 情绪急救 | candidate_ready | 标题含副标题/版本 | epub | 782 KB | 2015 | Chinese | [情绪急救应对各种日常心理伤害的策略与方法](https://z-lib.fm/book/7A5V27odZ5/%E6%83%85%E7%BB%AA%E6%80%A5%E6%95%91%E5%BA%94%E5%AF%B9%E5%90%84%E7%A7%8D%E6%97%A5%E5%B8%B8%E5%BF%83%E7%90%86%E4%BC%A4%E5%AE%B3%E7%9A%84%E7%AD%96%E7%95%A5%E4%B8%8E%E6%96%B9%E6%B3%95.html) | 如何理解情绪 |
 | 情绪勒索 | candidate_ready | 标题精确 | epub | 654 KB | 2017 | Chinese | [情绪勒索](https://z-lib.fm/book/PAl9r6v4Zq/%E6%83%85%E7%BB%AA%E5%8B%92%E7%B4%A2.html) | 如何识别关系中的安全、边界与退出风险 |
