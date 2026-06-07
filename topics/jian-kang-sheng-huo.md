@@ -22,10 +22,12 @@ books:
     reason: 说明睡眠如何影响认知、情绪、代谢和恢复。
     status: in_library
   - title: 运动改造大脑
-    author: 待补
+    author: 约翰·瑞迪
+    slug: yun-dong-gai-zao-da-nao
+    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
     role: 运动收益
     reason: 从大脑和情绪角度理解运动为什么是基础生活方式。
-    status: planned
+    status: in_library
   - title: 身体使用手册
     author: Kelly Starrett
     slug: shen-ti-shi-yong-shou-ce

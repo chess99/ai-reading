@@ -8,20 +8,24 @@ group: 情绪与内耗
 date: '2026-06-06'
 books:
   - title: 也许你该找个人聊聊
-    author: 待补
+    author: 洛莉·戈特利布
+    slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
+    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询入口
     reason: 先看见人如何在关系和叙事中反复困住自己。
-    status: planned
+    status: in_library
   - title: 伯恩斯新情绪疗法
     author: 待补
     role: 认知模式
     reason: 识别自动想法和认知扭曲如何制造反复消耗。
     status: planned
   - title: 幸福的陷阱
-    author: 待补
+    author: 路斯·哈里斯
+    slug: xing-fu-de-xian-jing
+    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
     role: 接纳行动
     reason: 处理对痛苦体验的控制和回避，让行动重新回到价值上。
-    status: planned
+    status: in_library
   - title: 拖延心理学
     author: 简·博克,莱诺拉·袁
     slug: tuo-yan-xin-li-xue

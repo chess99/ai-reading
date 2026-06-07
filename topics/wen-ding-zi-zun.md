@@ -35,10 +35,12 @@ books:
     reason: 观察早期经验如何形成反复出现的自我模式。
     status: planned
   - title: 也许你该找个人聊聊
-    author: 待补
+    author: 洛莉·戈特利布
+    slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
+    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询关系
     reason: 最后从咨询关系看见自我理解如何在安全对话中变化。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立稳定的自尊

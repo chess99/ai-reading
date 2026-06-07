@@ -13,15 +13,19 @@ books:
     reason: 先理解自动想法和认知扭曲如何影响情绪低落与焦虑。
     status: planned
   - title: 幸福的陷阱
-    author: 待补
+    author: 路斯·哈里斯
+    slug: xing-fu-de-xian-jing
+    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
     role: 接纳行动
     reason: 处理回避、控制情绪的失败和价值导向行动。
-    status: planned
+    status: in_library
   - title: 也许你该找个人聊聊
-    author: 待补
+    author: 洛莉·戈特利布
+    slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
+    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询现场
     reason: 让读者看见求助过程中的关系、变化和不确定。
-    status: planned
+    status: in_library
   - title: 蛤蟆先生去看心理医生
     author: 待补
     role: 通俗入口
@@ -35,10 +39,12 @@ books:
     reason: 把睡眠作为情绪恢复的重要条件，而非治疗替代。
     status: in_library
   - title: 运动改造大脑
-    author: 待补
+    author: 约翰·瑞迪
+    slug: yun-dong-gai-zao-da-nao
+    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
     role: 运动支持
     reason: 把运动作为辅助恢复条件，理解身体活动与情绪调节的关系。
-    status: planned
+    status: in_library
 ---
 
 # 理解焦虑与抑郁

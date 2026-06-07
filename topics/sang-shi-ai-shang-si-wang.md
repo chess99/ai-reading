@@ -33,10 +33,12 @@ books:
     reason: 帮助读者更直接地面对死亡、哀伤和生命有限性。
     status: planned
   - title: 也许你该找个人聊聊
-    author: 待补
+    author: 洛莉·戈特利布
+    slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
+    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询支持
     reason: 最后从咨询现场看见丧失如何被讲述、承受和重新连接。
-    status: planned
+    status: in_library
 ---
 
 # 面对丧失、哀伤与死亡

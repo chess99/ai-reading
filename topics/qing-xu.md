@@ -28,10 +28,12 @@ books:
     reason: 用自动想法和认知扭曲解释情绪如何被解释方式放大。
     status: planned
   - title: 幸福的陷阱
-    author: 待补
+    author: 路斯·哈里斯
+    slug: xing-fu-de-xian-jing
+    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
     role: 接纳行动
     reason: 补上接纳、价值和行动，避免把控制情绪当作唯一目标。
-    status: planned
+    status: in_library
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji

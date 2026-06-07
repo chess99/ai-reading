@@ -32,10 +32,12 @@ books:
     reason: 把睡眠放入认知、恢复和长期健康支持中。
     status: in_library
   - title: 运动改造大脑
-    author: 待补
+    author: 约翰·瑞迪
+    slug: yun-dong-gai-zao-da-nao
+    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
     role: 运动支撑
     reason: 从认知、情绪和身体功能角度理解运动的长期价值。
-    status: planned
+    status: in_library
   - title: 活出生命的意义
     author: 待补
     role: 意义支撑

@@ -22,10 +22,12 @@ books:
     reason: 说明睡眠在情绪、记忆和压力恢复中的基础作用。
     status: in_library
   - title: 运动改造大脑
-    author: 待补
+    author: 约翰·瑞迪
+    slug: yun-dong-gai-zao-da-nao
+    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
     role: 运动调节
     reason: 从大脑和情绪角度理解运动如何参与压力调节。
-    status: planned
+    status: in_library
   - title: 身体使用手册
     author: Kelly Starrett
     slug: shen-ti-shi-yong-shou-ce
@@ -44,10 +46,12 @@ books:
     reason: 解释奖励、成瘾倾向和痛苦回避如何影响恢复。
     status: planned
   - title: 幸福的陷阱
-    author: 待补
+    author: 路斯·哈里斯
+    slug: xing-fu-de-xian-jing
+    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
     role: 接纳实践
     reason: 用接纳和承诺视角处理无法立即消除的感受。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解压力、恢复与身体信号

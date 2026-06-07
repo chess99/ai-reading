@@ -9,9 +9,10 @@ date: '2026-06-07'
 
 - 主题数：6
 - 书籍引用：41
-- 已入库引用：21
-- 待入库唯一书名：17
-- z-lib 可优先尝试：16
+- 唯一书名：30
+- 已入库引用：25
+- 待入库唯一书名：15
+- z-lib 可优先尝试：14
 - z-lib 需复核/换源：1
 
 ## 待入库书目
@@ -30,9 +31,7 @@ date: '2026-06-07'
 | 失控的农业 | 1 | 如何理解环境、气候与可持续生活 | 候选: [pdf 16.64 MB 2019](https://z-lib.fm/book/dAKXbj62Z7/%E5%A4%B1%E6%8E%A7%E7%9A%84%E5%86%9C%E4%B8%9A%E5%BB%89%E4%BB%B7%E8%82%89%E5%93%81%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%BB%A3%E4%BB%B7.html) |
 | 我们为什么会生病 | 1 | 如何理解饮食与代谢 | 候选: [epub 1.82 MB 2018](https://z-lib.fm/book/jZkaGvqNg3/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E7%94%9F%E7%97%85.html) |
 | 小即是美 | 1 | 如何理解环境、气候与可持续生活 | 候选: [epub 8.48 MB 2022](https://z-lib.fm/book/dAo1lEpV60/%E5%B0%8F%E5%8D%B3%E6%98%AF%E7%BE%8E.html) |
-| 幸福的陷阱 | 1 | 如何理解压力、恢复与身体信号 | 候选: [epub 531 KB 2018](https://z-lib.fm/book/m033GKl606/%E5%B9%B8%E7%A6%8F%E7%9A%84%E9%99%B7%E9%98%B1.html) |
 | 营养学：概念与争论 | 1 | 如何理解饮食与代谢 | 候选: [pdf 9.90 MB 2004](https://z-lib.fm/book/zZ4OGYwWAb/%E8%90%A5%E5%85%BB%E5%AD%A6-%E6%A6%82%E5%BF%B5%E4%B8%8E%E4%BA%89%E8%AE%BA-%E7%AC%AC8%E7%89%88.html) |
-| 运动改造大脑 | 3 | 面对衰老、疾病与照护、如何建立健康生活方式、如何理解压力、恢复与身体信号 | 候选: [epub 658 KB 2023](https://z-lib.fm/book/DAaK9mX303/%E8%BF%90%E5%8A%A8%E6%94%B9%E9%80%A0%E5%A4%A7%E8%84%91.html) |
 | 增长的极限 | 1 | 如何理解环境、气候与可持续生活 | 候选: [epub 5.51 MB 2013](https://z-lib.fm/book/wge8qOwm07/%E5%A2%9E%E9%95%BF%E7%9A%84%E6%9E%81%E9%99%90-%E5%8D%8E%E7%AB%A0%E7%BB%8F%E5%85%B8%E7%BB%8F%E6%B5%8E.html) |
 | 最好的告别 | 1 | 面对衰老、疾病与照护 | 候选: [epub 223 KB 2018](https://z-lib.fm/book/zZ24JrlqgE/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%91%8A%E5%88%AB.html) |
 
@@ -48,7 +47,7 @@ date: '2026-06-07'
 | 最好的告别 | 照护选择 | planned | 待补 | 候选: [epub 223 KB 2018](https://z-lib.fm/book/zZ24JrlqgE/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%91%8A%E5%88%AB.html) |
 | 当呼吸化为空气 | 疾病经验 | planned | 待补 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 我们为什么要睡觉 | 睡眠支撑 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
-| 运动改造大脑 | 运动支撑 | planned | 待补 | 候选: [epub 658 KB 2023](https://z-lib.fm/book/DAaK9mX303/%E8%BF%90%E5%8A%A8%E6%94%B9%E9%80%A0%E5%A4%A7%E8%84%91.html) |
+| 运动改造大脑 | 运动支撑 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |
 | 活出生命的意义 | 意义支撑 | planned | 待补 | 候选: [epub 1.04 MB 2019](https://z-lib.fm/book/DgXjKMdQZq/%E6%B4%BB%E5%87%BA%E7%94%9F%E5%91%BD%E7%9A%84%E6%84%8F%E4%B9%89.html) |
 | 生死课 | 临终沟通 | planned | 待补 | 候选: [epub 3.35 MB 2020](https://z-lib.fm/book/wgeRzapPA7/%E7%94%9F%E6%AD%BB%E8%AF%BE.html) |
 
@@ -60,7 +59,7 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 掌控习惯 | 行为入口 | in_library | 詹姆斯·克利尔 | zhang-kong-xi-guan / books/效率习惯/詹姆斯·克利尔-掌控习惯.md |
 | 我们为什么要睡觉 | 睡眠基础 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
-| 运动改造大脑 | 运动收益 | planned | 待补 | 候选: [epub 658 KB 2023](https://z-lib.fm/book/DAaK9mX303/%E8%BF%90%E5%8A%A8%E6%94%B9%E9%80%A0%E5%A4%A7%E8%84%91.html) |
+| 运动改造大脑 | 运动收益 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |
 | 身体使用手册 | 身体理解 | in_library | Kelly Starrett | shen-ti-shi-yong-shou-ce / books/健康运动/Kelly Starrett-身体使用手册.md |
 | ACSM健身与健康完全指南 | 训练指南 | in_library | ACSM | jian-shen-yu-jian-kang-wan-quan-zhi-nan / books/健康运动/ACSM-健身与健康完全指南.md |
 | 精力管理 | 能量节奏 | planned | 待补 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
@@ -88,11 +87,11 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 身体从未忘记 | 身体记忆 | in_library | 贝塞尔·范德考克 | shen-ti-cong-wei-wang-ji / books/心理学/贝塞尔·范德考克-身体从未忘记.md |
 | 我们为什么要睡觉 | 睡眠恢复 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
-| 运动改造大脑 | 运动调节 | planned | 待补 | 候选: [epub 658 KB 2023](https://z-lib.fm/book/DAaK9mX303/%E8%BF%90%E5%8A%A8%E6%94%B9%E9%80%A0%E5%A4%A7%E8%84%91.html) |
+| 运动改造大脑 | 运动调节 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |
 | 身体使用手册 | 身体理解 | in_library | Kelly Starrett | shen-ti-shi-yong-shou-ce / books/健康运动/Kelly Starrett-身体使用手册.md |
 | 精力管理 | 恢复节奏 | planned | 待补 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
 | 多巴胺国度 | 奖励系统 | planned | 待补 | 候选: [azw3 7.09 MB 2004](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) |
-| 幸福的陷阱 | 接纳实践 | planned | 待补 | 候选: [epub 531 KB 2018](https://z-lib.fm/book/m033GKl606/%E5%B9%B8%E7%A6%8F%E7%9A%84%E9%99%B7%E9%98%B1.html) |
+| 幸福的陷阱 | 接纳实践 | in_library | 路斯·哈里斯 | xing-fu-de-xian-jing / books/心理学/路斯·哈里斯-幸福的陷阱.md |
 
 ### 如何理解饮食与代谢
 

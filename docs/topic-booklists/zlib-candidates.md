@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 192 个唯一待入库书名：187 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 189 个唯一待入库书名：184 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -161,12 +161,10 @@ date: '2026-06-07'
 | 刑法学讲义 | candidate_ready | 标题精确 | epub | 513 KB | 2020 | Chinese | [刑法学讲义](https://z-lib.fm/book/m033eW6906/%E5%88%91%E6%B3%95%E5%AD%A6%E8%AE%B2%E4%B9%89.html) | 如何建立法律常识 |
 | 幸福的方法 | candidate_ready | 标题精确 | epub | 394 KB | 2013 | Chinese | [幸福的方法](https://z-lib.fm/book/OZOXwpwV0x/%E5%B9%B8%E7%A6%8F%E7%9A%84%E6%96%B9%E6%B3%95.html) | 如何理解幸福 |
 | 幸福的婚姻 | candidate_ready | 标题含副标题/版本 | epub | 8.42 MB | 0 | Chinese | [幸福的婚姻全新升级版](https://z-lib.fm/book/pZ882RzNZ9/%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%A9%9A%E5%A7%BB%E5%85%A8%E6%96%B0%E5%8D%87%E7%BA%A7%E7%89%88.html) | 如何处理亲密关系中的冲突、亲密关系阅读路径 |
-| 幸福的陷阱 | candidate_ready | 标题精确 | epub | 531 KB | 2018 | Chinese | [幸福的陷阱](https://z-lib.fm/book/m033GKl606/%E5%B9%B8%E7%A6%8F%E7%9A%84%E9%99%B7%E9%98%B1.html) | 理解焦虑与抑郁、如何停止精神内耗、如何理解情绪、如何理解压力、恢复与身体信号 |
 | 性别打结 | candidate_ready | 标题精确 | epub | 2.30 MB | 2025 | Chinese | [性别打结](https://z-lib.fm/book/pZ8REX8kg9/%E6%80%A7%E5%88%AB%E6%89%93%E7%BB%93.html) | 如何理解性别与社会结构 |
 | 性格的陷阱 | candidate_ready | 标题含副标题/版本 | epub | 2.99 MB | 2019 | Chinese | [性格的陷阱如何修补童年形成的性格缺陷](https://z-lib.fm/book/rAd3J9r8gB/%E6%80%A7%E6%A0%BC%E7%9A%84%E9%99%B7%E9%98%B1%E5%A6%82%E4%BD%95%E4%BF%AE%E8%A1%A5%E7%AB%A5%E5%B9%B4%E5%BD%A2%E6%88%90%E7%9A%84%E6%80%A7%E6%A0%BC%E7%BC%BA%E9%99%B7.html) | 如何建立稳定的自尊 |
 | 学习之道 | candidate_ready | 标题精确 | epub | 3.42 MB | 2016 | Chinese | [学习之道](https://z-lib.fm/book/KPAlYQnrZq/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93.html) | 如何长期坚持学习 |
 | 演讲的力量 | candidate_ready | 标题精确 | epub | 446 KB | 2016 | Chinese | [演讲的力量](https://z-lib.fm/book/k07QyKR4AJ/%E6%BC%94%E8%AE%B2%E7%9A%84%E5%8A%9B%E9%87%8F.html) | 如何提升沟通与表达 |
-| 也许你该找个人聊聊 | candidate_ready | 标题精确 | epub | 752 KB | 2021 | Chinese | [也许你该找个人聊聊](https://z-lib.fm/book/lgGMWod6ZV/%E4%B9%9F%E8%AE%B8%E4%BD%A0%E8%AF%A5%E6%89%BE%E4%B8%AA%E4%BA%BA%E8%81%8A%E8%81%8A.html) | 如何面对创伤与自我修复、理解焦虑与抑郁、如何停止精神内耗、面对丧失、哀伤与死亡、如何建立稳定的自尊 |
 | 艺术的故事 | candidate_ready | 标题精确 | epub | 22.11 MB | 2014 | Chinese | [艺术的故事](https://z-lib.fm/book/PAlaYQvJZq/%E8%89%BA%E6%9C%AF%E7%9A%84%E6%95%85%E4%BA%8B.html) | 艺术与审美入门 |
 | 因果推断 | candidate_ready | 标题含副标题/版本 | epub | 4.93 MB | 2022 | Chinese | [因果推断与机器学习](https://z-lib.fm/book/601WjwDRA4/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.html) | 如何建立批判性与证据判断 |
 | 引爆点 | candidate_ready | 标题含副标题/版本 | epub | 499 KB | 2020 | Chinese | [引爆点第五版](https://z-lib.fm/book/Y0LdyjK70K/%E5%BC%95%E7%88%86%E7%82%B9%E7%AC%AC%E4%BA%94%E7%89%88.html) | 如何做增长与营销 |
@@ -178,7 +176,6 @@ date: '2026-06-07'
 | 欲罢不能 | candidate_ready | 标题含副标题/版本 | epub | 2.42 MB | 2017 | Chinese | [欲罢不能刷屏时代如何摆脱行为上瘾](https://z-lib.fm/book/XAnKBX9lZd/%E6%AC%B2%E7%BD%A2%E4%B8%8D%E8%83%BD%E5%88%B7%E5%B1%8F%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%91%86%E8%84%B1%E8%A1%8C%E4%B8%BA%E4%B8%8A%E7%98%BE.html) | 成瘾、自控与意义重建 |
 | 园丁与木匠 | candidate_ready | 标题精确 | epub | 2.10 MB | 2019 | Chinese | [园丁与木匠](https://z-lib.fm/book/W0BNOmq40X/%E5%9B%AD%E4%B8%81%E4%B8%8E%E6%9C%A8%E5%8C%A0.html) | 如何做足够好的父母 |
 | 远见 | candidate_ready | 标题精确 | epub | 975 KB | 2019 | Chinese | [远见](https://z-lib.fm/book/WZxpBeGEZV/%E8%BF%9C%E8%A7%81.html) | 职业选择阅读路径、如何建立长期职业资本 |
-| 运动改造大脑 | candidate_ready | 标题精确 | epub | 658 KB | 2023 | Chinese | [运动改造大脑](https://z-lib.fm/book/DAaK9mX303/%E8%BF%90%E5%8A%A8%E6%94%B9%E9%80%A0%E5%A4%A7%E8%84%91.html) | 如何面对创伤与自我修复、如何建立健康生活方式、理解焦虑与抑郁、面对衰老、疾病与照护、如何理解压力、恢复与身体信号 |
 | 增长的极限 | candidate_ready | 标题含副标题/版本 | epub | 5.51 MB | 2013 | Chinese | [增长的极限 华章经典经济](https://z-lib.fm/book/wge8qOwm07/%E5%A2%9E%E9%95%BF%E7%9A%84%E6%9E%81%E9%99%90-%E5%8D%8E%E7%AB%A0%E7%BB%8F%E5%85%B8%E7%BB%8F%E6%B5%8E.html) | 如何理解环境、气候与可持续生活、如何理解文明兴衰 |
 | 债：第一个5000年 | candidate_ready | 标题精确 | epub | 885 KB | 2012 | Chinese | [债第一个5000年](https://z-lib.fm/book/zZ46oQa4gb/%E5%80%BA%E7%AC%AC%E4%B8%80%E4%B8%AA5000%E5%B9%B4.html) | 如何理解经济运行 |
 | 找回专注力 | candidate_ready | 标题精确 | epub | 9.29 MB | 2025 | english | [找回专注力](https://z-lib.fm/book/lgGdaQwGyA/%E6%89%BE%E5%9B%9E%E4%B8%93%E6%B3%A8%E5%8A%9B.html) | 如何提高深度工作能力 |

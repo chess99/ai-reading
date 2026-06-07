@@ -42,10 +42,12 @@ books:
     reason: 聚焦伴侣关系中的情绪循环和依附需求，帮助读者理解创伤如何进入亲密互动。
     status: planned
   - title: 也许你该找个人聊聊
-    author: 待补
+    author: 洛莉·戈特利布
+    slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
+    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询关系参照
     reason: 用咨询现场展示求助、关系和叙事重建，让读者看见专业支持的实际形态。
-    status: planned
+    status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao
@@ -54,10 +56,12 @@ books:
     reason: 把睡眠作为神经系统恢复的重要条件，但不把它当成创伤治疗的替代。
     status: in_library
   - title: 运动改造大脑
-    author: 待补
+    author: 约翰·瑞迪
+    slug: yun-dong-gai-zao-da-nao
+    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
     role: 身体恢复支持
     reason: 说明运动对情绪和大脑状态的支持作用，作为安全范围内的辅助恢复资源。
-    status: planned
+    status: in_library
 ---
 
 # 如何面对创伤与自我修复
