@@ -44,10 +44,12 @@ books:
     reason: 支持读者理解长期伤害后的边界、愤怒和不必急于和解。
     status: planned
   - title: 高难度谈话
-    author: 待补
+    author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
+    slug: gao-nan-du-tan-hua
+    path: books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
     role: 退出沟通
     reason: 在需要表达边界、谈判改变或准备退出时，提供更谨慎的谈话框架。
-    status: planned
+    status: in_library
 ---
 
 # 如何识别关系中的安全、边界与退出风险

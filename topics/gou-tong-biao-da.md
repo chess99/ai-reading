@@ -29,10 +29,12 @@ books:
     reason: 处理分歧大、情绪强、后果重时如何维持对话安全。
     status: in_library
   - title: 高难度谈话
-    author: 待补
+    author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
+    slug: gao-nan-du-tan-hua
+    path: books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
     role: 困难议题
     reason: 帮助拆解事实、感受和身份威胁交织的谈话。
-    status: planned
+    status: in_library
   - title: 金字塔原理
     author: 待补
     role: 结构表达

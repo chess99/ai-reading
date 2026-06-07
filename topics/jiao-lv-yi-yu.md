@@ -8,10 +8,12 @@ group: 情绪与内耗
 date: '2026-06-06'
 books:
   - title: 伯恩斯新情绪疗法
-    author: 待补
+    author: 大卫·伯恩斯
+    slug: bo-en-si-xin-qing-xu-liao-fa
+    path: books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md
     role: 认知入口
     reason: 先理解自动想法和认知扭曲如何影响情绪低落与焦虑。
-    status: planned
+    status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing

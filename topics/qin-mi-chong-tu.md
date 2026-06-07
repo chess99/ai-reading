@@ -39,10 +39,12 @@ books:
     reason: 把指责和防御拆成观察、感受、需要与请求。
     status: in_library
   - title: 高难度谈话
-    author: 待补
+    author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
+    slug: gao-nan-du-tan-hua
+    path: books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
     role: 困难议题
     reason: 处理事实争议、感受冲突和身份威胁同时存在的谈话。
-    status: planned
+    status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua

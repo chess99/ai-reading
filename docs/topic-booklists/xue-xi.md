@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：49
 - 唯一书名：35
-- 已入库引用：28
-- 待入库唯一书名：17
-- z-lib 可优先尝试：17
+- 已入库引用：29
+- 待入库唯一书名：16
+- z-lib 可优先尝试：16
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -25,7 +25,6 @@ date: '2026-06-07'
 | 高效能人士的七个习惯 | 1 | 如何管理时间、精力与个人系统 | 候选: [epub 2.36 MB 2018](https://z-lib.fm/book/9W0BraQk0X/%E9%AB%98%E6%95%88%E8%83%BD%E4%BA%BA%E5%A3%AB%E7%9A%84%E4%B8%83%E4%B8%AA%E4%B9%A0%E6%83%AF.html) |
 | 搞定 | 2 | 如何提高深度工作能力、如何管理时间、精力与个人系统 | 候选: [epub 2.22 MB 2016](https://z-lib.fm/book/R0PpmoLn09/%E6%90%9E%E5%AE%9A-%E6%97%A0%E5%8E%8B%E5%B7%A5%E4%BD%9C%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
 | 金字塔原理 | 1 | 阅读、笔记与输出系统 | 候选: [epub 6.54 MB 2014](https://z-lib.fm/book/zZ4QpebR0b/%E9%87%91%E5%AD%97%E5%A1%94%E5%8E%9F%E7%90%86.html) |
-| 精力管理 | 1 | 如何管理时间、精力与个人系统 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
 | 卡片笔记写作法 | 1 | 阅读、笔记与输出系统 | 候选: [epub 924 KB 2021](https://z-lib.fm/book/dAorw91wgV/%E5%8D%A1%E7%89%87%E7%AC%94%E8%AE%B0%E5%86%99%E4%BD%9C%E6%B3%95-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%BB%8E%E9%98%85%E8%AF%BB%E5%88%B0%E5%86%99%E4%BD%9C.html) |
 | 慢生产力 | 2 | 如何提高深度工作能力、如何管理时间、精力与个人系统 | 候选: [azw3 5.95 MB 2026](https://z-lib.fm/book/m03w3re3n0/%E6%85%A2%E7%94%9F%E4%BA%A7%E5%8A%9B.html) |
 | 驱动力 | 1 | 如何建立可持续习惯 | 候选: [epub 3.35 MB 2023](https://z-lib.fm/book/R0P1jxPkg9/%E9%A9%B1%E5%8A%A8%E5%8A%9B.html) |
@@ -92,7 +91,7 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 精力管理 | 能量入口 | planned | 待补 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
+| 精力管理 | 能量入口 | in_library | 吉姆·洛尔,托尼·施瓦茨 | jing-li-guan-li / books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md |
 | 搞定 | 任务系统 | planned | 待补 | 候选: [epub 2.22 MB 2016](https://z-lib.fm/book/R0PpmoLn09/%E6%90%9E%E5%AE%9A-%E6%97%A0%E5%8E%8B%E5%B7%A5%E4%BD%9C%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
 | 精要主义 | 取舍边界 | in_library | 格雷戈·麦吉沃恩 | jing-yao-zhu-yi / books/效率习惯/格雷戈·麦吉沃恩-精要主义.md |
 | 高效能人士的七个习惯 | 价值框架 | planned | 待补 | 候选: [epub 2.36 MB 2018](https://z-lib.fm/book/9W0BraQk0X/%E9%AB%98%E6%95%88%E8%83%BD%E4%BA%BA%E5%A3%AB%E7%9A%84%E4%B8%83%E4%B8%AA%E4%B9%A0%E6%83%AF.html) |

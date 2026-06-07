@@ -8,10 +8,12 @@ group: 习惯与行动
 date: '2026-06-06'
 books:
   - title: 精力管理
-    author: 待补
+    author: 吉姆·洛尔,托尼·施瓦茨
+    slug: jing-li-guan-li
+    path: books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md
     role: 能量入口
     reason: 先把效率问题从时间扩展到体能、情绪、专注和恢复。
-    status: planned
+    status: in_library
   - title: 搞定
     author: 待补
     role: 任务系统

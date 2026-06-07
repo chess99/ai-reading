@@ -15,10 +15,12 @@ books:
     reason: 先看见人如何在关系和叙事中反复困住自己。
     status: in_library
   - title: 伯恩斯新情绪疗法
-    author: 待补
+    author: 大卫·伯恩斯
+    slug: bo-en-si-xin-qing-xu-liao-fa
+    path: books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md
     role: 认知模式
     reason: 识别自动想法和认知扭曲如何制造反复消耗。
-    status: planned
+    status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing

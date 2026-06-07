@@ -23,10 +23,12 @@ books:
     reason: 帮助读者理解情绪不是单一反应，而与身体、认知和情境有关。
     status: planned
   - title: 伯恩斯新情绪疗法
-    author: 待补
+    author: 大卫·伯恩斯
+    slug: bo-en-si-xin-qing-xu-liao-fa
+    path: books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md
     role: 认知框架
     reason: 用自动想法和认知扭曲解释情绪如何被解释方式放大。
-    status: planned
+    status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing

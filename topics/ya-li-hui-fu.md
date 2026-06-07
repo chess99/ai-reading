@@ -36,10 +36,12 @@ books:
     reason: 提供观察身体系统和日常信号的通俗框架。
     status: in_library
   - title: 精力管理
-    author: 待补
+    author: 吉姆·洛尔,托尼·施瓦茨
+    slug: jing-li-guan-li
+    path: books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md
     role: 恢复节奏
     reason: 把压力和恢复放进能量周期，而不是只靠硬扛。
-    status: planned
+    status: in_library
   - title: 多巴胺国度
     author: 待补
     role: 奖励系统

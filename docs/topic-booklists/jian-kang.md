@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：41
 - 唯一书名：30
-- 已入库引用：26
-- 待入库唯一书名：14
-- z-lib 可优先尝试：13
+- 已入库引用：28
+- 待入库唯一书名：13
+- z-lib 可优先尝试：12
 - z-lib 需复核/换源：1
 
 ## 待入库书目
@@ -23,7 +23,6 @@ date: '2026-06-07'
 | 多巴胺国度 | 1 | 如何理解压力、恢复与身体信号 | 候选: [azw3 7.09 MB 2004](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) |
 | 肥胖代码 | 1 | 如何理解饮食与代谢 | 候选: [epub 2.01 MB 2019](https://z-lib.fm/book/4gMqjyXPg8/%E8%82%A5%E8%83%96%E4%BB%A3%E7%A0%81.html) |
 | 寂静的春天 | 1 | 如何理解环境、气候与可持续生活 | 候选: [epub 2.77 MB 2007](https://z-lib.fm/book/vAyQ3wxmAE/%E5%AF%82%E9%9D%99%E7%9A%84%E6%98%A5%E5%A4%A9.html) |
-| 精力管理 | 2 | 如何建立健康生活方式、如何理解压力、恢复与身体信号 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
 | 耐力 | 1 | 如何理解运动与体能 | 需复核: 标题包含目标词但不够精确; [epub 3.90 MB 2017](https://z-lib.fm/book/XAnbXeKyAd/%E8%80%90%E5%8A%9B%E6%97%A0%E4%BC%A4%E7%87%83%E8%84%82%E8%BD%BB%E6%9D%BE%E7%9A%84maf%E8%AE%AD%E7%BB%83%E6%B3%95.html) |
 | 气候经济与人类未来 | 1 | 如何理解环境、气候与可持续生活 | 候选: [epub 2.14 MB 2021](https://z-lib.fm/book/WZpRqxQegR/%E6%B0%94%E5%80%99%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%9C%AA%E6%9D%A5.html) |
 | 生死课 | 1 | 面对衰老、疾病与照护 | 候选: [epub 3.35 MB 2020](https://z-lib.fm/book/wgeRzapPA7/%E7%94%9F%E6%AD%BB%E8%AF%BE.html) |
@@ -61,7 +60,7 @@ date: '2026-06-07'
 | 运动改造大脑 | 运动收益 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |
 | 身体使用手册 | 身体理解 | in_library | Kelly Starrett | shen-ti-shi-yong-shou-ce / books/健康运动/Kelly Starrett-身体使用手册.md |
 | ACSM健身与健康完全指南 | 训练指南 | in_library | ACSM | jian-shen-yu-jian-kang-wan-quan-zhi-nan / books/健康运动/ACSM-健身与健康完全指南.md |
-| 精力管理 | 能量节奏 | planned | 待补 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
+| 精力管理 | 能量节奏 | in_library | 吉姆·洛尔,托尼·施瓦茨 | jing-li-guan-li / books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md |
 | 超越百岁 | 长寿视角 | in_library | 彼得·阿提亚 | chao-yue-bai-sui / books/健康运动/彼得·阿提亚-超越百岁.md |
 
 ### 面对衰老、疾病与照护
@@ -88,7 +87,7 @@ date: '2026-06-07'
 | 我们为什么要睡觉 | 睡眠恢复 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
 | 运动改造大脑 | 运动调节 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |
 | 身体使用手册 | 身体理解 | in_library | Kelly Starrett | shen-ti-shi-yong-shou-ce / books/健康运动/Kelly Starrett-身体使用手册.md |
-| 精力管理 | 恢复节奏 | planned | 待补 | 候选: [epub 2.84 MB 2015](https://z-lib.fm/book/XZm2LJ550P/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86.html) |
+| 精力管理 | 恢复节奏 | in_library | 吉姆·洛尔,托尼·施瓦茨 | jing-li-guan-li / books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md |
 | 多巴胺国度 | 奖励系统 | planned | 待补 | 候选: [azw3 7.09 MB 2004](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) |
 | 幸福的陷阱 | 接纳实践 | in_library | 路斯·哈里斯 | xing-fu-de-xian-jing / books/心理学/路斯·哈里斯-幸福的陷阱.md |
 

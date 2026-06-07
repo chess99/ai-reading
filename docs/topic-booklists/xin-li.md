@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：49
 - 唯一书名：34
-- 已入库引用：26
-- 待入库唯一书名：20
-- z-lib 可优先尝试：19
+- 已入库引用：29
+- 待入库唯一书名：19
+- z-lib 可优先尝试：18
 - z-lib 需复核/换源：1
 
 ## 待入库书目
@@ -20,7 +20,6 @@ date: '2026-06-07'
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 抱紧我 | 1 | 如何面对创伤与自我修复 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认; [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
-| 伯恩斯新情绪疗法 | 3 | 理解焦虑与抑郁、如何停止精神内耗、如何理解情绪 | 候选: [epub 3.36 MB 2014](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) |
 | 不原谅也没关系 | 1 | 如何面对创伤与自我修复 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
 | 创伤与复原 | 1 | 如何面对创伤与自我修复 | 候选: [azw3 842 KB 2015](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) |
 | 当呼吸化为空气 | 1 | 面对丧失、哀伤与死亡 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
@@ -79,7 +78,7 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 伯恩斯新情绪疗法 | 认知入口 | planned | 待补 | 候选: [epub 3.36 MB 2014](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) |
+| 伯恩斯新情绪疗法 | 认知入口 | in_library | 大卫·伯恩斯 | bo-en-si-xin-qing-xu-liao-fa / books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md |
 | 幸福的陷阱 | 接纳行动 | in_library | 路斯·哈里斯 | xing-fu-de-xian-jing / books/心理学/路斯·哈里斯-幸福的陷阱.md |
 | 也许你该找个人聊聊 | 咨询现场 | in_library | 洛莉·戈特利布 | ye-xu-ni-gai-zhao-ge-ren-liao-liao / books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md |
 | 蛤蟆先生去看心理医生 | 通俗入口 | planned | 待补 | 候选: [epub 330 KB 2020](https://z-lib.fm/book/wgeeP9Q3g7/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%8C%BB%E7%94%9F.html) |
@@ -93,7 +92,7 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 也许你该找个人聊聊 | 咨询入口 | in_library | 洛莉·戈特利布 | ye-xu-ni-gai-zhao-ge-ren-liao-liao / books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md |
-| 伯恩斯新情绪疗法 | 认知模式 | planned | 待补 | 候选: [epub 3.36 MB 2014](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) |
+| 伯恩斯新情绪疗法 | 认知模式 | in_library | 大卫·伯恩斯 | bo-en-si-xin-qing-xu-liao-fa / books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md |
 | 幸福的陷阱 | 接纳行动 | in_library | 路斯·哈里斯 | xing-fu-de-xian-jing / books/心理学/路斯·哈里斯-幸福的陷阱.md |
 | 拖延心理学 | 回避阻力 | in_library | 简·博克,莱诺拉·袁 | tuo-yan-xin-li-xue / books/心理学/简·博克,莱诺拉·袁-拖延心理学.md |
 | 被讨厌的勇气 | 边界意识 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md |
@@ -109,7 +108,7 @@ date: '2026-06-07'
 | 蛤蟆先生去看心理医生 | 咨询入口 | planned | 待补 | 候选: [epub 330 KB 2020](https://z-lib.fm/book/wgeeP9Q3g7/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%8C%BB%E7%94%9F.html) |
 | 情绪急救 | 日常应对 | planned | 待补 | 候选: [epub 782 KB 2015](https://z-lib.fm/book/7A5V27odZ5/%E6%83%85%E7%BB%AA%E6%80%A5%E6%95%91%E5%BA%94%E5%AF%B9%E5%90%84%E7%A7%8D%E6%97%A5%E5%B8%B8%E5%BF%83%E7%90%86%E4%BC%A4%E5%AE%B3%E7%9A%84%E7%AD%96%E7%95%A5%E4%B8%8E%E6%96%B9%E6%B3%95.html) |
 | 情绪是什么 | 情绪理论 | planned | 待补 | 候选: [epub 2.38 MB 2018](https://z-lib.fm/book/W0BoRwzVgX/%E6%83%85%E7%BB%AA%E6%98%AF%E4%BB%80%E4%B9%88.html) |
-| 伯恩斯新情绪疗法 | 认知框架 | planned | 待补 | 候选: [epub 3.36 MB 2014](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) |
+| 伯恩斯新情绪疗法 | 认知框架 | in_library | 大卫·伯恩斯 | bo-en-si-xin-qing-xu-liao-fa / books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md |
 | 幸福的陷阱 | 接纳行动 | in_library | 路斯·哈里斯 | xing-fu-de-xian-jing / books/心理学/路斯·哈里斯-幸福的陷阱.md |
 | 身体从未忘记 | 身体反应 | in_library | 贝塞尔·范德考克 | shen-ti-cong-wei-wang-ji / books/心理学/贝塞尔·范德考克-身体从未忘记.md |
 | 我们为什么要睡觉 | 睡眠基础 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |

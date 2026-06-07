@@ -43,10 +43,12 @@ books:
     reason: 用专业指南补足运动频率、强度和安全边界。
     status: in_library
   - title: 精力管理
-    author: 待补
+    author: 吉姆·洛尔,托尼·施瓦茨
+    slug: jing-li-guan-li
+    path: books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md
     role: 能量节奏
     reason: 把健康行为和精力、恢复、工作节奏连接起来。
-    status: planned
+    status: in_library
   - title: 超越百岁
     author: 彼得·阿提亚
     slug: chao-yue-bai-sui
