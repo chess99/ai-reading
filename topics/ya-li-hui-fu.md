@@ -3,6 +3,8 @@ slug: ya-li-hui-fu
 title: 如何理解压力、恢复与身体信号
 description: 从创伤、睡眠、运动和奖励系统理解压力如何进入身体。
 tags: [压力, 恢复, 身体]
+domain: 健康
+group: 压力恢复
 date: '2026-06-06'
 books:
   - title: 身体从未忘记

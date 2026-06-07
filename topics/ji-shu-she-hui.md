@@ -3,6 +3,8 @@ slug: ji-shu-she-hui
 title: 技术社会读什么
 description: 从技术演化、媒介环境和平台结构理解技术如何改变社会生活。
 tags: [技术社会, 媒介, 平台]
+domain: 科技
+group: 技术社会
 date: '2026-06-06'
 books:
   - title: 技术的本质

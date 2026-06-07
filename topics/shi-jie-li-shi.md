@@ -3,6 +3,8 @@ slug: shi-jie-li-shi
 title: 如何理解世界历史
 description: "围绕理解世界历史，从《全球通史》进入，逐步建立框架、实践判断和系统视角。"
 tags: [历史, 文明, 世界格局]
+domain: 历史
+group: 世界历史
 date: '2026-06-06'
 books:
   - title: 全球通史

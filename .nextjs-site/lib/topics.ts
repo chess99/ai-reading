@@ -22,6 +22,9 @@ export interface TopicMeta {
   tags: string[];
   date: string;
   bookCount: number;
+  domain?: string;
+  group?: string;
+  searchText: string;
 }
 
 export interface TopicDetail extends TopicMeta {
@@ -36,11 +39,27 @@ interface TopicFrontmatter {
   description?: string;
   tags?: string[];
   date?: string;
+  domain?: string;
+  group?: string;
   books?: TopicBookRecommendation[];
 }
 
 const TOPICS_DIR = path.join(process.cwd(), '..', 'topics');
 let cachedTopicDetails: TopicDetail[] | null = null;
+
+function buildTopicSearchText(topic: Pick<TopicDetail, 'title' | 'description' | 'tags' | 'domain' | 'group' | 'books'>): string {
+  return [
+    topic.title,
+    topic.description,
+    topic.domain,
+    topic.group,
+    ...topic.tags,
+    ...topic.books.flatMap(book => [book.title, book.author, book.role, book.reason]),
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+}
 
 function toTopicMeta(topic: TopicDetail): TopicMeta {
   return {
@@ -50,6 +69,9 @@ function toTopicMeta(topic: TopicDetail): TopicMeta {
     tags: topic.tags,
     date: topic.date,
     bookCount: topic.bookCount,
+    domain: topic.domain,
+    group: topic.group,
+    searchText: buildTopicSearchText(topic),
   };
 }
 
@@ -103,6 +125,9 @@ function loadTopicDetails(): TopicDetail[] {
         tags: frontmatter.tags || [],
         date: frontmatter.date || '',
         bookCount: books.length,
+        domain: frontmatter.domain,
+        group: frontmatter.group,
+        searchText: '',
         books,
         content,
         filePath,

@@ -3,6 +3,8 @@ slug: jia-zhi-tou-zi
 title: 如何理解价值投资
 description: "围绕理解价值投资，从《聪明的投资者》进入，逐步建立框架、实践判断和系统视角。"
 tags: [金钱, 投资, 经济]
+domain: 金钱
+group: 价值投资
 date: '2026-06-06'
 books:
   - title: 聪明的投资者

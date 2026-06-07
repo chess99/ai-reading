@@ -3,6 +3,8 @@ slug: er-tong-an-quan-gan
 title: 如何理解儿童安全感与教育成长
 description: 从依恋、安全感、儿童观、创造性学习、学习科学和家庭阅读环境理解儿童成长。
 tags: [儿童成长, 家庭教育, 学习]
+domain: 关系
+group: 教育与成长
 date: '2026-06-06'
 books:
   - title: 依恋

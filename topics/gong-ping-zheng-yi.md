@@ -3,6 +3,8 @@ slug: gong-ping-zheng-yi
 title: 如何理解公平与正义
 description: "围绕理解公平与正义，从《公正》进入，逐步建立框架、实践判断和系统视角。"
 tags: [社会, 法律, 公共生活]
+domain: 社会
+group: 公平正义
 date: '2026-06-06'
 books:
   - title: 公正

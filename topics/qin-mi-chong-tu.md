@@ -3,6 +3,8 @@ slug: qin-mi-chong-tu
 title: 如何处理亲密关系中的冲突
 description: 从依恋需求、修复尝试、情绪循环和高风险对话理解亲密关系中的反复冲突。
 tags: [亲密关系, 冲突, 沟通]
+domain: 关系
+group: 关系冲突
 date: '2026-06-06'
 books:
   - title: 亲密关系

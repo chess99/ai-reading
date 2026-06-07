@@ -3,6 +3,8 @@ slug: ke-xue-shi-jie-guan
 title: 如何建立科学世界观
 description: "围绕建立科学世界观，从《别逗了费曼先生》进入，逐步建立框架、实践判断和系统视角。"
 tags: [思维, 判断, 科学]
+domain: 思维
+group: 证据与科学
 date: '2026-06-06'
 books:
   - title: 别逗了费曼先生

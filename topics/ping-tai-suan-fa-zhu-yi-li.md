@@ -3,6 +3,8 @@ slug: ping-tai-suan-fa-zhu-yi-li
 title: 看懂平台、算法与注意力风险
 description: 从媒介娱乐化、注意力商业和算法治理理解平台如何塑造选择。
 tags: [平台, 算法, 注意力]
+domain: 科技
+group: 平台算法
 date: '2026-06-06'
 books:
   - title: 娱乐至死

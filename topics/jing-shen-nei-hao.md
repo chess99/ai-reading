@@ -3,6 +3,8 @@ slug: jing-shen-nei-hao
 title: 如何停止精神内耗
 description: 从咨询、认知模式、接纳、拖延、边界、元认知和当下经验减少反复消耗。
 tags: [精神内耗, 情绪, 自我管理]
+domain: 心理
+group: 情绪与内耗
 date: '2026-06-06'
 books:
   - title: 也许你该找个人聊聊

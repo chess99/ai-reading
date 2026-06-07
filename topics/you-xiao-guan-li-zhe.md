@@ -3,6 +3,8 @@ slug: you-xiao-guan-li-zhe
 title: 如何成为有效管理者
 description: 从管理者责任、组织职能、领导梯队、复制机制、教练、对话和心理安全理解管理工作。
 tags: [管理, 领导力, 团队]
+domain: 职业
+group: 管理与领导
 date: '2026-06-06'
 books:
   - title: 卓有成效的管理者

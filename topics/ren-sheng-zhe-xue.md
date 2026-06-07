@@ -3,6 +3,8 @@ slug: ren-sheng-zhe-xue
 title: 人生哲学入门
 description: 从哲学故事、古典智慧和行动空间进入人生问题的基本思考。
 tags: [哲学, 人生, 伦理]
+domain: 人文
+group: 人生哲学
 date: '2026-06-06'
 books:
   - title: 苏菲的世界

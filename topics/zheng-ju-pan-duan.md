@@ -3,6 +3,8 @@ slug: zheng-ju-pan-duan
 title: 如何建立批判性与证据判断
 description: "围绕建立批判性与证据判断，从《学会提问》进入，逐步建立框架、实践判断和系统视角。"
 tags: [思维, 判断, 科学]
+domain: 思维
+group: 证据与科学
 date: '2026-06-06'
 books:
   - title: 学会提问

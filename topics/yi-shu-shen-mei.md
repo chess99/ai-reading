@@ -3,6 +3,8 @@ slug: yi-shu-shen-mei
 title: 艺术与审美入门
 description: 从艺术史、视觉设计和观察训练进入更稳定的审美判断。
 tags: [艺术, 审美, 设计]
+domain: 人文
+group: 艺术审美
 date: '2026-06-06'
 books:
   - title: 艺术的故事

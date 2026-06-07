@@ -3,6 +3,8 @@ slug: wen-xue-ren-wen
 title: 文学与人文阅读入门
 description: 从小说阅读、叙事形式和文学史进入更细致的人文理解。
 tags: [文学阅读, 人文, 小说]
+domain: 人文
+group: 文学阅读
 date: '2026-06-06'
 books:
   - title: 如何阅读一本小说

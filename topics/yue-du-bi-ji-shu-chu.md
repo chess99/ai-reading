@@ -3,6 +3,8 @@ slug: yue-du-bi-ji-shu-chu
 title: 阅读、笔记与输出系统
 description: 从阅读、卡片笔记、第二大脑、结构表达、批判提问、风格、写作和复盘建立输出系统。
 tags: [阅读, 笔记, 写作]
+domain: 学习
+group: 学习与输出
 date: '2026-06-06'
 books:
   - title: 如何阅读一本书

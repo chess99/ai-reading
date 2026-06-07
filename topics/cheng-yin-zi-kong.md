@@ -3,6 +3,8 @@ slug: cheng-yin-zi-kong
 title: 成瘾、自控与意义重建
 description: 从奖励回路、行为成瘾、自控、稀缺、习惯、意义、反脆弱和古典修身理解成瘾边界。
 tags: [成瘾, 自控, 意义]
+domain: 心理
+group: 成瘾与哀伤
 date: '2026-06-06'
 books:
   - title: 多巴胺国度

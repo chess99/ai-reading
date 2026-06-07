@@ -3,6 +3,8 @@ slug: xing-bie-she-hui-jie-gou
 title: 如何理解性别与社会结构
 description: "围绕理解性别与社会结构，从《厌女》进入，逐步建立框架、实践判断和系统视角。"
 tags: [社会, 法律, 公共生活]
+domain: 社会
+group: 性别结构
 date: '2026-06-06'
 books:
   - title: 厌女

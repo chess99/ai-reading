@@ -3,6 +3,8 @@ slug: huan-jing-qi-hou-ke-chi-xu
 title: 如何理解环境、气候与可持续生活
 description: 从环境危机、增长边界和公共资本理解可持续生活的系统条件。
 tags: [环境, 气候, 可持续生活]
+domain: 健康
+group: 环境气候
 date: '2026-06-06'
 books:
   - title: 寂静的春天

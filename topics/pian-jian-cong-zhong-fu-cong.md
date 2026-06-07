@@ -3,6 +3,8 @@ slug: pian-jian-cong-zhong-fu-cong
 title: 如何识别偏见、从众与服从
 description: "围绕识别偏见、从众与服从，从《社会心理学》进入，逐步建立框架、实践判断和系统视角。"
 tags: [思维, 判断, 科学]
+domain: 思维
+group: 群体影响
 date: '2026-06-06'
 books:
   - title: 社会心理学

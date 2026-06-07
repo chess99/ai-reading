@@ -3,6 +3,8 @@ slug: chuang-shang-xiu-fu
 title: 如何面对创伤与自我修复
 description: "围绕面对创伤与自我修复，从《身体从未忘记》进入，逐步建立框架、实践判断和系统视角。"
 tags: [心理, 情绪, 修复]
+domain: 心理
+group: 创伤与修复
 date: '2026-06-06'
 books:
   - title: 身体从未忘记

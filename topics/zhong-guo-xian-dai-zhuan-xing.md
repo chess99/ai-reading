@@ -3,6 +3,8 @@ slug: zhong-guo-xian-dai-zhuan-xing
 title: 中国社会的现代转型
 description: "围绕中国社会的现代转型，从《乡土中国》进入，逐步建立框架、实践判断和系统视角。"
 tags: [历史, 文明, 世界格局]
+domain: 历史
+group: 中国历史
 date: '2026-06-06'
 books:
   - title: 乡土中国

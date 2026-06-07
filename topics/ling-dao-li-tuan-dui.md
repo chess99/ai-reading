@@ -3,6 +3,8 @@ slug: ling-dao-li-tuan-dui
 title: 如何建立领导力与团队协作
 description: 从角色跃迁、教练、团队失效、关键对话、心理安全、授权、团队结构和权力现实理解领导力。
 tags: [领导力, 团队协作, 组织]
+domain: 职业
+group: 团队协作
 date: '2026-06-06'
 books:
   - title: 领导梯队

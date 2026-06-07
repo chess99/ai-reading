@@ -3,6 +3,8 @@ slug: quan-li-bian-ge
 title: 如何理解组织中的权力与变革
 description: 从权力来源、影响策略、变革动员、创新困境、组织卓越、文化重塑和战略拐点理解组织现实。
 tags: [组织, 权力, 变革]
+domain: 职业
+group: 组织变革
 date: '2026-06-06'
 books:
   - title: 权力

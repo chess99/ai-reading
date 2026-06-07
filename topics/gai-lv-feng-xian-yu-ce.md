@@ -3,6 +3,8 @@ slug: gai-lv-feng-xian-yu-ce
 title: 如何理解概率、风险与预测
 description: "围绕理解概率、风险与预测，从《随机漫步的傻瓜》进入，逐步建立框架、实践判断和系统视角。"
 tags: [思维, 判断, 科学]
+domain: 思维
+group: 概率与风险
 date: '2026-06-06'
 books:
   - title: 随机漫步的傻瓜

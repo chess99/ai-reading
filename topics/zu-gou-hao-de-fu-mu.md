@@ -3,6 +3,8 @@ slug: zu-gou-hao-de-fu-mu
 title: 如何做足够好的父母
 description: 从父母角色、纪律、游戏、倾听、尊重和家庭互动理解养育中的日常选择。
 tags: [家庭教育, 亲子关系, 父母]
+domain: 关系
+group: 亲子与家庭
 date: '2026-06-06'
 books:
   - title: 园丁与木匠

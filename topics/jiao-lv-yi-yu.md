@@ -3,6 +3,8 @@ slug: jiao-lv-yi-yu
 title: 理解焦虑与抑郁
 description: 从认知、回避、接纳、咨询现场、睡眠和运动理解焦虑与抑郁的支持边界。
 tags: [焦虑, 抑郁, 心理健康]
+domain: 心理
+group: 情绪与内耗
 date: '2026-06-06'
 books:
   - title: 伯恩斯新情绪疗法

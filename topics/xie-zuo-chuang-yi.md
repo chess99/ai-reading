@@ -3,6 +3,8 @@ slug: xie-zuo-chuang-yi
 title: 写作与创意工作
 description: 从写作习惯、阻力、句子、风格、创作者心态、观察、结构和故事建立创意工作路径。
 tags: [写作, 创意, 表达]
+domain: 学习
+group: 写作与创造
 date: '2026-06-06'
 books:
   - title: 写作这回事

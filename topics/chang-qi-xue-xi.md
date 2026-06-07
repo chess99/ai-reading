@@ -3,6 +3,8 @@ slug: chang-qi-xue-xi
 title: 如何长期坚持学习
 description: 从阅读、记忆、练习、反馈、心流、习惯、成长型思维和专注环境建立长期学习能力。
 tags: [学习, 阅读, 练习]
+domain: 学习
+group: 学习与输出
 date: '2026-06-06'
 books:
   - title: 如何阅读一本书

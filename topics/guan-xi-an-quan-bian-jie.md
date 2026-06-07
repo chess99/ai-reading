@@ -3,6 +3,8 @@ slug: guan-xi-an-quan-bian-jie
 title: 如何识别关系中的安全、边界与退出风险
 description: 从正常关系机制、操控、情绪勒索、创伤反应和困难沟通识别关系中的安全边界。
 tags: [亲密关系, 边界, 安全]
+domain: 关系
+group: 关系冲突
 date: '2026-06-06'
 books:
   - title: 亲密关系

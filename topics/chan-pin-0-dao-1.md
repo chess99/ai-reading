@@ -3,6 +3,8 @@ slug: chan-pin-0-dao-1
 title: 产品从 0 到 1
 description: 从独特命题、验证学习、客户开发、产品发现、交付系统、创业管理和增长实验理解产品从无到有。
 tags: [产品, 创业, 客户开发]
+domain: 商业
+group: 产品机会
 date: '2026-06-06'
 books:
   - title: 从零到一

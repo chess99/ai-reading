@@ -3,6 +3,8 @@ slug: tong-ku-zi-you-yi-yi
 title: 如何读懂痛苦、自由与意义
 description: 从苦难意义、精神追寻和公共行动理解人在限制中如何生活。
 tags: [意义, 自由, 人文]
+domain: 人文
+group: 人生哲学
 date: '2026-06-06'
 books:
   - title: 活出生命的意义

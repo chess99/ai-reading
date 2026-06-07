@@ -3,6 +3,8 @@ slug: zhi-ye-zi-ben
 title: 如何建立长期职业资本
 description: 从稀缺能力、刻意练习、深度工作、长期选择、取舍和高杠杆目标建立职业资本。
 tags: [职业发展, 职业资本, 深度工作]
+domain: 职业
+group: 职业资本
 date: '2026-06-06'
 books:
   - title: 优秀到不能被忽视

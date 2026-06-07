@@ -3,6 +3,8 @@ slug: yun-dong-ti-neng
 title: 如何理解运动与体能
 description: 从可执行训练、健康指南和运动生理理解体能如何建立。
 tags: [运动, 体能, 健身]
+domain: 健康
+group: 运动体能
 date: '2026-06-06'
 books:
   - title: 无器械健身

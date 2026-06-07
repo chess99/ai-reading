@@ -3,6 +3,8 @@ slug: zhong-da-jue-ce
 title: 如何做重大决策
 description: "围绕做重大决策，从《怎样决定大事》进入，逐步建立框架、实践判断和系统视角。"
 tags: [思维, 判断, 科学]
+domain: 思维
+group: 决策与防错
 date: '2026-06-06'
 books:
   - title: 怎样决定大事

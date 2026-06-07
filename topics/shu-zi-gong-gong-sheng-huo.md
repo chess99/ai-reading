@@ -3,6 +3,8 @@ slug: shu-zi-gong-gong-sheng-huo
 title: 数字公共生活与信息网络
 description: 从信息网络、媒介传播和公共事实理解数字时代如何共同生活。
 tags: [公共生活, 信息网络, 媒介素养]
+domain: 科技
+group: 数字公共生活
 date: '2026-06-06'
 books:
   - title: 智人之上

@@ -3,6 +3,8 @@ slug: cai-wu-chang-shi
 title: 建立财务常识
 description: "围绕建立财务常识，从《小狗钱钱》进入，逐步建立框架、实践判断和系统视角。"
 tags: [金钱, 投资, 经济]
+domain: 金钱
+group: 财务常识
 date: '2026-06-06'
 books:
   - title: 小狗钱钱

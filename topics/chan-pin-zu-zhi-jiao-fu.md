@@ -3,6 +3,8 @@ slug: chan-pin-zu-zhi-jiao-fu
 title: 如何建立产品组织与交付系统
 description: 从产品组织、开发流动、需求地图、精益交付、授权、团队结构、领导梯队和心理安全理解产品交付。
 tags: [产品组织, 交付系统, 团队]
+domain: 商业
+group: 产品组织
 date: '2026-06-06'
 books:
   - title: 启示录

@@ -3,6 +3,8 @@ slug: xi-tong-fu-za-xing
 title: 什么是系统思维与复杂性
 description: "围绕系统思维与复杂性，从《系统之美》进入，逐步建立框架、实践判断和系统视角。"
 tags: [思维, 判断, 科学]
+domain: 思维
+group: 系统与复杂性
 date: '2026-06-06'
 books:
   - title: 系统之美

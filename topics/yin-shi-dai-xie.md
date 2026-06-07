@@ -3,6 +3,8 @@ slug: yin-shi-dai-xie
 title: 如何理解饮食与代谢
 description: 从营养框架、疾病演化和争议视角理解饮食与代谢问题。
 tags: [营养, 代谢, 健康]
+domain: 健康
+group: 饮食代谢
 date: '2026-06-06'
 books:
   - title: 营养学：概念与争论

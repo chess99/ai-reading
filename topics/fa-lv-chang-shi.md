@@ -3,6 +3,8 @@ slug: fa-lv-chang-shi
 title: 如何建立法律常识
 description: "围绕建立法律常识，从《学点法律避点坑》进入，逐步建立框架、实践判断和系统视角。"
 tags: [社会, 法律, 公共生活]
+domain: 社会
+group: 法律常识
 date: '2026-06-06'
 books:
   - title: 学点法律避点坑

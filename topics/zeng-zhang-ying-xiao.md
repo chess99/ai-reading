@@ -3,6 +3,8 @@ slug: zeng-zhang-ying-xiao
 title: 如何做增长与营销
 description: 从定位、说服、传播扩散、早期市场、实验增长、营销体系、病毒循环和符号资产理解增长与营销。
 tags: [增长, 营销, 产品]
+domain: 商业
+group: 增长营销
 date: '2026-06-06'
 books:
   - title: 定位

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import TopicCard from '@/components/TopicCard';
+import TopicsDiscovery from '@/components/TopicsDiscovery';
 import { BRAND_NAME } from '@/lib/brand';
 import { BASE_URL } from '@/lib/config';
 import { getAllTopicMetas } from '@/lib/topics';
@@ -26,11 +26,7 @@ export default function TopicsPage() {
           </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
-          {topics.map(topic => (
-            <TopicCard key={topic.slug} topic={topic} />
-          ))}
-        </div>
+        <TopicsDiscovery topics={topics} />
       </div>
     </div>
   );

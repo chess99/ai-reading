@@ -3,6 +3,8 @@ slug: ai-feng-xian-zhi-li
 title: AI 风险、治理与技术权力
 description: 从技术扩散、对齐、算法歧视和信息网络理解 AI 治理难题。
 tags: [AI, 技术治理, 算法风险]
+domain: 科技
+group: AI 变革
 date: '2026-06-06'
 books:
   - title: 即将到来的浪潮

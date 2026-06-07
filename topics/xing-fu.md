@@ -3,6 +3,8 @@ slug: xing-fu
 title: 如何理解幸福
 description: 从积极心理学、心流、关系和德性伦理理解幸福的不同层次。
 tags: [幸福, 心流, 人生哲学]
+domain: 人文
+group: 幸福哲学
 date: '2026-06-06'
 books:
   - title: 幸福的方法

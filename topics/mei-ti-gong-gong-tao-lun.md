@@ -3,6 +3,8 @@ slug: mei-ti-gong-gong-tao-lun
 title: 如何理解媒体、舆论与公共讨论
 description: "围绕理解媒体、舆论与公共讨论，从《初识传播学》进入，逐步建立框架、实践判断和系统视角。"
 tags: [社会, 法律, 公共生活]
+domain: 社会
+group: 媒体公共讨论
 date: '2026-06-06'
 books:
   - title: 初识传播学

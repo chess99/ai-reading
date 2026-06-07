@@ -3,6 +3,8 @@ slug: shang-ye-mo-shi-jing-ying
 title: 如何设计商业模式与理解公司经营
 description: 从商业模式画布、客户验证、财务语言、定价、创业经营、竞争、组织卓越和经营原则理解公司经营。
 tags: [商业模式, 公司经营, 创业]
+domain: 商业
+group: 战略经营
 date: '2026-06-06'
 books:
   - title: 商业模式新生代

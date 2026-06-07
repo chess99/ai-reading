@@ -3,6 +3,8 @@ slug: xing-wei-jing-ji-xue
 title: 如何理解行为经济学与金钱心理
 description: "围绕理解行为经济学与金钱心理，从《助推》进入，逐步建立框架、实践判断和系统视角。"
 tags: [金钱, 投资, 经济]
+domain: 金钱
+group: 金钱心理
 date: '2026-06-06'
 books:
   - title: 助推

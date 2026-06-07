@@ -3,6 +3,8 @@ slug: gou-tong-biao-da
 title: 如何提升沟通与表达
 description: 从人际沟通、情绪表达、关键对话、结构化表达和说服理解如何把话说清楚。
 tags: [沟通, 表达, 说服]
+domain: 关系
+group: 沟通表达
 date: '2026-06-06'
 books:
   - title: 沟通的本质

@@ -3,6 +3,8 @@ slug: chan-pin-ji-hui
 title: 如何验证产品机会
 description: 从用户访谈、客户开发、验证学习、独特命题、商业模式和早期市场判断产品机会是否真实。
 tags: [产品机会, 创业, 客户开发]
+domain: 商业
+group: 产品机会
 date: '2026-06-06'
 books:
   - title: 妈妈测试

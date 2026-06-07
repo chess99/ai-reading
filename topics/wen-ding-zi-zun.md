@@ -3,6 +3,8 @@ slug: wen-ding-zi-zun
 title: 如何建立稳定的自尊
 description: 从课题分离、自尊机制、自卑补偿、成长型思维、早期图式和咨询关系理解自我价值。
 tags: [自尊, 自我价值, 心理成长]
+domain: 心理
+group: 自尊与自我
 date: '2026-06-06'
 books:
   - title: 被讨厌的勇气

@@ -3,6 +3,8 @@ slug: cheng-shi-kong-jian
 title: 城市、空间与生活方式
 description: "围绕城市、空间与生活方式，从《美国大城市的死与生》进入，逐步建立框架、实践判断和系统视角。"
 tags: [社会, 法律, 公共生活]
+domain: 社会
+group: 城市空间
 date: '2026-06-06'
 books:
   - title: 美国大城市的死与生

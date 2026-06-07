@@ -3,6 +3,8 @@ slug: shi-jian-jing-li-xi-tong
 title: 如何管理时间、精力与个人系统
 description: 从精力、任务系统、取舍、原则、慢节奏、复盘和个人原则建立可持续工作系统。
 tags: [时间管理, 精力管理, 个人系统]
+domain: 学习
+group: 习惯与行动
 date: '2026-06-06'
 books:
   - title: 精力管理

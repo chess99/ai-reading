@@ -3,6 +3,8 @@ slug: shen-du-gong-zuo
 title: 如何提高深度工作能力
 description: "围绕提高深度工作能力，从《深度工作》进入，逐步建立框架、实践判断和系统视角。"
 tags: [自我管理, 学习, 创造]
+domain: 学习
+group: 注意力与深度工作
 date: '2026-06-06'
 books:
   - title: 深度工作

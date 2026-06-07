@@ -3,6 +3,8 @@ slug: chang-qi-tou-zi
 title: 普通人如何长期投资
 description: "围绕如何长期投资，从《共同基金常识》进入，逐步建立框架、实践判断和系统视角。"
 tags: [金钱, 投资, 经济]
+domain: 金钱
+group: 长期投资
 date: '2026-06-06'
 books:
   - title: 共同基金常识

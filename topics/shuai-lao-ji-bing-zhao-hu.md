@@ -3,6 +3,8 @@ slug: shuai-lao-ji-bing-zhao-hu
 title: 面对衰老、疾病与照护
 description: 从长寿医学、疾病经验和临终沟通理解衰老与照护。
 tags: [衰老, 疾病, 照护]
+domain: 健康
+group: 衰老疾病
 date: '2026-06-06'
 books:
   - title: 超越百岁

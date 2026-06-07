@@ -3,6 +3,8 @@ slug: ai-bian-ge
 title: 普通人如何理解 AI 变革
 description: 从 AI 协作、未来场景和技术扩散理解普通人如何判断 AI 变化。
 tags: [AI, 技术变革, 人机协作]
+domain: 科技
+group: AI 变革
 date: '2026-06-06'
 books:
   - title: 人机共智

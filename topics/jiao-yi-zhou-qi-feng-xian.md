@@ -3,6 +3,8 @@ slug: jiao-yi-zhou-qi-feng-xian
 title: 如何理解交易、周期与市场风险
 description: "围绕理解交易、周期与市场风险，从《股票大作手回忆录》进入，逐步建立框架、实践判断和系统视角。"
 tags: [金钱, 投资, 经济]
+domain: 金钱
+group: 交易与周期
 date: '2026-06-06'
 books:
   - title: 股票大作手回忆录

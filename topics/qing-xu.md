@@ -3,6 +3,8 @@ slug: qing-xu
 title: 如何理解情绪
 description: 从咨询故事、情绪急救、情绪理论、认知疗法、接纳、身体反应和睡眠理解情绪。
 tags: [情绪, 心理健康, 自我观察]
+domain: 心理
+group: 情绪与内耗
 date: '2026-06-06'
 books:
   - title: 蛤蟆先生去看心理医生

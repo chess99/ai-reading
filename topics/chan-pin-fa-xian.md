@@ -3,6 +3,8 @@ slug: chan-pin-fa-xian
 title: 如何做好产品发现
 description: 从现代产品发现、用户任务、价值假设、体验层次、行为心理、冲刺验证和开发流动理解产品发现。
 tags: [产品发现, 用户体验, 产品管理]
+domain: 商业
+group: 产品发现
 date: '2026-06-06'
 books:
   - title: 启示录

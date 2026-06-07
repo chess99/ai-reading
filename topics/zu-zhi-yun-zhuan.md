@@ -3,6 +3,8 @@ slug: zu-zhi-yun-zhuan
 title: 看懂组织运转
 description: 从组织行为、质量、生产系统、科学管理、学习型组织、经营原则和管理职能理解组织如何运转。
 tags: [组织, 管理, 运营]
+domain: 职业
+group: 组织系统与权力
 date: '2026-06-06'
 books:
   - title: 组织行为学

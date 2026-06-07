@@ -3,6 +3,8 @@ slug: jing-zheng-zhan-lve-ping-tai
 title: 如何理解商业竞争、战略与平台效应
 description: "围绕理解商业竞争、战略与平台效应，从《竞争战略》进入，逐步建立框架、实践判断和系统视角。"
 tags: [商业, 产品, 创业]
+domain: 商业
+group: 平台网络
 date: '2026-06-06'
 books:
   - title: 竞争战略

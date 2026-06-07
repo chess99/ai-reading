@@ -3,6 +3,8 @@ slug: xiao-fei-zhu-yi-jie-ceng
 title: 看懂消费主义、财富与阶层机会
 description: "围绕消费主义、财富与阶层机会，从《有闲阶级论》进入，逐步建立框架、实践判断和系统视角。"
 tags: [金钱, 投资, 经济]
+domain: 金钱
+group: 消费社会
 date: '2026-06-06'
 books:
   - title: 有闲阶级论

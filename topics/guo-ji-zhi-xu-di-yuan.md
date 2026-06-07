@@ -3,6 +3,8 @@ slug: guo-ji-zhi-xu-di-yuan
 title: 如何理解国际秩序与地缘风险
 description: "围绕理解国际秩序与地缘风险，从《世界秩序》进入，逐步建立框架、实践判断和系统视角。"
 tags: [历史, 文明, 世界格局]
+domain: 历史
+group: 国际秩序
 date: '2026-06-06'
 books:
   - title: 世界秩序

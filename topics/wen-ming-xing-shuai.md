@@ -3,6 +3,8 @@ slug: wen-ming-xing-shuai
 title: 如何理解文明兴衰
 description: "围绕理解文明兴衰，从《枪炮、病菌与钢铁》进入，逐步建立框架、实践判断和系统视角。"
 tags: [历史, 文明, 世界格局]
+domain: 历史
+group: 文明兴衰
 date: '2026-06-06'
 books:
   - title: 枪炮、病菌与钢铁

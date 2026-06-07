@@ -3,6 +3,8 @@ slug: zhi-ye-xuan-ze
 title: 职业选择阅读路径
 description: 从职业周期、动机锚、求职探索、能力资本、独立工作和个人原则理解职业选择。
 tags: [职业选择, 职业发展, 个人原则]
+domain: 职业
+group: 职业资本
 date: '2026-06-06'
 books:
   - title: 远见

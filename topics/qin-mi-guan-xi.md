@@ -3,6 +3,8 @@ slug: qin-mi-guan-xi
 title: 亲密关系阅读路径
 description: 从依恋、婚姻研究、情绪循环、沟通和创伤影响理解亲密关系为什么亲近也为什么受伤。
 tags: [亲密关系, 依恋, 沟通]
+domain: 关系
+group: 亲密关系
 date: '2026-06-06'
 books:
   - title: 亲密关系

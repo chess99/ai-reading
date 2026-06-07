@@ -3,6 +3,8 @@ slug: sang-shi-ai-shang-si-wang
 title: 面对丧失、哀伤与死亡
 description: 从临终照护、疾病经验、意义、告别、死亡教育和咨询现场理解丧失与哀伤。
 tags: [哀伤, 死亡, 意义]
+domain: 心理
+group: 成瘾与哀伤
 date: '2026-06-06'
 books:
   - title: 最好的告别

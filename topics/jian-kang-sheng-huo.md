@@ -3,6 +3,8 @@ slug: jian-kang-sheng-huo
 title: 如何建立健康生活方式
 description: 从习惯、睡眠、运动和长期健康理解日常生活如何支持身体。
 tags: [健康, 睡眠, 运动]
+domain: 健康
+group: 健康生活
 date: '2026-06-06'
 books:
   - title: 掌控习惯
