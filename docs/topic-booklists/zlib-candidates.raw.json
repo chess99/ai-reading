@@ -13017,7 +13017,7 @@
   },
   {
     "title": "无畏的组织",
-    "status": "needs_manual_review",
+    "status": "candidate_ready",
     "refs": [
       "如何建立产品组织与交付系统",
       "如何建立领导力与团队协作",
@@ -13029,9 +13029,8 @@
     ],
     "count": 3,
     "selected": {
-      "score": -94,
+      "score": 6,
       "reasons": [
-        "unsupported format",
         "language english",
         "exact title",
         "format fb2"
@@ -13048,7 +13047,7 @@
     },
     "alternatives": [
       {
-        "score": -94,
+        "score": 6,
         "title": "无畏的组织",
         "format": "fb2",
         "fileSize": "6.21 MB",
@@ -13058,7 +13057,6 @@
         "quality": "5.0",
         "bookUrl": "https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html",
         "reasons": [
-          "unsupported format",
           "language english",
           "exact title",
           "format fb2"
@@ -13067,7 +13065,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 19817,
-    "reviewNote": "格式 fb2 暂不支持"
+    "reviewNote": "BookDistill 已支持 FB2 解析；候选为精确题名，可优先尝试下载，下载后仍需按 SOP 校验文本质量。"
   },
   {
     "title": "悉达多",
