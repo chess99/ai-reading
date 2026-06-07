@@ -4061,121 +4061,6 @@
     "reviewNote": "标题含副标题"
   },
   {
-    "title": "管理的实践",
-    "status": "candidate_ready",
-    "refs": [
-      "如何成为有效管理者"
-    ],
-    "domains": [
-      "职业"
-    ],
-    "count": 1,
-    "selected": {
-      "score": 297,
-      "reasons": [
-        "Chinese",
-        "exact title",
-        "format epub"
-      ],
-      "title": "管理的实践",
-      "author": "",
-      "format": "epub",
-      "fileSize": "1.27 MB",
-      "year": "2009",
-      "language": "Chinese",
-      "bookUrl": "https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html",
-      "rating": "3.0",
-      "quality": "5.0"
-    },
-    "alternatives": [
-      {
-        "score": 297,
-        "title": "管理的实践",
-        "format": "epub",
-        "fileSize": "1.27 MB",
-        "year": "2009",
-        "language": "Chinese",
-        "rating": "3.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html",
-        "reasons": [
-          "Chinese",
-          "exact title",
-          "format epub"
-        ]
-      },
-      {
-        "score": 266,
-        "title": "管理的实践珍藏版",
-        "format": "epub",
-        "fileSize": "3.79 MB",
-        "year": "2018",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/QAVkqPpKZG/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5%E7%8F%8D%E8%97%8F%E7%89%88.html",
-        "reasons": [
-          "Chinese",
-          "compact prefix",
-          "format epub"
-        ]
-      },
-      {
-        "score": 178,
-        "title": "管理的实践",
-        "format": "mobi",
-        "fileSize": "5.32 MB",
-        "year": "2005",
-        "language": "english",
-        "rating": "4.9",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/Q0YDObBQRZ/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html",
-        "reasons": [
-          "language english",
-          "exact title",
-          "format mobi"
-        ]
-      },
-      {
-        "score": 130,
-        "title": "管理大师德鲁克经典收藏版包含卓有成效的管理者管理的实践等全套23册",
-        "format": "epub",
-        "fileSize": "45.15 MB",
-        "year": "2015",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/W0Epy5pVZl/%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88%E5%BE%B7%E9%B2%81%E5%85%8B%E7%BB%8F%E5%85%B8%E6%94%B6%E8%97%8F%E7%89%88%E5%8C%85%E5%90%AB%E5%8D%93%E6%9C%89%E6%88%90%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E8%80%85%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5%E7%AD%89%E5%85%A8%E5%A5%9723%E5%86%8C.html",
-        "reasons": [
-          "Chinese",
-          "contains title but long",
-          "format epub",
-          "huge ebook"
-        ]
-      },
-      {
-        "score": 130,
-        "title": "管理大师德鲁克经典收藏版包含卓有成效的管理者管理的实践等全套23册",
-        "format": "epub",
-        "fileSize": "52.27 MB",
-        "year": "2015",
-        "language": "Chinese",
-        "rating": "5.0",
-        "quality": "5.0",
-        "bookUrl": "https://z-lib.fm/book/XZmJX8bV0P/%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88%E5%BE%B7%E9%B2%81%E5%85%8B%E7%BB%8F%E5%85%B8%E6%94%B6%E8%97%8F%E7%89%88%E5%8C%85%E5%90%AB%E5%8D%93%E6%9C%89%E6%88%90%E6%95%88%E7%9A%84%E7%AE%A1%E7%90%86%E8%80%85%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5%E7%AD%89%E5%85%A8%E5%A5%9723%E5%86%8C.html",
-        "reasons": [
-          "Chinese",
-          "contains title but long",
-          "format epub",
-          "huge ebook"
-        ]
-      }
-    ],
-    "searchedAt": "2026-06-07",
-    "elapsedMs": 21216,
-    "reviewNote": "标题精确"
-  },
-  {
     "title": "规模",
     "status": "candidate_ready",
     "refs": [
@@ -13017,7 +12902,7 @@
   },
   {
     "title": "无畏的组织",
-    "status": "candidate_ready",
+    "status": "needs_manual_review",
     "refs": [
       "如何建立产品组织与交付系统",
       "如何建立领导力与团队协作",
@@ -13065,7 +12950,7 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 19817,
-    "reviewNote": "BookDistill 已支持 FB2 解析；候选为精确题名，可优先尝试下载，下载后仍需按 SOP 校验文本质量。"
+    "reviewNote": "BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。"
   },
   {
     "title": "悉达多",

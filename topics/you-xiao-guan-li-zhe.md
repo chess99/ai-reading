@@ -15,10 +15,12 @@ books:
     reason: 先建立管理者如何使用时间、贡献、优势和决策的基本责任。
     status: in_library
   - title: 管理的实践
-    author: 待补
+    author: 彼得·德鲁克
+    slug: guan-li-de-shi-jian
+    path: books/商业管理/彼得·德鲁克-管理的实践.md
     role: 管理体系
     reason: 把管理放进企业目标、组织、人员和绩效的整体框架。
-    status: planned
+    status: in_library
   - title: 经理人员的职能
     author: 待补
     role: 管理职能

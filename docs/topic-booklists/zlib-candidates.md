@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 169 个唯一待入库书名：163 个候选可优先尝试下载，6 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 168 个唯一待入库书名：161 个候选可优先尝试下载，7 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -47,7 +47,6 @@ date: '2026-06-07'
 | 工作、消费主义和新穷人 | candidate_ready | 标点差异 | epub | 343 KB | 2021 | Chinese | [工作消费主义和新穷人 work consumerism and the new poor](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) | 城市、空间与生活方式、看懂消费主义、财富与阶层机会 |
 | 公正 | candidate_ready | 标题精确 | mobi | 638 KB | 2012 | Chinese | [公正](https://z-lib.fm/book/PAl99BdvZq/%E5%85%AC%E6%AD%A3.html) | 如何理解公平与正义 |
 | 怪诞行为学 | candidate_ready | 标题含副标题 | epub | 1.60 MB | 2014 | Chinese | [怪诞行为学可预测的非理性](https://z-lib.fm/book/mAvKrE68Zl/%E6%80%AA%E8%AF%9E%E8%A1%8C%E4%B8%BA%E5%AD%A6%E5%8F%AF%E9%A2%84%E6%B5%8B%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7.html) | 如何理解行为经济学与金钱心理 |
-| 管理的实践 | candidate_ready | 标题精确 | epub | 1.27 MB | 2009 | Chinese | [管理的实践](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) | 如何成为有效管理者 |
 | 规模 | candidate_ready | 标题精确 | epub | 6.35 MB | 2018 | Chinese | [规模](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) | 如何理解商业竞争、战略与平台效应、什么是系统思维与复杂性 |
 | 蛤蟆先生去看心理医生 | candidate_ready | 标题精确 | epub | 330 KB | 2020 | Chinese | [蛤蟆先生去看心理医生](https://z-lib.fm/book/wgeeP9Q3g7/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%8C%BB%E7%94%9F.html) | 理解焦虑与抑郁、如何理解情绪 |
 | 孩子，把你的手给我 | candidate_ready | 标题精确 | epub | 199 KB | 2016 | Chinese | [孩子把你的手给我](https://z-lib.fm/book/pZ8xMzoLZ9/%E5%AD%A9%E5%AD%90%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%89%8B%E7%BB%99%E6%88%91.html) | 如何做足够好的父母 |
@@ -129,7 +128,7 @@ date: '2026-06-07'
 | 文学讲稿 | candidate_ready | 标题含副标题/版本 | epub | 893 KB | 2018 | Chinese | [文学讲稿自制](https://z-lib.fm/book/dAokqNKQAV/%E6%96%87%E5%AD%A6%E8%AE%B2%E7%A8%BF%E8%87%AA%E5%88%B6.html) | 文学与人文阅读入门 |
 | 文学理论入门 | candidate_ready | 标题精确 | epub | 1.58 MB | 2012 | Chinese | [文学理论入门](https://z-lib.fm/book/XAnlB9pR0d/%E6%96%87%E5%AD%A6%E7%90%86%E8%AE%BA%E5%85%A5%E9%97%A8.html) | 文学与人文阅读入门 |
 | 我们为什么会生病 | candidate_ready | 标题精确 | epub | 1.82 MB | 2018 | Chinese | [我们为什么会生病](https://z-lib.fm/book/jZkaGvqNg3/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E7%94%9F%E7%97%85.html) | 如何理解饮食与代谢 |
-| 无畏的组织 | candidate_ready | BookDistill 已支持 FB2 解析；候选为精确题名，可优先尝试下载，下载后仍需按 SOP 校验文本质量。 | fb2 | 6.21 MB | 2016 | english | [无畏的组织](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) | 如何建立产品组织与交付系统、如何建立领导力与团队协作、如何成为有效管理者 |
+| 无畏的组织 | needs_manual_review | BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。 | fb2 | 6.21 MB | 2016 | english | [无畏的组织](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) | 如何建立产品组织与交付系统、如何建立领导力与团队协作、如何成为有效管理者 |
 | 悉达多 | candidate_ready | 标题精确 | epub | 4.84 MB | 2025 | Chinese | [悉达多](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) | 人生哲学入门、如何读懂痛苦、自由与意义 |
 | 相约星期二 | candidate_ready | 标题精确 | epub | 239 KB | 2007 | Chinese | [相约星期二](https://z-lib.fm/book/qA9Pyjo9gL/%E7%9B%B8%E7%BA%A6%E6%98%9F%E6%9C%9F%E4%BA%8C.html) | 面对丧失、哀伤与死亡 |
 | 像艺术家一样思考 | candidate_ready | 标题精确 | epub | 258 KB | 2003 | Chinese | [像艺术家一样思考](https://z-lib.fm/book/XAnK34nXZd/%E5%83%8F%E8%89%BA%E6%9C%AF%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83.html) | 写作与创意工作、艺术与审美入门 |

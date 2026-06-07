@@ -12,8 +12,8 @@ date: '2026-06-07'
 - 唯一书名：38
 - 已入库引用：40
 - 待入库唯一书名：14
-- z-lib 可优先尝试：13
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：12
+- z-lib 需复核/换源：2
 
 ## 待入库书目
 
@@ -28,7 +28,7 @@ date: '2026-06-07'
 | 商业模式新生代 | 2 | 如何设计商业模式与理解公司经营、如何验证产品机会 | 候选: [epub 11.38 MB 2011](https://z-lib.fm/book/dAod7eRBZV/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E6%96%B0%E7%94%9F%E4%BB%A3.html) |
 | 设计冲刺 | 1 | 如何做好产品发现 | 候选: [epub 12.01 MB 2017](https://z-lib.fm/book/Q0Y5MlRn0y/%E8%AE%BE%E8%AE%A1%E5%86%B2%E5%88%BA.html) |
 | 设计心理学 | 1 | 如何做好产品发现 | 候选: [epub 4.76 MB 2016](https://z-lib.fm/book/DgXLyaqqgq/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A61%E6%97%A5%E5%B8%B8%E7%9A%84%E8%AE%BE%E8%AE%A1.html) |
-| 无畏的组织 | 1 | 如何建立产品组织与交付系统 | 候选: [fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
+| 无畏的组织 | 1 | 如何建立产品组织与交付系统 | 需复核: BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
 | 引爆点 | 1 | 如何做增长与营销 | 候选: [epub 499 KB 2020](https://z-lib.fm/book/Y0LdyjK70K/%E5%BC%95%E7%88%86%E7%82%B9%E7%AC%AC%E4%BA%94%E7%89%88.html) |
 | 用户故事地图 | 3 | 产品从 0 到 1、如何建立产品组织与交付系统、如何做好产品发现 | 需复核: 已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理；[pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
 | 用户体验要素 | 1 | 如何做好产品发现 | 候选: [epub 1.76 MB 2011](https://z-lib.fm/book/20r3JbDGgX/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1.html) |
@@ -66,7 +66,7 @@ date: '2026-06-07'
 | 赋能 | 授权协作 | planned | 待补 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 重新定义团队 | 团队结构 | planned | 待补 | 候选: [epub 4.07 MB 2015](https://z-lib.fm/book/XAnlBoo70d/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%9B%A2%E9%98%9F%E8%B0%B7%E6%AD%8C%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C.html) |
 | 领导梯队 | 领导层级 | in_library | 查兰 | ling-dao-ti-dui / books/商业管理/查兰-领导梯队.md |
-| 无畏的组织 | 心理安全 | planned | 待补 | 候选: [fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
+| 无畏的组织 | 心理安全 | planned | 待补 | 需复核: BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
 
 ### 如何理解商业竞争、战略与平台效应
 

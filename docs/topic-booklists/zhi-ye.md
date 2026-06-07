@@ -10,10 +10,10 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：46
 - 唯一书名：35
-- 已入库引用：25
-- 待入库唯一书名：16
-- z-lib 可优先尝试：15
-- z-lib 需复核/换源：1
+- 已入库引用：26
+- 待入库唯一书名：15
+- z-lib 可优先尝试：13
+- z-lib 需复核/换源：2
 
 ## 待入库书目
 
@@ -23,13 +23,12 @@ date: '2026-06-07'
 | 第五项修炼 | 1 | 看懂组织运转 | 需复核: 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。；[epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
 | 赋能 | 1 | 如何建立领导力与团队协作 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 高绩效教练 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 候选: [epub 11.31 MB 2019](https://z-lib.fm/book/XZm6kp4V0P/%E9%AB%98%E7%BB%A9%E6%95%88%E6%95%99%E7%BB%83%E5%8E%9F%E4%B9%A6%E7%AC%AC5%E7%89%88.html) |
-| 管理的实践 | 1 | 如何成为有效管理者 | 候选: [epub 1.27 MB 2009](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) |
 | 经理人员的职能 | 2 | 看懂组织运转、如何成为有效管理者 | 候选: [pdf 9.64 MB 1997](https://z-lib.fm/book/DgXNBPOmZq/%E7%BB%8F%E7%90%86%E4%BA%BA%E5%91%98%E7%9A%84%E8%81%8C%E8%83%BD.html) |
 | 可复制的领导力 | 1 | 如何成为有效管理者 | 候选: [epub 904 KB 2018](https://z-lib.fm/book/vAyQjb11AE/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B.html) |
 | 你的降落伞是什么颜色 | 1 | 职业选择阅读路径 | 候选: [epub 7.58 MB 2018](https://z-lib.fm/book/XZm6KxWb0P/%E4%BD%A0%E7%9A%84%E9%99%8D%E8%90%BD%E4%BC%9E%E6%98%AF%E4%BB%80%E4%B9%88%E9%A2%9C%E8%89%B2.html) |
 | 权力与影响力 | 1 | 如何理解组织中的权力与变革 | 候选: [epub 13.81 MB 2024](https://z-lib.fm/book/WZxrny4EgV/%E6%9D%83%E5%8A%9B%E4%B8%8E%E5%BD%B1%E5%93%8D%E5%8A%9B.html) |
 | 团队协作的五大障碍 | 1 | 如何建立领导力与团队协作 | 候选: [epub 726 KB 2022](https://z-lib.fm/book/zZ45wvyG0b/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E7%9A%84%E4%BA%94%E5%A4%A7%E9%9A%9C%E7%A2%8D.html) |
-| 无畏的组织 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 候选: [fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
+| 无畏的组织 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 需复核: BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
 | 优秀到不能被忽视 | 2 | 如何建立长期职业资本、职业选择阅读路径 | 候选: [epub 1.12 MB 2018](https://z-lib.fm/book/Y0LXjQMk0K/%E4%BC%98%E7%A7%80%E5%88%B0%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%BF%BD%E8%A7%86.html) |
 | 远见 | 2 | 如何建立长期职业资本、职业选择阅读路径 | 候选: [epub 975 KB 2019](https://z-lib.fm/book/WZxpBeGEZV/%E8%BF%9C%E8%A7%81.html) |
 | 职业锚 | 1 | 职业选择阅读路径 | 候选: [pdf 15.12 MB 2007](https://z-lib.fm/book/wgerKybXA7/%E8%81%8C%E4%B8%9A%E9%94%9A.html) |
@@ -60,13 +59,13 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 卓有成效的管理者 | 管理责任 | in_library | 彼得·德鲁克 | zhuo-you-cheng-xiao-de-guan-li-zhe / books/商业管理/彼得·德鲁克-卓有成效的管理者.md |
-| 管理的实践 | 管理体系 | planned | 待补 | 候选: [epub 1.27 MB 2009](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) |
+| 管理的实践 | 管理体系 | in_library | 彼得·德鲁克 | guan-li-de-shi-jian / books/商业管理/彼得·德鲁克-管理的实践.md |
 | 经理人员的职能 | 管理职能 | planned | 待补 | 候选: [pdf 9.64 MB 1997](https://z-lib.fm/book/DgXNBPOmZq/%E7%BB%8F%E7%90%86%E4%BA%BA%E5%91%98%E7%9A%84%E8%81%8C%E8%83%BD.html) |
 | 领导梯队 | 角色跃迁 | in_library | 查兰 | ling-dao-ti-dui / books/商业管理/查兰-领导梯队.md |
 | 可复制的领导力 | 复制机制 | planned | 待补 | 候选: [epub 904 KB 2018](https://z-lib.fm/book/vAyQjb11AE/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B.html) |
 | 高绩效教练 | 教练方法 | planned | 待补 | 候选: [epub 11.31 MB 2019](https://z-lib.fm/book/XZm6kp4V0P/%E9%AB%98%E7%BB%A9%E6%95%88%E6%95%99%E7%BB%83%E5%8E%9F%E4%B9%A6%E7%AC%AC5%E7%89%88.html) |
 | 关键对话 | 管理沟通 | in_library | 科里·帕特森 | guan-jian-dui-hua / books/心理学/科里·帕特森-关键对话.md |
-| 无畏的组织 | 心理安全 | planned | 待补 | 候选: [fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
+| 无畏的组织 | 心理安全 | planned | 待补 | 需复核: BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
 
 ### 如何建立领导力与团队协作
 
@@ -78,7 +77,7 @@ date: '2026-06-07'
 | 高绩效教练 | 教练能力 | planned | 待补 | 候选: [epub 11.31 MB 2019](https://z-lib.fm/book/XZm6kp4V0P/%E9%AB%98%E7%BB%A9%E6%95%88%E6%95%99%E7%BB%83%E5%8E%9F%E4%B9%A6%E7%AC%AC5%E7%89%88.html) |
 | 团队协作的五大障碍 | 团队失效 | planned | 待补 | 候选: [epub 726 KB 2022](https://z-lib.fm/book/zZ45wvyG0b/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E7%9A%84%E4%BA%94%E5%A4%A7%E9%9A%9C%E7%A2%8D.html) |
 | 关键对话 | 分歧处理 | in_library | 科里·帕特森 | guan-jian-dui-hua / books/心理学/科里·帕特森-关键对话.md |
-| 无畏的组织 | 心理安全 | planned | 待补 | 候选: [fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
+| 无畏的组织 | 心理安全 | planned | 待补 | 需复核: BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
 | 赋能 | 授权协作 | planned | 待补 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 重新定义团队 | 团队结构 | planned | 待补 | 候选: [epub 4.07 MB 2015](https://z-lib.fm/book/XAnlBoo70d/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%9B%A2%E9%98%9F%E8%B0%B7%E6%AD%8C%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C.html) |
 | 权力 | 权力现实 | in_library | 杰弗瑞·菲佛 | quan-li / books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md |
