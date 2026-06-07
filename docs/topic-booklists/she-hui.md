@@ -12,8 +12,8 @@ date: '2026-06-07'
 - 唯一书名：40
 - 已入库引用：29
 - 待入库唯一书名：17
-- z-lib 可优先尝试：17
-- z-lib 需复核/换源：0
+- z-lib 可优先尝试：16
+- z-lib 需复核/换源：1
 
 ## 待入库书目
 
@@ -23,7 +23,7 @@ date: '2026-06-07'
 | 法治及其本土资源 | 2 | 如何建立法律常识、如何识别制度与权力 | 候选: [epub 510 KB 2013](https://z-lib.fm/book/YAJ8DVwV0w/%E6%B3%95%E6%B2%BB%E5%8F%8A%E5%85%B6%E6%9C%AC%E5%9C%9F%E8%B5%84%E6%BA%90.html) |
 | 工作、消费主义和新穷人 | 1 | 城市、空间与生活方式 | 候选: [epub 343 KB 2021](https://z-lib.fm/book/OZOo74wLZx/%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA-work-consumerism-and-the-new-poor.html) |
 | 公正 | 1 | 如何理解公平与正义 | 候选: [mobi 638 KB 2012](https://z-lib.fm/book/PAl99BdvZq/%E5%85%AC%E6%AD%A3.html) |
-| 旧制度与大革命 | 1 | 如何识别制度与权力 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
+| 旧制度与大革命 | 1 | 如何识别制度与权力 | 需复核: 详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。；[epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 看不见的女性 | 1 | 如何理解性别与社会结构 | 候选: [epub 498 KB 2022](https://z-lib.fm/book/qA9WK9zE0L/%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E5%A5%B3%E6%80%A7.html) |
 | 看得见的正义 | 2 | 如何建立法律常识、如何识别制度与权力 | 候选: [epub 1.16 MB 2013](https://z-lib.fm/book/R0P113ykg9/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E6%AD%A3%E4%B9%89.html) |
 | 美国大城市的死与生 | 1 | 城市、空间与生活方式 | 候选: [epub 718 KB 2020](https://z-lib.fm/book/601KzkBnA4/%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%9F%8E%E5%B8%82%E7%9A%84%E6%AD%BB%E4%B8%8E%E7%94%9F.html) |
@@ -114,7 +114,7 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 权力 | 权力入口 | in_library | 杰弗瑞·菲佛 | quan-li / books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md |
-| 旧制度与大革命 | 转型切片 | planned | 待补 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
+| 旧制度与大革命 | 转型切片 | planned | 待补 | 需复核: 详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。；[epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 权力与繁荣 | 国家激励 | planned | 待补 | 候选: [epub 506 KB 2017](https://z-lib.fm/book/DgXe4kvQAq/%E6%9D%83%E5%8A%9B%E4%B8%8E%E7%B9%81%E8%8D%A3.html) |
 | 国家为什么会失败 | 制度比较 | in_library | 德隆·阿西莫格鲁,詹姆斯·罗宾逊 | guo-jia-wei-shen-me-hui-shi-bai / books/社会科学/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md |
 | 通往奴役之路 | 自由警戒 | in_library | 弗里德里希·哈耶克 | tong-wang-nu-yi-zhi-lu / books/社会科学/弗里德里希·哈耶克-通往奴役之路.md |

@@ -5812,7 +5812,7 @@
   },
   {
     "title": "旧制度与大革命",
-    "status": "candidate_ready",
+    "status": "needs_manual_review",
     "refs": [
       "如何识别制度与权力",
       "中国社会的现代转型"
@@ -5923,7 +5923,12 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 20868,
-    "reviewNote": "标题精确"
+    "reviewNote": "详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "selectedUrl": "https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html",
+      "reason": "页面 title 正确，但 h1/links/body 为空；download.ts 无 a[href*=/dl/] 或 Download button。"
+    }
   },
   {
     "title": "就业、利息和货币通论",

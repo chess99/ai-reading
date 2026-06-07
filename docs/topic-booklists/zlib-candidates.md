@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 169 个唯一待入库书名：160 个候选可优先尝试下载，9 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 169 个唯一待入库书名：159 个候选可优先尝试下载，10 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -64,7 +64,7 @@ date: '2026-06-07'
 | 经济学原理 | candidate_ready | 标题精确 | epub | 733 KB | 2011 | Chinese | [经济学原理](https://z-lib.fm/book/jZkLW17K03/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86.html) | 如何理解经济运行 |
 | 经理人员的职能 | candidate_ready | 标题精确 | pdf | 9.64 MB | 1997 | Chinese | [经理人员的职能](https://z-lib.fm/book/DgXNBPOmZq/%E7%BB%8F%E7%90%86%E4%BA%BA%E5%91%98%E7%9A%84%E8%81%8C%E8%83%BD.html) | 如何成为有效管理者、看懂组织运转 |
 | 精益产品手册 | needs_manual_review | 标题不匹配 | pdf | 50.31 MB | 2017 | Chinese | [如何开发一个好产品 精益产品开发实战手册](https://z-lib.fm/book/wgeG5aVyZ7/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A7%E5%93%81-%E7%B2%BE%E7%9B%8A%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C.html) | 如何做好产品发现 |
-| 旧制度与大革命 | candidate_ready | 标题精确 | epub | 5.37 MB | 2013 | Chinese | [旧制度与大革命](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) | 如何识别制度与权力、中国社会的现代转型 |
+| 旧制度与大革命 | needs_manual_review | 详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。 | epub | 5.37 MB | 2013 | Chinese | [旧制度与大革命](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) | 如何识别制度与权力、中国社会的现代转型 |
 | 就业、利息和货币通论 | candidate_ready | 标点差异 | epub | 825 KB | 2020 | Chinese | [就业利息和货币通论](https://z-lib.fm/book/N0Wamr8RAq/%E5%B0%B1%E4%B8%9A%E5%88%A9%E6%81%AF%E5%92%8C%E8%B4%A7%E5%B8%81%E9%80%9A%E8%AE%BA.html) | 如何理解经济运行 |
 | 决断力 | candidate_ready | 标题含副标题/版本 | epub | 376 KB | 2014 | Chinese | [决断力如何在生活与工作中做出更好的选择](https://z-lib.fm/book/lgGajEO8ZV/%E5%86%B3%E6%96%AD%E5%8A%9B%E5%A6%82%E4%BD%95%E5%9C%A8%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%81%9A%E5%87%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%80%89%E6%8B%A9.html) | 如何做重大决策 |
 | 卡片笔记写作法 | candidate_ready | 标题含副标题/版本 | epub | 924 KB | 2021 | Chinese | [卡片笔记写作法 如何实现从阅读到写作](https://z-lib.fm/book/dAorw91wgV/%E5%8D%A1%E7%89%87%E7%AC%94%E8%AE%B0%E5%86%99%E4%BD%9C%E6%B3%95-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%BB%8E%E9%98%85%E8%AF%BB%E5%88%B0%E5%86%99%E4%BD%9C.html) | 阅读、笔记与输出系统 |

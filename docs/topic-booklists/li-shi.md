@@ -12,8 +12,8 @@ date: '2026-06-07'
 - 唯一书名：22
 - 已入库引用：15
 - 待入库唯一书名：13
-- z-lib 可优先尝试：13
-- z-lib 需复核/换源：0
+- z-lib 可优先尝试：12
+- z-lib 需复核/换源：1
 
 ## 待入库书目
 
@@ -21,7 +21,7 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 大国的兴衰 | 3 | 如何理解国际秩序与地缘风险、如何理解世界历史、如何理解文明兴衰 | 候选: [pdf 39.27 MB 1989](https://z-lib.fm/book/VZw4zpae0m/%E5%A4%A7%E5%9B%BD%E7%9A%84%E5%85%B4%E8%A1%B0.html) |
 | 叫魂 | 2 | 中国历史入门、中国社会的现代转型 | 候选: [epub 485 KB 2014](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
-| 旧制度与大革命 | 1 | 中国社会的现代转型 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
+| 旧制度与大革命 | 1 | 中国社会的现代转型 | 需复核: 详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。；[epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 全球通史 | 1 | 如何理解世界历史 | 候选: [epub 10.69 MB 2017](https://z-lib.fm/book/XZmJ3Lo80P/%E5%85%A8%E7%90%83%E9%80%9A%E5%8F%B2%E4%BB%8E%E5%8F%B2%E5%89%8D%E5%8F%B2%E5%88%B0%E4%BA%8C%E5%8D%81%E4%B8%80%E4%B8%96%E7%BA%AA%E7%AC%AC7%E7%89%88%E4%BF%AE%E8%AE%A2%E7%89%88.html) |
 | 枢纽 | 2 | 中国历史入门、中国社会的现代转型 | 候选: [epub 934 KB 2018](https://z-lib.fm/book/dAok6m5KAV/%E6%9E%A2%E7%BA%BD.html) |
 | 丝绸之路 | 1 | 如何理解世界历史 | 候选: [epub 19.79 MB 2016](https://z-lib.fm/book/LaZQe7lqZ8/%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF-%E4%B8%80%E9%83%A8%E5%85%A8%E6%96%B0%E7%9A%84%E4%B8%96%E7%95%8C%E5%8F%B2.html) |
@@ -104,4 +104,4 @@ date: '2026-06-07'
 | 叫魂 | 基层恐慌 | planned | 待补 | 候选: [epub 485 KB 2014](https://z-lib.fm/book/WZpP1dxoZR/%E5%8F%AB%E9%AD%821768%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A6%96%E6%9C%AF%E5%A4%A7%E6%81%90%E6%85%8C.html) |
 | 枢纽 | 历史枢纽 | planned | 待补 | 候选: [epub 934 KB 2018](https://z-lib.fm/book/dAok6m5KAV/%E6%9E%A2%E7%BA%BD.html) |
 | 置身事内 | 当代治理 | in_library | 兰小欢 | zhi-shen-shi-nei / books/社会科学/经济学/兰小欢-置身事内.md |
-| 旧制度与大革命 | 比较收束 | planned | 待补 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
+| 旧制度与大革命 | 比较收束 | planned | 待补 | 需复核: 详情页 title 可加载但正文和下载链接为空；同步镜像域 cookie 后仍无下载控件，需换候选或人工复核。；[epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
