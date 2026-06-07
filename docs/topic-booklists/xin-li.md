@@ -12,8 +12,8 @@ date: '2026-06-07'
 - 唯一书名：34
 - 已入库引用：30
 - 待入库唯一书名：18
-- z-lib 可优先尝试：17
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：15
+- z-lib 需复核/换源：3
 
 ## 待入库书目
 
@@ -21,8 +21,8 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 抱紧我 | 1 | 如何面对创伤与自我修复 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认；[pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 创伤与复原 | 1 | 如何面对创伤与自我修复 | 候选: [azw3 842 KB 2015](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) |
-| 当呼吸化为空气 | 1 | 面对丧失、哀伤与死亡 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
-| 当下的力量 | 1 | 如何停止精神内耗 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
+| 当呼吸化为空气 | 1 | 面对丧失、哀伤与死亡 | 需复核: 详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。；[epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
+| 当下的力量 | 1 | 如何停止精神内耗 | 需复核: 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。；[epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 多巴胺国度 | 1 | 成瘾、自控与意义重建 | 候选: [azw3 7.09 MB 2004](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) |
 | 蛤蟆先生去看心理医生 | 2 | 理解焦虑与抑郁、如何理解情绪 | 候选: [epub 330 KB 2020](https://z-lib.fm/book/wgeeP9Q3g7/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%8C%BB%E7%94%9F.html) |
 | 唤醒老虎 | 1 | 如何面对创伤与自我修复 | 候选: [epub 5.79 MB 2016](https://z-lib.fm/book/dAKM9oX107/%E5%94%A4%E9%86%92%E8%80%81%E8%99%8E%E5%90%AF%E5%8A%A8%E8%87%AA%E6%88%91%E7%96%97%E6%84%88%E6%9C%AC%E8%83%BD.html) |
@@ -75,7 +75,7 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 最好的告别 | 临终照护 | planned | 待补 | 候选: [epub 223 KB 2018](https://z-lib.fm/book/zZ24JrlqgE/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%91%8A%E5%88%AB.html) |
-| 当呼吸化为空气 | 疾病经验 | planned | 待补 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
+| 当呼吸化为空气 | 疾病经验 | planned | 待补 | 需复核: 详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。；[epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 活出生命的意义 | 意义支撑 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |
 | 相约星期二 | 告别对话 | planned | 待补 | 候选: [epub 239 KB 2007](https://z-lib.fm/book/qA9Pyjo9gL/%E7%9B%B8%E7%BA%A6%E6%98%9F%E6%9C%9F%E4%BA%8C.html) |
 | 生死课 | 死亡教育 | planned | 待补 | 候选: [epub 3.35 MB 2020](https://z-lib.fm/book/wgeRzapPA7/%E7%94%9F%E6%AD%BB%E8%AF%BE.html) |
@@ -136,4 +136,4 @@ date: '2026-06-07'
 | 拖延心理学 | 回避阻力 | in_library | 简·博克,莱诺拉·袁 | tuo-yan-xin-li-xue / books/心理学/简·博克,莱诺拉·袁-拖延心理学.md |
 | 被讨厌的勇气 | 边界意识 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md |
 | 认知觉醒 | 元认知 | in_library | 周岭 | ren-zhi-jue-xing / books/个人成长/周岭-认知觉醒.md |
-| 当下的力量 | 当下经验 | planned | 待补 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
+| 当下的力量 | 当下经验 | planned | 待补 | 需复核: 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。；[epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |

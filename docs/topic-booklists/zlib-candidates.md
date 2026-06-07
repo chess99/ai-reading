@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 169 个唯一待入库书名：163 个候选可优先尝试下载，6 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 169 个唯一待入库书名：160 个候选可优先尝试下载，9 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -23,12 +23,12 @@ date: '2026-06-07'
 | 创伤与复原 | candidate_ready | 标题精确 | azw3 | 842 KB | 2015 | Chinese | [创伤与复原](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) | 如何面对创伤与自我修复 |
 | 错误的行为 | candidate_ready | 标题精确 | epub | 2.65 MB | 2016 | Chinese | [错误的行为](https://z-lib.fm/book/E0RrQ23L0d/%E9%94%99%E8%AF%AF%E7%9A%84%E8%A1%8C%E4%B8%BA.html) | 如何理解行为经济学与金钱心理 |
 | 大国的兴衰 | candidate_ready | 标题精确 | pdf | 39.27 MB | 1989 | Chinese | [大国的兴衰](https://z-lib.fm/book/VZw4zpae0m/%E5%A4%A7%E5%9B%BD%E7%9A%84%E5%85%B4%E8%A1%B0.html) | 如何理解国际秩序与地缘风险、如何理解世界历史、如何理解文明兴衰 |
-| 当呼吸化为空气 | candidate_ready | 标题精确 | epub | 845 KB | 2020 | Chinese | [当呼吸化为空气](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) | 面对丧失、哀伤与死亡、面对衰老、疾病与照护 |
-| 当下的力量 | candidate_ready | 标题精确 | epub | 755 KB | 0 | Chinese | [当下的力量](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) | 如何停止精神内耗、如何读懂痛苦、自由与意义 |
+| 当呼吸化为空气 | needs_manual_review | 详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。 | epub | 845 KB | 2020 | Chinese | [当呼吸化为空气](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) | 面对丧失、哀伤与死亡、面对衰老、疾病与照护 |
+| 当下的力量 | needs_manual_review | 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。 | epub | 755 KB | 0 | Chinese | [当下的力量](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) | 如何停止精神内耗、如何读懂痛苦、自由与意义 |
 | 道德经 | candidate_ready | 标题精确 | epub | 609 KB | 2021 | Chinese | [道德经](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) | 人生哲学入门 |
 | 第二大脑 | candidate_ready | 标题精确 | epub | 2.64 MB | 2023 | Chinese | [第二大脑](https://z-lib.fm/book/N0WdrlELgq/%E7%AC%AC%E4%BA%8C%E5%A4%A7%E8%84%91.html) | 阅读、笔记与输出系统 |
 | 第二性 | candidate_ready | 标题精确 | epub | 1.50 MB | 2025 | Chinese | [第二性](https://z-lib.fm/book/rAdd6ePWAB/%E7%AC%AC%E4%BA%8C%E6%80%A7.html) | 如何理解性别与社会结构 |
-| 第五项修炼 | candidate_ready | 标题精确 | epub | 164 KB | 2009 | Chinese | [第五项修炼](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) | 什么是系统思维与复杂性、看懂组织运转 |
+| 第五项修炼 | needs_manual_review | 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。 | epub | 164 KB | 2009 | Chinese | [第五项修炼](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) | 什么是系统思维与复杂性、看懂组织运转 |
 | 对赌 | candidate_ready | 标题精确 | epub | 542 KB | 2012 | Chinese | [对赌](https://z-lib.fm/book/WZpP1lxqZR/%E5%AF%B9%E8%B5%8C.html) | 如何理解概率、风险与预测、如何做重大决策 |
 | 对齐问题 | candidate_ready | 标题精确 | mobi | 6.16 MB | 2020 | english | [对齐问题](https://z-lib.fm/book/DAadqWa33g/%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98.html) | AI 风险、治理与技术权力 |
 | 多巴胺国度 | candidate_ready | 标题精确 | azw3 | 7.09 MB | 2004 | english | [多巴胺国度](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) | 成瘾、自控与意义重建、如何理解压力、恢复与身体信号 |

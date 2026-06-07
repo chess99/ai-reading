@@ -12,14 +12,14 @@ date: '2026-06-07'
 - 唯一书名：30
 - 已入库引用：28
 - 待入库唯一书名：13
-- z-lib 可优先尝试：12
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：11
+- z-lib 需复核/换源：2
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
-| 当呼吸化为空气 | 1 | 面对衰老、疾病与照护 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
+| 当呼吸化为空气 | 1 | 面对衰老、疾病与照护 | 需复核: 详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。；[epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 多巴胺国度 | 1 | 如何理解压力、恢复与身体信号 | 候选: [azw3 7.09 MB 2004](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) |
 | 肥胖代码 | 1 | 如何理解饮食与代谢 | 候选: [epub 2.01 MB 2019](https://z-lib.fm/book/4gMqjyXPg8/%E8%82%A5%E8%83%96%E4%BB%A3%E7%A0%81.html) |
 | 寂静的春天 | 1 | 如何理解环境、气候与可持续生活 | 候选: [epub 2.77 MB 2007](https://z-lib.fm/book/vAyQ3wxmAE/%E5%AF%82%E9%9D%99%E7%9A%84%E6%98%A5%E5%A4%A9.html) |
@@ -43,7 +43,7 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 超越百岁 | 长寿医学 | in_library | 彼得·阿提亚 | chao-yue-bai-sui / books/健康运动/彼得·阿提亚-超越百岁.md |
 | 最好的告别 | 照护选择 | planned | 待补 | 候选: [epub 223 KB 2018](https://z-lib.fm/book/zZ24JrlqgE/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%91%8A%E5%88%AB.html) |
-| 当呼吸化为空气 | 疾病经验 | planned | 待补 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
+| 当呼吸化为空气 | 疾病经验 | planned | 待补 | 需复核: 详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。；[epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 我们为什么要睡觉 | 睡眠支撑 | in_library | 马修·沃克 | wo-men-wei-shen-me-yao-shui-jiao / books/健康运动/马修·沃克-我们为什么要睡觉.md |
 | 运动改造大脑 | 运动支撑 | in_library | 约翰·瑞迪 | yun-dong-gai-zao-da-nao / books/健康运动/约翰·瑞迪-运动改造大脑.md |
 | 活出生命的意义 | 意义支撑 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |

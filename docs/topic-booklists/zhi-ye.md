@@ -12,15 +12,15 @@ date: '2026-06-07'
 - 唯一书名：35
 - 已入库引用：25
 - 待入库唯一书名：16
-- z-lib 可优先尝试：15
-- z-lib 需复核/换源：1
+- z-lib 可优先尝试：14
+- z-lib 需复核/换源：2
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 变革之心 | 1 | 如何理解组织中的权力与变革 | 候选: [epub 1.25 MB 2024](https://z-lib.fm/book/vAyYOY3DAE/%E5%8F%98%E9%9D%A9%E4%B9%8B%E5%BF%83.html) |
-| 第五项修炼 | 1 | 看懂组织运转 | 候选: [epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
+| 第五项修炼 | 1 | 看懂组织运转 | 需复核: 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。；[epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
 | 赋能 | 1 | 如何建立领导力与团队协作 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 高绩效教练 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 候选: [epub 11.31 MB 2019](https://z-lib.fm/book/XZm6kp4V0P/%E9%AB%98%E7%BB%A9%E6%95%88%E6%95%99%E7%BB%83%E5%8E%9F%E4%B9%A6%E7%AC%AC5%E7%89%88.html) |
 | 管理的实践 | 1 | 如何成为有效管理者 | 候选: [epub 1.27 MB 2009](https://z-lib.fm/book/Y0LdeJmd0K/%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9E%E8%B7%B5.html) |
@@ -49,7 +49,7 @@ date: '2026-06-07'
 | 丰田之道 | 生产系统 | in_library | 杰弗里·莱克 | feng-tian-zhi-dao / books/商业管理/杰弗里·莱克-丰田之道.md |
 | 精益思维 | 精益原则 | in_library | 詹姆斯·沃麦克,丹尼尔·琼斯 | jing-yi-si-wei / books/商业管理/詹姆斯·沃麦克-精益思维.md |
 | 科学管理原理 | 管理传统 | in_library | 弗雷德里克·泰勒 | ke-xue-guan-li-yuan-li / books/商业管理/弗雷德里克·泰勒-科学管理原理.md |
-| 第五项修炼 | 学习型组织 | planned | 待补 | 候选: [epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
+| 第五项修炼 | 学习型组织 | planned | 待补 | 需复核: 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。；[epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
 | 原则 | 经营原则 | in_library | 瑞·达利欧 | yuan-ze / books/个人成长/瑞·达利欧-原则.md |
 | 经理人员的职能 | 管理职能 | planned | 待补 | 候选: [pdf 9.64 MB 1997](https://z-lib.fm/book/DgXNBPOmZq/%E7%BB%8F%E7%90%86%E4%BA%BA%E5%91%98%E7%9A%84%E8%81%8C%E8%83%BD.html) |
 

@@ -1391,7 +1391,7 @@
   },
   {
     "title": "当呼吸化为空气",
-    "status": "candidate_ready",
+    "status": "needs_manual_review",
     "refs": [
       "面对丧失、哀伤与死亡",
       "面对衰老、疾病与照护"
@@ -1502,11 +1502,17 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 23558,
-    "reviewNote": "标题精确"
+    "reviewNote": "详情页候选曾暴露 /dl/EMNwow4BD7，但默认账号超额后其它账号无下载按钮；search-only 复查未命中，直链未触发下载；需换源或额度刷新后人工复核。",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "selectedUrl": "https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html",
+      "dlUrl": "https://z-lib.fm/dl/EMNwow4BD7",
+      "reason": "账号1 QUOTA_EXCEEDED；账号2 页面无下载按钮；search-only 未命中；/dl 直链没有触发 download 事件。"
+    }
   },
   {
     "title": "当下的力量",
-    "status": "candidate_ready",
+    "status": "needs_manual_review",
     "refs": [
       "如何停止精神内耗",
       "如何读懂痛苦、自由与意义"
@@ -1617,7 +1623,16 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 23488,
-    "reviewNote": "标题精确"
+    "reviewNote": "原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "selectedUrl": "https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html",
+      "triedAlternatives": [
+        "https://z-lib.fm/book/PAl9nbv6Zq/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F-%E7%99%BD%E9%87%91%E7%89%88-the-power-of-now-a-guide-to-spiritual-enlightenment.html",
+        "https://z-lib.fm/book/XZm2Lr8D0P/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F-%E7%8F%8D%E8%97%8F%E7%89%88-the-power-of-now-a-guide-to-spiritual-enlightenment.html"
+      ],
+      "reason": "多个 EPUB 详情页均无 a[href*=/dl/] 或 Download button。"
+    }
   },
   {
     "title": "道德经",
@@ -1960,7 +1975,7 @@
   },
   {
     "title": "第五项修炼",
-    "status": "candidate_ready",
+    "status": "needs_manual_review",
     "refs": [
       "什么是系统思维与复杂性",
       "看懂组织运转"
@@ -2071,7 +2086,12 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 22656,
-    "reviewNote": "标题精确"
+    "reviewNote": "原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "selectedUrl": "https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html",
+      "reason": "page.evaluate execution context destroyed；search-only 未返回候选。"
+    }
   },
   {
     "title": "对赌",
@@ -2185,7 +2205,13 @@
     ],
     "searchedAt": "2026-06-07",
     "elapsedMs": 19314,
-    "reviewNote": "标题精确"
+    "reviewNote": "标题精确",
+    "failedAttempt": {
+      "checkedAt": "2026-06-07",
+      "selectedUrl": "https://z-lib.fm/book/WZpP1lxqZR/%E5%AF%B9%E8%B5%8C.html",
+      "dlUrl": "https://z-lib.fm/dl/eAPdqZJzA3",
+      "reason": "账号1/2 对直链报 QUOTA_EXCEEDED；账号3 详情页无下载按钮；跨域 /dl 直链未触发 download。暂按账号/会话问题保留 candidate_ready。"
+    }
   },
   {
     "title": "对齐问题",

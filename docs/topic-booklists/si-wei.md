@@ -12,8 +12,8 @@ date: '2026-06-07'
 - 唯一书名：43
 - 已入库引用：28
 - 待入库唯一书名：20
-- z-lib 可优先尝试：20
-- z-lib 需复核/换源：0
+- z-lib 可优先尝试：19
+- z-lib 需复核/换源：1
 
 ## 待入库书目
 
@@ -21,7 +21,7 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 超越感觉 | 1 | 如何建立批判性与证据判断 | 候选: [epub 793 KB 2015](https://z-lib.fm/book/Q0Yo4owBAy/%E8%B6%85%E8%B6%8A%E6%84%9F%E8%A7%89.html) |
 | 赤裸裸的统计学 | 1 | 如何建立批判性与证据判断 | 候选: [epub 1.30 MB 2013](https://z-lib.fm/book/dAoeQNRm0V/%E8%B5%A4%E8%A3%B8%E8%A3%B8%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AD%A6.html) |
-| 第五项修炼 | 1 | 什么是系统思维与复杂性 | 候选: [epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
+| 第五项修炼 | 1 | 什么是系统思维与复杂性 | 需复核: 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。；[epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
 | 对赌 | 2 | 如何理解概率、风险与预测、如何做重大决策 | 候选: [epub 542 KB 2012](https://z-lib.fm/book/WZpP1lxqZR/%E5%AF%B9%E8%B5%8C.html) |
 | 风险、不确定性与利润 | 1 | 如何理解概率、风险与预测 | 候选: [epub 496 KB 2010](https://z-lib.fm/book/DgXLr63wgq/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6.html) |
 | 服从权威 | 1 | 如何识别偏见、从众与服从 | 候选: [epub 995 KB 2005](https://z-lib.fm/book/Y0LEdKPPdg/%E6%9C%8D%E4%BB%8E%E6%9D%83%E5%A8%81.html) |
@@ -127,7 +127,7 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 系统之美 | 反馈回路入口 | in_library | 德内拉·梅多斯 | xi-tong-zhi-mei / books/思维方式/德内拉·梅多斯-系统之美.md |
 | 控制论与科学方法论 | 控制与调节框架 | in_library | 金观涛、华国凡 | kong-zhi-lun-yu-ke-xue-fang-fa-lun / books/思维方式/金观涛、华国凡-控制论与科学方法论.md |
-| 第五项修炼 | 组织学习应用 | planned | 待补 | 候选: [epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
+| 第五项修炼 | 组织学习应用 | planned | 待补 | 需复核: 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。；[epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
 | 复杂 | 涌现机制 | planned | 待补 | 候选: [epub 9.55 MB 2018](https://z-lib.fm/book/m035R6D4A6/%E5%A4%8D%E6%9D%82.html) |
 | 规模 | 尺度规律 | planned | 待补 | 候选: [epub 6.35 MB 2018](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) |
 | 混沌 | 非线性边界 | planned | 待补 | 候选: [epub 4.16 MB 2021](https://z-lib.fm/book/mAvJ3kEXAl/%E6%B7%B7%E6%B2%8C%E5%BC%80%E5%88%9B%E4%B8%80%E9%97%A8%E6%96%B0%E7%A7%91%E5%AD%A6%E5%9B%BE%E7%81%B5%E5%9B%BE%E4%B9%A6.html) |

@@ -12,15 +12,15 @@ date: '2026-06-07'
 - 唯一书名：28
 - 已入库引用：9
 - 待入库唯一书名：21
-- z-lib 可优先尝试：21
-- z-lib 需复核/换源：0
+- z-lib 可优先尝试：20
+- z-lib 需复核/换源：1
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 禅与摩托车维修艺术 | 1 | 艺术与审美入门 | 候选: [epub 956 KB 2018](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) |
-| 当下的力量 | 1 | 如何读懂痛苦、自由与意义 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
+| 当下的力量 | 1 | 如何读懂痛苦、自由与意义 | 需复核: 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。；[epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 道德经 | 1 | 人生哲学入门 | 候选: [epub 609 KB 2021](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) |
 | 论语 | 1 | 人生哲学入门 | 候选: [epub 58 KB 0](https://z-lib.fm/book/dZ62aN11Zo/%E8%AE%BA%E8%AF%AD.html) |
 | 美的历程 | 1 | 艺术与审美入门 | 候选: [epub 4.44 MB 2009](https://z-lib.fm/book/dAKqd4ka07/%E7%BE%8E%E7%9A%84%E5%8E%86%E7%A8%8B.html) |
@@ -67,7 +67,7 @@ date: '2026-06-07'
 | 活出生命的意义 | 苦难意义 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |
 | 悉达多 | 精神追寻 | planned | 待补 | 候选: [epub 4.84 MB 2025](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) |
 | 沉思录 | 内在自由 | in_library | 马可·奥勒留 | chen-si-lu / books/哲学/马可·奥勒留-沉思录.md |
-| 当下的力量 | 当下经验 | planned | 待补 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
+| 当下的力量 | 当下经验 | planned | 待补 | 需复核: 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。；[epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
 | 开放社会及其敌人 | 社会边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/哲学/卡尔·波普尔-开放社会及其敌人.md |
 
