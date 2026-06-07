@@ -23,10 +23,12 @@ books:
     reason: 把职业探索落到技能、兴趣、环境和机会搜索。
     status: planned
   - title: 优秀到不能被忽视
-    author: 待补
+    author: 卡尔·纽波特
+    slug: you-xiu-dao-bu-neng-bei-hu-shi
+    path: books/效率习惯/卡尔·纽波特-优秀到不能被忽视.md
     role: 能力资本
     reason: 纠正只追随热情的误区，强调稀缺能力带来的选择权。
-    status: planned
+    status: in_library
   - title: 一人企业
     author: 保罗·贾维斯
     slug: yi-ren-qi-ye

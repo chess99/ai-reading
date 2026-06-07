@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：46
 - 唯一书名：35
-- 已入库引用：26
-- 待入库唯一书名：15
-- z-lib 可优先尝试：13
+- 已入库引用：28
+- 待入库唯一书名：14
+- z-lib 可优先尝试：12
 - z-lib 需复核/换源：2
 
 ## 待入库书目
@@ -29,7 +29,6 @@ date: '2026-06-07'
 | 权力与影响力 | 1 | 如何理解组织中的权力与变革 | 候选: [epub 13.81 MB 2024](https://z-lib.fm/book/WZxrny4EgV/%E6%9D%83%E5%8A%9B%E4%B8%8E%E5%BD%B1%E5%93%8D%E5%8A%9B.html) |
 | 团队协作的五大障碍 | 1 | 如何建立领导力与团队协作 | 候选: [epub 726 KB 2022](https://z-lib.fm/book/zZ45wvyG0b/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E7%9A%84%E4%BA%94%E5%A4%A7%E9%9A%9C%E7%A2%8D.html) |
 | 无畏的组织 | 2 | 如何成为有效管理者、如何建立领导力与团队协作 | 需复核: BookDistill 已支持 FB2 解析，但 2026-06-07 复核时原详情页无下载控件；z-lib.fm 与 z-library.sk 搜索“无畏的组织 / The Fearless Organization Amy Edmondson / Fearless Organization”均未命中，需换源或人工复核。；[fb2 6.21 MB 2016](https://z-lib.fm/book/wgeQm2oOEg/%E6%97%A0%E7%95%8F%E7%9A%84%E7%BB%84%E7%BB%87.html) |
-| 优秀到不能被忽视 | 2 | 如何建立长期职业资本、职业选择阅读路径 | 候选: [epub 1.12 MB 2018](https://z-lib.fm/book/Y0LXjQMk0K/%E4%BC%98%E7%A7%80%E5%88%B0%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%BF%BD%E8%A7%86.html) |
 | 远见 | 2 | 如何建立长期职业资本、职业选择阅读路径 | 候选: [epub 975 KB 2019](https://z-lib.fm/book/WZxpBeGEZV/%E8%BF%9C%E8%A7%81.html) |
 | 职业锚 | 1 | 职业选择阅读路径 | 候选: [pdf 15.12 MB 2007](https://z-lib.fm/book/wgerKybXA7/%E8%81%8C%E4%B8%9A%E9%94%9A.html) |
 | 重新定义公司 | 1 | 如何理解组织中的权力与变革 | 候选: [epub 3.41 MB 2017](https://z-lib.fm/book/dAoreo7qgV/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%85%AC%E5%8F%B8%E8%B0%B7%E6%AD%8C%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%90%A5%E7%9A%84.html) |
@@ -88,7 +87,7 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 优秀到不能被忽视 | 职业资本 | planned | 待补 | 候选: [epub 1.12 MB 2018](https://z-lib.fm/book/Y0LXjQMk0K/%E4%BC%98%E7%A7%80%E5%88%B0%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%BF%BD%E8%A7%86.html) |
+| 优秀到不能被忽视 | 职业资本 | in_library | 卡尔·纽波特 | you-xiu-dao-bu-neng-bei-hu-shi / books/效率习惯/卡尔·纽波特-优秀到不能被忽视.md |
 | 刻意练习 | 技能训练 | in_library | 安德斯·艾利克森 | ke-yi-lian-xi / books/效率习惯/安德斯·艾利克森-刻意练习.md |
 | 深度工作 | 专注产出 | in_library | 卡尔·纽波特 | shen-du-gong-zuo / books/效率习惯/卡尔·纽波特-深度工作.md |
 | 远见 | 长期阶段 | planned | 待补 | 候选: [epub 975 KB 2019](https://z-lib.fm/book/WZxpBeGEZV/%E8%BF%9C%E8%A7%81.html) |
@@ -120,7 +119,7 @@ date: '2026-06-07'
 | 远见 | 职业周期 | planned | 待补 | 候选: [epub 975 KB 2019](https://z-lib.fm/book/WZxpBeGEZV/%E8%BF%9C%E8%A7%81.html) |
 | 职业锚 | 动机锚点 | planned | 待补 | 候选: [pdf 15.12 MB 2007](https://z-lib.fm/book/wgerKybXA7/%E8%81%8C%E4%B8%9A%E9%94%9A.html) |
 | 你的降落伞是什么颜色 | 求职探索 | planned | 待补 | 候选: [epub 7.58 MB 2018](https://z-lib.fm/book/XZm6KxWb0P/%E4%BD%A0%E7%9A%84%E9%99%8D%E8%90%BD%E4%BC%9E%E6%98%AF%E4%BB%80%E4%B9%88%E9%A2%9C%E8%89%B2.html) |
-| 优秀到不能被忽视 | 能力资本 | planned | 待补 | 候选: [epub 1.12 MB 2018](https://z-lib.fm/book/Y0LXjQMk0K/%E4%BC%98%E7%A7%80%E5%88%B0%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%BF%BD%E8%A7%86.html) |
+| 优秀到不能被忽视 | 能力资本 | in_library | 卡尔·纽波特 | you-xiu-dao-bu-neng-bei-hu-shi / books/效率习惯/卡尔·纽波特-优秀到不能被忽视.md |
 | 一人企业 | 独立工作 | in_library | 保罗·贾维斯 | yi-ren-qi-ye / books/创业产品/保罗·贾维斯-一人企业.md |
 | 每周工作4小时 | 生活设计 | in_library | 蒂莫西·费里斯 | mei-zhou-gong-zuo-4-xiao-shi / books/效率习惯/蒂莫西·费里斯-每周工作4小时.md |
 | 原则 | 个人原则 | in_library | 瑞·达利欧 | yuan-ze / books/个人成长/瑞·达利欧-原则.md |

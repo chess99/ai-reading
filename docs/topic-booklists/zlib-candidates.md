@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 168 个唯一待入库书名：161 个候选可优先尝试下载，7 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 167 个唯一待入库书名：160 个候选可优先尝试下载，7 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -150,7 +150,6 @@ date: '2026-06-07'
 | 营养学：概念与争论 | candidate_ready | 标题含副标题/版本 | pdf | 9.90 MB | 2004 | Chinese | [营养学 概念与争论 第8版](https://z-lib.fm/book/zZ4OGYwWAb/%E8%90%A5%E5%85%BB%E5%AD%A6-%E6%A6%82%E5%BF%B5%E4%B8%8E%E4%BA%89%E8%AE%BA-%E7%AC%AC8%E7%89%88.html) | 如何理解饮食与代谢 |
 | 用户故事地图 | needs_manual_review | 已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理 | pdf | 46.91 MB | 2016 | Chinese | [用户故事地图](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) | 产品从 0 到 1、如何做好产品发现、如何建立产品组织与交付系统 |
 | 用户体验要素 | candidate_ready | 标题含副标题/版本 | epub | 1.76 MB | 2011 | Chinese | [用户体验要素 以用户为中心的产品设计](https://z-lib.fm/book/20r3JbDGgX/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1.html) | 如何做好产品发现 |
-| 优秀到不能被忽视 | candidate_ready | 标题精确 | epub | 1.12 MB | 2018 | Chinese | [优秀到不能被忽视](https://z-lib.fm/book/Y0LXjQMk0K/%E4%BC%98%E7%A7%80%E5%88%B0%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%BF%BD%E8%A7%86.html) | 职业选择阅读路径、如何建立长期职业资本 |
 | 游戏力 | candidate_ready | 标题精确 | epub | 361 KB | 0 | Chinese | [游戏力](https://z-lib.fm/book/OZOMeQLpgx/%E6%B8%B8%E6%88%8F%E5%8A%9B.html) | 如何做足够好的父母 |
 | 欲罢不能 | candidate_ready | 标题含副标题/版本 | epub | 2.42 MB | 2017 | Chinese | [欲罢不能刷屏时代如何摆脱行为上瘾](https://z-lib.fm/book/XAnKBX9lZd/%E6%AC%B2%E7%BD%A2%E4%B8%8D%E8%83%BD%E5%88%B7%E5%B1%8F%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%91%86%E8%84%B1%E8%A1%8C%E4%B8%BA%E4%B8%8A%E7%98%BE.html) | 成瘾、自控与意义重建 |
 | 园丁与木匠 | candidate_ready | 标题精确 | epub | 2.10 MB | 2019 | Chinese | [园丁与木匠](https://z-lib.fm/book/W0BNOmq40X/%E5%9B%AD%E4%B8%81%E4%B8%8E%E6%9C%A8%E5%8C%A0.html) | 如何做足够好的父母 |

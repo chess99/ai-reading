@@ -8,10 +8,12 @@ group: 职业资本
 date: '2026-06-06'
 books:
   - title: 优秀到不能被忽视
-    author: 待补
+    author: 卡尔·纽波特
+    slug: you-xiu-dao-bu-neng-bei-hu-shi
+    path: books/效率习惯/卡尔·纽波特-优秀到不能被忽视.md
     role: 职业资本
     reason: 先说明稀缺能力如何带来更好的工作条件和选择权。
-    status: planned
+    status: in_library
   - title: 刻意练习
     author: 安德斯·艾利克森
     slug: ke-yi-lian-xi
