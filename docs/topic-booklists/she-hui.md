@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：49
 - 唯一书名：40
-- 已入库引用：23
-- 待入库唯一书名：22
-- z-lib 可优先尝试：22
+- 已入库引用：24
+- 待入库唯一书名：21
+- z-lib 可优先尝试：21
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -28,7 +28,6 @@ date: '2026-06-07'
 | 旧制度与大革命 | 1 | 如何识别制度与权力 | 候选: [epub 5.37 MB 2013](https://z-lib.fm/book/aZQqb1ePZ8/%E6%97%A7%E5%88%B6%E5%BA%A6%E4%B8%8E%E5%A4%A7%E9%9D%A9%E5%91%BD.html) |
 | 看不见的女性 | 1 | 如何理解性别与社会结构 | 候选: [epub 498 KB 2022](https://z-lib.fm/book/qA9WK9zE0L/%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E5%A5%B3%E6%80%A7.html) |
 | 看得见的正义 | 2 | 如何建立法律常识、如何识别制度与权力 | 候选: [epub 1.16 MB 2013](https://z-lib.fm/book/R0P113ykg9/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E6%AD%A3%E4%B9%89.html) |
-| 理解媒介 | 1 | 如何理解媒体、舆论与公共讨论 | 候选: [epub 1.15 MB 2019](https://z-lib.fm/book/DAaxPJErg3/%E7%90%86%E8%A7%A3%E5%AA%92%E4%BB%8B.html) |
 | 美国大城市的死与生 | 1 | 城市、空间与生活方式 | 候选: [epub 718 KB 2020](https://z-lib.fm/book/601KzkBnA4/%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%9F%8E%E5%B8%82%E7%9A%84%E6%AD%BB%E4%B8%8E%E7%94%9F.html) |
 | 民法典与日常生活 | 1 | 如何建立法律常识 | 候选: [epub 526 KB 2020](https://z-lib.fm/book/N0WaQNBLAq/%E6%B0%91%E6%B3%95%E5%85%B8%E4%B8%8E%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB.html) |
 | 权力与繁荣 | 1 | 如何识别制度与权力 | 候选: [epub 506 KB 2017](https://z-lib.fm/book/DgXe4kvQAq/%E6%9D%83%E5%8A%9B%E4%B8%8E%E7%B9%81%E8%8D%A3.html) |
@@ -91,7 +90,7 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 初识传播学 | 传播入口 | in_library | 埃姆·格里芬 | chu-shi-chuan-bo-xue / books/社会科学/埃姆·格里芬-初识传播学.md |
-| 理解媒介 | 媒介框架 | planned | 待补 | 候选: [epub 1.15 MB 2019](https://z-lib.fm/book/DAaxPJErg3/%E7%90%86%E8%A7%A3%E5%AA%92%E4%BB%8B.html) |
+| 理解媒介 | 媒介框架 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
 | 娱乐至死 | 娱乐化警戒 | in_library | 尼尔·波兹曼 | yu-le-zhi-si / books/社会科学/尼尔·波兹曼-娱乐至死.md |
 | 注意力商人 | 注意力经济 | planned | 待补 | 候选: [epub 695 KB 2018](https://z-lib.fm/book/OZOpaQdp0x/%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%95%86%E4%BA%BA.html) |
 | 乌合之众 | 群体舆论 | in_library | 古斯塔夫·勒庞 | wu-he-zhi-zhong / books/商业管理/组织行为学/古斯塔夫·勒庞-乌合之众.md |

@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：49
 - 唯一书名：34
-- 已入库引用：25
-- 待入库唯一书名：21
-- z-lib 可优先尝试：20
+- 已入库引用：26
+- 待入库唯一书名：20
+- z-lib 可优先尝试：19
 - z-lib 需复核/换源：1
 
 ## 待入库书目
@@ -22,7 +22,6 @@ date: '2026-06-07'
 | 抱紧我 | 1 | 如何面对创伤与自我修复 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认; [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 伯恩斯新情绪疗法 | 3 | 理解焦虑与抑郁、如何停止精神内耗、如何理解情绪 | 候选: [epub 3.36 MB 2014](https://z-lib.fm/book/QAVbvdW9AG/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95.html) |
 | 不原谅也没关系 | 1 | 如何面对创伤与自我修复 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
-| 沉思录 | 1 | 成瘾、自控与意义重建 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
 | 创伤与复原 | 1 | 如何面对创伤与自我修复 | 候选: [azw3 842 KB 2015](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) |
 | 当呼吸化为空气 | 1 | 面对丧失、哀伤与死亡 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 当下的力量 | 1 | 如何停止精神内耗 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
@@ -56,7 +55,7 @@ date: '2026-06-07'
 | 习惯的力量 | 习惯回路 | in_library | 查尔斯·都希格 | xi-guan-de-li-liang / books/效率习惯/查尔斯·都希格-习惯的力量.md |
 | 活出生命的意义 | 意义支撑 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |
 | 反脆弱 | 承受不确定 | in_library | 纳西姆·塔勒布 | fan-cui-ruo / books/思维方式/纳西姆·塔勒布-反脆弱.md |
-| 沉思录 | 古典修身 | planned | 待补 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
+| 沉思录 | 古典修身 | in_library | 马可·奥勒留 | chen-si-lu / books/哲学/马可·奥勒留-沉思录.md |
 
 ### 如何面对创伤与自我修复
 

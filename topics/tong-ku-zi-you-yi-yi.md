@@ -20,10 +20,12 @@ books:
     reason: 用文学经验呈现欲望、失落和自我寻找。
     status: planned
   - title: 沉思录
-    author: 待补
+    author: 马可·奥勒留
+    slug: chen-si-lu
+    path: books/哲学/马可·奥勒留-沉思录.md
     role: 内在自由
     reason: 训练读者区分外部处境和自身判断。
-    status: planned
+    status: in_library
   - title: 当下的力量
     author: 待补
     role: 当下经验

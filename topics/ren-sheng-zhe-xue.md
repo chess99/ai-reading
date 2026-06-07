@@ -18,10 +18,12 @@ books:
     reason: 从欲望、独处、名声和生活策略进入现实人生。
     status: planned
   - title: 沉思录
-    author: 待补
+    author: 马可·奥勒留
+    slug: chen-si-lu
+    path: books/哲学/马可·奥勒留-沉思录.md
     role: 斯多葛实践
     reason: 训练读者区分可控与不可控，并观察自己的判断。
-    status: planned
+    status: in_library
   - title: 论语
     author: 待补
     role: 儒家修身

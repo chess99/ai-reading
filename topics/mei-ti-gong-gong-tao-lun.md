@@ -15,10 +15,12 @@ books:
     reason: 先提供传播学的基本问题，让读者知道信息如何被生产、传递和接收。
     status: in_library
   - title: 理解媒介
-    author: 待补
+    author: 马歇尔·麦克卢汉
+    slug: li-jie-mei-jie
+    path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介框架
     reason: 说明媒介形式本身会改变感知、表达和社会组织。
-    status: planned
+    status: in_library
   - title: 娱乐至死
     author: 尼尔·波兹曼
     slug: yu-le-zhi-si

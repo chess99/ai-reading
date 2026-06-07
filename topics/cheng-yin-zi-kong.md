@@ -51,10 +51,12 @@ books:
     reason: 帮助理解如何调整暴露面，让系统不被波动轻易击穿。
     status: in_library
   - title: 沉思录
-    author: 待补
+    author: 马可·奥勒留
+    slug: chen-si-lu
+    path: books/哲学/马可·奥勒留-沉思录.md
     role: 古典修身
     reason: 最后提供面对欲望、痛苦和责任的长期自我训练视角。
-    status: planned
+    status: in_library
 ---
 
 # 成瘾、自控与意义重建

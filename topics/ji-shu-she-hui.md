@@ -23,10 +23,12 @@ books:
     reason: 帮助读者看见技术系统中的涌现、自组织和不可完全控制。
     status: planned
   - title: 理解媒介
-    author: 待补
+    author: 马歇尔·麦克卢汉
+    slug: li-jie-mei-jie
+    path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介环境
     reason: 把注意力从内容转向媒介形式如何改变感知和社会关系。
-    status: planned
+    status: in_library
   - title: 娱乐至死
     author: 尼尔·波兹曼
     slug: yu-le-zhi-si

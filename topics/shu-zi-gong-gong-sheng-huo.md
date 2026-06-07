@@ -15,10 +15,12 @@ books:
     reason: 从信息网络的历史变化进入数字公共生活问题。
     status: in_library
   - title: 理解媒介
-    author: 待补
+    author: 马歇尔·麦克卢汉
+    slug: li-jie-mei-jie
+    path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介形式
     reason: 说明媒介形式如何改变人的感知、表达和关系。
-    status: planned
+    status: in_library
   - title: 初识传播学
     author: 埃姆·格里芬
     slug: chu-shi-chuan-bo-xue

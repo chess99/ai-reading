@@ -15,10 +15,12 @@ books:
     reason: 先理解信息、关系、倾听、冲突和语境如何共同影响沟通。
     status: in_library
   - title: 非暴力沟通
-    author: 待补
+    author: 马歇尔·卢森堡
+    slug: fei-bao-li-gou-tong
+    path: books/心理学/马歇尔·卢森堡-非暴力沟通.md
     role: 情绪表达
     reason: 把评价和指责拆成观察、感受、需要与请求。
-    status: planned
+    status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua

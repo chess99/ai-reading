@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：5
 - 书籍引用：33
 - 唯一书名：28
-- 已入库引用：7
-- 待入库唯一书名：22
-- z-lib 可优先尝试：22
+- 已入库引用：9
+- 待入库唯一书名：21
+- z-lib 可优先尝试：21
 - z-lib 需复核/换源：0
 
 ## 待入库书目
@@ -20,7 +20,6 @@ date: '2026-06-07'
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 禅与摩托车维修艺术 | 1 | 艺术与审美入门 | 候选: [epub 956 KB 2018](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) |
-| 沉思录 | 2 | 人生哲学入门、如何读懂痛苦、自由与意义 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
 | 当下的力量 | 1 | 如何读懂痛苦、自由与意义 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 道德经 | 1 | 人生哲学入门 | 候选: [epub 609 KB 2021](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) |
 | 论语 | 1 | 人生哲学入门 | 候选: [epub 58 KB 0](https://z-lib.fm/book/dZ62aN11Zo/%E8%AE%BA%E8%AF%AD.html) |
@@ -52,7 +51,7 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 苏菲的世界 | 哲学入口 | planned | 待补 | 候选: [epub 416 KB 2017](https://z-lib.fm/book/m033dOOa06/%E8%8B%8F%E8%8F%B2%E7%9A%84%E4%B8%96%E7%95%8C.html) |
 | 人生的智慧 | 处世判断 | planned | 待补 | 候选: [epub 7.58 MB 2014](https://z-lib.fm/book/W0EVee81gl/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7.html) |
-| 沉思录 | 斯多葛实践 | planned | 待补 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
+| 沉思录 | 斯多葛实践 | in_library | 马可·奥勒留 | chen-si-lu / books/哲学/马可·奥勒留-沉思录.md |
 | 论语 | 儒家修身 | planned | 待补 | 候选: [epub 58 KB 0](https://z-lib.fm/book/dZ62aN11Zo/%E8%AE%BA%E8%AF%AD.html) |
 | 道德经 | 道家视角 | planned | 待补 | 候选: [epub 609 KB 2021](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) |
 | 尼各马可伦理学 | 德性伦理 | planned | 待补 | 候选: [epub 334 KB 2008](https://z-lib.fm/book/E0RoqVbqgd/%E5%B0%BC%E5%90%84%E9%A9%AC%E5%8F%AF%E4%BC%A6%E7%90%86%E5%AD%A6.html) |
@@ -67,7 +66,7 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 活出生命的意义 | 苦难意义 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |
 | 悉达多 | 精神追寻 | planned | 待补 | 候选: [epub 4.84 MB 2025](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) |
-| 沉思录 | 内在自由 | planned | 待补 | 候选: [epub 243 KB 2018](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) |
+| 沉思录 | 内在自由 | in_library | 马可·奥勒留 | chen-si-lu / books/哲学/马可·奥勒留-沉思录.md |
 | 当下的力量 | 当下经验 | planned | 待补 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
 | 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
 | 开放社会及其敌人 | 社会边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/哲学/卡尔·波普尔-开放社会及其敌人.md |

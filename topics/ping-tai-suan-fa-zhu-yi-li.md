@@ -40,10 +40,12 @@ books:
     reason: 解释平台规则、网络效应和生态治理如何运作。
     status: planned
   - title: 理解媒介
-    author: 待补
+    author: 马歇尔·麦克卢汉
+    slug: li-jie-mei-jie
+    path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介理论
     reason: 回到媒介形式本身，整理前面各书的共同基础。
-    status: planned
+    status: in_library
 ---
 
 # 看懂平台、算法与注意力风险

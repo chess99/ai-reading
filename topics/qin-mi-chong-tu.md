@@ -32,10 +32,12 @@ books:
     reason: 帮助识别伴侣之间反复出现的负向情绪循环。
     status: planned
   - title: 非暴力沟通
-    author: 待补
+    author: 马歇尔·卢森堡
+    slug: fei-bao-li-gou-tong
+    path: books/心理学/马歇尔·卢森堡-非暴力沟通.md
     role: 表达方法
     reason: 把指责和防御拆成观察、感受、需要与请求。
-    status: planned
+    status: in_library
   - title: 高难度谈话
     author: 待补
     role: 困难议题

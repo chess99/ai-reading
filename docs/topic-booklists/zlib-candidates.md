@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 186 个唯一待入库书名：181 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 183 个唯一待入库书名：178 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -21,7 +21,6 @@ date: '2026-06-07'
 | 禅与摩托车维修艺术 | candidate_ready | 标题精确 | epub | 956 KB | 2018 | Chinese | [禅与摩托车维修艺术](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) | 艺术与审美入门 |
 | 超级预测 | candidate_ready | 中文出版题名为《超预测》 | epub | 663 KB | 2016 | Chinese | [超预测](https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html) | 如何理解概率、风险与预测、如何做重大决策 |
 | 超越感觉 | candidate_ready | 标题精确 | epub | 793 KB | 2015 | Chinese | [超越感觉](https://z-lib.fm/book/Q0Yo4owBAy/%E8%B6%85%E8%B6%8A%E6%84%9F%E8%A7%89.html) | 如何建立批判性与证据判断 |
-| 沉思录 | candidate_ready | 标题精确 | epub | 243 KB | 2018 | Chinese | [沉思录](https://z-lib.fm/book/VZwa9J3pgm/%E6%B2%89%E6%80%9D%E5%BD%95.html) | 成瘾、自控与意义重建、人生哲学入门、如何读懂痛苦、自由与意义 |
 | 成为作家 | candidate_ready | 标题精确 | epub | 6.77 MB | 2011 | Chinese | [成为作家](https://z-lib.fm/book/OZOX4GND0x/%E6%88%90%E4%B8%BA%E4%BD%9C%E5%AE%B6.html) | 写作与创意工作 |
 | 赤裸裸的统计学 | candidate_ready | 标题精确 | epub | 1.30 MB | 2013 | Chinese | [赤裸裸的统计学](https://z-lib.fm/book/dAoeQNRm0V/%E8%B5%A4%E8%A3%B8%E8%A3%B8%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AD%A6.html) | 如何建立批判性与证据判断 |
 | 创伤与复原 | candidate_ready | 标题精确 | azw3 | 842 KB | 2015 | Chinese | [创伤与复原](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) | 如何面对创伤与自我修复 |
@@ -38,7 +37,6 @@ date: '2026-06-07'
 | 对齐问题 | candidate_ready | 标题精确 | mobi | 6.16 MB | 2020 | english | [对齐问题](https://z-lib.fm/book/DAadqWa33g/%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98.html) | AI 风险、治理与技术权力 |
 | 多巴胺国度 | candidate_ready | 标题精确 | azw3 | 7.09 MB | 2004 | english | [多巴胺国度](https://z-lib.fm/book/3gNpB69DKZ/%E5%A4%9A%E5%B7%B4%E8%83%BA%E5%9B%BD%E5%BA%A6.html) | 成瘾、自控与意义重建、如何理解压力、恢复与身体信号 |
 | 法治及其本土资源 | candidate_ready | 标题精确 | epub | 510 KB | 2013 | Chinese | [法治及其本土资源](https://z-lib.fm/book/YAJ8DVwV0w/%E6%B3%95%E6%B2%BB%E5%8F%8A%E5%85%B6%E6%9C%AC%E5%9C%9F%E8%B5%84%E6%BA%90.html) | 如何建立法律常识、如何识别制度与权力 |
-| 非暴力沟通 | candidate_ready | 标题精确 | epub | 311 KB | 2015 | Chinese | [非暴力沟通](https://z-lib.fm/book/WZxpyBMRZV/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A.html) | 如何提升沟通与表达、如何处理亲密关系中的冲突、亲密关系阅读路径 |
 | 肥胖代码 | candidate_ready | 标题精确 | epub | 2.01 MB | 2019 | Chinese | [肥胖代码](https://z-lib.fm/book/4gMqjyXPg8/%E8%82%A5%E8%83%96%E4%BB%A3%E7%A0%81.html) | 如何理解饮食与代谢 |
 | 风格感觉 | candidate_ready | 标题含副标题 | epub | 8.62 MB | 2018 | Chinese | [风格感觉21世纪写作指南](https://z-lib.fm/book/n0zOpqKzgk/%E9%A3%8E%E6%A0%BC%E6%84%9F%E8%A7%8921%E4%B8%96%E7%BA%AA%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.html) | 写作与创意工作、阅读、笔记与输出系统 |
 | 风险、不确定性与利润 | candidate_ready | 标点差异 | epub | 496 KB | 2010 | Chinese | [风险不确定性与利润](https://z-lib.fm/book/DgXLr63wgq/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6.html) | 如何理解概率、风险与预测 |
@@ -84,7 +82,6 @@ date: '2026-06-07'
 | 科学革命的结构 | candidate_ready | 标题精确 | epub | 282 KB | 2012 | Chinese | [科学革命的结构](https://z-lib.fm/book/rAdvM7270B/%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%E7%9A%84%E7%BB%93%E6%9E%84.html) | 如何建立科学世界观 |
 | 可复制的领导力 | candidate_ready | 标题精确 | epub | 904 KB | 2018 | Chinese | [可复制的领导力](https://z-lib.fm/book/vAyQjb11AE/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B.html) | 如何成为有效管理者 |
 | 朗读手册 | candidate_ready | 标题精确 | epub | 1.58 MB | 2016 | Chinese | [朗读手册 ](https://z-lib.fm/book/kZb61Lw8ZR/%E6%9C%97%E8%AF%BB%E6%89%8B%E5%86%8C-.html) | 如何理解儿童安全感与教育成长 |
-| 理解媒介 | candidate_ready | 标题精确 | epub | 1.15 MB | 2019 | Chinese | [理解媒介](https://z-lib.fm/book/DAaxPJErg3/%E7%90%86%E8%A7%A3%E5%AA%92%E4%BB%8B.html) | 技术社会读什么、如何理解媒体、舆论与公共讨论、看懂平台、算法与注意力风险、数字公共生活与信息网络 |
 | 邻家的百万富翁 | candidate_ready | 标题精确 | epub | 755 KB | 2017 | Chinese | [邻家的百万富翁](https://z-lib.fm/book/jAD4GdDVAk/%E9%82%BB%E5%AE%B6%E7%9A%84%E7%99%BE%E4%B8%87%E5%AF%8C%E7%BF%81.html) | 建立财务常识、看懂消费主义、财富与阶层机会 |
 | 论语 | candidate_ready | 标题精确 | epub | 58 KB | 0 | Chinese | [论语](https://z-lib.fm/book/dZ62aN11Zo/%E8%AE%BA%E8%AF%AD.html) | 人生哲学入门 |
 | 妈妈测试 | candidate_ready | 标题精确 | azw3 | 5.01 MB | 2010 | english | [妈妈测试](https://z-lib.fm/book/E0RYrXY9MZ/%E5%A6%88%E5%A6%88%E6%B5%8B%E8%AF%95.html) | 产品从 0 到 1、如何验证产品机会 |

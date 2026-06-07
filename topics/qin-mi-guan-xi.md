@@ -44,10 +44,12 @@ books:
     reason: 帮助识别日常对话中的关系信息、倾听偏差和误解累积。
     status: in_library
   - title: 非暴力沟通
-    author: 待补
+    author: 马歇尔·卢森堡
+    slug: fei-bao-li-gou-tong
+    path: books/心理学/马歇尔·卢森堡-非暴力沟通.md
     role: 表达练习
     reason: 把情绪和指责拆回观察、感受、需要和请求，让修复有可练习的方法。
-    status: planned
+    status: in_library
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji
