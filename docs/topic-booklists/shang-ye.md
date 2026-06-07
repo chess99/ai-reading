@@ -10,16 +10,15 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：58
 - 唯一书名：38
-- 已入库引用：38
-- 待入库唯一书名：15
-- z-lib 可优先尝试：12
+- 已入库引用：40
+- 待入库唯一书名：14
+- z-lib 可优先尝试：11
 - z-lib 需复核/换源：3
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
-| 创业维艰 | 2 | 产品从 0 到 1、如何设计商业模式与理解公司经营 | 候选: [epub 2.06 MB 2016](https://z-lib.fm/book/N0WrVerqZq/%E5%88%9B%E4%B8%9A%E7%BB%B4%E8%89%B0.html) |
 | 赋能 | 1 | 如何建立产品组织与交付系统 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 规模 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [epub 6.35 MB 2018](https://z-lib.fm/book/XZm6kGro0P/%E8%A7%84%E6%A8%A1.html) |
 | 好战略，坏战略 | 1 | 如何理解商业竞争、战略与平台效应 | 候选: [epub 1.20 MB 2012](https://z-lib.fm/book/wgeDdVOn07/%E5%A5%BD%E6%88%98%E7%95%A5%E5%9D%8F%E6%88%98%E7%95%A5.html) |
@@ -51,7 +50,7 @@ date: '2026-06-07'
 | 启示录 | 产品发现 | in_library | Marty Cagan | qi-shi-lu / books/创业产品/Marty Cagan-启示录.md |
 | 用户故事地图 | 需求组织 | planned | 待补 | 候选: [pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
 | 产品开发流程原理 | 交付系统 | in_library | 唐纳德·莱纳特森 | chan-pin-kai-fa-liu-cheng-yuan-li / books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md |
-| 创业维艰 | 创业管理 | planned | 待补 | 候选: [epub 2.06 MB 2016](https://z-lib.fm/book/N0WrVerqZq/%E5%88%9B%E4%B8%9A%E7%BB%B4%E8%89%B0.html) |
+| 创业维艰 | 创业管理 | in_library | 本·霍洛维茨 | chuang-ye-wei-jian / books/创业产品/本·霍洛维茨-创业维艰.md |
 | 增长黑客 | 增长实验 | in_library | 肖恩·埃利斯 | zeng-zhang-hei-ke / books/创业产品/肖恩·埃利斯-增长黑客.md |
 
 ### 如何做好产品发现
@@ -124,7 +123,7 @@ date: '2026-06-07'
 | 精益创业 | 验证学习 | in_library | 埃里克·莱斯 | jing-yi-chuang-ye / books/创业产品/埃里克·莱斯-精益创业.md |
 | 财务智慧 | 财务语言 | in_library | 卡伦·伯曼、乔·奈特 | cai-wu-zhi-hui / books/商业管理/财务与估值/卡伦·伯曼,乔·奈特-财务智慧.md |
 | 定价制胜 | 定价能力 | in_library | 赫尔曼·西蒙 | ding-jia-zhi-sheng / books/商业管理/赫尔曼·西蒙-定价制胜.md |
-| 创业维艰 | 创业经营 | planned | 待补 | 候选: [epub 2.06 MB 2016](https://z-lib.fm/book/N0WrVerqZq/%E5%88%9B%E4%B8%9A%E7%BB%B4%E8%89%B0.html) |
+| 创业维艰 | 创业经营 | in_library | 本·霍洛维茨 | chuang-ye-wei-jian / books/创业产品/本·霍洛维茨-创业维艰.md |
 | 竞争战略 | 竞争结构 | in_library | 迈克尔·波特 | jing-zheng-zhan-l-e / books/商业管理/公司战略/迈克尔·波特-竞争战略.md |
 | 从优秀到卓越 | 组织卓越 | in_library | 吉姆·柯林斯 | cong-you-xiu-dao-zhuo-yue / books/商业管理/公司战略/吉姆·柯林斯-从优秀到卓越.md |
 | 原则 | 经营原则 | in_library | 瑞·达利欧 | yuan-ze / books/个人成长/瑞·达利欧-原则.md |

@@ -41,10 +41,12 @@ books:
     reason: 说明价格如何连接客户价值、市场定位和利润模型。
     status: in_library
   - title: 创业维艰
-    author: 待补
+    author: 本·霍洛维茨
+    slug: chuang-ye-wei-jian
+    path: books/创业产品/本·霍洛维茨-创业维艰.md
     role: 创业经营
     reason: 补上公司在压力、人员、现金和决策困境中的经营现实。
-    status: planned
+    status: in_library
   - title: 竞争战略
     author: 迈克尔·波特
     slug: jing-zheng-zhan-l-e

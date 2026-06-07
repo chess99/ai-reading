@@ -10,16 +10,15 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：50
 - 唯一书名：43
-- 已入库引用：26
-- 待入库唯一书名：21
-- z-lib 可优先尝试：21
+- 已入库引用：28
+- 待入库唯一书名：20
+- z-lib 可优先尝试：20
 - z-lib 需复核/换源：0
 
 ## 待入库书目
 
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
-| 超级预测 | 2 | 如何理解概率、风险与预测、如何做重大决策 | 候选: [epub 663 KB 2016](https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html) |
 | 超越感觉 | 1 | 如何建立批判性与证据判断 | 候选: [epub 793 KB 2015](https://z-lib.fm/book/Q0Yo4owBAy/%E8%B6%85%E8%B6%8A%E6%84%9F%E8%A7%89.html) |
 | 赤裸裸的统计学 | 1 | 如何建立批判性与证据判断 | 候选: [epub 1.30 MB 2013](https://z-lib.fm/book/dAoeQNRm0V/%E8%B5%A4%E8%A3%B8%E8%A3%B8%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AD%A6.html) |
 | 第五项修炼 | 1 | 什么是系统思维与复杂性 | 候选: [epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
@@ -50,7 +49,7 @@ date: '2026-06-07'
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
 | 随机漫步的傻瓜 | 运气识别入口 | planned | 待补 | 候选: [epub 660 KB 2016](https://z-lib.fm/book/n0zbVLwv0k/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C.html) |
-| 超级预测 | 可校准预测 | planned | 待补 | 候选: [epub 663 KB 2016](https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html) |
+| 超级预测 | 可校准预测 | in_library | 菲利普·泰洛克,丹·加德纳 | chao-ji-yu-ce / books/思维方式/菲利普·泰洛克,丹·加德纳-超级预测.md |
 | 噪声 | 判断波动检查 | in_library | 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦 | zao-sheng / books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md |
 | 黑天鹅 | 极端事件边界 | in_library | 纳西姆·尼古拉斯·塔勒布 | hei-tian-e / books/社会科学/纳西姆·尼古拉斯·塔勒布-黑天鹅.md |
 | 风险、不确定性与利润 | 不确定性区分 | planned | 待补 | 候选: [epub 496 KB 2010](https://z-lib.fm/book/DgXLr63wgq/%E9%A3%8E%E9%99%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%88%A9%E6%B6%A6.html) |
@@ -128,7 +127,7 @@ date: '2026-06-07'
 | 决断力 | 流程防错框架 | planned | 待补 | 候选: [epub 376 KB 2014](https://z-lib.fm/book/lgGajEO8ZV/%E5%86%B3%E6%96%AD%E5%8A%9B%E5%A6%82%E4%BD%95%E5%9C%A8%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%81%9A%E5%87%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%80%89%E6%8B%A9.html) |
 | 思考，快与慢 | 偏差识别 | in_library | 丹尼尔·卡尼曼 | si-kao-kuai-yu-man / books/思维方式/丹尼尔·卡尼曼-思考，快与慢.md |
 | 噪声 | 判断一致性检查 | in_library | 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦 | zao-sheng / books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md |
-| 超级预测 | 概率更新训练 | planned | 待补 | 候选: [epub 663 KB 2016](https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html) |
+| 超级预测 | 概率更新训练 | in_library | 菲利普·泰洛克,丹·加德纳 | chao-ji-yu-ce / books/思维方式/菲利普·泰洛克,丹·加德纳-超级预测.md |
 | 对赌 | 复盘与校准 | planned | 待补 | 候选: [epub 542 KB 2012](https://z-lib.fm/book/WZpP1lxqZR/%E5%AF%B9%E8%B5%8C.html) |
 | 助推 | 选择架构 | in_library | 理查德·塞勒、卡斯·桑斯坦 | zhu-tui / books/思维方式/理查德·塞勒,卡斯·桑斯坦-助推.md |
 | 清单革命 | 执行防漏 | in_library | 阿图·葛文德 | qing-dan-ge-ming / books/商业管理/阿图·葛文德-清单革命.md |

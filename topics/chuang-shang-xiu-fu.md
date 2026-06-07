@@ -25,10 +25,12 @@ books:
     reason: 把注意力放到冻结、逃跑、战斗等身体反应，补上创伤修复中的躯体维度。
     status: planned
   - title: 不原谅也没关系
-    author: 待补
+    author: 皮特·沃克
+    slug: bu-yuan-liang-ye-mei-guan-xi
+    path: books/心理学/皮特·沃克-不原谅也没关系.md
     role: 复杂创伤边界
     reason: 处理长期伤害后的愤怒、边界和不必急于原谅，避免把修复简化成和解。
-    status: planned
+    status: in_library
   - title: 依恋
     author: 约翰·鲍尔比
     slug: yi-lian

@@ -60,10 +60,12 @@ books:
     reason: 从队列、批量、在制品和反馈周期理解产品开发为什么会慢而失控。
     status: in_library
   - title: 创业维艰
-    author: 待补
+    author: 本·霍洛维茨
+    slug: chuang-ye-wei-jian
+    path: books/创业产品/本·霍洛维茨-创业维艰.md
     role: 创业管理
     reason: 补上公司在压力、人员、决策和生存困境中的管理现实。
-    status: planned
+    status: in_library
   - title: 增长黑客
     author: 肖恩·埃利斯
     slug: zeng-zhang-hei-ke

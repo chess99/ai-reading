@@ -13,10 +13,12 @@ books:
     reason: 先区分能力、运气和幸存者偏差，让读者警惕从结果倒推原因。
     status: planned
   - title: 超级预测
-    author: 待补
+    author: 菲利普·泰洛克,丹·加德纳
+    slug: chao-ji-yu-ce
+    path: books/思维方式/菲利普·泰洛克,丹·加德纳-超级预测.md
     role: 可校准预测
     reason: 训练把判断写成概率、期限和条件，并根据新证据持续更新。
-    status: planned
+    status: in_library
   - title: 噪声
     author: 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦
     slug: zao-sheng

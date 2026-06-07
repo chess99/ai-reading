@@ -39,10 +39,12 @@ books:
     reason: 说明身体警觉、僵住、讨好和回避可能与危险经验或关系压力有关。
     status: in_library
   - title: 不原谅也没关系
-    author: 待补
+    author: 皮特·沃克
+    slug: bu-yuan-liang-ye-mei-guan-xi
+    path: books/心理学/皮特·沃克-不原谅也没关系.md
     role: 复杂创伤
     reason: 支持读者理解长期伤害后的边界、愤怒和不必急于和解。
-    status: planned
+    status: in_library
   - title: 高难度谈话
     author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
     slug: gao-nan-du-tan-hua

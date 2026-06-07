@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：7
 - 书籍引用：49
 - 唯一书名：34
-- 已入库引用：29
-- 待入库唯一书名：19
-- z-lib 可优先尝试：18
+- 已入库引用：30
+- 待入库唯一书名：18
+- z-lib 可优先尝试：17
 - z-lib 需复核/换源：1
 
 ## 待入库书目
@@ -20,7 +20,6 @@ date: '2026-06-07'
 | 书名 | 出现次数 | 关联主题 | z-lib 候选 |
 | --- | ---: | --- | --- |
 | 抱紧我 | 1 | 如何面对创伤与自我修复 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认; [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
-| 不原谅也没关系 | 1 | 如何面对创伤与自我修复 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
 | 创伤与复原 | 1 | 如何面对创伤与自我修复 | 候选: [azw3 842 KB 2015](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) |
 | 当呼吸化为空气 | 1 | 面对丧失、哀伤与死亡 | 候选: [epub 845 KB 2020](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) |
 | 当下的力量 | 1 | 如何停止精神内耗 | 候选: [epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
@@ -65,7 +64,7 @@ date: '2026-06-07'
 | 身体从未忘记 | 身体记忆入口 | in_library | 贝塞尔·范德考克 | shen-ti-cong-wei-wang-ji / books/心理学/贝塞尔·范德考克-身体从未忘记.md |
 | 创伤与复原 | 复原阶段框架 | planned | 待补 | 候选: [azw3 842 KB 2015](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) |
 | 唤醒老虎 | 躯体经验路径 | planned | 待补 | 候选: [epub 5.79 MB 2016](https://z-lib.fm/book/dAKM9oX107/%E5%94%A4%E9%86%92%E8%80%81%E8%99%8E%E5%90%AF%E5%8A%A8%E8%87%AA%E6%88%91%E7%96%97%E6%84%88%E6%9C%AC%E8%83%BD.html) |
-| 不原谅也没关系 | 复杂创伤边界 | planned | 待补 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
+| 不原谅也没关系 | 复杂创伤边界 | in_library | 皮特·沃克 | bu-yuan-liang-ye-mei-guan-xi / books/心理学/皮特·沃克-不原谅也没关系.md |
 | 依恋 | 关系安全框架 | in_library | 约翰·鲍尔比 | yi-lian / books/心理学/约翰·鲍尔比-依恋.md |
 | 抱紧我 | 亲密关系修复 | planned | 待补 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认; [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
 | 也许你该找个人聊聊 | 咨询关系参照 | in_library | 洛莉·戈特利布 | ye-xu-ni-gai-zhao-ge-ren-liao-liao / books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md |

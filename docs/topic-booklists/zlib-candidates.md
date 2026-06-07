@@ -6,7 +6,7 @@ date: '2026-06-07'
 
 # z-lib 待入库候选
 
-覆盖 174 个唯一待入库书名：169 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
+覆盖 171 个唯一待入库书名：166 个候选可优先尝试下载，5 个需要人工复核或换候选，0 个未命中/搜索异常。候选链接均来自 z-lib 搜索页详情 URL，尚未下载；下载、解析、提炼和入库仍需按 BookDistill SOP 逐本验证。
 
 | 书名 | 状态 | 复核说明 | 格式 | 大小 | 年份 | 语言 | 候选链接 | 关联主题 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -16,14 +16,11 @@ date: '2026-06-07'
 | 抱紧我 | needs_manual_review | 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认 | pdf | 12.49 MB | 2010 | Chinese | [亲爱的我们别吵了](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) | 如何面对创伤与自我修复、如何处理亲密关系中的冲突、亲密关系阅读路径 |
 | 必然 | candidate_ready | 标题精确 | epub | 2.46 MB | 2016 | Chinese | [必然](https://z-lib.fm/book/dZ69j2dbAo/%E5%BF%85%E7%84%B6.html) | 技术社会读什么 |
 | 变革之心 | candidate_ready | 标题精确 | epub | 1.25 MB | 2024 | Chinese | [变革之心](https://z-lib.fm/book/vAyYOY3DAE/%E5%8F%98%E9%9D%A9%E4%B9%8B%E5%BF%83.html) | 如何理解组织中的权力与变革 |
-| 不原谅也没关系 | candidate_ready | 标题精确 | epub | 779 KB | 2022 | Chinese | [不原谅也没关系](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) | 如何面对创伤与自我修复、如何识别关系中的安全、边界与退出风险 |
 | 禅与摩托车维修艺术 | candidate_ready | 标题精确 | epub | 956 KB | 2018 | Chinese | [禅与摩托车维修艺术](https://z-lib.fm/book/qA9exmXdAL/%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF.html) | 艺术与审美入门 |
-| 超级预测 | candidate_ready | 中文出版题名为《超预测》 | epub | 663 KB | 2016 | Chinese | [超预测](https://z-lib.fm/book/rAd3J13WgB/%E8%B6%85%E9%A2%84%E6%B5%8B.html) | 如何理解概率、风险与预测、如何做重大决策 |
 | 超越感觉 | candidate_ready | 标题精确 | epub | 793 KB | 2015 | Chinese | [超越感觉](https://z-lib.fm/book/Q0Yo4owBAy/%E8%B6%85%E8%B6%8A%E6%84%9F%E8%A7%89.html) | 如何建立批判性与证据判断 |
 | 成为作家 | candidate_ready | 标题精确 | epub | 6.77 MB | 2011 | Chinese | [成为作家](https://z-lib.fm/book/OZOX4GND0x/%E6%88%90%E4%B8%BA%E4%BD%9C%E5%AE%B6.html) | 写作与创意工作 |
 | 赤裸裸的统计学 | candidate_ready | 标题精确 | epub | 1.30 MB | 2013 | Chinese | [赤裸裸的统计学](https://z-lib.fm/book/dAoeQNRm0V/%E8%B5%A4%E8%A3%B8%E8%A3%B8%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AD%A6.html) | 如何建立批判性与证据判断 |
 | 创伤与复原 | candidate_ready | 标题精确 | azw3 | 842 KB | 2015 | Chinese | [创伤与复原](https://z-lib.fm/book/PAlayJEmZq/%E5%88%9B%E4%BC%A4%E4%B8%8E%E5%A4%8D%E5%8E%9F.html) | 如何面对创伤与自我修复 |
-| 创业维艰 | candidate_ready | 标题精确 | epub | 2.06 MB | 2016 | Chinese | [创业维艰](https://z-lib.fm/book/N0WrVerqZq/%E5%88%9B%E4%B8%9A%E7%BB%B4%E8%89%B0.html) | 产品从 0 到 1、如何设计商业模式与理解公司经营 |
 | 错误的行为 | candidate_ready | 标题精确 | epub | 2.65 MB | 2016 | Chinese | [错误的行为](https://z-lib.fm/book/E0RrQ23L0d/%E9%94%99%E8%AF%AF%E7%9A%84%E8%A1%8C%E4%B8%BA.html) | 如何理解行为经济学与金钱心理 |
 | 大国的兴衰 | candidate_ready | 标题精确 | pdf | 39.27 MB | 1989 | Chinese | [大国的兴衰](https://z-lib.fm/book/VZw4zpae0m/%E5%A4%A7%E5%9B%BD%E7%9A%84%E5%85%B4%E8%A1%B0.html) | 如何理解国际秩序与地缘风险、如何理解世界历史、如何理解文明兴衰 |
 | 当呼吸化为空气 | candidate_ready | 标题精确 | epub | 845 KB | 2020 | Chinese | [当呼吸化为空气](https://z-lib.fm/book/20rdkdMlAX/%E5%BD%93%E5%91%BC%E5%90%B8%E5%8C%96%E4%B8%BA%E7%A9%BA%E6%B0%94.html) | 面对丧失、哀伤与死亡、面对衰老、疾病与照护 |

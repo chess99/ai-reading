@@ -10,9 +10,9 @@ date: '2026-06-07'
 - 主题数：6
 - 书籍引用：42
 - 唯一书名：28
-- 已入库引用：19
-- 待入库唯一书名：21
-- z-lib 可优先尝试：20
+- 已入库引用：20
+- 待入库唯一书名：20
+- z-lib 可优先尝试：19
 - z-lib 需复核/换源：1
 
 ## 待入库书目
@@ -21,7 +21,6 @@ date: '2026-06-07'
 | --- | ---: | --- | --- |
 | 爱的艺术 | 1 | 亲密关系阅读路径 | 候选: [epub 549 KB 2019](https://z-lib.fm/book/dAoddDQQZV/%E7%88%B1%E7%9A%84%E8%89%BA%E6%9C%AF.html) |
 | 抱紧我 | 2 | 如何处理亲密关系中的冲突、亲密关系阅读路径 | 需复核: 仅找到 TXT 精确候选；PDF《亲爱的我们别吵了》疑似同书不同译名，需确认; [pdf 12.49 MB 2010](https://z-lib.fm/book/aZQN2vOV08/%E4%BA%B2%E7%88%B1%E7%9A%84%E6%88%91%E4%BB%AC%E5%88%AB%E5%90%B5%E4%BA%86.html) |
-| 不原谅也没关系 | 1 | 如何识别关系中的安全、边界与退出风险 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
 | 给孩子一生的安全感 | 1 | 如何理解儿童安全感与教育成长 | 候选: [epub 3.99 MB 2023](https://z-lib.fm/book/YAJYPqbYgw/%E7%BB%99%E5%AD%A9%E5%AD%90%E4%B8%80%E7%94%9F%E7%9A%84%E5%AE%89%E5%85%A8%E6%84%9F.html) |
 | 孩子，把你的手给我 | 1 | 如何做足够好的父母 | 候选: [epub 199 KB 2016](https://z-lib.fm/book/pZ8xMzoLZ9/%E5%AD%A9%E5%AD%90%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%89%8B%E7%BB%99%E6%88%91.html) |
 | 孩子：挑战 | 1 | 如何做足够好的父母 | 候选: [epub 565 KB 2017](https://z-lib.fm/book/20rdBOLGAX/%E5%AD%A9%E5%AD%90%E6%8C%91%E6%88%98.html) |
@@ -82,7 +81,7 @@ date: '2026-06-07'
 | 煤气灯效应 | 操控识别 | planned | 待补 | 候选: [epub 2.04 MB 2025](https://z-lib.fm/book/aZQRXLBy08/%E7%85%A4%E6%B0%94%E7%81%AF%E6%95%88%E5%BA%94.html) |
 | 情绪勒索 | 勒索模式 | planned | 待补 | 候选: [epub 654 KB 2017](https://z-lib.fm/book/PAl9r6v4Zq/%E6%83%85%E7%BB%AA%E5%8B%92%E7%B4%A2.html) |
 | 身体从未忘记 | 创伤反应 | in_library | 贝塞尔·范德考克 | shen-ti-cong-wei-wang-ji / books/心理学/贝塞尔·范德考克-身体从未忘记.md |
-| 不原谅也没关系 | 复杂创伤 | planned | 待补 | 候选: [epub 779 KB 2022](https://z-lib.fm/book/Q0YojprRAy/%E4%B8%8D%E5%8E%9F%E8%B0%85%E4%B9%9F%E6%B2%A1%E5%85%B3%E7%B3%BB.html) |
+| 不原谅也没关系 | 复杂创伤 | in_library | 皮特·沃克 | bu-yuan-liang-ye-mei-guan-xi / books/心理学/皮特·沃克-不原谅也没关系.md |
 | 高难度谈话 | 退出沟通 | in_library | 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉 | gao-nan-du-tan-hua / books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md |
 
 ### 如何处理亲密关系中的冲突

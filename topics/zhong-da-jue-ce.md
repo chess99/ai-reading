@@ -34,10 +34,12 @@ books:
     reason: 把问题从个人偏见扩展到同一规则下的判断波动，提醒读者检查评估标准是否稳定。
     status: in_library
   - title: 超级预测
-    author: 待补
+    author: 菲利普·泰洛克,丹·加德纳
+    slug: chao-ji-yu-ce
+    path: books/思维方式/菲利普·泰洛克,丹·加德纳-超级预测.md
     role: 概率更新训练
     reason: 教读者把判断写成可修正的概率估计，而不是一次性表态。
-    status: planned
+    status: in_library
   - title: 对赌
     author: 待补
     role: 复盘与校准
