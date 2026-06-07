@@ -8,45 +8,59 @@ group: 增长营销
 date: '2026-06-06'
 books:
   - title: 定位
-    author: 待补
+    author: 阿尔·里斯,杰克·特劳特
+    slug: ding-wei
+    path: books/商业管理/市场营销/阿尔·里斯,杰克·特劳特-定位.md
     role: 心智定位
     reason: 先明确产品在用户心智中要占据什么位置。
-    status: planned
+    status: in_library
   - title: 影响力
-    author: 待补
+    author: 罗伯特·西奥迪尼
+    slug: ying-xiang-li
+    path: books/商业管理/组织行为学/罗伯特·西奥迪尼-影响力.md
     role: 说服机制
     reason: 解释互惠、承诺、社会认同、权威、喜好和稀缺如何影响选择。
-    status: planned
+    status: in_library
   - title: 引爆点
     author: 待补
     role: 传播扩散
     reason: 说明小变化如何在特定人群、信息和情境中形成扩散。
     status: planned
   - title: 跨越鸿沟
-    author: 待补
+    author: 杰弗里·摩尔
+    slug: kua-yue-hong-gou
+    path: books/商业管理/市场营销/杰弗里·摩尔-跨越鸿沟.md
     role: 早期市场
     reason: 处理从早期采用者进入主流市场时的断层。
-    status: planned
+    status: in_library
   - title: 增长黑客
-    author: 待补
+    author: 肖恩·埃利斯
+    slug: zeng-zhang-hei-ke
+    path: books/创业产品/肖恩·埃利斯-增长黑客.md
     role: 实验增长
     reason: 把增长转为围绕激活、留存、推荐和收入的实验系统。
-    status: planned
+    status: in_library
   - title: 营销管理
-    author: 待补
+    author: 菲利普·科特勒,凯文·莱恩·凯勒,亚历山大·切尔内夫
+    slug: ying-xiao-guan-li
+    path: books/商业管理/市场营销/菲利普·科特勒,凯文·莱恩·凯勒,亚历山大·切尔内夫-营销管理.md
     role: 营销体系
     reason: 补充市场细分、目标市场、渠道、定价和品牌管理。
-    status: planned
+    status: in_library
   - title: 病毒式循环
-    author: 待补
+    author: 亚当·潘恩伯格
+    slug: bing-du-shi-xun-huan
+    path: books/创业产品/亚当·潘恩伯格-病毒式循环.md
     role: 病毒机制
     reason: 解释产品如何通过用户行为形成可重复的传播循环。
-    status: planned
+    status: in_library
   - title: 超级符号就是超级创意
-    author: 待补
+    author: 华杉 华楠
+    slug: chao-ji-fu-hao-jiu-shi-chao-ji-chuang-yi
+    path: books/商业管理/市场营销/华杉 华楠-超级符号就是超级创意.md
     role: 符号资产
     reason: 最后把增长和营销连接到可识别、可传播、可积累的符号资产。
-    status: planned
+    status: in_library
 ---
 
 # 如何做增长与营销

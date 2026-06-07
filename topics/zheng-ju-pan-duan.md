@@ -8,10 +8,12 @@ group: 证据与科学
 date: '2026-06-06'
 books:
   - title: 学会提问
-    author: 待补
+    author: 尼尔·布朗,斯图尔特·基利
+    slug: xue-hui-ti-wen
+    path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 提问入口
     reason: 先训练读者识别论点、理由、假设和证据缺口，把被动接受改成主动追问。
-    status: planned
+    status: in_library
   - title: 批判性思维工具
     author: 待补
     role: 论证框架
@@ -53,10 +55,12 @@ books:
     reason: 用心理学研究方法区分科学心理学和流行心理解释，训练领域内证据敏感度。
     status: planned
   - title: 噪声
-    author: 待补
+    author: 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦
+    slug: zao-sheng
+    path: books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
     role: 专家判断校验
     reason: 最后检查专家和机构判断中的随机波动，提醒读者证据之外还要看判断过程。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立批判性与证据判断

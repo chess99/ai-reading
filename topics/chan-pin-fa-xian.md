@@ -23,10 +23,12 @@ books:
     reason: 连接目标用户、痛点、价值主张、功能集合和 MVP 测试。
     status: planned
   - title: 俞军产品方法论
-    author: 待补
+    author: 俞军
+    slug: yu-jun-chan-pin-fang-fa-lun
+    path: books/创业产品/俞军-俞军产品方法论.md
     role: 用户价值
     reason: 用效用、成本、交易和用户价值判断产品是否成立。
-    status: planned
+    status: in_library
   - title: 用户体验要素
     author: 待补
     role: 体验层次
@@ -43,10 +45,12 @@ books:
     reason: 提供短周期原型、测试和团队对齐的方法。
     status: planned
   - title: 产品开发流程原理
-    author: 待补
+    author: 唐纳德·莱纳特森
+    slug: chan-pin-kai-fa-liu-cheng-yuan-li
+    path: books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md
     role: 开发流动
     reason: 最后把发现连接到交付系统中的队列、批量和反馈周期。
-    status: planned
+    status: in_library
 ---
 
 # 如何做好产品发现

@@ -8,10 +8,12 @@ group: 文明兴衰
 date: '2026-06-06'
 books:
   - title: 枪炮、病菌与钢铁
-    author: 待补
+    author: 贾雷德·戴蒙德
+    slug: qiang-pao-bing-jun-yu-gang-tie
+    path: books/社会科学/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
     role: 地理入口
     reason: 用环境、物种和技术扩散解释文明差异的长期起点。
-    status: planned
+    status: in_library
   - title: 大国的兴衰
     author: 待补
     role: 经济军事
@@ -33,10 +35,12 @@ books:
     reason: 说明文明和国家如何理解合法性、均势与国际秩序。
     status: planned
   - title: 人类简史
-    author: 待补
+    author: 尤瓦尔·赫拉利
+    slug: ren-lei-jian-shi
+    path: books/社会科学/尤瓦尔·赫拉利-人类简史.md
     role: 人类叙事
     reason: 用更长的人类历史重新检查文明叙事的尺度。
-    status: planned
+    status: in_library
   - title: 增长的极限
     author: 待补
     role: 生态边界

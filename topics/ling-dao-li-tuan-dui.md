@@ -8,10 +8,12 @@ group: 团队协作
 date: '2026-06-06'
 books:
   - title: 领导梯队
-    author: 待补
+    author: 查兰
+    slug: ling-dao-ti-dui
+    path: books/商业管理/查兰-领导梯队.md
     role: 角色跃迁
     reason: 先理解不同领导层级对技能、时间和价值观的要求。
-    status: planned
+    status: in_library
   - title: 高绩效教练
     author: 待补
     role: 教练能力
@@ -43,10 +45,12 @@ books:
     reason: 补充招聘、文化、目标和组织机制如何影响团队表现。
     status: planned
   - title: 权力
-    author: 待补
+    author: 杰弗瑞·菲佛
+    slug: quan-li
+    path: books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md
     role: 权力现实
     reason: 最后提醒领导力不能只谈影响和信任，也要理解权力来源与组织现实。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立领导力与团队协作

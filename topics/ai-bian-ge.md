@@ -28,10 +28,12 @@ books:
     reason: 说明 AI 与其他通用技术扩散后会带来的机会、失控和治理压力。
     status: planned
   - title: 未来呼啸而来
-    author: 待补
+    author: 彼得·戴曼迪斯,史蒂芬·科特勒
+    slug: wei-lai-hu-xiao-er-lai
+    path: books/社会科学/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md
     role: 产业变化
     reason: 把 AI 放进更广泛的技术加速和产业重组中理解。
-    status: planned
+    status: in_library
   - title: 技术的本质
     author: 待补
     role: 技术演化

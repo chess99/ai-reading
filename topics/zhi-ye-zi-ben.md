@@ -13,40 +13,52 @@ books:
     reason: 先说明稀缺能力如何带来更好的工作条件和选择权。
     status: planned
   - title: 刻意练习
-    author: 待补
+    author: 安德斯·艾利克森
+    slug: ke-yi-lian-xi
+    path: books/效率习惯/安德斯·艾利克森-刻意练习.md
     role: 技能训练
     reason: 把能力增长拆成目标、反馈、重复和突破舒适区。
-    status: planned
+    status: in_library
   - title: 深度工作
-    author: 待补
+    author: 卡尔·纽波特
+    slug: shen-du-gong-zuo
+    path: books/效率习惯/卡尔·纽波特-深度工作.md
     role: 专注产出
     reason: 解释高质量注意力为什么是复杂技能和高价值产出的基础。
-    status: planned
+    status: in_library
   - title: 远见
     author: 待补
     role: 长期阶段
     reason: 把职业资本放进长期职业周期，避免只追逐短期机会。
     status: planned
   - title: 精要主义
-    author: 待补
+    author: 格雷戈·麦吉沃恩
+    slug: jing-yao-zhu-yi
+    path: books/效率习惯/格雷戈·麦吉沃恩-精要主义.md
     role: 取舍能力
     reason: 帮助读者减少分散投入，把时间放到真正能积累资本的方向。
-    status: planned
+    status: in_library
   - title: 原则
-    author: 待补
+    author: 瑞·达利欧
+    slug: yuan-ze
+    path: books/个人成长/瑞·达利欧-原则.md
     role: 判断系统
     reason: 用原则、复盘和透明决策支撑长期选择。
-    status: planned
+    status: in_library
   - title: 一人企业
-    author: 待补
+    author: 保罗·贾维斯
+    slug: yi-ren-qi-ye
+    path: books/创业产品/保罗·贾维斯-一人企业.md
     role: 独立价值
     reason: 说明职业资本也可以转化为小规模、独立和可持续的价值创造。
-    status: planned
+    status: in_library
   - title: 10倍比两倍更容易
-    author: 待补
+    author: 丹·沙利文
+    slug: 10-bei-bi-liang-bei-geng-rong-yi
+    path: books/个人成长/丹·沙利文-10倍比两倍更容易.md
     role: 高杠杆目标
     reason: 最后引入目标杠杆，促使读者重新选择真正值得投入的能力方向。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立长期职业资本

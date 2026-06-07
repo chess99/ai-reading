@@ -8,10 +8,12 @@ group: 管理与领导
 date: '2026-06-06'
 books:
   - title: 卓有成效的管理者
-    author: 待补
+    author: 彼得·德鲁克
+    slug: zhuo-you-cheng-xiao-de-guan-li-zhe
+    path: books/商业管理/彼得·德鲁克-卓有成效的管理者.md
     role: 管理责任
     reason: 先建立管理者如何使用时间、贡献、优势和决策的基本责任。
-    status: planned
+    status: in_library
   - title: 管理的实践
     author: 待补
     role: 管理体系
@@ -23,10 +25,12 @@ books:
     reason: 说明协调、沟通、权威和组织运转中的经理角色。
     status: planned
   - title: 领导梯队
-    author: 待补
+    author: 查兰
+    slug: ling-dao-ti-dui
+    path: books/商业管理/查兰-领导梯队.md
     role: 角色跃迁
     reason: 帮助管理者理解不同层级的时间分配、技能和价值观变化。
-    status: planned
+    status: in_library
   - title: 可复制的领导力
     author: 待补
     role: 复制机制

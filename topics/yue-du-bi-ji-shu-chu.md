@@ -28,25 +28,31 @@ books:
     reason: 把零散材料组织成结论先行、层次清楚的表达。
     status: planned
   - title: 学会提问
-    author: 待补
+    author: 尼尔·布朗,斯图尔特·基利
+    slug: xue-hui-ti-wen
+    path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 批判提问
     reason: 帮助输出系统保留质疑、证据和假设检查。
-    status: planned
+    status: in_library
   - title: 风格感觉
     author: 待补
     role: 语言风格
     reason: 让结构化表达不止正确，也更清楚、具体和可读。
     status: planned
   - title: 写作这回事
-    author: 待补
+    author: 斯蒂芬·金
+    slug: xie-zuo-zhe-hui-shi
+    path: books/写作创意/斯蒂芬·金-写作这回事.md
     role: 写作实践
     reason: 把阅读和笔记最终带入持续写作的真实过程。
-    status: planned
+    status: in_library
   - title: 复盘
-    author: 待补
+    author: 陈中
+    slug: fu-pan
+    path: books/个人成长/陈中-复盘.md
     role: 系统反馈
     reason: 用回顾机制检查输入、整理和输出是否真的形成改进。
-    status: planned
+    status: in_library
 ---
 
 # 阅读、笔记与输出系统

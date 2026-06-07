@@ -13,45 +13,59 @@ books:
     reason: 先用画布把客户、价值主张、渠道、收入、成本和关键活动放在一起。
     status: planned
   - title: 客户开发入门
-    author: 待补
+    author: 辛迪·阿尔瓦雷斯
+    slug: ke-hu-kai-fa-ru-men
+    path: books/创业产品/辛迪·阿尔瓦雷斯-客户开发入门.md
     role: 客户验证
     reason: 检查商业模式中的客户、痛点和购买动机是否真实。
-    status: planned
+    status: in_library
   - title: 精益创业
-    author: 待补
+    author: 埃里克·莱斯
+    slug: jing-yi-chuang-ye
+    path: books/创业产品/埃里克·莱斯-精益创业.md
     role: 验证学习
     reason: 把商业假设转化为可实验、可测量的学习过程。
-    status: planned
+    status: in_library
   - title: 财务智慧
-    author: 待补
+    author: 卡伦·伯曼、乔·奈特
+    slug: cai-wu-zhi-hui
+    path: books/商业管理/财务与估值/卡伦·伯曼,乔·奈特-财务智慧.md
     role: 财务语言
     reason: 帮助读者理解利润、现金流、资产负债和经营指标。
-    status: planned
+    status: in_library
   - title: 定价制胜
-    author: 待补
+    author: 赫尔曼·西蒙
+    slug: ding-jia-zhi-sheng
+    path: books/商业管理/赫尔曼·西蒙-定价制胜.md
     role: 定价能力
     reason: 说明价格如何连接客户价值、市场定位和利润模型。
-    status: planned
+    status: in_library
   - title: 创业维艰
     author: 待补
     role: 创业经营
     reason: 补上公司在压力、人员、现金和决策困境中的经营现实。
     status: planned
   - title: 竞争战略
-    author: 待补
+    author: 迈克尔·波特
+    slug: jing-zheng-zhan-l-e
+    path: books/商业管理/公司战略/迈克尔·波特-竞争战略.md
     role: 竞争结构
     reason: 把公司经营放进行业结构、竞争力量和战略选择中。
-    status: planned
+    status: in_library
   - title: 从优秀到卓越
-    author: 待补
+    author: 吉姆·柯林斯
+    slug: cong-you-xiu-dao-zhuo-yue
+    path: books/商业管理/公司战略/吉姆·柯林斯-从优秀到卓越.md
     role: 组织卓越
     reason: 说明公司如何通过领导力、纪律和飞轮形成长期表现。
-    status: planned
+    status: in_library
   - title: 原则
-    author: 待补
+    author: 瑞·达利欧
+    slug: yuan-ze
+    path: books/个人成长/瑞·达利欧-原则.md
     role: 经营原则
     reason: 最后回到决策原则、透明、复盘和组织运行机制。
-    status: planned
+    status: in_library
 ---
 
 # 如何设计商业模式与理解公司经营

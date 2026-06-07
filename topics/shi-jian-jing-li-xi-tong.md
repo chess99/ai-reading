@@ -18,10 +18,12 @@ books:
     reason: 建立收集、澄清、组织和回顾的可信外部系统。
     status: planned
   - title: 精要主义
-    author: 待补
+    author: 格雷戈·麦吉沃恩
+    slug: jing-yao-zhu-yi
+    path: books/效率习惯/格雷戈·麦吉沃恩-精要主义.md
     role: 取舍边界
     reason: 帮助读者减少低价值承诺，把时间留给真正重要的事。
-    status: planned
+    status: in_library
   - title: 高效能人士的七个习惯
     author: 待补
     role: 价值框架
@@ -33,15 +35,19 @@ books:
     reason: 校正长期超负荷和伪忙碌，强调少量高质量工作。
     status: planned
   - title: 复盘
-    author: 待补
+    author: 陈中
+    slug: fu-pan
+    path: books/个人成长/陈中-复盘.md
     role: 反馈机制
     reason: 用定期回顾把计划、行动和学习连接起来。
-    status: planned
+    status: in_library
   - title: 原则
-    author: 待补
+    author: 瑞·达利欧
+    slug: yuan-ze
+    path: books/个人成长/瑞·达利欧-原则.md
     role: 个人原则
     reason: 最后把个人系统沉淀为可复用的判断和行动原则。
-    status: planned
+    status: in_library
 ---
 
 # 如何管理时间、精力与个人系统

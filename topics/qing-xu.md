@@ -33,15 +33,19 @@ books:
     reason: 补上接纳、价值和行动，避免把控制情绪当作唯一目标。
     status: planned
   - title: 身体从未忘记
-    author: 待补
+    author: 贝塞尔·范德考克
+    slug: shen-ti-cong-wei-wang-ji
+    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
     role: 身体反应
     reason: 让读者理解强烈情绪有时与身体记忆和安全感有关。
-    status: planned
+    status: in_library
   - title: 我们为什么要睡觉
-    author: 待补
+    author: 马修·沃克
+    slug: wo-men-wei-shen-me-yao-shui-jiao
+    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
     role: 睡眠基础
     reason: 最后补充睡眠对情绪调节和恢复能力的基础影响。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解情绪

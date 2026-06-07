@@ -28,20 +28,26 @@ books:
     reason: 纠正只追随热情的误区，强调稀缺能力带来的选择权。
     status: planned
   - title: 一人企业
-    author: 待补
+    author: 保罗·贾维斯
+    slug: yi-ren-qi-ye
+    path: books/创业产品/保罗·贾维斯-一人企业.md
     role: 独立工作
     reason: 提供小规模、可持续、独立创造价值的职业想象。
-    status: planned
+    status: in_library
   - title: 每周工作4小时
-    author: 待补
+    author: 蒂莫西·费里斯
+    slug: mei-zhou-gong-zuo-4-xiao-shi
+    path: books/效率习惯/蒂莫西·费里斯-每周工作4小时.md
     role: 生活设计
     reason: 作为生活方式和工作边界的实验视角，而不是简单复制方法。
-    status: planned
+    status: in_library
   - title: 原则
-    author: 待补
+    author: 瑞·达利欧
+    slug: yuan-ze
+    path: books/个人成长/瑞·达利欧-原则.md
     role: 个人原则
     reason: 最后回到长期选择中的决策原则、复盘和自我管理。
-    status: planned
+    status: in_library
 ---
 
 # 职业选择阅读路径

@@ -33,15 +33,19 @@ books:
     reason: 解释气候变化如何影响经济决策、风险和未来分配。
     status: planned
   - title: 社会共通资本
-    author: 待补
+    author: 宇泽弘文
+    slug: she-hui-gong-tong-zi-ben
+    path: books/社会科学/宇泽弘文-社会共通资本.md
     role: 公共资本
     reason: 把自然、基础设施和制度看作需要共同维护的资本。
-    status: planned
+    status: in_library
   - title: 枪炮、病菌与钢铁
-    author: 待补
+    author: 贾雷德·戴蒙德
+    slug: qiang-pao-bing-jun-yu-gang-tie
+    path: books/社会科学/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
     role: 地理约束
     reason: 用地理和生态约束补足文明发展与资源环境的长期视角。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解环境、气候与可持续生活

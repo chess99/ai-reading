@@ -23,20 +23,26 @@ books:
     reason: 作为代谢和肥胖解释的争议视角阅读，不能直接当处方。
     status: planned
   - title: 深度营养
-    author: 待补
+    author: 凯瑟琳·沙纳汉
+    slug: shen-du-ying-yang
+    path: books/健康运动/凯瑟琳·沙纳汉-深度营养.md
     role: 争议视角
     reason: 作为饮食质量和传统饮食观点的争议视角阅读。
-    status: planned
+    status: in_library
   - title: 超越百岁
-    author: 待补
+    author: 彼得·阿提亚
+    slug: chao-yue-bai-sui
+    path: books/健康运动/彼得·阿提亚-超越百岁.md
     role: 长期风险
     reason: 把饮食与代谢放进长期健康风险和寿命质量中观察。
-    status: planned
+    status: in_library
   - title: 生理学
-    author: 待补
+    author: 朱大年,王庭槐
+    slug: sheng-li-xue
+    path: books/健康运动/朱大年,王庭槐-生理学.md
     role: 基础机制
     reason: 用生理学机制支撑对代谢、激素和身体系统的理解。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解饮食与代谢

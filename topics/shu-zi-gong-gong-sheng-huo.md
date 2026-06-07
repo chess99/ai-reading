@@ -8,20 +8,24 @@ group: 数字公共生活
 date: '2026-06-06'
 books:
   - title: 智人之上
-    author: 待补
+    author: 尤瓦尔·赫拉利
+    slug: zhi-ren-zhi-shang
+    path: books/社会科学/尤瓦尔·赫拉利-智人之上.md
     role: 信息网络史
     reason: 从信息网络的历史变化进入数字公共生活问题。
-    status: planned
+    status: in_library
   - title: 理解媒介
     author: 待补
     role: 媒介形式
     reason: 说明媒介形式如何改变人的感知、表达和关系。
     status: planned
   - title: 初识传播学
-    author: 待补
+    author: 埃姆·格里芬
+    slug: chu-shi-chuan-bo-xue
+    path: books/社会科学/埃姆·格里芬-初识传播学.md
     role: 传播基础
     reason: 提供传播过程、受众和媒介效果的基础语言。
-    status: planned
+    status: in_library
   - title: 过滤泡
     author: 待补
     role: 信息筛选
@@ -33,15 +37,19 @@ books:
     reason: 用数据和事实核查视角校正对世界的直觉误判。
     status: planned
   - title: 学会提问
-    author: 待补
+    author: 尼尔·布朗,斯图尔特·基利
+    slug: xue-hui-ti-wen
+    path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 批判提问
     reason: 提供识别论证、证据和假设的具体方法。
-    status: planned
+    status: in_library
   - title: 人的境况
-    author: 待补
+    author: 汉娜·阿伦特
+    slug: ren-de-jing-kuang
+    path: books/哲学/汉娜·阿伦特-人的境况.md
     role: 公共行动
     reason: 把信息网络问题连接到公共空间、行动和共同生活。
-    status: planned
+    status: in_library
 ---
 
 # 数字公共生活与信息网络

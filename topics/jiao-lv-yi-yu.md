@@ -28,10 +28,12 @@ books:
     reason: 用故事方式帮助读者理解抑郁、关系和自我评价。
     status: planned
   - title: 我们为什么要睡觉
-    author: 待补
+    author: 马修·沃克
+    slug: wo-men-wei-shen-me-yao-shui-jiao
+    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
     role: 睡眠支持
     reason: 把睡眠作为情绪恢复的重要条件，而非治疗替代。
-    status: planned
+    status: in_library
   - title: 运动改造大脑
     author: 待补
     role: 运动支持

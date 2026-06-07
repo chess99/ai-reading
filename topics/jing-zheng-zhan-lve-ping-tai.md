@@ -8,25 +8,31 @@ group: 平台网络
 date: '2026-06-06'
 books:
   - title: 竞争战略
-    author: 待补
+    author: 迈克尔·波特
+    slug: jing-zheng-zhan-l-e
+    path: books/商业管理/公司战略/迈克尔·波特-竞争战略.md
     role: 行业结构入口
     reason: 先用五力等框架理解利润从哪里来、竞争压力来自哪里。
-    status: planned
+    status: in_library
   - title: 好战略，坏战略
     author: 待补
     role: 战略质量
     reason: 帮助读者区分口号式战略和真正包含诊断、方针与行动的战略。
     status: planned
   - title: 创新者的窘境
-    author: 待补
+    author: 克莱顿·克里斯坦森
+    slug: chuang-xin-zhe-de-jiong-jing
+    path: books/商业管理/公司战略/克莱顿·克里斯坦森-创新者的窘境.md
     role: 创新冲击
     reason: 解释领先企业为什么会被新技术、新市场和低端切入拖入困境。
-    status: planned
+    status: in_library
   - title: 定位
-    author: 待补
+    author: 阿尔·里斯,杰克·特劳特
+    slug: ding-wei
+    path: books/商业管理/市场营销/阿尔·里斯,杰克·特劳特-定位.md
     role: 心智位置
     reason: 把竞争带到顾客认知和品牌位置，说明市场不只在产品里。
-    status: planned
+    status: in_library
   - title: 规模
     author: 待补
     role: 规模规律
@@ -38,10 +44,12 @@ books:
     reason: 系统解释双边市场、网络效应、治理规则和平台竞争。
     status: planned
   - title: 从零到一
-    author: 待补
+    author: 彼得·蒂尔,布莱克·马斯特斯
+    slug: cong-ling-dao-yi
+    path: books/商业管理/公司战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md
     role: 垄断命题
     reason: 用从零到一的视角检查独特性、垄断利润和竞争叙事。
-    status: planned
+    status: in_library
   - title: 监视资本主义时代
     author: 待补
     role: 风险收束

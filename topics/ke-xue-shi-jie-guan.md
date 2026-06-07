@@ -8,10 +8,12 @@ group: 证据与科学
 date: '2026-06-06'
 books:
   - title: 别逗了费曼先生
-    author: 待补
+    author: 费曼
+    slug: bie-dou-le-fei-man-xian-sheng
+    path: books/历史传记/费曼-别逗了费曼先生.md
     role: 科学精神入口
     reason: 用科学家的具体经历进入好奇、怀疑、动手验证和反权威的科学气质。
-    status: planned
+    status: in_library
   - title: 世界观
     author: 待补
     role: 科学史框架
@@ -23,10 +25,12 @@ books:
     reason: 说明常规科学、异常和范式更替如何发生，补上科学共同体的历史维度。
     status: planned
   - title: 无穷的开始
-    author: 待补
+    author: 戴维·多伊奇
+    slug: wu-qiong-de-kai-shi
+    path: books/哲学/戴维·多伊奇-无穷的开始.md
     role: 解释与进步
     reason: 把科学理解推进到好解释、可批判和知识进步，强调问题可以继续打开。
-    status: planned
+    status: in_library
   - title: 这才是心理学
     author: 待补
     role: 证据边界练习

@@ -8,15 +8,19 @@ group: 关系冲突
 date: '2026-06-06'
 books:
   - title: 亲密关系
-    author: 待补
+    author: 罗兰·米勒
+    slug: qin-mi-guan-xi
+    path: books/心理学/罗兰·米勒-亲密关系.md
     role: 冲突总览
     reason: 先理解亲密关系中的冲突、权力、承诺和关系维持如何互相影响。
-    status: planned
+    status: in_library
   - title: 依恋
-    author: 待补
+    author: 约翰·鲍尔比
+    slug: yi-lian
+    path: books/心理学/约翰·鲍尔比-依恋.md
     role: 依恋需求
     reason: 解释冲突中追逐、回避、抗议和沉默背后的安全感需求。
-    status: planned
+    status: in_library
   - title: 幸福的婚姻
     author: 待补
     role: 修复研究

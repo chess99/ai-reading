@@ -13,15 +13,19 @@ books:
     reason: 从街道、混合用途和邻里安全进入城市生活的具体观察。
     status: planned
   - title: 城市的胜利
-    author: 待补
+    author: 爱德华·格莱泽
+    slug: cheng-shi-de-sheng-li
+    path: books/社会科学/爱德华·格莱泽-城市的胜利.md
     role: 城市经济
     reason: 解释密度、创新和城市规模为什么会带来机会与代价。
-    status: planned
+    status: in_library
   - title: 社会共通资本
-    author: 待补
+    author: 宇泽弘文
+    slug: she-hui-gong-tong-zi-ben
+    path: books/社会科学/宇泽弘文-社会共通资本.md
     role: 公共条件
     reason: 把城市生活接到公共资本、基础设施和共同资源维护上。
-    status: planned
+    status: in_library
   - title: 乡土中国
     author: 待补
     role: 乡土对照
@@ -33,10 +37,12 @@ books:
     reason: 说明现代城市生活如何被工作身份、消费秩序和新贫困塑造。
     status: planned
   - title: 有闲阶级论
-    author: 待补
+    author: 托斯丹·凡勃伦
+    slug: you-xian-jie-ji-lun
+    path: books/社会科学/托斯丹·凡勃伦-有闲阶级论.md
     role: 阶层展示
     reason: 用闲暇、品味和炫耀性消费收束到生活方式背后的阶层信号。
-    status: planned
+    status: in_library
 ---
 
 # 城市、空间与生活方式

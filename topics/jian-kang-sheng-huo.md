@@ -8,40 +8,50 @@ group: 健康生活
 date: '2026-06-06'
 books:
   - title: 掌控习惯
-    author: 待补
+    author: 詹姆斯·克利尔
+    slug: zhang-kong-xi-guan
+    path: books/效率习惯/詹姆斯·克利尔-掌控习惯.md
     role: 行为入口
     reason: 先把健康生活拆成可重复的小行为和环境设计。
-    status: planned
+    status: in_library
   - title: 我们为什么要睡觉
-    author: 待补
+    author: 马修·沃克
+    slug: wo-men-wei-shen-me-yao-shui-jiao
+    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
     role: 睡眠基础
     reason: 说明睡眠如何影响认知、情绪、代谢和恢复。
-    status: planned
+    status: in_library
   - title: 运动改造大脑
     author: 待补
     role: 运动收益
     reason: 从大脑和情绪角度理解运动为什么是基础生活方式。
     status: planned
   - title: 身体使用手册
-    author: 待补
+    author: Kelly Starrett
+    slug: shen-ti-shi-yong-shou-ce
+    path: books/健康运动/Kelly Starrett-身体使用手册.md
     role: 身体理解
     reason: 提供对身体运行和日常保养的通俗框架。
-    status: planned
+    status: in_library
   - title: ACSM健身与健康完全指南
-    author: 待补
+    author: ACSM
+    slug: jian-shen-yu-jian-kang-wan-quan-zhi-nan
+    path: books/健康运动/ACSM-健身与健康完全指南.md
     role: 训练指南
     reason: 用专业指南补足运动频率、强度和安全边界。
-    status: planned
+    status: in_library
   - title: 精力管理
     author: 待补
     role: 能量节奏
     reason: 把健康行为和精力、恢复、工作节奏连接起来。
     status: planned
   - title: 超越百岁
-    author: 待补
+    author: 彼得·阿提亚
+    slug: chao-yue-bai-sui
+    path: books/健康运动/彼得·阿提亚-超越百岁.md
     role: 长寿视角
     reason: 从长期风险和寿命质量理解健康生活的长期目标。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立健康生活方式

@@ -8,10 +8,12 @@ group: 自尊与自我
 date: '2026-06-06'
 books:
   - title: 被讨厌的勇气
-    author: 待补
+    author: 岸见一郎,古贺史健
+    slug: bei-tao-yan-de-yong-qi
+    path: books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md
     role: 边界入口
     reason: 先用课题分离和自我接纳理解评价与责任边界。
-    status: planned
+    status: in_library
   - title: 自尊
     author: 待补
     role: 自尊机制

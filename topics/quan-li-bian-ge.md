@@ -8,10 +8,12 @@ group: 组织变革
 date: '2026-06-06'
 books:
   - title: 权力
-    author: 待补
+    author: 杰弗瑞·菲佛
+    slug: quan-li
+    path: books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md
     role: 权力来源
     reason: 先直面组织中资源、位置、联盟和影响力如何形成权力。
-    status: planned
+    status: in_library
   - title: 权力与影响力
     author: 待补
     role: 影响策略
@@ -23,25 +25,31 @@ books:
     reason: 把变革从计划文件转向紧迫感、情绪动员和行动。
     status: planned
   - title: 创新者的窘境
-    author: 待补
+    author: 克莱顿·克里斯坦森
+    slug: chuang-xin-zhe-de-jiong-jing
+    path: books/商业管理/公司战略/克莱顿·克里斯坦森-创新者的窘境.md
     role: 创新困境
     reason: 解释优秀组织为什么会被既有客户、利润模型和资源配置困住。
-    status: planned
+    status: in_library
   - title: 从优秀到卓越
-    author: 待补
+    author: 吉姆·柯林斯
+    slug: cong-you-xiu-dao-zhuo-yue
+    path: books/商业管理/公司战略/吉姆·柯林斯-从优秀到卓越.md
     role: 组织卓越
     reason: 提供组织长期改善、领导力、纪律和飞轮的视角。
-    status: planned
+    status: in_library
   - title: 重新定义公司
     author: 待补
     role: 文化重塑
     reason: 补充知识型组织中人才、文化和管理方式的变化。
     status: planned
   - title: 只有偏执狂才能生存
-    author: 待补
+    author: 安迪·格鲁夫
+    slug: zhi-you-pian-zhi-kuang-cai-neng-sheng-cun
+    path: books/商业管理/公司战略/安迪·格鲁夫-只有偏执狂才能生存.md
     role: 战略拐点
     reason: 最后处理行业变化和战略拐点下组织如何保持警觉。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解组织中的权力与变革

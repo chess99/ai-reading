@@ -8,45 +8,61 @@ group: 交易与周期
 date: '2026-06-06'
 books:
   - title: 股票大作手回忆录
-    author: 待补
+    author: 埃德温·勒费弗
+    slug: gu-piao-da-zuo-shou-hui-yi-lu
+    path: books/投资/交易心理/埃德温·勒费弗-股票大作手回忆录.md
     role: 交易经验入口
     reason: 用投机者的成败经验让读者先看到价格波动、仓位、情绪和纪律如何交织。
-    status: planned
+    status: in_library
   - title: 以交易为生
-    author: 待补
+    author: 亚历山大·埃尔德
+    slug: yi-jiao-yi-wei-sheng
+    path: books/投资/交易心理/亚历山大·埃尔德-以交易为生.md
     role: 交易系统框架
     reason: 把交易拆成方法、资金管理和心理控制，避免只把市场理解成判断涨跌。
-    status: planned
+    status: in_library
   - title: 金融怪杰
-    author: 待补
+    author: 杰克·施瓦格
+    slug: jin-rong-guai-jie
+    path: books/投资/交易心理/杰克·施瓦格-金融怪杰.md
     role: 策略访谈
     reason: 通过不同交易者的访谈，展示市场方法可以多样，但风险约束和执行纪律不可缺席。
-    status: planned
+    status: in_library
   - title: 海龟交易法则
-    author: 待补
+    author: 柯蒂斯·费思
+    slug: hai-gui-jiao-yi-fa-ze
+    path: books/投资/交易系统/柯蒂斯·费思-海龟交易法则.md
     role: 规则化实验
     reason: 用趋势跟踪训练案例说明系统、信号、仓位和一致执行之间的关系。
-    status: planned
+    status: in_library
   - title: 自律的交易者
-    author: 待补
+    author: 马克·道格拉斯
+    slug: zi-lv-de-jiao-yi-zhe
+    path: books/投资/交易心理/马克·道格拉斯-自律的交易者.md
     role: 心理约束
     reason: 专门处理恐惧、贪婪、亏损厌恶和自我破坏，让交易风险回到人的行为。
-    status: planned
+    status: in_library
   - title: 金融炼金术
-    author: 待补
+    author: 乔治·索罗斯
+    slug: jin-rong-lian-jin-shu
+    path: books/投资/宏观周期/乔治·索罗斯-金融炼金术.md
     role: 反身性视角
     reason: 引入市场参与者会反过来影响市场的视角，解释为什么价格不只是被动反映信息。
-    status: planned
+    status: in_library
   - title: 债务危机
-    author: 待补
+    author: 瑞·达利欧
+    slug: zhai-wu-wei-ji
+    path: books/投资/宏观周期/瑞·达利欧-债务危机.md
     role: 宏观风险
     reason: 把单个交易决策连接到信用扩张、杠杆收缩和债务周期。
-    status: planned
+    status: in_library
   - title: 周期
-    author: 待补
+    author: 霍华德·马克斯
+    slug: zhou-qi
+    path: books/投资/价值投资/霍华德·马克斯-周期.md
     role: 周期收束
     reason: 用市场周期、情绪周期和风险偏好的变化收束全路径，帮助读者识别阶段性环境。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解交易、周期与市场风险

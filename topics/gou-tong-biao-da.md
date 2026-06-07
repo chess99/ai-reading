@@ -8,10 +8,12 @@ group: 沟通表达
 date: '2026-06-06'
 books:
   - title: 沟通的本质
-    author: 待补
+    author: 罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特
+    slug: gou-tong-de-ben-zhi
+    path: books/心理学/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md
     role: 沟通基础
     reason: 先理解信息、关系、倾听、冲突和语境如何共同影响沟通。
-    status: planned
+    status: in_library
   - title: 非暴力沟通
     author: 待补
     role: 情绪表达

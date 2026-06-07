@@ -8,25 +8,33 @@ group: 产品机会
 date: '2026-06-06'
 books:
   - title: 从零到一
-    author: 待补
+    author: 彼得·蒂尔,布莱克·马斯特斯
+    slug: cong-ling-dao-yi
+    path: books/商业管理/公司战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md
     role: 独特命题
     reason: 先判断产品是否创造新价值，而不是在既有市场里做轻微改良。
-    status: planned
+    status: in_library
   - title: 精益创业
-    author: 待补
+    author: 埃里克·莱斯
+    slug: jing-yi-chuang-ye
+    path: books/创业产品/埃里克·莱斯-精益创业.md
     role: 验证学习
     reason: 把商业计划拆成需要通过真实行为验证的关键假设。
-    status: planned
+    status: in_library
   - title: 四步创业法
-    author: 待补
+    author: 史蒂夫·布兰克
+    slug: si-bu-chuang-ye-fa
+    path: books/创业产品/史蒂夫·布兰克-四步创业法.md
     role: 客户开发
     reason: 区分探索商业模式和执行商业计划，避免过早扩张错误假设。
-    status: planned
+    status: in_library
   - title: 客户开发入门
-    author: 待补
+    author: 辛迪·阿尔瓦雷斯
+    slug: ke-hu-kai-fa-ru-men
+    path: books/创业产品/辛迪·阿尔瓦雷斯-客户开发入门.md
     role: 用户访谈
     reason: 提供低成本访谈方法，帮助团队发现真实任务、约束和购买动机。
-    status: planned
+    status: in_library
   - title: 妈妈测试
     author: 待补
     role: 访谈校准
@@ -43,20 +51,24 @@ books:
     reason: 帮助把用户任务、旅程、优先级和版本切分放在同一张地图上。
     status: planned
   - title: 产品开发流程原理
-    author: 待补
+    author: 唐纳德·莱纳特森
+    slug: chan-pin-kai-fa-liu-cheng-yuan-li
+    path: books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md
     role: 交付系统
     reason: 从队列、批量、在制品和反馈周期理解产品开发为什么会慢而失控。
-    status: planned
+    status: in_library
   - title: 创业维艰
     author: 待补
     role: 创业管理
     reason: 补上公司在压力、人员、决策和生存困境中的管理现实。
     status: planned
   - title: 增长黑客
-    author: 待补
+    author: 肖恩·埃利斯
+    slug: zeng-zhang-hei-ke
+    path: books/创业产品/肖恩·埃利斯-增长黑客.md
     role: 增长实验
     reason: 最后把增长视为围绕激活、留存、推荐和收入的实验系统。
-    status: planned
+    status: in_library
 ---
 
 # 产品从 0 到 1

@@ -8,25 +8,31 @@ group: 压力恢复
 date: '2026-06-06'
 books:
   - title: 身体从未忘记
-    author: 待补
+    author: 贝塞尔·范德考克
+    slug: shen-ti-cong-wei-wang-ji
+    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
     role: 身体记忆
     reason: 先理解压力和创伤如何留在身体反应中。
-    status: planned
+    status: in_library
   - title: 我们为什么要睡觉
-    author: 待补
+    author: 马修·沃克
+    slug: wo-men-wei-shen-me-yao-shui-jiao
+    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
     role: 睡眠恢复
     reason: 说明睡眠在情绪、记忆和压力恢复中的基础作用。
-    status: planned
+    status: in_library
   - title: 运动改造大脑
     author: 待补
     role: 运动调节
     reason: 从大脑和情绪角度理解运动如何参与压力调节。
     status: planned
   - title: 身体使用手册
-    author: 待补
+    author: Kelly Starrett
+    slug: shen-ti-shi-yong-shou-ce
+    path: books/健康运动/Kelly Starrett-身体使用手册.md
     role: 身体理解
     reason: 提供观察身体系统和日常信号的通俗框架。
-    status: planned
+    status: in_library
   - title: 精力管理
     author: 待补
     role: 恢复节奏

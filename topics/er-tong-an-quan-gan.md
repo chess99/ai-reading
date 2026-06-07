@@ -8,10 +8,12 @@ group: 教育与成长
 date: '2026-06-06'
 books:
   - title: 依恋
-    author: 待补
+    author: 约翰·鲍尔比
+    slug: yi-lian
+    path: books/心理学/约翰·鲍尔比-依恋.md
     role: 安全感基础
     reason: 先理解早期关系如何影响儿童探索、分离和情绪调节。
-    status: planned
+    status: in_library
   - title: 给孩子一生的安全感
     author: 待补
     role: 安全养育

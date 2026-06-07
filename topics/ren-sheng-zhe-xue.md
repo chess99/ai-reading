@@ -43,10 +43,12 @@ books:
     reason: 用文学方式呈现经验、欲望和自我寻找。
     status: planned
   - title: 人的境况
-    author: 待补
+    author: 汉娜·阿伦特
+    slug: ren-de-jing-kuang
+    path: books/哲学/汉娜·阿伦特-人的境况.md
     role: 行动空间
     reason: 把个人人生问题推进到劳动、工作、行动和公共世界。
-    status: planned
+    status: in_library
 ---
 
 # 人生哲学入门

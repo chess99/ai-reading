@@ -8,20 +8,24 @@ group: 财务常识
 date: '2026-06-06'
 books:
   - title: 小狗钱钱
-    author: 待补
+    author: 博多·舍费尔
+    slug: xiao-gou-qian-qian
+    path: books/投资/理财入门/博多·舍费尔-小狗钱钱.md
     role: 金钱入口
     reason: 用故事把储蓄、目标和现金流先讲清楚，适合没有财务训练的读者建立第一层行动感。
-    status: planned
+    status: in_library
   - title: 巴比伦最富有的人
     author: 待补
     role: 储蓄规则
     reason: 把入口处的愿望变成收入留存、控制支出和让钱工作的基本规则。
     status: planned
   - title: 富爸爸穷爸爸
-    author: 待补
+    author: 罗伯特·清崎
+    slug: fu-ba-ba-qiong-ba-ba
+    path: books/投资/理财入门/罗伯特·清崎-富爸爸穷爸爸.md
     role: 资产意识
     reason: 帮读者区分收入、负债和资产，理解为什么工资增长不自动等于财务安全。
-    status: planned
+    status: in_library
   - title: 邻家的百万富翁
     author: 待补
     role: 家庭财富校准
@@ -33,10 +37,12 @@ books:
     reason: 解释金钱决策中的安全感、比较、耐心和运气，让财务常识不只停在算术层面。
     status: planned
   - title: 一本书读懂财报
-    author: 待补
+    author: 肖星
+    slug: yi-ben-shu-du-dong-cai-bao
+    path: books/投资/价值投资/肖星-一本书读懂财报.md
     role: 财报入口
     reason: 把个人财务意识连接到企业报表，帮助读者看懂收入、利润、现金流和资产负债的关系。
-    status: planned
+    status: in_library
 ---
 
 # 建立财务常识

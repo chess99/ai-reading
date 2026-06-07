@@ -13,30 +13,38 @@ books:
     reason: 用寓言方式讲清生产、储蓄、借贷和货币，让读者先有经济循环的直观图像。
     status: planned
   - title: 像经济学家一样思考
-    author: 待补
+    author: 宇泽弘文
+    slug: xiang-jing-ji-xue-jia-yi-yang-si-kao
+    path: books/社会科学/经济学/宇泽弘文-像经济学家一样思考.md
     role: 思维训练
     reason: 引导读者用激励、机会成本和边际变化理解日常经济选择。
-    status: planned
+    status: in_library
   - title: 经济学原理
     author: 待补
     role: 教科书底座
     reason: 系统补上供需、市场、宏观指标、货币和政策等基本概念。
     status: planned
   - title: 置身事内
-    author: 待补
+    author: 兰小欢
+    slug: zhi-shen-shi-nei
+    path: books/社会科学/经济学/兰小欢-置身事内.md
     role: 中国制度环境
     reason: 把抽象经济概念放进地方政府、土地财政、产业政策和债务约束中观察。
-    status: planned
+    status: in_library
   - title: 贫穷的本质
-    author: 待补
+    author: 阿比吉特·班纳吉、埃斯特·迪弗洛
+    slug: pin-qiong-de-ben-zhi
+    path: books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
     role: 发展经济学
     reason: 用贫困研究和随机实验提醒读者，宏大解释需要回到具体激励和约束。
-    status: planned
+    status: in_library
   - title: 国富论
-    author: 待补
+    author: 亚当·斯密
+    slug: guo-fu-lun
+    path: books/社会科学/亚当·斯密-国富论.md
     role: 古典源头
     reason: 回到分工、市场和政治经济学源头，理解现代经济语言的早期问题意识。
-    status: planned
+    status: in_library
   - title: 就业、利息和货币通论
     author: 待补
     role: 宏观转折

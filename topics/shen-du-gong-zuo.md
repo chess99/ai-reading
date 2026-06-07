@@ -8,40 +8,52 @@ group: 注意力与深度工作
 date: '2026-06-06'
 books:
   - title: 深度工作
-    author: 待补
+    author: 卡尔·纽波特
+    slug: shen-du-gong-zuo
+    path: books/效率习惯/卡尔·纽波特-深度工作.md
     role: 注意力价值入口
     reason: 先说明高质量注意力为什么稀缺，以及深度工作与浅层忙碌的区别。
-    status: planned
+    status: in_library
   - title: 心流
-    author: 待补
+    author: 米哈里·契克森米哈赖
+    slug: xin-liu
+    path: books/效率习惯/米哈里·契克森米哈赖-心流.md
     role: 专注体验框架
     reason: 补上挑战、技能和即时反馈之间的关系，让专注不只是关掉干扰。
-    status: planned
+    status: in_library
   - title: 刻意练习
-    author: 待补
+    author: 安德斯·艾利克森
+    slug: ke-yi-lian-xi
+    path: books/效率习惯/安德斯·艾利克森-刻意练习.md
     role: 能力增长机制
     reason: 把深度工作连接到技能提升，说明专注时间需要反馈、难度和重复训练。
-    status: planned
+    status: in_library
   - title: 搞定
     author: 待补
     role: 任务系统清理
     reason: 处理悬而未决的任务和承诺，减少它们对深度工作的后台占用。
     status: planned
   - title: 精要主义
-    author: 待补
+    author: 格雷戈·麦吉沃恩
+    slug: jing-yao-zhu-yi
+    path: books/效率习惯/格雷戈·麦吉沃恩-精要主义.md
     role: 取舍边界
     reason: 帮助读者减少任务入口，把深度工作保护在少数真正重要的目标上。
-    status: planned
+    status: in_library
   - title: 拖延心理学
-    author: 待补
+    author: 简·博克,莱诺拉·袁
+    slug: tuo-yan-xin-li-xue
+    path: books/心理学/简·博克,莱诺拉·袁-拖延心理学.md
     role: 开始阻力分析
     reason: 解释高价值任务为什么常被回避，尤其是评价压力、完美主义和模糊目标。
-    status: planned
+    status: in_library
   - title: 稀缺
-    author: 待补
+    author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
+    slug: xi-que
+    path: books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
     role: 认知带宽约束
     reason: 用带宽和隧道效应解释为什么压力与短缺会直接削弱专注能力。
-    status: planned
+    status: in_library
   - title: 找回专注力
     author: 待补
     role: 注意力环境修复
@@ -53,10 +65,12 @@ books:
     reason: 纠正把深度工作等同于高强度透支的误解，强调少量高质量产出和长期节奏。
     status: planned
   - title: 掌控习惯
-    author: 待补
+    author: 詹姆斯·克利尔
+    slug: zhang-kong-xi-guan
+    path: books/效率习惯/詹姆斯·克利尔-掌控习惯.md
     role: 日常化收束
     reason: 最后把深度工作落到固定提示、环境和重复动作中，让专注成为可维持的习惯。
-    status: planned
+    status: in_library
 ---
 
 # 如何提高深度工作能力

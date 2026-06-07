@@ -8,10 +8,12 @@ group: 创伤与修复
 date: '2026-06-06'
 books:
   - title: 身体从未忘记
-    author: 待补
+    author: 贝塞尔·范德考克
+    slug: shen-ti-cong-wei-wang-ji
+    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
     role: 身体记忆入口
     reason: 先解释创伤如何留在身体、警觉系统和感受中，避免把创伤只理解成回忆问题。
-    status: planned
+    status: in_library
   - title: 创伤与复原
     author: 待补
     role: 复原阶段框架
@@ -28,10 +30,12 @@ books:
     reason: 处理长期伤害后的愤怒、边界和不必急于原谅，避免把修复简化成和解。
     status: planned
   - title: 依恋
-    author: 待补
+    author: 约翰·鲍尔比
+    slug: yi-lian
+    path: books/心理学/约翰·鲍尔比-依恋.md
     role: 关系安全框架
     reason: 说明早期依恋如何影响安全感和亲密关系，为后面的关系修复提供基础。
-    status: planned
+    status: in_library
   - title: 抱紧我
     author: 待补
     role: 亲密关系修复
@@ -43,10 +47,12 @@ books:
     reason: 用咨询现场展示求助、关系和叙事重建，让读者看见专业支持的实际形态。
     status: planned
   - title: 我们为什么要睡觉
-    author: 待补
+    author: 马修·沃克
+    slug: wo-men-wei-shen-me-yao-shui-jiao
+    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
     role: 睡眠恢复条件
     reason: 把睡眠作为神经系统恢复的重要条件，但不把它当成创伤治疗的替代。
-    status: planned
+    status: in_library
   - title: 运动改造大脑
     author: 待补
     role: 身体恢复支持

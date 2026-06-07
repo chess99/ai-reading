@@ -8,10 +8,12 @@ group: 平台算法
 date: '2026-06-06'
 books:
   - title: 娱乐至死
-    author: 待补
+    author: 尼尔·波兹曼
+    slug: yu-le-zhi-si
+    path: books/社会科学/尼尔·波兹曼-娱乐至死.md
     role: 媒介入口
     reason: 先看媒介形式如何把公共讨论推向娱乐化。
-    status: planned
+    status: in_library
   - title: 注意力商人
     author: 待补
     role: 注意力商业

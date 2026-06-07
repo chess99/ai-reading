@@ -18,35 +18,43 @@ books:
     reason: 训练把判断写成概率、期限和条件，并根据新证据持续更新。
     status: planned
   - title: 噪声
-    author: 待补
+    author: 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦
+    slug: zao-sheng
+    path: books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
     role: 判断波动检查
     reason: 说明预测和评估会受随机波动影响，帮助读者检查标准是否一致。
-    status: planned
+    status: in_library
   - title: 黑天鹅
-    author: 待补
+    author: 纳西姆·尼古拉斯·塔勒布
+    slug: hei-tian-e
+    path: books/社会科学/纳西姆·尼古拉斯·塔勒布-黑天鹅.md
     role: 极端事件边界
     reason: 提醒读者某些罕见事件无法靠常规样本轻易预测，却会改变整体结果。
-    status: planned
+    status: in_library
   - title: 风险、不确定性与利润
     author: 待补
     role: 不确定性区分
     reason: 用风险和不可测不确定性的区分，补上概率模型的边界。
     status: planned
   - title: 反脆弱
-    author: 待补
+    author: 纳西姆·塔勒布
+    slug: fan-cui-ruo
+    path: books/思维方式/纳西姆·塔勒布-反脆弱.md
     role: 暴露面设计
     reason: 把重点从预测正确转向怎样设计面对波动仍能受益或少受伤的结构。
-    status: planned
+    status: in_library
   - title: 对赌
     author: 待补
     role: 决策复盘
     reason: 帮助读者把结果质量和决策质量分开，用下注视角改进复盘。
     status: planned
   - title: 投资最重要的事
-    author: 待补
+    author: 霍华德·马克斯
+    slug: tou-zi-zui-zhong-yao-de-shi
+    path: books/投资/价值投资/霍华德·马克斯-投资最重要的事.md
     role: 投资风险收束
     reason: 最后把概率、周期和风险意识放进投资场景，强调防守、边际和不确定性。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解概率、风险与预测

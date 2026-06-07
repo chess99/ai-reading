@@ -8,15 +8,19 @@ group: 法律常识
 date: '2026-06-06'
 books:
   - title: 学点法律避点坑
-    author: 待补
+    author: 隋兵
+    slug: xue-dian-fa-lv-bi-dian-keng
+    path: books/社会科学/隋兵-学点法律避点坑.md
     role: 日常入口
     reason: 先从普通人容易遇到的合同、消费、劳动和家庭风险进入法律意识。
-    status: planned
+    status: in_library
   - title: 洞穴奇案
-    author: 待补
+    author: 富勒、彼得·萨伯
+    slug: dong-xue-qi-an
+    path: books/思维方式/富勒,彼得·萨伯-洞穴奇案.md
     role: 法理练习
     reason: 用极端案件训练读者理解法律解释、程序和价值冲突。
-    status: planned
+    status: in_library
   - title: 看得见的正义
     author: 待补
     role: 程序意识

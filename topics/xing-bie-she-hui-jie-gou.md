@@ -8,10 +8,12 @@ group: 性别结构
 date: '2026-06-06'
 books:
   - title: 厌女
-    author: 待补
+    author: 上野千鹤子
+    slug: yan-nv
+    path: books/社会科学/上野千鹤子-厌女.md
     role: 性别秩序入口
     reason: 先让读者看到厌女如何成为社会秩序的一部分，而不只是个人态度。
-    status: planned
+    status: in_library
   - title: 第二性
     author: 待补
     role: 女性处境框架
@@ -28,10 +30,12 @@ books:
     reason: 提供性别关系如何嵌入组织、家庭和日常互动的社会学解释。
     status: planned
   - title: 亲密关系
-    author: 待补
+    author: 罗兰·米勒
+    slug: qin-mi-guan-xi
+    path: books/心理学/罗兰·米勒-亲密关系.md
     role: 亲密关系切面
     reason: 说明性别结构也会进入亲密关系中的期待、分工和权力感。
-    status: planned
+    status: in_library
   - title: 社会学的想象力
     author: 待补
     role: 社会学收束

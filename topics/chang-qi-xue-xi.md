@@ -23,30 +23,38 @@ books:
     reason: 把专注、发散、拖延和练习安排放进可操作的学习过程。
     status: planned
   - title: 刻意练习
-    author: 待补
+    author: 安德斯·艾利克森
+    slug: ke-yi-lian-xi
+    path: books/效率习惯/安德斯·艾利克森-刻意练习.md
     role: 能力训练
     reason: 说明长期学习需要明确技能、反馈和逐步提高的难度。
-    status: planned
+    status: in_library
   - title: 心流
-    author: 待补
+    author: 米哈里·契克森米哈赖
+    slug: xin-liu
+    path: books/效率习惯/米哈里·契克森米哈赖-心流.md
     role: 投入状态
     reason: 帮助设计挑战与能力匹配的学习任务。
-    status: planned
+    status: in_library
   - title: 掌控习惯
-    author: 待补
+    author: 詹姆斯·克利尔
+    slug: zhang-kong-xi-guan
+    path: books/效率习惯/詹姆斯·克利尔-掌控习惯.md
     role: 学习习惯
     reason: 用提示、环境和身份让学习在普通日子里持续发生。
-    status: planned
+    status: in_library
   - title: 终身成长
     author: 待补
     role: 成长心态
     reason: 处理失败、反馈和能力可发展性的心理框架。
     status: planned
   - title: 深度工作
-    author: 待补
+    author: 卡尔·纽波特
+    slug: shen-du-gong-zuo
+    path: books/效率习惯/卡尔·纽波特-深度工作.md
     role: 专注环境
     reason: 最后为长期学习提供高质量注意力和无干扰环境。
-    status: planned
+    status: in_library
 ---
 
 # 如何长期坚持学习

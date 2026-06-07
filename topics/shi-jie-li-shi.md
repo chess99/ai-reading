@@ -13,15 +13,19 @@ books:
     reason: 先建立世界史的大时间线和区域框架。
     status: planned
   - title: 人类简史
-    author: 待补
+    author: 尤瓦尔·赫拉利
+    slug: ren-lei-jian-shi
+    path: books/社会科学/尤瓦尔·赫拉利-人类简史.md
     role: 人类叙事
     reason: 用认知、农业、国家和科技等大叙事提供跨区域比较入口。
-    status: planned
+    status: in_library
   - title: 枪炮、病菌与钢铁
-    author: 待补
+    author: 贾雷德·戴蒙德
+    slug: qiang-pao-bing-jun-yu-gang-tie
+    path: books/社会科学/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
     role: 地理条件
     reason: 解释地理、物种、疾病和技术扩散如何影响长期差异。
-    status: planned
+    status: in_library
   - title: 丝绸之路
     author: 待补
     role: 贸易网络
@@ -38,10 +42,12 @@ books:
     reason: 把历史经验接到国际秩序、外交传统和大国关系。
     status: planned
   - title: 未来简史
-    author: 待补
+    author: 尤瓦尔·赫拉利
+    slug: wei-lai-jian-shi
+    path: books/社会科学/尤瓦尔·赫拉利-未来简史.md
     role: 现代风险
     reason: 放在末尾，提醒读者现代技术和未来想象也会重写历史问题。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解世界历史

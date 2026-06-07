@@ -8,25 +8,31 @@ group: 金钱心理
 date: '2026-06-06'
 books:
   - title: 助推
-    author: 待补
+    author: 理查德·塞勒、卡斯·桑斯坦
+    slug: zhu-tui
+    path: books/思维方式/理查德·塞勒,卡斯·桑斯坦-助推.md
     role: 选择架构
     reason: 从默认选项和环境设计进入，让读者看到选择并不只由理性意愿决定。
-    status: planned
+    status: in_library
   - title: 怪诞行为学
     author: 待补
     role: 非理性实验
     reason: 用实验和日常案例展示定价、诱饵、期待和社会规范如何影响经济行为。
     status: planned
   - title: 思考，快与慢
-    author: 待补
+    author: 丹尼尔·卡尼曼
+    slug: si-kao-kuai-yu-man
+    path: books/思维方式/丹尼尔·卡尼曼-思考，快与慢.md
     role: 双系统框架
     reason: 提供启发式、偏差和快慢系统的核心语言，支撑后续理解金钱决策。
-    status: planned
+    status: in_library
   - title: 稀缺
-    author: 待补
+    author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
+    slug: xi-que
+    path: books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
     role: 带宽约束
     reason: 解释缺钱、缺时间和压力如何占用认知带宽，改变人的选择质量。
-    status: planned
+    status: in_library
   - title: 金钱心理学
     author: 待补
     role: 金钱叙事
@@ -38,10 +44,12 @@ books:
     reason: 通过行为经济学的发展史，说明经济模型如何逐步容纳真实人的偏差。
     status: planned
   - title: 影响力
-    author: 待补
+    author: 罗伯特·西奥迪尼
+    slug: ying-xiang-li
+    path: books/商业管理/组织行为学/罗伯特·西奥迪尼-影响力.md
     role: 说服机制
     reason: 把个人决策放进互惠、承诺、权威、稀缺和社会认同等外部影响中。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解行为经济学与金钱心理

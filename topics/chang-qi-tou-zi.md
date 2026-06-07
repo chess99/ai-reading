@@ -8,40 +8,52 @@ group: 长期投资
 date: '2026-06-06'
 books:
   - title: 共同基金常识
-    author: 待补
+    author: 约翰·博格
+    slug: gong-tong-ji-jin-chang-shi
+    path: books/投资/理财入门/约翰·博格-共同基金常识.md
     role: 低成本入口
     reason: 先说明费用、分散和长期持有为什么重要，让普通投资者从可执行的基础选择进入。
-    status: planned
+    status: in_library
   - title: 聪明的投资者
-    author: 待补
+    author: 本杰明·格雷厄姆
+    slug: cong-ming-de-tou-zi-zhe
+    path: books/投资/价值投资/本杰明·格雷厄姆-聪明的投资者.md
     role: 安全边际
     reason: 建立市场先生、安全边际和防御型投资者的语言，避免把长期投资误解为盲目持有。
-    status: planned
+    status: in_library
   - title: 金钱心理学
     author: 待补
     role: 行为耐心
     reason: 解释复利、运气、风险承受和个人经历如何影响能否长期留在市场里。
     status: planned
   - title: 投资最重要的事
-    author: 待补
+    author: 霍华德·马克斯
+    slug: tou-zi-zui-zhong-yao-de-shi
+    path: books/投资/价值投资/霍华德·马克斯-投资最重要的事.md
     role: 风险框架
     reason: 把收益追求转向风险识别、逆向思考和市场共识的偏差。
-    status: planned
+    status: in_library
   - title: 周期
-    author: 待补
+    author: 霍华德·马克斯
+    slug: zhou-qi
+    path: books/投资/价值投资/霍华德·马克斯-周期.md
     role: 市场节奏
     reason: 让读者理解长期投资仍会穿过周期，不同阶段的情绪和价格不能按同一种方式处理。
-    status: planned
+    status: in_library
   - title: 巴菲特致股东的信
-    author: 待补
+    author: 沃伦·巴菲特
+    slug: ba-fei-te-zhi-gu-dong-de-xin
+    path: books/投资/价值投资/沃伦·巴菲特-巴菲特致股东的信.md
     role: 企业长期主义
     reason: 用长期经营和资本配置的案例，说明持有好资产并不等于忽视企业质量。
-    status: planned
+    status: in_library
   - title: 穷查理宝典
-    author: 待补
+    author: 查理·芒格
+    slug: qiong-cha-li-bao-dian
+    path: books/投资/价值投资/查理·芒格-穷查理宝典.md
     role: 多元思维
     reason: 放在末段扩展判断维度，让投资决策连接到误判、激励、能力圈和跨学科常识。
-    status: planned
+    status: in_library
 ---
 
 # 普通人如何长期投资

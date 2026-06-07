@@ -38,10 +38,12 @@ books:
     reason: 提供中国作为历史共同体和现代国家之间的转折视角。
     status: planned
   - title: 置身事内
-    author: 待补
+    author: 兰小欢
+    slug: zhi-shen-shi-nei
+    path: books/社会科学/经济学/兰小欢-置身事内.md
     role: 当代治理
     reason: 把历史转型接到地方政府、财政、产业和政策执行。
-    status: planned
+    status: in_library
   - title: 旧制度与大革命
     author: 待补
     role: 比较收束

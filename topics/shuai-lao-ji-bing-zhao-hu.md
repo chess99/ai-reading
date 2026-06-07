@@ -8,10 +8,12 @@ group: 衰老疾病
 date: '2026-06-06'
 books:
   - title: 超越百岁
-    author: 待补
+    author: 彼得·阿提亚
+    slug: chao-yue-bai-sui
+    path: books/健康运动/彼得·阿提亚-超越百岁.md
     role: 长寿医学
     reason: 从健康寿命、慢病风险和长期功能进入衰老问题。
-    status: planned
+    status: in_library
   - title: 最好的告别
     author: 待补
     role: 照护选择
@@ -23,10 +25,12 @@ books:
     reason: 从患者和医生双重视角理解疾病如何改变生命叙事。
     status: planned
   - title: 我们为什么要睡觉
-    author: 待补
+    author: 马修·沃克
+    slug: wo-men-wei-shen-me-yao-shui-jiao
+    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
     role: 睡眠支撑
     reason: 把睡眠放入认知、恢复和长期健康支持中。
-    status: planned
+    status: in_library
   - title: 运动改造大脑
     author: 待补
     role: 运动支撑

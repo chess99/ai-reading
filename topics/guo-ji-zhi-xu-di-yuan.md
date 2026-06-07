@@ -38,10 +38,12 @@ books:
     reason: 提醒读者国际竞争也涉及开放制度、批评能力和极权风险。
     status: planned
   - title: 未来简史
-    author: 待补
+    author: 尤瓦尔·赫拉利
+    slug: wei-lai-jian-shi
+    path: books/社会科学/尤瓦尔·赫拉利-未来简史.md
     role: 未来风险
     reason: 收束到技术、算法和人类未来的不确定性，扩展传统地缘视角。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解国际秩序与地缘风险

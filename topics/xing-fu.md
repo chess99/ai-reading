@@ -18,20 +18,26 @@ books:
     reason: 提供优势、积极情绪和意义生活的心理学框架。
     status: planned
   - title: 心流
-    author: 待补
+    author: 米哈里·契克森米哈赖
+    slug: xin-liu
+    path: books/效率习惯/米哈里·契克森米哈赖-心流.md
     role: 沉浸体验
     reason: 解释专注、挑战和能力匹配如何带来更稳定的满足。
-    status: planned
+    status: in_library
   - title: 亲密关系
-    author: 待补
+    author: 罗兰·米勒
+    slug: qin-mi-guan-xi
+    path: books/心理学/罗兰·米勒-亲密关系.md
     role: 关系基础
     reason: 提醒幸福不是纯个人状态，也来自亲密关系质量。
-    status: planned
+    status: in_library
   - title: 被讨厌的勇气
-    author: 待补
+    author: 岸见一郎,古贺史健
+    slug: bei-tao-yan-de-yong-qi
+    path: books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md
     role: 自我接纳
     reason: 从课题分离和自我接纳处理过度依赖外部评价的问题。
-    status: planned
+    status: in_library
   - title: 人生的智慧
     author: 待补
     role: 人生判断

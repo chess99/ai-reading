@@ -23,25 +23,31 @@ books:
     reason: 补上压力、冲动和意志力失败背后的心理机制。
     status: planned
   - title: 稀缺
-    author: 待补
+    author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
+    slug: xi-que
+    path: books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
     role: 带宽压力
     reason: 说明稀缺感如何占用认知带宽，削弱长期选择能力。
-    status: planned
+    status: in_library
   - title: 习惯的力量
-    author: 待补
+    author: 查尔斯·都希格
+    slug: xi-guan-de-li-liang
+    path: books/效率习惯/查尔斯·都希格-习惯的力量.md
     role: 习惯回路
     reason: 用提示、惯常行为和奖励理解重复行为如何形成。
-    status: planned
+    status: in_library
   - title: 活出生命的意义
     author: 待补
     role: 意义支撑
     reason: 把改变行为和意义、责任、生活方向连接起来。
     status: planned
   - title: 反脆弱
-    author: 待补
+    author: 纳西姆·塔勒布
+    slug: fan-cui-ruo
+    path: books/思维方式/纳西姆·塔勒布-反脆弱.md
     role: 承受不确定
     reason: 帮助理解如何调整暴露面，让系统不被波动轻易击穿。
-    status: planned
+    status: in_library
   - title: 沉思录
     author: 待补
     role: 古典修身

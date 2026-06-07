@@ -28,10 +28,12 @@ books:
     reason: 把注意力拉回此刻经验，处理被念头卷走的问题。
     status: planned
   - title: 人的境况
-    author: 待补
+    author: 汉娜·阿伦特
+    slug: ren-de-jing-kuang
+    path: books/哲学/汉娜·阿伦特-人的境况.md
     role: 行动空间
     reason: 把自由放进劳动、工作、行动和公共世界中理解。
-    status: planned
+    status: in_library
   - title: 开放社会及其敌人
     author: 待补
     role: 社会边界

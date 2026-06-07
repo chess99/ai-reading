@@ -38,10 +38,12 @@ books:
     reason: 把中国历史放到文明、国家和现代性的枢纽位置重新理解。
     status: planned
   - title: 曾国藩传
-    author: 待补
+    author: 张宏杰
+    slug: ceng-guo-fan-chuan
+    path: books/历史传记/张宏杰-曾国藩传.md
     role: 人物收束
     reason: 用人物传记把制度、时代和个人选择放到同一幅图里。
-    status: planned
+    status: in_library
 ---
 
 # 中国历史入门

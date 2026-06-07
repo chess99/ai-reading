@@ -8,15 +8,19 @@ group: 系统与复杂性
 date: '2026-06-06'
 books:
   - title: 系统之美
-    author: 待补
+    author: 德内拉·梅多斯
+    slug: xi-tong-zhi-mei
+    path: books/思维方式/德内拉·梅多斯-系统之美.md
     role: 反馈回路入口
     reason: 用存量、流量和反馈回路打开系统视角，让读者先看见结构怎样塑造行为。
-    status: planned
+    status: in_library
   - title: 控制论与科学方法论
-    author: 待补
+    author: 金观涛、华国凡
+    slug: kong-zhi-lun-yu-ke-xue-fang-fa-lun
+    path: books/思维方式/金观涛、华国凡-控制论与科学方法论.md
     role: 控制与调节框架
     reason: 补上反馈、控制、信息和方法论语言，避免把系统思维只理解成画关系图。
-    status: planned
+    status: in_library
   - title: 第五项修炼
     author: 待补
     role: 组织学习应用
@@ -43,10 +47,12 @@ books:
     reason: 把复杂性放进市场和经济演化中，说明适应、路径依赖和反馈如何影响现实选择。
     status: planned
   - title: 弹性
-    author: 待补
+    author: 莱昂纳德·蒙洛迪诺
+    slug: tan-xing
+    path: books/思维方式/莱昂纳德·蒙洛迪诺-弹性.md
     role: 适应力收束
     reason: 最后回到系统在冲击下如何维持功能，避免只会分析复杂性而不会判断恢复力。
-    status: planned
+    status: in_library
 ---
 
 # 什么是系统思维与复杂性

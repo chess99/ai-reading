@@ -8,10 +8,12 @@ group: 消费社会
 date: '2026-06-06'
 books:
   - title: 有闲阶级论
-    author: 待补
+    author: 托斯丹·凡勃伦
+    slug: you-xian-jie-ji-lun
+    path: books/社会科学/托斯丹·凡勃伦-有闲阶级论.md
     role: 炫耀消费入口
     reason: 从有闲、身份和炫耀性消费进入，帮助读者看到消费如何承载阶层信号。
-    status: planned
+    status: in_library
   - title: 工作、消费主义和新穷人
     author: 待补
     role: 消费社会批判
@@ -28,25 +30,31 @@ books:
     reason: 用家庭财富积累的研究对照炫耀消费，说明富裕未必表现为高消费。
     status: planned
   - title: 贫穷的本质
-    author: 待补
+    author: 阿比吉特·班纳吉、埃斯特·迪弗洛
+    slug: pin-qiong-de-ben-zhi
+    path: books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
     role: 贫困机制
     reason: 把阶层机会放进教育、健康、风险和现金流限制中具体分析。
-    status: planned
+    status: in_library
   - title: 稀缺
-    author: 待补
+    author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
+    slug: xi-que
+    path: books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
     role: 认知带宽
     reason: 说明贫困和压力会占用注意力，影响长期规划和机会把握。
-    status: planned
+    status: in_library
   - title: 21世纪资本论
     author: 待补
     role: 不平等结构
     reason: 用资本收益、收入分配和长期不平等，把个人财富问题推到宏观结构。
     status: planned
   - title: 置身事内
-    author: 待补
+    author: 兰小欢
+    slug: zhi-shen-shi-nei
+    path: books/社会科学/经济学/兰小欢-置身事内.md
     role: 中国制度环境
     reason: 用地方政府、土地、财政和产业政策视角收束，解释机会结构如何被制度塑造。
-    status: planned
+    status: in_library
 ---
 
 # 看懂消费主义、财富与阶层机会

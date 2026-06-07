@@ -8,40 +8,52 @@ group: 运动体能
 date: '2026-06-06'
 books:
   - title: 无器械健身
-    author: 待补
+    author: 马克·劳伦
+    slug: wu-qi-xie-jian-shen
+    path: books/健康运动/马克·劳伦-无器械健身.md
     role: 训练入口
     reason: 先从低设备门槛的训练方式进入实践。
-    status: planned
+    status: in_library
   - title: ACSM健身与健康完全指南
-    author: 待补
+    author: ACSM
+    slug: jian-shen-yu-jian-kang-wan-quan-zhi-nan
+    path: books/健康运动/ACSM-健身与健康完全指南.md
     role: 健康指南
     reason: 提供运动频率、强度、类型和安全边界的专业框架。
-    status: planned
+    status: in_library
   - title: 身体使用手册
-    author: 待补
+    author: Kelly Starrett
+    slug: shen-ti-shi-yong-shou-ce
+    path: books/健康运动/Kelly Starrett-身体使用手册.md
     role: 身体机制
     reason: 帮助读者理解身体系统和日常使用问题。
-    status: planned
+    status: in_library
   - title: 施瓦辛格健身全书
-    author: 待补
+    author: 阿诺德·施瓦辛格
+    slug: shi-wa-xin-ge-jian-shen-quan-shu
+    path: books/健康运动/阿诺德·施瓦辛格-施瓦辛格健身全书.md
     role: 力量训练
     reason: 补足力量训练、肌肉发展和训练计划视角。
-    status: planned
+    status: in_library
   - title: 耐力
     author: 待补
     role: 耐力边界
     reason: 讨论耐力表现中的身体限制、心理因素和训练适应。
     status: planned
   - title: ACSM高级运动生理学
-    author: 待补
+    author: ACSM
+    slug: gao-ji-yun-dong-sheng-li-xue
+    path: books/健康运动/ACSM-高级运动生理学.md
     role: 高级机制
     reason: 进一步解释训练适应、能量系统和运动生理机制。
-    status: planned
+    status: in_library
   - title: 生理学
-    author: 待补
+    author: 朱大年,王庭槐
+    slug: sheng-li-xue
+    path: books/健康运动/朱大年,王庭槐-生理学.md
     role: 基础科学
     reason: 用更底层的生理知识支撑对运动和体能的理解。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解运动与体能

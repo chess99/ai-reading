@@ -8,40 +8,52 @@ group: 组织系统与权力
 date: '2026-06-06'
 books:
   - title: 组织行为学
-    author: 待补
+    author: 斯蒂芬·罗宾斯
+    slug: zu-zhi-xing-wei-xue
+    path: books/商业管理/组织行为学/斯蒂芬·罗宾斯-组织行为学.md
     role: 组织行为
     reason: 先建立个体、团队、激励、权力和组织结构的基础语言。
-    status: planned
+    status: in_library
   - title: 走出危机
-    author: 待补
+    author: W·爱德华兹·戴明
+    slug: zou-chu-wei-ji
+    path: books/商业管理/W·爱德华兹·戴明-走出危机.md
     role: 质量管理
     reason: 说明质量、变异、管理责任和持续改进如何影响组织表现。
-    status: planned
+    status: in_library
   - title: 丰田之道
-    author: 待补
+    author: 杰弗里·莱克
+    slug: feng-tian-zhi-dao
+    path: books/商业管理/杰弗里·莱克-丰田之道.md
     role: 生产系统
     reason: 把流程、问题暴露、改善和人员培养放进一个运营系统。
-    status: planned
+    status: in_library
   - title: 精益思维
-    author: 待补
+    author: 詹姆斯·沃麦克,丹尼尔·琼斯
+    slug: jing-yi-si-wei
+    path: books/商业管理/詹姆斯·沃麦克-精益思维.md
     role: 精益原则
     reason: 从价值、价值流、流动、拉动和尽善尽美理解组织效率。
-    status: planned
+    status: in_library
   - title: 科学管理原理
-    author: 待补
+    author: 弗雷德里克·泰勒
+    slug: ke-xue-guan-li-yuan-li
+    path: books/商业管理/弗雷德里克·泰勒-科学管理原理.md
     role: 管理传统
     reason: 提供现代管理中任务分解、标准化和效率追求的历史起点。
-    status: planned
+    status: in_library
   - title: 第五项修炼
     author: 待补
     role: 学习型组织
     reason: 补充系统思考、心智模式和组织学习。
     status: planned
   - title: 原则
-    author: 待补
+    author: 瑞·达利欧
+    slug: yuan-ze
+    path: books/个人成长/瑞·达利欧-原则.md
     role: 经营原则
     reason: 说明组织如何用原则、透明和复盘维持决策质量。
-    status: planned
+    status: in_library
   - title: 经理人员的职能
     author: 待补
     role: 管理职能

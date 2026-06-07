@@ -33,10 +33,12 @@ books:
     reason: 提供开放社会、权力约束和反集权的政治哲学框架。
     status: planned
   - title: 智人之上
-    author: 待补
+    author: 尤瓦尔·赫拉利
+    slug: zhi-ren-zhi-shang
+    path: books/社会科学/尤瓦尔·赫拉利-智人之上.md
     role: 信息网络
     reason: 从信息网络史理解技术权力如何重塑公共事实和社会秩序。
-    status: planned
+    status: in_library
 ---
 
 # AI 风险、治理与技术权力

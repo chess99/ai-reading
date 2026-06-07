@@ -28,10 +28,12 @@ books:
     reason: 把注意力从内容转向媒介形式如何改变感知和社会关系。
     status: planned
   - title: 娱乐至死
-    author: 待补
+    author: 尼尔·波兹曼
+    slug: yu-le-zhi-si
+    path: books/社会科学/尼尔·波兹曼-娱乐至死.md
     role: 娱乐化风险
     reason: 说明媒介形式如何把公共讨论推向轻快、碎片和表演。
-    status: planned
+    status: in_library
   - title: 监视资本主义时代
     author: 待补
     role: 数据权力

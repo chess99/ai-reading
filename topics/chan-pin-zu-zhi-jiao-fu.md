@@ -13,20 +13,24 @@ books:
     reason: 先建立现代产品团队的职责、协作方式和产品发现要求。
     status: planned
   - title: 产品开发流程原理
-    author: 待补
+    author: 唐纳德·莱纳特森
+    slug: chan-pin-kai-fa-liu-cheng-yuan-li
+    path: books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md
     role: 开发流动
     reason: 解释队列、批量、在制品和反馈周期如何影响交付速度与质量。
-    status: planned
+    status: in_library
   - title: 用户故事地图
     author: 待补
     role: 需求组织
     reason: 把用户任务、版本切分和优先级组织成共同理解。
     status: planned
   - title: 精益思维
-    author: 待补
+    author: 詹姆斯·沃麦克,丹尼尔·琼斯
+    slug: jing-yi-si-wei
+    path: books/商业管理/詹姆斯·沃麦克-精益思维.md
     role: 精益交付
     reason: 用价值流、流动和拉动理解交付系统中的浪费。
-    status: planned
+    status: in_library
   - title: 赋能
     author: 待补
     role: 授权协作
@@ -38,10 +42,12 @@ books:
     reason: 补充人才、文化、目标和组织机制如何影响团队表现。
     status: planned
   - title: 领导梯队
-    author: 待补
+    author: 查兰
+    slug: ling-dao-ti-dui
+    path: books/商业管理/查兰-领导梯队.md
     role: 领导层级
     reason: 说明产品组织中不同管理层级需要不同的角色和时间分配。
-    status: planned
+    status: in_library
   - title: 无畏的组织
     author: 待补
     role: 心理安全

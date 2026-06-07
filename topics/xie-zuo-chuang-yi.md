@@ -8,20 +8,26 @@ group: 写作与创造
 date: '2026-06-06'
 books:
   - title: 写作这回事
-    author: 待补
+    author: 斯蒂芬·金
+    slug: xie-zuo-zhe-hui-shi
+    path: books/写作创意/斯蒂芬·金-写作这回事.md
     role: 写作入口
     reason: 先进入持续写作、修改和个人经验转化的真实过程。
-    status: planned
+    status: in_library
   - title: 写作的战争
-    author: 待补
+    author: 史蒂文·普雷斯菲尔德
+    slug: xie-zuo-de-zhan-zheng
+    path: books/写作创意/史蒂文·普雷斯菲尔德-写作的战争.md
     role: 创作阻力
     reason: 命名拖延、逃避和自我怀疑这些创意工作的常见阻力。
-    status: planned
+    status: in_library
   - title: 字字珠玑
-    author: 待补
+    author: 安妮·拉莫特
+    slug: zi-zi-zhu-ji
+    path: books/写作创意/安妮·拉莫特-字字珠玑.md
     role: 句子修订
     reason: 把写作推进到词句层面的删改、清晰和力量。
-    status: planned
+    status: in_library
   - title: 风格感觉
     author: 待补
     role: 风格意识
@@ -38,15 +44,19 @@ books:
     reason: 用视觉和观察训练打开创意工作的感知方式。
     status: planned
   - title: 最小阻力之路
-    author: 待补
+    author: 罗伯特·弗里茨
+    slug: zui-xiao-zu-li-zhi-lu
+    path: books/个人成长/罗伯特·弗里茨-最小阻力之路.md
     role: 创作结构
     reason: 把创作看成从当前现实到目标结构的张力组织。
-    status: planned
+    status: in_library
   - title: 故事
-    author: 待补
+    author: 罗伯特·麦基
+    slug: gu-shi
+    path: books/写作创意/罗伯特·麦基-故事.md
     role: 叙事表达
     reason: 最后补上冲突、结构和叙事推进的系统框架。
-    status: planned
+    status: in_library
 ---
 
 # 写作与创意工作

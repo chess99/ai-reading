@@ -23,20 +23,26 @@ books:
     reason: 处理对痛苦体验的控制和回避，让行动重新回到价值上。
     status: planned
   - title: 拖延心理学
-    author: 待补
+    author: 简·博克,莱诺拉·袁
+    slug: tuo-yan-xin-li-xue
+    path: books/心理学/简·博克,莱诺拉·袁-拖延心理学.md
     role: 回避阻力
     reason: 说明拖延背后的恐惧、完美主义和自我价值压力。
-    status: planned
+    status: in_library
   - title: 被讨厌的勇气
-    author: 待补
+    author: 岸见一郎,古贺史健
+    slug: bei-tao-yan-de-yong-qi
+    path: books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md
     role: 边界意识
     reason: 用课题分离理解责任边界，减少过度承担。
-    status: planned
+    status: in_library
   - title: 认知觉醒
-    author: 待补
+    author: 周岭
+    slug: ren-zhi-jue-xing
+    path: books/个人成长/周岭-认知觉醒.md
     role: 元认知
     reason: 帮助观察注意力、行动反馈和自我解释如何相互影响。
-    status: planned
+    status: in_library
   - title: 当下的力量
     author: 待补
     role: 当下经验

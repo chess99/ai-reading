@@ -23,30 +23,40 @@ books:
     reason: 解释现代社会为什么需要新的连带方式，以及分工如何改变个人与群体的关系。
     status: planned
   - title: 贫穷的本质
-    author: 待补
+    author: 阿比吉特·班纳吉、埃斯特·迪弗洛
+    slug: pin-qiong-de-ben-zhi
+    path: books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
     role: 贫困机制
     reason: 把共同生活拉到真实政策和资源处境中，避免只用道德评价解释贫困。
-    status: planned
+    status: in_library
   - title: 社会共通资本
-    author: 待补
+    author: 宇泽弘文
+    slug: she-hui-gong-tong-zi-ben
+    path: books/社会科学/宇泽弘文-社会共通资本.md
     role: 公共资本
     reason: 补上公共设施、自然环境和制度安排对生活质量的影响。
-    status: planned
+    status: in_library
   - title: 城市的胜利
-    author: 待补
+    author: 爱德华·格莱泽
+    slug: cheng-shi-de-sheng-li
+    path: books/社会科学/爱德华·格莱泽-城市的胜利.md
     role: 城市视角
     reason: 说明密度、流动和城市经济如何重塑人们相遇、工作和协作的方式。
-    status: planned
+    status: in_library
   - title: 厌女
-    author: 待补
+    author: 上野千鹤子
+    slug: yan-nv
+    path: books/社会科学/上野千鹤子-厌女.md
     role: 性别切面
     reason: 用性别秩序提醒读者，共同生活中的规则并不总是对所有人同样可见。
-    status: planned
+    status: in_library
   - title: 置身事内
-    author: 待补
+    author: 兰小欢
+    slug: zhi-shen-shi-nei
+    path: books/社会科学/经济学/兰小欢-置身事内.md
     role: 制度收束
     reason: 把基层社会、公共资本和城市生活放进地方治理与财政激励中重新检查。
-    status: planned
+    status: in_library
 ---
 
 # 社会学如何看共同生活
