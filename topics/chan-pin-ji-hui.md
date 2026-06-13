@@ -8,10 +8,12 @@ group: 产品机会
 date: '2026-06-06'
 books:
   - title: 妈妈测试
-    author: 待补
+    author: Rob Fitzpatrick
+    slug: ma-ma-ce-shi
+    path: books/创业产品/Rob Fitzpatrick-妈妈测试.md
     role: 访谈校准
     reason: 先训练团队问出不会被礼貌、想象和鼓励误导的问题。
-    status: planned
+    status: in_library
   - title: 客户开发入门
     author: 辛迪·阿尔瓦雷斯
     slug: ke-hu-kai-fa-ru-men

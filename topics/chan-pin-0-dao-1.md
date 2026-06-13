@@ -36,10 +36,12 @@ books:
     reason: 提供低成本访谈方法，帮助团队发现真实任务、约束和购买动机。
     status: in_library
   - title: 妈妈测试
-    author: 待补
+    author: Rob Fitzpatrick
+    slug: ma-ma-ce-shi
+    path: books/创业产品/Rob Fitzpatrick-妈妈测试.md
     role: 访谈校准
     reason: 训练团队问出不会被客套、想象和礼貌误导的问题。
-    status: planned
+    status: in_library
   - title: 启示录
     author: Marty Cagan
     slug: qi-shi-lu

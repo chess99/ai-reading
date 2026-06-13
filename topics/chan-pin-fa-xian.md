@@ -20,10 +20,12 @@ books:
     reason: 把用户旅程、任务、优先级和版本切分组织起来。
     status: planned
   - title: 精益产品手册
-    author: 待补
+    author: Dan Olsen
+    slug: jing-yi-chan-pin-shou-ce
+    path: books/创业产品/Dan Olsen-精益产品手册.md
     role: 产品市场匹配
     reason: 连接目标用户、痛点、价值主张、功能集合和 MVP 测试。
-    status: planned
+    status: in_library
   - title: 俞军产品方法论
     author: 俞军
     slug: yu-jun-chan-pin-fang-fa-lun
@@ -32,10 +34,12 @@ books:
     reason: 用效用、成本、交易和用户价值判断产品是否成立。
     status: in_library
   - title: 用户体验要素
-    author: 待补
+    author: Jesse James Garrett
+    slug: yong-hu-ti-yan-yao-su
+    path: books/创业产品/Jesse James Garrett-用户体验要素.md
     role: 体验层次
     reason: 把产品体验拆成战略、范围、结构、框架和表现。
-    status: planned
+    status: in_library
   - title: 设计心理学
     author: 待补
     role: 行为心理
