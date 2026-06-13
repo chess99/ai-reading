@@ -29,10 +29,12 @@ books:
     reason: 让读者看见求助过程中的关系、变化和不确定。
     status: in_library
   - title: 蛤蟆先生去看心理医生
-    author: 待补
+    author: 罗伯特·戴博德
+    slug: ha-ma-xian-sheng-qu-kan-xin-li-yi-sheng
+    path: books/心理学/罗伯特·戴博德-蛤蟆先生去看心理医生.md
     role: 通俗入口
     reason: 用故事方式帮助读者理解抑郁、关系和自我评价。
-    status: planned
+    status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao

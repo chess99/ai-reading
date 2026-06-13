@@ -15,10 +15,12 @@ books:
     reason: 先理解快感、痛苦、奖赏系统和现代成瘾环境。
     status: in_library
   - title: 欲罢不能
-    author: 待补
+    author: 亚当·奥尔特
+    slug: yu-ba-bu-neng
+    path: books/心理学/亚当·奥尔特-欲罢不能.md
     role: 行为成瘾
     reason: 解释设计、反馈和环境如何让行为变得难以停止。
-    status: planned
+    status: in_library
   - title: 自控力
     author: 待补
     role: 自控机制

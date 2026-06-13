@@ -29,10 +29,12 @@ books:
     reason: 在不可控处境中理解意义、责任和承受力。
     status: in_library
   - title: 相约星期二
-    author: 待补
+    author: 米奇·阿尔博姆
+    slug: xiang-yue-xing-qi-er
+    path: books/心理学/米奇·阿尔博姆-相约星期二.md
     role: 告别对话
     reason: 用师生对话呈现告别、关系和生命回顾。
-    status: planned
+    status: in_library
   - title: 生死课
     author: 袁凌
     slug: sheng-si-ke

@@ -8,20 +8,26 @@ group: 情绪与内耗
 date: '2026-06-06'
 books:
   - title: 蛤蟆先生去看心理医生
-    author: 待补
+    author: 罗伯特·戴博德
+    slug: ha-ma-xian-sheng-qu-kan-xin-li-yi-sheng
+    path: books/心理学/罗伯特·戴博德-蛤蟆先生去看心理医生.md
     role: 咨询入口
     reason: 先用通俗故事让读者看见情绪、关系和自我理解如何展开。
-    status: planned
+    status: in_library
   - title: 情绪急救
-    author: 待补
+    author: 盖伊·温奇
+    slug: qing-xu-ji-jiu
+    path: books/心理学/盖伊·温奇-情绪急救.md
     role: 日常应对
     reason: 处理被拒绝、孤独、失败和反刍等常见情绪伤口。
-    status: planned
+    status: in_library
   - title: 情绪是什么
-    author: 待补
+    author: 乔瓦尼·弗契多
+    slug: qing-xu-shi-shen-me
+    path: books/心理学/乔瓦尼·弗契多-情绪是什么.md
     role: 情绪理论
     reason: 帮助读者理解情绪不是单一反应，而与身体、认知和情境有关。
-    status: planned
+    status: in_library
   - title: 伯恩斯新情绪疗法
     author: 大卫·伯恩斯
     slug: bo-en-si-xin-qing-xu-liao-fa

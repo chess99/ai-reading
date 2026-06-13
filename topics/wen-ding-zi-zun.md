@@ -25,10 +25,12 @@ books:
     reason: 说明自卑感如何推动补偿、目标和生活风格。
     status: planned
   - title: 终身成长
-    author: 待补
+    author: 卡罗尔·德韦克
+    slug: zhong-shen-cheng-zhang
+    path: books/心理学/卡罗尔·德韦克-终身成长.md
     role: 成长心态
     reason: 帮助读者把能力和反馈从固定评价中分离出来。
-    status: planned
+    status: in_library
   - title: 性格的陷阱
     author: 待补
     role: 早期图式

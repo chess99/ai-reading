@@ -15,15 +15,19 @@ books:
     reason: 先解释创伤如何留在身体、警觉系统和感受中，避免把创伤只理解成回忆问题。
     status: in_library
   - title: 创伤与复原
-    author: 待补
+    author: 朱迪思·赫尔曼
+    slug: chuang-shang-yu-fu-yuan
+    path: books/心理学/朱迪思·赫尔曼-创伤与复原.md
     role: 复原阶段框架
     reason: 提供安全、哀悼、重建连接等复原阶段，帮助读者理解修复不是一次顿悟。
-    status: planned
+    status: in_library
   - title: 唤醒老虎
-    author: 待补
+    author: 彼得·莱文,安·弗雷德里克
+    slug: huan-xing-lao-hu
+    path: books/心理学/彼得·莱文,安·弗雷德里克-唤醒老虎.md
     role: 躯体经验路径
     reason: 把注意力放到冻结、逃跑、战斗等身体反应，补上创伤修复中的躯体维度。
-    status: planned
+    status: in_library
   - title: 不原谅也没关系
     author: 皮特·沃克
     slug: bu-yuan-liang-ye-mei-guan-xi

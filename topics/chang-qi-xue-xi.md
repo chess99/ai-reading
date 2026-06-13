@@ -44,10 +44,12 @@ books:
     reason: 用提示、环境和身份让学习在普通日子里持续发生。
     status: in_library
   - title: 终身成长
-    author: 待补
+    author: 卡罗尔·德韦克
+    slug: zhong-shen-cheng-zhang
+    path: books/心理学/卡罗尔·德韦克-终身成长.md
     role: 成长心态
     reason: 处理失败、反馈和能力可发展性的心理框架。
-    status: planned
+    status: in_library
   - title: 深度工作
     author: 卡尔·纽波特
     slug: shen-du-gong-zuo
