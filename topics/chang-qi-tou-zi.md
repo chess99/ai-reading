@@ -22,10 +22,12 @@ books:
     reason: 建立市场先生、安全边际和防御型投资者的语言，避免把长期投资误解为盲目持有。
     status: in_library
   - title: 金钱心理学
-    author: 待补
+    author: 摩根·豪泽尔
+    slug: jin-qian-xin-li-xue
+    path: books/投资/理财入门/摩根·豪泽尔-金钱心理学.md
     role: 行为耐心
     reason: 解释复利、运气、风险承受和个人经历如何影响能否长期留在市场里。
-    status: planned
+    status: in_library
   - title: 投资最重要的事
     author: 霍华德·马克斯
     slug: tou-zi-zui-zhong-yao-de-shi

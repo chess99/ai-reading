@@ -36,10 +36,12 @@ books:
     reason: 用真实富裕家庭的消费和积累模式，校正把高收入、高消费误认为财富的直觉。
     status: in_library
   - title: 金钱心理学
-    author: 待补
+    author: 摩根·豪泽尔
+    slug: jin-qian-xin-li-xue
+    path: books/投资/理财入门/摩根·豪泽尔-金钱心理学.md
     role: 行为风险
     reason: 解释金钱决策中的安全感、比较、耐心和运气，让财务常识不只停在算术层面。
-    status: planned
+    status: in_library
   - title: 一本书读懂财报
     author: 肖星
     slug: yi-ben-shu-du-dong-cai-bao

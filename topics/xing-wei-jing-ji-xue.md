@@ -36,10 +36,12 @@ books:
     reason: 解释缺钱、缺时间和压力如何占用认知带宽，改变人的选择质量。
     status: in_library
   - title: 金钱心理学
-    author: 待补
+    author: 摩根·豪泽尔
+    slug: jin-qian-xin-li-xue
+    path: books/投资/理财入门/摩根·豪泽尔-金钱心理学.md
     role: 金钱叙事
     reason: 把行为偏差落到储蓄、风险、运气、比较和长期耐心等金钱问题上。
-    status: planned
+    status: in_library
   - title: 错误的行为
     author: 理查德·塞勒
     slug: cuo-wu-de-xing-wei
