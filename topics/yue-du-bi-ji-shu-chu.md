@@ -8,25 +8,33 @@ group: 学习与输出
 date: '2026-06-06'
 books:
   - title: 如何阅读一本书
-    author: 待补
+    author: 莫提默·J·艾德勒,查尔斯·范多伦
+    slug: ru-he-yue-du-yi-ben-shu
+    path: books/个人成长/莫提默·J·艾德勒,查尔斯·范多伦-如何阅读一本书.md
     role: 阅读入口
     reason: 先把阅读变成分层理解和主动提问。
-    status: planned
+    status: in_library
   - title: 卡片笔记写作法
-    author: 待补
+    author: 申克·阿伦斯
+    slug: ka-pian-bi-ji-xie-zuo-fa
+    path: books/写作创意/申克·阿伦斯-卡片笔记写作法.md
     role: 笔记方法
     reason: 用原子化笔记和连接思考，把输入转成可发展的材料。
-    status: planned
+    status: in_library
   - title: 第二大脑
-    author: 待补
+    author: 蒂亚戈·福特
+    slug: di-er-da-nao
+    path: books/个人成长/蒂亚戈·福特-第二大脑.md
     role: 知识管理
     reason: 建立收集、组织、提炼和表达的个人知识系统。
-    status: planned
+    status: in_library
   - title: 金字塔原理
-    author: 待补
+    author: 芭芭拉·明托
+    slug: jin-zi-ta-yuan-li
+    path: books/个人成长/芭芭拉·明托-金字塔原理.md
     role: 结构表达
     reason: 把零散材料组织成结论先行、层次清楚的表达。
-    status: planned
+    status: in_library
   - title: 学会提问
     author: 尼尔·布朗,斯图尔特·基利
     slug: xue-hui-ti-wen
@@ -35,10 +43,12 @@ books:
     reason: 帮助输出系统保留质疑、证据和假设检查。
     status: in_library
   - title: 风格感觉
-    author: 待补
+    author: 史蒂芬·平克
+    slug: feng-ge-gan-jue
+    path: books/写作创意/史蒂芬·平克-风格感觉.md
     role: 语言风格
     reason: 让结构化表达不止正确，也更清楚、具体和可读。
-    status: planned
+    status: in_library
   - title: 写作这回事
     author: 斯蒂芬·金
     slug: xie-zuo-zhe-hui-shi

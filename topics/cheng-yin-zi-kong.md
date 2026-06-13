@@ -22,10 +22,12 @@ books:
     reason: 解释设计、反馈和环境如何让行为变得难以停止。
     status: in_library
   - title: 自控力
-    author: 待补
+    author: 凯利·麦格尼格尔
+    slug: zi-kong-li
+    path: books/心理学/凯利·麦格尼格尔-自控力.md
     role: 自控机制
     reason: 补上压力、冲动和意志力失败背后的心理机制。
-    status: planned
+    status: in_library
   - title: 稀缺
     author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
     slug: xi-que

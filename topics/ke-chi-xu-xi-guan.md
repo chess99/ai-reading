@@ -43,15 +43,19 @@ books:
     reason: 处理拖延背后的恐惧、完美主义和回避，让习惯计划不只停留在技巧层面。
     status: in_library
   - title: 自控力
-    author: 待补
+    author: 凯利·麦格尼格尔
+    slug: zi-kong-li
+    path: books/心理学/凯利·麦格尼格尔-自控力.md
     role: 意志力边界
     reason: 说明自控会受压力、奖励和疲劳影响，帮助读者少靠硬扛，多做预先安排。
-    status: planned
+    status: in_library
   - title: 驱动力
-    author: 待补
+    author: 丹尼尔·平克
+    slug: qu-dong-li
+    path: books/个人成长/丹尼尔·平克-驱动力.md
     role: 内在动机补充
     reason: 把习惯从外部奖励推进到自主、胜任和意义感，解释为什么某些习惯更容易长期保留。
-    status: planned
+    status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi

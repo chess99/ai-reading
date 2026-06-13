@@ -29,15 +29,19 @@ books:
     reason: 把写作推进到词句层面的删改、清晰和力量。
     status: in_library
   - title: 风格感觉
-    author: 待补
+    author: 史蒂芬·平克
+    slug: feng-ge-gan-jue
+    path: books/写作创意/史蒂芬·平克-风格感觉.md
     role: 风格意识
     reason: 帮助读者理解清楚表达背后的句法、读者和语感。
-    status: planned
+    status: in_library
   - title: 成为作家
-    author: 待补
+    author: 多萝西娅·布兰德
+    slug: cheng-wei-zuo-jia
+    path: books/写作创意/多萝西娅·布兰德-成为作家.md
     role: 作家心态
     reason: 处理写作者身份、习惯和观察生活的方式。
-    status: planned
+    status: in_library
   - title: 像艺术家一样思考
     author: 待补
     role: 观察训练

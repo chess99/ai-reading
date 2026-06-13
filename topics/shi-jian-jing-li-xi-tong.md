@@ -15,10 +15,12 @@ books:
     reason: 先把效率问题从时间扩展到体能、情绪、专注和恢复。
     status: in_library
   - title: 搞定
-    author: 待补
+    author: 戴维·艾伦
+    slug: gao-ding
+    path: books/效率习惯/戴维·艾伦-搞定.md
     role: 任务系统
     reason: 建立收集、澄清、组织和回顾的可信外部系统。
-    status: planned
+    status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi
@@ -27,15 +29,19 @@ books:
     reason: 帮助读者减少低价值承诺，把时间留给真正重要的事。
     status: in_library
   - title: 高效能人士的七个习惯
-    author: 待补
+    author: 史蒂芬·柯维
+    slug: gao-xiao-neng-ren-shi-de-qi-ge-xi-guan
+    path: books/效率习惯/史蒂芬·柯维-高效能人士的七个习惯.md
     role: 价值框架
     reason: 把个人效率放进主动选择、终局思考和重要事项优先中。
-    status: planned
+    status: in_library
   - title: 慢生产力
-    author: 待补
+    author: 卡尔·纽波特
+    slug: man-sheng-chan-li
+    path: books/效率习惯/卡尔·纽波特-慢生产力.md
     role: 可持续节奏
     reason: 校正长期超负荷和伪忙碌，强调少量高质量工作。
-    status: planned
+    status: in_library
   - title: 复盘
     author: 陈中
     slug: fu-pan

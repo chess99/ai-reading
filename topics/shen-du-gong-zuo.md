@@ -29,10 +29,12 @@ books:
     reason: 把深度工作连接到技能提升，说明专注时间需要反馈、难度和重复训练。
     status: in_library
   - title: 搞定
-    author: 待补
+    author: 戴维·艾伦
+    slug: gao-ding
+    path: books/效率习惯/戴维·艾伦-搞定.md
     role: 任务系统清理
     reason: 处理悬而未决的任务和承诺，减少它们对深度工作的后台占用。
-    status: planned
+    status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi
@@ -55,15 +57,19 @@ books:
     reason: 用带宽和隧道效应解释为什么压力与短缺会直接削弱专注能力。
     status: in_library
   - title: 找回专注力
-    author: 待补
+    author: 约翰·海利
+    slug: zhao-hui-zhuan-zhu-li
+    path: books/效率习惯/约翰·海利-找回专注力.md
     role: 注意力环境修复
     reason: 把问题扩展到数字环境、平台设计和持续分心，帮助读者处理外部注意力竞争。
-    status: planned
+    status: in_library
   - title: 慢生产力
-    author: 待补
+    author: 卡尔·纽波特
+    slug: man-sheng-chan-li
+    path: books/效率习惯/卡尔·纽波特-慢生产力.md
     role: 可持续产出节奏
     reason: 纠正把深度工作等同于高强度透支的误解，强调少量高质量产出和长期节奏。
-    status: planned
+    status: in_library
   - title: 掌控习惯
     author: 詹姆斯·克利尔
     slug: zhang-kong-xi-guan

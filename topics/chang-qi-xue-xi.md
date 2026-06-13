@@ -8,20 +8,24 @@ group: 学习与输出
 date: '2026-06-06'
 books:
   - title: 如何阅读一本书
-    author: 待补
+    author: 莫提默·J·艾德勒,查尔斯·范多伦
+    slug: ru-he-yue-du-yi-ben-shu
+    path: books/个人成长/莫提默·J·艾德勒,查尔斯·范多伦-如何阅读一本书.md
     role: 阅读入口
     reason: 先学会按层次阅读，把一本书读成可追问的问题。
-    status: planned
+    status: in_library
   - title: 认知天性
     author: 待补
     role: 记忆机制
     reason: 用提取练习、间隔和交错学习校正低效学习直觉。
     status: planned
   - title: 学习之道
-    author: 待补
+    author: 芭芭拉·奥克利
+    slug: xue-xi-zhi-dao
+    path: books/效率习惯/芭芭拉·奥克利-学习之道.md
     role: 学习方法
     reason: 把专注、发散、拖延和练习安排放进可操作的学习过程。
-    status: planned
+    status: in_library
   - title: 刻意练习
     author: 安德斯·艾利克森
     slug: ke-yi-lian-xi

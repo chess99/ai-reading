@@ -36,10 +36,12 @@ books:
     reason: 帮助拆解事实、感受和身份威胁交织的谈话。
     status: in_library
   - title: 金字塔原理
-    author: 待补
+    author: 芭芭拉·明托
+    slug: jin-zi-ta-yuan-li
+    path: books/个人成长/芭芭拉·明托-金字塔原理.md
     role: 结构表达
     reason: 训练先给结论、再组织理由和证据的表达结构。
-    status: planned
+    status: in_library
   - title: 演讲的力量
     author: 待补
     role: 公开表达
