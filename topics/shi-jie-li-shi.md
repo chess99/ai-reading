@@ -8,10 +8,12 @@ group: 世界历史
 date: '2026-06-06'
 books:
   - title: 全球通史
-    author: 待补
+    author: 斯塔夫里阿诺斯
+    slug: quan-qiu-tong-shi
+    path: books/历史传记/斯塔夫里阿诺斯-全球通史.md
     role: 通史入口
     reason: 先建立世界史的大时间线和区域框架。
-    status: planned
+    status: in_library
   - title: 人类简史
     author: 尤瓦尔·赫拉利
     slug: ren-lei-jian-shi
@@ -27,15 +29,19 @@ books:
     reason: 解释地理、物种、疾病和技术扩散如何影响长期差异。
     status: in_library
   - title: 丝绸之路
-    author: 待补
+    author: 彼得·弗兰科潘
+    slug: si-chou-zhi-lu
+    path: books/历史传记/彼得·弗兰科潘-丝绸之路.md
     role: 贸易网络
     reason: 把世界史从国家列表改写为欧亚交流、贸易和文化流动。
-    status: planned
+    status: in_library
   - title: 大国的兴衰
-    author: 待补
+    author: 保罗·肯尼迪
+    slug: da-guo-de-xing-shuai
+    path: books/历史传记/保罗·肯尼迪-大国的兴衰.md
     role: 大国兴衰
     reason: 用经济、军事和财政压力理解霸权更替。
-    status: planned
+    status: in_library
   - title: 世界秩序
     author: 亨利·基辛格
     slug: shi-jie-zhi-xu

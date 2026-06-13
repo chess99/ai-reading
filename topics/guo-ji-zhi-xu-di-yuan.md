@@ -15,20 +15,24 @@ books:
     reason: "先建立不同文明和国家关于秩序、均势与合法性的基本图景。"
     status: in_library
   - title: 大国的兴衰
-    author: 待补
+    author: 保罗·肯尼迪
+    slug: da-guo-de-xing-shuai
+    path: books/历史传记/保罗·肯尼迪-大国的兴衰.md
     role: 兴衰背景
     reason: "用经济、军事和财政能力解释大国实力变化。"
-    status: planned
+    status: in_library
   - title: 文明的冲突
     author: 待补
     role: 文明张力
     reason: "提供文化和文明边界视角，用于辨认身份政治与冲突叙事。"
     status: planned
   - title: 注定一战
-    author: 待补
+    author: 格雷厄姆·艾利森
+    slug: zhu-ding-yi-zhan
+    path: books/历史传记/格雷厄姆·艾利森-注定一战.md
     role: 冲突模型
     reason: "用修昔底德陷阱讨论崛起国与守成国之间的战略风险。"
-    status: planned
+    status: in_library
   - title: 国家为什么会失败
     author: 德隆·阿西莫格鲁,詹姆斯·罗宾逊
     slug: guo-jia-wei-shen-me-hui-shi-bai

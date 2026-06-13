@@ -15,10 +15,12 @@ books:
     reason: "用环境、物种和技术扩散解释文明差异的长期起点。"
     status: in_library
   - title: 大国的兴衰
-    author: 待补
+    author: 保罗·肯尼迪
+    slug: da-guo-de-xing-shuai
+    path: books/历史传记/保罗·肯尼迪-大国的兴衰.md
     role: 经济军事
     reason: "从财政、军事和生产能力解释大国兴衰。"
-    status: planned
+    status: in_library
   - title: 文明的冲突
     author: 待补
     role: 文化冲突
