@@ -15,10 +15,12 @@ books:
     reason: 先从医学、照护和选择尊严进入死亡问题。
     status: in_library
   - title: 当呼吸化为空气
-    author: 待补
+    author: Paul Kalanithi
+    slug: dang-hu-xi-hua-wei-kong-qi
+    path: books/健康运动/Paul Kalanithi-当呼吸化为空气.md
     role: 疾病经验
     reason: 让读者看见生命计划被疾病打断时，意义如何被重新组织。
-    status: planned
+    status: in_library
   - title: 活出生命的意义
     author: 维克多·E·弗兰克尔
     slug: huo-chu-sheng-ming-de-yi-yi
@@ -32,10 +34,12 @@ books:
     reason: 用师生对话呈现告别、关系和生命回顾。
     status: planned
   - title: 生死课
-    author: 待补
+    author: 袁凌
+    slug: sheng-si-ke
+    path: books/社会科学/袁凌-生死课.md
     role: 死亡教育
     reason: 帮助读者更直接地面对死亡、哀伤和生命有限性。
-    status: planned
+    status: in_library
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao

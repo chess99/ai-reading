@@ -13,10 +13,12 @@ books:
     reason: 作为主框架建立营养学概念、证据和争议意识。
     status: planned
   - title: 我们为什么会生病
-    author: 待补
+    author: Randolph M. Nesse, George C. Williams
+    slug: wo-men-wei-shen-me-hui-sheng-bing
+    path: books/健康运动/Randolph M. Nesse,George C. Williams-我们为什么会生病.md
     role: 演化医学
     reason: 从演化视角理解现代疾病和身体环境错配。
-    status: planned
+    status: in_library
   - title: 肥胖代码
     author: 待补
     role: 争议视角

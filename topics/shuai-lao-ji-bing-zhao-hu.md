@@ -22,10 +22,12 @@ books:
     reason: 讨论医疗、照护、尊严和临终选择之间的现实张力。
     status: in_library
   - title: 当呼吸化为空气
-    author: 待补
+    author: Paul Kalanithi
+    slug: dang-hu-xi-hua-wei-kong-qi
+    path: books/健康运动/Paul Kalanithi-当呼吸化为空气.md
     role: 疾病经验
     reason: 从患者和医生双重视角理解疾病如何改变生命叙事。
-    status: planned
+    status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao
@@ -48,10 +50,12 @@ books:
     reason: 处理疾病和限制中仍然可能存在的意义感。
     status: in_library
   - title: 生死课
-    author: 待补
+    author: 袁凌
+    slug: sheng-si-ke
+    path: books/社会科学/袁凌-生死课.md
     role: 临终沟通
     reason: 帮助读者面对死亡、告别和沟通中的现实问题。
-    status: planned
+    status: in_library
 ---
 
 # 面对衰老、疾病与照护
