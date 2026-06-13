@@ -55,10 +55,12 @@ books:
     reason: 把问题从个人品质扩展到角色、制度和情境如何诱发越界行为。
     status: in_library
   - title: 盲点
-    author: 待补
+    author: 马扎林·贝纳基,安东尼·格林沃尔德
+    slug: mang-dian
+    path: books/思维方式/马扎林·贝纳基,安东尼·格林沃尔德-盲点.md
     role: 隐性偏见收束
     reason: 最后回到自己身上，检查善意自我形象下仍可能存在的自动偏见。
-    status: planned
+    status: in_library
 ---
 
 # 如何识别偏见、从众与服从

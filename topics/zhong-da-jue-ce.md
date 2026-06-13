@@ -15,10 +15,12 @@ books:
     reason: 先处理大事为什么不能只靠直觉拍板，帮助读者把选择拆成目标、选项、约束和后果。
     status: in_library
   - title: 决断力
-    author: 待补
+    author: 奇普·希思,丹·希思
+    slug: jue-duan-li
+    path: books/思维方式/奇普·希思,丹·希思-决断力.md
     role: 流程防错框架
     reason: 用更明确的决策步骤补上备选方案、现实检验、心理距离和预案，避免只在一个答案里纠结。
-    status: planned
+    status: in_library
   - title: 思考，快与慢
     author: 丹尼尔·卡尼曼
     slug: si-kao-kuai-yu-man
@@ -41,10 +43,12 @@ books:
     reason: 教读者把判断写成可修正的概率估计，而不是一次性表态。
     status: in_library
   - title: 对赌
-    author: 待补
+    author: 陈楫宝
+    slug: dui-du
+    path: books/商业管理/陈楫宝-对赌.md
     role: 复盘与校准
     reason: 用下注思维区分决策质量和结果运气，让复盘不只是事后归因。
-    status: planned
+    status: in_library
   - title: 助推
     author: 理查德·塞勒、卡斯·桑斯坦
     slug: zhu-tui

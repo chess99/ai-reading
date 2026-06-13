@@ -36,10 +36,12 @@ books:
     reason: 把竞争带到顾客认知和品牌位置，说明市场不只在产品里。
     status: in_library
   - title: 规模
-    author: 待补
+    author: 杰弗里·韦斯特
+    slug: gui-mo
+    path: books/思维方式/杰弗里·韦斯特-规模.md
     role: 规模规律
     reason: 说明规模、网络和城市化等规律如何改变成本、增长和组织边界。
-    status: planned
+    status: in_library
   - title: 平台革命
     author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
     slug: ping-tai-ge-ming

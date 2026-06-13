@@ -8,10 +8,12 @@ group: 概率与风险
 date: '2026-06-06'
 books:
   - title: 随机漫步的傻瓜
-    author: 待补
+    author: 纳西姆·尼古拉斯·塔勒布
+    slug: sui-ji-man-bu-de-sha-gua
+    path: books/思维方式/纳西姆·尼古拉斯·塔勒布-随机漫步的傻瓜.md
     role: 运气识别入口
     reason: 先区分能力、运气和幸存者偏差，让读者警惕从结果倒推原因。
-    status: planned
+    status: in_library
   - title: 超级预测
     author: 菲利普·泰洛克,丹·加德纳
     slug: chao-ji-yu-ce
@@ -34,10 +36,12 @@ books:
     reason: 提醒读者某些罕见事件无法靠常规样本轻易预测，却会改变整体结果。
     status: in_library
   - title: 风险、不确定性与利润
-    author: 待补
+    author: 弗兰克·H·奈特
+    slug: feng-xian-bu-que-ding-xing-yu-li-run
+    path: books/社会科学/弗兰克·H·奈特-风险、不确定性与利润.md
     role: 不确定性区分
     reason: 用风险和不可测不确定性的区分，补上概率模型的边界。
-    status: planned
+    status: in_library
   - title: 反脆弱
     author: 纳西姆·塔勒布
     slug: fan-cui-ruo
@@ -46,10 +50,12 @@ books:
     reason: 把重点从预测正确转向怎样设计面对波动仍能受益或少受伤的结构。
     status: in_library
   - title: 对赌
-    author: 待补
+    author: 陈楫宝
+    slug: dui-du
+    path: books/商业管理/陈楫宝-对赌.md
     role: 决策复盘
     reason: 帮助读者把结果质量和决策质量分开，用下注视角改进复盘。
-    status: planned
+    status: in_library
   - title: 投资最重要的事
     author: 霍华德·马克斯
     slug: tou-zi-zui-zhong-yao-de-shi
