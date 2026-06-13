@@ -22,10 +22,12 @@ books:
     reason: "用经济、军事和财政能力解释大国实力变化。"
     status: in_library
   - title: 文明的冲突
-    author: 待补
+    author: 塞缪尔·亨廷顿
+    slug: wen-ming-de-chong-tu
+    path: books/社会科学/塞缪尔·亨廷顿-文明的冲突.md
     role: 文明张力
     reason: "提供文化和文明边界视角，用于辨认身份政治与冲突叙事。"
-    status: planned
+    status: in_library
   - title: 注定一战
     author: 格雷厄姆·艾利森
     slug: zhu-ding-yi-zhan

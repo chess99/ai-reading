@@ -22,10 +22,12 @@ books:
     reason: 用政治制度贯穿历代变化，建立比朝代更稳定的观察轴。
     status: in_library
   - title: 万历十五年
-    author: 待补
+    author: 黄仁宇
+    slug: wan-li-shi-wu-nian
+    path: books/历史传记/黄仁宇-万历十五年.md
     role: 明代切片
     reason: 通过单一年份理解制度、人物和时代气候如何相互牵制。
-    status: planned
+    status: in_library
   - title: 叫魂
     author: 孔飞力
     slug: jiao-hun

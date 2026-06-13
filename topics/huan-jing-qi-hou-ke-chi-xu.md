@@ -15,10 +15,12 @@ books:
     reason: 先从具体环境伤害理解人类活动的外部代价。
     status: in_library
   - title: 增长的极限
-    author: 待补
+    author: 丹尼斯·米都斯等
+    slug: zeng-zhang-de-ji-xian
+    path: books/社会科学/丹尼斯·米都斯等-增长的极限.md
     role: 增长边界
     reason: 用资源、人口、工业和污染的系统关系理解边界问题。
-    status: planned
+    status: in_library
   - title: 小即是美
     author: E. F. Schumacher
     slug: xiao-ji-shi-mei

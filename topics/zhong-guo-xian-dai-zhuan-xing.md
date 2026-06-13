@@ -22,10 +22,12 @@ books:
     reason: 提供历代政治结构的长时段骨架，避免只按朝代故事理解转型。
     status: in_library
   - title: 万历十五年
-    author: 待补
+    author: 黄仁宇
+    slug: wan-li-shi-wu-nian
+    path: books/历史传记/黄仁宇-万历十五年.md
     role: 明代切片
     reason: 用一个年份观察财政、官僚、礼制和皇权如何同时失灵。
-    status: planned
+    status: in_library
   - title: 中国近代史
     author: 徐中约
     slug: zhong-guo-jin-dai-shi

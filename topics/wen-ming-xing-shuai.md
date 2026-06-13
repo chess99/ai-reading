@@ -22,10 +22,12 @@ books:
     reason: "从财政、军事和生产能力解释大国兴衰。"
     status: in_library
   - title: 文明的冲突
-    author: 待补
+    author: 塞缪尔·亨廷顿
+    slug: wen-ming-de-chong-tu
+    path: books/社会科学/塞缪尔·亨廷顿-文明的冲突.md
     role: 文化冲突
     reason: "提供文明身份和文化边界的争议性框架，供读者辨析而非照单全收。"
-    status: planned
+    status: in_library
   - title: 国家为什么会失败
     author: 德隆·阿西莫格鲁,詹姆斯·罗宾逊
     slug: guo-jia-wei-shen-me-hui-shi-bai
@@ -48,10 +50,12 @@ books:
     reason: "用更长的人类历史重新检查文明叙事的尺度。"
     status: in_library
   - title: 增长的极限
-    author: 待补
+    author: 丹尼斯·米都斯等
+    slug: zeng-zhang-de-ji-xian
+    path: books/社会科学/丹尼斯·米都斯等-增长的极限.md
     role: 生态边界
     reason: "把兴衰问题收束到资源、增长和系统极限。"
-    status: planned
+    status: in_library
 ---
 
 # 如何理解文明兴衰
