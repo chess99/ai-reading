@@ -15,10 +15,12 @@ books:
     reason: 从健康寿命、慢病风险和长期功能进入衰老问题。
     status: in_library
   - title: 最好的告别
-    author: 待补
+    author: Atul Gawande
+    slug: zui-hao-de-gao-bie
+    path: books/健康运动/Atul Gawande-最好的告别.md
     role: 照护选择
     reason: 讨论医疗、照护、尊严和临终选择之间的现实张力。
-    status: planned
+    status: in_library
   - title: 当呼吸化为空气
     author: 待补
     role: 疾病经验

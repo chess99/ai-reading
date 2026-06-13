@@ -8,10 +8,12 @@ group: 成瘾与哀伤
 date: '2026-06-06'
 books:
   - title: 最好的告别
-    author: 待补
+    author: Atul Gawande
+    slug: zui-hao-de-gao-bie
+    path: books/健康运动/Atul Gawande-最好的告别.md
     role: 临终照护
     reason: 先从医学、照护和选择尊严进入死亡问题。
-    status: planned
+    status: in_library
   - title: 当呼吸化为空气
     author: 待补
     role: 疾病经验

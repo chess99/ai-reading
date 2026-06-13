@@ -27,15 +27,19 @@ books:
     reason: 从经济尺度、技术选择和生活方式反思无限增长。
     status: in_library
   - title: 失控的农业
-    author: 待补
+    author: Philip Lymbery, Isabel Oakeshott
+    slug: shi-kong-de-nong-ye
+    path: books/社会科学/Philip Lymbery,Isabel Oakeshott-失控的农业.md
     role: 农业系统
     reason: 把环境问题落到农业、食物系统和土地使用中。
-    status: planned
+    status: in_library
   - title: 气候经济与人类未来
-    author: 待补
+    author: Bill Gates
+    slug: qi-hou-jing-ji-yu-ren-lei-wei-lai
+    path: books/社会科学/Bill Gates-气候经济与人类未来.md
     role: 气候经济
     reason: 解释气候变化如何影响经济决策、风险和未来分配。
-    status: planned
+    status: in_library
   - title: 社会共通资本
     author: 宇泽弘文
     slug: she-hui-gong-tong-zi-ben
