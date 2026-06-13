@@ -15,10 +15,12 @@ books:
     reason: 先用五力等框架理解利润从哪里来、竞争压力来自哪里。
     status: in_library
   - title: 好战略，坏战略
-    author: 待补
+    author: Richard Rumelt
+    slug: hao-zhan-l-e-huai-zhan-l-e
+    path: books/商业管理/公司战略/Richard Rumelt-好战略，坏战略.md
     role: 战略质量
     reason: 帮助读者区分口号式战略和真正包含诊断、方针与行动的战略。
-    status: planned
+    status: in_library
   - title: 创新者的窘境
     author: 克莱顿·克里斯坦森
     slug: chuang-xin-zhe-de-jiong-jing

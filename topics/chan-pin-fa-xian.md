@@ -41,15 +41,19 @@ books:
     reason: 把产品体验拆成战略、范围、结构、框架和表现。
     status: in_library
   - title: 设计心理学
-    author: 待补
+    author: Don Norman
+    slug: she-ji-xin-li-xue
+    path: books/创业产品/Don Norman-设计心理学.md
     role: 行为心理
     reason: 解释可供性、反馈、映射和错误如何影响用户使用。
-    status: planned
+    status: in_library
   - title: 设计冲刺
-    author: 待补
+    author: Jake Knapp, John Zeratsky, Braden Kowitz
+    slug: she-ji-chong-ci
+    path: books/创业产品/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
     role: 冲刺验证
     reason: 提供短周期原型、测试和团队对齐的方法。
-    status: planned
+    status: in_library
   - title: 产品开发流程原理
     author: 唐纳德·莱纳特森
     slug: chan-pin-kai-fa-liu-cheng-yuan-li

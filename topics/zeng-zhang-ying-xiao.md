@@ -22,10 +22,12 @@ books:
     reason: 解释互惠、承诺、社会认同、权威、喜好和稀缺如何影响选择。
     status: in_library
   - title: 引爆点
-    author: 待补
+    author: Malcolm Gladwell
+    slug: yin-bao-dian
+    path: books/商业管理/市场营销/Malcolm Gladwell-引爆点.md
     role: 传播扩散
     reason: 说明小变化如何在特定人群、信息和情境中形成扩散。
-    status: planned
+    status: in_library
   - title: 跨越鸿沟
     author: 杰弗里·摩尔
     slug: kua-yue-hong-gou
