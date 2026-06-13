@@ -15,15 +15,19 @@ books:
     reason: 先用课题分离和自我接纳理解评价与责任边界。
     status: in_library
   - title: 自尊
-    author: 待补
+    author: Matthew McKay,Patrick Fanning
+    slug: zi-zun
+    path: books/心理学/Matthew McKay,Patrick Fanning-自尊.md
     role: 自尊机制
     reason: 系统理解自我评价、能力感和价值感如何形成。
-    status: planned
+    status: in_library
   - title: 自卑与超越
-    author: 待补
+    author: 阿尔弗雷德·阿德勒
+    slug: zi-bei-yu-chao-yue
+    path: books/心理学/阿尔弗雷德·阿德勒-自卑与超越.md
     role: 补偿心理
     reason: 说明自卑感如何推动补偿、目标和生活风格。
-    status: planned
+    status: in_library
   - title: 终身成长
     author: 卡罗尔·德韦克
     slug: zhong-shen-cheng-zhang
@@ -32,10 +36,12 @@ books:
     reason: 帮助读者把能力和反馈从固定评价中分离出来。
     status: in_library
   - title: 性格的陷阱
-    author: 待补
+    author: 杰弗里·E.杨,珍妮特·S.克洛斯科
+    slug: xing-ge-de-xian-jing
+    path: books/心理学/杰弗里·E.杨,珍妮特·S.克洛斯科-性格的陷阱.md
     role: 早期图式
     reason: 观察早期经验如何形成反复出现的自我模式。
-    status: planned
+    status: in_library
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
