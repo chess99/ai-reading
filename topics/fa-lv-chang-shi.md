@@ -22,25 +22,33 @@ books:
     reason: 用极端案件训练读者理解法律解释、程序和价值冲突。
     status: in_library
   - title: 看得见的正义
-    author: 待补
+    author: 陈瑞华
+    slug: kan-de-jian-de-zheng-yi
+    path: books/社会科学/陈瑞华-看得见的正义.md
     role: 程序意识
     reason: 说明正义为什么需要公开、说理和可监督的司法过程。
-    status: planned
+    status: in_library
   - title: 刑法学讲义
-    author: 待补
+    author: 罗翔
+    slug: xing-fa-xue-jiang-yi
+    path: books/社会科学/罗翔-刑法学讲义.md
     role: 刑法边界
     reason: 帮助读者理解犯罪、责任、处罚和刑法克制的基本边界。
-    status: planned
+    status: in_library
   - title: 民法典与日常生活
-    author: 待补
+    author: 彭诚信,陈吉栋
+    slug: min-fa-dian-yu-ri-chang-sheng-huo
+    path: books/社会科学/彭诚信,陈吉栋-民法典与日常生活.md
     role: 民事生活
     reason: 把法律常识落到人格、财产、婚姻、继承、合同等日常关系。
-    status: planned
+    status: in_library
   - title: 法治及其本土资源
-    author: 待补
+    author: 苏力
+    slug: fa-zhi-ji-qi-ben-tu-zi-yuan
+    path: books/社会科学/苏力-法治及其本土资源.md
     role: 法治背景
     reason: 放在末尾，提醒读者法律运行离不开本土社会、制度资源和治理环境。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立法律常识

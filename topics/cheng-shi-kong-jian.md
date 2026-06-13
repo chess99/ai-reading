@@ -8,10 +8,12 @@ group: 城市空间
 date: '2026-06-06'
 books:
   - title: 美国大城市的死与生
-    author: 待补
+    author: 简·雅各布斯
+    slug: mei-guo-da-cheng-shi-de-si-yu-sheng
+    path: books/社会科学/简·雅各布斯-美国大城市的死与生.md
     role: 街区入口
     reason: 从街道、混合用途和邻里安全进入城市生活的具体观察。
-    status: planned
+    status: in_library
   - title: 城市的胜利
     author: 爱德华·格莱泽
     slug: cheng-shi-de-sheng-li
