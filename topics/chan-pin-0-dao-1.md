@@ -50,10 +50,12 @@ books:
     reason: 把客户理解转化为现代产品团队的发现、判断和职责。
     status: in_library
   - title: 用户故事地图
-    author: 待补
+    author: Jeff Patton
+    slug: yong-hu-gu-shi-di-tu
+    path: books/创业产品/Jeff Patton-用户故事地图.md
     role: 需求组织
     reason: 帮助把用户任务、旅程、优先级和版本切分放在同一张地图上。
-    status: planned
+    status: in_library
   - title: 产品开发流程原理
     author: 唐纳德·莱纳特森
     slug: chan-pin-kai-fa-liu-cheng-yuan-li

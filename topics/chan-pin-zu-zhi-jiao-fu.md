@@ -22,10 +22,12 @@ books:
     reason: 解释队列、批量、在制品和反馈周期如何影响交付速度与质量。
     status: in_library
   - title: 用户故事地图
-    author: 待补
+    author: Jeff Patton
+    slug: yong-hu-gu-shi-di-tu
+    path: books/创业产品/Jeff Patton-用户故事地图.md
     role: 需求组织
     reason: 把用户任务、版本切分和优先级组织成共同理解。
-    status: planned
+    status: in_library
   - title: 精益思维
     author: 詹姆斯·沃麦克,丹尼尔·琼斯
     slug: jing-yi-si-wei

@@ -8,10 +8,12 @@ group: 战略经营
 date: '2026-06-06'
 books:
   - title: 商业模式新生代
-    author: 待补
+    author: 亚历山大·奥斯特瓦德,伊夫·皮尼厄
+    slug: shang-ye-mo-shi-xin-sheng-dai
+    path: books/创业产品/亚历山大·奥斯特瓦德,伊夫·皮尼厄-商业模式新生代.md
     role: 商业模式
     reason: 先用画布把客户、价值主张、渠道、收入、成本和关键活动放在一起。
-    status: planned
+    status: in_library
   - title: 客户开发入门
     author: 辛迪·阿尔瓦雷斯
     slug: ke-hu-kai-fa-ru-men

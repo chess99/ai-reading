@@ -43,10 +43,12 @@ books:
     reason: 帮助判断机会是否有足够独特和重要的价值判断。
     status: in_library
   - title: 商业模式新生代
-    author: 待补
+    author: 亚历山大·奥斯特瓦德,伊夫·皮尼厄
+    slug: shang-ye-mo-shi-xin-sheng-dai
+    path: books/创业产品/亚历山大·奥斯特瓦德,伊夫·皮尼厄-商业模式新生代.md
     role: 商业模式
     reason: 把客户、价值主张、渠道、收入和成本放进同一张商业模型。
-    status: planned
+    status: in_library
   - title: 跨越鸿沟
     author: 杰弗里·摩尔
     slug: kua-yue-hong-gou

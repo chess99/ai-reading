@@ -15,10 +15,12 @@ books:
     reason: 先建立现代产品团队如何发现机会、定义价值和降低风险。
     status: in_library
   - title: 用户故事地图
-    author: 待补
+    author: Jeff Patton
+    slug: yong-hu-gu-shi-di-tu
+    path: books/创业产品/Jeff Patton-用户故事地图.md
     role: 用户任务
     reason: 把用户旅程、任务、优先级和版本切分组织起来。
-    status: planned
+    status: in_library
   - title: 精益产品手册
     author: Dan Olsen
     slug: jing-yi-chan-pin-shou-ce
