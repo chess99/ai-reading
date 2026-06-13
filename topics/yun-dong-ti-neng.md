@@ -36,10 +36,12 @@ books:
     reason: 补足力量训练、肌肉发展和训练计划视角。
     status: in_library
   - title: 耐力
-    author: 待补
+    author: Alex Hutchinson
+    slug: nai-li
+    path: books/健康运动/Alex Hutchinson-耐力.md
     role: 耐力边界
     reason: 讨论耐力表现中的身体限制、心理因素和训练适应。
-    status: planned
+    status: in_library
   - title: ACSM高级运动生理学
     author: ACSM
     slug: gao-ji-yun-dong-sheng-li-xue

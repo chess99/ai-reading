@@ -20,10 +20,12 @@ books:
     reason: 从演化视角理解现代疾病和身体环境错配。
     status: in_library
   - title: 肥胖代码
-    author: 待补
+    author: Jason Fung
+    slug: fei-pang-dai-ma
+    path: books/健康运动/Jason Fung-肥胖代码.md
     role: 争议视角
     reason: 作为代谢和肥胖解释的争议视角阅读，不能直接当处方。
-    status: planned
+    status: in_library
   - title: 深度营养
     author: 凯瑟琳·沙纳汉
     slug: shen-du-ying-yang
