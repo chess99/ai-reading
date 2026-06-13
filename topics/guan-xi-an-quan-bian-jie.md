@@ -22,15 +22,19 @@ books:
     reason: 区分依恋不安、回避反应和真正需要警觉的关系模式。
     status: in_library
   - title: 煤气灯效应
-    author: 待补
+    author: 罗宾·斯特恩
+    slug: mei-qi-deng-xiao-ying
+    path: books/心理学/罗宾·斯特恩-煤气灯效应.md
     role: 操控识别
     reason: 帮助识别持续否定感受、扭曲事实和削弱自我判断的互动。
-    status: planned
+    status: in_library
   - title: 情绪勒索
-    author: 待补
+    author: 朱迪斯·P·西格尔
+    slug: qing-xu-le-suo
+    path: books/心理学/朱迪斯·P·西格尔-情绪勒索.md
     role: 勒索模式
     reason: 解释威胁、内疚、恐惧和义务感如何让人被迫让渡边界。
-    status: planned
+    status: in_library
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji

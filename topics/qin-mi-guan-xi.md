@@ -22,20 +22,24 @@ books:
     reason: 解释靠近、回避、焦虑和分离反应为什么会在成人关系中反复出现。
     status: in_library
   - title: 幸福的婚姻
-    author: 待补
+    author: 约翰·戈特曼,娜恩·西尔弗
+    slug: xing-fu-de-hun-yin
+    path: books/心理学/约翰·戈特曼,娜恩·西尔弗-幸福的婚姻.md
     role: 长期关系研究
     reason: 把亲密关系从感受判断推进到冲突、修复、友谊和承诺的可观察模式。
-    status: planned
+    status: in_library
   - title: 抱紧我
     author: 待补
     role: 情绪循环
     reason: 说明伴侣争吵背后常有未被看见的依恋需求和保护性反应。
     status: planned
   - title: 爱的艺术
-    author: 待补
+    author: 埃里希·弗洛姆
+    slug: ai-de-yi-shu
+    path: books/心理学/埃里希·弗洛姆-爱的艺术.md
     role: 爱的哲学
     reason: 补上爱作为能力、责任和实践的维度，避免把亲密关系只理解成匹配。
-    status: planned
+    status: in_library
   - title: 沟通的本质
     author: 罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特
     slug: gou-tong-de-ben-zhi

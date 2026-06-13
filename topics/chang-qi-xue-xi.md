@@ -15,10 +15,12 @@ books:
     reason: 先学会按层次阅读，把一本书读成可追问的问题。
     status: in_library
   - title: 认知天性
-    author: 待补
+    author: 彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔
+    slug: ren-zhi-tian-xing
+    path: books/效率习惯/彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔-认知天性.md
     role: 记忆机制
     reason: 用提取练习、间隔和交错学习校正低效学习直觉。
-    status: planned
+    status: in_library
   - title: 学习之道
     author: 芭芭拉·奥克利
     slug: xue-xi-zhi-dao

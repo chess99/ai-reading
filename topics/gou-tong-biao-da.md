@@ -43,15 +43,19 @@ books:
     reason: 训练先给结论、再组织理由和证据的表达结构。
     status: in_library
   - title: 演讲的力量
-    author: 待补
+    author: 克里斯·安德森
+    slug: yan-jiang-de-li-liang
+    path: books/个人成长/克里斯·安德森-演讲的力量.md
     role: 公开表达
     reason: 把个人观点转化为听众能跟上的公开表达。
-    status: planned
+    status: in_library
   - title: 说服
-    author: 待补
+    author: 诺瓦·戈尔茨坦,史蒂夫·马丁,罗伯特·西奥迪尼
+    slug: shuo-fu
+    path: books/心理学/诺瓦·戈尔茨坦,史蒂夫·马丁,罗伯特·西奥迪尼-说服.md
     role: 说服机制
     reason: 补充态度改变、受众理解和说服边界。
-    status: planned
+    status: in_library
 ---
 
 # 如何提升沟通与表达

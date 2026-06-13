@@ -8,35 +8,47 @@ group: 亲子与家庭
 date: '2026-06-06'
 books:
   - title: 园丁与木匠
-    author: 待补
+    author: 艾莉森·高普尼克
+    slug: yuan-ding-yu-mu-jiang
+    path: books/心理学/艾莉森·高普尼克-园丁与木匠.md
     role: 父母角色
     reason: 先校正父母不是雕刻孩子，而是提供环境和关系。
-    status: planned
+    status: in_library
   - title: 正面管教
-    author: 待补
+    author: 简·尼尔森
+    slug: zheng-mian-guan-jiao
+    path: books/心理学/简·尼尔森-正面管教.md
     role: 纪律方法
     reason: 把管教从惩罚转向尊重、规则和合作。
-    status: planned
+    status: in_library
   - title: 游戏力
-    author: 待补
+    author: 劳伦斯·科恩
+    slug: you-xi-li
+    path: books/心理学/劳伦斯·科恩-游戏力.md
     role: 连接方式
     reason: 说明游戏如何帮助孩子表达、连接和恢复情绪。
-    status: planned
+    status: in_library
   - title: 如何说孩子才会听，怎么听孩子才肯说
-    author: 待补
+    author: 阿黛尔·法伯,伊莱恩·玛兹丽施
+    slug: ru-he-shuo-hai-zi-cai-hui-ting-zen-me-ting-hai-zi-cai-ken-sh
+    path: books/心理学/阿黛尔·法伯,伊莱恩·玛兹丽施-如何说孩子才会听，怎么听孩子才肯说.md
     role: 亲子沟通
     reason: 提供倾听、确认感受、设定边界和解决问题的日常语言。
-    status: planned
+    status: in_library
   - title: 孩子，把你的手给我
-    author: 待补
+    author: 海姆·吉诺特
+    slug: hai-zi-ba-ni-de-shou-gei-wo
+    path: books/心理学/海姆·吉诺特-孩子，把你的手给我.md
     role: 尊重表达
     reason: 帮助父母在情绪场景里减少羞辱、威胁和贴标签。
-    status: planned
+    status: in_library
   - title: 孩子：挑战
-    author: 待补
+    author: 鲁道夫·德雷克斯,薇姬·索尔兹
+    slug: hai-zi
+    path: books/心理学/鲁道夫·德雷克斯,薇姬·索尔兹-孩子.md
     role: 家庭互动
     reason: 从儿童行为目的和家庭关系理解孩子为什么用问题行为表达需要。
-    status: planned
+    status: in_library
 ---
 
 # 如何做足够好的父母

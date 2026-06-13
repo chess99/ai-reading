@@ -22,10 +22,12 @@ books:
     reason: 解释冲突中追逐、回避、抗议和沉默背后的安全感需求。
     status: in_library
   - title: 幸福的婚姻
-    author: 待补
+    author: 约翰·戈特曼,娜恩·西尔弗
+    slug: xing-fu-de-hun-yin
+    path: books/心理学/约翰·戈特曼,娜恩·西尔弗-幸福的婚姻.md
     role: 修复研究
     reason: 把冲突处理落到长期关系中的修复尝试、友谊基础和破坏性互动模式。
-    status: planned
+    status: in_library
   - title: 抱紧我
     author: 待补
     role: 情绪聚焦
