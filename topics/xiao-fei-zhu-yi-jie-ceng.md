@@ -50,10 +50,12 @@ books:
     reason: 说明贫困和压力会占用注意力，影响长期规划和机会把握。
     status: in_library
   - title: 21世纪资本论
-    author: 待补
+    author: 托马斯·皮凯蒂
+    slug: 21-shi-ji-zi-ben-lun
+    path: books/社会科学/经济学/托马斯·皮凯蒂-21世纪资本论.md
     role: 不平等结构
     reason: 用资本收益、收入分配和长期不平等，把个人财富问题推到宏观结构。
-    status: planned
+    status: in_library
   - title: 置身事内
     author: 兰小欢
     slug: zhi-shen-shi-nei

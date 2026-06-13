@@ -15,10 +15,12 @@ books:
     reason: 从默认选项和环境设计进入，让读者看到选择并不只由理性意愿决定。
     status: in_library
   - title: 怪诞行为学
-    author: 待补
+    author: 丹·艾瑞里
+    slug: guai-dan-xing-wei-xue
+    path: books/思维方式/丹·艾瑞里-怪诞行为学.md
     role: 非理性实验
     reason: 用实验和日常案例展示定价、诱饵、期待和社会规范如何影响经济行为。
-    status: planned
+    status: in_library
   - title: 思考，快与慢
     author: 丹尼尔·卡尼曼
     slug: si-kao-kuai-yu-man
@@ -39,10 +41,12 @@ books:
     reason: 把行为偏差落到储蓄、风险、运气、比较和长期耐心等金钱问题上。
     status: planned
   - title: 错误的行为
-    author: 待补
+    author: 理查德·塞勒
+    slug: cuo-wu-de-xing-wei
+    path: books/思维方式/理查德·塞勒-错误的行为.md
     role: 学科脉络
     reason: 通过行为经济学的发展史，说明经济模型如何逐步容纳真实人的偏差。
-    status: planned
+    status: in_library
   - title: 影响力
     author: 罗伯特·西奥迪尼
     slug: ying-xiang-li
