@@ -8,10 +8,12 @@ group: AI 变革
 date: '2026-06-06'
 books:
   - title: 即将到来的浪潮
-    author: 待补
+    author: Mustafa Suleyman,Michael Bhaskar
+    slug: ji-jiang-dao-lai-de-lang-chao
+    path: books/社会科学/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
     role: 扩散风险
     reason: 从 AI 与生物技术扩散的现实压力进入治理问题。
-    status: planned
+    status: in_library
   - title: 对齐问题
     author: 待补
     role: 目标对齐
