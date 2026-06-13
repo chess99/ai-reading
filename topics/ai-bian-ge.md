@@ -8,10 +8,12 @@ group: AI 变革
 date: '2026-06-06'
 books:
   - title: 人机共智
-    author: 待补
+    author: Ethan Mollick
+    slug: ren-ji-gong-zhi
+    path: books/社会科学/Ethan Mollick-人机共智.md
     role: 协作入口
     reason: 从普通人如何和生成式 AI 协作进入，而不是先讨论抽象未来。
-    status: planned
+    status: in_library
   - title: AI 2041
     author: 待补
     role: 场景想象

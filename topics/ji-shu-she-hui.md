@@ -15,10 +15,12 @@ books:
     reason: 先把技术看成会组合、演进和扩散的系统，而不是单个工具。
     status: in_library
   - title: 必然
-    author: 待补
+    author: 凯文·凯利
+    slug: bi-ran
+    path: books/社会科学/凯文·凯利-必然.md
     role: 网络趋势
     reason: 用网络化、流动化和协作化理解数字社会的长期倾向。
-    status: planned
+    status: in_library
   - title: 失控
     author: 待补
     role: 复杂系统

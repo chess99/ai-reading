@@ -18,10 +18,12 @@ books:
     reason: 解释系统目标、训练数据和人类价值之间为什么会错位。
     status: planned
   - title: 算法霸权
-    author: 待补
+    author: 凯西·奥尼尔
+    slug: suan-fa-ba-quan
+    path: books/社会科学/凯西·奥尼尔-算法霸权.md
     role: 算法歧视
     reason: 用现实案例说明算法如何放大不平等并隐藏责任。
-    status: planned
+    status: in_library
   - title: 监视资本主义时代
     author: 待补
     role: 数据权力

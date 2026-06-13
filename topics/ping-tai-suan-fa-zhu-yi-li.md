@@ -32,10 +32,12 @@ books:
     reason: "把注意力机制连接到行为数据和预测商业。"
     status: planned
   - title: 算法霸权
-    author: 待补
+    author: 凯西·奥尼尔
+    slug: suan-fa-ba-quan
+    path: books/社会科学/凯西·奥尼尔-算法霸权.md
     role: 算法伤害
     reason: "用算法决策案例呈现偏见、责任和制度风险。"
-    status: planned
+    status: in_library
   - title: 平台革命
     author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
     slug: ping-tai-ge-ming
