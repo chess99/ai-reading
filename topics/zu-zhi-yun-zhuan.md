@@ -43,10 +43,12 @@ books:
     reason: 提供现代管理中任务分解、标准化和效率追求的历史起点。
     status: in_library
   - title: 第五项修炼
-    author: 待补
+    author: 彼得·圣吉
+    slug: di-wu-xiang-xiu-lian
+    path: books/商业管理/彼得·圣吉-第五项修炼.md
     role: 学习型组织
     reason: 补充系统思考、心智模式和组织学习。
-    status: planned
+    status: in_library
   - title: 原则
     author: 瑞·达利欧
     slug: yuan-ze

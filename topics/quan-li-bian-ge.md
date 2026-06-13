@@ -15,15 +15,19 @@ books:
     reason: 先直面组织中资源、位置、联盟和影响力如何形成权力。
     status: in_library
   - title: 权力与影响力
-    author: 待补
+    author: 约翰·P·科特
+    slug: quan-li-yu-ying-xiang-li
+    path: books/商业管理/约翰·P·科特-权力与影响力.md
     role: 影响策略
     reason: 说明在组织中推动事情需要理解利益、关系和影响路径。
-    status: planned
+    status: in_library
   - title: 变革之心
-    author: 待补
+    author: 约翰·科特,丹·科恩
+    slug: bian-ge-zhi-xin
+    path: books/商业管理/约翰·科特,丹·科恩-变革之心.md
     role: 变革动员
     reason: 把变革从计划文件转向紧迫感、情绪动员和行动。
-    status: planned
+    status: in_library
   - title: 创新者的窘境
     author: 克莱顿·克里斯坦森
     slug: chuang-xin-zhe-de-jiong-jing
@@ -39,10 +43,12 @@ books:
     reason: 提供组织长期改善、领导力、纪律和飞轮的视角。
     status: in_library
   - title: 重新定义公司
-    author: 待补
+    author: 埃里克·施密特,乔纳森·罗森伯格
+    slug: chong-xin-ding-yi-gong-si
+    path: books/商业管理/埃里克·施密特,乔纳森·罗森伯格-重新定义公司.md
     role: 文化重塑
     reason: 补充知识型组织中人才、文化和管理方式的变化。
-    status: planned
+    status: in_library
   - title: 只有偏执狂才能生存
     author: 安迪·格鲁夫
     slug: zhi-you-pian-zhi-kuang-cai-neng-sheng-cun

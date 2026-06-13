@@ -34,15 +34,19 @@ books:
     reason: 帮助管理者理解不同层级的时间分配、技能和价值观变化。
     status: in_library
   - title: 可复制的领导力
-    author: 待补
+    author: 樊登
+    slug: ke-fu-zhi-de-ling-dao-li
+    path: books/商业管理/樊登-可复制的领导力.md
     role: 复制机制
     reason: 把管理动作拆成可训练、可传递、可复盘的方法。
-    status: planned
+    status: in_library
   - title: 高绩效教练
-    author: 待补
+    author: 约翰·惠特默
+    slug: gao-ji-xiao-jiao-lian
+    path: books/商业管理/约翰·惠特默-高绩效教练.md
     role: 教练方法
     reason: 用提问、目标和反馈帮助团队成员承担责任。
-    status: planned
+    status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua
@@ -51,10 +55,12 @@ books:
     reason: 处理绩效、冲突、承诺和分歧中的高风险谈话。
     status: in_library
   - title: 无畏的组织
-    author: 待补
+    author: 艾米·埃德蒙森
+    slug: wu-wei-de-zu-zhi
+    path: books/商业管理/艾米·埃德蒙森-无畏的组织.md
     role: 心理安全
     reason: 最后回到团队能否说真话、暴露问题和共同学习。
-    status: planned
+    status: in_library
 ---
 
 # 如何成为有效管理者

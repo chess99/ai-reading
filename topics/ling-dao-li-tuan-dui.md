@@ -15,15 +15,19 @@ books:
     reason: 先理解不同领导层级对技能、时间和价值观的要求。
     status: in_library
   - title: 高绩效教练
-    author: 待补
+    author: 约翰·惠特默
+    slug: gao-ji-xiao-jiao-lian
+    path: books/商业管理/约翰·惠特默-高绩效教练.md
     role: 教练能力
     reason: 用提问、反馈和责任感支持团队成员成长。
-    status: planned
+    status: in_library
   - title: 团队协作的五大障碍
-    author: 待补
+    author: 帕特里克·兰西奥尼
+    slug: tuan-dui-xie-zuo-de-wu-da-zhang-ai
+    path: books/商业管理/帕特里克·兰西奥尼-团队协作的五大障碍.md
     role: 团队失效
     reason: 识别缺乏信任、害怕冲突、承诺不足、逃避责任和不重视结果。
-    status: planned
+    status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua
@@ -32,20 +36,26 @@ books:
     reason: 帮助团队在高情绪、高分歧场景下保持有效对话。
     status: in_library
   - title: 无畏的组织
-    author: 待补
+    author: 艾米·埃德蒙森
+    slug: wu-wei-de-zu-zhi
+    path: books/商业管理/艾米·埃德蒙森-无畏的组织.md
     role: 心理安全
     reason: 说明团队如何形成说真话、暴露错误和共同学习的条件。
-    status: planned
+    status: in_library
   - title: 赋能
-    author: 待补
+    author: 斯坦利·麦克里斯特尔
+    slug: fu-neng
+    path: books/商业管理/斯坦利·麦克里斯特尔-赋能.md
     role: 授权协作
     reason: 把领导力从命令控制转向信息共享、授权和快速协同。
-    status: planned
+    status: in_library
   - title: 重新定义团队
-    author: 待补
+    author: 拉兹洛·博克
+    slug: chong-xin-ding-yi-tuan-dui
+    path: books/商业管理/拉兹洛·博克-重新定义团队.md
     role: 团队结构
     reason: 补充招聘、文化、目标和组织机制如何影响团队表现。
-    status: planned
+    status: in_library
   - title: 权力
     author: 杰弗瑞·菲佛
     slug: quan-li

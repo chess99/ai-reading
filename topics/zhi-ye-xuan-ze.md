@@ -18,10 +18,12 @@ books:
     reason: 帮助识别一个人在职业中不愿长期牺牲的价值和约束。
     status: planned
   - title: 你的降落伞是什么颜色
-    author: 待补
+    author: 理查德·尼尔森·鲍利斯
+    slug: ni-de-jiang-luo-san-shi-shen-me-yan-se
+    path: books/个人成长/理查德·尼尔森·鲍利斯-你的降落伞是什么颜色.md
     role: 求职探索
     reason: 把职业探索落到技能、兴趣、环境和机会搜索。
-    status: planned
+    status: in_library
   - title: 优秀到不能被忽视
     author: 卡尔·纽波特
     slug: you-xiu-dao-bu-neng-bei-hu-shi

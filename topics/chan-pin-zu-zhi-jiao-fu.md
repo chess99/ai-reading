@@ -34,15 +34,19 @@ books:
     reason: 用价值流、流动和拉动理解交付系统中的浪费。
     status: in_library
   - title: 赋能
-    author: 待补
+    author: 斯坦利·麦克里斯特尔
+    slug: fu-neng
+    path: books/商业管理/斯坦利·麦克里斯特尔-赋能.md
     role: 授权协作
     reason: 把产品组织从命令控制转向信息共享、授权和快速协同。
-    status: planned
+    status: in_library
   - title: 重新定义团队
-    author: 待补
+    author: 拉兹洛·博克
+    slug: chong-xin-ding-yi-tuan-dui
+    path: books/商业管理/拉兹洛·博克-重新定义团队.md
     role: 团队结构
     reason: 补充人才、文化、目标和组织机制如何影响团队表现。
-    status: planned
+    status: in_library
   - title: 领导梯队
     author: 查兰
     slug: ling-dao-ti-dui
@@ -51,10 +55,12 @@ books:
     reason: 说明产品组织中不同管理层级需要不同的角色和时间分配。
     status: in_library
   - title: 无畏的组织
-    author: 待补
+    author: 艾米·埃德蒙森
+    slug: wu-wei-de-zu-zhi
+    path: books/商业管理/艾米·埃德蒙森-无畏的组织.md
     role: 心理安全
     reason: 最后强调团队需要能暴露问题、提出异议和共同学习。
-    status: planned
+    status: in_library
 ---
 
 # 如何建立产品组织与交付系统

@@ -22,10 +22,12 @@ books:
     reason: 补上反馈、控制、信息和方法论语言，避免把系统思维只理解成画关系图。
     status: in_library
   - title: 第五项修炼
-    author: 待补
+    author: 彼得·圣吉
+    slug: di-wu-xiang-xiu-lian
+    path: books/商业管理/彼得·圣吉-第五项修炼.md
     role: 组织学习应用
     reason: 把系统结构放进组织和团队场景，说明局部最优为什么会制造整体问题。
-    status: planned
+    status: in_library
   - title: 复杂
     author: 梅拉妮·米歇尔
     slug: fu-za
