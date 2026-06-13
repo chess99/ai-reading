@@ -8,20 +8,24 @@ group: 环境气候
 date: '2026-06-06'
 books:
   - title: 寂静的春天
-    author: 待补
+    author: Rachel Carson
+    slug: ji-jing-de-chun-tian
+    path: books/社会科学/Rachel Carson-寂静的春天.md
     role: 环境危机
     reason: 先从具体环境伤害理解人类活动的外部代价。
-    status: planned
+    status: in_library
   - title: 增长的极限
     author: 待补
     role: 增长边界
     reason: 用资源、人口、工业和污染的系统关系理解边界问题。
     status: planned
   - title: 小即是美
-    author: 待补
+    author: E. F. Schumacher
+    slug: xiao-ji-shi-mei
+    path: books/社会科学/E. F. Schumacher-小即是美.md
     role: 适度经济
     reason: 从经济尺度、技术选择和生活方式反思无限增长。
-    status: planned
+    status: in_library
   - title: 失控的农业
     author: 待补
     role: 农业系统

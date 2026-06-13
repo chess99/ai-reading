@@ -43,10 +43,12 @@ books:
     reason: 把压力和恢复放进能量周期，而不是只靠硬扛。
     status: in_library
   - title: 多巴胺国度
-    author: 待补
+    author: Anna Lembke
+    slug: duo-ba-an-guo-du
+    path: books/心理学/Anna Lembke-多巴胺国度.md
     role: 奖励系统
     reason: 解释奖励、成瘾倾向和痛苦回避如何影响恢复。
-    status: planned
+    status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing

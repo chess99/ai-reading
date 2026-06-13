@@ -8,10 +8,12 @@ group: 成瘾与哀伤
 date: '2026-06-06'
 books:
   - title: 多巴胺国度
-    author: 待补
+    author: Anna Lembke
+    slug: duo-ba-an-guo-du
+    path: books/心理学/Anna Lembke-多巴胺国度.md
     role: 奖励回路
     reason: 先理解快感、痛苦、奖赏系统和现代成瘾环境。
-    status: planned
+    status: in_library
   - title: 欲罢不能
     author: 待补
     role: 行为成瘾
