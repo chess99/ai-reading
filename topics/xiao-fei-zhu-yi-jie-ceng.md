@@ -22,10 +22,12 @@ books:
     reason: 解释现代社会如何把人定义为消费者，以及无法消费的人如何被重新标记。
     status: in_library
   - title: 消费社会
-    author: 待补
+    author: 让·鲍德里亚
+    slug: xiao-fei-she-hui
+    path: books/社会科学/让·鲍德里亚-消费社会.md
     role: 符号消费
     reason: 把消费理解为符号、区隔和社会关系，而不只是个人偏好。
-    status: planned
+    status: in_library
   - title: 邻家的百万富翁
     author: 托马斯·J.斯坦利,威廉·D.丹科
     slug: lin-jia-de-bai-wan-fu-weng

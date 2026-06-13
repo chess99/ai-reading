@@ -22,10 +22,12 @@ books:
     reason: 引导读者用激励、机会成本和边际变化理解日常经济选择。
     status: in_library
   - title: 经济学原理
-    author: 待补
+    author: N.格里高利·曼昆
+    slug: jing-ji-xue-yuan-li
+    path: books/社会科学/经济学/N.格里高利·曼昆-经济学原理.md
     role: 教科书底座
     reason: 系统补上供需、市场、宏观指标、货币和政策等基本概念。
-    status: planned
+    status: in_library
   - title: 置身事内
     author: 兰小欢
     slug: zhi-shen-shi-nei
@@ -48,15 +50,19 @@ books:
     reason: 回到分工、市场和政治经济学源头，理解现代经济语言的早期问题意识。
     status: in_library
   - title: 就业、利息和货币通论
-    author: 待补
+    author: 约翰·梅纳德·凯恩斯
+    slug: jiu-ye-li-xi-he-huo-bi-tong-lun
+    path: books/社会科学/约翰·梅纳德·凯恩斯-就业利息与货币通论.md
     role: 宏观转折
     reason: 引入总需求、就业、利率和政策干预，补上市场自发调节之外的宏观视角。
-    status: planned
+    status: in_library
   - title: 债：第一个5000年
-    author: 待补
+    author: 大卫·格雷伯
+    slug: zhai
+    path: books/社会科学/经济学/大卫·格雷伯-债.md
     role: 债务历史
     reason: 用长期历史视角重新审视债务、货币、信用和社会关系。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解经济运行
