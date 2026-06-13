@@ -15,10 +15,12 @@ books:
     reason: "先看媒介形式如何把公共讨论推向娱乐化。"
     status: in_library
   - title: 注意力商人
-    author: 待补
+    author: Tim Wu
+    slug: zhu-yi-li-shang-ren
+    path: books/社会科学/Tim Wu-注意力商人.md
     role: 注意力商业
     reason: "解释注意力如何被捕获、包装和出售。"
-    status: planned
+    status: in_library
   - title: 过滤泡
     author: 伊莱·帕里泽
     slug: guo-lv-pao

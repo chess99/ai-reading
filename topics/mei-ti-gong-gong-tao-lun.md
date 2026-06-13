@@ -29,10 +29,12 @@ books:
     reason: "用电视和公共话语的变化提醒读者，信息形式会改变公共讨论质量。"
     status: in_library
   - title: 注意力商人
-    author: 待补
+    author: Tim Wu
+    slug: zhu-yi-li-shang-ren
+    path: books/社会科学/Tim Wu-注意力商人.md
     role: 注意力经济
     reason: "揭示商业模式如何捕获注意力，并重塑媒体、广告和平台行为。"
-    status: planned
+    status: in_library
   - title: 乌合之众
     author: 古斯塔夫·勒庞
     slug: wu-he-zhi-zhong

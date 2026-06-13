@@ -22,10 +22,12 @@ books:
     reason: 用网络化、流动化和协作化理解数字社会的长期倾向。
     status: in_library
   - title: 失控
-    author: 待补
+    author: 凯文·凯利
+    slug: shi-kong
+    path: books/社会科学/凯文·凯利-失控.md
     role: 复杂系统
     reason: 帮助读者看见技术系统中的涌现、自组织和不可完全控制。
-    status: planned
+    status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie

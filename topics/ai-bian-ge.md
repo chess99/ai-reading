@@ -20,10 +20,12 @@ books:
     reason: 用具体故事和行业场景帮助读者理解 AI 可能进入哪些生活领域。
     status: planned
   - title: 生命3.0
-    author: 待补
+    author: 迈克斯·泰格马克
+    slug: sheng-ming-3-0
+    path: books/社会科学/迈克斯·泰格马克-生命3.0.md
     role: 智能边界
     reason: 把 AI 放到智能、生命和目标设定的更大问题中讨论。
-    status: planned
+    status: in_library
   - title: 即将到来的浪潮
     author: 待补
     role: 扩散风险
