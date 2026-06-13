@@ -29,10 +29,12 @@ books:
     reason: "说明个性化推荐如何改变信息接触和公共事实。"
     status: in_library
   - title: 监视资本主义时代
-    author: 待补
+    author: Shoshana Zuboff
+    slug: jian-shi-zi-ben-zhu-yi-shi-dai
+    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
     role: 数据监控
     reason: "把注意力机制连接到行为数据和预测商业。"
-    status: planned
+    status: in_library
   - title: 算法霸权
     author: 凯西·奥尼尔
     slug: suan-fa-ba-quan

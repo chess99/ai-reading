@@ -53,10 +53,12 @@ books:
     reason: 用从零到一的视角检查独特性、垄断利润和竞争叙事。
     status: in_library
   - title: 监视资本主义时代
-    author: 待补
+    author: Shoshana Zuboff
+    slug: jian-shi-zi-ben-zhu-yi-shi-dai
+    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
     role: 风险收束
     reason: 把平台竞争收束到数据、监控、行为预测和公共风险。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解商业竞争、战略与平台效应

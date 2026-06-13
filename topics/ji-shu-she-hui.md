@@ -43,10 +43,12 @@ books:
     reason: 说明媒介形式如何把公共讨论推向轻快、碎片和表演。
     status: in_library
   - title: 监视资本主义时代
-    author: 待补
+    author: Shoshana Zuboff
+    slug: jian-shi-zi-ben-zhu-yi-shi-dai
+    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
     role: 数据权力
     reason: 解释平台如何把行为数据、预测和商业利益连接起来。
-    status: planned
+    status: in_library
   - title: 平台革命
     author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
     slug: ping-tai-ge-ming

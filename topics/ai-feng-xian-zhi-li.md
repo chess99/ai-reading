@@ -15,10 +15,12 @@ books:
     reason: 从 AI 与生物技术扩散的现实压力进入治理问题。
     status: in_library
   - title: 对齐问题
-    author: 待补
+    author: Brian Christian
+    slug: dui-qi-wen-ti
+    path: books/社会科学/Brian Christian-对齐问题.md
     role: 目标对齐
     reason: 解释系统目标、训练数据和人类价值之间为什么会错位。
-    status: planned
+    status: in_library
   - title: 算法霸权
     author: 凯西·奥尼尔
     slug: suan-fa-ba-quan
@@ -27,10 +29,12 @@ books:
     reason: 用现实案例说明算法如何放大不平等并隐藏责任。
     status: in_library
   - title: 监视资本主义时代
-    author: 待补
+    author: Shoshana Zuboff
+    slug: jian-shi-zi-ben-zhu-yi-shi-dai
+    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
     role: 数据权力
     reason: 把算法风险放入行为数据、预测市场和商业激励中理解。
-    status: planned
+    status: in_library
   - title: 开放社会及其敌人
     author: 卡尔·波普尔
     slug: kai-fang-she-hui-ji-qi-di-ren
