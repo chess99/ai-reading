@@ -15,20 +15,24 @@ books:
     reason: 从有闲、身份和炫耀性消费进入，帮助读者看到消费如何承载阶层信号。
     status: in_library
   - title: 工作、消费主义和新穷人
-    author: 待补
+    author: 齐格蒙特·鲍曼
+    slug: gong-zuo-xiao-fei-zhu-yi-he-xin-qiong-ren
+    path: books/社会科学/齐格蒙特·鲍曼-工作、消费主义和新穷人.md
     role: 消费社会批判
     reason: 解释现代社会如何把人定义为消费者，以及无法消费的人如何被重新标记。
-    status: planned
+    status: in_library
   - title: 消费社会
     author: 待补
     role: 符号消费
     reason: 把消费理解为符号、区隔和社会关系，而不只是个人偏好。
     status: planned
   - title: 邻家的百万富翁
-    author: 待补
+    author: 托马斯·J.斯坦利,威廉·D.丹科
+    slug: lin-jia-de-bai-wan-fu-weng
+    path: books/投资/理财入门/托马斯·J.斯坦利,威廉·D.丹科-邻家的百万富翁.md
     role: 财富行为校准
     reason: 用家庭财富积累的研究对照炫耀消费，说明富裕未必表现为高消费。
-    status: planned
+    status: in_library
   - title: 贫穷的本质
     author: 阿比吉特·班纳吉、埃斯特·迪弗洛
     slug: pin-qiong-de-ben-zhi

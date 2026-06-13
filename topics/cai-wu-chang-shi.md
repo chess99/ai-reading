@@ -15,10 +15,12 @@ books:
     reason: 用故事把储蓄、目标和现金流先讲清楚，适合没有财务训练的读者建立第一层行动感。
     status: in_library
   - title: 巴比伦最富有的人
-    author: 待补
+    author: 乔治·S.克拉森
+    slug: ba-bi-lun-zui-fu-you-de-ren
+    path: books/投资/理财入门/乔治·S.克拉森-巴比伦最富有的人.md
     role: 储蓄规则
     reason: 把入口处的愿望变成收入留存、控制支出和让钱工作的基本规则。
-    status: planned
+    status: in_library
   - title: 富爸爸穷爸爸
     author: 罗伯特·清崎
     slug: fu-ba-ba-qiong-ba-ba
@@ -27,10 +29,12 @@ books:
     reason: 帮读者区分收入、负债和资产，理解为什么工资增长不自动等于财务安全。
     status: in_library
   - title: 邻家的百万富翁
-    author: 待补
+    author: 托马斯·J.斯坦利,威廉·D.丹科
+    slug: lin-jia-de-bai-wan-fu-weng
+    path: books/投资/理财入门/托马斯·J.斯坦利,威廉·D.丹科-邻家的百万富翁.md
     role: 家庭财富校准
     reason: 用真实富裕家庭的消费和积累模式，校正把高收入、高消费误认为财富的直觉。
-    status: planned
+    status: in_library
   - title: 金钱心理学
     author: 待补
     role: 行为风险

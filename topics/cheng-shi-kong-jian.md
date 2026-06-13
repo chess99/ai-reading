@@ -34,10 +34,12 @@ books:
     reason: 用乡土关系对照城市流动性，帮助读者理解空间变化带来的关系变化。
     status: in_library
   - title: 工作、消费主义和新穷人
-    author: 待补
+    author: 齐格蒙特·鲍曼
+    slug: gong-zuo-xiao-fei-zhu-yi-he-xin-qiong-ren
+    path: books/社会科学/齐格蒙特·鲍曼-工作、消费主义和新穷人.md
     role: 工作消费
     reason: 说明现代城市生活如何被工作身份、消费秩序和新贫困塑造。
-    status: planned
+    status: in_library
   - title: 有闲阶级论
     author: 托斯丹·凡勃伦
     slug: you-xian-jie-ji-lun

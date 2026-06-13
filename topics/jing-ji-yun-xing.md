@@ -8,10 +8,12 @@ group: 经济运行
 date: '2026-06-06'
 books:
   - title: 小岛经济学
-    author: 待补
+    author: 彼得·希夫,安德鲁·希夫
+    slug: xiao-dao-jing-ji-xue
+    path: books/社会科学/经济学/彼得·希夫,安德鲁·希夫-小岛经济学.md
     role: 直觉入口
     reason: 用寓言方式讲清生产、储蓄、借贷和货币，让读者先有经济循环的直观图像。
-    status: planned
+    status: in_library
   - title: 像经济学家一样思考
     author: 宇泽弘文
     slug: xiang-jing-ji-xue-jia-yi-yang-si-kao
