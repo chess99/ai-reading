@@ -50,10 +50,12 @@ books:
     reason: 帮助观察注意力、行动反馈和自我解释如何相互影响。
     status: in_library
   - title: 当下的力量
-    author: 待补
+    author: 埃克哈特·托利
+    slug: dang-xia-de-li-liang
+    path: books/哲学/埃克哈特·托利-当下的力量.md
     role: 当下经验
     reason: 最后把注意力从反复思辨带回身体、当下和直接经验。
-    status: planned
+    status: in_library
 ---
 
 # 如何停止精神内耗

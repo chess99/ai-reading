@@ -15,10 +15,12 @@ books:
     reason: 从极端处境中讨论人如何保留意义感和选择。
     status: in_library
   - title: 悉达多
-    author: 待补
+    author: 赫尔曼·黑塞
+    slug: xi-da-duo
+    path: books/哲学/赫尔曼·黑塞-悉达多.md
     role: 精神追寻
     reason: 用文学经验呈现欲望、失落和自我寻找。
-    status: planned
+    status: in_library
   - title: 沉思录
     author: 马可·奥勒留
     slug: chen-si-lu
@@ -27,10 +29,12 @@ books:
     reason: 训练读者区分外部处境和自身判断。
     status: in_library
   - title: 当下的力量
-    author: 待补
+    author: 埃克哈特·托利
+    slug: dang-xia-de-li-liang
+    path: books/哲学/埃克哈特·托利-当下的力量.md
     role: 当下经验
     reason: 把注意力拉回此刻经验，处理被念头卷走的问题。
-    status: planned
+    status: in_library
   - title: 人的境况
     author: 汉娜·阿伦特
     slug: ren-de-jing-kuang

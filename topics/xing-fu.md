@@ -8,15 +8,19 @@ group: 幸福哲学
 date: '2026-06-06'
 books:
   - title: 幸福的方法
-    author: 待补
+    author: 泰勒·本-沙哈尔
+    slug: xing-fu-de-fang-fa
+    path: books/心理学/泰勒·本-沙哈尔-幸福的方法.md
     role: 幸福入口
     reason: 先把幸福拆成快乐、意义和现实选择之间的关系。
-    status: planned
+    status: in_library
   - title: 真实的幸福
-    author: 待补
+    author: 马丁·塞利格曼
+    slug: zhen-shi-de-xing-fu
+    path: books/心理学/马丁·塞利格曼-真实的幸福.md
     role: 积极心理学
     reason: 提供优势、积极情绪和意义生活的心理学框架。
-    status: planned
+    status: in_library
   - title: 心流
     author: 米哈里·契克森米哈赖
     slug: xin-liu
