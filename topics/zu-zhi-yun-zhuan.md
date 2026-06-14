@@ -57,10 +57,12 @@ books:
     reason: 说明组织如何用原则、透明和复盘维持决策质量。
     status: in_library
   - title: 经理人员的职能
-    author: 待补
+    author: 切斯特·I.巴纳德
+    slug: jing-li-ren-yuan-de-zhi-neng
+    path: books/商业管理/切斯特·I.巴纳德-经理人员的职能.md
     role: 管理职能
     reason: 最后回到协调、权威、沟通和经理人在组织中的基本职能。
-    status: planned
+    status: in_library
 ---
 
 # 看懂组织运转

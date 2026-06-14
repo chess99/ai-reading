@@ -22,10 +22,12 @@ books:
     reason: 把管理放进企业目标、组织、人员和绩效的整体框架。
     status: in_library
   - title: 经理人员的职能
-    author: 待补
+    author: 切斯特·I.巴纳德
+    slug: jing-li-ren-yuan-de-zhi-neng
+    path: books/商业管理/切斯特·I.巴纳德-经理人员的职能.md
     role: 管理职能
     reason: 说明协调、沟通、权威和组织运转中的经理角色。
-    status: planned
+    status: in_library
   - title: 领导梯队
     author: 查兰
     slug: ling-dao-ti-dui
