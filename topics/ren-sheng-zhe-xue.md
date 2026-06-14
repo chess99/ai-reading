@@ -13,10 +13,12 @@ books:
     reason: 用故事方式带读者进入哲学史和基本问题。
     status: planned
   - title: 人生的智慧
-    author: 待补
+    author: 叔本华
+    slug: ren-sheng-de-zhi-hui
+    path: books/哲学/叔本华-人生的智慧.md
     role: 处世判断
     reason: 从欲望、独处、名声和生活策略进入现实人生。
-    status: planned
+    status: in_library
   - title: 沉思录
     author: 马可·奥勒留
     slug: chen-si-lu
@@ -25,20 +27,26 @@ books:
     reason: 训练读者区分可控与不可控，并观察自己的判断。
     status: in_library
   - title: 论语
-    author: 待补
+    author: 孔子
+    slug: lun-yu
+    path: books/哲学/孔子-论语.md
     role: 儒家修身
     reason: 把人生问题放到修身、关系和礼的秩序中理解。
-    status: planned
+    status: in_library
   - title: 道德经
-    author: 待补
+    author: 老子
+    slug: dao-de-jing
+    path: books/哲学/老子-道德经.md
     role: 道家视角
     reason: 提供无为、柔弱和反直觉处世的另一套语言。
-    status: planned
+    status: in_library
   - title: 尼各马可伦理学
-    author: 待补
+    author: 亚里士多德
+    slug: ni-ge-ma-ke-lun-li-xue
+    path: books/哲学/亚里士多德-尼各马可伦理学.md
     role: 德性伦理
     reason: 把好生活与习惯、德性和实践判断连接起来。
-    status: planned
+    status: in_library
   - title: 悉达多
     author: 待补
     role: 精神追寻

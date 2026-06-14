@@ -39,15 +39,19 @@ books:
     reason: 从课题分离和自我接纳处理过度依赖外部评价的问题。
     status: in_library
   - title: 人生的智慧
-    author: 待补
+    author: 叔本华
+    slug: ren-sheng-de-zhi-hui
+    path: books/哲学/叔本华-人生的智慧.md
     role: 人生判断
     reason: 用节制、欲望和处世判断补足幸福的现实面。
-    status: planned
+    status: in_library
   - title: 尼各马可伦理学
-    author: 待补
+    author: 亚里士多德
+    slug: ni-ge-ma-ke-lun-li-xue
+    path: books/哲学/亚里士多德-尼各马可伦理学.md
     role: 德性伦理
     reason: 把幸福放到德性、实践和完整人生中理解。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解幸福
