@@ -8,20 +8,26 @@ group: 艺术审美
 date: '2026-06-06'
 books:
   - title: 艺术的故事
-    author: 待补
+    author: E.H. 贡布里希
+    slug: yi-shu-de-gu-shi
+    path: books/写作创意/E.H. 贡布里希-艺术的故事.md
     role: 艺术史入口
     reason: 先用清晰的艺术史线索理解作品、风格和时代。
-    status: planned
+    status: in_library
   - title: 写给大家看的设计书
-    author: 待补
+    author: 罗宾·威廉姆斯
+    slug: xie-gei-da-jia-kan-de-she-ji-shu
+    path: books/写作创意/罗宾·威廉姆斯-写给大家看的设计书.md
     role: 视觉基础
     reason: 提供对比、重复、对齐和亲密性等可观察的设计原则。
-    status: planned
+    status: in_library
   - title: 像艺术家一样思考
-    author: 待补
+    author: 贝蒂·艾德华
+    slug: xiang-yi-shu-jia-yi-yang-si-kao
+    path: books/写作创意/贝蒂·艾德华-像艺术家一样思考.md
     role: 观察训练
     reason: 训练读者从概念化观看转向更具体的形状、边界和关系。
-    status: planned
+    status: in_library
   - title: 美的历程
     author: 待补
     role: 中国美学

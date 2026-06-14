@@ -43,10 +43,12 @@ books:
     reason: 处理写作者身份、习惯和观察生活的方式。
     status: in_library
   - title: 像艺术家一样思考
-    author: 待补
+    author: 贝蒂·艾德华
+    slug: xiang-yi-shu-jia-yi-yang-si-kao
+    path: books/写作创意/贝蒂·艾德华-像艺术家一样思考.md
     role: 观察训练
     reason: 用视觉和观察训练打开创意工作的感知方式。
-    status: planned
+    status: in_library
   - title: 最小阻力之路
     author: 罗伯特·弗里茨
     slug: zui-xiao-zu-li-zhi-lu
