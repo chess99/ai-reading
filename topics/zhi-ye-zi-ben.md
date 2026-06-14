@@ -29,10 +29,12 @@ books:
     reason: 解释高质量注意力为什么是复杂技能和高价值产出的基础。
     status: in_library
   - title: 远见
-    author: 待补
+    author: 布赖恩·费瑟斯通豪
+    slug: yuan-jian
+    path: books/个人成长/布赖恩·费瑟斯通豪-远见.md
     role: 长期阶段
     reason: 把职业资本放进长期职业周期，避免只追逐短期机会。
-    status: planned
+    status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi

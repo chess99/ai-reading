@@ -8,10 +8,12 @@ group: 职业资本
 date: '2026-06-06'
 books:
   - title: 远见
-    author: 待补
+    author: 布赖恩·费瑟斯通豪
+    slug: yuan-jian
+    path: books/个人成长/布赖恩·费瑟斯通豪-远见.md
     role: 职业周期
     reason: 先把职业选择放进长期阶段，而不是只看眼前职位。
-    status: planned
+    status: in_library
   - title: 职业锚
     author: 待补
     role: 动机锚点
