@@ -8,10 +8,12 @@ group: 饮食代谢
 date: '2026-06-06'
 books:
   - title: 营养学：概念与争论
-    author: 待补
+    author: Frances Sizer, Eleanor Whitney
+    slug: ying-yang-xue
+    path: books/健康运动/Frances Sizer,Eleanor Whitney-营养学.md
     role: 营养主框架
     reason: 作为主框架建立营养学概念、证据和争议意识。
-    status: planned
+    status: in_library
   - title: 我们为什么会生病
     author: Randolph M. Nesse, George C. Williams
     slug: wo-men-wei-shen-me-hui-sheng-bing
