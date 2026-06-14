@@ -10,49 +10,49 @@ books:
   - title: 沟通的本质
     author: 罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特
     slug: gou-tong-de-ben-zhi
-    path: books/心理学/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md
+    path: books/关系家庭/沟通冲突/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md
     role: 沟通基础
     reason: 先理解信息、关系、倾听、冲突和语境如何共同影响沟通。
     status: in_library
   - title: 非暴力沟通
     author: 马歇尔·卢森堡
     slug: fei-bao-li-gou-tong
-    path: books/心理学/马歇尔·卢森堡-非暴力沟通.md
+    path: books/关系家庭/沟通冲突/马歇尔·卢森堡-非暴力沟通.md
     role: 情绪表达
     reason: 把评价和指责拆成观察、感受、需要与请求。
     status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua
-    path: books/心理学/科里·帕特森-关键对话.md
+    path: books/关系家庭/沟通冲突/科里·帕特森-关键对话.md
     role: 高风险对话
     reason: 处理分歧大、情绪强、后果重时如何维持对话安全。
     status: in_library
   - title: 高难度谈话
     author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
     slug: gao-nan-du-tan-hua
-    path: books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
+    path: books/关系家庭/沟通冲突/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
     role: 困难议题
     reason: 帮助拆解事实、感受和身份威胁交织的谈话。
     status: in_library
   - title: 金字塔原理
     author: 芭芭拉·明托
     slug: jin-zi-ta-yuan-li
-    path: books/个人成长/芭芭拉·明托-金字塔原理.md
+    path: books/自我管理/表达输出/芭芭拉·明托-金字塔原理.md
     role: 结构表达
     reason: 训练先给结论、再组织理由和证据的表达结构。
     status: in_library
   - title: 演讲的力量
     author: 克里斯·安德森
     slug: yan-jiang-de-li-liang
-    path: books/个人成长/克里斯·安德森-演讲的力量.md
+    path: books/自我管理/表达输出/克里斯·安德森-演讲的力量.md
     role: 公开表达
     reason: 把个人观点转化为听众能跟上的公开表达。
     status: in_library
   - title: 说服
     author: 诺瓦·戈尔茨坦,史蒂夫·马丁,罗伯特·西奥迪尼
     slug: shuo-fu
-    path: books/心理学/诺瓦·戈尔茨坦,史蒂夫·马丁,罗伯特·西奥迪尼-说服.md
+    path: books/关系家庭/沟通冲突/诺瓦·戈尔茨坦,史蒂夫·马丁,罗伯特·西奥迪尼-说服.md
     role: 说服机制
     reason: 补充态度改变、受众理解和说服边界。
     status: in_library

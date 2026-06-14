@@ -10,63 +10,63 @@ books:
   - title: 聪明的投资者
     author: 本杰明·格雷厄姆
     slug: cong-ming-de-tou-zi-zhe
-    path: books/投资/价值投资/本杰明·格雷厄姆-聪明的投资者.md
+    path: books/金钱投资/价值投资/本杰明·格雷厄姆-聪明的投资者.md
     role: 价值入口
     reason: 用市场先生和安全边际建立价值投资的基本语言，让读者先理解防御性原则。
     status: in_library
   - title: 证券分析
     author: 本杰明·格雷厄姆
     slug: zheng-quan-fen-xi
-    path: books/投资/价值投资/本杰明·格雷厄姆-证券分析.md
+    path: books/金钱投资/价值投资/本杰明·格雷厄姆-证券分析.md
     role: 分析底座
     reason: 把价值判断推进到财务、资产、收益和证券条款的细致分析。
     status: in_library
   - title: 巴菲特致股东的信
     author: 沃伦·巴菲特
     slug: ba-fei-te-zhi-gu-dong-de-xin
-    path: books/投资/价值投资/沃伦·巴菲特-巴菲特致股东的信.md
+    path: books/金钱投资/价值投资/沃伦·巴菲特-巴菲特致股东的信.md
     role: 企业质量
     reason: 展示价值投资如何从便宜资产扩展到优秀企业、资本配置和长期复利。
     status: in_library
   - title: 穷查理宝典
     author: 查理·芒格
     slug: qiong-cha-li-bao-dian
-    path: books/投资/价值投资/查理·芒格-穷查理宝典.md
+    path: books/金钱投资/价值投资/查理·芒格-穷查理宝典.md
     role: 能力圈
     reason: 补上误判心理、跨学科模型和能力圈，避免把价值投资简化为估值公式。
     status: in_library
   - title: 怎样选择成长股
     author: 菲利普·费雪
     slug: zen-yang-xuan-ze-cheng-zhang-gu
-    path: books/投资/价值投资/菲利普·费雪-怎样选择成长股.md
+    path: books/金钱投资/价值投资/菲利普·费雪-怎样选择成长股.md
     role: 成长质量
     reason: 让读者看到研究企业增长、管理层和竞争优势的另一条价值分析路径。
     status: in_library
   - title: 成功投资
     author: 彼得·林奇
     slug: cheng-gong-tou-zi
-    path: books/投资/价值投资/彼得·林奇-成功投资.md
+    path: books/金钱投资/价值投资/彼得·林奇-成功投资.md
     role: 实践案例
     reason: 用职业投资者的经验把选股、组合和长期执行中的取舍具体化。
     status: in_library
   - title: 投资最重要的事
     author: 霍华德·马克斯
     slug: tou-zi-zui-zhong-yao-de-shi
-    path: books/投资/价值投资/霍华德·马克斯-投资最重要的事.md
+    path: books/金钱投资/价值投资/霍华德·马克斯-投资最重要的事.md
     role: 风险校准
     reason: 把价值判断放回风险、市场共识和周期位置中，提醒便宜本身不等于安全。
     status: in_library
   - title: 安全边际
     author: 塞思·卡拉曼
     slug: an-quan-bian-ji
-    path: books/投资/价值投资/塞思·卡拉曼-安全边际.md
+    path: books/金钱投资/价值投资/塞思·卡拉曼-安全边际.md
     role: 深度防守
     reason: 强化资本永久损失、估值纪律和机会稀缺性，是对前面乐观叙事的约束。
     status: in_library
   - title: 价值投资：从格雷厄姆到巴菲特
     author: 布鲁斯·C.格林沃尔德
     slug: jia-zhi-tou-zi-cong-ge-lei-e-mu-dao-ba-fei-te
-    path: books/投资/价值投资/布鲁斯·C.格林沃尔德-价值投资：从格雷厄姆到巴菲特.md
+    path: books/金钱投资/价值投资/布鲁斯·C.格林沃尔德-价值投资：从格雷厄姆到巴菲特.md
     role: 谱系收束
     reason: 用价值投资的发展脉络收束全路径，帮助读者区分不同流派和适用条件。
     status: in_library

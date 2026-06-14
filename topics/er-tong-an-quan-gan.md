@@ -10,49 +10,49 @@ books:
   - title: 依恋
     author: 约翰·鲍尔比
     slug: yi-lian
-    path: books/心理学/约翰·鲍尔比-依恋.md
+    path: books/关系家庭/亲密关系/约翰·鲍尔比-依恋.md
     role: 安全感基础
     reason: 先理解早期关系如何影响儿童探索、分离和情绪调节。
     status: in_library
   - title: 给孩子一生的安全感
     author: 林紫
     slug: gei-hai-zi-yi-sheng-de-an-quan-gan
-    path: books/心理学/林紫-给孩子一生的安全感.md
+    path: books/关系家庭/家庭教育/林紫-给孩子一生的安全感.md
     role: 安全养育
     reason: 把依恋理论转向父母如何回应、陪伴和提供稳定关系。
     status: in_library
   - title: 童年的秘密
     author: 玛利亚·蒙台梭利
     slug: tong-nian-de-mi-mi
-    path: books/心理学/玛利亚·蒙台梭利-童年的秘密.md
+    path: books/关系家庭/儿童发展/玛利亚·蒙台梭利-童年的秘密.md
     role: 儿童观
     reason: 帮助成人从儿童自身的发展节奏理解成长。
     status: in_library
   - title: 完整的成长
     author: 孙瑞雪
     slug: wan-zheng-de-cheng-zhang
-    path: books/心理学/孙瑞雪-完整的成长.md
+    path: books/关系家庭/儿童发展/孙瑞雪-完整的成长.md
     role: 成长整合
     reason: 关注儿童情绪、人格、身体和关系的整体发展。
     status: in_library
   - title: 终身幼儿园
     author: 米切尔·雷斯尼克
     slug: zhong-shen-you-er-yuan
-    path: books/个人成长/米切尔·雷斯尼克-终身幼儿园.md
+    path: books/自我管理/学习练习/米切尔·雷斯尼克-终身幼儿园.md
     role: 创造性学习
     reason: 把教育从灌输知识转向项目、兴趣、同伴和创造。
     status: in_library
   - title: 认知天性
     author: 彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔
     slug: ren-zhi-tian-xing
-    path: books/效率习惯/彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔-认知天性.md
+    path: books/自我管理/学习练习/彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔-认知天性.md
     role: 学习科学
     reason: 补充记忆、练习、提取和反馈的证据视角。
     status: in_library
   - title: 朗读手册
     author: 吉姆·崔利斯
     slug: lang-du-shou-ce
-    path: books/个人成长/吉姆·崔利斯-朗读手册.md
+    path: books/自我管理/学习练习/吉姆·崔利斯-朗读手册.md
     role: 阅读环境
     reason: 回到家庭阅读环境，说明陪伴、朗读和阅读兴趣如何长期积累。
     status: in_library

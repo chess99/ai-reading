@@ -10,56 +10,56 @@ books:
   - title: 随机漫步的傻瓜
     author: 纳西姆·尼古拉斯·塔勒布
     slug: sui-ji-man-bu-de-sha-gua
-    path: books/思维方式/纳西姆·尼古拉斯·塔勒布-随机漫步的傻瓜.md
+    path: books/思维科学/概率风险/纳西姆·尼古拉斯·塔勒布-随机漫步的傻瓜.md
     role: 运气识别入口
     reason: 先区分能力、运气和幸存者偏差，让读者警惕从结果倒推原因。
     status: in_library
   - title: 超级预测
     author: 菲利普·泰洛克,丹·加德纳
     slug: chao-ji-yu-ce
-    path: books/思维方式/菲利普·泰洛克,丹·加德纳-超级预测.md
+    path: books/思维科学/概率风险/菲利普·泰洛克,丹·加德纳-超级预测.md
     role: 可校准预测
     reason: 训练把判断写成概率、期限和条件，并根据新证据持续更新。
     status: in_library
   - title: 噪声
     author: 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦
     slug: zao-sheng
-    path: books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
+    path: books/思维科学/概率风险/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
     role: 判断波动检查
     reason: 说明预测和评估会受随机波动影响，帮助读者检查标准是否一致。
     status: in_library
   - title: 黑天鹅
     author: 纳西姆·尼古拉斯·塔勒布
     slug: hei-tian-e
-    path: books/社会科学/纳西姆·尼古拉斯·塔勒布-黑天鹅.md
+    path: books/思维科学/概率风险/纳西姆·尼古拉斯·塔勒布-黑天鹅.md
     role: 极端事件边界
     reason: 提醒读者某些罕见事件无法靠常规样本轻易预测，却会改变整体结果。
     status: in_library
   - title: 风险、不确定性与利润
     author: 弗兰克·H·奈特
     slug: feng-xian-bu-que-ding-xing-yu-li-run
-    path: books/社会科学/弗兰克·H·奈特-风险、不确定性与利润.md
+    path: books/金钱投资/经济学/弗兰克·H·奈特-风险、不确定性与利润.md
     role: 不确定性区分
     reason: 用风险和不可测不确定性的区分，补上概率模型的边界。
     status: in_library
   - title: 反脆弱
     author: 纳西姆·塔勒布
     slug: fan-cui-ruo
-    path: books/思维方式/纳西姆·塔勒布-反脆弱.md
+    path: books/思维科学/系统复杂/纳西姆·塔勒布-反脆弱.md
     role: 暴露面设计
     reason: 把重点从预测正确转向怎样设计面对波动仍能受益或少受伤的结构。
     status: in_library
   - title: 对赌
     author: 陈楫宝
     slug: dui-du
-    path: books/商业管理/陈楫宝-对赌.md
+    path: books/思维科学/决策判断/陈楫宝-对赌.md
     role: 决策复盘
     reason: 帮助读者把结果质量和决策质量分开，用下注视角改进复盘。
     status: in_library
   - title: 投资最重要的事
     author: 霍华德·马克斯
     slug: tou-zi-zui-zhong-yao-de-shi
-    path: books/投资/价值投资/霍华德·马克斯-投资最重要的事.md
+    path: books/金钱投资/价值投资/霍华德·马克斯-投资最重要的事.md
     role: 投资风险收束
     reason: 最后把概率、周期和风险意识放进投资场景，强调防守、边际和不确定性。
     status: in_library

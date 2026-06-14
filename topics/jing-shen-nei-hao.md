@@ -10,49 +10,49 @@ books:
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
-    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
+    path: books/心理修复/情绪内耗/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询入口
     reason: 先看见人如何在关系和叙事中反复困住自己。
     status: in_library
   - title: 伯恩斯新情绪疗法
     author: 大卫·伯恩斯
     slug: bo-en-si-xin-qing-xu-liao-fa
-    path: books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md
+    path: books/心理修复/情绪内耗/大卫·伯恩斯-伯恩斯新情绪疗法.md
     role: 认知模式
     reason: 识别自动想法和认知扭曲如何制造反复消耗。
     status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing
-    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
+    path: books/心理修复/情绪内耗/路斯·哈里斯-幸福的陷阱.md
     role: 接纳行动
     reason: 处理对痛苦体验的控制和回避，让行动重新回到价值上。
     status: in_library
   - title: 拖延心理学
     author: 简·博克,莱诺拉·袁
     slug: tuo-yan-xin-li-xue
-    path: books/心理学/简·博克,莱诺拉·袁-拖延心理学.md
+    path: books/心理修复/心理通论/简·博克,莱诺拉·袁-拖延心理学.md
     role: 回避阻力
     reason: 说明拖延背后的恐惧、完美主义和自我价值压力。
     status: in_library
   - title: 被讨厌的勇气
     author: 岸见一郎,古贺史健
     slug: bei-tao-yan-de-yong-qi
-    path: books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md
+    path: books/心理修复/自尊成长/岸见一郎,古贺史健-被讨厌的勇气.md
     role: 边界意识
     reason: 用课题分离理解责任边界，减少过度承担。
     status: in_library
   - title: 认知觉醒
     author: 周岭
     slug: ren-zhi-jue-xing
-    path: books/个人成长/周岭-认知觉醒.md
+    path: books/自我管理/习惯行动/周岭-认知觉醒.md
     role: 元认知
     reason: 帮助观察注意力、行动反馈和自我解释如何相互影响。
     status: in_library
   - title: 当下的力量
     author: 埃克哈特·托利
     slug: dang-xia-de-li-liang
-    path: books/哲学/埃克哈特·托利-当下的力量.md
+    path: books/人文艺术/人生哲学/埃克哈特·托利-当下的力量.md
     role: 当下经验
     reason: 最后把注意力从反复思辨带回身体、当下和直接经验。
     status: in_library

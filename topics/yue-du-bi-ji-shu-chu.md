@@ -10,56 +10,56 @@ books:
   - title: 如何阅读一本书
     author: 莫提默·J·艾德勒,查尔斯·范多伦
     slug: ru-he-yue-du-yi-ben-shu
-    path: books/个人成长/莫提默·J·艾德勒,查尔斯·范多伦-如何阅读一本书.md
+    path: books/自我管理/学习练习/莫提默·J·艾德勒,查尔斯·范多伦-如何阅读一本书.md
     role: 阅读入口
     reason: 先把阅读变成分层理解和主动提问。
     status: in_library
   - title: 卡片笔记写作法
     author: 申克·阿伦斯
     slug: ka-pian-bi-ji-xie-zuo-fa
-    path: books/写作创意/申克·阿伦斯-卡片笔记写作法.md
+    path: books/自我管理/表达输出/申克·阿伦斯-卡片笔记写作法.md
     role: 笔记方法
     reason: 用原子化笔记和连接思考，把输入转成可发展的材料。
     status: in_library
   - title: 第二大脑
     author: 蒂亚戈·福特
     slug: di-er-da-nao
-    path: books/个人成长/蒂亚戈·福特-第二大脑.md
+    path: books/自我管理/学习练习/蒂亚戈·福特-第二大脑.md
     role: 知识管理
     reason: 建立收集、组织、提炼和表达的个人知识系统。
     status: in_library
   - title: 金字塔原理
     author: 芭芭拉·明托
     slug: jin-zi-ta-yuan-li
-    path: books/个人成长/芭芭拉·明托-金字塔原理.md
+    path: books/自我管理/表达输出/芭芭拉·明托-金字塔原理.md
     role: 结构表达
     reason: 把零散材料组织成结论先行、层次清楚的表达。
     status: in_library
   - title: 学会提问
     author: 尼尔·布朗,斯图尔特·基利
     slug: xue-hui-ti-wen
-    path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
+    path: books/思维科学/证据科学/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 批判提问
     reason: 帮助输出系统保留质疑、证据和假设检查。
     status: in_library
   - title: 风格感觉
     author: 史蒂芬·平克
     slug: feng-ge-gan-jue
-    path: books/写作创意/史蒂芬·平克-风格感觉.md
+    path: books/人文艺术/写作技艺/史蒂芬·平克-风格感觉.md
     role: 语言风格
     reason: 让结构化表达不止正确，也更清楚、具体和可读。
     status: in_library
   - title: 写作这回事
     author: 斯蒂芬·金
     slug: xie-zuo-zhe-hui-shi
-    path: books/写作创意/斯蒂芬·金-写作这回事.md
+    path: books/人文艺术/写作技艺/斯蒂芬·金-写作这回事.md
     role: 写作实践
     reason: 把阅读和笔记最终带入持续写作的真实过程。
     status: in_library
   - title: 复盘
     author: 陈中
     slug: fu-pan
-    path: books/个人成长/陈中-复盘.md
+    path: books/思维科学/决策判断/陈中-复盘.md
     role: 系统反馈
     reason: 用回顾机制检查输入、整理和输出是否真的形成改进。
     status: in_library

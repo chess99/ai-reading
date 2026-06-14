@@ -51,12 +51,12 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 苏菲的世界 | 哲学入口 | planned | 待补 | 候选: [epub 416 KB 2017](https://z-lib.fm/book/m033dOOa06/%E8%8B%8F%E8%8F%B2%E7%9A%84%E4%B8%96%E7%95%8C.html) |
 | 人生的智慧 | 处世判断 | planned | 待补 | 候选: [epub 7.58 MB 2014](https://z-lib.fm/book/W0EVee81gl/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7.html) |
-| 沉思录 | 斯多葛实践 | in_library | 马可·奥勒留 | chen-si-lu / books/哲学/马可·奥勒留-沉思录.md |
+| 沉思录 | 斯多葛实践 | in_library | 马可·奥勒留 | chen-si-lu / books/人文艺术/人生哲学/马可·奥勒留-沉思录.md |
 | 论语 | 儒家修身 | planned | 待补 | 候选: [epub 58 KB 0](https://z-lib.fm/book/dZ62aN11Zo/%E8%AE%BA%E8%AF%AD.html) |
 | 道德经 | 道家视角 | planned | 待补 | 候选: [epub 609 KB 2021](https://z-lib.fm/book/kZb6DNRNZR/%E9%81%93%E5%BE%B7%E7%BB%8F.html) |
 | 尼各马可伦理学 | 德性伦理 | planned | 待补 | 候选: [epub 334 KB 2008](https://z-lib.fm/book/E0RoqVbqgd/%E5%B0%BC%E5%90%84%E9%A9%AC%E5%8F%AF%E4%BC%A6%E7%90%86%E5%AD%A6.html) |
 | 悉达多 | 精神追寻 | planned | 待补 | 候选: [epub 4.84 MB 2025](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) |
-| 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
+| 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/人文艺术/政治哲学/汉娜·阿伦特-人的境况.md |
 
 ### 如何读懂痛苦、自由与意义
 
@@ -64,12 +64,12 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 活出生命的意义 | 苦难意义 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理学/维克多·E·弗兰克尔-活出生命的意义.md |
+| 活出生命的意义 | 苦难意义 | in_library | 维克多·E·弗兰克尔 | huo-chu-sheng-ming-de-yi-yi / books/心理修复/自尊成长/维克多·E·弗兰克尔-活出生命的意义.md |
 | 悉达多 | 精神追寻 | planned | 待补 | 候选: [epub 4.84 MB 2025](https://z-lib.fm/book/m03o1Jaa06/%E6%82%89%E8%BE%BE%E5%A4%9A.html) |
-| 沉思录 | 内在自由 | in_library | 马可·奥勒留 | chen-si-lu / books/哲学/马可·奥勒留-沉思录.md |
+| 沉思录 | 内在自由 | in_library | 马可·奥勒留 | chen-si-lu / books/人文艺术/人生哲学/马可·奥勒留-沉思录.md |
 | 当下的力量 | 当下经验 | planned | 待补 | 需复核: 原候选和两个中文 EPUB 备选在可用账号下均显示为 z-library.ms/Unknown 且无下载按钮；需换候选或等账号状态恢复。；[epub 755 KB 0](https://z-lib.fm/book/mAv7woQ4Zl/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.html) |
-| 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
-| 开放社会及其敌人 | 社会边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/哲学/卡尔·波普尔-开放社会及其敌人.md |
+| 人的境况 | 行动空间 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/人文艺术/政治哲学/汉娜·阿伦特-人的境况.md |
+| 开放社会及其敌人 | 社会边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/人文艺术/政治哲学/卡尔·波普尔-开放社会及其敌人.md |
 
 ### 如何理解幸福
 
@@ -79,9 +79,9 @@ date: '2026-06-07'
 | --- | --- | --- | --- | --- |
 | 幸福的方法 | 幸福入口 | planned | 待补 | 候选: [epub 394 KB 2013](https://z-lib.fm/book/OZOXwpwV0x/%E5%B9%B8%E7%A6%8F%E7%9A%84%E6%96%B9%E6%B3%95.html) |
 | 真实的幸福 | 积极心理学 | planned | 待补 | 候选: [epub 954 KB 2010](https://z-lib.fm/book/W0EMXVBO0l/%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%B9%B8%E7%A6%8F.html) |
-| 心流 | 沉浸体验 | in_library | 米哈里·契克森米哈赖 | xin-liu / books/效率习惯/米哈里·契克森米哈赖-心流.md |
-| 亲密关系 | 关系基础 | in_library | 罗兰·米勒 | qin-mi-guan-xi / books/心理学/罗兰·米勒-亲密关系.md |
-| 被讨厌的勇气 | 自我接纳 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md |
+| 心流 | 沉浸体验 | in_library | 米哈里·契克森米哈赖 | xin-liu / books/自我管理/学习练习/米哈里·契克森米哈赖-心流.md |
+| 亲密关系 | 关系基础 | in_library | 罗兰·米勒 | qin-mi-guan-xi / books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md |
+| 被讨厌的勇气 | 自我接纳 | in_library | 岸见一郎,古贺史健 | bei-tao-yan-de-yong-qi / books/心理修复/自尊成长/岸见一郎,古贺史健-被讨厌的勇气.md |
 | 人生的智慧 | 人生判断 | planned | 待补 | 候选: [epub 7.58 MB 2014](https://z-lib.fm/book/W0EVee81gl/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7.html) |
 | 尼各马可伦理学 | 德性伦理 | planned | 待补 | 候选: [epub 334 KB 2008](https://z-lib.fm/book/E0RoqVbqgd/%E5%B0%BC%E5%90%84%E9%A9%AC%E5%8F%AF%E4%BC%A6%E7%90%86%E5%AD%A6.html) |
 

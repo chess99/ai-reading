@@ -10,56 +10,56 @@ books:
   - title: 权力
     author: 杰弗瑞·菲佛
     slug: quan-li
-    path: books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md
+    path: books/职业组织/权力变革/杰弗瑞·菲佛-权力.md
     role: 权力入口
     reason: "先让读者直面权力如何取得、维持和影响组织与公共生活。"
     status: in_library
   - title: 旧制度与大革命
     author: 托克维尔
     slug: jiu-zhi-du-yu-da-ge-ming
-    path: books/历史传记/托克维尔-旧制度与大革命.md
+    path: books/历史世界/传记回忆/托克维尔-旧制度与大革命.md
     role: 转型切片
     reason: "用法国革命前后的制度连续性，说明权力变化不等于旧结构自动消失。"
     status: in_library
   - title: 权力与繁荣
     author: 曼瑟·奥尔森
     slug: quan-li-yu-fan-rong
-    path: books/社会科学/曼瑟·奥尔森-权力与繁荣.md
+    path: books/社会公共/政治制度/曼瑟·奥尔森-权力与繁荣.md
     role: 国家激励
     reason: "解释统治者激励、产权和秩序如何影响社会繁荣。"
     status: in_library
   - title: 国家为什么会失败
     author: 德隆·阿西莫格鲁,詹姆斯·罗宾逊
     slug: guo-jia-wei-shen-me-hui-shi-bai
-    path: books/社会科学/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
+    path: books/社会公共/政治制度/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
     role: 制度比较
     reason: "把权力问题推进到包容性制度、汲取性制度和长期发展差异。"
     status: in_library
   - title: 通往奴役之路
     author: 弗里德里希·哈耶克
     slug: tong-wang-nu-yi-zhi-lu
-    path: books/社会科学/弗里德里希·哈耶克-通往奴役之路.md
+    path: books/社会公共/政治制度/弗里德里希·哈耶克-通往奴役之路.md
     role: 自由警戒
     reason: "提醒读者制度设计中的控制冲动可能怎样积累成自由损失。"
     status: in_library
   - title: 法治及其本土资源
     author: 苏力
     slug: fa-zhi-ji-qi-ben-tu-zi-yuan
-    path: books/社会科学/苏力-法治及其本土资源.md
+    path: books/社会公共/法律公共/苏力-法治及其本土资源.md
     role: 本土法治
     reason: "把抽象法治放回中国经验，观察正式规则和本土资源如何互动。"
     status: in_library
   - title: 看得见的正义
     author: 陈瑞华
     slug: kan-de-jian-de-zheng-yi
-    path: books/社会科学/陈瑞华-看得见的正义.md
+    path: books/社会公共/法律公共/陈瑞华-看得见的正义.md
     role: 司法公共性
     reason: "用程序、可见性和说理要求检查权力是否受到公开约束。"
     status: in_library
   - title: 人的境况
     author: 汉娜·阿伦特
     slug: ren-de-jing-kuang
-    path: books/哲学/汉娜·阿伦特-人的境况.md
+    path: books/人文艺术/政治哲学/汉娜·阿伦特-人的境况.md
     role: 行动空间
     reason: "从公共行动和人的处境收束，提醒制度不只是结构，也塑造人的参与可能。"
     status: in_library

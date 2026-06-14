@@ -10,70 +10,70 @@ books:
   - title: 怎样决定大事
     author: 劳伦斯·艾利森,尼尔·肖特兰
     slug: zen-yang-jue-ding-da-shi
-    path: books/思维方式/劳伦斯·艾利森,尼尔·肖特兰-怎样决定大事.md
+    path: books/思维科学/决策判断/劳伦斯·艾利森,尼尔·肖特兰-怎样决定大事.md
     role: 决策场景入口
     reason: 先处理大事为什么不能只靠直觉拍板，帮助读者把选择拆成目标、选项、约束和后果。
     status: in_library
   - title: 决断力
     author: 奇普·希思,丹·希思
     slug: jue-duan-li
-    path: books/思维方式/奇普·希思,丹·希思-决断力.md
+    path: books/思维科学/行为经济/奇普·希思,丹·希思-决断力.md
     role: 流程防错框架
     reason: 用更明确的决策步骤补上备选方案、现实检验、心理距离和预案，避免只在一个答案里纠结。
     status: in_library
   - title: 思考，快与慢
     author: 丹尼尔·卡尼曼
     slug: si-kao-kuai-yu-man
-    path: books/思维方式/丹尼尔·卡尼曼-思考，快与慢.md
+    path: books/思维科学/行为经济/丹尼尔·卡尼曼-思考，快与慢.md
     role: 偏差识别
     reason: 放在流程之后，用来解释锚定、损失厌恶、过度自信等偏差如何进入重大选择。
     status: in_library
   - title: 噪声
     author: 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦
     slug: zao-sheng
-    path: books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
+    path: books/思维科学/概率风险/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
     role: 判断一致性检查
     reason: 把问题从个人偏见扩展到同一规则下的判断波动，提醒读者检查评估标准是否稳定。
     status: in_library
   - title: 超级预测
     author: 菲利普·泰洛克,丹·加德纳
     slug: chao-ji-yu-ce
-    path: books/思维方式/菲利普·泰洛克,丹·加德纳-超级预测.md
+    path: books/思维科学/概率风险/菲利普·泰洛克,丹·加德纳-超级预测.md
     role: 概率更新训练
     reason: 教读者把判断写成可修正的概率估计，而不是一次性表态。
     status: in_library
   - title: 对赌
     author: 陈楫宝
     slug: dui-du
-    path: books/商业管理/陈楫宝-对赌.md
+    path: books/思维科学/决策判断/陈楫宝-对赌.md
     role: 复盘与校准
     reason: 用下注思维区分决策质量和结果运气，让复盘不只是事后归因。
     status: in_library
   - title: 助推
     author: 理查德·塞勒、卡斯·桑斯坦
     slug: zhu-tui
-    path: books/思维方式/理查德·塞勒,卡斯·桑斯坦-助推.md
+    path: books/思维科学/行为经济/理查德·塞勒,卡斯·桑斯坦-助推.md
     role: 选择架构
     reason: 说明环境、默认项和呈现方式会改变选择结果，适合检查自己和团队的决策场景。
     status: in_library
   - title: 清单革命
     author: 阿图·葛文德
     slug: qing-dan-ge-ming
-    path: books/商业管理/阿图·葛文德-清单革命.md
+    path: books/职业组织/运营流程/阿图·葛文德-清单革命.md
     role: 执行防漏
     reason: 把复杂判断落到关键步骤和协作检查，减少知道该做却漏做的风险。
     status: in_library
   - title: 系统之美
     author: 德内拉·梅多斯
     slug: xi-tong-zhi-mei
-    path: books/思维方式/德内拉·梅多斯-系统之美.md
+    path: books/思维科学/系统复杂/德内拉·梅多斯-系统之美.md
     role: 后果反馈
     reason: 用反馈回路和延迟效应检查重大决策的二阶后果，而不是只看眼前收益。
     status: in_library
   - title: 反脆弱
     author: 纳西姆·塔勒布
     slug: fan-cui-ruo
-    path: books/思维方式/纳西姆·塔勒布-反脆弱.md
+    path: books/思维科学/系统复杂/纳西姆·塔勒布-反脆弱.md
     role: 不确定性暴露
     reason: 收束到不确定环境中的暴露面设计，帮助读者判断一个选择是否经得起冲击。
     status: in_library

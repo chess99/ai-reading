@@ -10,56 +10,56 @@ books:
   - title: 系统之美
     author: 德内拉·梅多斯
     slug: xi-tong-zhi-mei
-    path: books/思维方式/德内拉·梅多斯-系统之美.md
+    path: books/思维科学/系统复杂/德内拉·梅多斯-系统之美.md
     role: 反馈回路入口
     reason: 用存量、流量和反馈回路打开系统视角，让读者先看见结构怎样塑造行为。
     status: in_library
   - title: 控制论与科学方法论
     author: 金观涛、华国凡
     slug: kong-zhi-lun-yu-ke-xue-fang-fa-lun
-    path: books/思维方式/金观涛、华国凡-控制论与科学方法论.md
+    path: books/思维科学/系统复杂/金观涛、华国凡-控制论与科学方法论.md
     role: 控制与调节框架
     reason: 补上反馈、控制、信息和方法论语言，避免把系统思维只理解成画关系图。
     status: in_library
   - title: 第五项修炼
     author: 彼得·圣吉
     slug: di-wu-xiang-xiu-lian
-    path: books/商业管理/彼得·圣吉-第五项修炼.md
+    path: books/职业组织/管理通论/彼得·圣吉-第五项修炼.md
     role: 组织学习应用
     reason: 把系统结构放进组织和团队场景，说明局部最优为什么会制造整体问题。
     status: in_library
   - title: 复杂
     author: 梅拉妮·米歇尔
     slug: fu-za
-    path: books/思维方式/梅拉妮·米歇尔-复杂.md
+    path: books/思维科学/系统复杂/梅拉妮·米歇尔-复杂.md
     role: 涌现机制
     reason: 引入复杂系统中的自组织、网络和涌现，让读者理解整体行为为什么不能简单还原成个体相加。
     status: in_library
   - title: 规模
     author: 杰弗里·韦斯特
     slug: gui-mo
-    path: books/思维方式/杰弗里·韦斯特-规模.md
+    path: books/思维科学/系统复杂/杰弗里·韦斯特-规模.md
     role: 尺度规律
     reason: 讨论生命、城市和组织中的尺度效应，帮助读者区分线性增长和结构性变化。
     status: in_library
   - title: 混沌
     author: 詹姆斯·格雷克
     slug: hun-dun
-    path: books/思维方式/詹姆斯·格雷克-混沌.md
+    path: books/思维科学/系统复杂/詹姆斯·格雷克-混沌.md
     role: 非线性边界
     reason: 用混沌和敏感依赖提醒读者，某些系统不能靠线性因果和短期预测来理解。
     status: in_library
   - title: 复杂经济学
     author: 布莱恩·阿瑟
     slug: fu-za-jing-ji-xue
-    path: books/社会科学/布莱恩·阿瑟-复杂经济学.md
+    path: books/金钱投资/经济学/布莱恩·阿瑟-复杂经济学.md
     role: 经济系统扩展
     reason: 把复杂性放进市场和经济演化中，说明适应、路径依赖和反馈如何影响现实选择。
     status: in_library
   - title: 弹性
     author: 莱昂纳德·蒙洛迪诺
     slug: tan-xing
-    path: books/思维方式/莱昂纳德·蒙洛迪诺-弹性.md
+    path: books/思维科学/系统复杂/莱昂纳德·蒙洛迪诺-弹性.md
     role: 适应力收束
     reason: 最后回到系统在冲击下如何维持功能，避免只会分析复杂性而不会判断恢复力。
     status: in_library

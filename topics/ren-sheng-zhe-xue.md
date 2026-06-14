@@ -10,56 +10,56 @@ books:
   - title: 苏菲的世界
     author: 乔斯坦·贾德
     slug: su-fei-de-shi-jie
-    path: books/哲学/乔斯坦·贾德-苏菲的世界.md
+    path: books/人文艺术/人生哲学/乔斯坦·贾德-苏菲的世界.md
     role: 哲学入口
     reason: 用故事方式带读者进入哲学史和基本问题。
     status: in_library
   - title: 人生的智慧
     author: 叔本华
     slug: ren-sheng-de-zhi-hui
-    path: books/哲学/叔本华-人生的智慧.md
+    path: books/人文艺术/人生哲学/叔本华-人生的智慧.md
     role: 处世判断
     reason: 从欲望、独处、名声和生活策略进入现实人生。
     status: in_library
   - title: 沉思录
     author: 马可·奥勒留
     slug: chen-si-lu
-    path: books/哲学/马可·奥勒留-沉思录.md
+    path: books/人文艺术/人生哲学/马可·奥勒留-沉思录.md
     role: 斯多葛实践
     reason: 训练读者区分可控与不可控，并观察自己的判断。
     status: in_library
   - title: 论语
     author: 孔子
     slug: lun-yu
-    path: books/哲学/孔子-论语.md
+    path: books/人文艺术/中国哲学/孔子-论语.md
     role: 儒家修身
     reason: 把人生问题放到修身、关系和礼的秩序中理解。
     status: in_library
   - title: 道德经
     author: 老子
     slug: dao-de-jing
-    path: books/哲学/老子-道德经.md
+    path: books/人文艺术/中国哲学/老子-道德经.md
     role: 道家视角
     reason: 提供无为、柔弱和反直觉处世的另一套语言。
     status: in_library
   - title: 尼各马可伦理学
     author: 亚里士多德
     slug: ni-ge-ma-ke-lun-li-xue
-    path: books/哲学/亚里士多德-尼各马可伦理学.md
+    path: books/人文艺术/人生哲学/亚里士多德-尼各马可伦理学.md
     role: 德性伦理
     reason: 把好生活与习惯、德性和实践判断连接起来。
     status: in_library
   - title: 悉达多
     author: 赫尔曼·黑塞
     slug: xi-da-duo
-    path: books/哲学/赫尔曼·黑塞-悉达多.md
+    path: books/人文艺术/人生哲学/赫尔曼·黑塞-悉达多.md
     role: 精神追寻
     reason: 用文学方式呈现经验、欲望和自我寻找。
     status: in_library
   - title: 人的境况
     author: 汉娜·阿伦特
     slug: ren-de-jing-kuang
-    path: books/哲学/汉娜·阿伦特-人的境况.md
+    path: books/人文艺术/政治哲学/汉娜·阿伦特-人的境况.md
     role: 行动空间
     reason: 把个人人生问题推进到劳动、工作、行动和公共世界。
     status: in_library

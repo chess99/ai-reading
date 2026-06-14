@@ -10,42 +10,42 @@ books:
   - title: 伯恩斯新情绪疗法
     author: 大卫·伯恩斯
     slug: bo-en-si-xin-qing-xu-liao-fa
-    path: books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md
+    path: books/心理修复/情绪内耗/大卫·伯恩斯-伯恩斯新情绪疗法.md
     role: 认知入口
     reason: 先理解自动想法和认知扭曲如何影响情绪低落与焦虑。
     status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing
-    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
+    path: books/心理修复/情绪内耗/路斯·哈里斯-幸福的陷阱.md
     role: 接纳行动
     reason: 处理回避、控制情绪的失败和价值导向行动。
     status: in_library
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
-    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
+    path: books/心理修复/情绪内耗/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询现场
     reason: 让读者看见求助过程中的关系、变化和不确定。
     status: in_library
   - title: 蛤蟆先生去看心理医生
     author: 罗伯特·戴博德
     slug: ha-ma-xian-sheng-qu-kan-xin-li-yi-sheng
-    path: books/心理学/罗伯特·戴博德-蛤蟆先生去看心理医生.md
+    path: books/心理修复/情绪内耗/罗伯特·戴博德-蛤蟆先生去看心理医生.md
     role: 通俗入口
     reason: 用故事方式帮助读者理解抑郁、关系和自我评价。
     status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao
-    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
+    path: books/健康身体/睡眠恢复/马修·沃克-我们为什么要睡觉.md
     role: 睡眠支持
     reason: 把睡眠作为情绪恢复的重要条件，而非治疗替代。
     status: in_library
   - title: 运动改造大脑
     author: 约翰·瑞迪
     slug: yun-dong-gai-zao-da-nao
-    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
+    path: books/健康身体/运动训练/约翰·瑞迪-运动改造大脑.md
     role: 运动支持
     reason: 把运动作为辅助恢复条件，理解身体活动与情绪调节的关系。
     status: in_library

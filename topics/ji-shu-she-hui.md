@@ -10,49 +10,49 @@ books:
   - title: 技术的本质
     author: 布莱恩·阿瑟
     slug: ji-shu-de-ben-zhi
-    path: books/社会科学/布莱恩·阿瑟-技术的本质.md
+    path: books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md
     role: 技术演化
     reason: 先把技术看成会组合、演进和扩散的系统，而不是单个工具。
     status: in_library
   - title: 必然
     author: 凯文·凯利
     slug: bi-ran
-    path: books/社会科学/凯文·凯利-必然.md
+    path: books/科技媒介/未来技术/凯文·凯利-必然.md
     role: 网络趋势
     reason: 用网络化、流动化和协作化理解数字社会的长期倾向。
     status: in_library
   - title: 失控
     author: 凯文·凯利
     slug: shi-kong
-    path: books/社会科学/凯文·凯利-失控.md
+    path: books/科技媒介/未来技术/凯文·凯利-失控.md
     role: 复杂系统
     reason: 帮助读者看见技术系统中的涌现、自组织和不可完全控制。
     status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie
-    path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
+    path: books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介环境
     reason: 把注意力从内容转向媒介形式如何改变感知和社会关系。
     status: in_library
   - title: 娱乐至死
     author: 尼尔·波兹曼
     slug: yu-le-zhi-si
-    path: books/社会科学/尼尔·波兹曼-娱乐至死.md
+    path: books/社会公共/媒介传播/尼尔·波兹曼-娱乐至死.md
     role: 娱乐化风险
     reason: 说明媒介形式如何把公共讨论推向轻快、碎片和表演。
     status: in_library
   - title: 监视资本主义时代
     author: Shoshana Zuboff
     slug: jian-shi-zi-ben-zhu-yi-shi-dai
-    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
+    path: books/社会公共/技术社会/Shoshana Zuboff-监视资本主义时代.md
     role: 数据权力
     reason: 解释平台如何把行为数据、预测和商业利益连接起来。
     status: in_library
   - title: 平台革命
     author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
     slug: ping-tai-ge-ming
-    path: books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
+    path: books/商业产品/商业模式/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
     role: 平台结构
     reason: 用平台商业和治理机制补足技术社会的组织形态。
     status: in_library

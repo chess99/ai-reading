@@ -10,70 +10,70 @@ books:
   - title: 学会提问
     author: 尼尔·布朗,斯图尔特·基利
     slug: xue-hui-ti-wen
-    path: books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md
+    path: books/思维科学/证据科学/尼尔·布朗,斯图尔特·基利-学会提问.md
     role: 提问入口
     reason: 先训练读者识别论点、理由、假设和证据缺口，把被动接受改成主动追问。
     status: in_library
   - title: 批判性思维工具
     author: 理查德·保罗,琳达·埃尔德
     slug: pi-pan-xing-si-wei-gong-ju
-    path: books/思维方式/理查德·保罗,琳达·埃尔德-批判性思维工具.md
+    path: books/思维科学/证据科学/理查德·保罗,琳达·埃尔德-批判性思维工具.md
     role: 论证框架
     reason: 提供更完整的推理、概念和标准框架，帮助读者判断一个说法是否成立。
     status: in_library
   - title: 超越感觉
     author: 文森特·鲁吉罗
     slug: chao-yue-gan-jue
-    path: books/思维方式/文森特·鲁吉罗-超越感觉.md
+    path: books/思维科学/证据科学/文森特·鲁吉罗-超越感觉.md
     role: 主观感受校正
     reason: 处理直觉、情绪和个人经验的局限，让批判性不只针对别人。
     status: in_library
   - title: 事实
     author: 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德
     slug: shi-shi
-    path: books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md
+    path: books/思维科学/证据科学/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md
     role: 数据直觉入口
     reason: 用全球事实和误判案例提醒读者，常识感受经常需要被数据校正。
     status: in_library
   - title: 赤裸裸的统计学
     author: 查尔斯·韦兰
     slug: chi-luo-luo-de-tong-ji-xue
-    path: books/思维方式/查尔斯·韦兰-赤裸裸的统计学.md
+    path: books/思维科学/证据科学/查尔斯·韦兰-赤裸裸的统计学.md
     role: 统计语言基础
     reason: 补上均值、相关、抽样和回归等统计概念，让证据判断有基本数感。
     status: in_library
   - title: 女士品茶
     author: 大卫·萨尔斯伯格
     slug: n-shi-pin-cha
-    path: books/思维方式/大卫·萨尔斯伯格-女士品茶.md
+    path: books/思维科学/证据科学/大卫·萨尔斯伯格-女士品茶.md
     role: 实验思想入口
     reason: 用统计学和实验史说明证据怎样被设计、检验和解释。
     status: in_library
   - title: 为什么
     author: 朱迪亚·珀尔,达纳·麦肯齐
     slug: wei-shen-me
-    path: books/思维方式/朱迪亚·珀尔,达纳·麦肯齐-为什么.md
+    path: books/思维科学/证据科学/朱迪亚·珀尔,达纳·麦肯齐-为什么.md
     role: 因果图思维
     reason: 把读者从相关性推进到因果问题，学习用结构关系表达“为什么”。
     status: in_library
   - title: 因果推断
     author: 郭若城
     slug: yin-guo-tui-duan
-    path: books/思维方式/郭若城-因果推断.md
+    path: books/思维科学/证据科学/郭若城-因果推断.md
     role: 因果方法深化
     reason: 进一步处理识别策略、反事实和估计问题，适合深化证据可靠性判断。
     status: in_library
   - title: 这才是心理学
     author: 基思·斯坦诺维奇
     slug: zhe-cai-shi-xin-li-xue
-    path: books/思维方式/基思·斯坦诺维奇-这才是心理学.md
+    path: books/思维科学/证据科学/基思·斯坦诺维奇-这才是心理学.md
     role: 心理学证据边界
     reason: 用心理学研究方法区分科学心理学和流行心理解释，训练领域内证据敏感度。
     status: in_library
   - title: 噪声
     author: 丹尼尔·卡尼曼、奥利维耶·西博尼、卡斯·桑斯坦
     slug: zao-sheng
-    path: books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
+    path: books/思维科学/概率风险/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
     role: 专家判断校验
     reason: 最后检查专家和机构判断中的随机波动，提醒读者证据之外还要看判断过程。
     status: in_library

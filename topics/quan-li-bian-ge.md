@@ -10,49 +10,49 @@ books:
   - title: 权力
     author: 杰弗瑞·菲佛
     slug: quan-li
-    path: books/商业管理/组织行为学/杰弗瑞·菲佛-权力.md
+    path: books/职业组织/权力变革/杰弗瑞·菲佛-权力.md
     role: 权力来源
     reason: 先直面组织中资源、位置、联盟和影响力如何形成权力。
     status: in_library
   - title: 权力与影响力
     author: 约翰·P·科特
     slug: quan-li-yu-ying-xiang-li
-    path: books/商业管理/约翰·P·科特-权力与影响力.md
+    path: books/职业组织/权力变革/约翰·P·科特-权力与影响力.md
     role: 影响策略
     reason: 说明在组织中推动事情需要理解利益、关系和影响路径。
     status: in_library
   - title: 变革之心
     author: 约翰·科特,丹·科恩
     slug: bian-ge-zhi-xin
-    path: books/商业管理/约翰·科特,丹·科恩-变革之心.md
+    path: books/职业组织/组织领导/约翰·科特,丹·科恩-变革之心.md
     role: 变革动员
     reason: 把变革从计划文件转向紧迫感、情绪动员和行动。
     status: in_library
   - title: 创新者的窘境
     author: 克莱顿·克里斯坦森
     slug: chuang-xin-zhe-de-jiong-jing
-    path: books/商业管理/公司战略/克莱顿·克里斯坦森-创新者的窘境.md
+    path: books/商业产品/商业战略/克莱顿·克里斯坦森-创新者的窘境.md
     role: 创新困境
     reason: 解释优秀组织为什么会被既有客户、利润模型和资源配置困住。
     status: in_library
   - title: 从优秀到卓越
     author: 吉姆·柯林斯
     slug: cong-you-xiu-dao-zhuo-yue
-    path: books/商业管理/公司战略/吉姆·柯林斯-从优秀到卓越.md
+    path: books/商业产品/商业战略/吉姆·柯林斯-从优秀到卓越.md
     role: 组织卓越
     reason: 提供组织长期改善、领导力、纪律和飞轮的视角。
     status: in_library
   - title: 重新定义公司
     author: 埃里克·施密特,乔纳森·罗森伯格
     slug: chong-xin-ding-yi-gong-si
-    path: books/商业管理/埃里克·施密特,乔纳森·罗森伯格-重新定义公司.md
+    path: books/职业组织/管理通论/埃里克·施密特,乔纳森·罗森伯格-重新定义公司.md
     role: 文化重塑
     reason: 补充知识型组织中人才、文化和管理方式的变化。
     status: in_library
   - title: 只有偏执狂才能生存
     author: 安迪·格鲁夫
     slug: zhi-you-pian-zhi-kuang-cai-neng-sheng-cun
-    path: books/商业管理/公司战略/安迪·格鲁夫-只有偏执狂才能生存.md
+    path: books/商业产品/商业战略/安迪·格鲁夫-只有偏执狂才能生存.md
     role: 战略拐点
     reason: 最后处理行业变化和战略拐点下组织如何保持警觉。
     status: in_library

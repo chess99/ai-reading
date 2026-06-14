@@ -10,42 +10,42 @@ books:
   - title: 别逗了费曼先生
     author: 费曼
     slug: bie-dou-le-fei-man-xian-sheng
-    path: books/历史传记/费曼-别逗了费曼先生.md
+    path: books/历史世界/传记回忆/费曼-别逗了费曼先生.md
     role: 科学精神入口
     reason: 用科学家的具体经历进入好奇、怀疑、动手验证和反权威的科学气质。
     status: in_library
   - title: 世界观
     author: 理查德·德威特
     slug: shi-jie-guan
-    path: books/思维方式/理查德·德威特-世界观.md
+    path: books/思维科学/证据科学/理查德·德威特-世界观.md
     role: 科学史框架
     reason: 帮助读者理解科学观念如何随历史改变，而不是把当下常识当成天然正确。
     status: in_library
   - title: 科学革命的结构
     author: 托马斯·库恩
     slug: ke-xue-ge-ming-de-jie-gou
-    path: books/思维方式/托马斯·库恩-科学革命的结构.md
+    path: books/思维科学/证据科学/托马斯·库恩-科学革命的结构.md
     role: 范式转换
     reason: 说明常规科学、异常和范式更替如何发生，补上科学共同体的历史维度。
     status: in_library
   - title: 无穷的开始
     author: 戴维·多伊奇
     slug: wu-qiong-de-kai-shi
-    path: books/哲学/戴维·多伊奇-无穷的开始.md
+    path: books/思维科学/证据科学/戴维·多伊奇-无穷的开始.md
     role: 解释与进步
     reason: 把科学理解推进到好解释、可批判和知识进步，强调问题可以继续打开。
     status: in_library
   - title: 这才是心理学
     author: 基思·斯坦诺维奇
     slug: zhe-cai-shi-xin-li-xue
-    path: books/思维方式/基思·斯坦诺维奇-这才是心理学.md
+    path: books/思维科学/证据科学/基思·斯坦诺维奇-这才是心理学.md
     role: 证据边界练习
     reason: 用心理学作为案例，训练读者区分科学证据、伪科学和流行解释。
     status: in_library
   - title: 技术的本质
     author: 布莱恩·阿瑟
     slug: ji-shu-de-ben-zhi
-    path: books/社会科学/布莱恩·阿瑟-技术的本质.md
+    path: books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md
     role: 技术演化收束
     reason: 最后连接科学、知识和技术组合，说明技术不是孤立发明，而是演化系统。
     status: in_library

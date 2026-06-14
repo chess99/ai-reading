@@ -10,49 +10,49 @@ books:
   - title: 蛤蟆先生去看心理医生
     author: 罗伯特·戴博德
     slug: ha-ma-xian-sheng-qu-kan-xin-li-yi-sheng
-    path: books/心理学/罗伯特·戴博德-蛤蟆先生去看心理医生.md
+    path: books/心理修复/情绪内耗/罗伯特·戴博德-蛤蟆先生去看心理医生.md
     role: 咨询入口
     reason: 先用通俗故事让读者看见情绪、关系和自我理解如何展开。
     status: in_library
   - title: 情绪急救
     author: 盖伊·温奇
     slug: qing-xu-ji-jiu
-    path: books/心理学/盖伊·温奇-情绪急救.md
+    path: books/心理修复/情绪内耗/盖伊·温奇-情绪急救.md
     role: 日常应对
     reason: 处理被拒绝、孤独、失败和反刍等常见情绪伤口。
     status: in_library
   - title: 情绪是什么
     author: 乔瓦尼·弗契多
     slug: qing-xu-shi-shen-me
-    path: books/心理学/乔瓦尼·弗契多-情绪是什么.md
+    path: books/心理修复/情绪内耗/乔瓦尼·弗契多-情绪是什么.md
     role: 情绪理论
     reason: 帮助读者理解情绪不是单一反应，而与身体、认知和情境有关。
     status: in_library
   - title: 伯恩斯新情绪疗法
     author: 大卫·伯恩斯
     slug: bo-en-si-xin-qing-xu-liao-fa
-    path: books/心理学/大卫·伯恩斯-伯恩斯新情绪疗法.md
+    path: books/心理修复/情绪内耗/大卫·伯恩斯-伯恩斯新情绪疗法.md
     role: 认知框架
     reason: 用自动想法和认知扭曲解释情绪如何被解释方式放大。
     status: in_library
   - title: 幸福的陷阱
     author: 路斯·哈里斯
     slug: xing-fu-de-xian-jing
-    path: books/心理学/路斯·哈里斯-幸福的陷阱.md
+    path: books/心理修复/情绪内耗/路斯·哈里斯-幸福的陷阱.md
     role: 接纳行动
     reason: 补上接纳、价值和行动，避免把控制情绪当作唯一目标。
     status: in_library
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji
-    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
+    path: books/关系家庭/亲密关系/贝塞尔·范德考克-身体从未忘记.md
     role: 身体反应
     reason: 让读者理解强烈情绪有时与身体记忆和安全感有关。
     status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao
-    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
+    path: books/健康身体/睡眠恢复/马修·沃克-我们为什么要睡觉.md
     role: 睡眠基础
     reason: 最后补充睡眠对情绪调节和恢复能力的基础影响。
     status: in_library

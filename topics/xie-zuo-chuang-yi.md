@@ -10,56 +10,56 @@ books:
   - title: 写作这回事
     author: 斯蒂芬·金
     slug: xie-zuo-zhe-hui-shi
-    path: books/写作创意/斯蒂芬·金-写作这回事.md
+    path: books/人文艺术/写作技艺/斯蒂芬·金-写作这回事.md
     role: 写作入口
     reason: 先进入持续写作、修改和个人经验转化的真实过程。
     status: in_library
   - title: 写作的战争
     author: 史蒂文·普雷斯菲尔德
     slug: xie-zuo-de-zhan-zheng
-    path: books/写作创意/史蒂文·普雷斯菲尔德-写作的战争.md
+    path: books/人文艺术/写作技艺/史蒂文·普雷斯菲尔德-写作的战争.md
     role: 创作阻力
     reason: 命名拖延、逃避和自我怀疑这些创意工作的常见阻力。
     status: in_library
   - title: 字字珠玑
     author: 安妮·拉莫特
     slug: zi-zi-zhu-ji
-    path: books/写作创意/安妮·拉莫特-字字珠玑.md
+    path: books/人文艺术/叙事创作/安妮·拉莫特-字字珠玑.md
     role: 句子修订
     reason: 把写作推进到词句层面的删改、清晰和力量。
     status: in_library
   - title: 风格感觉
     author: 史蒂芬·平克
     slug: feng-ge-gan-jue
-    path: books/写作创意/史蒂芬·平克-风格感觉.md
+    path: books/人文艺术/写作技艺/史蒂芬·平克-风格感觉.md
     role: 风格意识
     reason: 帮助读者理解清楚表达背后的句法、读者和语感。
     status: in_library
   - title: 成为作家
     author: 多萝西娅·布兰德
     slug: cheng-wei-zuo-jia
-    path: books/写作创意/多萝西娅·布兰德-成为作家.md
+    path: books/人文艺术/写作技艺/多萝西娅·布兰德-成为作家.md
     role: 作家心态
     reason: 处理写作者身份、习惯和观察生活的方式。
     status: in_library
   - title: 像艺术家一样思考
     author: 贝蒂·艾德华
     slug: xiang-yi-shu-jia-yi-yang-si-kao
-    path: books/写作创意/贝蒂·艾德华-像艺术家一样思考.md
+    path: books/人文艺术/艺术美学/贝蒂·艾德华-像艺术家一样思考.md
     role: 观察训练
     reason: 用视觉和观察训练打开创意工作的感知方式。
     status: in_library
   - title: 最小阻力之路
     author: 罗伯特·弗里茨
     slug: zui-xiao-zu-li-zhi-lu
-    path: books/个人成长/罗伯特·弗里茨-最小阻力之路.md
+    path: books/自我管理/时间精力/罗伯特·弗里茨-最小阻力之路.md
     role: 创作结构
     reason: 把创作看成从当前现实到目标结构的张力组织。
     status: in_library
   - title: 故事
     author: 罗伯特·麦基
     slug: gu-shi
-    path: books/写作创意/罗伯特·麦基-故事.md
+    path: books/人文艺术/叙事创作/罗伯特·麦基-故事.md
     role: 叙事表达
     reason: 最后补上冲突、结构和叙事推进的系统框架。
     status: in_library

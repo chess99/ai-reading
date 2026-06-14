@@ -18,7 +18,11 @@ next.config.ts 无 `basePath` 配置。
 
 ## 书籍文件命名规范
 
-文件路径：`books/<分类>/<作者>-<书名>.md`
+文件路径：`books/<一级分类>/<二级分类>/<作者>-<书名>.md`
+
+- 新书必须放入已批准的两级书架；不要直接放在一级分类根目录。
+- 一级分类与二级分类以 `docs/superpowers/plans/2026-06-14-book-directory-taxonomy.md` 的 Target Directory Tree 为准。
+- 若确实需要新增分类，先更新书籍目录计划和校验测试，再入库书籍。
 
 ### 书名
 
@@ -42,7 +46,7 @@ next.config.ts 无 `basePath` 配置。
 ```yaml
 ---
 slug: <书名拼音，不含作者名>
-title: <中文书名，与文件名书名部分一致>
+title: <网站展示标题，可含副标题>
 author: <作者名>
 tags: [标签1, 标签2]   # 行内数组格式
 date: 'YYYY-MM-DD'
@@ -53,7 +57,7 @@ date: 'YYYY-MM-DD'
   - ✅ `zen-yang-xuan-ze-cheng-zhang-gu`
   - ❌ `fei-li-pu-fei-xue-zen-yang-xuan-ze-cheng-zhang-gu`
 - `tags`：使用行内数组 `[tag1, tag2]`，不用多行格式
-- `title` 与文件名的书名部分保持一致
+- `title` 是网站最终展示标题，允许使用通用全名或带副标题；文件名仍使用便于维护的中文通用主书名，不强制包含副标题
 
 ## 正文第一级标题
 

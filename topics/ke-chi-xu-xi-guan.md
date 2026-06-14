@@ -10,56 +10,56 @@ books:
   - title: 掌控习惯
     author: 詹姆斯·克利尔
     slug: zhang-kong-xi-guan
-    path: books/效率习惯/詹姆斯·克利尔-掌控习惯.md
+    path: books/自我管理/习惯行动/詹姆斯·克利尔-掌控习惯.md
     role: 身份与环境入口
     reason: 先把习惯从意志力问题转向身份、提示和环境设计问题，降低入门门槛。
     status: in_library
   - title: 习惯的力量
     author: 查尔斯·都希格
     slug: xi-guan-de-li-liang
-    path: books/效率习惯/查尔斯·都希格-习惯的力量.md
+    path: books/自我管理/习惯行动/查尔斯·都希格-习惯的力量.md
     role: 习惯回路框架
     reason: 用提示、惯常行为和奖励解释习惯如何形成，适合拆解已经存在的自动行为。
     status: in_library
   - title: 微习惯
     author: 斯蒂芬·盖斯
     slug: wei-xi-guan
-    path: books/效率习惯/斯蒂芬·盖斯-微习惯.md
+    path: books/自我管理/习惯行动/斯蒂芬·盖斯-微习惯.md
     role: 启动门槛降低
     reason: 专门处理开始太难的问题，让读者把目标缩到小到不会抗拒的动作。
     status: in_library
   - title: 福格行为模型
     author: B.J.福格
     slug: fu-ge-xing-wei-mo-xing
-    path: books/创业产品/B.J.福格-福格行为模型.md
+    path: books/商业产品/用户体验/B.J.福格-福格行为模型.md
     role: 行为设计模型
     reason: 用动机、能力和提示的组合解释行为发生条件，帮助读者重新设计行动触发点。
     status: in_library
   - title: 拖延心理学
     author: 简·博克,莱诺拉·袁
     slug: tuo-yan-xin-li-xue
-    path: books/心理学/简·博克,莱诺拉·袁-拖延心理学.md
+    path: books/心理修复/心理通论/简·博克,莱诺拉·袁-拖延心理学.md
     role: 行动阻力识别
     reason: 处理拖延背后的恐惧、完美主义和回避，让习惯计划不只停留在技巧层面。
     status: in_library
   - title: 自控力
     author: 凯利·麦格尼格尔
     slug: zi-kong-li
-    path: books/心理学/凯利·麦格尼格尔-自控力.md
+    path: books/心理修复/成瘾自控/凯利·麦格尼格尔-自控力.md
     role: 意志力边界
     reason: 说明自控会受压力、奖励和疲劳影响，帮助读者少靠硬扛，多做预先安排。
     status: in_library
   - title: 驱动力
     author: 丹尼尔·平克
     slug: qu-dong-li
-    path: books/个人成长/丹尼尔·平克-驱动力.md
+    path: books/自我管理/习惯行动/丹尼尔·平克-驱动力.md
     role: 内在动机补充
     reason: 把习惯从外部奖励推进到自主、胜任和意义感，解释为什么某些习惯更容易长期保留。
     status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi
-    path: books/效率习惯/格雷戈·麦吉沃恩-精要主义.md
+    path: books/自我管理/专注效率/格雷戈·麦吉沃恩-精要主义.md
     role: 目标取舍收束
     reason: 最后处理习惯过多和目标拥挤的问题，让可持续建立在取舍之上。
     status: in_library

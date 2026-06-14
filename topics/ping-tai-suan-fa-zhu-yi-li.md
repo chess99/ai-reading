@@ -10,49 +10,49 @@ books:
   - title: 娱乐至死
     author: 尼尔·波兹曼
     slug: yu-le-zhi-si
-    path: books/社会科学/尼尔·波兹曼-娱乐至死.md
+    path: books/社会公共/媒介传播/尼尔·波兹曼-娱乐至死.md
     role: 媒介入口
     reason: "先看媒介形式如何把公共讨论推向娱乐化。"
     status: in_library
   - title: 注意力商人
     author: Tim Wu
     slug: zhu-yi-li-shang-ren
-    path: books/社会科学/Tim Wu-注意力商人.md
+    path: books/社会公共/媒介传播/Tim Wu-注意力商人.md
     role: 注意力商业
     reason: "解释注意力如何被捕获、包装和出售。"
     status: in_library
   - title: 过滤泡
     author: 伊莱·帕里泽
     slug: guo-lv-pao
-    path: books/社会科学/伊莱·帕里泽-过滤泡.md
+    path: books/科技媒介/平台算法/伊莱·帕里泽-过滤泡.md
     role: 信息茧房
     reason: "说明个性化推荐如何改变信息接触和公共事实。"
     status: in_library
   - title: 监视资本主义时代
     author: Shoshana Zuboff
     slug: jian-shi-zi-ben-zhu-yi-shi-dai
-    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
+    path: books/社会公共/技术社会/Shoshana Zuboff-监视资本主义时代.md
     role: 数据监控
     reason: "把注意力机制连接到行为数据和预测商业。"
     status: in_library
   - title: 算法霸权
     author: 凯西·奥尼尔
     slug: suan-fa-ba-quan
-    path: books/社会科学/凯西·奥尼尔-算法霸权.md
+    path: books/科技媒介/平台算法/凯西·奥尼尔-算法霸权.md
     role: 算法伤害
     reason: "用算法决策案例呈现偏见、责任和制度风险。"
     status: in_library
   - title: 平台革命
     author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
     slug: ping-tai-ge-ming
-    path: books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
+    path: books/商业产品/商业模式/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
     role: 平台治理
     reason: "解释平台规则、网络效应和生态治理如何运作。"
     status: in_library
   - title: 理解媒介
     author: 马歇尔·麦克卢汉
     slug: li-jie-mei-jie
-    path: books/社会科学/马歇尔·麦克卢汉-理解媒介.md
+    path: books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md
     role: 媒介理论
     reason: "回到媒介形式本身，整理前面各书的共同基础。"
     status: in_library

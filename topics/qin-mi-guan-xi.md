@@ -10,56 +10,56 @@ books:
   - title: 亲密关系
     author: 罗兰·米勒
     slug: qin-mi-guan-xi
-    path: books/心理学/罗兰·米勒-亲密关系.md
+    path: books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md
     role: 关系总览
     reason: 先把吸引、依恋、沟通、冲突、承诺和关系维持放进同一个关系过程里。
     status: in_library
   - title: 依恋
     author: 约翰·鲍尔比
     slug: yi-lian
-    path: books/心理学/约翰·鲍尔比-依恋.md
+    path: books/关系家庭/亲密关系/约翰·鲍尔比-依恋.md
     role: 安全感框架
     reason: 解释靠近、回避、焦虑和分离反应为什么会在成人关系中反复出现。
     status: in_library
   - title: 幸福的婚姻
     author: 约翰·戈特曼,娜恩·西尔弗
     slug: xing-fu-de-hun-yin
-    path: books/心理学/约翰·戈特曼,娜恩·西尔弗-幸福的婚姻.md
+    path: books/关系家庭/亲密关系/约翰·戈特曼,娜恩·西尔弗-幸福的婚姻.md
     role: 长期关系研究
     reason: 把亲密关系从感受判断推进到冲突、修复、友谊和承诺的可观察模式。
     status: in_library
   - title: 抱紧我
     author: 苏珊·强森
     slug: bao-jin-wo
-    path: books/心理学/苏珊·强森-抱紧我.md
+    path: books/关系家庭/亲密关系/苏珊·强森-抱紧我.md
     role: 情绪循环
     reason: 说明伴侣争吵背后常有未被看见的依恋需求和保护性反应。
     status: in_library
   - title: 爱的艺术
     author: 埃里希·弗洛姆
     slug: ai-de-yi-shu
-    path: books/心理学/埃里希·弗洛姆-爱的艺术.md
+    path: books/关系家庭/亲密关系/埃里希·弗洛姆-爱的艺术.md
     role: 爱的哲学
     reason: 补上爱作为能力、责任和实践的维度，避免把亲密关系只理解成匹配。
     status: in_library
   - title: 沟通的本质
     author: 罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特
     slug: gou-tong-de-ben-zhi
-    path: books/心理学/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md
+    path: books/关系家庭/沟通冲突/罗纳德·阿德勒,劳伦斯·罗森菲尔德,拉塞尔·普罗科特-沟通的本质.md
     role: 沟通机制
     reason: 帮助识别日常对话中的关系信息、倾听偏差和误解累积。
     status: in_library
   - title: 非暴力沟通
     author: 马歇尔·卢森堡
     slug: fei-bao-li-gou-tong
-    path: books/心理学/马歇尔·卢森堡-非暴力沟通.md
+    path: books/关系家庭/沟通冲突/马歇尔·卢森堡-非暴力沟通.md
     role: 表达练习
     reason: 把情绪和指责拆回观察、感受、需要和请求，让修复有可练习的方法。
     status: in_library
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji
-    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
+    path: books/关系家庭/亲密关系/贝塞尔·范德考克-身体从未忘记.md
     role: 创伤影响
     reason: 解释创伤经验如何影响安全感、身体反应、信任和冲突中的防御。
     status: in_library

@@ -10,49 +10,49 @@ books:
   - title: 公正
     author: 迈克尔·桑德尔
     slug: gong-zheng
-    path: books/哲学/迈克尔·桑德尔-公正.md
+    path: books/人文艺术/政治哲学/迈克尔·桑德尔-公正.md
     role: 公共哲学入口
     reason: 用具体道德困境打开公平问题，让读者先看见不同原则之间的冲突。
     status: in_library
   - title: 洞穴奇案
     author: 富勒、彼得·萨伯
     slug: dong-xue-qi-an
-    path: books/思维方式/富勒,彼得·萨伯-洞穴奇案.md
+    path: books/思维科学/决策判断/富勒,彼得·萨伯-洞穴奇案.md
     role: 法律两难
     reason: 通过同一案件的多种判词，训练读者区分法条、后果、程序和价值立场。
     status: in_library
   - title: 正义之心
     author: 乔纳森·海特
     slug: zheng-yi-zhi-xin
-    path: books/心理学/乔纳森·海特-正义之心.md
+    path: books/思维科学/行为经济/乔纳森·海特-正义之心.md
     role: 道德心理
     reason: 说明公平判断常带有直觉和群体情感，不只是冷静推理。
     status: in_library
   - title: 正义论
     author: 约翰·罗尔斯
     slug: zheng-yi-lun
-    path: books/哲学/约翰·罗尔斯-正义论.md
+    path: books/人文艺术/政治哲学/约翰·罗尔斯-正义论.md
     role: 正义框架
     reason: 提供自由、平等、差别原则和制度安排之间的系统讨论。
     status: in_library
   - title: 论人类不平等的起源和基础
     author: 让-雅克·卢梭
     slug: lun-ren-lei-bu-ping-deng-de-qi-yuan-he-ji-chu
-    path: books/社会科学/让-雅克·卢梭-论人类不平等的起源和基础.md
+    path: books/社会公共/政治制度/让-雅克·卢梭-论人类不平等的起源和基础.md
     role: 不平等起点
     reason: 把正义问题推回财产、比较、文明化和社会不平等的形成。
     status: in_library
   - title: 通往奴役之路
     author: 弗里德里希·哈耶克
     slug: tong-wang-nu-yi-zhi-lu
-    path: books/社会科学/弗里德里希·哈耶克-通往奴役之路.md
+    path: books/社会公共/政治制度/弗里德里希·哈耶克-通往奴役之路.md
     role: 自由边界
     reason: 提醒读者福利、管制和自由之间存在真实张力，不能只保留喜欢的一端。
     status: in_library
   - title: 开放社会及其敌人
     author: 卡尔·波普尔
     slug: kai-fang-she-hui-ji-qi-di-ren
-    path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
+    path: books/人文艺术/政治哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 开放社会
     reason: 放在末尾，用来检查正义理想如何面对极权诱惑、历史决定论和制度防错。
     status: in_library

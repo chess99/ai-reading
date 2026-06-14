@@ -10,56 +10,56 @@ books:
   - title: 优秀到不能被忽视
     author: 卡尔·纽波特
     slug: you-xiu-dao-bu-neng-bei-hu-shi
-    path: books/效率习惯/卡尔·纽波特-优秀到不能被忽视.md
+    path: books/自我管理/专注效率/卡尔·纽波特-优秀到不能被忽视.md
     role: 职业资本
     reason: 先说明稀缺能力如何带来更好的工作条件和选择权。
     status: in_library
   - title: 刻意练习
     author: 安德斯·艾利克森
     slug: ke-yi-lian-xi
-    path: books/效率习惯/安德斯·艾利克森-刻意练习.md
+    path: books/自我管理/学习练习/安德斯·艾利克森-刻意练习.md
     role: 技能训练
     reason: 把能力增长拆成目标、反馈、重复和突破舒适区。
     status: in_library
   - title: 深度工作
     author: 卡尔·纽波特
     slug: shen-du-gong-zuo
-    path: books/效率习惯/卡尔·纽波特-深度工作.md
+    path: books/自我管理/专注效率/卡尔·纽波特-深度工作.md
     role: 专注产出
     reason: 解释高质量注意力为什么是复杂技能和高价值产出的基础。
     status: in_library
   - title: 远见
     author: 布赖恩·费瑟斯通豪
     slug: yuan-jian
-    path: books/个人成长/布赖恩·费瑟斯通豪-远见.md
+    path: books/自我管理/职业发展/布赖恩·费瑟斯通豪-远见.md
     role: 长期阶段
     reason: 把职业资本放进长期职业周期，避免只追逐短期机会。
     status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi
-    path: books/效率习惯/格雷戈·麦吉沃恩-精要主义.md
+    path: books/自我管理/专注效率/格雷戈·麦吉沃恩-精要主义.md
     role: 取舍能力
     reason: 帮助读者减少分散投入，把时间放到真正能积累资本的方向。
     status: in_library
   - title: 原则
     author: 瑞·达利欧
     slug: yuan-ze
-    path: books/个人成长/瑞·达利欧-原则.md
+    path: books/思维科学/决策判断/瑞·达利欧-原则.md
     role: 判断系统
     reason: 用原则、复盘和透明决策支撑长期选择。
     status: in_library
   - title: 一人企业
     author: 保罗·贾维斯
     slug: yi-ren-qi-ye
-    path: books/创业产品/保罗·贾维斯-一人企业.md
+    path: books/商业产品/商业模式/保罗·贾维斯-一人企业.md
     role: 独立价值
     reason: 说明职业资本也可以转化为小规模、独立和可持续的价值创造。
     status: in_library
   - title: 10倍比两倍更容易
     author: 丹·沙利文
     slug: 10-bei-bi-liang-bei-geng-rong-yi
-    path: books/个人成长/丹·沙利文-10倍比两倍更容易.md
+    path: books/自我管理/时间精力/丹·沙利文-10倍比两倍更容易.md
     role: 高杠杆目标
     reason: 最后引入目标杠杆，促使读者重新选择真正值得投入的能力方向。
     status: in_library

@@ -10,56 +10,56 @@ books:
   - title: 小岛经济学
     author: 彼得·希夫,安德鲁·希夫
     slug: xiao-dao-jing-ji-xue
-    path: books/社会科学/经济学/彼得·希夫,安德鲁·希夫-小岛经济学.md
+    path: books/金钱投资/经济学/彼得·希夫,安德鲁·希夫-小岛经济学.md
     role: 直觉入口
     reason: 用寓言方式讲清生产、储蓄、借贷和货币，让读者先有经济循环的直观图像。
     status: in_library
   - title: 像经济学家一样思考
     author: 宇泽弘文
     slug: xiang-jing-ji-xue-jia-yi-yang-si-kao
-    path: books/社会科学/经济学/宇泽弘文-像经济学家一样思考.md
+    path: books/金钱投资/经济学/宇泽弘文-像经济学家一样思考.md
     role: 思维训练
     reason: 引导读者用激励、机会成本和边际变化理解日常经济选择。
     status: in_library
   - title: 经济学原理
     author: N.格里高利·曼昆
     slug: jing-ji-xue-yuan-li
-    path: books/社会科学/经济学/N.格里高利·曼昆-经济学原理.md
+    path: books/金钱投资/经济学/N.格里高利·曼昆-经济学原理.md
     role: 教科书底座
     reason: 系统补上供需、市场、宏观指标、货币和政策等基本概念。
     status: in_library
   - title: 置身事内
     author: 兰小欢
     slug: zhi-shen-shi-nei
-    path: books/社会科学/经济学/兰小欢-置身事内.md
+    path: books/金钱投资/经济学/兰小欢-置身事内.md
     role: 中国制度环境
     reason: 把抽象经济概念放进地方政府、土地财政、产业政策和债务约束中观察。
     status: in_library
   - title: 贫穷的本质
     author: 阿比吉特·班纳吉、埃斯特·迪弗洛
     slug: pin-qiong-de-ben-zhi
-    path: books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
+    path: books/金钱投资/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
     role: 发展经济学
     reason: 用贫困研究和随机实验提醒读者，宏大解释需要回到具体激励和约束。
     status: in_library
   - title: 国富论
     author: 亚当·斯密
     slug: guo-fu-lun
-    path: books/社会科学/亚当·斯密-国富论.md
+    path: books/金钱投资/经济学/亚当·斯密-国富论.md
     role: 古典源头
     reason: 回到分工、市场和政治经济学源头，理解现代经济语言的早期问题意识。
     status: in_library
   - title: 就业、利息和货币通论
     author: 约翰·梅纳德·凯恩斯
     slug: jiu-ye-li-xi-he-huo-bi-tong-lun
-    path: books/社会科学/约翰·梅纳德·凯恩斯-就业利息与货币通论.md
+    path: books/金钱投资/经济学/约翰·梅纳德·凯恩斯-就业利息与货币通论.md
     role: 宏观转折
     reason: 引入总需求、就业、利率和政策干预，补上市场自发调节之外的宏观视角。
     status: in_library
   - title: 债：第一个5000年
     author: 大卫·格雷伯
     slug: zhai
-    path: books/社会科学/经济学/大卫·格雷伯-债.md
+    path: books/金钱投资/经济学/大卫·格雷伯-债.md
     role: 债务历史
     reason: 用长期历史视角重新审视债务、货币、信用和社会关系。
     status: in_library

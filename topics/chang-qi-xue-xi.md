@@ -10,56 +10,56 @@ books:
   - title: 如何阅读一本书
     author: 莫提默·J·艾德勒,查尔斯·范多伦
     slug: ru-he-yue-du-yi-ben-shu
-    path: books/个人成长/莫提默·J·艾德勒,查尔斯·范多伦-如何阅读一本书.md
+    path: books/自我管理/学习练习/莫提默·J·艾德勒,查尔斯·范多伦-如何阅读一本书.md
     role: 阅读入口
     reason: 先学会按层次阅读，把一本书读成可追问的问题。
     status: in_library
   - title: 认知天性
     author: 彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔
     slug: ren-zhi-tian-xing
-    path: books/效率习惯/彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔-认知天性.md
+    path: books/自我管理/学习练习/彼得·C·布朗,亨利·L·罗迪格三世,马克·A·麦克丹尼尔-认知天性.md
     role: 记忆机制
     reason: 用提取练习、间隔和交错学习校正低效学习直觉。
     status: in_library
   - title: 学习之道
     author: 芭芭拉·奥克利
     slug: xue-xi-zhi-dao
-    path: books/效率习惯/芭芭拉·奥克利-学习之道.md
+    path: books/自我管理/学习练习/芭芭拉·奥克利-学习之道.md
     role: 学习方法
     reason: 把专注、发散、拖延和练习安排放进可操作的学习过程。
     status: in_library
   - title: 刻意练习
     author: 安德斯·艾利克森
     slug: ke-yi-lian-xi
-    path: books/效率习惯/安德斯·艾利克森-刻意练习.md
+    path: books/自我管理/学习练习/安德斯·艾利克森-刻意练习.md
     role: 能力训练
     reason: 说明长期学习需要明确技能、反馈和逐步提高的难度。
     status: in_library
   - title: 心流
     author: 米哈里·契克森米哈赖
     slug: xin-liu
-    path: books/效率习惯/米哈里·契克森米哈赖-心流.md
+    path: books/自我管理/学习练习/米哈里·契克森米哈赖-心流.md
     role: 投入状态
     reason: 帮助设计挑战与能力匹配的学习任务。
     status: in_library
   - title: 掌控习惯
     author: 詹姆斯·克利尔
     slug: zhang-kong-xi-guan
-    path: books/效率习惯/詹姆斯·克利尔-掌控习惯.md
+    path: books/自我管理/习惯行动/詹姆斯·克利尔-掌控习惯.md
     role: 学习习惯
     reason: 用提示、环境和身份让学习在普通日子里持续发生。
     status: in_library
   - title: 终身成长
     author: 卡罗尔·德韦克
     slug: zhong-shen-cheng-zhang
-    path: books/心理学/卡罗尔·德韦克-终身成长.md
+    path: books/心理修复/自尊成长/卡罗尔·德韦克-终身成长.md
     role: 成长心态
     reason: 处理失败、反馈和能力可发展性的心理框架。
     status: in_library
   - title: 深度工作
     author: 卡尔·纽波特
     slug: shen-du-gong-zuo
-    path: books/效率习惯/卡尔·纽波特-深度工作.md
+    path: books/自我管理/专注效率/卡尔·纽波特-深度工作.md
     role: 专注环境
     reason: 最后为长期学习提供高质量注意力和无干扰环境。
     status: in_library

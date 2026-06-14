@@ -10,49 +10,49 @@ books:
   - title: 超越百岁
     author: 彼得·阿提亚
     slug: chao-yue-bai-sui
-    path: books/健康运动/彼得·阿提亚-超越百岁.md
+    path: books/健康身体/衰老照护/彼得·阿提亚-超越百岁.md
     role: 长寿医学
     reason: 从健康寿命、慢病风险和长期功能进入衰老问题。
     status: in_library
   - title: 最好的告别
     author: Atul Gawande
     slug: zui-hao-de-gao-bie
-    path: books/健康运动/Atul Gawande-最好的告别.md
+    path: books/健康身体/衰老照护/Atul Gawande-最好的告别.md
     role: 照护选择
     reason: 讨论医疗、照护、尊严和临终选择之间的现实张力。
     status: in_library
   - title: 当呼吸化为空气
     author: Paul Kalanithi
     slug: dang-hu-xi-hua-wei-kong-qi
-    path: books/健康运动/Paul Kalanithi-当呼吸化为空气.md
+    path: books/健康身体/衰老照护/Paul Kalanithi-当呼吸化为空气.md
     role: 疾病经验
     reason: 从患者和医生双重视角理解疾病如何改变生命叙事。
     status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao
-    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
+    path: books/健康身体/睡眠恢复/马修·沃克-我们为什么要睡觉.md
     role: 睡眠支撑
     reason: 把睡眠放入认知、恢复和长期健康支持中。
     status: in_library
   - title: 运动改造大脑
     author: 约翰·瑞迪
     slug: yun-dong-gai-zao-da-nao
-    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
+    path: books/健康身体/运动训练/约翰·瑞迪-运动改造大脑.md
     role: 运动支撑
     reason: 从认知、情绪和身体功能角度理解运动的长期价值。
     status: in_library
   - title: 活出生命的意义
     author: 维克多·E·弗兰克尔
     slug: huo-chu-sheng-ming-de-yi-yi
-    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
+    path: books/心理修复/自尊成长/维克多·E·弗兰克尔-活出生命的意义.md
     role: 意义支撑
     reason: 处理疾病和限制中仍然可能存在的意义感。
     status: in_library
   - title: 生死课
     author: 袁凌
     slug: sheng-si-ke
-    path: books/社会科学/袁凌-生死课.md
+    path: books/社会公共/社会理论/袁凌-生死课.md
     role: 临终沟通
     reason: 帮助读者面对死亡、告别和沟通中的现实问题。
     status: in_library

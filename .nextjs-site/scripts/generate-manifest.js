@@ -8,6 +8,7 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
+import matter from 'gray-matter';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -51,9 +52,11 @@ function scanBooks(dir) {
           const content = fs.readFileSync(fullPath, 'utf-8');
           const hash = generateHash(content);
 
-          // 生成 slug（与 Next.js 逻辑一致）
-          const slug = entry.name.replace(/\.md$/, '');
-          const { title, author } = parseFilename(entry.name);
+          const { data } = matter(content);
+          const fallback = parseFilename(entry.name);
+          const slug = data.slug || entry.name.replace(/\.md$/, '');
+          const title = data.title || fallback.title;
+          const author = data.author || fallback.author;
 
           books[slug] = {
             hash,

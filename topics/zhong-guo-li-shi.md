@@ -10,49 +10,49 @@ books:
   - title: 中国通史
     author: 吕思勉
     slug: zhong-guo-tong-shi
-    path: books/历史传记/吕思勉-中国通史.md
+    path: books/历史世界/中国历史/吕思勉-中国通史.md
     role: 通史骨架
     reason: 先提供时间线和基本结构，帮助读者避免在细节中迷路。
     status: in_library
   - title: 中国历代政治得失
     author: 钱穆
     slug: zhong-guo-li-dai-zheng-zhi-de-shi
-    path: books/历史传记/钱穆-中国历代政治得失.md
+    path: books/历史世界/中国历史/钱穆-中国历代政治得失.md
     role: 制度线索
     reason: 用政治制度贯穿历代变化，建立比朝代更稳定的观察轴。
     status: in_library
   - title: 万历十五年
     author: 黄仁宇
     slug: wan-li-shi-wu-nian
-    path: books/历史传记/黄仁宇-万历十五年.md
+    path: books/历史世界/中国历史/黄仁宇-万历十五年.md
     role: 明代切片
     reason: 通过单一年份理解制度、人物和时代气候如何相互牵制。
     status: in_library
   - title: 叫魂
     author: 孔飞力
     slug: jiao-hun
-    path: books/历史传记/孔飞力-叫魂.md
+    path: books/历史世界/中国历史/孔飞力-叫魂.md
     role: 清代社会
     reason: 用基层恐慌事件展示皇权、官僚和民间社会的互动。
     status: in_library
   - title: 中国近代史
     author: 徐中约
     slug: zhong-guo-jin-dai-shi
-    path: books/历史传记/徐中约-中国近代史.md
+    path: books/历史世界/中国历史/徐中约-中国近代史.md
     role: 近代变局
     reason: 帮助读者理解中国如何面对战争、改革、革命和现代国家问题。
     status: in_library
   - title: 枢纽
     author: 施展
     slug: shu-niu
-    path: books/历史传记/施展-枢纽.md
+    path: books/历史世界/中国历史/施展-枢纽.md
     role: 转折解释
     reason: 把中国历史放到文明、国家和现代性的枢纽位置重新理解。
     status: in_library
   - title: 曾国藩传
     author: 张宏杰
     slug: ceng-guo-fan-chuan
-    path: books/历史传记/张宏杰-曾国藩传.md
+    path: books/历史世界/中国历史/张宏杰-曾国藩传.md
     role: 人物收束
     reason: 用人物传记把制度、时代和个人选择放到同一幅图里。
     status: in_library
