@@ -29,20 +29,26 @@ books:
     reason: 训练读者从概念化观看转向更具体的形状、边界和关系。
     status: in_library
   - title: 美的历程
-    author: 待补
+    author: 李泽厚
+    slug: mei-de-li-cheng
+    path: books/写作创意/李泽厚-美的历程.md
     role: 中国美学
     reason: 把审美经验放入中国思想、历史和艺术传统。
-    status: planned
+    status: in_library
   - title: 谈美
-    author: 待补
+    author: 朱光潜
+    slug: tan-mei
+    path: books/写作创意/朱光潜-谈美.md
     role: 美学入门
     reason: 用朴素方式讨论美感、距离、移情和人生经验。
-    status: planned
+    status: in_library
   - title: 禅与摩托车维修艺术
-    author: 待补
+    author: 罗伯特·M. 波西格
+    slug: chan-yu-mo-tuo-che-wei-xiu-yi-shu
+    path: books/写作创意/罗伯特·M. 波西格-禅与摩托车维修艺术.md
     role: 技艺精神
     reason: 把审美判断延伸到质量、技艺和日常实践。
-    status: planned
+    status: in_library
 ---
 
 # 艺术与审美入门
