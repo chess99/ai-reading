@@ -8,10 +8,12 @@ group: 文学阅读
 date: '2026-06-06'
 books:
   - title: 如何阅读一本小说
-    author: 待补
+    author: 托马斯·福斯特
+    slug: ru-he-yue-du-yi-ben-xiao-shuo
+    path: books/写作创意/托马斯·福斯特-如何阅读一本小说.md
     role: 小说入口
     reason: 先学习如何观察叙事、人物和阅读过程。
-    status: planned
+    status: in_library
   - title: 小说面面观
     author: 待补
     role: 叙事形式
@@ -23,15 +25,19 @@ books:
     reason: 提供理解文学文本、意义和解释方法的基础框架。
     status: planned
   - title: 文学回忆录
-    author: 待补
+    author: 木心
+    slug: wen-xue-hui-yi-lu
+    path: books/写作创意/木心-文学回忆录.md
     role: 文学经验
     reason: 用讲述式经验把经典、作者和阅读感受连接起来。
-    status: planned
+    status: in_library
   - title: 文学的故事
-    author: 待补
+    author: 约翰·萨瑟兰
+    slug: wen-xue-de-gu-shi
+    path: books/写作创意/约翰·萨瑟兰-文学的故事.md
     role: 文学史
     reason: 帮助读者把作品放进文学传统和历史脉络。
-    status: planned
+    status: in_library
   - title: 文学讲稿
     author: 待补
     role: 细读示范
