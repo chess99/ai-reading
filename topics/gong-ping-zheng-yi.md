@@ -8,10 +8,12 @@ group: 公平正义
 date: '2026-06-06'
 books:
   - title: 公正
-    author: 待补
+    author: 迈克尔·桑德尔
+    slug: gong-zheng
+    path: books/哲学/迈克尔·桑德尔-公正.md
     role: 公共哲学入口
     reason: 用具体道德困境打开公平问题，让读者先看见不同原则之间的冲突。
-    status: planned
+    status: in_library
   - title: 洞穴奇案
     author: 富勒、彼得·萨伯
     slug: dong-xue-qi-an
@@ -20,15 +22,19 @@ books:
     reason: 通过同一案件的多种判词，训练读者区分法条、后果、程序和价值立场。
     status: in_library
   - title: 正义之心
-    author: 待补
+    author: 乔纳森·海特
+    slug: zheng-yi-zhi-xin
+    path: books/心理学/乔纳森·海特-正义之心.md
     role: 道德心理
     reason: 说明公平判断常带有直觉和群体情感，不只是冷静推理。
-    status: planned
+    status: in_library
   - title: 正义论
-    author: 待补
+    author: 约翰·罗尔斯
+    slug: zheng-yi-lun
+    path: books/哲学/约翰·罗尔斯-正义论.md
     role: 正义框架
     reason: 提供自由、平等、差别原则和制度安排之间的系统讨论。
-    status: planned
+    status: in_library
   - title: 论人类不平等的起源和基础
     author: 让-雅克·卢梭
     slug: lun-ren-lei-bu-ping-deng-de-qi-yuan-he-ji-chu

@@ -15,10 +15,12 @@ books:
     reason: 放在开头，是为了先让读者看到差序格局、熟人社会和礼俗秩序怎样影响共同生活。
     status: in_library
   - title: 社会学的想象力
-    author: 待补
+    author: C. 赖特·米尔斯
+    slug: she-hui-xue-de-xiang-xiang-li
+    path: books/社会科学/C. 赖特·米尔斯-社会学的想象力.md
     role: 社会学眼光
     reason: 把个人遭遇放回社会结构中，帮助读者区分私人困扰和公共议题。
-    status: planned
+    status: in_library
   - title: 社会分工论
     author: 待补
     role: 分工框架

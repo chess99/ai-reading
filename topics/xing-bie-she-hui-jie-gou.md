@@ -37,10 +37,12 @@ books:
     reason: 说明性别结构也会进入亲密关系中的期待、分工和权力感。
     status: in_library
   - title: 社会学的想象力
-    author: 待补
+    author: C. 赖特·米尔斯
+    slug: she-hui-xue-de-xiang-xiang-li
+    path: books/社会科学/C. 赖特·米尔斯-社会学的想象力.md
     role: 社会学收束
     reason: 用社会学想象力把个人经验放回结构，避免把性别问题缩成个体选择。
-    status: planned
+    status: in_library
 ---
 
 # 如何理解性别与社会结构
