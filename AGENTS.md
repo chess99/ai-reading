@@ -18,7 +18,11 @@ next.config.ts 无 `basePath` 配置。
 
 ## 书籍文件命名规范
 
-文件路径：`books/<分类>/<作者>-<书名>.md`
+文件路径：`books/<一级分类>/<二级分类>/<作者>-<书名>.md`
+
+- 新书必须放入已批准的两级书架；不要直接放在一级分类根目录。
+- 一级分类与二级分类以 `docs/superpowers/plans/2026-06-14-book-directory-taxonomy.md` 的 Target Directory Tree 为准。
+- 若确实需要新增分类，先更新书籍目录计划和校验测试，再入库书籍。
 
 ### 书名
 
