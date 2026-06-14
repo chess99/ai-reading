@@ -15,10 +15,12 @@ books:
     reason: 先把职业选择放进长期阶段，而不是只看眼前职位。
     status: in_library
   - title: 职业锚
-    author: 待补
+    author: 埃德加·施恩
+    slug: zhi-ye-mao
+    path: books/个人成长/埃德加·施恩-职业锚.md
     role: 动机锚点
     reason: 帮助识别一个人在职业中不愿长期牺牲的价值和约束。
-    status: planned
+    status: in_library
   - title: 你的降落伞是什么颜色
     author: 理查德·尼尔森·鲍利斯
     slug: ni-de-jiang-luo-san-shi-shen-me-yan-se
