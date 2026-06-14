@@ -6,6 +6,7 @@ import matter from 'gray-matter';
 
 const repoRoot = path.resolve(new URL('../..', import.meta.url).pathname);
 const topicsDir = path.join(repoRoot, 'topics');
+const booksDir = path.join(repoRoot, 'books');
 const panoramaPath = path.join(repoRoot, 'docs/superpowers/plans/2026-06-01-topic-reading-panorama.md');
 const topicLayers = new Set(['入门', '框架', '系统']);
 const slugByTitle = new Map([
@@ -107,6 +108,19 @@ function extractBookTitles(readingPath) {
   return [...readingPath.matchAll(/《([^》]+)》/g)].map(match => match[1]);
 }
 
+function loadBooksBySlug() {
+  const booksBySlug = new Map();
+  for (const filePath of scanMarkdownFiles(booksDir)) {
+    const relativePath = path.relative(repoRoot, filePath);
+    const { data } = matter(readFileSync(filePath, 'utf8'));
+
+    if (typeof data.slug === 'string' && data.slug.trim()) {
+      booksBySlug.set(data.slug, { ...data, relativePath });
+    }
+  }
+  return booksBySlug;
+}
+
 function loadExpectedTopics() {
   const rows = [];
   const rawPlan = readFileSync(panoramaPath, 'utf8');
@@ -144,6 +158,7 @@ test('topic markdown files follow the panorama production model', () => {
   assert.equal(expectedTopics.length, 73, 'panorama should define 73 topic candidates');
 
   const expectedBySlug = new Map(expectedTopics.map(topic => [topic.slug, topic]));
+  const booksBySlug = loadBooksBySlug();
   const topicFiles = scanMarkdownFiles(topicsDir);
   assert.equal(topicFiles.length, expectedBySlug.size, 'topics/ should ship every panorama topic article');
 
@@ -165,12 +180,8 @@ test('topic markdown files follow the panorama production model', () => {
     assert.ok(Array.isArray(data.tags) && data.tags.length > 0, `${relativePath} should have tags`);
     assert.equal(typeof data.date, 'string', `${relativePath} should have a date`);
     assert.match(data.date, /^\d{4}-\d{2}-\d{2}$/, `${relativePath} date should use YYYY-MM-DD`);
-    assert.ok(Array.isArray(data.books), `${relativePath} should have books`);
-    assert.deepEqual(
-      data.books.map(book => book.title),
-      expected.books,
-      `${relativePath} book order should match the panorama`
-    );
+    const topicBooks = data.books || [];
+    assert.ok(Array.isArray(topicBooks), `${relativePath} books should be an array when present`);
     assert.ok(content.trim().length > 300, `${relativePath} should include a substantive guide body`);
     assert.match(content, /^#\s+/m, `${relativePath} should include a first-level title`);
     assert.match(content, /## 建议读法/, `${relativePath} should include reading advice`);
@@ -178,14 +189,23 @@ test('topic markdown files follow the panorama production model', () => {
       assert.equal(content.includes(phrase), false, `${relativePath} should not contain template phrase: ${phrase}`);
     }
 
-    for (const [index, book] of data.books.entries()) {
+    for (const [index, book] of topicBooks.entries()) {
       const label = `${relativePath} books[${index}]`;
       assert.equal(typeof book.title, 'string', `${label} should have a title`);
       assert.equal(typeof book.author, 'string', `${label} should have an author`);
       assert.equal(typeof book.role, 'string', `${label} should have a role`);
       assert.equal(typeof book.reason, 'string', `${label} should have a reason`);
-      assert.equal(book.status, 'planned', `${label} should stay in planned status during topic-only production`);
-      assert.equal('slug' in book, false, `${label} should not invent a book slug during topic-only production`);
+      assert.match(book.status, /^(in_library|planned)$/, `${label} should have a supported status`);
+
+      if (book.slug || book.status === 'in_library') {
+        assert.equal(typeof book.slug, 'string', `${label} in-library reference should have a slug`);
+        const referencedBook = booksBySlug.get(book.slug);
+        assert.ok(referencedBook, `${label} should reference an existing book slug: ${book.slug}`);
+
+        if (book.path) {
+          assert.equal(book.path, referencedBook.relativePath, `${label} path should match referenced book file`);
+        }
+      }
     }
   }
 
