@@ -15,20 +15,26 @@ books:
     reason: 先让读者看到厌女如何成为社会秩序的一部分，而不只是个人态度。
     status: in_library
   - title: 第二性
-    author: 待补
+    author: 西蒙娜·德·波伏瓦
+    slug: di-er-xing
+    path: books/社会科学/西蒙娜·德·波伏瓦-第二性.md
     role: 女性处境框架
     reason: 从存在、他者化和社会建构解释女性处境的历史与哲学基础。
-    status: planned
+    status: in_library
   - title: 看不见的女性
-    author: 待补
+    author: 卡罗琳·克利亚多·佩雷斯
+    slug: kan-bu-jian-de-nv-xing
+    path: books/社会科学/卡罗琳·克利亚多·佩雷斯-看不见的女性.md
     role: 数据偏见
     reason: 把性别结构推进到统计、设计、劳动和公共政策中的不可见遗漏。
-    status: planned
+    status: in_library
   - title: 性别打结
-    author: 待补
+    author: 艾伦·约翰逊
+    slug: xing-bie-da-jie
+    path: books/社会科学/艾伦·约翰逊-性别打结.md
     role: 结构机制
     reason: 提供性别关系如何嵌入组织、家庭和日常互动的社会学解释。
-    status: planned
+    status: in_library
   - title: 亲密关系
     author: 罗兰·米勒
     slug: qin-mi-guan-xi
