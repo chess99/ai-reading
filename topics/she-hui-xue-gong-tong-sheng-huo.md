@@ -22,10 +22,12 @@ books:
     reason: 把个人遭遇放回社会结构中，帮助读者区分私人困扰和公共议题。
     status: in_library
   - title: 社会分工论
-    author: 待补
+    author: 埃米尔·涂尔干
+    slug: she-hui-fen-gong-lun
+    path: books/社会科学/埃米尔·涂尔干-社会分工论.md
     role: 分工框架
     reason: 解释现代社会为什么需要新的连带方式，以及分工如何改变个人与群体的关系。
-    status: planned
+    status: in_library
   - title: 贫穷的本质
     author: 阿比吉特·班纳吉、埃斯特·迪弗洛
     slug: pin-qiong-de-ben-zhi
