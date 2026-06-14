@@ -10,49 +10,49 @@ books:
   - title: 妈妈测试
     author: Rob Fitzpatrick
     slug: ma-ma-ce-shi
-    path: books/创业产品/Rob Fitzpatrick-妈妈测试.md
+    path: books/商业产品/创业方法/Rob Fitzpatrick-妈妈测试.md
     role: 访谈校准
     reason: 先训练团队问出不会被礼貌、想象和鼓励误导的问题。
     status: in_library
   - title: 客户开发入门
     author: 辛迪·阿尔瓦雷斯
     slug: ke-hu-kai-fa-ru-men
-    path: books/创业产品/辛迪·阿尔瓦雷斯-客户开发入门.md
+    path: books/商业产品/创业方法/辛迪·阿尔瓦雷斯-客户开发入门.md
     role: 用户访谈
     reason: 把机会验证落到客户任务、痛点、替代方案和购买动机。
     status: in_library
   - title: 四步创业法
     author: 史蒂夫·布兰克
     slug: si-bu-chuang-ye-fa
-    path: books/创业产品/史蒂夫·布兰克-四步创业法.md
+    path: books/商业产品/创业方法/史蒂夫·布兰克-四步创业法.md
     role: 客户开发
     reason: 提供从客户发现到客户验证的阶段框架。
     status: in_library
   - title: 精益创业
     author: 埃里克·莱斯
     slug: jing-yi-chuang-ye
-    path: books/创业产品/埃里克·莱斯-精益创业.md
+    path: books/商业产品/创业方法/埃里克·莱斯-精益创业.md
     role: 验证学习
     reason: 把产品机会拆成可实验、可测量、可学习的假设。
     status: in_library
   - title: 从零到一
     author: 彼得·蒂尔,布莱克·马斯特斯
     slug: cong-ling-dao-yi
-    path: books/商业管理/公司战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md
+    path: books/商业产品/商业战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md
     role: 独特命题
     reason: 帮助判断机会是否有足够独特和重要的价值判断。
     status: in_library
   - title: 商业模式新生代
     author: 亚历山大·奥斯特瓦德,伊夫·皮尼厄
     slug: shang-ye-mo-shi-xin-sheng-dai
-    path: books/创业产品/亚历山大·奥斯特瓦德,伊夫·皮尼厄-商业模式新生代.md
+    path: books/商业产品/商业模式/亚历山大·奥斯特瓦德,伊夫·皮尼厄-商业模式新生代.md
     role: 商业模式
     reason: 把客户、价值主张、渠道、收入和成本放进同一张商业模型。
     status: in_library
   - title: 跨越鸿沟
     author: 杰弗里·摩尔
     slug: kua-yue-hong-gou
-    path: books/商业管理/市场营销/杰弗里·摩尔-跨越鸿沟.md
+    path: books/商业产品/市场增长/杰弗里·摩尔-跨越鸿沟.md
     role: 早期市场
     reason: 最后检验产品从早期采用者走向主流市场时会遇到的断层。
     status: in_library

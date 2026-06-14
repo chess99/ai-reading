@@ -10,56 +10,56 @@ books:
   - title: 有闲阶级论
     author: 托斯丹·凡勃伦
     slug: you-xian-jie-ji-lun
-    path: books/社会科学/托斯丹·凡勃伦-有闲阶级论.md
+    path: books/金钱投资/经济学/托斯丹·凡勃伦-有闲阶级论.md
     role: 炫耀消费入口
     reason: 从有闲、身份和炫耀性消费进入，帮助读者看到消费如何承载阶层信号。
     status: in_library
   - title: 工作、消费主义和新穷人
     author: 齐格蒙特·鲍曼
     slug: gong-zuo-xiao-fei-zhu-yi-he-xin-qiong-ren
-    path: books/社会科学/齐格蒙特·鲍曼-工作、消费主义和新穷人.md
+    path: books/社会公共/社会理论/齐格蒙特·鲍曼-工作、消费主义和新穷人.md
     role: 消费社会批判
     reason: 解释现代社会如何把人定义为消费者，以及无法消费的人如何被重新标记。
     status: in_library
   - title: 消费社会
     author: 让·鲍德里亚
     slug: xiao-fei-she-hui
-    path: books/社会科学/让·鲍德里亚-消费社会.md
+    path: books/金钱投资/经济学/让·鲍德里亚-消费社会.md
     role: 符号消费
     reason: 把消费理解为符号、区隔和社会关系，而不只是个人偏好。
     status: in_library
   - title: 邻家的百万富翁
     author: 托马斯·J.斯坦利,威廉·D.丹科
     slug: lin-jia-de-bai-wan-fu-weng
-    path: books/投资/理财入门/托马斯·J.斯坦利,威廉·D.丹科-邻家的百万富翁.md
+    path: books/金钱投资/理财入门/托马斯·J.斯坦利,威廉·D.丹科-邻家的百万富翁.md
     role: 财富行为校准
     reason: 用家庭财富积累的研究对照炫耀消费，说明富裕未必表现为高消费。
     status: in_library
   - title: 贫穷的本质
     author: 阿比吉特·班纳吉、埃斯特·迪弗洛
     slug: pin-qiong-de-ben-zhi
-    path: books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
+    path: books/金钱投资/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
     role: 贫困机制
     reason: 把阶层机会放进教育、健康、风险和现金流限制中具体分析。
     status: in_library
   - title: 稀缺
     author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
     slug: xi-que
-    path: books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
+    path: books/思维科学/行为经济/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
     role: 认知带宽
     reason: 说明贫困和压力会占用注意力，影响长期规划和机会把握。
     status: in_library
   - title: 21世纪资本论
     author: 托马斯·皮凯蒂
     slug: 21-shi-ji-zi-ben-lun
-    path: books/社会科学/经济学/托马斯·皮凯蒂-21世纪资本论.md
+    path: books/金钱投资/经济学/托马斯·皮凯蒂-21世纪资本论.md
     role: 不平等结构
     reason: 用资本收益、收入分配和长期不平等，把个人财富问题推到宏观结构。
     status: in_library
   - title: 置身事内
     author: 兰小欢
     slug: zhi-shen-shi-nei
-    path: books/社会科学/经济学/兰小欢-置身事内.md
+    path: books/金钱投资/经济学/兰小欢-置身事内.md
     role: 中国制度环境
     reason: 用地方政府、土地、财政和产业政策视角收束，解释机会结构如何被制度塑造。
     status: in_library

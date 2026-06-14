@@ -10,56 +10,56 @@ books:
   - title: 卓有成效的管理者
     author: 彼得·德鲁克
     slug: zhuo-you-cheng-xiao-de-guan-li-zhe
-    path: books/商业管理/彼得·德鲁克-卓有成效的管理者.md
+    path: books/职业组织/管理通论/彼得·德鲁克-卓有成效的管理者.md
     role: 管理责任
     reason: 先建立管理者如何使用时间、贡献、优势和决策的基本责任。
     status: in_library
   - title: 管理的实践
     author: 彼得·德鲁克
     slug: guan-li-de-shi-jian
-    path: books/商业管理/彼得·德鲁克-管理的实践.md
+    path: books/职业组织/管理通论/彼得·德鲁克-管理的实践.md
     role: 管理体系
     reason: 把管理放进企业目标、组织、人员和绩效的整体框架。
     status: in_library
   - title: 经理人员的职能
     author: 切斯特·I.巴纳德
     slug: jing-li-ren-yuan-de-zhi-neng
-    path: books/商业管理/切斯特·I.巴纳德-经理人员的职能.md
+    path: books/职业组织/组织领导/切斯特·I.巴纳德-经理人员的职能.md
     role: 管理职能
     reason: 说明协调、沟通、权威和组织运转中的经理角色。
     status: in_library
   - title: 领导梯队
     author: 查兰
     slug: ling-dao-ti-dui
-    path: books/商业管理/查兰-领导梯队.md
+    path: books/职业组织/组织领导/查兰-领导梯队.md
     role: 角色跃迁
     reason: 帮助管理者理解不同层级的时间分配、技能和价值观变化。
     status: in_library
   - title: 可复制的领导力
     author: 樊登
     slug: ke-fu-zhi-de-ling-dao-li
-    path: books/商业管理/樊登-可复制的领导力.md
+    path: books/职业组织/组织领导/樊登-可复制的领导力.md
     role: 复制机制
     reason: 把管理动作拆成可训练、可传递、可复盘的方法。
     status: in_library
   - title: 高绩效教练
     author: 约翰·惠特默
     slug: gao-ji-xiao-jiao-lian
-    path: books/商业管理/约翰·惠特默-高绩效教练.md
+    path: books/职业组织/教练协作/约翰·惠特默-高绩效教练.md
     role: 教练方法
     reason: 用提问、目标和反馈帮助团队成员承担责任。
     status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua
-    path: books/心理学/科里·帕特森-关键对话.md
+    path: books/关系家庭/沟通冲突/科里·帕特森-关键对话.md
     role: 管理沟通
     reason: 处理绩效、冲突、承诺和分歧中的高风险谈话。
     status: in_library
   - title: 无畏的组织
     author: 艾米·埃德蒙森
     slug: wu-wei-de-zu-zhi
-    path: books/商业管理/艾米·埃德蒙森-无畏的组织.md
+    path: books/职业组织/组织领导/艾米·埃德蒙森-无畏的组织.md
     role: 心理安全
     reason: 最后回到团队能否说真话、暴露问题和共同学习。
     status: in_library

@@ -570,11 +570,11 @@ slug	current_path	target_path	reason
 For every current `books/**/*.md`, add one row. Example rows:
 
 ```text
-cong-ling-dao-yi	books/商业管理/公司战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md	books/商业产品/商业战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md	strategy and product bridge; primary shelf is business strategy
-shen-du-gong-zuo	books/效率习惯/卡尔·纽波特-深度工作.md	books/自我管理/专注效率/卡尔·纽波特-深度工作.md	reader goal is deep focus and sustainable output
-qin-mi-guan-xi	books/心理学/罗兰·米勒-亲密关系.md	books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md	reader goal is relationship understanding, not psychology as discipline
-guo-fu-lun	books/社会科学/亚当·斯密-国富论.md	books/金钱投资/经济学/亚当·斯密-国富论.md	primary shelf is economics
-yi-shu-de-gu-shi	books/写作创意/E.H. 贡布里希-艺术的故事.md	books/人文艺术/艺术美学/E.H. 贡布里希-艺术的故事.md	primary shelf is art history and aesthetics
+cong-ling-dao-yi	books/商业产品/商业战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md	books/商业产品/商业战略/彼得·蒂尔,布莱克·马斯特斯-从零到一.md	strategy and product bridge; primary shelf is business strategy
+shen-du-gong-zuo	books/自我管理/专注效率/卡尔·纽波特-深度工作.md	books/自我管理/专注效率/卡尔·纽波特-深度工作.md	reader goal is deep focus and sustainable output
+qin-mi-guan-xi	books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md	books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md	reader goal is relationship understanding, not psychology as discipline
+guo-fu-lun	books/金钱投资/经济学/亚当·斯密-国富论.md	books/金钱投资/经济学/亚当·斯密-国富论.md	primary shelf is economics
+yi-shu-de-gu-shi	books/人文艺术/艺术美学/E.H. 贡布里希-艺术的故事.md	books/人文艺术/艺术美学/E.H. 贡布里希-艺术的故事.md	primary shelf is art history and aesthetics
 ```
 
 - [ ] **Step 2: Validate the migration map is complete**
@@ -984,30 +984,30 @@ This cleanup is intentionally separate from taxonomy migration. Run it after the
 Known current filename/frontmatter mismatches:
 
 ```text
-books/个人成长/布赖恩·费瑟斯通豪-远见.md
-books/健康运动/Frances Sizer,Eleanor Whitney-营养学.md
-books/健康运动/Randolph M. Nesse,George C. Williams-我们为什么会生病.md
-books/写作创意/杰西卡·布鲁迪-Save-the-Cat-写青少年小说.md
-books/创业产品/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
-books/商业管理/詹姆斯·沃麦克-精益思维.md
-books/商业管理/财务与估值/卡伦·伯曼,乔·奈特-财务智慧.md
-books/心理学/鲁道夫·德雷克斯,薇姬·索尔兹-孩子.md
-books/思维方式/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
-books/思维方式/富勒,彼得·萨伯-洞穴奇案.md
-books/思维方式/理查德·塞勒,卡斯·桑斯坦-助推.md
-books/社会科学/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
-books/社会科学/Philip Lymbery,Isabel Oakeshott-失控的农业.md
-books/社会科学/李开复,陈楸帆-AI 2041.md
-books/社会科学/约翰·梅纳德·凯恩斯-就业利息与货币通论.md
-books/社会科学/经济学/大卫·格雷伯-债.md
-books/社会科学/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
+books/自我管理/职业发展/布赖恩·费瑟斯通豪-远见.md
+books/健康身体/营养代谢/Frances Sizer,Eleanor Whitney-营养学.md
+books/健康身体/衰老照护/Randolph M. Nesse,George C. Williams-我们为什么会生病.md
+books/人文艺术/叙事创作/杰西卡·布鲁迪-Save-the-Cat-写青少年小说.md
+books/商业产品/用户体验/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
+books/职业组织/运营流程/詹姆斯·沃麦克-精益思维.md
+books/商业产品/经营财务/卡伦·伯曼,乔·奈特-财务智慧.md
+books/关系家庭/家庭教育/鲁道夫·德雷克斯,薇姬·索尔兹-孩子.md
+books/思维科学/概率风险/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
+books/思维科学/决策判断/富勒,彼得·萨伯-洞穴奇案.md
+books/思维科学/行为经济/理查德·塞勒,卡斯·桑斯坦-助推.md
+books/科技媒介/AI变革/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
+books/科技媒介/未来技术/Philip Lymbery,Isabel Oakeshott-失控的农业.md
+books/科技媒介/AI变革/李开复,陈楸帆-AI 2041.md
+books/金钱投资/经济学/约翰·梅纳德·凯恩斯-就业利息与货币通论.md
+books/金钱投资/经济学/大卫·格雷伯-债.md
+books/金钱投资/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
 ```
 
 Known current H1/title mismatches:
 
 ```text
-books/社会科学/伊莱·帕里泽-过滤泡.md
-books/社会科学/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
+books/科技媒介/平台算法/伊莱·帕里泽-过滤泡.md
+books/社会公共/政治制度/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
 ```
 
 Cleanup rule:

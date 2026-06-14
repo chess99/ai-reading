@@ -10,56 +10,56 @@ books:
   - title: 启示录
     author: Marty Cagan
     slug: qi-shi-lu
-    path: books/创业产品/Marty Cagan-启示录.md
+    path: books/商业产品/产品管理/Marty Cagan-启示录.md
     role: 产品组织
     reason: 先建立现代产品团队的职责、协作方式和产品发现要求。
     status: in_library
   - title: 产品开发流程原理
     author: 唐纳德·莱纳特森
     slug: chan-pin-kai-fa-liu-cheng-yuan-li
-    path: books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md
+    path: books/商业产品/产品管理/唐纳德·莱纳特森-产品开发流程原理.md
     role: 开发流动
     reason: 解释队列、批量、在制品和反馈周期如何影响交付速度与质量。
     status: in_library
   - title: 用户故事地图
     author: Jeff Patton
     slug: yong-hu-gu-shi-di-tu
-    path: books/创业产品/Jeff Patton-用户故事地图.md
+    path: books/商业产品/用户体验/Jeff Patton-用户故事地图.md
     role: 需求组织
     reason: 把用户任务、版本切分和优先级组织成共同理解。
     status: in_library
   - title: 精益思维
     author: 詹姆斯·沃麦克,丹尼尔·琼斯
     slug: jing-yi-si-wei
-    path: books/商业管理/詹姆斯·沃麦克-精益思维.md
+    path: books/职业组织/运营流程/詹姆斯·沃麦克-精益思维.md
     role: 精益交付
     reason: 用价值流、流动和拉动理解交付系统中的浪费。
     status: in_library
   - title: 赋能
     author: 斯坦利·麦克里斯特尔
     slug: fu-neng
-    path: books/商业管理/斯坦利·麦克里斯特尔-赋能.md
+    path: books/职业组织/组织领导/斯坦利·麦克里斯特尔-赋能.md
     role: 授权协作
     reason: 把产品组织从命令控制转向信息共享、授权和快速协同。
     status: in_library
   - title: 重新定义团队
     author: 拉兹洛·博克
     slug: chong-xin-ding-yi-tuan-dui
-    path: books/商业管理/拉兹洛·博克-重新定义团队.md
+    path: books/职业组织/组织领导/拉兹洛·博克-重新定义团队.md
     role: 团队结构
     reason: 补充人才、文化、目标和组织机制如何影响团队表现。
     status: in_library
   - title: 领导梯队
     author: 查兰
     slug: ling-dao-ti-dui
-    path: books/商业管理/查兰-领导梯队.md
+    path: books/职业组织/组织领导/查兰-领导梯队.md
     role: 领导层级
     reason: 说明产品组织中不同管理层级需要不同的角色和时间分配。
     status: in_library
   - title: 无畏的组织
     author: 艾米·埃德蒙森
     slug: wu-wei-de-zu-zhi
-    path: books/商业管理/艾米·埃德蒙森-无畏的组织.md
+    path: books/职业组织/组织领导/艾米·埃德蒙森-无畏的组织.md
     role: 心理安全
     reason: 最后强调团队需要能暴露问题、提出异议和共同学习。
     status: in_library

@@ -10,49 +10,49 @@ books:
   - title: 亲密关系
     author: 罗兰·米勒
     slug: qin-mi-guan-xi
-    path: books/心理学/罗兰·米勒-亲密关系.md
+    path: books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md
     role: 正常机制
     reason: 先理解关系中的亲近、冲突、权力和承诺，避免把所有不舒服都误判为危险。
     status: in_library
   - title: 依恋
     author: 约翰·鲍尔比
     slug: yi-lian
-    path: books/心理学/约翰·鲍尔比-依恋.md
+    path: books/关系家庭/亲密关系/约翰·鲍尔比-依恋.md
     role: 安全感线索
     reason: 区分依恋不安、回避反应和真正需要警觉的关系模式。
     status: in_library
   - title: 煤气灯效应
     author: 罗宾·斯特恩
     slug: mei-qi-deng-xiao-ying
-    path: books/心理学/罗宾·斯特恩-煤气灯效应.md
+    path: books/关系家庭/亲密关系/罗宾·斯特恩-煤气灯效应.md
     role: 操控识别
     reason: 帮助识别持续否定感受、扭曲事实和削弱自我判断的互动。
     status: in_library
   - title: 情绪勒索
     author: 朱迪斯·P·西格尔
     slug: qing-xu-le-suo
-    path: books/心理学/朱迪斯·P·西格尔-情绪勒索.md
+    path: books/关系家庭/亲密关系/朱迪斯·P·西格尔-情绪勒索.md
     role: 勒索模式
     reason: 解释威胁、内疚、恐惧和义务感如何让人被迫让渡边界。
     status: in_library
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji
-    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
+    path: books/关系家庭/亲密关系/贝塞尔·范德考克-身体从未忘记.md
     role: 创伤反应
     reason: 说明身体警觉、僵住、讨好和回避可能与危险经验或关系压力有关。
     status: in_library
   - title: 不原谅也没关系
     author: 皮特·沃克
     slug: bu-yuan-liang-ye-mei-guan-xi
-    path: books/心理学/皮特·沃克-不原谅也没关系.md
+    path: books/心理修复/创伤修复/皮特·沃克-不原谅也没关系.md
     role: 复杂创伤
     reason: 支持读者理解长期伤害后的边界、愤怒和不必急于和解。
     status: in_library
   - title: 高难度谈话
     author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
     slug: gao-nan-du-tan-hua
-    path: books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
+    path: books/关系家庭/沟通冲突/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
     role: 退出沟通
     reason: 在需要表达边界、谈判改变或准备退出时，提供更谨慎的谈话框架。
     status: in_library

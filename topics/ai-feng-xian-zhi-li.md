@@ -10,42 +10,42 @@ books:
   - title: 即将到来的浪潮
     author: Mustafa Suleyman,Michael Bhaskar
     slug: ji-jiang-dao-lai-de-lang-chao
-    path: books/社会科学/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
+    path: books/科技媒介/AI变革/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
     role: 扩散风险
     reason: 从 AI 与生物技术扩散的现实压力进入治理问题。
     status: in_library
   - title: 对齐问题
     author: Brian Christian
     slug: dui-qi-wen-ti
-    path: books/社会科学/Brian Christian-对齐问题.md
+    path: books/科技媒介/AI变革/Brian Christian-对齐问题.md
     role: 目标对齐
     reason: 解释系统目标、训练数据和人类价值之间为什么会错位。
     status: in_library
   - title: 算法霸权
     author: 凯西·奥尼尔
     slug: suan-fa-ba-quan
-    path: books/社会科学/凯西·奥尼尔-算法霸权.md
+    path: books/科技媒介/平台算法/凯西·奥尼尔-算法霸权.md
     role: 算法歧视
     reason: 用现实案例说明算法如何放大不平等并隐藏责任。
     status: in_library
   - title: 监视资本主义时代
     author: Shoshana Zuboff
     slug: jian-shi-zi-ben-zhu-yi-shi-dai
-    path: books/社会科学/Shoshana Zuboff-监视资本主义时代.md
+    path: books/社会公共/技术社会/Shoshana Zuboff-监视资本主义时代.md
     role: 数据权力
     reason: 把算法风险放入行为数据、预测市场和商业激励中理解。
     status: in_library
   - title: 开放社会及其敌人
     author: 卡尔·波普尔
     slug: kai-fang-she-hui-ji-qi-di-ren
-    path: books/哲学/卡尔·波普尔-开放社会及其敌人.md
+    path: books/人文艺术/政治哲学/卡尔·波普尔-开放社会及其敌人.md
     role: 政治边界
     reason: 提供开放社会、权力约束和反集权的政治哲学框架。
     status: in_library
   - title: 智人之上
     author: 尤瓦尔·赫拉利
     slug: zhi-ren-zhi-shang
-    path: books/社会科学/尤瓦尔·赫拉利-智人之上.md
+    path: books/科技媒介/信息网络/尤瓦尔·赫拉利-智人之上.md
     role: 信息网络
     reason: 从信息网络史理解技术权力如何重塑公共事实和社会秩序。
     status: in_library

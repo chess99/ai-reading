@@ -10,56 +10,56 @@ books:
   - title: 启示录
     author: Marty Cagan
     slug: qi-shi-lu
-    path: books/创业产品/Marty Cagan-启示录.md
+    path: books/商业产品/产品管理/Marty Cagan-启示录.md
     role: 产品发现
     reason: 先建立现代产品团队如何发现机会、定义价值和降低风险。
     status: in_library
   - title: 用户故事地图
     author: Jeff Patton
     slug: yong-hu-gu-shi-di-tu
-    path: books/创业产品/Jeff Patton-用户故事地图.md
+    path: books/商业产品/用户体验/Jeff Patton-用户故事地图.md
     role: 用户任务
     reason: 把用户旅程、任务、优先级和版本切分组织起来。
     status: in_library
   - title: 精益产品手册
     author: Dan Olsen
     slug: jing-yi-chan-pin-shou-ce
-    path: books/创业产品/Dan Olsen-精益产品手册.md
+    path: books/商业产品/创业方法/Dan Olsen-精益产品手册.md
     role: 产品市场匹配
     reason: 连接目标用户、痛点、价值主张、功能集合和 MVP 测试。
     status: in_library
   - title: 俞军产品方法论
     author: 俞军
     slug: yu-jun-chan-pin-fang-fa-lun
-    path: books/创业产品/俞军-俞军产品方法论.md
+    path: books/商业产品/产品管理/俞军-俞军产品方法论.md
     role: 用户价值
     reason: 用效用、成本、交易和用户价值判断产品是否成立。
     status: in_library
   - title: 用户体验要素
     author: Jesse James Garrett
     slug: yong-hu-ti-yan-yao-su
-    path: books/创业产品/Jesse James Garrett-用户体验要素.md
+    path: books/商业产品/用户体验/Jesse James Garrett-用户体验要素.md
     role: 体验层次
     reason: 把产品体验拆成战略、范围、结构、框架和表现。
     status: in_library
   - title: 设计心理学
     author: Don Norman
     slug: she-ji-xin-li-xue
-    path: books/创业产品/Don Norman-设计心理学.md
+    path: books/商业产品/用户体验/Don Norman-设计心理学.md
     role: 行为心理
     reason: 解释可供性、反馈、映射和错误如何影响用户使用。
     status: in_library
   - title: 设计冲刺
     author: Jake Knapp, John Zeratsky, Braden Kowitz
     slug: she-ji-chong-ci
-    path: books/创业产品/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
+    path: books/商业产品/用户体验/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
     role: 冲刺验证
     reason: 提供短周期原型、测试和团队对齐的方法。
     status: in_library
   - title: 产品开发流程原理
     author: 唐纳德·莱纳特森
     slug: chan-pin-kai-fa-liu-cheng-yuan-li
-    path: books/创业产品/唐纳德·莱纳特森-产品开发流程原理.md
+    path: books/商业产品/产品管理/唐纳德·莱纳特森-产品开发流程原理.md
     role: 开发流动
     reason: 最后把发现连接到交付系统中的队列、批量和反馈周期。
     status: in_library

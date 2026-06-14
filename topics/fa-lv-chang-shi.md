@@ -10,42 +10,42 @@ books:
   - title: 学点法律避点坑
     author: 隋兵
     slug: xue-dian-fa-lv-bi-dian-keng
-    path: books/社会科学/隋兵-学点法律避点坑.md
+    path: books/社会公共/法律公共/隋兵-学点法律避点坑.md
     role: 日常入口
     reason: 先从普通人容易遇到的合同、消费、劳动和家庭风险进入法律意识。
     status: in_library
   - title: 洞穴奇案
     author: 富勒、彼得·萨伯
     slug: dong-xue-qi-an
-    path: books/思维方式/富勒,彼得·萨伯-洞穴奇案.md
+    path: books/思维科学/决策判断/富勒,彼得·萨伯-洞穴奇案.md
     role: 法理练习
     reason: 用极端案件训练读者理解法律解释、程序和价值冲突。
     status: in_library
   - title: 看得见的正义
     author: 陈瑞华
     slug: kan-de-jian-de-zheng-yi
-    path: books/社会科学/陈瑞华-看得见的正义.md
+    path: books/社会公共/法律公共/陈瑞华-看得见的正义.md
     role: 程序意识
     reason: 说明正义为什么需要公开、说理和可监督的司法过程。
     status: in_library
   - title: 刑法学讲义
     author: 罗翔
     slug: xing-fa-xue-jiang-yi
-    path: books/社会科学/罗翔-刑法学讲义.md
+    path: books/社会公共/法律公共/罗翔-刑法学讲义.md
     role: 刑法边界
     reason: 帮助读者理解犯罪、责任、处罚和刑法克制的基本边界。
     status: in_library
   - title: 民法典与日常生活
     author: 彭诚信,陈吉栋
     slug: min-fa-dian-yu-ri-chang-sheng-huo
-    path: books/社会科学/彭诚信,陈吉栋-民法典与日常生活.md
+    path: books/社会公共/法律公共/彭诚信,陈吉栋-民法典与日常生活.md
     role: 民事生活
     reason: 把法律常识落到人格、财产、婚姻、继承、合同等日常关系。
     status: in_library
   - title: 法治及其本土资源
     author: 苏力
     slug: fa-zhi-ji-qi-ben-tu-zi-yuan
-    path: books/社会科学/苏力-法治及其本土资源.md
+    path: books/社会公共/法律公共/苏力-法治及其本土资源.md
     role: 法治背景
     reason: 放在末尾，提醒读者法律运行离不开本土社会、制度资源和治理环境。
     status: in_library

@@ -10,63 +10,63 @@ books:
   - title: 身体从未忘记
     author: 贝塞尔·范德考克
     slug: shen-ti-cong-wei-wang-ji
-    path: books/心理学/贝塞尔·范德考克-身体从未忘记.md
+    path: books/关系家庭/亲密关系/贝塞尔·范德考克-身体从未忘记.md
     role: 身体记忆入口
     reason: 先解释创伤如何留在身体、警觉系统和感受中，避免把创伤只理解成回忆问题。
     status: in_library
   - title: 创伤与复原
     author: 朱迪思·赫尔曼
     slug: chuang-shang-yu-fu-yuan
-    path: books/心理学/朱迪思·赫尔曼-创伤与复原.md
+    path: books/心理修复/创伤修复/朱迪思·赫尔曼-创伤与复原.md
     role: 复原阶段框架
     reason: 提供安全、哀悼、重建连接等复原阶段，帮助读者理解修复不是一次顿悟。
     status: in_library
   - title: 唤醒老虎
     author: 彼得·莱文,安·弗雷德里克
     slug: huan-xing-lao-hu
-    path: books/心理学/彼得·莱文,安·弗雷德里克-唤醒老虎.md
+    path: books/心理修复/创伤修复/彼得·莱文,安·弗雷德里克-唤醒老虎.md
     role: 躯体经验路径
     reason: 把注意力放到冻结、逃跑、战斗等身体反应，补上创伤修复中的躯体维度。
     status: in_library
   - title: 不原谅也没关系
     author: 皮特·沃克
     slug: bu-yuan-liang-ye-mei-guan-xi
-    path: books/心理学/皮特·沃克-不原谅也没关系.md
+    path: books/心理修复/创伤修复/皮特·沃克-不原谅也没关系.md
     role: 复杂创伤边界
     reason: 处理长期伤害后的愤怒、边界和不必急于原谅，避免把修复简化成和解。
     status: in_library
   - title: 依恋
     author: 约翰·鲍尔比
     slug: yi-lian
-    path: books/心理学/约翰·鲍尔比-依恋.md
+    path: books/关系家庭/亲密关系/约翰·鲍尔比-依恋.md
     role: 关系安全框架
     reason: 说明早期依恋如何影响安全感和亲密关系，为后面的关系修复提供基础。
     status: in_library
   - title: 抱紧我
     author: 苏珊·强森
     slug: bao-jin-wo
-    path: books/心理学/苏珊·强森-抱紧我.md
+    path: books/关系家庭/亲密关系/苏珊·强森-抱紧我.md
     role: 亲密关系修复
     reason: 聚焦伴侣关系中的情绪循环和依附需求，帮助读者理解创伤如何进入亲密互动。
     status: in_library
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
-    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
+    path: books/心理修复/情绪内耗/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询关系参照
     reason: 用咨询现场展示求助、关系和叙事重建，让读者看见专业支持的实际形态。
     status: in_library
   - title: 我们为什么要睡觉
     author: 马修·沃克
     slug: wo-men-wei-shen-me-yao-shui-jiao
-    path: books/健康运动/马修·沃克-我们为什么要睡觉.md
+    path: books/健康身体/睡眠恢复/马修·沃克-我们为什么要睡觉.md
     role: 睡眠恢复条件
     reason: 把睡眠作为神经系统恢复的重要条件，但不把它当成创伤治疗的替代。
     status: in_library
   - title: 运动改造大脑
     author: 约翰·瑞迪
     slug: yun-dong-gai-zao-da-nao
-    path: books/健康运动/约翰·瑞迪-运动改造大脑.md
+    path: books/健康身体/运动训练/约翰·瑞迪-运动改造大脑.md
     role: 身体恢复支持
     reason: 说明运动对情绪和大脑状态的支持作用，作为安全范围内的辅助恢复资源。
     status: in_library

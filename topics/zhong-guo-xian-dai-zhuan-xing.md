@@ -10,56 +10,56 @@ books:
   - title: 乡土中国
     author: 费孝通
     slug: xiang-tu-zhong-guo
-    path: books/社会科学/费孝通-乡土中国.md
+    path: books/社会公共/社会理论/费孝通-乡土中国.md
     role: 乡土起点
     reason: 从基层关系和乡土秩序进入中国社会转型的底层背景。
     status: in_library
   - title: 中国历代政治得失
     author: 钱穆
     slug: zhong-guo-li-dai-zheng-zhi-de-shi
-    path: books/历史传记/钱穆-中国历代政治得失.md
+    path: books/历史世界/中国历史/钱穆-中国历代政治得失.md
     role: 制度传统
     reason: 提供历代政治结构的长时段骨架，避免只按朝代故事理解转型。
     status: in_library
   - title: 万历十五年
     author: 黄仁宇
     slug: wan-li-shi-wu-nian
-    path: books/历史传记/黄仁宇-万历十五年.md
+    path: books/历史世界/中国历史/黄仁宇-万历十五年.md
     role: 明代切片
     reason: 用一个年份观察财政、官僚、礼制和皇权如何同时失灵。
     status: in_library
   - title: 中国近代史
     author: 徐中约
     slug: zhong-guo-jin-dai-shi
-    path: books/历史传记/徐中约-中国近代史.md
+    path: books/历史世界/中国历史/徐中约-中国近代史.md
     role: 近代变局
     reason: 把转型推向内外压力、国家重建和现代化冲突。
     status: in_library
   - title: 叫魂
     author: 孔飞力
     slug: jiao-hun
-    path: books/历史传记/孔飞力-叫魂.md
+    path: books/历史世界/中国历史/孔飞力-叫魂.md
     role: 基层恐慌
     reason: 通过清代社会事件观察权力、谣言、民众恐惧和治理反应。
     status: in_library
   - title: 枢纽
     author: 施展
     slug: shu-niu
-    path: books/历史传记/施展-枢纽.md
+    path: books/历史世界/中国历史/施展-枢纽.md
     role: 历史枢纽
     reason: 提供中国作为历史共同体和现代国家之间的转折视角。
     status: in_library
   - title: 置身事内
     author: 兰小欢
     slug: zhi-shen-shi-nei
-    path: books/社会科学/经济学/兰小欢-置身事内.md
+    path: books/金钱投资/经济学/兰小欢-置身事内.md
     role: 当代治理
     reason: 把历史转型接到地方政府、财政、产业和政策执行。
     status: in_library
   - title: 旧制度与大革命
     author: 托克维尔
     slug: jiu-zhi-du-yu-da-ge-ming
-    path: books/历史传记/托克维尔-旧制度与大革命.md
+    path: books/历史世界/传记回忆/托克维尔-旧制度与大革命.md
     role: 比较收束
     reason: 用法国经验对照制度连续性、革命叙事和现代国家形成。
     status: in_library

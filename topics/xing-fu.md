@@ -10,49 +10,49 @@ books:
   - title: 幸福的方法
     author: 泰勒·本-沙哈尔
     slug: xing-fu-de-fang-fa
-    path: books/心理学/泰勒·本-沙哈尔-幸福的方法.md
+    path: books/心理修复/自尊成长/泰勒·本-沙哈尔-幸福的方法.md
     role: 幸福入口
     reason: 先把幸福拆成快乐、意义和现实选择之间的关系。
     status: in_library
   - title: 真实的幸福
     author: 马丁·塞利格曼
     slug: zhen-shi-de-xing-fu
-    path: books/心理学/马丁·塞利格曼-真实的幸福.md
+    path: books/心理修复/自尊成长/马丁·塞利格曼-真实的幸福.md
     role: 积极心理学
     reason: 提供优势、积极情绪和意义生活的心理学框架。
     status: in_library
   - title: 心流
     author: 米哈里·契克森米哈赖
     slug: xin-liu
-    path: books/效率习惯/米哈里·契克森米哈赖-心流.md
+    path: books/自我管理/学习练习/米哈里·契克森米哈赖-心流.md
     role: 沉浸体验
     reason: 解释专注、挑战和能力匹配如何带来更稳定的满足。
     status: in_library
   - title: 亲密关系
     author: 罗兰·米勒
     slug: qin-mi-guan-xi
-    path: books/心理学/罗兰·米勒-亲密关系.md
+    path: books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md
     role: 关系基础
     reason: 提醒幸福不是纯个人状态，也来自亲密关系质量。
     status: in_library
   - title: 被讨厌的勇气
     author: 岸见一郎,古贺史健
     slug: bei-tao-yan-de-yong-qi
-    path: books/心理学/岸见一郎,古贺史健-被讨厌的勇气.md
+    path: books/心理修复/自尊成长/岸见一郎,古贺史健-被讨厌的勇气.md
     role: 自我接纳
     reason: 从课题分离和自我接纳处理过度依赖外部评价的问题。
     status: in_library
   - title: 人生的智慧
     author: 叔本华
     slug: ren-sheng-de-zhi-hui
-    path: books/哲学/叔本华-人生的智慧.md
+    path: books/人文艺术/人生哲学/叔本华-人生的智慧.md
     role: 人生判断
     reason: 用节制、欲望和处世判断补足幸福的现实面。
     status: in_library
   - title: 尼各马可伦理学
     author: 亚里士多德
     slug: ni-ge-ma-ke-lun-li-xue
-    path: books/哲学/亚里士多德-尼各马可伦理学.md
+    path: books/人文艺术/人生哲学/亚里士多德-尼各马可伦理学.md
     role: 德性伦理
     reason: 把幸福放到德性、实践和完整人生中理解。
     status: in_library

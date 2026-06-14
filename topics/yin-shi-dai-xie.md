@@ -10,42 +10,42 @@ books:
   - title: 营养学：概念与争论
     author: Frances Sizer, Eleanor Whitney
     slug: ying-yang-xue
-    path: books/健康运动/Frances Sizer,Eleanor Whitney-营养学.md
+    path: books/健康身体/营养代谢/Frances Sizer,Eleanor Whitney-营养学.md
     role: 营养主框架
     reason: 作为主框架建立营养学概念、证据和争议意识。
     status: in_library
   - title: 我们为什么会生病
     author: Randolph M. Nesse, George C. Williams
     slug: wo-men-wei-shen-me-hui-sheng-bing
-    path: books/健康运动/Randolph M. Nesse,George C. Williams-我们为什么会生病.md
+    path: books/健康身体/衰老照护/Randolph M. Nesse,George C. Williams-我们为什么会生病.md
     role: 演化医学
     reason: 从演化视角理解现代疾病和身体环境错配。
     status: in_library
   - title: 肥胖代码
     author: Jason Fung
     slug: fei-pang-dai-ma
-    path: books/健康运动/Jason Fung-肥胖代码.md
+    path: books/健康身体/营养代谢/Jason Fung-肥胖代码.md
     role: 争议视角
     reason: 作为代谢和肥胖解释的争议视角阅读，不能直接当处方。
     status: in_library
   - title: 深度营养
     author: 凯瑟琳·沙纳汉
     slug: shen-du-ying-yang
-    path: books/健康运动/凯瑟琳·沙纳汉-深度营养.md
+    path: books/健康身体/营养代谢/凯瑟琳·沙纳汉-深度营养.md
     role: 争议视角
     reason: 作为饮食质量和传统饮食观点的争议视角阅读。
     status: in_library
   - title: 超越百岁
     author: 彼得·阿提亚
     slug: chao-yue-bai-sui
-    path: books/健康运动/彼得·阿提亚-超越百岁.md
+    path: books/健康身体/衰老照护/彼得·阿提亚-超越百岁.md
     role: 长期风险
     reason: 把饮食与代谢放进长期健康风险和寿命质量中观察。
     status: in_library
   - title: 生理学
     author: 朱大年,王庭槐
     slug: sheng-li-xue
-    path: books/健康运动/朱大年,王庭槐-生理学.md
+    path: books/健康身体/医学生理/朱大年,王庭槐-生理学.md
     role: 基础机制
     reason: 用生理学机制支撑对代谢、激素和身体系统的理解。
     status: in_library

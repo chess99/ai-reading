@@ -10,49 +10,49 @@ books:
   - title: 远见
     author: 布赖恩·费瑟斯通豪
     slug: yuan-jian
-    path: books/个人成长/布赖恩·费瑟斯通豪-远见.md
+    path: books/自我管理/职业发展/布赖恩·费瑟斯通豪-远见.md
     role: 职业周期
     reason: 先把职业选择放进长期阶段，而不是只看眼前职位。
     status: in_library
   - title: 职业锚
     author: 埃德加·施恩
     slug: zhi-ye-mao
-    path: books/个人成长/埃德加·施恩-职业锚.md
+    path: books/自我管理/职业发展/埃德加·施恩-职业锚.md
     role: 动机锚点
     reason: 帮助识别一个人在职业中不愿长期牺牲的价值和约束。
     status: in_library
   - title: 你的降落伞是什么颜色
     author: 理查德·尼尔森·鲍利斯
     slug: ni-de-jiang-luo-san-shi-shen-me-yan-se
-    path: books/个人成长/理查德·尼尔森·鲍利斯-你的降落伞是什么颜色.md
+    path: books/自我管理/职业发展/理查德·尼尔森·鲍利斯-你的降落伞是什么颜色.md
     role: 求职探索
     reason: 把职业探索落到技能、兴趣、环境和机会搜索。
     status: in_library
   - title: 优秀到不能被忽视
     author: 卡尔·纽波特
     slug: you-xiu-dao-bu-neng-bei-hu-shi
-    path: books/效率习惯/卡尔·纽波特-优秀到不能被忽视.md
+    path: books/自我管理/专注效率/卡尔·纽波特-优秀到不能被忽视.md
     role: 能力资本
     reason: 纠正只追随热情的误区，强调稀缺能力带来的选择权。
     status: in_library
   - title: 一人企业
     author: 保罗·贾维斯
     slug: yi-ren-qi-ye
-    path: books/创业产品/保罗·贾维斯-一人企业.md
+    path: books/商业产品/商业模式/保罗·贾维斯-一人企业.md
     role: 独立工作
     reason: 提供小规模、可持续、独立创造价值的职业想象。
     status: in_library
   - title: 每周工作4小时
     author: 蒂莫西·费里斯
     slug: mei-zhou-gong-zuo-4-xiao-shi
-    path: books/效率习惯/蒂莫西·费里斯-每周工作4小时.md
+    path: books/自我管理/时间精力/蒂莫西·费里斯-每周工作4小时.md
     role: 生活设计
     reason: 作为生活方式和工作边界的实验视角，而不是简单复制方法。
     status: in_library
   - title: 原则
     author: 瑞·达利欧
     slug: yuan-ze
-    path: books/个人成长/瑞·达利欧-原则.md
+    path: books/思维科学/决策判断/瑞·达利欧-原则.md
     role: 个人原则
     reason: 最后回到长期选择中的决策原则、复盘和自我管理。
     status: in_library

@@ -10,49 +10,49 @@ books:
   - title: 精力管理
     author: 吉姆·洛尔,托尼·施瓦茨
     slug: jing-li-guan-li
-    path: books/效率习惯/吉姆·洛尔,托尼·施瓦茨-精力管理.md
+    path: books/自我管理/时间精力/吉姆·洛尔,托尼·施瓦茨-精力管理.md
     role: 能量入口
     reason: 先把效率问题从时间扩展到体能、情绪、专注和恢复。
     status: in_library
   - title: 搞定
     author: 戴维·艾伦
     slug: gao-ding
-    path: books/效率习惯/戴维·艾伦-搞定.md
+    path: books/自我管理/时间精力/戴维·艾伦-搞定.md
     role: 任务系统
     reason: 建立收集、澄清、组织和回顾的可信外部系统。
     status: in_library
   - title: 精要主义
     author: 格雷戈·麦吉沃恩
     slug: jing-yao-zhu-yi
-    path: books/效率习惯/格雷戈·麦吉沃恩-精要主义.md
+    path: books/自我管理/专注效率/格雷戈·麦吉沃恩-精要主义.md
     role: 取舍边界
     reason: 帮助读者减少低价值承诺，把时间留给真正重要的事。
     status: in_library
   - title: 高效能人士的七个习惯
     author: 史蒂芬·柯维
     slug: gao-xiao-neng-ren-shi-de-qi-ge-xi-guan
-    path: books/效率习惯/史蒂芬·柯维-高效能人士的七个习惯.md
+    path: books/自我管理/习惯行动/史蒂芬·柯维-高效能人士的七个习惯.md
     role: 价值框架
     reason: 把个人效率放进主动选择、终局思考和重要事项优先中。
     status: in_library
   - title: 慢生产力
     author: 卡尔·纽波特
     slug: man-sheng-chan-li
-    path: books/效率习惯/卡尔·纽波特-慢生产力.md
+    path: books/自我管理/专注效率/卡尔·纽波特-慢生产力.md
     role: 可持续节奏
     reason: 校正长期超负荷和伪忙碌，强调少量高质量工作。
     status: in_library
   - title: 复盘
     author: 陈中
     slug: fu-pan
-    path: books/个人成长/陈中-复盘.md
+    path: books/思维科学/决策判断/陈中-复盘.md
     role: 反馈机制
     reason: 用定期回顾把计划、行动和学习连接起来。
     status: in_library
   - title: 原则
     author: 瑞·达利欧
     slug: yuan-ze
-    path: books/个人成长/瑞·达利欧-原则.md
+    path: books/思维科学/决策判断/瑞·达利欧-原则.md
     role: 个人原则
     reason: 最后把个人系统沉淀为可复用的判断和行动原则。
     status: in_library

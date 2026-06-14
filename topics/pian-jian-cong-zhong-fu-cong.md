@@ -10,56 +10,56 @@ books:
   - title: 社会心理学
     author: 戴维·迈尔斯
     slug: she-hui-xin-li-xue
-    path: books/心理学/戴维·迈尔斯-社会心理学.md
+    path: books/思维科学/行为经济/戴维·迈尔斯-社会心理学.md
     role: 学科主干入口
     reason: 先建立态度、归因、群体和情境影响的主干，给后面的偏见与服从研究提供共同语言。
     status: in_library
   - title: 偏见的本质
     author: 戈登·奥尔波特
     slug: pian-jian-de-ben-zhi
-    path: books/心理学/戈登·奥尔波特-偏见的本质.md
+    path: books/思维科学/行为经济/戈登·奥尔波特-偏见的本质.md
     role: 偏见形成框架
     reason: 聚焦分类、刻板印象和群体边界，解释偏见为什么不是简单的无知。
     status: in_library
   - title: 社会性动物
     author: 埃利奥特·阿伦森
     slug: she-hui-xing-dong-wu
-    path: books/心理学/埃利奥特·阿伦森-社会性动物.md
+    path: books/思维科学/行为经济/埃利奥特·阿伦森-社会性动物.md
     role: 日常情境解释
     reason: 用更贴近日常的社会心理学叙述连接从众、说服、自我辩护和群体压力。
     status: in_library
   - title: 社会认知心理学
     author: 桑标
     slug: she-hui-ren-zhi-xin-li-xue
-    path: books/心理学/桑标-社会认知心理学.md
+    path: books/思维科学/行为经济/桑标-社会认知心理学.md
     role: 认知机制深化
     reason: 深入解释人如何加工他人和群体信息，补足归因、图式和自动判断层面的机制。
     status: in_library
   - title: 影响力
     author: 罗伯特·西奥迪尼
     slug: ying-xiang-li
-    path: books/商业管理/组织行为学/罗伯特·西奥迪尼-影响力.md
+    path: books/商业产品/市场增长/罗伯特·西奥迪尼-影响力.md
     role: 说服线索识别
     reason: 把社会心理机制落到承诺、互惠、稀缺、权威等具体说服场景中。
     status: in_library
   - title: 对权威的服从
     author: 斯坦利·米尔格拉姆
     slug: dui-quan-wei-de-fu-cong
-    path: books/心理学/斯坦利·米尔格拉姆-对权威的服从.md
+    path: books/思维科学/行为经济/斯坦利·米尔格拉姆-对权威的服从.md
     role: 权威压力实验
     reason: 让读者直面普通人在权威结构下如何放弃个人判断。
     status: in_library
   - title: 路西法效应
     author: 菲利普·津巴多
     slug: lu-xi-fa-xiao-ying
-    path: books/心理学/菲利普·津巴多-路西法效应.md
+    path: books/思维科学/行为经济/菲利普·津巴多-路西法效应.md
     role: 角色与制度压力
     reason: 把问题从个人品质扩展到角色、制度和情境如何诱发越界行为。
     status: in_library
   - title: 盲点
     author: 马扎林·贝纳基,安东尼·格林沃尔德
     slug: mang-dian
-    path: books/思维方式/马扎林·贝纳基,安东尼·格林沃尔德-盲点.md
+    path: books/思维科学/行为经济/马扎林·贝纳基,安东尼·格林沃尔德-盲点.md
     role: 隐性偏见收束
     reason: 最后回到自己身上，检查善意自我形象下仍可能存在的自动偏见。
     status: in_library

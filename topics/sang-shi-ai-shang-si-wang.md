@@ -10,42 +10,42 @@ books:
   - title: 最好的告别
     author: Atul Gawande
     slug: zui-hao-de-gao-bie
-    path: books/健康运动/Atul Gawande-最好的告别.md
+    path: books/健康身体/衰老照护/Atul Gawande-最好的告别.md
     role: 临终照护
     reason: 先从医学、照护和选择尊严进入死亡问题。
     status: in_library
   - title: 当呼吸化为空气
     author: Paul Kalanithi
     slug: dang-hu-xi-hua-wei-kong-qi
-    path: books/健康运动/Paul Kalanithi-当呼吸化为空气.md
+    path: books/健康身体/衰老照护/Paul Kalanithi-当呼吸化为空气.md
     role: 疾病经验
     reason: 让读者看见生命计划被疾病打断时，意义如何被重新组织。
     status: in_library
   - title: 活出生命的意义
     author: 维克多·E·弗兰克尔
     slug: huo-chu-sheng-ming-de-yi-yi
-    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
+    path: books/心理修复/自尊成长/维克多·E·弗兰克尔-活出生命的意义.md
     role: 意义支撑
     reason: 在不可控处境中理解意义、责任和承受力。
     status: in_library
   - title: 相约星期二
     author: 米奇·阿尔博姆
     slug: xiang-yue-xing-qi-er
-    path: books/心理学/米奇·阿尔博姆-相约星期二.md
+    path: books/心理修复/心理通论/米奇·阿尔博姆-相约星期二.md
     role: 告别对话
     reason: 用师生对话呈现告别、关系和生命回顾。
     status: in_library
   - title: 生死课
     author: 袁凌
     slug: sheng-si-ke
-    path: books/社会科学/袁凌-生死课.md
+    path: books/社会公共/社会理论/袁凌-生死课.md
     role: 死亡教育
     reason: 帮助读者更直接地面对死亡、哀伤和生命有限性。
     status: in_library
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao
-    path: books/心理学/洛莉·戈特利布-也许你该找个人聊聊.md
+    path: books/心理修复/情绪内耗/洛莉·戈特利布-也许你该找个人聊聊.md
     role: 咨询支持
     reason: 最后从咨询现场看见丧失如何被讲述、承受和重新连接。
     status: in_library

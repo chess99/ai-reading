@@ -38,13 +38,13 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 技术的本质 | 技术演化 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会科学/布莱恩·阿瑟-技术的本质.md |
+| 技术的本质 | 技术演化 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md |
 | 必然 | 网络趋势 | planned | 待补 | 候选: [epub 2.46 MB 2016](https://z-lib.fm/book/dZ69j2dbAo/%E5%BF%85%E7%84%B6.html) |
 | 失控 | 复杂系统 | planned | 待补 | 候选: [epub 2.08 MB 2016](https://z-lib.fm/book/m03QMp84A6/%E5%A4%B1%E6%8E%A7.html) |
-| 理解媒介 | 媒介环境 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
-| 娱乐至死 | 娱乐化风险 | in_library | 尼尔·波兹曼 | yu-le-zhi-si / books/社会科学/尼尔·波兹曼-娱乐至死.md |
+| 理解媒介 | 媒介环境 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md |
+| 娱乐至死 | 娱乐化风险 | in_library | 尼尔·波兹曼 | yu-le-zhi-si / books/社会公共/媒介传播/尼尔·波兹曼-娱乐至死.md |
 | 监视资本主义时代 | 数据权力 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
-| 平台革命 | 平台结构 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
+| 平台革命 | 平台结构 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业产品/商业模式/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
 
 ### 看懂平台、算法与注意力风险
 
@@ -52,13 +52,13 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 娱乐至死 | 媒介入口 | in_library | 尼尔·波兹曼 | yu-le-zhi-si / books/社会科学/尼尔·波兹曼-娱乐至死.md |
+| 娱乐至死 | 媒介入口 | in_library | 尼尔·波兹曼 | yu-le-zhi-si / books/社会公共/媒介传播/尼尔·波兹曼-娱乐至死.md |
 | 注意力商人 | 注意力商业 | planned | 待补 | 候选: [epub 695 KB 2018](https://z-lib.fm/book/OZOpaQdp0x/%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%95%86%E4%BA%BA.html) |
-| 过滤泡 | 信息茧房 | in_library | 伊莱·帕里泽 | guo-lv-pao / books/社会科学/伊莱·帕里泽-过滤泡.md |
+| 过滤泡 | 信息茧房 | in_library | 伊莱·帕里泽 | guo-lv-pao / books/科技媒介/平台算法/伊莱·帕里泽-过滤泡.md |
 | 监视资本主义时代 | 数据监控 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
 | 算法霸权 | 算法伤害 | planned | 待补 | 候选: [epub 538 KB 2018](https://z-lib.fm/book/W0BXBP2QAX/%E7%AE%97%E6%B3%95%E9%9C%B8%E6%9D%83.html) |
-| 平台革命 | 平台治理 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业管理/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
-| 理解媒介 | 媒介理论 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
+| 平台革命 | 平台治理 | in_library | 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利 | ping-tai-ge-ming / books/商业产品/商业模式/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md |
+| 理解媒介 | 媒介理论 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md |
 
 ### 普通人如何理解 AI 变革
 
@@ -70,8 +70,8 @@ date: '2026-06-07'
 | AI 2041 | 场景想象 | planned | 待补 | 候选: [epub 4.70 MB 2021](https://z-lib.fm/book/lgGpJb4yAV/ai-2041-%E9%A0%90%E8%A6%8B10%E5%80%8B%E6%9C%AA%E4%BE%86%E6%96%B0%E4%B8%96%E7%95%8C.html) |
 | 生命3.0 | 智能边界 | planned | 待补 | 候选: [epub 8.52 MB 2018](https://z-lib.fm/book/QAVRwj19AG/%E7%94%9F%E5%91%BD30.html) |
 | 即将到来的浪潮 | 扩散风险 | planned | 待补 | 候选: [epub 999 KB 0](https://z-lib.fm/book/jAD7G8PVgk/%E6%B5%AA%E6%BD%AE%E5%B0%86%E8%87%B3%E6%8A%80%E6%9C%AF%E6%9D%83%E5%8A%9B%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%B2%E5%87%BB.html) |
-| 未来呼啸而来 | 产业变化 | in_library | 彼得·戴曼迪斯,史蒂芬·科特勒 | wei-lai-hu-xiao-er-lai / books/社会科学/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md |
-| 技术的本质 | 技术演化 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会科学/布莱恩·阿瑟-技术的本质.md |
+| 未来呼啸而来 | 产业变化 | in_library | 彼得·戴曼迪斯,史蒂芬·科特勒 | wei-lai-hu-xiao-er-lai / books/科技媒介/未来技术/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md |
+| 技术的本质 | 技术演化 | in_library | 布莱恩·阿瑟 | ji-shu-de-ben-zhi / books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md |
 
 ### 数字公共生活与信息网络
 
@@ -79,13 +79,13 @@ date: '2026-06-07'
 
 | 书名 | 角色 | 状态 | 作者 | slug / path / z-lib |
 | --- | --- | --- | --- | --- |
-| 智人之上 | 信息网络史 | in_library | 尤瓦尔·赫拉利 | zhi-ren-zhi-shang / books/社会科学/尤瓦尔·赫拉利-智人之上.md |
-| 理解媒介 | 媒介形式 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会科学/马歇尔·麦克卢汉-理解媒介.md |
-| 初识传播学 | 传播基础 | in_library | 埃姆·格里芬 | chu-shi-chuan-bo-xue / books/社会科学/埃姆·格里芬-初识传播学.md |
-| 过滤泡 | 信息筛选 | in_library | 伊莱·帕里泽 | guo-lv-pao / books/社会科学/伊莱·帕里泽-过滤泡.md |
-| 事实 | 事实判断 | in_library | 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德 | shi-shi / books/思维方式/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md |
-| 学会提问 | 批判提问 | in_library | 尼尔·布朗,斯图尔特·基利 | xue-hui-ti-wen / books/个人成长/尼尔·布朗,斯图尔特·基利-学会提问.md |
-| 人的境况 | 公共行动 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/哲学/汉娜·阿伦特-人的境况.md |
+| 智人之上 | 信息网络史 | in_library | 尤瓦尔·赫拉利 | zhi-ren-zhi-shang / books/科技媒介/信息网络/尤瓦尔·赫拉利-智人之上.md |
+| 理解媒介 | 媒介形式 | in_library | 马歇尔·麦克卢汉 | li-jie-mei-jie / books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md |
+| 初识传播学 | 传播基础 | in_library | 埃姆·格里芬 | chu-shi-chuan-bo-xue / books/社会公共/媒介传播/埃姆·格里芬-初识传播学.md |
+| 过滤泡 | 信息筛选 | in_library | 伊莱·帕里泽 | guo-lv-pao / books/科技媒介/平台算法/伊莱·帕里泽-过滤泡.md |
+| 事实 | 事实判断 | in_library | 汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德 | shi-shi / books/思维科学/证据科学/汉斯·罗斯林,欧拉·罗斯林,安娜·罗斯林·罗朗德-事实.md |
+| 学会提问 | 批判提问 | in_library | 尼尔·布朗,斯图尔特·基利 | xue-hui-ti-wen / books/思维科学/证据科学/尼尔·布朗,斯图尔特·基利-学会提问.md |
+| 人的境况 | 公共行动 | in_library | 汉娜·阿伦特 | ren-de-jing-kuang / books/人文艺术/政治哲学/汉娜·阿伦特-人的境况.md |
 
 ### AI 风险、治理与技术权力
 
@@ -97,5 +97,5 @@ date: '2026-06-07'
 | 对齐问题 | 目标对齐 | planned | 待补 | 候选: [mobi 6.16 MB 2020](https://z-lib.fm/book/DAadqWa33g/%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98.html) |
 | 算法霸权 | 算法歧视 | planned | 待补 | 候选: [epub 538 KB 2018](https://z-lib.fm/book/W0BXBP2QAX/%E7%AE%97%E6%B3%95%E9%9C%B8%E6%9D%83.html) |
 | 监视资本主义时代 | 数据权力 | planned | 待补 | 候选: [mobi 3.28 MB 2009](https://z-lib.fm/book/jADx68lmvA/%E7%9B%91%E8%A7%86%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E6%97%B6%E4%BB%A3.html) |
-| 开放社会及其敌人 | 政治边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/哲学/卡尔·波普尔-开放社会及其敌人.md |
-| 智人之上 | 信息网络 | in_library | 尤瓦尔·赫拉利 | zhi-ren-zhi-shang / books/社会科学/尤瓦尔·赫拉利-智人之上.md |
+| 开放社会及其敌人 | 政治边界 | in_library | 卡尔·波普尔 | kai-fang-she-hui-ji-qi-di-ren / books/人文艺术/政治哲学/卡尔·波普尔-开放社会及其敌人.md |
+| 智人之上 | 信息网络 | in_library | 尤瓦尔·赫拉利 | zhi-ren-zhi-shang / books/科技媒介/信息网络/尤瓦尔·赫拉利-智人之上.md |

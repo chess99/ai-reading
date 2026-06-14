@@ -10,49 +10,49 @@ books:
   - title: 寂静的春天
     author: Rachel Carson
     slug: ji-jing-de-chun-tian
-    path: books/社会科学/Rachel Carson-寂静的春天.md
+    path: books/社会公共/城市环境/Rachel Carson-寂静的春天.md
     role: 环境危机
     reason: 先从具体环境伤害理解人类活动的外部代价。
     status: in_library
   - title: 增长的极限
     author: 丹尼斯·米都斯等
     slug: zeng-zhang-de-ji-xian
-    path: books/社会科学/丹尼斯·米都斯等-增长的极限.md
+    path: books/社会公共/城市环境/丹尼斯·米都斯等-增长的极限.md
     role: 增长边界
     reason: 用资源、人口、工业和污染的系统关系理解边界问题。
     status: in_library
   - title: 小即是美
     author: E. F. Schumacher
     slug: xiao-ji-shi-mei
-    path: books/社会科学/E. F. Schumacher-小即是美.md
+    path: books/社会公共/城市环境/E. F. Schumacher-小即是美.md
     role: 适度经济
     reason: 从经济尺度、技术选择和生活方式反思无限增长。
     status: in_library
   - title: 失控的农业
     author: Philip Lymbery, Isabel Oakeshott
     slug: shi-kong-de-nong-ye
-    path: books/社会科学/Philip Lymbery,Isabel Oakeshott-失控的农业.md
+    path: books/科技媒介/未来技术/Philip Lymbery,Isabel Oakeshott-失控的农业.md
     role: 农业系统
     reason: 把环境问题落到农业、食物系统和土地使用中。
     status: in_library
   - title: 气候经济与人类未来
     author: Bill Gates
     slug: qi-hou-jing-ji-yu-ren-lei-wei-lai
-    path: books/社会科学/Bill Gates-气候经济与人类未来.md
+    path: books/社会公共/城市环境/Bill Gates-气候经济与人类未来.md
     role: 气候经济
     reason: 解释气候变化如何影响经济决策、风险和未来分配。
     status: in_library
   - title: 社会共通资本
     author: 宇泽弘文
     slug: she-hui-gong-tong-zi-ben
-    path: books/社会科学/宇泽弘文-社会共通资本.md
+    path: books/社会公共/城市环境/宇泽弘文-社会共通资本.md
     role: 公共资本
     reason: 把自然、基础设施和制度看作需要共同维护的资本。
     status: in_library
   - title: 枪炮、病菌与钢铁
     author: 贾雷德·戴蒙德
     slug: qiang-pao-bing-jun-yu-gang-tie
-    path: books/社会科学/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
+    path: books/历史世界/世界历史/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
     role: 地理约束
     reason: 用地理和生态约束补足文明发展与资源环境的长期视角。
     status: in_library

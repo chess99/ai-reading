@@ -10,42 +10,42 @@ books:
   - title: 小狗钱钱
     author: 博多·舍费尔
     slug: xiao-gou-qian-qian
-    path: books/投资/理财入门/博多·舍费尔-小狗钱钱.md
+    path: books/金钱投资/理财入门/博多·舍费尔-小狗钱钱.md
     role: 金钱入口
     reason: 用故事把储蓄、目标和现金流先讲清楚，适合没有财务训练的读者建立第一层行动感。
     status: in_library
   - title: 巴比伦最富有的人
     author: 乔治·S.克拉森
     slug: ba-bi-lun-zui-fu-you-de-ren
-    path: books/投资/理财入门/乔治·S.克拉森-巴比伦最富有的人.md
+    path: books/金钱投资/理财入门/乔治·S.克拉森-巴比伦最富有的人.md
     role: 储蓄规则
     reason: 把入口处的愿望变成收入留存、控制支出和让钱工作的基本规则。
     status: in_library
   - title: 富爸爸穷爸爸
     author: 罗伯特·清崎
     slug: fu-ba-ba-qiong-ba-ba
-    path: books/投资/理财入门/罗伯特·清崎-富爸爸穷爸爸.md
+    path: books/金钱投资/理财入门/罗伯特·清崎-富爸爸穷爸爸.md
     role: 资产意识
     reason: 帮读者区分收入、负债和资产，理解为什么工资增长不自动等于财务安全。
     status: in_library
   - title: 邻家的百万富翁
     author: 托马斯·J.斯坦利,威廉·D.丹科
     slug: lin-jia-de-bai-wan-fu-weng
-    path: books/投资/理财入门/托马斯·J.斯坦利,威廉·D.丹科-邻家的百万富翁.md
+    path: books/金钱投资/理财入门/托马斯·J.斯坦利,威廉·D.丹科-邻家的百万富翁.md
     role: 家庭财富校准
     reason: 用真实富裕家庭的消费和积累模式，校正把高收入、高消费误认为财富的直觉。
     status: in_library
   - title: 金钱心理学
     author: 摩根·豪泽尔
     slug: jin-qian-xin-li-xue
-    path: books/投资/理财入门/摩根·豪泽尔-金钱心理学.md
+    path: books/金钱投资/理财入门/摩根·豪泽尔-金钱心理学.md
     role: 行为风险
     reason: 解释金钱决策中的安全感、比较、耐心和运气，让财务常识不只停在算术层面。
     status: in_library
   - title: 一本书读懂财报
     author: 肖星
     slug: yi-ben-shu-du-dong-cai-bao
-    path: books/投资/价值投资/肖星-一本书读懂财报.md
+    path: books/金钱投资/价值投资/肖星-一本书读懂财报.md
     role: 财报入口
     reason: 把个人财务意识连接到企业报表，帮助读者看懂收入、利润、现金流和资产负债的关系。
     status: in_library

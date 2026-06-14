@@ -10,49 +10,49 @@ books:
   - title: 全球通史
     author: 斯塔夫里阿诺斯
     slug: quan-qiu-tong-shi
-    path: books/历史传记/斯塔夫里阿诺斯-全球通史.md
+    path: books/历史世界/世界历史/斯塔夫里阿诺斯-全球通史.md
     role: 通史入口
     reason: 先建立世界史的大时间线和区域框架。
     status: in_library
   - title: 人类简史
     author: 尤瓦尔·赫拉利
     slug: ren-lei-jian-shi
-    path: books/社会科学/尤瓦尔·赫拉利-人类简史.md
+    path: books/历史世界/世界历史/尤瓦尔·赫拉利-人类简史.md
     role: 人类叙事
     reason: 用认知、农业、国家和科技等大叙事提供跨区域比较入口。
     status: in_library
   - title: 枪炮、病菌与钢铁
     author: 贾雷德·戴蒙德
     slug: qiang-pao-bing-jun-yu-gang-tie
-    path: books/社会科学/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
+    path: books/历史世界/世界历史/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
     role: 地理条件
     reason: 解释地理、物种、疾病和技术扩散如何影响长期差异。
     status: in_library
   - title: 丝绸之路
     author: 彼得·弗兰科潘
     slug: si-chou-zhi-lu
-    path: books/历史传记/彼得·弗兰科潘-丝绸之路.md
+    path: books/历史世界/世界历史/彼得·弗兰科潘-丝绸之路.md
     role: 贸易网络
     reason: 把世界史从国家列表改写为欧亚交流、贸易和文化流动。
     status: in_library
   - title: 大国的兴衰
     author: 保罗·肯尼迪
     slug: da-guo-de-xing-shuai
-    path: books/历史传记/保罗·肯尼迪-大国的兴衰.md
+    path: books/历史世界/世界历史/保罗·肯尼迪-大国的兴衰.md
     role: 大国兴衰
     reason: 用经济、军事和财政压力理解霸权更替。
     status: in_library
   - title: 世界秩序
     author: 亨利·基辛格
     slug: shi-jie-zhi-xu
-    path: books/社会科学/亨利·基辛格-世界秩序.md
+    path: books/历史世界/国际秩序/亨利·基辛格-世界秩序.md
     role: 秩序框架
     reason: 把历史经验接到国际秩序、外交传统和大国关系。
     status: in_library
   - title: 未来简史
     author: 尤瓦尔·赫拉利
     slug: wei-lai-jian-shi
-    path: books/社会科学/尤瓦尔·赫拉利-未来简史.md
+    path: books/科技媒介/未来技术/尤瓦尔·赫拉利-未来简史.md
     role: 现代风险
     reason: 放在末尾，提醒读者现代技术和未来想象也会重写历史问题。
     status: in_library

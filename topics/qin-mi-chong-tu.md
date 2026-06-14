@@ -10,49 +10,49 @@ books:
   - title: 亲密关系
     author: 罗兰·米勒
     slug: qin-mi-guan-xi
-    path: books/心理学/罗兰·米勒-亲密关系.md
+    path: books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md
     role: 冲突总览
     reason: 先理解亲密关系中的冲突、权力、承诺和关系维持如何互相影响。
     status: in_library
   - title: 依恋
     author: 约翰·鲍尔比
     slug: yi-lian
-    path: books/心理学/约翰·鲍尔比-依恋.md
+    path: books/关系家庭/亲密关系/约翰·鲍尔比-依恋.md
     role: 依恋需求
     reason: 解释冲突中追逐、回避、抗议和沉默背后的安全感需求。
     status: in_library
   - title: 幸福的婚姻
     author: 约翰·戈特曼,娜恩·西尔弗
     slug: xing-fu-de-hun-yin
-    path: books/心理学/约翰·戈特曼,娜恩·西尔弗-幸福的婚姻.md
+    path: books/关系家庭/亲密关系/约翰·戈特曼,娜恩·西尔弗-幸福的婚姻.md
     role: 修复研究
     reason: 把冲突处理落到长期关系中的修复尝试、友谊基础和破坏性互动模式。
     status: in_library
   - title: 抱紧我
     author: 苏珊·强森
     slug: bao-jin-wo
-    path: books/心理学/苏珊·强森-抱紧我.md
+    path: books/关系家庭/亲密关系/苏珊·强森-抱紧我.md
     role: 情绪聚焦
     reason: 帮助识别伴侣之间反复出现的负向情绪循环。
     status: in_library
   - title: 非暴力沟通
     author: 马歇尔·卢森堡
     slug: fei-bao-li-gou-tong
-    path: books/心理学/马歇尔·卢森堡-非暴力沟通.md
+    path: books/关系家庭/沟通冲突/马歇尔·卢森堡-非暴力沟通.md
     role: 表达方法
     reason: 把指责和防御拆成观察、感受、需要与请求。
     status: in_library
   - title: 高难度谈话
     author: 道格拉斯·斯通,布鲁斯·佩顿,希拉·汉
     slug: gao-nan-du-tan-hua
-    path: books/心理学/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
+    path: books/关系家庭/沟通冲突/道格拉斯·斯通,布鲁斯·佩顿,希拉·汉-高难度谈话.md
     role: 困难议题
     reason: 处理事实争议、感受冲突和身份威胁同时存在的谈话。
     status: in_library
   - title: 关键对话
     author: 科里·帕特森
     slug: guan-jian-dui-hua
-    path: books/心理学/科里·帕特森-关键对话.md
+    path: books/关系家庭/沟通冲突/科里·帕特森-关键对话.md
     role: 高风险对话
     reason: 在情绪高、分歧大、后果重的场景里建立更稳定的对话条件。
     status: in_library

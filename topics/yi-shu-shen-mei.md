@@ -10,42 +10,42 @@ books:
   - title: 艺术的故事
     author: E.H. 贡布里希
     slug: yi-shu-de-gu-shi
-    path: books/写作创意/E.H. 贡布里希-艺术的故事.md
+    path: books/人文艺术/艺术美学/E.H. 贡布里希-艺术的故事.md
     role: 艺术史入口
     reason: 先用清晰的艺术史线索理解作品、风格和时代。
     status: in_library
   - title: 写给大家看的设计书
     author: 罗宾·威廉姆斯
     slug: xie-gei-da-jia-kan-de-she-ji-shu
-    path: books/写作创意/罗宾·威廉姆斯-写给大家看的设计书.md
+    path: books/人文艺术/设计视觉/罗宾·威廉姆斯-写给大家看的设计书.md
     role: 视觉基础
     reason: 提供对比、重复、对齐和亲密性等可观察的设计原则。
     status: in_library
   - title: 像艺术家一样思考
     author: 贝蒂·艾德华
     slug: xiang-yi-shu-jia-yi-yang-si-kao
-    path: books/写作创意/贝蒂·艾德华-像艺术家一样思考.md
+    path: books/人文艺术/艺术美学/贝蒂·艾德华-像艺术家一样思考.md
     role: 观察训练
     reason: 训练读者从概念化观看转向更具体的形状、边界和关系。
     status: in_library
   - title: 美的历程
     author: 李泽厚
     slug: mei-de-li-cheng
-    path: books/写作创意/李泽厚-美的历程.md
+    path: books/人文艺术/艺术美学/李泽厚-美的历程.md
     role: 中国美学
     reason: 把审美经验放入中国思想、历史和艺术传统。
     status: in_library
   - title: 谈美
     author: 朱光潜
     slug: tan-mei
-    path: books/写作创意/朱光潜-谈美.md
+    path: books/人文艺术/艺术美学/朱光潜-谈美.md
     role: 美学入门
     reason: 用朴素方式讨论美感、距离、移情和人生经验。
     status: in_library
   - title: 禅与摩托车维修艺术
     author: 罗伯特·M. 波西格
     slug: chan-yu-mo-tuo-che-wei-xiu-yi-shu
-    path: books/写作创意/罗伯特·M. 波西格-禅与摩托车维修艺术.md
+    path: books/人文艺术/艺术美学/罗伯特·M. 波西格-禅与摩托车维修艺术.md
     role: 技艺精神
     reason: 把审美判断延伸到质量、技艺和日常实践。
     status: in_library

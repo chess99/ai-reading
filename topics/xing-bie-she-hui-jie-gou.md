@@ -10,42 +10,42 @@ books:
   - title: 厌女
     author: 上野千鹤子
     slug: yan-nv
-    path: books/社会科学/上野千鹤子-厌女.md
+    path: books/社会公共/性别结构/上野千鹤子-厌女.md
     role: 性别秩序入口
     reason: 先让读者看到厌女如何成为社会秩序的一部分，而不只是个人态度。
     status: in_library
   - title: 第二性
     author: 西蒙娜·德·波伏瓦
     slug: di-er-xing
-    path: books/社会科学/西蒙娜·德·波伏瓦-第二性.md
+    path: books/社会公共/性别结构/西蒙娜·德·波伏瓦-第二性.md
     role: 女性处境框架
     reason: 从存在、他者化和社会建构解释女性处境的历史与哲学基础。
     status: in_library
   - title: 看不见的女性
     author: 卡罗琳·克利亚多·佩雷斯
     slug: kan-bu-jian-de-nv-xing
-    path: books/社会科学/卡罗琳·克利亚多·佩雷斯-看不见的女性.md
+    path: books/社会公共/性别结构/卡罗琳·克利亚多·佩雷斯-看不见的女性.md
     role: 数据偏见
     reason: 把性别结构推进到统计、设计、劳动和公共政策中的不可见遗漏。
     status: in_library
   - title: 性别打结
     author: 艾伦·约翰逊
     slug: xing-bie-da-jie
-    path: books/社会科学/艾伦·约翰逊-性别打结.md
+    path: books/社会公共/性别结构/艾伦·约翰逊-性别打结.md
     role: 结构机制
     reason: 提供性别关系如何嵌入组织、家庭和日常互动的社会学解释。
     status: in_library
   - title: 亲密关系
     author: 罗兰·米勒
     slug: qin-mi-guan-xi
-    path: books/心理学/罗兰·米勒-亲密关系.md
+    path: books/关系家庭/亲密关系/罗兰·米勒-亲密关系.md
     role: 亲密关系切面
     reason: 说明性别结构也会进入亲密关系中的期待、分工和权力感。
     status: in_library
   - title: 社会学的想象力
     author: C. 赖特·米尔斯
     slug: she-hui-xue-de-xiang-xiang-li
-    path: books/社会科学/C. 赖特·米尔斯-社会学的想象力.md
+    path: books/社会公共/社会理论/C. 赖特·米尔斯-社会学的想象力.md
     role: 社会学收束
     reason: 用社会学想象力把个人经验放回结构，避免把性别问题缩成个体选择。
     status: in_library

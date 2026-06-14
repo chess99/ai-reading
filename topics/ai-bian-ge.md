@@ -10,42 +10,42 @@ books:
   - title: 人机共智
     author: Ethan Mollick
     slug: ren-ji-gong-zhi
-    path: books/社会科学/Ethan Mollick-人机共智.md
+    path: books/科技媒介/AI变革/Ethan Mollick-人机共智.md
     role: 协作入口
     reason: 从普通人如何和生成式 AI 协作进入，而不是先讨论抽象未来。
     status: in_library
   - title: AI 2041
     author: 李开复,陈楸帆
     slug: ai-2041
-    path: books/社会科学/李开复,陈楸帆-AI 2041.md
+    path: books/科技媒介/AI变革/李开复,陈楸帆-AI 2041.md
     role: 场景想象
     reason: 用具体故事和行业场景帮助读者理解 AI 可能进入哪些生活领域。
     status: in_library
   - title: 生命3.0
     author: 迈克斯·泰格马克
     slug: sheng-ming-3-0
-    path: books/社会科学/迈克斯·泰格马克-生命3.0.md
+    path: books/科技媒介/AI变革/迈克斯·泰格马克-生命3.0.md
     role: 智能边界
     reason: 把 AI 放到智能、生命和目标设定的更大问题中讨论。
     status: in_library
   - title: 即将到来的浪潮
     author: Mustafa Suleyman,Michael Bhaskar
     slug: ji-jiang-dao-lai-de-lang-chao
-    path: books/社会科学/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
+    path: books/科技媒介/AI变革/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
     role: 扩散风险
     reason: 说明 AI 与其他通用技术扩散后会带来的机会、失控和治理压力。
     status: in_library
   - title: 未来呼啸而来
     author: 彼得·戴曼迪斯,史蒂芬·科特勒
     slug: wei-lai-hu-xiao-er-lai
-    path: books/社会科学/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md
+    path: books/科技媒介/未来技术/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md
     role: 产业变化
     reason: 把 AI 放进更广泛的技术加速和产业重组中理解。
     status: in_library
   - title: 技术的本质
     author: 布莱恩·阿瑟
     slug: ji-shu-de-ben-zhi
-    path: books/社会科学/布莱恩·阿瑟-技术的本质.md
+    path: books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md
     role: 技术演化
     reason: 回到技术如何组合与演进，避免只追逐最新工具。
     status: in_library

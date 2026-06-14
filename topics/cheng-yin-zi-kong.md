@@ -10,56 +10,56 @@ books:
   - title: 多巴胺国度
     author: Anna Lembke
     slug: duo-ba-an-guo-du
-    path: books/心理学/Anna Lembke-多巴胺国度.md
+    path: books/心理修复/成瘾自控/Anna Lembke-多巴胺国度.md
     role: 奖励回路
     reason: 先理解快感、痛苦、奖赏系统和现代成瘾环境。
     status: in_library
   - title: 欲罢不能
     author: 亚当·奥尔特
     slug: yu-ba-bu-neng
-    path: books/心理学/亚当·奥尔特-欲罢不能.md
+    path: books/心理修复/成瘾自控/亚当·奥尔特-欲罢不能.md
     role: 行为成瘾
     reason: 解释设计、反馈和环境如何让行为变得难以停止。
     status: in_library
   - title: 自控力
     author: 凯利·麦格尼格尔
     slug: zi-kong-li
-    path: books/心理学/凯利·麦格尼格尔-自控力.md
+    path: books/心理修复/成瘾自控/凯利·麦格尼格尔-自控力.md
     role: 自控机制
     reason: 补上压力、冲动和意志力失败背后的心理机制。
     status: in_library
   - title: 稀缺
     author: 塞德希尔·穆来纳森,埃尔德·沙菲尔
     slug: xi-que
-    path: books/个人成长/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
+    path: books/思维科学/行为经济/塞德希尔·穆来纳森,埃尔德·沙菲尔-稀缺.md
     role: 带宽压力
     reason: 说明稀缺感如何占用认知带宽，削弱长期选择能力。
     status: in_library
   - title: 习惯的力量
     author: 查尔斯·都希格
     slug: xi-guan-de-li-liang
-    path: books/效率习惯/查尔斯·都希格-习惯的力量.md
+    path: books/自我管理/习惯行动/查尔斯·都希格-习惯的力量.md
     role: 习惯回路
     reason: 用提示、惯常行为和奖励理解重复行为如何形成。
     status: in_library
   - title: 活出生命的意义
     author: 维克多·E·弗兰克尔
     slug: huo-chu-sheng-ming-de-yi-yi
-    path: books/心理学/维克多·E·弗兰克尔-活出生命的意义.md
+    path: books/心理修复/自尊成长/维克多·E·弗兰克尔-活出生命的意义.md
     role: 意义支撑
     reason: 把改变行为和意义、责任、生活方向连接起来。
     status: in_library
   - title: 反脆弱
     author: 纳西姆·塔勒布
     slug: fan-cui-ruo
-    path: books/思维方式/纳西姆·塔勒布-反脆弱.md
+    path: books/思维科学/系统复杂/纳西姆·塔勒布-反脆弱.md
     role: 承受不确定
     reason: 帮助理解如何调整暴露面，让系统不被波动轻易击穿。
     status: in_library
   - title: 沉思录
     author: 马可·奥勒留
     slug: chen-si-lu
-    path: books/哲学/马可·奥勒留-沉思录.md
+    path: books/人文艺术/人生哲学/马可·奥勒留-沉思录.md
     role: 古典修身
     reason: 最后提供面对欲望、痛苦和责任的长期自我训练视角。
     status: in_library
