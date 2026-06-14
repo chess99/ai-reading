@@ -45,7 +45,7 @@ date: '2026-06-07'
 | 组织行为学 | 组织行为 | in_library | 斯蒂芬·罗宾斯 | zu-zhi-xing-wei-xue / books/职业组织/组织领导/斯蒂芬·罗宾斯-组织行为学.md |
 | 走出危机 | 质量管理 | in_library | W·爱德华兹·戴明 | zou-chu-wei-ji / books/职业组织/运营流程/W·爱德华兹·戴明-走出危机.md |
 | 丰田之道 | 生产系统 | in_library | 杰弗里·莱克 | feng-tian-zhi-dao / books/职业组织/运营流程/杰弗里·莱克-丰田之道.md |
-| 精益思维 | 精益原则 | in_library | 詹姆斯·沃麦克,丹尼尔·琼斯 | jing-yi-si-wei / books/职业组织/运营流程/詹姆斯·沃麦克-精益思维.md |
+| 精益思维 | 精益原则 | in_library | 詹姆斯·沃麦克,丹尼尔·琼斯 | jing-yi-si-wei / books/职业组织/运营流程/詹姆斯·沃麦克,丹尼尔·琼斯-精益思维.md |
 | 科学管理原理 | 管理传统 | in_library | 弗雷德里克·泰勒 | ke-xue-guan-li-yuan-li / books/职业组织/运营流程/弗雷德里克·泰勒-科学管理原理.md |
 | 第五项修炼 | 学习型组织 | planned | 待补 | 需复核: 原候选详情页发生页面跳转导致下载脚本失败；search-only 复查未命中，需换源或人工复核。；[epub 164 KB 2009](https://z-lib.fm/book/W0EMaOwW0l/%E7%AC%AC%E4%BA%94%E9%A1%B9%E4%BF%AE%E7%82%BC.html) |
 | 原则 | 经营原则 | in_library | 瑞·达利欧 | yuan-ze / books/思维科学/决策判断/瑞·达利欧-原则.md |

@@ -62,7 +62,7 @@ date: '2026-06-07'
 | 启示录 | 产品组织 | in_library | Marty Cagan | qi-shi-lu / books/商业产品/产品管理/Marty Cagan-启示录.md |
 | 产品开发流程原理 | 开发流动 | in_library | 唐纳德·莱纳特森 | chan-pin-kai-fa-liu-cheng-yuan-li / books/商业产品/产品管理/唐纳德·莱纳特森-产品开发流程原理.md |
 | 用户故事地图 | 需求组织 | planned | 待补 | 需复核: 已下载 PDF 候选仅解析出重复 homeofpdf 水印，TXT 候选无可见下载按钮；需换源或人工处理；[pdf 46.91 MB 2016](https://z-lib.fm/book/k07kaW8r0J/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE.html) |
-| 精益思维 | 精益交付 | in_library | 詹姆斯·沃麦克,丹尼尔·琼斯 | jing-yi-si-wei / books/职业组织/运营流程/詹姆斯·沃麦克-精益思维.md |
+| 精益思维 | 精益交付 | in_library | 詹姆斯·沃麦克,丹尼尔·琼斯 | jing-yi-si-wei / books/职业组织/运营流程/詹姆斯·沃麦克,丹尼尔·琼斯-精益思维.md |
 | 赋能 | 授权协作 | planned | 待补 | 候选: [epub 779 KB 2017](https://z-lib.fm/book/zjADRNqy0k/%E8%B5%8B%E8%83%BD%E6%89%93%E9%80%A0%E5%BA%94%E5%AF%B9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F.html) |
 | 重新定义团队 | 团队结构 | planned | 待补 | 候选: [epub 4.07 MB 2015](https://z-lib.fm/book/XAnlBoo70d/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%9B%A2%E9%98%9F%E8%B0%B7%E6%AD%8C%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C.html) |
 | 领导梯队 | 领导层级 | in_library | 查兰 | ling-dao-ti-dui / books/职业组织/组织领导/查兰-领导梯队.md |

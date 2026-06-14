@@ -21,7 +21,7 @@
 - `AGENTS.md`, `CLAUDE.md`, and `.nextjs-site/docs/book-format.md` still document the old root-level or arbitrary-depth path model. The migration must update these source-of-truth docs before enforcing exactly two category levels.
 - `.nextjs-site/lib/books.ts` already recursively scans arbitrary nested `books/` paths and derives `categoryPath`, so the loader can support the taxonomy.
 - `.nextjs-site/scripts/generate-manifest.js` currently derives book slugs from filenames rather than frontmatter, so the manifest must be fixed before large moves.
-- A separate naming audit found 17 current filename/frontmatter mismatches and 2 current H1/title mismatches. Those are real library-format issues, but they are not taxonomy blockers. This plan records them as a follow-up cleanup batch instead of making the taxonomy migration fail for pre-existing content drift.
+- A separate naming audit found several filename/frontmatter differences and 2 current H1/title mismatches. Filename and display-title differences are not automatically problems: frontmatter `title` is the website display title and may include a subtitle. The follow-up cleanup should only fix official author/title factual mismatches and the 2 H1 structure issues.
 
 ## Independent Review Consensus
 
@@ -981,7 +981,7 @@ No uncommitted changes.
 
 This cleanup is intentionally separate from taxonomy migration. Run it after the directory migration is complete, or before it only if the implementer wants to reduce library-format drift first.
 
-Known current filename/frontmatter mismatches:
+Current filename/frontmatter differences that need factual review:
 
 ```text
 books/自我管理/职业发展/布赖恩·费瑟斯通豪-远见.md
@@ -989,7 +989,6 @@ books/健康身体/营养代谢/Frances Sizer,Eleanor Whitney-营养学.md
 books/健康身体/衰老照护/Randolph M. Nesse,George C. Williams-我们为什么会生病.md
 books/人文艺术/叙事创作/杰西卡·布鲁迪-Save-the-Cat-写青少年小说.md
 books/商业产品/用户体验/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
-books/职业组织/运营流程/詹姆斯·沃麦克-精益思维.md
 books/商业产品/经营财务/卡伦·伯曼,乔·奈特-财务智慧.md
 books/关系家庭/家庭教育/鲁道夫·德雷克斯,薇姬·索尔兹-孩子.md
 books/思维科学/概率风险/丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·桑斯坦-噪声.md
@@ -1003,17 +1002,23 @@ books/金钱投资/经济学/大卫·格雷伯-债.md
 books/金钱投资/经济学/阿比吉特·班纳吉,埃斯特·迪弗洛-贫穷的本质.md
 ```
 
-Known current H1/title mismatches:
+Review rule:
+
+- Not a problem when the filename uses the short maintainable main title but frontmatter `title` includes the display subtitle, such as `远见.md` with `title: 远见：如何规划职业生涯3大阶段`.
+- Not a problem when the filename normalizes punctuation for filesystem readability but frontmatter preserves the display title, such as `Save-the-Cat-写青少年小说.md` with `title: Save the Cat! 写青少年小说`.
+- A real problem when author or title facts differ from the official/common bibliographic record, such as 《精益思维》 needing the correct author set.
+- Preserve `slug` unless the user explicitly approves a URL change.
+
+Current H1/title mismatches:
 
 ```text
-books/科技媒介/平台算法/伊莱·帕里泽-过滤泡.md
-books/社会公共/政治制度/德隆·阿西莫格鲁,詹姆斯·罗宾逊-国家为什么会失败.md
+None known after the small cleanup that changed the first H1 in 《过滤泡》 and 《国家为什么会失败》 from `# 一句话概括` to the book title.
 ```
 
 Cleanup rule:
 
 ```text
-For each mismatch, decide whether the filename or frontmatter is the canonical value according to AGENTS.md. Then change exactly the filename, frontmatter title/author, and H1 needed to make the book internally consistent. Preserve slug unless the user explicitly approves a URL change.
+For each factual mismatch, verify the official/common author and title. Then change exactly the filename, frontmatter title/author, and H1 needed to make the book internally consistent. Do not treat display subtitles or filesystem punctuation normalization as cleanup requirements. Preserve slug unless the user explicitly approves a URL change.
 ```
 
 Verification after cleanup:
@@ -1062,7 +1067,7 @@ Spec coverage:
 - Multiple independent agent self-review: recorded in Independent Review Consensus, with the one non-root tension resolved explicitly.
 - Source-of-truth doc consistency: covered by Task 2 before the taxonomy migration is enforced.
 - Implementation safety: covered by Tasks 1-7, with guardrails before moves.
-- Pre-existing naming/H1 drift: recorded as a separate follow-up cleanup so taxonomy migration is not blocked by unrelated content normalization.
+- Pre-existing naming/H1 drift: narrowed to factual author/title mismatches plus 2 H1 structure issues, so taxonomy migration is not blocked by acceptable display-title differences.
 - Project commit discipline: each task includes a commit step and stages only files owned by that task.
 
 Placeholder scan:
@@ -1078,5 +1083,5 @@ Type and naming consistency:
 - Public URL invariant is consistently `/books/<frontmatter slug>/`.
 - The allowed top-level and second-level shelf lists match the target directory tree.
 - The implementation review's blocking concerns were resolved: repo-root snippets import `gray-matter` from `.nextjs-site/node_modules`, shelf-pair validation is explicit, staging is pathspec-based, ignored manifest output is regenerated but not staged, and final verification uses one subshell for `.nextjs-site` commands.
-- The final review's naming/H1 blocker was resolved by removing unrelated filename/H1 assertions from taxonomy validation and recording known current drift as a separate cleanup batch.
+- The final review's naming/H1 blocker was resolved by removing unrelated filename/H1 assertions from taxonomy validation and recording only factual author/title mismatches plus H1 structure issues as cleanup candidates.
 - The source-of-truth blocker was resolved by adding an explicit task to update `AGENTS.md`, `CLAUDE.md`, and `.nextjs-site/docs/book-format.md` before migration enforcement.

@@ -31,7 +31,7 @@ books:
   - title: 精益思维
     author: 詹姆斯·沃麦克,丹尼尔·琼斯
     slug: jing-yi-si-wei
-    path: books/职业组织/运营流程/詹姆斯·沃麦克-精益思维.md
+    path: books/职业组织/运营流程/詹姆斯·沃麦克,丹尼尔·琼斯-精益思维.md
     role: 精益原则
     reason: 从价值、价值流、流动、拉动和尽善尽美理解组织效率。
     status: in_library
