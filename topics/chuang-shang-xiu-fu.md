@@ -43,10 +43,12 @@ books:
     reason: 说明早期依恋如何影响安全感和亲密关系，为后面的关系修复提供基础。
     status: in_library
   - title: 抱紧我
-    author: 待补
+    author: 苏珊·强森
+    slug: bao-jin-wo
+    path: books/心理学/苏珊·强森-抱紧我.md
     role: 亲密关系修复
     reason: 聚焦伴侣关系中的情绪循环和依附需求，帮助读者理解创伤如何进入亲密互动。
-    status: planned
+    status: in_library
   - title: 也许你该找个人聊聊
     author: 洛莉·戈特利布
     slug: ye-xu-ni-gai-zhao-ge-ren-liao-liao

@@ -29,10 +29,12 @@ books:
     reason: 把亲密关系从感受判断推进到冲突、修复、友谊和承诺的可观察模式。
     status: in_library
   - title: 抱紧我
-    author: 待补
+    author: 苏珊·强森
+    slug: bao-jin-wo
+    path: books/心理学/苏珊·强森-抱紧我.md
     role: 情绪循环
     reason: 说明伴侣争吵背后常有未被看见的依恋需求和保护性反应。
-    status: planned
+    status: in_library
   - title: 爱的艺术
     author: 埃里希·弗洛姆
     slug: ai-de-yi-shu

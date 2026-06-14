@@ -29,10 +29,12 @@ books:
     reason: 把冲突处理落到长期关系中的修复尝试、友谊基础和破坏性互动模式。
     status: in_library
   - title: 抱紧我
-    author: 待补
+    author: 苏珊·强森
+    slug: bao-jin-wo
+    path: books/心理学/苏珊·强森-抱紧我.md
     role: 情绪聚焦
     reason: 帮助识别伴侣之间反复出现的负向情绪循环。
-    status: planned
+    status: in_library
   - title: 非暴力沟通
     author: 马歇尔·卢森堡
     slug: fei-bao-li-gou-tong
