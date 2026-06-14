@@ -15,15 +15,19 @@ books:
     reason: 先学习如何观察叙事、人物和阅读过程。
     status: in_library
   - title: 小说面面观
-    author: 待补
+    author: E.M. 福斯特
+    slug: xiao-shuo-mian-mian-guan
+    path: books/写作创意/E.M. 福斯特-小说面面观.md
     role: 叙事形式
     reason: 帮助读者理解故事、人物、情节和视角这些小说要素。
-    status: planned
+    status: in_library
   - title: 文学理论入门
-    author: 待补
+    author: 乔纳森·卡勒
+    slug: wen-xue-li-lun-ru-men
+    path: books/写作创意/乔纳森·卡勒-文学理论入门.md
     role: 理论框架
     reason: 提供理解文学文本、意义和解释方法的基础框架。
-    status: planned
+    status: in_library
   - title: 文学回忆录
     author: 木心
     slug: wen-xue-hui-yi-lu
@@ -39,10 +43,12 @@ books:
     reason: 帮助读者把作品放进文学传统和历史脉络。
     status: in_library
   - title: 文学讲稿
-    author: 待补
+    author: 弗拉基米尔·纳博科夫
+    slug: wen-xue-jiang-gao
+    path: books/写作创意/弗拉基米尔·纳博科夫-文学讲稿.md
     role: 细读示范
     reason: 展示如何贴着文本观察结构、语气和细节。
-    status: planned
+    status: in_library
 ---
 
 # 文学与人文阅读入门
