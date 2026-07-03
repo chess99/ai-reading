@@ -25,13 +25,28 @@
 .nextjs-site/data/weread-links.json
 ```
 
-初始结构使用 slug 到 URL 的映射：
+结构使用 slug 到状态对象的映射：
 
 ```json
 {
-  "cong-ling-dao-yi": "https://weread.qq.com/web/bookDetail/..."
+  "cong-ling-dao-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/...",
+    "checkedAt": "2026-07-03"
+  },
+  "mou-ben-shu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "按书名和作者未找到可靠匹配"
+  }
 }
 ```
+
+状态含义：
+
+- 没有 key：还没有查过微信读书
+- `status: "found"`：已找到微信读书书籍页链接，页面展示按钮
+- `status: "not_found"`：已查过但没有可靠匹配，页面不展示按钮，后续批量抓取默认跳过
 
 选择独立文件的原因：
 
@@ -59,7 +74,10 @@
 
 - `weread-links.json` 必须是 JSON object
 - 每个 key 必须对应现有书籍 slug
-- 每个 URL 必须来自 `weread.qq.com`
+- 每个 entry 必须使用 `found` 或 `not_found` 状态
+- `found` entry 必须包含来自 `weread.qq.com` 的书籍详情 URL
+- `not_found` entry 不应包含 URL
+- 每个 entry 必须包含 `checkedAt: YYYY-MM-DD`
 - 同一个 URL 不应重复绑定到多本书
 
 后续可增加维护脚本，半自动搜索候选微信读书链接并输出待确认变更。抓取或搜索只作为内容维护动作，不进入站点运行时依赖。
@@ -86,5 +104,5 @@
 - 有链接的书籍页标题区显示 `微信读书看原书 ↗`
 - 无链接的书籍页不显示任何微信读书入口
 - 构建产物不需要额外加载整份链接清单
-- 链接清单中非法 slug、非法域名或重复 URL 会被测试发现
+- 链接清单中非法 slug、非法状态、非法域名、缺失检查日期或重复 URL 会被测试发现
 - 现有书籍详情页布局在桌面和移动端保持稳定

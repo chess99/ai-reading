@@ -3,9 +3,16 @@ import path from 'path';
 
 const WEREAD_LINKS_PATH = path.join(process.cwd(), 'data', 'weread-links.json');
 
-let cachedWereadLinks: Record<string, string> | null = null;
+interface WereadLinkEntry {
+  status: 'found' | 'not_found';
+  url?: string;
+  checkedAt?: string;
+  note?: string;
+}
 
-function loadWereadLinks(): Record<string, string> {
+let cachedWereadLinks: Record<string, WereadLinkEntry> | null = null;
+
+function loadWereadLinks(): Record<string, WereadLinkEntry> {
   if (cachedWereadLinks) {
     return cachedWereadLinks;
   }
@@ -19,12 +26,16 @@ function loadWereadLinks(): Record<string, string> {
   const parsed = JSON.parse(raw) as unknown;
   cachedWereadLinks =
     parsed && typeof parsed === 'object' && !Array.isArray(parsed)
-      ? (parsed as Record<string, string>)
+      ? (parsed as Record<string, WereadLinkEntry>)
       : {};
   return cachedWereadLinks;
 }
 
 export function getWereadUrlForBook(slug: string): string | null {
-  const url = loadWereadLinks()[slug];
-  return typeof url === 'string' && url.trim() ? url : null;
+  const entry = loadWereadLinks()[slug];
+  if (!entry || entry.status !== 'found') {
+    return null;
+  }
+
+  return typeof entry.url === 'string' && entry.url.trim() ? entry.url : null;
 }

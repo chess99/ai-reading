@@ -45,16 +45,28 @@ test('WeRead links map points to existing books and allowed URLs', () => {
   const bookSlugs = loadBookSlugs();
   const seenUrls = new Map();
 
-  for (const [slug, url] of Object.entries(links)) {
+  for (const [slug, entry] of Object.entries(links)) {
     assert.equal(bookSlugs.has(slug), true, `unknown book slug in weread-links.json: ${slug}`);
-    assert.equal(typeof url, 'string', `${slug} WeRead URL should be a string`);
+    assert.equal(
+      entry !== null && typeof entry === 'object' && !Array.isArray(entry),
+      true,
+      `${slug} WeRead entry should be an object`
+    );
+    assert.ok(['found', 'not_found'].includes(entry.status), `${slug} WeRead status should be found or not_found`);
+    assert.match(String(entry.checkedAt), /^\d{4}-\d{2}-\d{2}$/, `${slug} checkedAt should be YYYY-MM-DD`);
 
-    const parsed = new URL(url);
+    if (entry.status === 'not_found') {
+      assert.equal('url' in entry, false, `${slug} not_found entry should not include a URL`);
+      continue;
+    }
+
+    assert.equal(typeof entry.url, 'string', `${slug} found entry should include a URL string`);
+    const parsed = new URL(entry.url);
     assert.equal(parsed.hostname, 'weread.qq.com', `${slug} WeRead URL should use weread.qq.com`);
     assert.match(parsed.pathname, /^\/(web\/bookDetail\/|book-detail)/, `${slug} WeRead URL should be a book detail URL`);
 
-    const previousSlug = seenUrls.get(url);
+    const previousSlug = seenUrls.get(entry.url);
     assert.equal(previousSlug, undefined, `${slug} duplicates WeRead URL already used by ${previousSlug}`);
-    seenUrls.set(url, slug);
+    seenUrls.set(entry.url, slug);
   }
 });

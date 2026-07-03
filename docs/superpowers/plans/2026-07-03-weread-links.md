@@ -4,7 +4,7 @@
 
 **Goal:** Add build-time WeRead original-book links to book detail pages without modifying `books/` Markdown files.
 
-**Architecture:** Keep WeRead links in an independent JSON map keyed by book slug. Server-side book page generation reads the map at build time and passes only the current book's URL to the client component, which conditionally renders a clean title-area external-link button.
+**Architecture:** Keep WeRead links in an independent JSON map keyed by book slug, with each entry recording whether lookup found a link or confirmed no reliable match. Server-side book page generation reads the map at build time and passes only `found` URLs for the current book to the client component, which conditionally renders a clean title-area external-link button.
 
 **Tech Stack:** Next.js App Router, React, TypeScript, Node `fs/path`, Node test runner.
 
@@ -12,11 +12,11 @@
 
 ## File Structure
 
-- Create `.nextjs-site/data/weread-links.json`: source-side slug-to-WeRead-URL map.
+- Create `.nextjs-site/data/weread-links.json`: source-side slug-to-WeRead-status map.
 - Create `.nextjs-site/lib/external-links.ts`: server-only helper that loads and validates WeRead links and exposes `getWereadUrlForBook(slug)`.
 - Modify `.nextjs-site/app/books/[slug]/page.tsx`: look up the current book's link during static generation and pass it into the client component.
 - Modify `.nextjs-site/app/books/[slug]/page-client.tsx`: add optional `wereadUrl` prop and render the title-area button only when present.
-- Create `.nextjs-site/tests/weread-links.test.mjs`: repository-level validation for JSON shape, existing slugs, allowed domain, and duplicate URLs.
+- Create `.nextjs-site/tests/weread-links.test.mjs`: repository-level validation for JSON shape, existing slugs, entry status, checked date, allowed domain, and duplicate found URLs.
 - Modify `.nextjs-site/tests/topic-reading-ui.test.mjs` or add a focused UI source test: assert the button label and external-link attributes exist in the book page client source.
 
 ## Task 1: Add WeRead Link Data And Validation
