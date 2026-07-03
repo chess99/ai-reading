@@ -2,11 +2,16 @@ import assert from 'node:assert/strict';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { test } from 'node:test';
+import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 
-const repoRoot = path.resolve(new URL('../..', import.meta.url).pathname);
+const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
 const booksDir = path.join(repoRoot, 'books');
 const topicsDir = path.join(repoRoot, 'topics');
+
+function toRepoPath(filePath) {
+  return path.relative(repoRoot, filePath).split(path.sep).join('/');
+}
 
 const allowedTopLevel = new Set([
   '思维科学',
@@ -110,8 +115,8 @@ function loadBookBySlug() {
   const files = scanMarkdownFiles(booksDir);
 
   for (const filePath of files) {
-    const relativePath = path.relative(repoRoot, filePath);
-    const parts = relativePath.split(path.sep);
+    const relativePath = toRepoPath(filePath);
+    const parts = relativePath.split('/');
     const categories = parts.slice(1, -1);
     const { data } = matter(readFileSync(filePath, 'utf8'));
 
@@ -136,7 +141,7 @@ function loadBookBySlug() {
 test('books use the approved two-level taxonomy and stable frontmatter', () => {
   assert.equal(existsSync(booksDir), true, 'books/ directory should exist');
   const bySlug = loadBookBySlug();
-  assert.equal(bySlug.size, 364, 'taxonomy migration should preserve the current 364 books');
+  assert.equal(bySlug.size, 366, 'taxonomy migration should preserve the current 366 books');
 });
 
 test('topic book paths point to the file for the referenced slug', () => {
@@ -144,7 +149,7 @@ test('topic book paths point to the file for the referenced slug', () => {
   const topicFiles = scanMarkdownFiles(topicsDir);
 
   for (const filePath of topicFiles) {
-    const relativeTopicPath = path.relative(repoRoot, filePath);
+    const relativeTopicPath = toRepoPath(filePath);
     const { data } = matter(readFileSync(filePath, 'utf8'));
     const books = data.books || [];
     assert.ok(Array.isArray(books), `${relativeTopicPath} books should be an array when present`);

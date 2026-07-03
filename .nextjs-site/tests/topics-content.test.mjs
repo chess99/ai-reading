@@ -2,12 +2,17 @@ import assert from 'node:assert/strict';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { test } from 'node:test';
+import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 
-const repoRoot = path.resolve(new URL('../..', import.meta.url).pathname);
+const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
 const topicsDir = path.join(repoRoot, 'topics');
 const booksDir = path.join(repoRoot, 'books');
 const panoramaPath = path.join(repoRoot, 'docs/superpowers/plans/2026-06-01-topic-reading-panorama.md');
+
+function toRepoPath(filePath) {
+  return path.relative(repoRoot, filePath).split(path.sep).join('/');
+}
 const topicLayers = new Set(['入门', '框架', '系统']);
 const slugByTitle = new Map([
   ['如何做重大决策', 'zhong-da-jue-ce'],
@@ -111,7 +116,7 @@ function extractBookTitles(readingPath) {
 function loadBooksBySlug() {
   const booksBySlug = new Map();
   for (const filePath of scanMarkdownFiles(booksDir)) {
-    const relativePath = path.relative(repoRoot, filePath);
+    const relativePath = toRepoPath(filePath);
     const { data } = matter(readFileSync(filePath, 'utf8'));
 
     if (typeof data.slug === 'string' && data.slug.trim()) {
@@ -165,7 +170,7 @@ test('topic markdown files follow the panorama production model', () => {
   const slugs = new Set();
 
   for (const filePath of topicFiles) {
-    const relativePath = path.relative(repoRoot, filePath);
+    const relativePath = toRepoPath(filePath);
     const { data, content } = matter(readFileSync(filePath, 'utf8'));
 
     assert.equal(typeof data.slug, 'string', `${relativePath} should have a slug`);
