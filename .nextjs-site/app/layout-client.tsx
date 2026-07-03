@@ -20,6 +20,7 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const isInitialNavigation = useRef(true);
+  const mainRef = useRef<HTMLElement | null>(null);
   const pathname = usePathname();
 
   // Derive book title for Header when on a book page
@@ -35,6 +36,10 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
   }, []);
 
   useEffect(() => {
+    if (!isInitialNavigation.current) {
+      mainRef.current?.scrollTo({ top: 0, left: 0 });
+    }
+
     updateNavigationHistory(window.sessionStorage, pathname, {
       isInitialLoad: isInitialNavigation.current,
       referrer: document.referrer,
@@ -64,7 +69,7 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
         </div>
 
         {/* Main content — pb-16 on mobile to clear fixed BottomNav */}
-        <main className="flex-1 overflow-auto overflow-x-hidden pb-16 md:pb-0">
+        <main ref={mainRef} className="flex-1 overflow-auto overflow-x-hidden pb-16 md:pb-0">
           {children}
         </main>
       </div>
