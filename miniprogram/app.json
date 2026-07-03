@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/search/index",
+    "pages/library/index",
+    "pages/webview/index",
+    "pages/settings/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "晨筅读书",
+    "navigationBarBackgroundColor": "#fffdf8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f1e8"
+  },
+  "tabBar": {
+    "color": "#78716c",
+    "selectedColor": "#9a6b2f",
+    "backgroundColor": "#fffdf8",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/library/index",
+        "text": "书库"
+      },
+      {
+        "pagePath": "pages/settings/index",
+        "text": "设置"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

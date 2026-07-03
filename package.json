@@ -4,6 +4,7 @@
     "dev": "cd .nextjs-site && npm run dev",
     "build": "cd .nextjs-site && npm run build",
     "preview": "cd .nextjs-site && npm run preview",
+    "miniprogram:build-catalog": "node miniprogram/scripts/build-catalog.mjs",
     "slugify": "node .nextjs-site/scripts/slugify.js",
     "prepare": "husky && git config core.hooksPath .husky"
   },

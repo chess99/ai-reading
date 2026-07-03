@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="section">
+    <view class="eyebrow">AI READING</view>
+    <view class="title">晨筅读书</view>
+    <view class="subtitle">收录 {{totalBooks}} 本书和 {{totalTopics}} 个主题，用微信小程序作为轻入口，详情页由 Web 版承载。</view>
+  </view>
+
+  <view class="section">
+    <view class="card" bindtap="goSearch">
+      <view class="card-title">搜索书名、作者和主题</view>
+      <view class="meta">从底部“搜索”进入，快速打开 Web 详情页。</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="eyebrow">BOOKS</view>
+    <block wx:for="{{latestBooks}}" wx:key="slug">
+      <view class="card" data-url="{{item.url}}" data-title="{{item.title}}" bindtap="openBook">
+        <view class="card-title">{{item.title}}</view>
+        <view class="meta">{{item.author}} · {{item.category}}</view>
+        <view class="chip-row">
+          <text class="chip" wx:for="{{item.tags}}" wx:for-item="tag" wx:key="*this">{{tag}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="section">
+    <view class="eyebrow">TOPICS</view>
+    <block wx:for="{{latestTopics}}" wx:key="slug">
+      <view class="card" data-url="{{item.url}}" data-title="{{item.title}}" bindtap="openTopic">
+        <view class="card-title">{{item.title}}</view>
+        <view class="meta">{{item.description}}</view>
+      </view>
+    </block>
+  </view>
+</view>

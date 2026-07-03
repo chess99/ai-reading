@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="section">
+    <view class="eyebrow">SEARCH</view>
+    <view class="title">搜索</view>
+    <view class="subtitle">搜索书名、作者、分类、标签和主题说明。</view>
+  </view>
+
+  <input class="input" value="{{keyword}}" placeholder="输入关键词" bindinput="onInput" />
+
+  <view class="section" wx:if="{{topics.length}}">
+    <view class="eyebrow">TOPICS</view>
+    <block wx:for="{{topics}}" wx:key="slug">
+      <view class="card" data-url="{{item.url}}" data-title="{{item.title}}" bindtap="openItem">
+        <view class="card-title">{{item.title}}</view>
+        <view class="meta">{{item.description}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="section" wx:if="{{books.length}}">
+    <view class="eyebrow">BOOKS</view>
+    <block wx:for="{{books}}" wx:key="slug">
+      <view class="card" data-url="{{item.url}}" data-title="{{item.title}}" bindtap="openItem">
+        <view class="card-title">{{item.title}}</view>
+        <view class="meta">{{item.author}} · {{item.category}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="empty" wx:if="{{searched && !books.length && !topics.length}}">没有找到匹配内容</view>
+</view>

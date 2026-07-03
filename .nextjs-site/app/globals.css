@@ -512,3 +512,7 @@ body::before {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+.miniapp-embed main {
+  padding-bottom: 0;
+}

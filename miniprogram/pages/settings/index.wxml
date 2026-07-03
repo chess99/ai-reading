@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="section">
+    <view class="eyebrow">SETTINGS</view>
+    <view class="title">设置</view>
+    <view class="subtitle">当前小程序使用原生入口承载发现，详情页通过 read.cearl.cc 的 WebView 打开。</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">内容规模</view>
+    <view class="meta">{{bookCount}} 本书 · {{topicCount}} 个主题</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">业务域名</view>
+    <view class="meta">上线前需要在微信公众平台配置 read.cearl.cc 为业务域名。</view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="section">
+    <view class="eyebrow">LIBRARY</view>
+    <view class="title">书库</view>
+    <view class="subtitle">按分类浏览，点击后在 WebView 中打开完整详情页。</view>
+  </view>
+
+  <block wx:for="{{groups}}" wx:key="name">
+    <view class="section">
+      <view class="eyebrow">{{item.name}} · {{item.books.length}} 本</view>
+      <block wx:for="{{item.books}}" wx:for-item="book" wx:key="slug">
+        <view class="card" data-url="{{book.url}}" data-title="{{book.title}}" bindtap="openBook">
+          <view class="card-title">{{book.title}}</view>
+          <view class="meta">{{book.author}}</view>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

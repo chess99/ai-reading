@@ -25,6 +25,7 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
   const mainRef = useRef<HTMLElement | null>(null);
   const scrollPositionsRef = useRef<Record<string, { top: number; left: number }>>({});
   const pathname = usePathname();
+  const [isMiniappEmbed, setIsMiniappEmbed] = useState(false);
 
   // Derive book title for Header when on a book page
   const bookSlug = pathname.startsWith('/books/')
@@ -58,6 +59,11 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
     navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
   }, []);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setIsMiniappEmbed(params.get('miniapp') === '1');
+  }, []);
+
   const saveCurrentScrollPosition = () => {
     const main = mainRef.current;
     if (!main) return;
@@ -81,24 +87,25 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
 
   return (
     <div className="flex flex-col h-screen h-[100dvh] overflow-hidden overscroll-none">
-      <Header
+      <div className={isMiniappEmbed ? 'miniapp-embed contents' : 'contents'}>
+      {!isMiniappEmbed && <Header
         mode={isBookPage || isTopicPage ? 'book' : 'home'}
         bookTitle={currentDetailTitle}
         shareConfig={shareConfig}
         onMenuClick={() => setSidebarOpen(open => !open)}
         onSettingsClick={() => setSettingsOpen(true)}
-      />
+      />}
 
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar: desktop workspace navigation */}
-        <div className={`${sidebarOpen ? 'hidden md:block' : 'hidden'}`}>
+        {!isMiniappEmbed && <div className={`${sidebarOpen ? 'hidden md:block' : 'hidden'}`}>
           <Sidebar
             bookTree={bookTree}
             allBooks={allBooks}
             isOpen={sidebarOpen}
             onClose={() => setSidebarOpen(false)}
           />
-        </div>
+        </div>}
 
         {/* Main content — pb-16 on mobile to clear fixed BottomNav */}
         <main
@@ -110,13 +117,14 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
         </main>
       </div>
 
-      <BottomNav />
-      <UpdateNotification />
-      <SettingsDialog
+      {!isMiniappEmbed && <BottomNav />}
+      {!isMiniappEmbed && <UpdateNotification />}
+      {!isMiniappEmbed && <SettingsDialog
         isOpen={settingsOpen}
         onClose={() => setSettingsOpen(false)}
         allBooks={allBooks}
-      />
+      />}
+      </div>
     </div>
   );
 }
