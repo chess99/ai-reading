@@ -4,6 +4,7 @@ import 'highlight.js/styles/atom-one-dark.css';
 import BookPageClient from './page-client';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME } from '@/lib/brand';
+import { getWereadUrlForBook } from '@/lib/external-links';
 
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
@@ -86,6 +87,7 @@ export default async function BookPage({ params }: BookPageProps) {
   }
 
   const pageUrl = `${BASE_URL}/books/${slug}/`;
+  const wereadUrl = getWereadUrlForBook(book.slug);
   const bookJsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -145,6 +147,7 @@ export default async function BookPage({ params }: BookPageProps) {
           bookTitle={book.title}
           bookAuthor={book.author}
           bookTags={book.tags}
+          wereadUrl={wereadUrl}
         />
       </div>
     </article>

@@ -20,9 +20,10 @@ interface BookPageClientProps {
   bookTitle: string;
   bookAuthor: string;
   bookTags: string[];
+  wereadUrl?: string | null;
 }
 
-export default function BookPageClient({ content, bookSlug, bookTitle, bookAuthor, bookTags }: BookPageClientProps) {
+export default function BookPageClient({ content, bookSlug, bookTitle, bookAuthor, bookTags, wereadUrl }: BookPageClientProps) {
   const [isTocOpen, setIsTocOpen] = useState(false);
   const displayContent = content.replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
 
@@ -45,6 +46,16 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
             <p className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
             <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
             <p className="text-sm md:text-base text-stone-500 mt-3">{bookAuthor}</p>
+            {wereadUrl && (
+              <a
+                href={wereadUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex min-h-10 items-center rounded-md bg-stone-950 px-4 text-sm font-bold text-white transition-colors hover:bg-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2"
+              >
+                微信读书看原书 ↗
+              </a>
+            )}
           </div>
           <div className="markdown-content">
             <ReactMarkdown
