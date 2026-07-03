@@ -6,34 +6,76 @@ const layoutClientSource = readFileSync(
   new URL('../app/layout-client.tsx', import.meta.url),
   'utf8',
 );
+const tableOfContentsSource = readFileSync(
+  new URL('../components/TableOfContents.tsx', import.meta.url),
+  'utf8',
+);
 
-test('layout resets the persistent main scroll container on route changes', () => {
-  assert.match(
+test('layout uses the browser window as the primary page scroll container', () => {
+  assert.doesNotMatch(
     layoutClientSource,
-    /const\s+mainRef\s*=\s*useRef<HTMLElement\s*\|\s*null>\(null\)/,
-    'LayoutClient should keep a ref to the persistent main scroll container.',
+    /\bmainRef\b/,
+    'LayoutClient should not manage a persistent main scroll container.',
+  );
+  assert.doesNotMatch(
+    layoutClientSource,
+    /mainRef\.current\?\.scrollTo/,
+    'Route changes should rely on browser and Next.js page scrolling, not manual main scrolling.',
+  );
+  assert.doesNotMatch(
+    layoutClientSource,
+    /<main[^>]+ref=\{/,
+    'The main element should not be wired as a custom scroll container.',
+  );
+  assert.doesNotMatch(
+    layoutClientSource,
+    /<main[^>]+className="[^"]*\boverflow-auto\b/,
+    'Main content should not have its own vertical overflow scrolling.',
   );
   assert.match(
     layoutClientSource,
-    /mainRef\.current\?\.scrollTo\(\{\s*top:\s*0,\s*left:\s*0/,
-    'Route changes should scroll the main container back to the top-left.',
-  );
-  assert.match(
-    layoutClientSource,
-    /<main[^>]+ref=\{mainRef\}/,
-    'The main element should be wired to the scroll reset ref.',
+    /<div className="[^"]*\bmin-h-screen\b[^"]*"/,
+    'The app shell should size with content so the document can scroll.',
   );
 });
 
-test('layout traps scroll inside the app shell on mobile browsers', () => {
-  assert.match(
-    layoutClientSource,
-    /<div className="[^"]*h-\[100dvh\][^"]*overscroll-none[^"]*"/,
-    'The app shell should use the dynamic viewport height and prevent viewport overscroll.',
+test('table of contents targets window scrolling instead of the old main container', () => {
+  assert.doesNotMatch(
+    tableOfContentsSource,
+    /document\.querySelector\('main\.overflow-auto'\)/,
+    'TOC should not look for the removed custom main scroll container.',
+  );
+  assert.doesNotMatch(
+    tableOfContentsSource,
+    /scrollContainer\.scrollTo/,
+    'TOC section jumps should use the browser window scroll API.',
+  );
+  assert.doesNotMatch(
+    tableOfContentsSource,
+    /scrollContainer\.scrollTop/,
+    'TOC active-section tracking should use window scroll state.',
   );
   assert.match(
+    tableOfContentsSource,
+    /window\.scrollTo\(\{\s*top,\s*behavior:\s*'smooth'\s*\}\)/,
+    'TOC section jumps should scroll the document window.',
+  );
+  assert.match(
+    tableOfContentsSource,
+    /window\.addEventListener\('scroll'/,
+    'TOC active-section tracking should listen to document scrolling.',
+  );
+});
+
+test('layout does not trap the whole page inside a fixed-height app shell', () => {
+  assert.doesNotMatch(
     layoutClientSource,
-    /<main[^>]+className="[^"]*overscroll-contain[^"]*"/,
-    'The main scroll container should stop bottom-edge scroll chaining to the viewport.',
+    /<div className="(?:[^"]*\s)?h-screen(?:\s|")/,
+    'The app shell should not pin the document to the viewport height.',
+  );
+  assert.doesNotMatch(
+    layoutClientSource,
+    /<div className="[^"]*\boverflow-hidden\b[^"]*"/,
+    'The app shell should not hide browser-level page overflow.',
   );
 });
