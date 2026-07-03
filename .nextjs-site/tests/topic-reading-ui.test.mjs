@@ -24,3 +24,15 @@ test('home topic carousel ends with a lightweight all-topics entry', () => {
   assert.doesNotMatch(topicReadingSource, /更多主题阅读/, 'The all-topics entry should not masquerade as another topic card.');
   assert.doesNotMatch(topicReadingSource, /ALL TOPICS/, 'The all-topics entry should not introduce a separate visual language.');
 });
+
+test('topic detail pages expose the shared topic share action', () => {
+  const topicPageSource = readFileSync(new URL('../app/topics/[slug]/page.tsx', import.meta.url), 'utf8');
+  const layoutClientSource = readFileSync(new URL('../app/layout-client.tsx', import.meta.url), 'utf8');
+  const headerSource = readFileSync(new URL('../components/Header.tsx', import.meta.url), 'utf8');
+
+  assert.match(topicPageSource, /ShareButton/, 'Topic detail page should show a desktop share action near the title.');
+  assert.match(topicPageSource, /eventAction:\s*["']share_topic["']/, 'Topic detail page should track topic shares distinctly.');
+  assert.match(layoutClientSource, /isTopicPage/, 'Mobile header should recognize topic detail pages.');
+  assert.match(layoutClientSource, /text:\s*currentTopic\.description/, 'Topic header share should include topic description text.');
+  assert.match(headerSource, /shareConfig/, 'Header should use a generic share config rather than book-only sharing.');
+});

@@ -8,15 +8,17 @@ import BottomNav from '@/components/BottomNav';
 import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
 import { BookTreeNode, BookMeta } from '@/lib/books';
+import { TopicMeta } from '@/lib/topics';
 import { updateNavigationHistory } from '@/lib/navigation-history';
 
 interface LayoutClientProps {
   bookTree: BookTreeNode[];
   allBooks: BookMeta[];
+  allTopics: TopicMeta[];
   children: React.ReactNode;
 }
 
-export default function LayoutClient({ bookTree, allBooks, children }: LayoutClientProps) {
+export default function LayoutClient({ bookTree, allBooks, allTopics, children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const isInitialNavigation = useRef(true);
@@ -30,6 +32,26 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
     : null;
   const currentBook = bookSlug ? (allBooks.find(b => b.slug === bookSlug) ?? null) : null;
   const isBookPage = currentBook !== null;
+  const topicSlug = pathname.startsWith('/topics/')
+    ? pathname.replace('/topics/', '').replace(/\/$/, '')
+    : null;
+  const currentTopic = topicSlug ? (allTopics.find(topic => topic.slug === topicSlug) ?? null) : null;
+  const isTopicPage = currentTopic !== null;
+  const currentDetailTitle = currentBook?.title || currentTopic?.title;
+  const shareConfig = currentBook
+    ? {
+        title: currentBook.title,
+        eventAction: 'share_book',
+        eventLabel: currentBook.title,
+      }
+    : currentTopic
+      ? {
+          title: `${currentTopic.title}：主题阅读路径`,
+          text: currentTopic.description,
+          eventAction: 'share_topic',
+          eventLabel: currentTopic.title,
+        }
+      : undefined;
 
   useEffect(() => {
     if (!('serviceWorker' in navigator)) return;
@@ -60,8 +82,9 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
   return (
     <div className="flex flex-col h-screen h-[100dvh] overflow-hidden overscroll-none">
       <Header
-        mode={isBookPage ? 'book' : 'home'}
-        bookTitle={currentBook?.title}
+        mode={isBookPage || isTopicPage ? 'book' : 'home'}
+        bookTitle={currentDetailTitle}
+        shareConfig={shareConfig}
         onMenuClick={() => setSidebarOpen(open => !open)}
         onSettingsClick={() => setSettingsOpen(true)}
       />

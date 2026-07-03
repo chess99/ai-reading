@@ -11,6 +11,7 @@ import rehypeKatex from 'rehype-katex';
 import 'highlight.js/styles/atom-one-dark.css';
 import 'katex/dist/katex.min.css';
 import { ChevronRightIcon } from '@/components/Icons';
+import ShareButton from '@/components/ShareButton';
 import { BRAND_NAME } from '@/lib/brand';
 import { BASE_URL } from '@/lib/config';
 import { getAllTopicMetas, getTopicDetailBySlug } from '@/lib/topics';
@@ -109,10 +110,26 @@ export default async function TopicPage({ params }: TopicPageProps) {
           <div className="min-w-0 flex-1">
             <section className="surface-card px-5 py-7 md:px-9 md:py-10 lg:px-12 lg:py-12">
               <div className="mb-8 border-b border-stone-200 pb-6">
-                <p className="text-xs font-black tracking-[0.16em] text-brand mb-3">TOPIC READING</p>
-                <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">
-                  {topic.title}
-                </h1>
+                <div className="flex items-start justify-between gap-4">
+                  <div className="min-w-0">
+                    <p className="text-xs font-black tracking-[0.16em] text-brand mb-3">TOPIC READING</p>
+                    <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">
+                      {topic.title}
+                    </h1>
+                  </div>
+                  <ShareButton
+                    shareConfig={{
+                      title: `${topic.title}：主题阅读路径`,
+                      text: topic.description,
+                      url: pageUrl,
+                      eventAction: 'share_topic',
+                      eventLabel: topic.title,
+                    }}
+                    className="hidden md:inline-flex h-10 items-center gap-2 rounded-lg border border-stone-200 bg-[#fffdf8] px-3 text-sm font-semibold text-stone-700 transition-colors hover:border-brand/40 hover:bg-brand/5 hover:text-brand active:scale-95"
+                    iconClassName="h-4 w-4"
+                    showLabel
+                  />
+                </div>
                 <p className="mt-4 max-w-2xl text-sm md:text-base leading-7 text-stone-600">{topic.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {topic.tags.map(tag => (

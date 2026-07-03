@@ -45,6 +45,15 @@ export function SettingsIcon({ className = 'w-5 h-5' }: IconProps) {
   );
 }
 
+export function ShareIcon({ className = 'w-5 h-5' }: IconProps) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.9} d="M8.7 13.3a3 3 0 1 1 0-2.6m0 2.6 6.6 3.3m-6.6-5.9 6.6-3.3" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.9} d="M18 8.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+    </svg>
+  );
+}
+
 export function BookIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

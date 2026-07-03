@@ -2,19 +2,20 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { trackEvent } from '@/lib/analytics';
 import { getStoredPreviousPath } from '@/lib/navigation-history';
 import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
+import ShareButton, { ShareConfig } from '@/components/ShareButton';
 import { BRAND_NAME } from '@/lib/brand';
 
 interface HeaderProps {
   mode?: 'home' | 'book';
   bookTitle?: string;
+  shareConfig?: ShareConfig;
   onMenuClick?: () => void;
   onSettingsClick?: () => void;
 }
 
-export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettingsClick }: HeaderProps) {
+export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuClick, onSettingsClick }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
   const desktopNav = [
@@ -34,16 +35,6 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
       router.back();
     } else {
       router.replace('/');
-    }
-  };
-
-  const handleShare = async () => {
-    if (typeof navigator === 'undefined' || !navigator.share) return;
-    try {
-      await navigator.share({ title: bookTitle, url: window.location.href });
-      trackEvent('分享', '分享书籍', bookTitle);
-    } catch {
-      // user cancelled
     }
   };
 
@@ -126,17 +117,9 @@ export default function Header({ mode = 'home', bookTitle, onMenuClick, onSettin
           {/* ── Right slot ─────────────────────────────────── */}
           <div className="flex items-center gap-1 md:gap-3 min-w-[56px] justify-end">
 
-            {/* Share: mobile book mode only */}
-            {mode === 'book' && (
-              <button
-                onClick={handleShare}
-                className="md:hidden p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95"
-                aria-label="分享"
-              >
-                <svg className="w-5 h-5 text-stone-700 group-hover:text-brand transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                </svg>
-              </button>
+            {/* Share: mobile detail mode only */}
+            {mode === 'book' && shareConfig && (
+              <ShareButton shareConfig={shareConfig} className="md:hidden p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95" />
             )}
 
             {/* Settings: desktop always + mobile home mode */}
