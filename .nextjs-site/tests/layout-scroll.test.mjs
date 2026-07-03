@@ -11,71 +11,76 @@ const tableOfContentsSource = readFileSync(
   'utf8',
 );
 
-test('layout uses the browser window as the primary page scroll container', () => {
-  assert.doesNotMatch(
+test('layout restores independent scroll positions for the app shell main container', () => {
+  assert.match(
     layoutClientSource,
-    /\bmainRef\b/,
-    'LayoutClient should not manage a persistent main scroll container.',
+    /const\s+mainRef\s*=\s*useRef<HTMLElement\s*\|\s*null>\(null\)/,
+    'LayoutClient should keep a ref to the persistent main scroll container.',
+  );
+  assert.match(
+    layoutClientSource,
+    /const\s+scrollPositionsRef\s*=\s*useRef<Record<string,\s*\{\s*top:\s*number;\s*left:\s*number\s*\}>>\(\{\}\)/,
+    'LayoutClient should keep route-keyed scroll positions outside React render state.',
+  );
+  assert.match(
+    layoutClientSource,
+    /scrollPositionsRef\.current\[pathname\]\s*=\s*\{\s*top:\s*main\.scrollTop,\s*left:\s*main\.scrollLeft\s*\}/,
+    'Scrolling should save the current route position before navigation happens.',
+  );
+  assert.match(
+    layoutClientSource,
+    /const\s+savedPosition\s*=\s*scrollPositionsRef\.current\[pathname\]\s*\?\?\s*\{\s*top:\s*0,\s*left:\s*0\s*\}/,
+    'Route changes should restore the target route position or top for first visits.',
+  );
+  assert.match(
+    layoutClientSource,
+    /mainRef\.current\?\.scrollTo\(\{\s*top:\s*savedPosition\.top,\s*left:\s*savedPosition\.left/,
+    'Route changes should restore the target route position.',
   );
   assert.doesNotMatch(
     layoutClientSource,
-    /mainRef\.current\?\.scrollTo/,
-    'Route changes should rely on browser and Next.js page scrolling, not manual main scrolling.',
+    /mainRef\.current\?\.scrollTo\(\{\s*top:\s*0,\s*left:\s*0\s*\}\)/,
+    'Route changes should not always reset the shared main container to the top.',
   );
-  assert.doesNotMatch(
+  assert.match(
     layoutClientSource,
-    /<main[^>]+ref=\{/,
-    'The main element should not be wired as a custom scroll container.',
+    /<main[^>]+ref=\{mainRef\}[^>]+onScroll=\{saveCurrentScrollPosition\}/,
+    'The main element should save its scroll position while the user scrolls.',
   );
-  assert.doesNotMatch(
+});
+
+test('layout keeps the app shell fixed while the main pane scrolls', () => {
+  assert.match(
+    layoutClientSource,
+    /<div className="[^"]*h-\[100dvh\][^"]*overscroll-none[^"]*"/,
+    'The app shell should use the dynamic viewport height and prevent viewport overscroll.',
+  );
+  assert.match(
+    layoutClientSource,
+    /<main[^>]+className="[^"]*overscroll-contain[^"]*"/,
+    'The main scroll container should stop bottom-edge scroll chaining to the viewport.',
+  );
+  assert.match(
     layoutClientSource,
     /<main[^>]+className="[^"]*\boverflow-auto\b/,
-    'Main content should not have its own vertical overflow scrolling.',
-  );
-  assert.match(
-    layoutClientSource,
-    /<div className="[^"]*\bmin-h-screen\b[^"]*"/,
-    'The app shell should size with content so the document can scroll.',
+    'The main pane should remain the app shell scroll container.',
   );
 });
 
-test('table of contents targets window scrolling instead of the old main container', () => {
-  assert.doesNotMatch(
+test('table of contents follows the app shell main scroll container', () => {
+  assert.match(
     tableOfContentsSource,
     /document\.querySelector\('main\.overflow-auto'\)/,
-    'TOC should not look for the removed custom main scroll container.',
-  );
-  assert.doesNotMatch(
-    tableOfContentsSource,
-    /scrollContainer\.scrollTo/,
-    'TOC section jumps should use the browser window scroll API.',
-  );
-  assert.doesNotMatch(
-    tableOfContentsSource,
-    /scrollContainer\.scrollTop/,
-    'TOC active-section tracking should use window scroll state.',
+    'TOC should target the app shell main scroll container.',
   );
   assert.match(
     tableOfContentsSource,
-    /window\.scrollTo\(\{\s*top,\s*behavior:\s*'smooth'\s*\}\)/,
-    'TOC section jumps should scroll the document window.',
+    /scrollContainer\.addEventListener\('scroll'/,
+    'TOC active-section tracking should listen to the main container when present.',
   );
   assert.match(
     tableOfContentsSource,
-    /window\.addEventListener\('scroll'/,
-    'TOC active-section tracking should listen to document scrolling.',
-  );
-});
-
-test('layout does not trap the whole page inside a fixed-height app shell', () => {
-  assert.doesNotMatch(
-    layoutClientSource,
-    /<div className="(?:[^"]*\s)?h-screen(?:\s|")/,
-    'The app shell should not pin the document to the viewport height.',
-  );
-  assert.doesNotMatch(
-    layoutClientSource,
-    /<div className="[^"]*\boverflow-hidden\b[^"]*"/,
-    'The app shell should not hide browser-level page overflow.',
+    /scrollContainer\.scrollTo\(\{\s*top:\s*targetScroll,\s*behavior:\s*'smooth'\s*\}\)/,
+    'TOC section jumps should scroll the main container.',
   );
 });

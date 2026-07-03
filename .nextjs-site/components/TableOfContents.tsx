@@ -53,10 +53,23 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
   useEffect(() => {
     if (toc.length === 0) return;
 
+    const scrollContainer = getScrollContainer();
+
     // 监听滚动,高亮当前章节
     const handleScroll = () => {
       const headings = document.querySelectorAll('.markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4');
-      const scrollTop = window.scrollY;
+
+      let scrollTop: number;
+      let containerTop: number;
+
+      if (isWindow(scrollContainer)) {
+        scrollTop = window.scrollY;
+        containerTop = 0;
+      } else {
+        scrollTop = scrollContainer.scrollTop;
+        containerTop = scrollContainer.getBoundingClientRect().top;
+      }
+
       const scrollPosition = scrollTop + 120; // 偏移量
 
       let currentId = '';
@@ -65,7 +78,7 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
       headings.forEach((heading) => {
         const element = heading as HTMLElement;
         const elementRect = element.getBoundingClientRect();
-        const elementTop = scrollTop + elementRect.top;
+        const elementTop = scrollTop + (elementRect.top - containerTop);
 
         // 如果标题在视口上方或刚好在视口内,就认为是当前章节
         if (elementTop <= scrollPosition) {
@@ -90,24 +103,55 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
       rafId = requestAnimationFrame(handleScroll);
     };
 
-    window.addEventListener('scroll', throttledScroll, { passive: true });
+    if (isWindow(scrollContainer)) {
+      window.addEventListener('scroll', throttledScroll, { passive: true });
+    } else {
+      scrollContainer.addEventListener('scroll', throttledScroll, { passive: true });
+    }
 
     handleScroll(); // 初始化
 
     return () => {
-      window.removeEventListener('scroll', throttledScroll);
+      if (isWindow(scrollContainer)) {
+        window.removeEventListener('scroll', throttledScroll);
+      } else {
+        scrollContainer.removeEventListener('scroll', throttledScroll);
+      }
       if (rafId) {
         cancelAnimationFrame(rafId);
       }
     };
   }, [toc]);
 
+  const getScrollContainer = (): HTMLElement | Window => {
+    // 获取实际的滚动容器
+    const mainElement = document.querySelector('main.overflow-auto') as HTMLElement;
+    return mainElement || window;
+  };
+
+  const isWindow = (container: HTMLElement | Window): container is Window => {
+    return container === window;
+  };
+
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
+      const scrollContainer = getScrollContainer();
       const headerHeight = 80; // 头部高度
-      const top = element.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scrollTo({ top, behavior: 'smooth' });
+
+      if (isWindow(scrollContainer)) {
+        // 如果是 window 滚动
+        const top = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({ top, behavior: 'smooth' });
+      } else {
+        // 如果是容器滚动
+        const containerTop = scrollContainer.getBoundingClientRect().top;
+        const elementTop = element.getBoundingClientRect().top;
+        const scrollTop = scrollContainer.scrollTop;
+        const targetScroll = scrollTop + (elementTop - containerTop) - headerHeight;
+
+        scrollContainer.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      }
 
       // 更新 URL hash(可选,便于分享)
       if (history.pushState) {
@@ -244,7 +288,12 @@ export default function TableOfContents({ isOpen, onClose }: TableOfContentsProp
           {/* 返回顶部按钮 */}
           <button
             onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              const scrollContainer = getScrollContainer();
+              if (isWindow(scrollContainer)) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              } else {
+                scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+              }
               if (window.innerWidth < 1024) {
                 onClose();
               }
