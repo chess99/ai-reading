@@ -49,7 +49,7 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
   }, [pathname]);
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-screen h-[100dvh] overflow-hidden overscroll-none">
       <Header
         mode={isBookPage ? 'book' : 'home'}
         bookTitle={currentBook?.title}
@@ -69,7 +69,7 @@ export default function LayoutClient({ bookTree, allBooks, children }: LayoutCli
         </div>
 
         {/* Main content — pb-16 on mobile to clear fixed BottomNav */}
-        <main ref={mainRef} className="flex-1 overflow-auto overflow-x-hidden pb-16 md:pb-0">
+        <main ref={mainRef} className="flex-1 overflow-auto overflow-x-hidden overscroll-contain pb-16 md:pb-0">
           {children}
         </main>
       </div>

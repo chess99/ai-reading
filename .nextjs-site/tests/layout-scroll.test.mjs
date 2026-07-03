@@ -24,3 +24,16 @@ test('layout resets the persistent main scroll container on route changes', () =
     'The main element should be wired to the scroll reset ref.',
   );
 });
+
+test('layout traps scroll inside the app shell on mobile browsers', () => {
+  assert.match(
+    layoutClientSource,
+    /<div className="[^"]*h-\[100dvh\][^"]*overscroll-none[^"]*"/,
+    'The app shell should use the dynamic viewport height and prevent viewport overscroll.',
+  );
+  assert.match(
+    layoutClientSource,
+    /<main[^>]+className="[^"]*overscroll-contain[^"]*"/,
+    'The main scroll container should stop bottom-edge scroll chaining to the viewport.',
+  );
+});
