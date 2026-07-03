@@ -1,1 +1,2102 @@
-{}
+{
+  "10-bei-bi-liang-bei-geng-rong-yi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "21-shi-ji-zi-ben-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7e932d4058c2417e9d91f1a",
+    "checkedAt": "2026-07-03",
+    "note": "21世纪资本论 / 托马斯·皮凯蒂 / score 130"
+  },
+  "5-dian-zhong-ju-le-bu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ai-2041": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ai-de-yi-shu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "an-quan-bian-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bca32990811e90c66g0129df",
+    "checkedAt": "2026-07-03",
+    "note": "安全边际 / 塞思·卡拉曼 / score 130"
+  },
+  "ba-bi-lun-zui-fu-you-de-ren": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/060323f0813abb3adg010047",
+    "checkedAt": "2026-07-03",
+    "note": "巴比伦最富有的人 / [美]乔治·S. 克拉森 / score 130"
+  },
+  "ba-fei-te-zhi-dao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4dd323305934c44ddfdc1c0",
+    "checkedAt": "2026-07-03",
+    "note": "巴菲特之道（原书第3版） / 罗伯特·哈格斯特朗 / score 130"
+  },
+  "ba-fei-te-zhi-gu-dong-de-xin": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b20321c05e0320b201f6a11",
+    "checkedAt": "2026-07-03",
+    "note": "巴菲特致股东的信（修订版） / 沃伦·巴菲特 查理·芒格 / score 130"
+  },
+  "bao-jin-wo": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "bei-tao-yan-de-yong-qi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8b9329607186dc198b9bdab",
+    "checkedAt": "2026-07-03",
+    "note": "被讨厌的勇气：“自我启发之父”阿德勒的哲学课 / 岸见一郎 古贺史健 / score 110"
+  },
+  "bi-er-mi-le-tou-zi-zhi-dao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1f532e50811e75381g013e96",
+    "checkedAt": "2026-07-03",
+    "note": "比尔·米勒投资之道 / [美]珍妮特·洛 / score 130"
+  },
+  "bi-ran": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/02e323205c0fc602e135fde",
+    "checkedAt": "2026-07-03",
+    "note": "必然（KK三部曲·展望） / [美]凯文·凯利 / score 130"
+  },
+  "bian-ge-zhi-xin": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4c532a90813ab8d19g019df7",
+    "checkedAt": "2026-07-03",
+    "note": "变革之心（珍藏版） / [美]约翰·科特丹·科恩 / score 130"
+  },
+  "bie-dou-le-fei-man-xian-sheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cd732d70718db043cd73bb3",
+    "checkedAt": "2026-07-03",
+    "note": "走近费曼丛书：别逗了，费曼先生！ / 理查德·费曼 拉尔夫·莱顿 / score 110"
+  },
+  "bing-du-shi-xun-huan": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "bo-en-si-xin-qing-xu-liao-fa": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/aa4329c0811e563d2g016121",
+    "checkedAt": "2026-07-03",
+    "note": "伯恩斯新情绪疗法（最新修订版） / [美]伯恩斯 / score 130"
+  },
+  "bu-yuan-liang-ye-mei-guan-xi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5a832b90813ab78dag016aaa",
+    "checkedAt": "2026-07-03",
+    "note": "不原谅也没关系 / [美]皮特·沃克 / score 130"
+  },
+  "cai-fu-zi-you-zhi-lu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "cai-wu-zhi-hui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2a032890811e1a664g012565",
+    "checkedAt": "2026-07-03",
+    "note": "财务智慧 / 卡伦.伯曼 / score 130"
+  },
+  "ceng-guo-fan-chuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/66032040716ac50b660b6c7",
+    "checkedAt": "2026-07-03",
+    "note": "曾国藩传（张宏杰全新增补版） / 张宏杰 / score 130"
+  },
+  "chan-pin-jing-li-shou-ce": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/15432e905de6f0154c90f26",
+    "checkedAt": "2026-07-03",
+    "note": "产品经理手册（原书第4版）（白金版） / 琳达·哥乔斯 / score 130"
+  },
+  "chan-pin-kai-fa-liu-cheng-yuan-li": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "chan-yu-mo-tuo-che-wei-xiu-yi-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3a332f307203e7b43a34b29",
+    "checkedAt": "2026-07-03",
+    "note": "禅与摩托车维修艺术 / 罗伯特·M.波西格 / score 130"
+  },
+  "chao-ji-fu-hao-jiu-shi-chao-ji-chuang-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d24324c0813ab800ag0106b6",
+    "checkedAt": "2026-07-03",
+    "note": "超级符号就是超级创意：席卷中国市场21年的华与华战略营销创意方法（十周年纪念版） / 华杉 华楠 / score 110"
+  },
+  "chao-ji-yu-ce": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "chao-yue-bai-sui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/12f326c0813ab8d88g015fdf",
+    "checkedAt": "2026-07-03",
+    "note": "超越百岁：长寿的科学与艺术 / [美]彼得·阿提亚 / score 110"
+  },
+  "chao-yue-gan-jue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/506322a0811e57ad9g010ca5",
+    "checkedAt": "2026-07-03",
+    "note": "超越感觉：批判性思考指南（第8版） / [美]文森特·鲁吉罗 / score 110"
+  },
+  "chen-si-lu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5ce32e707198e43e5ce7fe4",
+    "checkedAt": "2026-07-03",
+    "note": "沉思录 / [古罗马]奥勒留 / score 130"
+  },
+  "cheng-gong-tou-zi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cd632df05e4e8acd67586ab",
+    "checkedAt": "2026-07-03",
+    "note": "彼得·林奇的成功投资（典藏版） / [美]彼得·林奇 [美]约翰·罗瑟查尔德 / score 110"
+  },
+  "cheng-shi-de-sheng-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6ad32ec0715aa3786ada8bb",
+    "checkedAt": "2026-07-03",
+    "note": "城市的胜利 / 爱德华·格莱泽 / score 130"
+  },
+  "cheng-wei-zuo-jia": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b2d32980813ab8189g011698",
+    "checkedAt": "2026-07-03",
+    "note": "成为作家（创意写作书系） / 多萝西娅·布兰德 / score 130"
+  },
+  "chi-luo-luo-de-tong-ji-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "chong-xin-ding-yi-gong-si": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/82d329d07186fbb182d1e1d",
+    "checkedAt": "2026-07-03",
+    "note": "重新定义公司：谷歌是如何运营的 / 埃里克·施密特 乔纳森·罗森伯格等 / score 110"
+  },
+  "chong-xin-ding-yi-tuan-dui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/508321205c31d7508645755",
+    "checkedAt": "2026-07-03",
+    "note": "重新定义团队：谷歌如何工作 / 博克 / score 110"
+  },
+  "chu-shi-chuan-bo-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/453324505e0b7d4532c619d",
+    "checkedAt": "2026-07-03",
+    "note": "初识传播学：在信息社会里正确认知自我、他人及世界 / 埃姆·格里芬 / score 110"
+  },
+  "chuang-shang-yu-fu-yuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a4232b40813ab9892g01892a",
+    "checkedAt": "2026-07-03",
+    "note": "创伤与复原 / [美]朱迪思·赫尔曼 / score 130"
+  },
+  "chuang-xin-zhe-de-jie-da": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1e732fb071b1260a1e7d22b",
+    "checkedAt": "2026-07-03",
+    "note": "创新者的解答 / 克莱顿·克里斯坦森 迈克尔·雷纳 / score 130"
+  },
+  "chuang-xin-zhe-de-jiong-jing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7d532f107193a88f7d5ffeb",
+    "checkedAt": "2026-07-03",
+    "note": "创新者的窘境 / 克莱顿·克里斯坦森 / score 130"
+  },
+  "chuang-ye-36-tiao-jun-gui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/011329f052b38b0117bce88",
+    "checkedAt": "2026-07-03",
+    "note": "创业36条军规 / 孙陶然 / score 130"
+  },
+  "chuang-ye-wei-jian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/74132530599c68741363189",
+    "checkedAt": "2026-07-03",
+    "note": "创业维艰：如何完成比难更难的事 / 本·霍洛维茨 / score 110"
+  },
+  "cong-ling-dao-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3973284058a49f39706f0c0",
+    "checkedAt": "2026-07-03",
+    "note": "从0到1：开启商业与未来的秘密 / 彼得·蒂尔 布莱克·马斯特斯 / score 110"
+  },
+  "cong-ming-de-tou-zi-zhe": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/08d329d0813ab6c03g016242",
+    "checkedAt": "2026-07-03",
+    "note": "聪明的投资者（第4版，注疏点评版） / [美]本杰明·格雷厄姆 [美]贾森·兹威格 著 / score 130"
+  },
+  "cong-you-xiu-dao-zhuo-yue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1233263058c21512321ccf1",
+    "checkedAt": "2026-07-03",
+    "note": "从优秀到卓越 / [美]吉姆·柯林斯 / score 130"
+  },
+  "cuo-wu-de-xing-wei": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0ba32b205e3cbe0ba63a747",
+    "checkedAt": "2026-07-03",
+    "note": "“错误”的行为：行为经济学的形成 / 理查德·塞勒 / score 110"
+  },
+  "da-guo-de-xing-shuai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a81326a0811e7fa38g015629",
+    "checkedAt": "2026-07-03",
+    "note": "大国的兴衰 / [英]保罗·肯尼迪 / score 130"
+  },
+  "dan-gan": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "dang-hu-xi-hua-wei-kong-qi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "dang-xia-de-li-liang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5b932bd05cf3215b92b7cd5",
+    "checkedAt": "2026-07-03",
+    "note": "当下的力量（白金版） / 埃克哈特·托利 / score 130"
+  },
+  "dao-de-jing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6c332a30813ab908dg017b75",
+    "checkedAt": "2026-07-03",
+    "note": "道德经 / [春秋]老子 / score 130"
+  },
+  "di-er-da-nao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f3032e10813ab88b1g011a36",
+    "checkedAt": "2026-07-03",
+    "note": "打造第二大脑 / [美]蒂亚戈·福特 / score 110"
+  },
+  "di-er-xing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/808323705e41e180800ee85",
+    "checkedAt": "2026-07-03",
+    "note": "第二性（合卷本） / [法]西蒙娜·德·波伏瓦 / score 130"
+  },
+  "di-wu-xiang-xiu-lian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c7432150813ab83dbg0118f2",
+    "checkedAt": "2026-07-03",
+    "note": "第五项修炼：学习型组织的艺术与实践 / 彼得·圣吉 / score 110"
+  },
+  "ding-jia-zhi-sheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/45332890813ab7f0dg012ed6",
+    "checkedAt": "2026-07-03",
+    "note": "定价制胜：科学定价助力净利润倍增 / 赫尔曼·西蒙 / score 110"
+  },
+  "ding-wei": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "dong-xue-qi-an": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/70132e70813ab9f22g016f9c",
+    "checkedAt": "2026-07-03",
+    "note": "洞穴奇案 / [美]彼得·萨伯 / score 130"
+  },
+  "dou-hun": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "duan-she-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e7932e2071a6258fe79d013",
+    "checkedAt": "2026-07-03",
+    "note": "断舍离（全3册） / 山下英子 永田良一 / score 130"
+  },
+  "dui-du": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e3d322b0813ab90f2g010d71",
+    "checkedAt": "2026-07-03",
+    "note": "对赌（全新修订20万册纪念版） / 陈楫宝 / score 130"
+  },
+  "dui-gong-zuo-shuo-bu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/96b32ea0813aba18cg0113d0",
+    "checkedAt": "2026-07-03",
+    "note": "对工作说不 / [英]大卫·弗雷恩 / score 130"
+  },
+  "dui-qi-wen-ti": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "dui-quan-wei-de-fu-cong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b9432b507215f95cb943e12",
+    "checkedAt": "2026-07-03",
+    "note": "对权威的服从：一次逼近人性真相的心理学实验 / [美]斯坦利·米尔格拉姆 / score 110"
+  },
+  "duo-ba-an-guo-du": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "fa-zhi-ji-qi-ben-tu-zi-yuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e6832ab0813ab8a79g01798c",
+    "checkedAt": "2026-07-03",
+    "note": "法治及其本土资源（第四版） / 苏力 / score 130"
+  },
+  "facebook-xiao-ying": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "fan-cui-ruo": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "fei-bao-li-gou-tong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b7d32470813ab7e0eg015e3f",
+    "checkedAt": "2026-07-03",
+    "note": "非暴力沟通（修订版） / 马歇尔·卢森堡 / score 130"
+  },
+  "fei-pang-dai-ma": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "feng-ge-gan-jue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/aff323705e4003aff79a7a2",
+    "checkedAt": "2026-07-03",
+    "note": "风格感觉：21世纪写作指南 / [美]史蒂芬·平克 / score 110"
+  },
+  "feng-tian-zhi-dao": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "feng-xian-bu-que-ding-xing-yu-li-run": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/82f32fb072051b7d82f7f57",
+    "checkedAt": "2026-07-03",
+    "note": "风险、不确定性与利润（汉译世界学术名著丛书） / 奈特 / score 130"
+  },
+  "fu-ba-ba-qiong-ba-ba": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ada325807168230aada7458",
+    "checkedAt": "2026-07-03",
+    "note": "富爸爸穷爸爸 / 罗伯特·清崎 / score 130"
+  },
+  "fu-ge-xing-wei-mo-xing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/614325a07273de5c614b852",
+    "checkedAt": "2026-07-03",
+    "note": "福格行为模型 / B.J.福格 / score 130"
+  },
+  "fu-neng": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "fu-pan": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "fu-za": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/96832be05e43f79683a050d",
+    "checkedAt": "2026-07-03",
+    "note": "复杂（第一推动丛书·综合系列） / 梅拉妮·米歇尔 / score 130"
+  },
+  "fu-za-jing-ji-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/84d32480813ab7f7fg019b1e",
+    "checkedAt": "2026-07-03",
+    "note": "复杂经济学：经济思想的新框架（新版） / 布莱恩·阿瑟 / score 110"
+  },
+  "gao-ding": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "gao-ji-xiao-jiao-lian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5e132f30716aaf625e151af",
+    "checkedAt": "2026-07-03",
+    "note": "高绩效教练（原书第5版） / 约翰·惠特默 / score 130"
+  },
+  "gao-ji-yun-dong-sheng-li-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "gao-nan-du-tan-hua": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/eae32280811e32123g012abf",
+    "checkedAt": "2026-07-03",
+    "note": "高难度谈话：突破沟通中的最艰难时刻 / [美]道格拉斯·斯通 [美]布鲁斯·佩顿 [美]希拉·汉 / score 110"
+  },
+  "gao-qing-shang-liao-tian-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6b232d105e042e6b2c5a1ec",
+    "checkedAt": "2026-07-03",
+    "note": "高情商聊天术 / 张超 / score 130"
+  },
+  "gao-xiao-neng-ren-shi-de-qi-ge-xi-guan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/56d325907203e8a856def7f",
+    "checkedAt": "2026-07-03",
+    "note": "高效能人士的七个习惯（30周年纪念版）（全新增订版） / 史蒂芬·柯维 / score 130"
+  },
+  "gei-hai-zi-yi-sheng-de-an-quan-gan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/68132520811e3287cg016e70",
+    "checkedAt": "2026-07-03",
+    "note": "给孩子一生的安全感 / 林紫 / score 130"
+  },
+  "gong-tong-ji-jin-chang-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7d632970716980587d6d025",
+    "checkedAt": "2026-07-03",
+    "note": "共同基金常识（10周年纪念版） / 约翰·博格 / score 130"
+  },
+  "gong-zheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f7932f30813ab95a7g016f63",
+    "checkedAt": "2026-07-03",
+    "note": "公正（第三版） / [美]迈克尔·桑德尔 / score 130"
+  },
+  "gong-zuo-xiao-fei-zhu-yi-he-xin-qiong-ren": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c9d327e0727abffcc9d74ab",
+    "checkedAt": "2026-07-03",
+    "note": "工作、消费主义和新穷人 / 齐格蒙特·鲍曼 / score 130"
+  },
+  "gou-tong-de-ben-zhi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "gu-piao-da-zuo-shou-hui-yi-lu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "gu-shi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "gu-shi-qu-shi-ji-shu-fen-xi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "gu-shi-wen-zhuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e7532aa0716aecf6e75ea51",
+    "checkedAt": "2026-07-03",
+    "note": "股市稳赚 / 乔尔·格林布拉特 / score 130"
+  },
+  "guai-dan-xing-wei-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/84e325e05e1bb084e73d5ae",
+    "checkedAt": "2026-07-03",
+    "note": "怪诞行为学（全四册）（新版） / 丹·艾瑞里 / score 130"
+  },
+  "guan-jian-dui-hua": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3c632c10813ab7afbg016b8f",
+    "checkedAt": "2026-07-03",
+    "note": "关键对话：如何高效能沟通 / [美]约瑟夫·格雷尼 [美]科里·帕特森 [美]罗恩·麦克米兰 [美]艾尔·史威茨勒 [美]埃米莉·格雷戈里 / score 110"
+  },
+  "guan-li-de-shi-jian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d2132b7071667756d21fd9b",
+    "checkedAt": "2026-07-03",
+    "note": "管理的实践 / 彼得·德鲁克 / score 130"
+  },
+  "gui-mo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/11e32230715554c811e0e9f",
+    "checkedAt": "2026-07-03",
+    "note": "规模 / 杰弗里·韦斯特 / score 130"
+  },
+  "guo-fu-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6c4324d059eee96c43a4b3e",
+    "checkedAt": "2026-07-03",
+    "note": "国富论 / 亚当·斯密 / score 130"
+  },
+  "guo-jia-wei-shen-me-hui-shi-bai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/fd532550811e1a6ebg012992",
+    "checkedAt": "2026-07-03",
+    "note": "国家为什么会失败 / [美]德隆·阿西莫格鲁 [美]詹姆斯·A.罗宾逊 / score 130"
+  },
+  "guo-lv-pao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/9a532300813ab6ee1g0140a9",
+    "checkedAt": "2026-07-03",
+    "note": "过滤泡：互联网对我们的隐秘操纵（新闻与传播学译丛·学术前沿系列） / 伊莱·帕里泽 / score 110"
+  },
+  "ha-ma-xian-sheng-qu-kan-xin-li-yi-sheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/66832530721e777066806c9",
+    "checkedAt": "2026-07-03",
+    "note": "蛤蟆先生去看心理医生 / 罗伯特·戴博德 / score 130"
+  },
+  "hai-gui-jiao-yi-fa-ze": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a7f3237059b445a7fe05e36",
+    "checkedAt": "2026-07-03",
+    "note": "海龟交易法则（珍藏版） / 柯蒂斯·费思 / score 130"
+  },
+  "hai-mian-yue-du-fa": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e1932d70813ab82e7g014f5b",
+    "checkedAt": "2026-07-03",
+    "note": "海绵阅读法：如何吸收一本书的精华 / 李小墨 / score 110"
+  },
+  "hai-zi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3a532dc0813aba836g017081",
+    "checkedAt": "2026-07-03",
+    "note": "孩子：挑战 / [美]鲁道夫·德雷克斯 / score 130"
+  },
+  "hai-zi-ba-ni-de-shou-gei-wo": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "hao-zhan-l-e-huai-zhan-l-e": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "hei-tian-e": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/32e32c707186fbb332e15c0",
+    "checkedAt": "2026-07-03",
+    "note": "黑天鹅 / 纳西姆·尼古拉斯·塔勒布 / score 130"
+  },
+  "hua-shan-jiang-tou-sun-zi-bing-fa": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/df53233058b19fdf50fa893",
+    "checkedAt": "2026-07-03",
+    "note": "华杉讲透《孙子兵法》 / 华杉 / score 130"
+  },
+  "huan-xing-lao-hu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/213325005c7b94213a03b97",
+    "checkedAt": "2026-07-03",
+    "note": "唤醒老虎：启动自我疗愈本能 / [美]彼得·莱文 [美]安·弗雷德里克 / score 110"
+  },
+  "hun-dun": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "huo-chu-sheng-ming-de-yi-yi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "igen": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ji-jiang-dao-lai-de-lang-chao": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ji-jing-de-chun-tian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/17c323f0813ab6fb3g0116dc",
+    "checkedAt": "2026-07-03",
+    "note": "寂静的春天（英文原版）Silent Spring / Rachel Carson / score 110"
+  },
+  "ji-shu-de-ben-zhi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4d83260071c034e34d8523f",
+    "checkedAt": "2026-07-03",
+    "note": "技术的本质（经典版） / 布莱恩·阿瑟 / score 130"
+  },
+  "ji-shu-jiao-yi-xi-tong-xin-gai-nian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a4032a30811e36e71g010114",
+    "checkedAt": "2026-07-03",
+    "note": "技术交易系统新概念 / 威尔斯·威尔德 / score 130"
+  },
+  "ji-xie-jiao-yi-xi-tong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/279329f0811e1e7d9g011604",
+    "checkedAt": "2026-07-03",
+    "note": "机械交易系统 / [美]威斯曼 / score 130"
+  },
+  "ji-ye-chang-qing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4993214059b411499dc1b44",
+    "checkedAt": "2026-07-03",
+    "note": "基业长青（珍藏版） / [美]吉姆·柯林斯 / score 130"
+  },
+  "jia-zhi-tou-zi-cong-ge-lei-e-mu-dao-ba-fei-te": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4f632770813ab90a0g01524b",
+    "checkedAt": "2026-07-03",
+    "note": "价值投资：从格雷厄姆到巴菲特（第2版） / [美]布鲁斯·C.格林沃尔德 [美]贾德·卡恩 [美]艾琳·贝利西莫 [美]马克·A.库珀 [美]塔诺·桑托斯 / score 130"
+  },
+  "jian-shen-yu-jian-kang-wan-quan-zhi-nan": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "jian-shi-zi-ben-zhu-yi-shi-dai": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "jiao-hun": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "jiao-yi-sheng-jing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/54732e90813ab990dg0193cf",
+    "checkedAt": "2026-07-03",
+    "note": "交易圣经 / [澳]布伦特·奔富 / score 130"
+  },
+  "jin-ba-duo-pu-tong-xin-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/631324c0813ab735bg01382c",
+    "checkedAt": "2026-07-03",
+    "note": "津巴多普通心理学（第8版） / [美]菲利普•津巴多 [美]罗伯特•约翰逊 [美]薇薇安•麦卡恩 著 / score 130"
+  },
+  "jin-qian-xin-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/63132920813abb66eg010015",
+    "checkedAt": "2026-07-03",
+    "note": "金钱心理学 （全新增订版） / [美]摩根·豪泽尔 / score 130"
+  },
+  "jin-ri-jian-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/00632c607159110f0066a3e",
+    "checkedAt": "2026-07-03",
+    "note": "今日简史（精华版） / 尤瓦尔·赫拉利 / score 130"
+  },
+  "jin-rong-guai-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/dad32f90813aba162g01619b",
+    "checkedAt": "2026-07-03",
+    "note": "金融怪杰：交易大作手精华录 / [美]杰克·施瓦格 / score 110"
+  },
+  "jin-rong-lian-jin-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b83329305e0d73b83076d07",
+    "checkedAt": "2026-07-03",
+    "note": "金融炼金术（令全球投资者醍醐灌顶的著作） / 乔治·索罗斯 / score 130"
+  },
+  "jin-zi-ta-yuan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ff4323b0813ab6e84g018832",
+    "checkedAt": "2026-07-03",
+    "note": "金字塔原理大全集 / [美]芭芭拉·明托 / score 110"
+  },
+  "jing-ji-xue-yuan-li": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "jing-li-guan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4263296071f8f0464264d41",
+    "checkedAt": "2026-07-03",
+    "note": "精力管理 / 吉姆·洛尔 托尼·施瓦茨 / score 130"
+  },
+  "jing-li-ren-yuan-de-zhi-neng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4b2329e0813ab9962g013ce6",
+    "checkedAt": "2026-07-03",
+    "note": "经理人员的职能（珍藏版） / [美]切斯特I.巴纳德 / score 130"
+  },
+  "jing-yao-zhu-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8f932fd05c7a448f917d2c4",
+    "checkedAt": "2026-07-03",
+    "note": "精要主义 / [美]格雷戈·麦吉沃恩 / score 130"
+  },
+  "jing-yi-chan-pin-shou-ce": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "jing-yi-chuang-ye": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d0832540813abb521g010ecb",
+    "checkedAt": "2026-07-03",
+    "note": "精益创业（全新修订版） / [美]埃里克·莱斯 / score 130"
+  },
+  "jing-yi-si-wei": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "jing-zheng-zhan-l-e": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/50532a905cde3050538da2b",
+    "checkedAt": "2026-07-03",
+    "note": "竞争战略 / 迈克尔·波特 / score 130"
+  },
+  "jiu-ye-li-xi-he-huo-bi-tong-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/62e3282071728b9062ea4bd",
+    "checkedAt": "2026-07-03",
+    "note": "就业、利息和货币通论 / 凯恩斯 / score 130"
+  },
+  "jiu-zhi-du-yu-da-ge-ming": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2f932450813ab8eceg01272c",
+    "checkedAt": "2026-07-03",
+    "note": "旧制度与大革命（中法双语版） / [法]托克维尔 / score 130"
+  },
+  "jue-duan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c4132ef0813ab8209g019631",
+    "checkedAt": "2026-07-03",
+    "note": "决断力：如何在生活与工作中做出更好的选择 / 奇普·希思 丹·希思 / score 110"
+  },
+  "ka-pian-bi-ji-xie-zuo-fa": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3d8326d072552e803d87c41",
+    "checkedAt": "2026-07-03",
+    "note": "卡片笔记写作法：如何实现从阅读到写作 / 申克·阿伦斯 / score 110"
+  },
+  "kai-fang-she-hui-ji-qi-di-ren": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/20e32bb0813ab7435g016216",
+    "checkedAt": "2026-07-03",
+    "note": "开放社会及其敌人（全二卷） / 波普尔 / score 130"
+  },
+  "kan-bu-jian-de-nv-xing": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "kan-de-jian-de-zheng-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/49e3293071726aa249e527f",
+    "checkedAt": "2026-07-03",
+    "note": "看得见的正义(第二版) / 陈瑞华 / score 130"
+  },
+  "ke-fu-zhi-de-ling-dao-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f3f324905e0df7f3f08de57",
+    "checkedAt": "2026-07-03",
+    "note": "可复制的领导力：樊登的9堂商业课 / 樊登 / score 110"
+  },
+  "ke-hu-kai-fa-ru-men": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ke-xue-ge-ming-de-jie-gou": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3ff32fb0813ab844ag01520f",
+    "checkedAt": "2026-07-03",
+    "note": "科学革命的结构（新译精装版） / [美]托马斯·库恩 / score 130"
+  },
+  "ke-xue-guan-li-yuan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/59732e60552378597ee3f30",
+    "checkedAt": "2026-07-03",
+    "note": "科学管理原理 / 弗雷德里克·泰勒 / score 130"
+  },
+  "ke-yi-lian-xi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2e932c005cdec82e9a0e3e8",
+    "checkedAt": "2026-07-03",
+    "note": "刻意练习：如何从新手到大师 / [美]安德斯·艾利克森 [英]罗伯特·普尔 / score 110"
+  },
+  "kong-zhi-lun-yu-ke-xue-fang-fa-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d9032de0811e1a694g016c83",
+    "checkedAt": "2026-07-03",
+    "note": "控制论与科学方法论 / 金观涛 华国凡 / score 130"
+  },
+  "kua-yue-hong-gou": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/71832a90813ab779fg012d02",
+    "checkedAt": "2026-07-03",
+    "note": "跨越鸿沟：颠覆性产品营销指南（原书第3版） / 杰弗里·摩尔 / score 110"
+  },
+  "lang-du-shou-ce": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/773326f0813ab8774g01247d",
+    "checkedAt": "2026-07-03",
+    "note": "新朗读手册 / [美]吉姆•崔利斯 / score 110"
+  },
+  "li-jie-mei-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c1132dd07185cddac112890",
+    "checkedAt": "2026-07-03",
+    "note": "理解媒介：论人的延伸 / 马歇尔·麦克卢汉 / score 110"
+  },
+  "lin-jia-de-bai-wan-fu-weng": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ling-dao-ti-dui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5bd329b0813ab9aaeg01002a",
+    "checkedAt": "2026-07-03",
+    "note": "领导梯队：成为创造价值的领导者 / [美]拉姆·查兰 [美]斯蒂芬·德罗特 [美]吉姆·诺埃尔 [美]肯特·约纳森 / score 110"
+  },
+  "ling-shou-de-ben-zhi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "lu-xi-fa-xiao-ying": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1c632870811e5a163g016943",
+    "checkedAt": "2026-07-03",
+    "note": "路西法效应：好人是如何变成恶魔的 / [美]津巴多 / score 110"
+  },
+  "lun-ren-lei-bu-ping-deng-de-qi-yuan-he-ji-chu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f963287058bf86f96cbb7c4",
+    "checkedAt": "2026-07-03",
+    "note": "论人类不平等的起源和基础（果麦经典） / [法]卢梭 / score 130"
+  },
+  "lun-yu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/764323c05c6f3a764c8daf8",
+    "checkedAt": "2026-07-03",
+    "note": "论语 / 孔子及其弟子 / score 130"
+  },
+  "ma-ma-ce-shi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "man-sheng-chan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bfd32f00811e8257bg012928",
+    "checkedAt": "2026-07-03",
+    "note": "慢生产力 / [美]卡尔·纽波特 / score 130"
+  },
+  "mang-dian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/04132000811e1afebg018658",
+    "checkedAt": "2026-07-03",
+    "note": "盲点 / [美]马扎林·贝纳基/[美]安东尼·格林沃 / score 130"
+  },
+  "mba-yi-ri-tong": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "mei-de-li-cheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/30d32b10811e7df92g011fd2",
+    "checkedAt": "2026-07-03",
+    "note": "美的历程 / 李泽厚 / score 130"
+  },
+  "mei-guo-da-cheng-shi-de-si-yu-sheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a8d328b071f6264ba8df4e1",
+    "checkedAt": "2026-07-03",
+    "note": "美国大城市的死与生（60周年致敬版） / [加]简·雅各布斯 / score 130"
+  },
+  "mei-qi-deng-xiao-ying": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1df32da0813ab9e38g0101bc",
+    "checkedAt": "2026-07-03",
+    "note": "煤气灯效应 / [美]罗宾·斯特恩 / score 130"
+  },
+  "mei-zhou-gong-zuo-4-xiao-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6e332dc0811e1a5eag017be3",
+    "checkedAt": "2026-07-03",
+    "note": "每周工作4小时 / [美]费里斯 / score 130"
+  },
+  "min-fa-dian-yu-ri-chang-sheng-huo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/acd32cc0813ab6fa4g015172",
+    "checkedAt": "2026-07-03",
+    "note": "民法典与日常生活 / 彭诚信 主编 陈吉栋 副主编 / score 130"
+  },
+  "n-shi-pin-cha": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "na-wa-er-bao-dian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e1e32b00729fc94fe1e824d",
+    "checkedAt": "2026-07-03",
+    "note": "纳瓦尔宝典 / 埃里克·乔根森 / score 130"
+  },
+  "nai-li": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ni-de-jiang-luo-san-shi-shen-me-yan-se": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/82232cb0716d0439822cf17",
+    "checkedAt": "2026-07-03",
+    "note": "你的降落伞是什么颜色？（全新修订版） / 理查德·尼尔森·鲍利斯 / score 130"
+  },
+  "ni-ge-ma-ke-lun-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/70932d00813ab9ad0g011a0c",
+    "checkedAt": "2026-07-03",
+    "note": "尼各马可伦理学 I.1—III.5（希汉英对照） / [古希腊]亚里士多德 / score 110"
+  },
+  "pi-pan-xing-si-wei-gong-ju": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/55a325b071a2c84455a5efe",
+    "checkedAt": "2026-07-03",
+    "note": "批判性思维工具（原书第3版） / [美]理查德·保罗 [美]琳达·埃尔德 / score 130"
+  },
+  "pian-jian-de-ben-zhi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/23a32d307216ac3523a47e6",
+    "checkedAt": "2026-07-03",
+    "note": "偏见的本质 / 戈登·奥尔波特 / score 130"
+  },
+  "pin-lei-zhan-l-e": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bfe322905d185fbfe6fc927",
+    "checkedAt": "2026-07-03",
+    "note": "品类战略（十周年实践版） / 张云 王刚 / score 130"
+  },
+  "pin-qiong-de-ben-zhi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e0a32050813abaf95g0113cc",
+    "checkedAt": "2026-07-03",
+    "note": "贫穷的本质：我们为什么摆脱不了贫穷（全新增订版） / [美]阿比吉特·班纳吉 [法]埃斯特·迪弗洛 / score 110"
+  },
+  "ping-tai-ge-ming": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/01032160813ab83dcg0123cf",
+    "checkedAt": "2026-07-03",
+    "note": "平台革命：改变世界的商业模式 / 杰奥夫雷G.帕克 马歇尔W.范·埃尔斯泰恩 桑基特·保罗·邱达利 / score 110"
+  },
+  "qi-dian-lin-jin": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "qi-hou-jing-ji-yu-ren-lei-wei-lai": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "qi-huo-shi-chang-de-ji-suan-ji-fen-xi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "qi-shi-lu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "qiang-pao-bing-jun-yu-gang-tie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/843329f0728c8ee08434fb1",
+    "checkedAt": "2026-07-03",
+    "note": "枪炮、病菌与钢铁 / 贾雷德·戴蒙德 / score 130"
+  },
+  "qin-mi-guan-xi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/16832420813ab90f3g019f92",
+    "checkedAt": "2026-07-03",
+    "note": "亲密关系（第8版） / [美]罗兰·米勒 / score 130"
+  },
+  "qing-dan-ge-ming": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/18332f80813ab7292g010065",
+    "checkedAt": "2026-07-03",
+    "note": "清单革命（新版） / 阿图·葛文德 / score 130"
+  },
+  "qing-xu-ji-jiu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cd6327d0715aa36ccd6a55e",
+    "checkedAt": "2026-07-03",
+    "note": "情绪急救 / 盖伊·温奇博士 / score 130"
+  },
+  "qing-xu-le-suo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/12432320811e76723g018b84",
+    "checkedAt": "2026-07-03",
+    "note": "情绪勒索 / [美]朱迪斯 p.西格尔 / score 130"
+  },
+  "qing-xu-shi-shen-me": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/985328a071698031985fd65",
+    "checkedAt": "2026-07-03",
+    "note": "情绪是什么 / 乔瓦尼·弗契多 / score 130"
+  },
+  "qiong-cha-li-bao-dian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/62f321d0811e55664g016535",
+    "checkedAt": "2026-07-03",
+    "note": "穷查理宝典：芒格智慧箴言与私人书单（珍藏版 套装共2册）[罗辑思维] / [美]查理·芒格 / score 110"
+  },
+  "qu-dong-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d5c324d05ae2c1d5c1bdb55",
+    "checkedAt": "2026-07-03",
+    "note": "驱动力（经典版） / 丹尼尔·平克 / score 130"
+  },
+  "quan-li": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "quan-li-yu-fan-rong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8a732e4071ec98d58a7880b",
+    "checkedAt": "2026-07-03",
+    "note": "权力与繁荣 / 曼瑟·奥尔森 / score 130"
+  },
+  "quan-li-yu-ying-xiang-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/56732c90813ab985bg0117a8",
+    "checkedAt": "2026-07-03",
+    "note": "权力与影响力（珍藏版） / [美]约翰 P.科特 / score 130"
+  },
+  "quan-qiu-shi-ye-xia-de-tou-zi-ji-hui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/19f323a0811e8a974g010d1c",
+    "checkedAt": "2026-07-03",
+    "note": "全球视野下的投资机会 / 时寒冰 / score 130"
+  },
+  "quan-qiu-tong-shi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ren-de-jing-kuang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/07332af071ec990d07362cb",
+    "checkedAt": "2026-07-03",
+    "note": "人的境况 / 汉娜·阿伦特 / score 130"
+  },
+  "ren-ji-gong-zhi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ren-lei-jian-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d4a322a05d0f04d4a01f0d6",
+    "checkedAt": "2026-07-03",
+    "note": "人类简史：从动物到上帝 / 尤瓦尔·赫拉利 / score 110"
+  },
+  "ren-sheng-de-zhi-hui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/71632d705a953c7162b85e8",
+    "checkedAt": "2026-07-03",
+    "note": "人生的智慧 / 叔本华 / score 130"
+  },
+  "ren-zhi-jue-xing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6a732ce07201202c6a7b30a",
+    "checkedAt": "2026-07-03",
+    "note": "认知觉醒：开启自我改变的原动力 / 周岭 / score 110"
+  },
+  "ren-zhi-tian-xing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8a23249071691b8b8a28da3",
+    "checkedAt": "2026-07-03",
+    "note": "认知天性：让学习轻而易举的心理学规律 / 彼得·C.布朗 亨利·L.罗迪格三世 马克·A.麦克丹尼尔 / score 110"
+  },
+  "ri-ben-la-zhu-tu-ji-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e9032c1071e8af44e90ae59",
+    "checkedAt": "2026-07-03",
+    "note": "日本蜡烛图技术：古老东方投资术的现代指南 / 史蒂夫·尼森 / score 110"
+  },
+  "ru-he-rang-ni-ai-de-ren-ai-shang-ni": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/df032310715aa36edf07717",
+    "checkedAt": "2026-07-03",
+    "note": "如何让你爱的人爱上你 / 莉尔·朗兹 / score 130"
+  },
+  "ru-he-shuo-hai-zi-cai-hui-ting-zen-me-ting-hai-zi-cai-ken-sh": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/33b32450715aa36033b53ae",
+    "checkedAt": "2026-07-03",
+    "note": "如何说孩子才会听 怎么听孩子才肯说 / 阿黛尔·法伯 伊莱恩·玛兹丽施 / score 130"
+  },
+  "ru-he-yue-du-yi-ben-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/272326407169ff22272934f",
+    "checkedAt": "2026-07-03",
+    "note": "如何阅读一本书 / 莫提默·艾德勒 查尔斯·范多伦 / score 130"
+  },
+  "ru-he-yue-du-yi-ben-xiao-shuo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f4e325605cfec9f4e296ad7",
+    "checkedAt": "2026-07-03",
+    "note": "如何阅读一本小说 / 托马斯·福斯特 / score 130"
+  },
+  "save-the-cat-xie-qing-shao-nian-xiao-shuo": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "shang-ye-mo-shi-xin-sheng-dai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5c1324d0813ab6cf2g01739a",
+    "checkedAt": "2026-07-03",
+    "note": "商业模式新生代（经典重译版） / [瑞士]亚历山大·奥斯特瓦德 [比利时]伊夫·皮尼厄 / score 130"
+  },
+  "shang-yin": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "shang-zhan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/33a32730724ad48333a2d91",
+    "checkedAt": "2026-07-03",
+    "note": "商战 / 艾·里斯 杰克·特劳特 / score 130"
+  },
+  "she-hui-fen-gong-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b97325a0813aba97dg018f25",
+    "checkedAt": "2026-07-03",
+    "note": "社会分工论 / [法]埃米尔·涂尔干 / score 130"
+  },
+  "she-hui-gong-tong-zi-ben": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5c032a907162c33a5c00bde",
+    "checkedAt": "2026-07-03",
+    "note": "社会共通资本 / 宇泽弘文 / score 130"
+  },
+  "she-hui-ren-zhi-xin-li-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "she-hui-xin-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/71e32c00813ab7be9g013f0e",
+    "checkedAt": "2026-07-03",
+    "note": "社会心理学（第11版） / [美]戴维·迈尔斯 / score 130"
+  },
+  "she-hui-xing-dong-wu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "she-hui-xue-de-xiang-xiang-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/29432830719204cf2944d83",
+    "checkedAt": "2026-07-03",
+    "note": "社会学的想象力 / [美]C.赖特·米尔斯 / score 130"
+  },
+  "she-ji-chong-ci": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "she-ji-xin-li-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "she-qun-ying-xiao-yu-yun-ying": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bf9325107159a159bf9705b",
+    "checkedAt": "2026-07-03",
+    "note": "社群营销与运营 / 秦阳 秋叶 / score 130"
+  },
+  "shen-du-gong-zuo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0e5327005de2450e58c115d",
+    "checkedAt": "2026-07-03",
+    "note": "深度工作：如何有效使用每一点脑力 / 卡尔·纽波特 / score 110"
+  },
+  "shen-du-ying-yang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0e5320a0813ab7a42g01810c",
+    "checkedAt": "2026-07-03",
+    "note": "深度营养（第2版） / 凯瑟琳·沙纳汉 卢克·沙纳汉 / score 130"
+  },
+  "shen-ti-cong-wei-wang-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/54432bd05c839c54462def6",
+    "checkedAt": "2026-07-03",
+    "note": "身体从未忘记：心理创伤疗愈中的大脑、心智和身体 / 范德考克 / score 110"
+  },
+  "shen-ti-shi-yong-shou-ce": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "sheng-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bb632140811e421e2g01432b",
+    "checkedAt": "2026-07-03",
+    "note": "生理学（第9版/本科临床/配增值） / 王庭槐 / score 130"
+  },
+  "sheng-ming-3-0": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ce2328907157afdcce27eed",
+    "checkedAt": "2026-07-03",
+    "note": "生命3.0：AI超级智能与伦理边界重构 / 迈克斯·泰格马克 / score 110"
+  },
+  "sheng-si-ke": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f11324e0720ef9c7f113afe",
+    "checkedAt": "2026-07-03",
+    "note": "生死课（译文纪实） / 袁凌 / score 130"
+  },
+  "shi-jian-de-mei-gui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/71032f5071543bcf710696c",
+    "checkedAt": "2026-07-03",
+    "note": "时间的玫瑰（全新升级版） / 但斌 / score 130"
+  },
+  "shi-jie-guan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/61f322a071fac4b261f20c8",
+    "checkedAt": "2026-07-03",
+    "note": "世界观：现代人必须要懂的科学哲学和科学史（原书第3版） / 理查德·德威特 / score 110"
+  },
+  "shi-jie-zhi-xu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/43f32db05ae25a43fe4af66",
+    "checkedAt": "2026-07-03",
+    "note": "世界秩序 / 基辛格 / score 130"
+  },
+  "shi-kong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8333202058318c833b4a523",
+    "checkedAt": "2026-07-03",
+    "note": "失控 / 凯文·凯利 / score 130"
+  },
+  "shi-kong-de-nong-ye": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "shi-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/14b3246071831d1514b1198",
+    "checkedAt": "2026-07-03",
+    "note": "事实（比尔·盖茨推荐） / 汉斯·罗斯林 欧拉·罗斯林 安娜·罗斯林·罗朗德 / score 130"
+  },
+  "shi-wa-xin-ge-jian-shen-quan-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7253294071cc8a5a72594ff",
+    "checkedAt": "2026-07-03",
+    "note": "施瓦辛格健身全书 / 阿诺德·施瓦辛格 / score 130"
+  },
+  "shu-niu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "shuo-fu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/78a32b90716aecd178a08c6",
+    "checkedAt": "2026-07-03",
+    "note": "说服 / [美]诺瓦·戈尔茨坦 [美]史蒂夫·马丁 [美]罗伯特·西奥迪尼 / score 130"
+  },
+  "si-bu-chuang-ye-fa": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "si-chou-zhi-lu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b0632e205cd4f6b0654191f",
+    "checkedAt": "2026-07-03",
+    "note": "丝绸之路：一部全新的世界史 / 彼得·弗兰科潘 / score 110"
+  },
+  "si-kao-kuai-yu-man": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/97132350813ab9e65g0129cb",
+    "checkedAt": "2026-07-03",
+    "note": "思考，快与慢（第二版） / [美]丹尼尔·卡尼曼 / score 130"
+  },
+  "si-wei-mo-xing": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "su-fei-de-shi-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/9ef32b805abab59ef601a6c",
+    "checkedAt": "2026-07-03",
+    "note": "苏菲的世界 / 乔斯坦·贾德 / score 130"
+  },
+  "suan-fa-ba-quan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e5c3290071645a39e5c737a",
+    "checkedAt": "2026-07-03",
+    "note": "算法霸权 / 凯西·奥尼尔 / score 130"
+  },
+  "sui-ji-man-bu-de-sha-gua": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7d9327605e10bf7d9560267",
+    "checkedAt": "2026-07-03",
+    "note": "随机漫步的傻瓜 / 纳西姆·尼古拉斯·塔勒布 / score 130"
+  },
+  "tan-mei": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/da032ef072517ae3da039f2",
+    "checkedAt": "2026-07-03",
+    "note": "谈美 / 朱光潜 / score 130"
+  },
+  "tan-xing": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "tong-nian-de-mi-mi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/003326e0813ab99ecg016a9a",
+    "checkedAt": "2026-07-03",
+    "note": "童年的秘密 / [意]蒙台梭利 / score 130"
+  },
+  "tong-wang-nu-yi-zhi-lu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "tou-zi-zui-zhong-yao-de-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/23b32190718129b023bebda",
+    "checkedAt": "2026-07-03",
+    "note": "投资最重要的事 / 霍华德·马克斯 / score 130"
+  },
+  "tuan-dui-xie-zuo-de-wu-da-zhang-ai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a293219072a43533a294f7a",
+    "checkedAt": "2026-07-03",
+    "note": "团队协作的五大障碍（20周年纪念版） / 帕特里克·兰西奥尼 / score 130"
+  },
+  "tuo-yan-xin-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f2732c30724d5dc3f277e75",
+    "checkedAt": "2026-07-03",
+    "note": "拖延心理学：越拖越慌？救急指南 / 简·博克 莱诺拉·袁 / score 110"
+  },
+  "wan-li-shi-wu-nian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/af732390813ab74f3g019ddd",
+    "checkedAt": "2026-07-03",
+    "note": "万历十五年（经典版） / [美]黄仁宇 / score 130"
+  },
+  "wan-zheng-de-cheng-zhang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/16632f60813ab7edcg013bcd",
+    "checkedAt": "2026-07-03",
+    "note": "完整的成长：儿童生命的自我创造（十周年全新修订版）（独家首发） / 孙瑞雪 / score 110"
+  },
+  "wei-lai-hu-xiao-er-lai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/19a325d0721cd85819a358a",
+    "checkedAt": "2026-07-03",
+    "note": "未来呼啸而来 / 彼得·戴曼迪斯 史蒂芬·科特勒 / score 130"
+  },
+  "wei-lai-jian-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cf3326205d0142cf3606771",
+    "checkedAt": "2026-07-03",
+    "note": "未来简史：从智人到智神 / 尤瓦尔·赫拉利 / score 110"
+  },
+  "wei-shen-me": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/953321507188dd799532a3b",
+    "checkedAt": "2026-07-03",
+    "note": "为什么：关于因果关系的新科学 / [美]朱迪亚·珀尔 [美]达纳·麦肯齐 / score 110"
+  },
+  "wei-xi-guan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/37632ac07187e83c376dabf",
+    "checkedAt": "2026-07-03",
+    "note": "微习惯（谷臻小简·AI导读版） / 斯蒂芬·盖斯 / score 130"
+  },
+  "wei-xi-guan-shou-shen-pian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3f632cd071f5cf0c3f6df73",
+    "checkedAt": "2026-07-03",
+    "note": "微习惯·瘦身篇 / 斯蒂芬·盖斯 / score 130"
+  },
+  "wen-ming-de-chong-tu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6f732f70813ab6c3fg014604",
+    "checkedAt": "2026-07-03",
+    "note": "文明的冲突与世界秩序的重建 / 塞缪尔·亨廷顿 / score 110"
+  },
+  "wen-xue-de-gu-shi": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "wen-xue-hui-yi-lu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/abd3285071f6e46fabd185f",
+    "checkedAt": "2026-07-03",
+    "note": "文学回忆录：1989-1994 / 木心讲述 陈丹青笔录 / score 110"
+  },
+  "wen-xue-jiang-gao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d2432f00811e1b107g0133dd",
+    "checkedAt": "2026-07-03",
+    "note": "文学讲稿 / [美] 弗拉基米尔·纳博科夫 / score 130"
+  },
+  "wen-xue-li-lun-ru-men": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ccc32f60811e7e6ecg016527",
+    "checkedAt": "2026-07-03",
+    "note": "文学理论入门 / 乔纳森·卡勒 / score 130"
+  },
+  "wo-men-wei-shen-me-hui-sheng-bing": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "wo-men-wei-shen-me-yao-shui-jiao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/121323f0729ac578121ce6f",
+    "checkedAt": "2026-07-03",
+    "note": "我们为什么要睡觉？ / 马修·沃克 / score 130"
+  },
+  "wu-he-zhi-zhong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d1732010813ab983cg012120",
+    "checkedAt": "2026-07-03",
+    "note": "乌合之众 / [法]古斯塔夫·勒庞 / score 130"
+  },
+  "wu-qi-xie-jian-shen": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d1d3256071cc8a8bd1d8272",
+    "checkedAt": "2026-07-03",
+    "note": "无器械健身 / 马克·劳伦 乔舒亚·克拉克 / score 130"
+  },
+  "wu-qiong-de-kai-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/61932a00718b73006196a3b",
+    "checkedAt": "2026-07-03",
+    "note": "无穷的开始：世界进步的本源（第2版） / 戴维·多伊奇 / score 110"
+  },
+  "wu-wei-de-zu-zhi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/28f32c10811e6c453g018882",
+    "checkedAt": "2026-07-03",
+    "note": "无畏的组织:构建心理安全空间以激发团队的创新、学习和成长 / 艾米·埃德蒙森 / score 110"
+  },
+  "xi-da-duo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3a832f705d0d1f3a8ec72ff",
+    "checkedAt": "2026-07-03",
+    "note": "悉达多（果麦经典） / [德]赫尔曼·黑塞 / score 130"
+  },
+  "xi-guan-de-li-liang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/92b3225059b41292bed0364",
+    "checkedAt": "2026-07-03",
+    "note": "习惯的力量（新版） / 查尔斯·都希格 / score 130"
+  },
+  "xi-que": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xi-tong-zhi-mei": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/55b32da0813ab864cg017b6c",
+    "checkedAt": "2026-07-03",
+    "note": "系统之美（全新升级版） / 德内拉·梅多斯 / score 130"
+  },
+  "xiang-jing-ji-xue-jia-yi-yang-si-kao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/49e32590813ab70a4g018c8d",
+    "checkedAt": "2026-07-03",
+    "note": "像经济学家一样思考 / 宇泽弘文 / score 130"
+  },
+  "xiang-tu-zhong-guo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/30d320b0813ab7120g018c2e",
+    "checkedAt": "2026-07-03",
+    "note": "乡土中国（果麦经典） / 费孝通 / score 130"
+  },
+  "xiang-yi-shu-jia-yi-yang-si-kao": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xiang-yue-xing-qi-er": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/083322407246320408351fc",
+    "checkedAt": "2026-07-03",
+    "note": "相约星期二 / 米奇·阿尔博姆 / score 130"
+  },
+  "xiao-ao-gu-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4c432680715c8f804c4a000",
+    "checkedAt": "2026-07-03",
+    "note": "笑傲股市（原书第4版·典藏版） / 威廉·欧奈尔 / score 130"
+  },
+  "xiao-dao-jing-ji-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xiao-fei-she-hui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a543289071f015b7a547d84",
+    "checkedAt": "2026-07-03",
+    "note": "消费社会 / [法]让·鲍德里亚 / score 130"
+  },
+  "xiao-gou-qian-qian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ea232e205c3023ea2c96525",
+    "checkedAt": "2026-07-03",
+    "note": "小狗钱钱 / [德]博多·舍费尔 / score 130"
+  },
+  "xiao-ji-shi-mei": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xiao-mi-chuang-ye-si-kao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/43832a10813ab703dg011c78",
+    "checkedAt": "2026-07-03",
+    "note": "小米创业思考 / 雷军 徐洁云 / score 130"
+  },
+  "xiao-shuo-mian-mian-guan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/82b32cc07245604682b805d",
+    "checkedAt": "2026-07-03",
+    "note": "小说面面观（E.M.福斯特作品系列） / E.M.福斯特 / score 130"
+  },
+  "xiao-shuo-xie-zuo-zhi-nan": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xie-gei-da-jia-kan-de-she-ji-shu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/17e32aa0811e388ffg012ca8",
+    "checkedAt": "2026-07-03",
+    "note": "写给大家看的设计书（第4版 精装版）(图灵出品) / [美]威廉姆斯 / score 130"
+  },
+  "xie-zuo-de-zhan-zheng": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xie-zuo-zhe-hui-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a8232570813ab67b5g01534b",
+    "checkedAt": "2026-07-03",
+    "note": "写作这回事：创作生涯回忆录（经典写作课） / [美]斯蒂芬·金 / score 110"
+  },
+  "xin-jin-rong-guai-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8e2323d0720528388e25b6d",
+    "checkedAt": "2026-07-03",
+    "note": "新金融怪杰：华尔街精英访谈录（舵手经典译丛） / 杰克·施瓦格 / score 110"
+  },
+  "xin-liu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "xing-bie-da-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/34032c20813ab94b8g0106d5",
+    "checkedAt": "2026-07-03",
+    "note": "性别打结 / [美]艾伦·约翰逊 / score 130"
+  },
+  "xing-fa-xue-jiang-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/48032df071f3ab37480b27a",
+    "checkedAt": "2026-07-03",
+    "note": "刑法学讲义：第二版 / 罗翔 / score 110"
+  },
+  "xing-fu-de-fang-fa": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e52321a05b491de52ec3a43",
+    "checkedAt": "2026-07-03",
+    "note": "幸福的方法 / 泰勒·本-沙哈尔 / score 130"
+  },
+  "xing-fu-de-hun-yin": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0c732220813ab8784g019cc4",
+    "checkedAt": "2026-07-03",
+    "note": "幸福的婚姻（全新升级版） / [美]约翰·戈特曼 [美]娜恩·西尔弗 / score 130"
+  },
+  "xing-fu-de-xian-jing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e5732ef0813ab863fg01832b",
+    "checkedAt": "2026-07-03",
+    "note": "幸福的陷阱（原书第2版） / 路斯·哈里斯 / score 130"
+  },
+  "xing-ge-de-xian-jing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4dc32e70718389194dce639",
+    "checkedAt": "2026-07-03",
+    "note": "性格的陷阱：如何修补童年形成的性格缺陷 / 杰弗里·E.杨 珍妮特·S.克罗斯科 / score 110"
+  },
+  "xue-dian-fa-lv-bi-dian-keng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5bf329007198d6085bf0fed",
+    "checkedAt": "2026-07-03",
+    "note": "学点法律，避点坑：有趣有料的法律科普 / 隋兵 / score 110"
+  },
+  "xue-hui-ti-wen": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e6832d3072620d9be68aabf",
+    "checkedAt": "2026-07-03",
+    "note": "学会提问（原书第12版） / 尼尔·布朗 斯图尔特·基利 / score 130"
+  },
+  "xue-xi-zhi-dao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7e7321805cdec97e71b496e",
+    "checkedAt": "2026-07-03",
+    "note": "学习之道 / 芭芭拉·奥克利 / score 130"
+  },
+  "yan-jiang-de-li-liang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1b5329305cc7881b5f2da82",
+    "checkedAt": "2026-07-03",
+    "note": "演讲的力量（TED 思想的力量系列） / 克里斯·安德森 / score 130"
+  },
+  "yan-nv": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/67632250813ab6d7bg014522",
+    "checkedAt": "2026-07-03",
+    "note": "厌女（增订本） / [日]上野千鹤子 / score 130"
+  },
+  "ye-xu-ni-gai-zhao-ge-ren-liao-liao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/16832d80726d70b6168b11e",
+    "checkedAt": "2026-07-03",
+    "note": "也许你该找个人聊聊 / 洛莉·戈特利布 / score 130"
+  },
+  "yi-ben-shu-du-dong-cai-bao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/15332930813ab7572g018073",
+    "checkedAt": "2026-07-03",
+    "note": "一本书读懂财报 / 肖星 / score 130"
+  },
+  "yi-jiao-yi-wei-sheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8fa32a205dde488fa6bc2a6",
+    "checkedAt": "2026-07-03",
+    "note": "以交易为生（原书第2版） / 亚历山大·埃尔德 / score 130"
+  },
+  "yi-lian": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "yi-ren-qi-ye": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/af832260721a48a8af8d064",
+    "checkedAt": "2026-07-03",
+    "note": "一人企业：一个人也能赚钱的商业新模式 / 保罗·贾维斯 / score 110"
+  },
+  "yi-shi-de-jie-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/859326e0813ab705cg015746",
+    "checkedAt": "2026-07-03",
+    "note": "意识的解释 / 丹尼尔·丹尼特 / score 130"
+  },
+  "yi-shu-de-gu-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5d132b30811e7df95g018bdf",
+    "checkedAt": "2026-07-03",
+    "note": "艺术的故事（英文袖珍版） / [英]E.H.贡布里希 / score 130"
+  },
+  "yin-bao-dian": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "yin-guo-tui-duan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/36a320b0813ab7713g016e4b",
+    "checkedAt": "2026-07-03",
+    "note": "因果推断与机器学习 / 郭若城 等 / score 110"
+  },
+  "ying-wen-xie-zuo-zhi-nan": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "ying-xiang-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/9ad32d40727950039add092",
+    "checkedAt": "2026-07-03",
+    "note": "影响力（全新升级版） / 罗伯特·西奥迪尼 / score 130"
+  },
+  "ying-xiao-guan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/dd332b80813ab9b89g012936",
+    "checkedAt": "2026-07-03",
+    "note": "营销管理（第16版·精简版） / [美]菲利普·科特勒 / score 130"
+  },
+  "ying-yang-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "yong-hu-gu-shi-di-tu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1f132360811e1a7b9g012873",
+    "checkedAt": "2026-07-03",
+    "note": "用户故事地图 / Jeff Patton / score 130"
+  },
+  "yong-hu-ti-yan-yao-su": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "you-xi-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/95a32e30729e73e895aa88d",
+    "checkedAt": "2026-07-03",
+    "note": "游戏力：笑声，激活孩子天性中的合作与勇气 / 劳伦斯·科恩 / score 110"
+  },
+  "you-xian-jie-ji-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/49b328405a959749b6030ae",
+    "checkedAt": "2026-07-03",
+    "note": "有闲阶级论 / 凡勃伦 / score 130"
+  },
+  "you-xiu-dao-bu-neng-bei-hu-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6e832c005c9f196e8c3e141",
+    "checkedAt": "2026-07-03",
+    "note": "优秀到不能被忽视 / 卡尔·纽波特 / score 130"
+  },
+  "yu-ba-bu-neng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/121329505e2f9f121e243ec",
+    "checkedAt": "2026-07-03",
+    "note": "欲罢不能：刷屏时代如何摆脱行为上瘾 / 亚当·奥尔特 / score 110"
+  },
+  "yu-jun-chan-pin-fang-fa-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1cc3252071adc3b11cc0162",
+    "checkedAt": "2026-07-03",
+    "note": "俞军产品方法论 / 俞军等 / score 130"
+  },
+  "yu-le-zhi-si": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/aef326f05d0f19aef085d2b",
+    "checkedAt": "2026-07-03",
+    "note": "娱乐至死 / 尼尔·波兹曼 / score 130"
+  },
+  "yuan-ding-yu-mu-jiang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/42432e707190d338424666e",
+    "checkedAt": "2026-07-03",
+    "note": "园丁与木匠：高手父母的养育智慧 / [美]艾莉森·高普尼克 / score 110"
+  },
+  "yuan-jian": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "yuan-ze": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/848324405e0fe08483ab6a4",
+    "checkedAt": "2026-07-03",
+    "note": "原则 / 瑞·达利欧 / score 130"
+  },
+  "yun-dong-gai-zao-da-nao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1f4326e0813ab7e0fg0167ca",
+    "checkedAt": "2026-07-03",
+    "note": "运动改造大脑：动起来能解决你99%的内耗 / [美]约翰·瑞迪 埃里克·哈格曼 / score 110"
+  },
+  "zao-sheng": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zen-yang-jue-ding-da-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a5332380813ab9fd0g01793a",
+    "checkedAt": "2026-07-03",
+    "note": "怎样决定大事：击退恐惧、拖延和逃避 / [英]劳伦斯·艾莉森 [英]尼尔·肖特兰 / score 110"
+  },
+  "zen-yang-xuan-ze-cheng-zhang-gu": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zeng-zhang-de-ji-xian": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zeng-zhang-hei-ke": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0c8326e05e12740c876a134",
+    "checkedAt": "2026-07-03",
+    "note": "增长黑客 / 肖恩·埃利斯 摩根·布朗 / score 130"
+  },
+  "zhai": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zhai-wu-wei-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/9e832080717d45b69e8ec16",
+    "checkedAt": "2026-07-03",
+    "note": "债务危机 / 瑞·达利欧 / score 130"
+  },
+  "zhan-sheng-hua-er-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e7e320c05e2763e7e2297e5",
+    "checkedAt": "2026-07-03",
+    "note": "战胜华尔街（典藏版） / 彼得·林奇 约翰·罗瑟查尔德 / score 130"
+  },
+  "zhang-kong-xi-guan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bcb32150719afe3bbcbad52",
+    "checkedAt": "2026-07-03",
+    "note": "掌控习惯：如何养成好习惯并戒除坏习惯（《原子习惯》中文版）（新版） / 詹姆斯·克利尔 / score 110"
+  },
+  "zhao-hui-zhuan-zhu-li": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zhe-cai-shi-xin-li-xue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/be232300813ab6c03g015645",
+    "checkedAt": "2026-07-03",
+    "note": "这才是心理学（第11版，中文版） / 基思·斯坦诺维奇 著 / score 130"
+  },
+  "zhen-shi-de-xing-fu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/27c328705ae2c427ca53ff0",
+    "checkedAt": "2026-07-03",
+    "note": "真实的幸福 / 马丁·塞利格曼 / score 130"
+  },
+  "zhen-xu-qiu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/54932760811e81b69g0146ee",
+    "checkedAt": "2026-07-03",
+    "note": "真需求 / 梁宁 / score 130"
+  },
+  "zheng-mian-guan-jiao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bbc32a50813ab7953g01522a",
+    "checkedAt": "2026-07-03",
+    "note": "正面管教（修订版） / 简•尼尔森 / score 130"
+  },
+  "zheng-quan-fen-xi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/89c32460813aba25fg01310e",
+    "checkedAt": "2026-07-03",
+    "note": "证券分析（全新升级版） / [美]本杰明·格雷厄姆 [美]戴维·多德 / score 130"
+  },
+  "zheng-yi-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f9332960726c890bf936104",
+    "checkedAt": "2026-07-03",
+    "note": "正义论（外国伦理学名著译丛） / 约翰·罗尔斯 / score 130"
+  },
+  "zheng-yi-zhi-xin": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ef9326505ae293ef96cb658",
+    "checkedAt": "2026-07-03",
+    "note": "正义之心：为什么人们总是坚持“我对你错” / 乔纳森·海特 / score 110"
+  },
+  "zheng-zhi-jing-ji-xue-ji-fu-shui-yuan-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3c232a6071cd104a3c23e16",
+    "checkedAt": "2026-07-03",
+    "note": "政治经济学及赋税原理 / 大卫·李嘉图 / score 130"
+  },
+  "zhi-ren-zhi-shang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a24329f0813ab950ag015395",
+    "checkedAt": "2026-07-03",
+    "note": "智人之上 ——从石器时代到 AI 时代的信息网络简史 / [以]尤瓦尔·赫拉利 / score 110"
+  },
+  "zhi-shen-shi-nei": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2a332d10726332f72a34943",
+    "checkedAt": "2026-07-03",
+    "note": "置身事内：中国政府与经济发展 / 兰小欢 / score 110"
+  },
+  "zhi-ye-mao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a5232910811e1a914g019c80",
+    "checkedAt": "2026-07-03",
+    "note": "职业锚 / 埃德加·施恩 / score 130"
+  },
+  "zhi-you-pian-zhi-kuang-cai-neng-sheng-cun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/faf32320597c65faf1d56e6",
+    "checkedAt": "2026-07-03",
+    "note": "只有偏执狂才能生存 / 安迪·格鲁夫 / score 130"
+  },
+  "zhong-guo-jin-dai-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/984326a0811e1a564g0194e9",
+    "checkedAt": "2026-07-03",
+    "note": "中国近代史:1600-2000中国的奋斗 / [美]徐中约 计秋枫 朱庆葆 / score 110"
+  },
+  "zhong-guo-li-dai-zheng-zhi-de-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ffa323707166ef00ffa7080",
+    "checkedAt": "2026-07-03",
+    "note": "中国历代政治得失 / 钱穆 / score 130"
+  },
+  "zhong-guo-tong-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/fc032fe071ef04ebfc0efd1",
+    "checkedAt": "2026-07-03",
+    "note": "中国通史（上下册） / 吕思勉 / score 130"
+  },
+  "zhong-shen-cheng-zhang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b0e327605df8bab0e873984",
+    "checkedAt": "2026-07-03",
+    "note": "终身成长（全新修订版） / 卡罗尔·德韦克 / score 130"
+  },
+  "zhong-shen-you-er-yuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/34332e70715c05743436f38",
+    "checkedAt": "2026-07-03",
+    "note": "终身幼儿园 / 米切尔·雷斯尼克 / score 130"
+  },
+  "zhou-qi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/af132b10717c563aaf1555f",
+    "checkedAt": "2026-07-03",
+    "note": "周期 / 霍华德·马克斯 / score 130"
+  },
+  "zhu-ding-yi-zhan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0ea32a9071bf49470ea43a4",
+    "checkedAt": "2026-07-03",
+    "note": "注定一战：中美能避免修昔底德陷阱吗？ / 格雷厄姆·艾利森 / score 110"
+  },
+  "zhu-tui": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7e432ba0813ab80a8g01459e",
+    "checkedAt": "2026-07-03",
+    "note": "助推（终极版） / [美]理查德·塞勒 [美]卡斯·桑斯坦 / score 130"
+  },
+  "zhu-yi-li-shang-ren": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zhui-qiu-zhuo-yue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zhuo-you-cheng-xiao-de-guan-li-zhe": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f3d32010813ab9499g013aa7",
+    "checkedAt": "2026-07-03",
+    "note": "卓有成效的管理者（55周年新译本） / [美]彼得·德鲁克 / score 130"
+  },
+  "zi-bei-yu-chao-yue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/be932230813ab9941g010d2f",
+    "checkedAt": "2026-07-03",
+    "note": "自卑与超越 / [奥]阿尔弗雷德·阿德勒 / score 130"
+  },
+  "zi-kong-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d2f32b705cc7f2d2ff135f6",
+    "checkedAt": "2026-07-03",
+    "note": "自控力 / 凯利·麦格尼格尔 / score 130"
+  },
+  "zi-lv-de-jiao-yi-zhe": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/59b32000811e1a83cg0174fe",
+    "checkedAt": "2026-07-03",
+    "note": "自律的交易者 / 马克·道格拉斯 / score 130"
+  },
+  "zi-zi-zhu-ji": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zi-zun": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zou-chu-wei-ji": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zu-zhi-xing-wei-xue": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zui-hao-de-gao-bie": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "No high-confidence WeRead match from title search"
+  },
+  "zui-xiao-zu-li-zhi-lu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6aa32c50813ab7e0eg011b5e",
+    "checkedAt": "2026-07-03",
+    "note": "最小阻力之路 / 罗伯特·弗里茨 / score 130"
+  }
+}

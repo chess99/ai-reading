@@ -43,6 +43,16 @@ test('WeRead links map points to existing books and allowed URLs', () => {
   );
 
   const bookSlugs = loadBookSlugs();
+  assert.equal(
+    Object.keys(links).length,
+    bookSlugs.size,
+    'weread-links.json should include a lookup status for every book'
+  );
+
+  for (const slug of bookSlugs) {
+    assert.equal(slug in links, true, `missing WeRead lookup status for book slug: ${slug}`);
+  }
+
   const seenUrls = new Map();
 
   for (const [slug, entry] of Object.entries(links)) {
