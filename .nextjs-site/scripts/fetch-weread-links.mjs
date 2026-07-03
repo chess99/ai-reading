@@ -11,6 +11,7 @@ const today = new Date().toISOString().slice(0, 10);
 
 const args = new Set(process.argv.slice(2));
 const force = args.has('--force');
+const includeManual = args.has('--include-manual');
 const dryRun = args.has('--dry-run');
 const limitArg = process.argv.find(arg => arg.startsWith('--limit='));
 const limit = limitArg ? Number(limitArg.slice('--limit='.length)) : Infinity;
@@ -180,6 +181,10 @@ let notFound = 0;
 let skipped = 0;
 
 for (const book of books) {
+  if (links[book.slug]?.note?.startsWith('manual-audit') && !includeManual) {
+    skipped++;
+    continue;
+  }
   if (!force && links[book.slug]) {
     skipped++;
     continue;

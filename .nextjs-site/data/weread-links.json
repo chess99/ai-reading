@@ -21,9 +21,10 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "ai-de-yi-shu": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d7d32d70722dd429d7d723d",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "an-quan-bian-ji": {
     "status": "found",
@@ -50,9 +51,10 @@
     "note": "巴菲特致股东的信（修订版） / 沃伦·巴菲特 查理·芒格 / score 130"
   },
   "bao-jin-wo": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/63732280811e1c521g017743",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "bei-tao-yan-de-yong-qi": {
     "status": "found",
@@ -183,9 +185,10 @@
     "note": "成为作家（创意写作书系） / 多萝西娅·布兰德 / score 130"
   },
   "chi-luo-luo-de-tong-ji-xue": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7dc32220813ab885dg013f54",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "chong-xin-ding-yi-gong-si": {
     "status": "found",
@@ -271,9 +274,10 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "dang-hu-xi-hua-wei-kong-qi": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c7932e10813ab92fcg014bc9",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "dang-xia-de-li-liang": {
     "status": "found",
@@ -368,14 +372,16 @@
     "note": "法治及其本土资源（第四版） / 苏力 / score 130"
   },
   "facebook-xiao-ying": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/34a32340811e1a33fg016ba0",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "fan-cui-ruo": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0633241059b4260632af2bf",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "fei-bao-li-gou-tong": {
     "status": "found",
@@ -498,14 +504,16 @@
     "note": "工作、消费主义和新穷人 / 齐格蒙特·鲍曼 / score 130"
   },
   "gou-tong-de-ben-zhi": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2b932af0813ab7fcbg0179f5",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "gu-piao-da-zuo-shou-hui-yi-lu": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1b5325907159cacc1b5e0e1",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "gu-shi": {
     "status": "not_found",
@@ -513,9 +521,10 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "gu-shi-qu-shi-ji-shu-fen-xi": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/17a32550811e54535g018cb3",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "gu-shi-wen-zhuan": {
     "status": "found",
@@ -590,14 +599,16 @@
     "note": "孩子：挑战 / [美]鲁道夫·德雷克斯 / score 130"
   },
   "hai-zi-ba-ni-de-shou-gei-wo": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/57932990813ab7854g0163a6",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "hao-zhan-l-e-huai-zhan-l-e": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2cf32d005e0d5a2cf723129",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "hei-tian-e": {
     "status": "found",
@@ -623,14 +634,16 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "huo-chu-sheng-ming-de-yi-yi": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f9b32d30813ab82d5g015c99",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "igen": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c2232db0811e64494g0137e2",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "ji-jiang-dao-lai-de-lang-chao": {
     "status": "not_found",
@@ -806,9 +819,10 @@
     "note": "开放社会及其敌人（全二卷） / 波普尔 / score 130"
   },
   "kan-bu-jian-de-nv-xing": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f1532210813ab7439g018060",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "kan-de-jian-de-zheng-yi": {
     "status": "found",
@@ -870,9 +884,10 @@
     "note": "理解媒介：论人的延伸 / 马歇尔·麦克卢汉 / score 110"
   },
   "lin-jia-de-bai-wan-fu-weng": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/26532c00813ab83dbg0183ba",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "ling-dao-ti-dui": {
     "status": "found",
@@ -956,9 +971,10 @@
     "note": "民法典与日常生活 / 彭诚信 主编 陈吉栋 副主编 / score 130"
   },
   "n-shi-pin-cha": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/997328307239e753997d337",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "na-wa-er-bao-dian": {
     "status": "found",
@@ -1014,14 +1030,16 @@
     "note": "平台革命：改变世界的商业模式 / 杰奥夫雷G.帕克 马歇尔W.范·埃尔斯泰恩 桑基特·保罗·邱达利 / score 110"
   },
   "qi-dian-lin-jin": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/85d326e05c079285d02a273",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "qi-hou-jing-ji-yu-ren-lei-wei-lai": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/85132ca0813ab9ecdg0167f9",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "qi-huo-shi-chang-de-ji-suan-ji-fen-xi": {
     "status": "not_found",
@@ -1029,9 +1047,10 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "qi-shi-lu": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c3b32f70811e360efg010362",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "qiang-pao-bing-jun-yu-gang-tie": {
     "status": "found",
@@ -1220,9 +1239,10 @@
     "note": "社会心理学（第11版） / [美]戴维·迈尔斯 / score 130"
   },
   "she-hui-xing-dong-wu": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/fcb322c071f3f438fcb5e8c",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "she-hui-xue-de-xiang-xiang-li": {
     "status": "found",
@@ -1231,14 +1251,16 @@
     "note": "社会学的想象力 / [美]C.赖特·米尔斯 / score 130"
   },
   "she-ji-chong-ci": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b7832d607235ae06b7875c2",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "she-ji-xin-li-xue": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ad932ca05d1509ad998f4ff",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "she-qun-ying-xiao-yu-yun-ying": {
     "status": "found",
@@ -1312,9 +1334,10 @@
     "note": "失控 / 凯文·凯利 / score 130"
   },
   "shi-kong-de-nong-ye": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/169320b0811e360b8g01360e",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "shi-shi": {
     "status": "found",
@@ -1340,9 +1363,10 @@
     "note": "说服 / [美]诺瓦·戈尔茨坦 [美]史蒂夫·马丁 [美]罗伯特·西奥迪尼 / score 130"
   },
   "si-bu-chuang-ye-fa": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bf132bc0811e1a3e6g0104ed",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "si-chou-zhi-lu": {
     "status": "found",
@@ -1357,9 +1381,10 @@
     "note": "思考，快与慢（第二版） / [美]丹尼尔·卡尼曼 / score 130"
   },
   "si-wei-mo-xing": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6c6328a07298174d6c6a1c5",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "su-fei-de-shi-jie": {
     "status": "found",
@@ -1386,9 +1411,10 @@
     "note": "谈美 / 朱光潜 / score 130"
   },
   "tan-xing": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ead32b40718caa23eadedc6",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "tong-nian-de-mi-mi": {
     "status": "found",
@@ -1397,9 +1423,10 @@
     "note": "童年的秘密 / [意]蒙台梭利 / score 130"
   },
   "tong-wang-nu-yi-zhi-lu": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1e532d205c69aa1e542b755",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu": {
     "status": "not_found",
@@ -1496,9 +1523,10 @@
     "note": "文学理论入门 / 乔纳森·卡勒 / score 130"
   },
   "wo-men-wei-shen-me-hui-sheng-bing": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/631328605e43fa631551a4e",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "wo-men-wei-shen-me-yao-shui-jiao": {
     "status": "found",
@@ -1583,9 +1611,10 @@
     "note": "笑傲股市（原书第4版·典藏版） / 威廉·欧奈尔 / score 130"
   },
   "xiao-dao-jing-ji-xue": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a38326805dec21a389a21c8",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "xiao-fei-she-hui": {
     "status": "found",
@@ -1757,9 +1786,10 @@
     "note": "艺术的故事（英文袖珍版） / [英]E.H.贡布里希 / score 130"
   },
   "yin-bao-dian": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8bf3223071f9ad278bfa5dc",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "yin-guo-tui-duan": {
     "status": "found",
@@ -1785,9 +1815,10 @@
     "note": "营销管理（第16版·精简版） / [美]菲利普·科特勒 / score 130"
   },
   "ying-yang-xue": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/22f32d60811e38a34g013f73",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "yong-hu-gu-shi-di-tu": {
     "status": "found",
@@ -1796,9 +1827,10 @@
     "note": "用户故事地图 / Jeff Patton / score 130"
   },
   "yong-hu-ti-yan-yao-su": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/00232d60811e3a302g0165ef",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "you-xi-li": {
     "status": "found",
@@ -1876,9 +1908,10 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "zeng-zhang-de-ji-xian": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f1b32cf058c20af1b2b41b1",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "zeng-zhang-hei-ke": {
     "status": "found",
@@ -2035,14 +2068,16 @@
     "note": "助推（终极版） / [美]理查德·塞勒 [美]卡斯·桑斯坦 / score 130"
   },
   "zhu-yi-li-shang-ren": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2cc322c0811e8ccc2g018349",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "zhui-qiu-zhuo-yue": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/40132f40597c604010f5b5c",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "zhuo-you-cheng-xiao-de-guan-li-zhe": {
     "status": "found",
@@ -2089,9 +2124,10 @@
     "note": "No high-confidence WeRead match from title search"
   },
   "zui-hao-de-gao-bie": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f6532270813ab7e0fg015138",
     "checkedAt": "2026-07-03",
-    "note": "No high-confidence WeRead match from title search"
+    "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "zui-xiao-zu-li-zhi-lu": {
     "status": "found",

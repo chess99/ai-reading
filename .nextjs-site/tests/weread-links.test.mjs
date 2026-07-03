@@ -64,6 +64,9 @@ test('WeRead links map points to existing books and allowed URLs', () => {
     );
     assert.ok(['found', 'not_found'].includes(entry.status), `${slug} WeRead status should be found or not_found`);
     assert.match(String(entry.checkedAt), /^\d{4}-\d{2}-\d{2}$/, `${slug} checkedAt should be YYYY-MM-DD`);
+    if (entry.note) {
+      assert.doesNotMatch(entry.note, /\?{2,}/, `${slug} note should not contain mojibake question marks`);
+    }
 
     if (entry.status === 'not_found') {
       assert.equal('url' in entry, false, `${slug} not_found entry should not include a URL`);
