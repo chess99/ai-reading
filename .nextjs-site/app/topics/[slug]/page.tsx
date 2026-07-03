@@ -136,6 +136,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
                     <Link
                       key={tag}
                       href={`/search?q=${encodeURIComponent(tag)}&tab=books`}
+                      prefetch={false}
                       className="chip-brand hover:bg-brand hover:text-white transition-colors"
                     >
                       {tag}
@@ -195,6 +196,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
                       <Link
                         key={`${book.title}-${index}`}
                         href={`/books/${linkedBook.slug}`}
+                        prefetch={false}
                         className={recommendationCardClass}
                         aria-label={`打开《${book.title}》`}
                       >

@@ -80,6 +80,7 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
                 <Link
                   key={tag}
                   href={`/search?q=${encodeURIComponent(tag)}&tab=books`}
+                  prefetch={false}
                   className="chip-brand hover:bg-brand hover:text-white transition-colors cursor-pointer text-sm"
                 >
                   {tag}

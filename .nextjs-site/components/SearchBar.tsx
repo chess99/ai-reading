@@ -20,6 +20,7 @@ export default function SearchBar({ books, onRandomBook }: SearchBarProps) {
     <div className="grid gap-3 md:grid-cols-[1fr_auto] md:items-center">
       <Link
         href="/search"
+        prefetch={false}
         className="input-brand surface-card-hover relative flex items-center gap-3 text-left no-underline"
         aria-label="打开搜索"
       >

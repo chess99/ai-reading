@@ -23,11 +23,12 @@ export default function NotFoundPage() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3 md:gap-4">
-              <Link href="/" className="btn-outline-brand inline-flex items-center justify-center">
+              <Link href="/" prefetch={false} className="btn-outline-brand inline-flex items-center justify-center">
                 返回首页
               </Link>
               <Link
                 href="/search"
+                prefetch={false}
                 className="inline-flex h-12 items-center justify-center rounded-lg border border-stone-200 px-5 font-semibold text-stone-700 transition-all hover:-translate-y-px hover:border-brand/40 hover:text-brand hover:bg-stone-50"
               >
                 前往搜索
@@ -36,7 +37,7 @@ export default function NotFoundPage() {
 
             <div className="mt-10 grid gap-3 md:grid-cols-2">
               {quickLinks.map(link => (
-                <Link key={link.href} href={link.href} className="surface-card surface-card-hover block p-4">
+                <Link key={link.href} href={link.href} prefetch={false} className="surface-card surface-card-hover block p-4">
                   <p className="text-sm font-bold text-stone-950">{link.label}</p>
                   <p className="mt-1 text-sm text-stone-500">{link.desc}</p>
                 </Link>

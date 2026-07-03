@@ -14,7 +14,7 @@ export default function TopicReading({ topics }: TopicReadingProps) {
     <section className="mb-10 md:mb-14">
       <div className="flex items-center justify-between mb-4">
         <h2 className="section-title">主题阅读</h2>
-        <Link href="/topics" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
+        <Link href="/topics" prefetch={false} className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
           查看全部
         </Link>
       </div>
@@ -26,6 +26,7 @@ export default function TopicReading({ topics }: TopicReadingProps) {
           ))}
           <Link
             href="/topics"
+            prefetch={false}
             className="group flex min-w-[144px] md:min-w-[160px] flex-col justify-center rounded-lg border border-dashed border-brand/30 bg-[#fffdf8]/70 px-4 py-5 transition-all duration-200 hover:border-brand/55 hover:bg-brand/10"
             aria-label="查看全部主题阅读"
           >

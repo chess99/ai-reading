@@ -13,6 +13,7 @@ export default function TopicCard({ topic, compact = false }: TopicCardProps) {
   return (
     <Link
       href={`/topics/${topic.slug}`}
+      prefetch={false}
       className={`group surface-card surface-card-hover block ${compact ? 'p-5 min-w-[280px] md:min-w-[340px]' : 'p-5 md:p-6'}`}
     >
       <div className="mb-4 flex items-center justify-between gap-3">

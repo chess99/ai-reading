@@ -153,6 +153,7 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
         </p>
         <Link
           href="/request-book"
+          prefetch={false}
           onClick={onNavigate}
           className="btn-outline-brand inline-flex w-full items-center justify-center bg-stone-900 text-[#fffdf8] hover:bg-stone-800 hover:text-[#fffdf8]"
         >
@@ -177,6 +178,7 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
         <div className="divide-y divide-stone-200/80 text-sm">
           <Link
             href="/about"
+            prefetch={false}
             onClick={onNavigate}
             className="flex items-center justify-between gap-3 rounded-md py-2.5 transition-colors hover:text-brand"
           >

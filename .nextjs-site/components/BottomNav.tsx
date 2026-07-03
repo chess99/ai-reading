@@ -45,6 +45,7 @@ export default function BottomNav() {
             <Link
               key={tab.href}
               href={tab.href}
+              prefetch={false}
               aria-current={active ? 'page' : undefined}
               className={`flex flex-col items-center justify-center py-2 gap-1 min-h-[58px] rounded-lg transition-all active:scale-95 ${
                 active ? 'text-stone-950' : 'text-stone-400 hover:bg-stone-100 active:bg-stone-100'

@@ -55,7 +55,7 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
             >
               <MenuIcon className="w-5 h-5" />
             </button>
-            <Link href="/" className="text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
+            <Link href="/" prefetch={false} className="text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
               {BRAND_NAME}
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
                 {bookTitle}
               </span>
             ) : (
-              <Link href="/" className="md:hidden text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
+              <Link href="/" prefetch={false} className="md:hidden text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
                 {BRAND_NAME}
               </Link>
             )}
@@ -101,6 +101,7 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
                   <Link
                     key={item.href}
                     href={item.href}
+                    prefetch={false}
                     aria-current={active ? 'page' : undefined}
                     className={`flex h-9 items-center gap-2 rounded-md px-3 text-sm font-semibold transition-colors ${
                       active ? 'bg-brand/10 text-brand' : 'text-stone-600 hover:bg-stone-100 hover:text-stone-950'

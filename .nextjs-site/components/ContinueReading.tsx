@@ -48,6 +48,7 @@ export default function ContinueReading() {
         {/* 主行 */}
         <Link
           href={`/books/${current.bookSlug}`}
+          prefetch={false}
           className="flex items-center gap-4 p-5 md:p-6 group transition-colors duration-150 hover:bg-[#f8f3ea]"
           onClick={handleMainClick}
         >

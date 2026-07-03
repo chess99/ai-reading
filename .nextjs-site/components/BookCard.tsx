@@ -14,6 +14,7 @@ export default function BookCard({ book, showNew = false }: BookCardProps) {
   return (
     <Link
       href={`/books/${book.slug}`}
+      prefetch={false}
       className="group flex-shrink-0 w-40 md:w-48 surface-card surface-card-hover p-4 flex flex-col gap-2.5 relative min-h-[168px]"
     >
       {isNew && (

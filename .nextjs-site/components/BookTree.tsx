@@ -139,6 +139,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
       <Link
         key={node.path}
         href={node.path}
+        prefetch={false}
         onClick={onBookClick}
         className={`sidebar-link ${isActive ? 'sidebar-link-active' : ''}`}
         style={{ paddingLeft: `${8 + indent + 16}px` }}

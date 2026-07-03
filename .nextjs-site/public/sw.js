@@ -1,4 +1,4 @@
-const CACHE_NAME = 'reading-v1';
+const CACHE_NAME = 'reading-v2';
 const BASE_PATH = '';
 const MANIFEST_URL = `${BASE_PATH}/build-manifest.json`;
 const PRECACHE_URLS = [
@@ -137,12 +137,15 @@ async function checkForUpdates() {
 
 // 判断是否应该缓存的资源
 function shouldCacheAsset(pathname) {
+  if (pathname.includes('__next_tree') || pathname.endsWith('/index.txt')) {
+    return false;
+  }
+
   return (
     pathname.startsWith(`${BASE_PATH}/_next/`) ||
     pathname.startsWith(`${BASE_PATH}/pagefind/`) ||
     pathname.endsWith('.css') ||
     pathname.endsWith('.js') ||
-    pathname.endsWith('.txt') ||
     pathname.endsWith('.json') ||
     pathname.endsWith('.svg') ||
     pathname.endsWith('.webmanifest')

@@ -176,7 +176,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                 <p className="text-sm text-stone-500 mb-4">找到 {bookResults.length} 个结果</p>
                 <div className="space-y-3">
                   {bookResults.map(book => (
-                    <Link key={book.slug} href={`/books/${book.slug}`} className="surface-card surface-card-hover block p-4">
+                    <Link key={book.slug} href={`/books/${book.slug}`} prefetch={false} className="surface-card surface-card-hover block p-4">
                       <div className="flex items-start gap-3">
                         <span className="icon-tile w-10 h-10 flex-shrink-0">
                           <BookIcon className="w-5 h-5" />
@@ -203,7 +203,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                 </div>
                 <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
                 <p className="text-stone-400 text-sm mt-2 mb-5">试试其他关键词，或者提交一本想看的书。</p>
-                <Link href="/request-book" className="btn-outline-brand inline-flex items-center justify-center">
+                <Link href="/request-book" prefetch={false} className="btn-outline-brand inline-flex items-center justify-center">
                   申请加入书库
                 </Link>
               </div>
@@ -259,7 +259,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                 </div>
                 <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
                 <p className="text-stone-400 text-sm mt-2 mb-5">试试其他关键词，或者提交一本想看的书。</p>
-                <Link href="/request-book" className="btn-outline-brand inline-flex items-center justify-center">
+                <Link href="/request-book" prefetch={false} className="btn-outline-brand inline-flex items-center justify-center">
                   申请加入书库
                 </Link>
               </div>
