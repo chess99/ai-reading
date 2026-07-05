@@ -6,8 +6,12 @@ import { ReadingEvents } from '@/lib/analytics';
 import { BRAND_NAME } from '@/lib/brand';
 
 interface SettingsContentProps {
-  allBooks: { slug: string; title: string; author: string }[];
   onNavigate?: () => void;
+}
+
+interface BuildManifest {
+  booksCount?: number;
+  books?: Record<string, unknown>;
 }
 
 const feedbackIssueUrl =
@@ -28,22 +32,39 @@ const feedbackIssueUrl =
     ].join('\n'),
   }).toString();
 
-export default function SettingsContent({ allBooks, onNavigate }: SettingsContentProps) {
+export default function SettingsContent({ onNavigate }: SettingsContentProps) {
   const [offlineMode, setOfflineMode] = useState(false);
   const [isPrefetching, setIsPrefetching] = useState(false);
   const [cachedCount, setCachedCount] = useState(0);
+  const [bookCount, setBookCount] = useState(0);
   const [prefetchProgress, setPrefetchProgress] = useState(0);
 
   useEffect(() => {
     const saved = localStorage.getItem('offline-mode');
     setOfflineMode(saved === 'true');
     checkCachedBooks();
+    loadBookCount();
   }, []);
+
+  const loadBuildManifest = async (): Promise<BuildManifest | null> => {
+    try {
+      const response = await fetch('/build-manifest.json');
+      return response.ok ? await response.json() : null;
+    } catch {
+      return null;
+    }
+  };
+
+  const loadBookCount = async () => {
+    const manifest = await loadBuildManifest();
+    if (!manifest) return;
+    setBookCount(manifest.booksCount ?? Object.keys(manifest.books ?? {}).length);
+  };
 
   const checkCachedBooks = async () => {
     if (!('caches' in window)) return;
     try {
-      const cache = await caches.open('reading-v1');
+      const cache = await caches.open('reading-v2');
       const requests = await cache.keys();
       setCachedCount(
         requests.filter(r => r.url.includes('/books/') && !r.url.includes('__next')).length
@@ -66,7 +87,13 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
     }
     setIsPrefetching(true);
     setPrefetchProgress(0);
-    const bookUrls = allBooks.map(book => `/books/${book.slug}/`);
+    const manifest = await loadBuildManifest();
+    const bookUrls = Object.keys(manifest?.books ?? {}).map(slug => `/books/${slug}/`);
+    setBookCount(manifest?.booksCount ?? bookUrls.length);
+    if (bookUrls.length === 0) {
+      setIsPrefetching(false);
+      return;
+    }
     const batchSize = 5;
     for (let i = 0; i < bookUrls.length; i += batchSize) {
       navigator.serviceWorker.controller.postMessage({
@@ -129,7 +156,7 @@ export default function SettingsContent({ allBooks, onNavigate }: SettingsConten
         <div className="mt-3 p-3 bg-stone-50 rounded-lg">
           <div className="flex items-center justify-between text-sm">
             <span className="text-stone-600">已缓存书籍</span>
-            <span className="font-semibold text-stone-950">{cachedCount} / {allBooks.length}</span>
+            <span className="font-semibold text-stone-950">{cachedCount} / {bookCount}</span>
           </div>
         </div>
       </div>

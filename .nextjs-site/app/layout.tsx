@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LayoutClient from './layout-client';
 import BaiduAnalytics from '@/components/BaiduAnalytics';
-import { buildBookTree, getAllBookMetas } from '@/lib/books';
-import { getAllTopicMetas } from '@/lib/topics';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME, SITE_DESCRIPTION, SITE_TITLE } from '@/lib/brand';
 
@@ -83,10 +81,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const bookTree = buildBookTree();
-  const allBooks = getAllBookMetas();
-  const allTopics = getAllTopicMetas();
-
   return (
     <html lang="zh-CN">
       <head>
@@ -97,9 +91,7 @@ export default function RootLayout({
       </head>
       <body>
         <BaiduAnalytics />
-        <LayoutClient bookTree={bookTree} allBooks={allBooks} allTopics={allTopics}>
-          {children}
-        </LayoutClient>
+        <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
   );

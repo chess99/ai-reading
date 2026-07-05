@@ -1,6 +1,14 @@
 import { notFound } from 'next/navigation';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeRaw from 'rehype-raw';
+import rehypeSanitize from 'rehype-sanitize';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeKatex from 'rehype-katex';
 import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
+import 'katex/dist/katex.min.css';
 import BookPageClient from './page-client';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME } from '@/lib/brand';
@@ -88,6 +96,7 @@ export default async function BookPage({ params }: BookPageProps) {
 
   const pageUrl = `${BASE_URL}/books/${slug}/`;
   const wereadUrl = getWereadUrlForBook(book.slug);
+  const displayContent = injectBookLinks(book.content, book.slug).replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
   const bookJsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -142,13 +151,26 @@ export default async function BookPage({ params }: BookPageProps) {
       <div className="max-w-7xl mx-auto">
         {/* Content with TOC */}
         <BookPageClient
-          content={injectBookLinks(book.content, book.slug)}
           bookSlug={book.slug}
           bookTitle={book.title}
           bookAuthor={book.author}
           bookTags={book.tags}
           wereadUrl={wereadUrl}
-        />
+        >
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeKatex, rehypeHighlight]}
+            components={{
+              table: ({ children, ...props }) => (
+                <div className="markdown-table-wrapper">
+                  <table {...props}>{children}</table>
+                </div>
+              ),
+            }}
+          >
+            {displayContent}
+          </ReactMarkdown>
+        </BookPageClient>
       </div>
     </article>
   );

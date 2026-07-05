@@ -17,6 +17,8 @@ const __dirname = path.dirname(__filename);
 const BOOKS_DIR = path.join(__dirname, '..', '..', 'books');
 const TOPICS_DIR = path.join(__dirname, '..', '..', 'topics');
 const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'build-manifest.json');
+const LIBRARY_TREE_FILE = path.join(__dirname, '..', 'public', 'library-tree.json');
+const LIBRARY_BOOKS_FILE = path.join(__dirname, '..', 'public', 'library-books.json');
 
 function generateHash(content) {
   return crypto.createHash('md5').update(content).digest('hex').substring(0, 8);
@@ -38,6 +40,7 @@ function parseFilename(filename) {
 
 function scanBooks(dir) {
   const books = {};
+  const metas = [];
 
   function scan(currentDir) {
     const entries = fs.readdirSync(currentDir, { withFileTypes: true });
@@ -64,6 +67,19 @@ function scanBooks(dir) {
             author,
             path: path.relative(BOOKS_DIR, fullPath),
           };
+          const relativeDir = path.relative(BOOKS_DIR, path.dirname(fullPath));
+          const categoryPath = relativeDir && relativeDir !== '.'
+            ? relativeDir.split(path.sep)
+            : [];
+          metas.push({
+            slug,
+            title,
+            author,
+            category: categoryPath.join('/') || '未分类',
+            categoryPath,
+            tags: Array.isArray(data.tags) ? data.tags : [],
+            addedAt: data.date ? new Date(data.date).getTime() : fs.statSync(fullPath).mtimeMs,
+          });
         } catch (error) {
           console.error(`Error processing ${fullPath}:`, error.message);
         }
@@ -72,7 +88,50 @@ function scanBooks(dir) {
   }
 
   scan(dir);
-  return books;
+  return { books, metas };
+}
+
+function buildBookTree(bookMetas) {
+  const root = [];
+
+  function getOrCreateCategory(parent, categoryName, fullPath) {
+    let node = parent.find(n => n.name === categoryName && n.type === 'category');
+    if (!node) {
+      node = { name: categoryName, type: 'category', path: fullPath, children: [] };
+      parent.push(node);
+    }
+    return node;
+  }
+
+  for (const book of bookMetas) {
+    let currentLevel = root;
+    let pathSoFar = '';
+    for (const categoryName of book.categoryPath) {
+      pathSoFar = pathSoFar ? `${pathSoFar}/${categoryName}` : categoryName;
+      const categoryNode = getOrCreateCategory(currentLevel, categoryName, pathSoFar);
+      currentLevel = categoryNode.children;
+    }
+    currentLevel.push({
+      name: `${book.author} - ${book.title}`,
+      type: 'book',
+      path: `/books/${book.slug}`,
+    });
+  }
+
+  const sortTree = nodes => {
+    nodes.sort((a, b) => {
+      if (a.type !== b.type) {
+        return a.type === 'category' ? -1 : 1;
+      }
+      return a.name.localeCompare(b.name, 'zh-CN');
+    });
+    nodes.forEach(node => {
+      if (node.children) sortTree(node.children);
+    });
+  };
+
+  sortTree(root);
+  return root;
 }
 
 function scanTopics(dir) {
@@ -112,7 +171,7 @@ function scanTopics(dir) {
 function generateManifest() {
   console.log('🔨 Generating build manifest...');
 
-  const books = scanBooks(BOOKS_DIR);
+  const { books, metas: bookMetas } = scanBooks(BOOKS_DIR);
   const topics = scanTopics(TOPICS_DIR);
   const content = {};
 
@@ -149,6 +208,8 @@ function generateManifest() {
   }
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(manifest, null, 2));
+  fs.writeFileSync(LIBRARY_TREE_FILE, JSON.stringify(buildBookTree(bookMetas)));
+  fs.writeFileSync(LIBRARY_BOOKS_FILE, JSON.stringify(bookMetas));
 
   console.log(`✅ Manifest generated: ${Object.keys(books).length} books, ${Object.keys(topics).length} topics`);
   console.log(`📝 Output: ${OUTPUT_FILE}`);

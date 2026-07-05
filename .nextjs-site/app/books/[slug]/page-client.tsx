@@ -2,20 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import remarkMath from 'remark-math';
-import rehypeRaw from 'rehype-raw';
-import rehypeSanitize from 'rehype-sanitize';
-import rehypeHighlight from 'rehype-highlight';
-import rehypeKatex from 'rehype-katex';
-import 'katex/dist/katex.min.css';
 import TableOfContents from '@/components/TableOfContents';
 import BookLayout from '@/components/BookLayout';
 import { saveToHistory } from '@/lib/reading-state';
 
 interface BookPageClientProps {
-  content: string;
+  children: React.ReactNode;
   bookSlug: string;
   bookTitle: string;
   bookAuthor: string;
@@ -23,9 +15,8 @@ interface BookPageClientProps {
   wereadUrl?: string | null;
 }
 
-export default function BookPageClient({ content, bookSlug, bookTitle, bookAuthor, bookTags, wereadUrl }: BookPageClientProps) {
+export default function BookPageClient({ children, bookSlug, bookTitle, bookAuthor, bookTags, wereadUrl }: BookPageClientProps) {
   const [isTocOpen, setIsTocOpen] = useState(false);
-  const displayContent = content.replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
 
   useEffect(() => {
     saveToHistory({
@@ -42,52 +33,41 @@ export default function BookPageClient({ content, bookSlug, bookTitle, bookAutho
         {/* Main content */}
         <div className="flex-1 min-w-0 max-w-4xl mx-auto lg:mx-0">
           <article className="surface-card px-5 py-7 md:px-9 md:py-10 lg:px-12 lg:py-12">
-          <div className="mb-8 border-b border-stone-200 pb-6">
-            <p className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
-            <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
-            <p className="text-sm md:text-base text-stone-500 mt-3">{bookAuthor}</p>
-            {wereadUrl && (
-              <a
-                href={wereadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex min-h-10 items-center rounded-md bg-stone-950 px-4 text-sm font-bold text-white transition-colors hover:bg-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2"
-              >
-                微信读书看原书 ↗
-              </a>
-            )}
-          </div>
-          <div className="markdown-content">
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm, remarkMath]}
-              rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeKatex, rehypeHighlight]}
-              components={{
-                table: ({ children, ...props }) => (
-                  <div className="markdown-table-wrapper">
-                    <table {...props}>{children}</table>
-                  </div>
-                ),
-              }}
-            >
-              {displayContent}
-            </ReactMarkdown>
-          </div>
-
-          {/* Tag chips */}
-          {bookTags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-stone-100">
-              {bookTags.map(tag => (
-                <Link
-                  key={tag}
-                  href={`/search?q=${encodeURIComponent(tag)}&tab=books`}
-                  prefetch={false}
-                  className="chip-brand hover:bg-brand hover:text-white transition-colors cursor-pointer text-sm"
+            <div className="mb-8 border-b border-stone-200 pb-6">
+              <p className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
+              <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
+              <p className="text-sm md:text-base text-stone-500 mt-3">{bookAuthor}</p>
+              {wereadUrl && (
+                <a
+                  href={wereadUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex min-h-10 items-center rounded-md bg-stone-950 px-4 text-sm font-bold text-white transition-colors hover:bg-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2"
                 >
-                  {tag}
-                </Link>
-              ))}
+                  微信读书看原书 ↗
+                </a>
+              )}
             </div>
-          )}
+
+            <div className="markdown-content">
+              {children}
+            </div>
+
+            {/* Tag chips */}
+            {bookTags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-stone-100">
+                {bookTags.map(tag => (
+                  <Link
+                    key={tag}
+                    href={`/search?q=${encodeURIComponent(tag)}&tab=books`}
+                    prefetch={false}
+                    className="chip-brand hover:bg-brand hover:text-white transition-colors cursor-pointer text-sm"
+                  >
+                    {tag}
+                  </Link>
+                ))}
+              </div>
+            )}
           </article>
         </div>
 

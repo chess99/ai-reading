@@ -7,49 +7,36 @@ import Sidebar from '@/components/Sidebar';
 import BottomNav from '@/components/BottomNav';
 import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
-import { BookTreeNode, BookMeta } from '@/lib/books';
-import { TopicMeta } from '@/lib/topics';
 import { updateNavigationHistory } from '@/lib/navigation-history';
 
 interface LayoutClientProps {
-  bookTree: BookTreeNode[];
-  allBooks: BookMeta[];
-  allTopics: TopicMeta[];
   children: React.ReactNode;
 }
 
-export default function LayoutClient({ bookTree, allBooks, allTopics, children }: LayoutClientProps) {
+export default function LayoutClient({ children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [detailTitle, setDetailTitle] = useState('');
+  const [detailDescription, setDetailDescription] = useState('');
   const isInitialNavigation = useRef(true);
   const mainRef = useRef<HTMLElement | null>(null);
   const scrollPositionsRef = useRef<Record<string, { top: number; left: number }>>({});
   const pathname = usePathname();
-
-  // Derive book title for Header when on a book page
-  const bookSlug = pathname.startsWith('/books/')
-    ? pathname.replace('/books/', '').replace(/\/$/, '')
-    : null;
-  const currentBook = bookSlug ? (allBooks.find(b => b.slug === bookSlug) ?? null) : null;
-  const isBookPage = currentBook !== null;
-  const topicSlug = pathname.startsWith('/topics/')
-    ? pathname.replace('/topics/', '').replace(/\/$/, '')
-    : null;
-  const currentTopic = topicSlug ? (allTopics.find(topic => topic.slug === topicSlug) ?? null) : null;
-  const isTopicPage = currentTopic !== null;
-  const currentDetailTitle = currentBook?.title || currentTopic?.title;
-  const shareConfig = currentBook
+  const isBookPage = pathname.startsWith('/books/');
+  const isTopicPage = pathname.startsWith('/topics/') && pathname !== '/topics';
+  const isDetailPage = isBookPage || isTopicPage;
+  const shareConfig = isBookPage
     ? {
-        title: currentBook.title,
+        title: detailTitle,
         eventAction: 'share_book',
-        eventLabel: currentBook.title,
+        eventLabel: detailTitle,
       }
-    : currentTopic
+    : isTopicPage
       ? {
-          title: `${currentTopic.title}：主题阅读路径`,
-          text: currentTopic.description,
+          title: detailTitle ? `${detailTitle}：主题阅读路径` : undefined,
+          text: detailDescription,
           eventAction: 'share_topic',
-          eventLabel: currentTopic.title,
+          eventLabel: detailTitle,
         }
       : undefined;
 
@@ -79,11 +66,22 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
     isInitialNavigation.current = false;
   }, [pathname]);
 
+  useEffect(() => {
+    if (!isDetailPage) {
+      setDetailTitle('');
+      setDetailDescription('');
+      return;
+    }
+
+    setDetailTitle(mainRef.current?.querySelector('h1')?.textContent?.trim() ?? '');
+    setDetailDescription(document.querySelector<HTMLMetaElement>('meta[name="description"]')?.content ?? '');
+  }, [isDetailPage, pathname, children]);
+
   return (
     <div className="flex flex-col h-screen h-[100dvh] overflow-hidden overscroll-none">
       <Header
-        mode={isBookPage || isTopicPage ? 'book' : 'home'}
-        bookTitle={currentDetailTitle}
+        mode={isDetailPage ? 'book' : 'home'}
+        bookTitle={detailTitle}
         shareConfig={shareConfig}
         onMenuClick={() => setSidebarOpen(open => !open)}
         onSettingsClick={() => setSettingsOpen(true)}
@@ -93,14 +91,12 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
         {/* Sidebar: desktop workspace navigation */}
         <div className={`${sidebarOpen ? 'hidden md:block' : 'hidden'}`}>
           <Sidebar
-            bookTree={bookTree}
-            allBooks={allBooks}
             isOpen={sidebarOpen}
             onClose={() => setSidebarOpen(false)}
           />
         </div>
 
-        {/* Main content — pb-16 on mobile to clear fixed BottomNav */}
+        {/* Main content: pb-16 on mobile to clear fixed BottomNav */}
         <main
           ref={mainRef}
           onScroll={saveCurrentScrollPosition}
@@ -112,11 +108,7 @@ export default function LayoutClient({ bookTree, allBooks, allTopics, children }
 
       <BottomNav />
       <UpdateNotification />
-      <SettingsDialog
-        isOpen={settingsOpen}
-        onClose={() => setSettingsOpen(false)}
-        allBooks={allBooks}
-      />
+      <SettingsDialog isOpen={settingsOpen} onClose={() => setSettingsOpen(false)} />
     </div>
   );
 }

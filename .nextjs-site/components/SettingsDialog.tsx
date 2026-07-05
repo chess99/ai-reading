@@ -5,10 +5,9 @@ import SettingsContent from '@/components/SettingsContent';
 interface SettingsDialogProps {
   isOpen: boolean;
   onClose: () => void;
-  allBooks: { slug: string; title: string; author: string }[];
 }
 
-export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDialogProps) {
+export default function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
   if (!isOpen) return null;
 
   return (
@@ -46,7 +45,7 @@ export default function SettingsDialog({ isOpen, onClose, allBooks }: SettingsDi
 
           {/* Content */}
           <div className="p-6">
-            <SettingsContent allBooks={allBooks} onNavigate={onClose} />
+            <SettingsContent onNavigate={onClose} />
           </div>
         </div>
       </div>

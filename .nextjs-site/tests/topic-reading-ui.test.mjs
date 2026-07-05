@@ -33,6 +33,6 @@ test('topic detail pages expose the shared topic share action', () => {
   assert.match(topicPageSource, /ShareButton/, 'Topic detail page should show a desktop share action near the title.');
   assert.match(topicPageSource, /eventAction:\s*["']share_topic["']/, 'Topic detail page should track topic shares distinctly.');
   assert.match(layoutClientSource, /isTopicPage/, 'Mobile header should recognize topic detail pages.');
-  assert.match(layoutClientSource, /text:\s*currentTopic\.description/, 'Topic header share should include topic description text.');
+  assert.match(layoutClientSource, /detailDescription/, 'Topic header share should include the current page description text.');
   assert.match(headerSource, /shareConfig/, 'Header should use a generic share config rather than book-only sharing.');
 });

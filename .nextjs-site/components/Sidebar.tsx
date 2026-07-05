@@ -1,28 +1,70 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 import BookTree from '@/components/BookTree';
 import { CloseIcon } from '@/components/Icons';
 
 interface SidebarProps {
-  bookTree: BookTreeNode[];
-  allBooks: BookMeta[];
   isOpen: boolean;
   onClose: () => void;
 }
 
 type TabType = 'files' | 'tags';
 
-export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: SidebarProps) {
+export default function Sidebar({ isOpen, onClose }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<TabType>('files');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [bookTree, setBookTree] = useState<BookTreeNode[] | null>(null);
+  const [allBooks, setAllBooks] = useState<BookMeta[] | null>(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const books = allBooks ?? [];
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const syncDesktopState = () => setIsDesktop(mediaQuery.matches);
+    syncDesktopState();
+    mediaQuery.addEventListener('change', syncDesktopState);
+    return () => mediaQuery.removeEventListener('change', syncDesktopState);
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen || !isDesktop || bookTree) return;
+    let cancelled = false;
+
+    fetch('/library-tree.json')
+      .then(response => (response.ok ? response.json() : null))
+      .then((data: BookTreeNode[] | null) => {
+        if (!cancelled && data) setBookTree(data);
+      })
+      .catch(() => {});
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isOpen, bookTree]);
+
+  useEffect(() => {
+    if (activeTab !== 'tags' || allBooks) return;
+    let cancelled = false;
+
+    fetch('/library-books.json')
+      .then(response => (response.ok ? response.json() : null))
+      .then((data: BookMeta[] | null) => {
+        if (!cancelled && data) setAllBooks(data);
+      })
+      .catch(() => {});
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeTab, allBooks]);
 
   // Get all tags with counts
   const tags = useMemo(() => {
     const tagCount = new Map<string, number>();
-    allBooks.forEach(book => {
+    books.forEach(book => {
       book.tags.forEach(tag => {
         tagCount.set(tag, (tagCount.get(tag) || 0) + 1);
       });
@@ -30,13 +72,13 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
     return Array.from(tagCount.entries())
       .map(([tag, count]) => ({ tag, count }))
       .sort((a, b) => b.count - a.count);
-  }, [allBooks]);
+  }, [books]);
 
   // Filter books by tag
   const booksByTag = useMemo(() => {
     if (!selectedTag) return [];
-    return allBooks.filter(book => book.tags.includes(selectedTag));
-  }, [selectedTag, allBooks]);
+    return books.filter(book => book.tags.includes(selectedTag));
+  }, [selectedTag, books]);
 
   return (
     <>
@@ -106,10 +148,14 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
       {/* Content Area */}
       <div className="flex-1 overflow-hidden flex flex-col">
         {activeTab === 'files' && (
-          <BookTree
-            bookTree={bookTree}
-            allBooks={allBooks}
-          />
+          bookTree ? (
+            <BookTree
+              bookTree={bookTree}
+              allBooks={books}
+            />
+          ) : (
+            <div className="p-4 text-sm text-stone-400">正在加载目录...</div>
+          )
         )}
 
         {activeTab === 'tags' && (
@@ -147,7 +193,11 @@ export default function Sidebar({ bookTree, allBooks, isOpen, onClose }: Sidebar
               </>
             ) : (
               <>
-                {tags.length > 0 ? (
+                {!allBooks ? (
+                  <div className="text-sm text-stone-500 text-center py-8">
+                    正在加载标签...
+                  </div>
+                ) : tags.length > 0 ? (
                   <div className="flex flex-wrap gap-2">
                     {tags.map(({ tag, count }) => (
                       <button
