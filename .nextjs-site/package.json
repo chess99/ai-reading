@@ -4,7 +4,7 @@
   "description": "AI 驱动的书籍解读与知识分享平台",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/generate-manifest.js && next dev",
     "build": "node scripts/generate-manifest.js && next build && pagefind --site out",
     "preview": "node scripts/preview.mjs",
     "weread:fetch": "node scripts/fetch-weread-links.mjs",

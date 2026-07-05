@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 import BookTree from '@/components/BookTree';
 import { CloseIcon } from '@/components/Icons';
@@ -14,12 +15,14 @@ interface SidebarProps {
 type TabType = 'files' | 'tags';
 
 export default function Sidebar({ isOpen, onClose }: SidebarProps) {
+  const pathname = usePathname();
   const [activeTab, setActiveTab] = useState<TabType>('files');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [bookTree, setBookTree] = useState<BookTreeNode[] | null>(null);
   const [allBooks, setAllBooks] = useState<BookMeta[] | null>(null);
   const [isDesktop, setIsDesktop] = useState(false);
   const books = allBooks ?? [];
+  const isBookPage = pathname.startsWith('/books/');
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -46,7 +49,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
   }, [isOpen, isDesktop, bookTree]);
 
   useEffect(() => {
-    if (activeTab !== 'tags' || allBooks) return;
+    if ((activeTab !== 'tags' && !isBookPage) || allBooks) return;
     let cancelled = false;
 
     fetch('/library-books.json')
@@ -59,7 +62,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     return () => {
       cancelled = true;
     };
-  }, [activeTab, allBooks]);
+  }, [activeTab, allBooks, isBookPage]);
 
   // Get all tags with counts
   const tags = useMemo(() => {
