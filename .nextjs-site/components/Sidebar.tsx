@@ -43,7 +43,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     return () => {
       cancelled = true;
     };
-  }, [isOpen, bookTree]);
+  }, [isOpen, isDesktop, bookTree]);
 
   useEffect(() => {
     if (activeTab !== 'tags' || allBooks) return;
