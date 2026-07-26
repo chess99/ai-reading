@@ -1,4 +1,4 @@
-# 百度统计集成
+# 网站统计集成
 
 ## 快速配置
 
@@ -9,17 +9,22 @@ export const analyticsConfig = {
   baidu: {
     // 默认仅在生产环境启用，避免开发时污染数据
     enabled: process.env.NODE_ENV === 'production',
-    siteId: '8864588cde35a2181784b07b34f770f9',  // 替换为你的站点 ID
+    siteId: '0714f29d4bd40888b45d7b59e9bf224f',
+  },
+  google: {
+    enabled: process.env.NODE_ENV === 'production',
+    measurementId: 'G-P5ZH4CH8MK',
   },
 };
 ```
 
 **注意**：
 - 开发环境（`npm run dev`）不会加载统计，避免污染数据和控制台警告
-- 生产构建（`npm run build`）会自动启用统计
+- 生产构建（`npm run build`）会自动启用百度统计与 Google Analytics 4
+- 两个统计脚本都在页面加载完成后的空闲时段异步加载，避免影响首屏性能
 - 如需在开发环境测试，可临时改为 `enabled: true`
 
-构建并部署后，约 20-30 分钟可在 [百度统计后台](https://tongji.baidu.com/) 查看数据。
+构建并部署后，可分别在 [百度统计后台](https://tongji.baidu.com/) 与 [Google Analytics](https://analytics.google.com/) 查看数据。
 
 ## 自动追踪的事件
 
@@ -32,7 +37,7 @@ export const analyticsConfig = {
 | 继续阅读 | 阅读 | 继续阅读 | 书籍 slug | 点击首页继续阅读卡片 |
 | 离线模式 | 设置 | 离线模式 | 启用/禁用 | 切换离线模式开关 |
 
-在百度统计后台的「事件跟踪 > 自定义事件」中查看。
+百度统计可在「事件跟踪 > 自定义事件」中查看；GA4 统一记录为 `custom_interaction`，并附带类别、动作、标签和值参数。
 
 ## 自定义事件追踪
 
@@ -70,8 +75,8 @@ ReadingEvents.trackOfflineMode(enabled);
 1. 构建并部署：`npm run build`
 2. 访问网站，打开浏览器开发者工具（F12）
 3. 切换到 Network 标签
-4. 刷新页面，搜索 `hm.baidu.com`
-5. 如果有请求，说明已成功加载 ✅
+4. 刷新页面，搜索 `hm.baidu.com` 与 `googletagmanager.com`
+5. 如果两个请求都出现，说明已成功加载 ✅
 
 ## PWA 兼容性
 
@@ -81,12 +86,7 @@ ReadingEvents.trackOfflineMode(enabled);
 
 ## 扩展其他统计服务
 
-如需添加 Google Analytics、Umami 等：
-
-1. 在 `lib/analytics-config.ts` 中添加配置
-2. 创建对应组件（参考 `components/BaiduAnalytics.tsx`）
-3. 在 `app/layout.tsx` 中引入
-4. 在 `lib/analytics.ts` 中添加追踪函数
+如需添加 Umami 等其他统计服务，可参考 `components/BaiduAnalytics.tsx` 和 `components/GoogleAnalytics.tsx`，并在 `lib/analytics.ts` 中补充事件上报。
 
 ## 常见问题
 
@@ -108,4 +108,4 @@ A: 将 `enabled` 临时改为 `true`，或使用 `npm run build && npm run previ
 
 **Q: 如何完全禁用统计？**
 
-A: 将 `lib/analytics-config.ts` 中的 `enabled` 设置为 `false`。
+A: 将 `lib/analytics-config.ts` 中百度和 Google 的 `enabled` 都设置为 `false`。

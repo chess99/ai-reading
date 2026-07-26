@@ -17,22 +17,35 @@ export default function BaiduAnalytics() {
       return;
     }
 
-    // 初始化百度统计数组
-    if (typeof window !== 'undefined') {
-      window._hmt = window._hmt || [];
+    window._hmt = window._hmt || [];
 
-      // 动态注入百度统计脚本
-      const script = document.createElement('script');
-      script.src = `https://hm.baidu.com/hm.js?${config.siteId}`;
-      script.async = true;
-
-      const firstScript = document.getElementsByTagName('script')[0];
-      if (firstScript && firstScript.parentNode) {
-        firstScript.parentNode.insertBefore(script, firstScript);
-      } else {
-        document.head.appendChild(script);
+    const loadScript = () => {
+      const src = `https://hm.baidu.com/hm.js?${config.siteId}`;
+      if (document.querySelector(`script[src="${src}"]`)) {
+        return;
       }
+
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      document.head.appendChild(script);
+    };
+
+    const scheduleLoad = () => {
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(loadScript, { timeout: 4000 });
+      } else {
+        window.setTimeout(loadScript, 1500);
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      scheduleLoad();
+    } else {
+      window.addEventListener('load', scheduleLoad, { once: true });
     }
+
+    return () => window.removeEventListener('load', scheduleLoad);
   }, [config]);
 
   return null;

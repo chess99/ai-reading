@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LayoutClient from './layout-client';
 import BaiduAnalytics from '@/components/BaiduAnalytics';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME, SITE_DESCRIPTION, SITE_TITLE } from '@/lib/brand';
 
@@ -91,6 +92,7 @@ export default function RootLayout({
       </head>
       <body>
         <BaiduAnalytics />
+        <GoogleAnalytics />
         <LayoutClient>{children}</LayoutClient>
       </body>
     </html>

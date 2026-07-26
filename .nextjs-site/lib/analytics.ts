@@ -1,14 +1,15 @@
 /**
- * 百度统计工具函数
- * 提供自定义事件追踪能力
+ * 网站统计工具函数
+ * 同时向百度统计与 Google Analytics 4 上报页面访问和自定义事件
  */
 
-import { getBaiduConfig } from './analytics-config';
+import { getBaiduConfig, getGoogleConfig } from './analytics-config';
 
 // 百度统计全局对象类型定义
 declare global {
   interface Window {
     _hmt?: any[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -17,12 +18,19 @@ declare global {
  * @param path 页面路径
  */
 export function trackPageView(path: string) {
-  const config = getBaiduConfig();
-  if (!config?.enabled || typeof window === 'undefined' || !window._hmt) {
+  if (typeof window === 'undefined') {
     return;
   }
 
-  window._hmt.push(['_trackPageview', path]);
+  const baiduConfig = getBaiduConfig();
+  if (baiduConfig?.enabled && window._hmt) {
+    window._hmt.push(['_trackPageview', path]);
+  }
+
+  const googleConfig = getGoogleConfig();
+  if (googleConfig?.enabled && window.gtag) {
+    window.gtag('event', 'page_view', { page_path: path });
+  }
 }
 
 /**
@@ -38,12 +46,24 @@ export function trackEvent(
   label?: string,
   value?: number
 ) {
-  const config = getBaiduConfig();
-  if (!config?.enabled || typeof window === 'undefined' || !window._hmt) {
+  if (typeof window === 'undefined') {
     return;
   }
 
-  window._hmt.push(['_trackEvent', category, action, label, value]);
+  const baiduConfig = getBaiduConfig();
+  if (baiduConfig?.enabled && window._hmt) {
+    window._hmt.push(['_trackEvent', category, action, label, value]);
+  }
+
+  const googleConfig = getGoogleConfig();
+  if (googleConfig?.enabled && window.gtag) {
+    window.gtag('event', 'custom_interaction', {
+      event_category: category,
+      event_action: action,
+      event_label: label,
+      value,
+    });
+  }
 }
 
 /**
