@@ -25,17 +25,17 @@ test('home prioritizes return tasks and recent content without duplicating disco
   assert.doesNotMatch(homeSource, /按分类浏览全部书籍/, 'The home page should not duplicate the library entry.');
 });
 
-test('home intro explains the three concrete reading use cases', () => {
-  assert.match(introSource, /先看清一本书，再决定怎样读/);
-  assert.match(introSource, /选书/);
-  assert.match(introSource, /复盘/);
-  assert.match(introSource, /主题学习/);
+test('home intro aligns its reading-path promise and primary action', () => {
+  assert.match(introSource, /从一本书出发，/);
+  assert.match(introSource, /读清一个问题/);
+  assert.match(introSource, /单本解读帮助你选书和复盘/);
+  assert.match(introSource, /主题阅读围绕一个问题串联多本书/);
+  assert.match(introSource, /浏览主题阅读/);
   assert.match(introSource, /href="\/topics"/);
   assert.match(introSource, /href="\/library"/);
   assert.match(introSource, /data-home-module="topics"/);
   assert.match(introSource, /data-home-module="library"/);
-  assert.match(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*background:\s*var\(--color-surface\)/s);
-  assert.doesNotMatch(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*linear-gradient/s);
+  assert.match(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*linear-gradient/s);
   assert.doesNotMatch(globalStylesSource, /body::before/);
 });
 

@@ -92,19 +92,27 @@ body {
 
 .brand-soft-panel {
   position: relative;
-  background: var(--color-surface);
-  border-color: rgba(154, 107, 47, 0.2);
+  isolation: isolate;
+  border-color: rgba(154, 107, 47, 0.22);
+  background:
+    radial-gradient(540px 260px at 100% 0%, rgba(154, 107, 47, 0.1), transparent 67%),
+    linear-gradient(135deg, rgba(154, 107, 47, 0.11), rgba(255, 253, 248, 0.92) 54%, rgba(255, 253, 248, 0.82));
 }
 
-.brand-soft-panel::before {
+.brand-soft-panel::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 24px;
-  width: 72px;
-  height: 3px;
-  border-radius: 0 0 999px 999px;
-  background: var(--color-brand);
+  right: -62px;
+  bottom: -110px;
+  z-index: 0;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(154, 107, 47, 0.09);
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 38px rgba(154, 107, 47, 0.025),
+    0 0 0 76px rgba(154, 107, 47, 0.018);
+  pointer-events: none;
 }
 
 .btn-outline-brand {
