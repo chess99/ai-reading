@@ -46,19 +46,6 @@ body {
   background-size: 32px 32px, 32px 32px, auto, auto, auto;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 60;
-  opacity: 0.23;
-  background-image:
-    radial-gradient(rgba(79, 58, 35, 0.18) 1px, transparent 1px);
-  background-size: 18px 18px;
-  mix-blend-mode: multiply;
-}
-
 .page-container {
   @apply mx-auto w-full px-4 py-6 md:px-8 md:py-10;
 }
@@ -104,8 +91,20 @@ body::before {
 }
 
 .brand-soft-panel {
-  background: #fbf7ef;
+  position: relative;
+  background: var(--color-surface);
   border-color: rgba(154, 107, 47, 0.2);
+}
+
+.brand-soft-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 72px;
+  height: 3px;
+  border-radius: 0 0 999px 999px;
+  background: var(--color-brand);
 }
 
 .btn-outline-brand {

@@ -25,6 +25,7 @@ export interface AnalyticsEventParameters {
 
 export type HomeModule =
   | 'continue'
+  | 'intro'
   | 'search'
   | 'latest'
   | 'topics'

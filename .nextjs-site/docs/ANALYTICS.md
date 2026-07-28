@@ -41,7 +41,7 @@ export const analyticsConfig = {
 
 首页事件在 GA4 中使用独立事件名 `home_module_impression` 和 `home_module_click`，并携带以下参数：
 
-- `module`：`continue`、`search`、`latest`、`topics`、`library` 或 `random`
+- `module`：`continue`、`intro`、`search`、`latest`、`topics`、`library` 或 `random`
 - `position`：卡片在当前模块中的位置（从 1 开始）
 - `item_slug`：被点击的书籍、主题或聚合入口标识
 - `has_reading_history`：当前浏览器是否存在阅读记录

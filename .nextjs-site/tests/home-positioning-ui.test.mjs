@@ -11,20 +11,18 @@ const verificationSource = readFileSync(
   'utf8',
 ).trim();
 
-test('home prioritizes return tasks and recent content before secondary discovery', () => {
+test('home prioritizes return tasks and recent content without duplicating discovery sections', () => {
   const continueIndex = homeSource.indexOf('<ContinueReading />');
   const introIndex = homeSource.indexOf('<HomeIntro />');
   const searchIndex = homeSource.indexOf('<SearchBar');
-  const topicIndex = homeSource.indexOf('<TopicReading');
   const newBooksIndex = homeSource.indexOf('<NewBooks');
-  const libraryIndex = homeSource.indexOf('module="library"');
 
   assert.notEqual(introIndex, -1, 'Home page should include the positioning intro.');
   assert.ok(continueIndex < introIndex, 'Continue reading should remain the first returning-reader task.');
   assert.ok(introIndex < searchIndex, 'The compact reader promise should introduce search for new readers.');
   assert.ok(searchIndex < newBooksIndex, 'Search should appear before discovery modules.');
-  assert.ok(newBooksIndex < topicIndex, 'Recent additions should appear before the featured topic.');
-  assert.ok(topicIndex < libraryIndex, 'The compact library entry should close the home discovery flow.');
+  assert.doesNotMatch(homeSource, /<TopicReading/, 'Topic cards should live on the dedicated topics page.');
+  assert.doesNotMatch(homeSource, /按分类浏览全部书籍/, 'The home page should not duplicate the library entry.');
 });
 
 test('home intro explains the three concrete reading use cases', () => {
@@ -32,9 +30,13 @@ test('home intro explains the three concrete reading use cases', () => {
   assert.match(introSource, /选书/);
   assert.match(introSource, /复盘/);
   assert.match(introSource, /主题学习/);
-  assert.doesNotMatch(introSource, /href=/, 'The positioning panel should not duplicate navigation actions.');
-  assert.match(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*background:\s*#fbf7ef/s);
+  assert.match(introSource, /href="\/topics"/);
+  assert.match(introSource, /href="\/library"/);
+  assert.match(introSource, /data-home-module="topics"/);
+  assert.match(introSource, /data-home-module="library"/);
+  assert.match(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*background:\s*var\(--color-surface\)/s);
   assert.doesNotMatch(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*linear-gradient/s);
+  assert.doesNotMatch(globalStylesSource, /body::before/);
 });
 
 test('public positioning describes reader value before the production method', () => {

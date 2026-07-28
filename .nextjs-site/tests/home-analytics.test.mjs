@@ -25,9 +25,10 @@ test('home tracker records one delayed viewport impression and delegated clicks'
 });
 
 test('home wraps every decision module in analytics boundaries', () => {
-  for (const module of ['continue', 'search', 'latest', 'topics', 'library']) {
+  for (const module of ['continue', 'intro', 'search', 'latest']) {
     assert.match(homeSource, new RegExp(`module="${module}"`));
   }
+  assert.match(homeSource, /<HomeIntro \/>/);
 });
 
 test('random navigation records the selected book directly', () => {
