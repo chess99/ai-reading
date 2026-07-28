@@ -13,7 +13,7 @@ export default function HomeIntro() {
         </p>
         <h1
           id="home-intro-title"
-          className="text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-5xl"
+          className="text-[28px] font-bold leading-[1.3] tracking-[-0.02em] text-stone-950 md:text-[44px] md:leading-[1.2]"
         >
           从一本书出发，<br className="sm:hidden" />读清一个问题
         </h1>

@@ -31,6 +31,8 @@ test('home intro aligns its reading-path promise and primary action', () => {
   assert.match(introSource, /单本解读帮助你选书和复盘/);
   assert.match(introSource, /主题阅读围绕一个问题串联多本书/);
   assert.match(introSource, /浏览主题阅读/);
+  assert.match(introSource, /text-\[28px\] font-bold/);
+  assert.doesNotMatch(introSource, /<h1[^>]*[\s\S]*?font-black[\s\S]*?<\/h1>/);
   assert.match(introSource, /href="\/topics"/);
   assert.match(introSource, /href="\/library"/);
   assert.match(introSource, /data-home-module="topics"/);
