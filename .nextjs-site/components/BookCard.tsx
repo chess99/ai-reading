@@ -4,17 +4,20 @@ import { BookMeta } from '@/lib/books';
 interface BookCardProps {
   book: BookMeta;
   showNew?: boolean;
+  analyticsPosition?: number;
 }
 
 const NEW_THRESHOLD_MS = 7 * 24 * 60 * 60 * 1000; // 7 天
 
-export default function BookCard({ book, showNew = false }: BookCardProps) {
+export default function BookCard({ book, showNew = false, analyticsPosition }: BookCardProps) {
   const isNew = showNew && Date.now() - book.addedAt < NEW_THRESHOLD_MS;
 
   return (
     <Link
       href={`/books/${book.slug}`}
       prefetch={false}
+      data-home-item-slug={analyticsPosition ? book.slug : undefined}
+      data-home-position={analyticsPosition}
       className="group flex-shrink-0 w-40 md:w-48 surface-card surface-card-hover p-4 flex flex-col gap-2.5 relative min-h-[168px]"
     >
       {isNew && (

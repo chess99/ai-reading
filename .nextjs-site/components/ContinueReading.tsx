@@ -49,6 +49,8 @@ export default function ContinueReading() {
         <Link
           href={`/books/${current.bookSlug}`}
           prefetch={false}
+          data-home-item-slug={current.bookSlug}
+          data-home-position="1"
           className="flex items-center gap-4 p-5 md:p-6 group transition-colors duration-150 hover:bg-[#f8f3ea]"
           onClick={handleMainClick}
         >
@@ -111,9 +113,11 @@ export default function ContinueReading() {
               }}
             >
               <div className="px-4 md:px-5 pb-3 pt-1.5 flex flex-col gap-1">
-                {rest.map(item => (
+                {rest.map((item, index) => (
                   <button
                     key={item.bookSlug}
+                    data-home-item-slug={item.bookSlug}
+                    data-home-position={index + 2}
                     className="flex items-center gap-3 px-3 py-2 rounded-md text-left hover:bg-[#f8f3ea] hover:translate-x-0.5 transition-all group/item w-full"
                     onClick={() => handleHistoryClick(item)}
                   >

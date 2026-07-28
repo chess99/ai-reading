@@ -4,9 +4,10 @@ import { TopicMeta } from '@/lib/topics';
 interface TopicCardProps {
   topic: TopicMeta;
   compact?: boolean;
+  analyticsPosition?: number;
 }
 
-export default function TopicCard({ topic, compact = false }: TopicCardProps) {
+export default function TopicCard({ topic, compact = false, analyticsPosition }: TopicCardProps) {
   const primaryLabel = topic.domain || 'TOPIC';
   const visibleTags = [topic.group, ...topic.tags].filter((tag): tag is string => Boolean(tag)).slice(0, 3);
 
@@ -14,6 +15,8 @@ export default function TopicCard({ topic, compact = false }: TopicCardProps) {
     <Link
       href={`/topics/${topic.slug}`}
       prefetch={false}
+      data-home-item-slug={analyticsPosition ? topic.slug : undefined}
+      data-home-position={analyticsPosition}
       className={`group surface-card surface-card-hover block ${compact ? 'p-5 min-w-[280px] md:min-w-[340px]' : 'p-5 md:p-6'}`}
     >
       <div className="mb-4 flex items-center justify-between gap-3">

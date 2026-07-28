@@ -18,9 +18,9 @@ export default function NewBooks({ books }: NewBooksProps) {
       <div className="flex overflow-x-auto pb-2 -mx-4 md:mx-0 scrollbar-none">
         <div className="flex-shrink-0 w-4 md:hidden" />
         <div className="flex gap-3">
-          {books.map(book => (
+          {books.map((book, index) => (
             <div key={book.slug}>
-              <BookCard book={book} showNew />
+              <BookCard book={book} showNew analyticsPosition={index + 1} />
             </div>
           ))}
         </div>

@@ -21,12 +21,13 @@ export default function TopicReading({ topics }: TopicReadingProps) {
       <div className="flex overflow-x-auto pb-2 -mx-4 md:mx-0 scrollbar-none">
         <div className="flex-shrink-0 w-4 md:hidden" />
         <div className="flex gap-3">
-          {topics.map(topic => (
-            <TopicCard key={topic.slug} topic={topic} compact />
+          {topics.map((topic, index) => (
+            <TopicCard key={topic.slug} topic={topic} compact analyticsPosition={index + 1} />
           ))}
           <Link
             href="/topics"
             prefetch={false}
+            data-home-item-slug="all-topics"
             className="group flex min-w-[144px] md:min-w-[160px] flex-col justify-center rounded-lg border border-dashed border-brand/30 bg-[#fffdf8]/70 px-4 py-5 transition-all duration-200 hover:border-brand/55 hover:bg-brand/10"
             aria-label="查看全部主题阅读"
           >

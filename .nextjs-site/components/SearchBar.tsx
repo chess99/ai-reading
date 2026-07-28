@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { BookMeta } from "@/lib/books";
 import { SearchIcon, ShuffleIcon } from "@/components/Icons";
+import { trackHomeModuleClick, useHomeModuleImpression } from "@/components/HomeModuleAnalytics";
 
 interface SearchBarProps {
   books: BookMeta[];
@@ -10,9 +11,17 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ books, onRandomBook }: SearchBarProps) {
+  const randomButtonRef = useHomeModuleImpression<HTMLButtonElement>('random');
+
   const handleRandomBook = () => {
+    if (onRandomBook) {
+      trackHomeModuleClick('random');
+      onRandomBook();
+      return;
+    }
     if (books.length === 0) return;
     const randomBook = books[Math.floor(Math.random() * books.length)];
+    trackHomeModuleClick('random', { itemSlug: randomBook.slug });
     window.location.href = `/books/${randomBook.slug}`;
   };
 
@@ -33,7 +42,10 @@ export default function SearchBar({ books, onRandomBook }: SearchBarProps) {
       </Link>
 
       <button
-        onClick={onRandomBook || handleRandomBook}
+        ref={randomButtonRef}
+        onClick={handleRandomBook}
+        data-home-analytics-direct="true"
+        data-home-module="random"
         className="btn-outline-brand flex w-full items-center justify-center gap-3 md:w-auto"
         title="随机一本书"
       >

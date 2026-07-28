@@ -13,6 +13,30 @@ declare global {
   }
 }
 
+export type AnalyticsEventParameter = string | number | boolean | undefined;
+
+export interface AnalyticsEventParameters {
+  event_category?: string;
+  event_action?: string;
+  event_label?: string;
+  value?: number;
+  [key: string]: AnalyticsEventParameter;
+}
+
+export type HomeModule =
+  | 'continue'
+  | 'search'
+  | 'latest'
+  | 'topics'
+  | 'categories'
+  | 'random';
+
+export interface HomeModuleEventContext {
+  position?: number;
+  itemSlug?: string;
+  hasReadingHistory: boolean;
+}
+
 /**
  * 追踪页面访问（百度统计会自动追踪，这里提供手动触发能力）
  * @param path 页面路径
@@ -34,6 +58,37 @@ export function trackPageView(path: string) {
 }
 
 /**
+ * 以独立事件名和结构化参数追踪行为。
+ * GA4 保留完整参数；百度统计映射为类别、动作、标签和值。
+ */
+export function trackAnalyticsEvent(
+  eventName: string,
+  parameters: AnalyticsEventParameters = {}
+) {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  const cleanedParameters = Object.fromEntries(
+    Object.entries(parameters).filter(([, value]) => value !== undefined)
+  );
+  const category = parameters.event_category || '交互';
+  const action = parameters.event_action || eventName;
+  const label = parameters.event_label;
+  const value = parameters.value;
+
+  const baiduConfig = getBaiduConfig();
+  if (baiduConfig?.enabled && window._hmt) {
+    window._hmt.push(['_trackEvent', category, action, label, value]);
+  }
+
+  const googleConfig = getGoogleConfig();
+  if (googleConfig?.enabled && window.gtag) {
+    window.gtag('event', eventName, cleanedParameters);
+  }
+}
+
+/**
  * 追踪自定义事件
  * @param category 事件类别
  * @param action 事件动作
@@ -46,25 +101,47 @@ export function trackEvent(
   label?: string,
   value?: number
 ) {
-  if (typeof window === 'undefined') {
-    return;
-  }
-
-  const baiduConfig = getBaiduConfig();
-  if (baiduConfig?.enabled && window._hmt) {
-    window._hmt.push(['_trackEvent', category, action, label, value]);
-  }
-
-  const googleConfig = getGoogleConfig();
-  if (googleConfig?.enabled && window.gtag) {
-    window.gtag('event', 'custom_interaction', {
-      event_category: category,
-      event_action: action,
-      event_label: label,
-      value,
-    });
-  }
+  trackAnalyticsEvent('custom_interaction', {
+    event_category: category,
+    event_action: action,
+    event_label: label,
+    value,
+  });
 }
+
+function trackHomeModuleEvent(
+  eventName: 'home_module_impression' | 'home_module_click',
+  action: '模块曝光' | '模块点击',
+  module: HomeModule,
+  context: HomeModuleEventContext
+) {
+  const label = [
+    module,
+    context.position ? `position:${context.position}` : '',
+    context.itemSlug ? `item:${context.itemSlug}` : '',
+    `history:${context.hasReadingHistory ? 'yes' : 'no'}`,
+  ].filter(Boolean).join('|');
+
+  trackAnalyticsEvent(eventName, {
+    event_category: '首页',
+    event_action: action,
+    event_label: label,
+    module,
+    position: context.position,
+    item_slug: context.itemSlug,
+    has_reading_history: context.hasReadingHistory,
+  });
+}
+
+export const HomeAnalyticsEvents = {
+  trackModuleImpression(module: HomeModule, context: HomeModuleEventContext) {
+    trackHomeModuleEvent('home_module_impression', '模块曝光', module, context);
+  },
+
+  trackModuleClick(module: HomeModule, context: HomeModuleEventContext) {
+    trackHomeModuleEvent('home_module_click', '模块点击', module, context);
+  },
+};
 
 /**
  * 阅读相关的事件追踪
