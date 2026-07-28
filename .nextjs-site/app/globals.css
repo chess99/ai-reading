@@ -104,7 +104,8 @@ body::before {
 }
 
 .brand-soft-panel {
-  background: linear-gradient(135deg, rgba(154, 107, 47, 0.12), rgba(255, 253, 248, 0.85));
+  background: #fbf7ef;
+  border-color: rgba(154, 107, 47, 0.2);
 }
 
 .btn-outline-brand {

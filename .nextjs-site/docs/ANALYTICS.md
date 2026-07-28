@@ -36,12 +36,12 @@ export const analyticsConfig = {
 | 搜索 | 搜索 | 执行搜索 | 关键词 | 搜索有结果时 |
 | 继续阅读 | 阅读 | 继续阅读 | 书籍 slug | 点击首页继续阅读卡片 |
 | 离线模式 | 设置 | 离线模式 | 启用/禁用 | 切换离线模式开关 |
-| 首页模块曝光 | 首页 | 模块曝光 | 模块与上下文 | 模块进入有效视口并停留 600ms |
+| 首页模块曝光 | 首页 | 模块曝光 | 模块至少 25% 进入有效视口并停留 600ms |
 | 首页模块点击 | 首页 | 模块点击 | 模块与上下文 | 点击首页模块、卡片或入口 |
 
 首页事件在 GA4 中使用独立事件名 `home_module_impression` 和 `home_module_click`，并携带以下参数：
 
-- `module`：`continue`、`search`、`latest`、`topics`、`categories` 或 `random`
+- `module`：`continue`、`search`、`latest`、`topics`、`library` 或 `random`
 - `position`：卡片在当前模块中的位置（从 1 开始）
 - `item_slug`：被点击的书籍、主题或聚合入口标识
 - `has_reading_history`：当前浏览器是否存在阅读记录

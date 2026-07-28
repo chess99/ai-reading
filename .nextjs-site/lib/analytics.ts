@@ -28,7 +28,7 @@ export type HomeModule =
   | 'search'
   | 'latest'
   | 'topics'
-  | 'categories'
+  | 'library'
   | 'random';
 
 export interface HomeModuleEventContext {

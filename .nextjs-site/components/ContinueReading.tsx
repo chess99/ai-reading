@@ -42,7 +42,7 @@ export default function ContinueReading() {
   }
 
   return (
-    <div className="mb-10 md:mb-14">
+    <div className="mb-6 md:mb-8">
       <div className="surface-card overflow-hidden">
 
         {/* 主行 */}
@@ -51,11 +51,11 @@ export default function ContinueReading() {
           prefetch={false}
           data-home-item-slug={current.bookSlug}
           data-home-position="1"
-          className="flex items-center gap-4 p-5 md:p-6 group transition-colors duration-150 hover:bg-[#f8f3ea]"
+          className="flex items-center gap-3.5 p-4 md:p-5 group transition-colors duration-150 hover:bg-[#f8f3ea]"
           onClick={handleMainClick}
         >
           {/* Icon */}
-          <div className="flex-shrink-0 w-12 h-12 icon-tile">
+          <div className="flex-shrink-0 w-11 h-11 icon-tile">
             <BookIcon className="w-6 h-6" />
           </div>
 
@@ -65,12 +65,12 @@ export default function ContinueReading() {
             className="flex-1 min-w-0"
             style={{ animation: fadeKey > 0 ? 'fadeIn 120ms ease-out' : undefined }}
           >
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2 mb-1">
               <h3 className="text-sm font-semibold text-stone-500 tracking-wide">继续阅读</h3>
               <span className="text-xs text-stone-300">/</span>
               <span className="text-xs text-stone-400">{getTimeAgo(current.timestamp)}</span>
             </div>
-            <h2 className="text-xl md:text-2xl font-black text-stone-950 mb-1 group-hover:text-brand transition-colors">
+            <h2 className="text-lg md:text-xl font-black text-stone-950 mb-0.5 group-hover:text-brand transition-colors">
               {current.bookTitle}
             </h2>
             <p className="text-sm md:text-base text-stone-600">{current.bookAuthor}</p>
@@ -86,7 +86,7 @@ export default function ContinueReading() {
         {rest.length > 0 && (
           <>
             <button
-              className="w-full flex items-center justify-between px-5 md:px-6 py-2 border-t border-stone-100 text-left hover:bg-stone-50 transition-colors"
+              className="min-h-11 w-full flex items-center justify-between px-5 md:px-6 py-2 border-t border-stone-100 text-left hover:bg-stone-50 transition-colors"
               onClick={() => setIsOpen(v => !v)}
               aria-expanded={isOpen}
             >

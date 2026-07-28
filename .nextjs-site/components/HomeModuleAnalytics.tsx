@@ -42,14 +42,14 @@ export function useHomeModuleImpression<T extends HTMLElement>(module: HomeModul
         const entry = entries[0];
         if (!entry || hasTrackedImpression) return;
 
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.01) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
           window.clearTimeout(impressionTimer);
           impressionTimer = window.setTimeout(trackImpression, 600);
         } else {
           window.clearTimeout(impressionTimer);
         }
       },
-      { threshold: [0.01], rootMargin: '0px 0px -20% 0px' }
+      { threshold: [0.25], rootMargin: '0px 0px -10% 0px' }
     );
 
     observer.observe(element);

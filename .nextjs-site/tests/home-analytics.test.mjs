@@ -18,12 +18,14 @@ test('analytics supports named events with structured home parameters', () => {
 test('home tracker records one delayed viewport impression and delegated clicks', () => {
   assert.match(trackerSource, /IntersectionObserver/);
   assert.match(trackerSource, /setTimeout\(trackImpression, 600\)/);
+  assert.match(trackerSource, /intersectionRatio >= 0\.25/);
+  assert.match(trackerSource, /threshold: \[0\.25\]/);
   assert.match(trackerSource, /onClickCapture/);
   assert.match(trackerSource, /getReadingHistory/);
 });
 
 test('home wraps every decision module in analytics boundaries', () => {
-  for (const module of ['continue', 'search', 'topics', 'latest', 'categories']) {
+  for (const module of ['continue', 'search', 'latest', 'topics', 'library']) {
     assert.match(homeSource, new RegExp(`module="${module}"`));
   }
 });
