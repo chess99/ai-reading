@@ -5,6 +5,7 @@ import CategoryCard from '@/components/CategoryCard';
 import ContinueReading from '@/components/ContinueReading';
 import NewBooks from '@/components/NewBooks';
 import TopicReading from '@/components/TopicReading';
+import HomeIntro from '@/components/HomeIntro';
 
 export default function HomePage() {
   const allBooks = getAllBookMetas();
@@ -18,16 +19,19 @@ export default function HomePage() {
         {/* Continue Reading */}
         <ContinueReading />
 
+        {/* What this library helps readers do */}
+        <HomeIntro />
+
         {/* Search Bar */}
         <div className="mb-8 md:mb-10">
           <SearchBar books={allBooks} />
         </div>
 
-        {/* New Books */}
-        <NewBooks books={latestBooks} />
-
         {/* Topic Reading */}
         <TopicReading topics={latestTopics} />
+
+        {/* New Books */}
+        <NewBooks books={latestBooks} />
 
         {/* Categories */}
         <div>
