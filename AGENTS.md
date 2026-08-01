@@ -70,3 +70,11 @@ date: 'YYYY-MM-DD'
 ## 重复书籍处理
 
 同一本书只保留一份提炼，保留内容质量更好的版本。
+
+## 微信读书链接
+
+- 微信读书链接是外部增强数据，统一维护在 `.nextjs-site/data/weread-links.json`，不写入书籍 Markdown frontmatter。
+- `books/` 中每本书的 `slug` 都必须在链接清单中存在 `found` 或 `not_found` 记录；新增书籍、修改 slug，或实质修正书名/作者时，应在同一迭代完成对应核验和映射更新。
+- 链接匹配由 agent 根据书名和作者核验。脚本搜索结果和匹配分数只作为候选，不得仅凭模糊标题自动认定；排除同名异书、解读书、套装/合集及作者不符的结果。
+- 确实搜索过但没有可靠匹配时记录 `not_found`。网络、页面或工具失败不等于 `not_found`，不得伪造检查结果或 URL。
+- 提交前运行 `.nextjs-site/tests/weread-links.test.mjs`，确保每本书均有状态，且不存在未知 slug、非法链接或重复 URL。

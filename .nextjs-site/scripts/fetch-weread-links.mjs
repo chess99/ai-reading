@@ -13,8 +13,15 @@ const args = new Set(process.argv.slice(2));
 const force = args.has('--force');
 const includeManual = args.has('--include-manual');
 const dryRun = args.has('--dry-run');
+const candidatesOnly = args.has('--candidates');
+const slugArg = process.argv.find(arg => arg.startsWith('--slug='));
+const targetSlug = slugArg ? slugArg.slice('--slug='.length).trim() : '';
 const limitArg = process.argv.find(arg => arg.startsWith('--limit='));
 const limit = limitArg ? Number(limitArg.slice('--limit='.length)) : Infinity;
+
+if (candidatesOnly && !targetSlug) {
+  throw new Error('--candidates requires --slug=<slug>');
+}
 
 const digitMap = new Map([
   ['0', '零'],
@@ -143,14 +150,39 @@ function scoreCandidate(book, candidate) {
 }
 
 function pickBestCandidate(book, candidates) {
-  const scored = candidates
-    .map(candidate => ({ candidate, ...scoreCandidate(book, candidate) }))
-    .sort((a, b) => b.score - a.score);
+  const scored = scoreCandidates(book, candidates);
   const best = scored[0];
   if (!best || best.titleScore < 70 || best.authorScore === 0) {
     return null;
   }
   return best;
+}
+
+function scoreCandidates(book, candidates) {
+  return candidates
+    .map(candidate => ({ candidate, ...scoreCandidate(book, candidate) }))
+    .sort((a, b) => b.score - a.score);
+}
+
+function printCandidates(book, candidates) {
+  console.log(`BOOK ${book.slug}: ${book.title} / ${book.author}`);
+  const scored = scoreCandidates(book, candidates);
+  if (scored.length === 0) {
+    console.log('CANDIDATES []');
+    return;
+  }
+
+  for (const [index, item] of scored.entries()) {
+    console.log(JSON.stringify({
+      rank: index + 1,
+      title: item.candidate.title,
+      author: item.candidate.author,
+      url: `https://weread.qq.com/web/bookDetail/${item.candidate.id}`,
+      score: item.score,
+      titleScore: item.titleScore,
+      authorScore: item.authorScore,
+    }));
+  }
 }
 
 async function fetchCandidates(book) {
@@ -173,19 +205,28 @@ function writeLinks(links) {
   fs.writeFileSync(linksPath, `${JSON.stringify(ordered, null, 2)}\n`);
 }
 
-const books = loadBooks();
+const allBooks = loadBooks();
+const books = targetSlug
+  ? allBooks.filter(book => book.slug === targetSlug)
+  : allBooks;
+
+if (targetSlug && books.length === 0) {
+  throw new Error(`Unknown book slug: ${targetSlug}`);
+}
+
 const links = loadLinks();
 let processed = 0;
 let found = 0;
 let notFound = 0;
 let skipped = 0;
+let errors = 0;
 
 for (const book of books) {
-  if (links[book.slug]?.note?.startsWith('manual-audit') && !includeManual) {
+  if (!candidatesOnly && links[book.slug]?.note?.startsWith('manual-audit') && !includeManual) {
     skipped++;
     continue;
   }
-  if (!force && links[book.slug]) {
+  if (!candidatesOnly && !force && links[book.slug]) {
     skipped++;
     continue;
   }
@@ -196,6 +237,10 @@ for (const book of books) {
   processed++;
   try {
     const candidates = await fetchCandidates(book);
+    if (candidatesOnly) {
+      printCandidates(book, candidates);
+      continue;
+    }
     const best = pickBestCandidate(book, candidates);
     if (best) {
       const { candidate, score } = best;
@@ -217,19 +262,25 @@ for (const book of books) {
       console.log(`MISS  ${book.slug}: ${book.title} / ${book.author}`);
     }
   } catch (error) {
+    errors++;
     console.log(`ERROR ${book.slug}: ${error.message}`);
   }
 
-  if (!dryRun) {
+  if (!dryRun && !candidatesOnly) {
     writeLinks(links);
   }
   await sleep(350);
 }
 
-if (dryRun) {
+if (candidatesOnly) {
+  console.log('Candidate mode: weread-links.json was not written; an agent must verify and record the result.');
+  if (errors > 0) {
+    process.exitCode = 1;
+  }
+} else if (dryRun) {
   console.log('Dry run: weread-links.json was not written.');
 } else {
   writeLinks(links);
 }
 
-console.log(`Done. processed=${processed} found=${found} not_found=${notFound} skipped=${skipped}`);
+console.log(`Done. processed=${processed} found=${found} not_found=${notFound} skipped=${skipped} errors=${errors}`);
