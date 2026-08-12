@@ -261,6 +261,12 @@
     "checkedAt": "2026-07-03",
     "note": "从优秀到卓越 / [美]吉姆·柯林斯 / score 130"
   },
+  "contagious": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/38732fe0725a6913387e6bd",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: verified Chinese edition title and Jonah Berger"
+  },
   "cuo-wu-de-xing-wei": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/0ba32b205e3cbe0ba63a747",
@@ -371,6 +377,12 @@
     "status": "not_found",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
+  },
+  "everybody-writes": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cd832ed0811e64479g01899c",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: exact English title and Ann Handley match"
   },
   "fa-zhi-ji-qi-ben-tu-zi-yuan": {
     "status": "found",
@@ -494,6 +506,11 @@
     "url": "https://weread.qq.com/web/bookDetail/68132520811e3287cg016e70",
     "checkedAt": "2026-07-03",
     "note": "给孩子一生的安全感 / 林紫 / score 130"
+  },
+  "get-together": {
+    "status": "not_found",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: no reliable match after English title, author, and Chinese topic searches"
   },
   "gong-tong-ji-jin-chang-shi": {
     "status": "found",
@@ -936,6 +953,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "made-to-stick": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/02f323405cedc502f95f0ae",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: verified Chinese edition title and both Heath authors"
+  },
   "man-sheng-chan-li": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/bfd32f00811e8257bg012928",
@@ -1041,6 +1064,12 @@
     "url": "https://weread.qq.com/web/bookDetail/01032160813ab83dcg0123cf",
     "checkedAt": "2026-07-03",
     "note": "平台革命：改变世界的商业模式 / 杰奥夫雷G.帕克 马歇尔W.范·埃尔斯泰恩 桑基特·保罗·邱达利 / score 110"
+  },
+  "platforms-and-cultural-production": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/73532f90813ab9e0ag01623c",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: Chinese edition title and all three authors match"
   },
   "qi-dian-lin-jin": {
     "status": "found",
@@ -1408,6 +1437,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "social-media-entertainment": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/52a323a0811e8a9a3g010294",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: exact Chinese title and both authors match"
+  },
   "su-fei-de-shi-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/9ef32b805abab59ef601a6c",
@@ -1437,6 +1472,17 @@
     "url": "https://weread.qq.com/web/bookDetail/ead32b40718caa23eadedc6",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
+  },
+  "the-content-trap": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a4f32850811e64482g0122cc",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: exact English title, subtitle, and Bharat Anand match"
+  },
+  "the-influencer-industry": {
+    "status": "not_found",
+    "checkedAt": "2026-08-13",
+    "note": "manual-audit: no reliable match after English title, author, and Traditional Chinese title searches"
   },
   "tiao-zhe-ti-ta-wu-qu-shang-ban": {
     "status": "found",

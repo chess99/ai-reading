@@ -9,29 +9,39 @@ date: '2026-08-12'
 books:
   - title: Everybody Writes
     author: Ann Handley
+    slug: everybody-writes
+    path: books/人文艺术/写作技艺/Ann Handley-Everybody Writes.md
     role: 内容生产
     reason: 先建立面向数字媒介的写作、修改、语气和编辑流程。
-    status: planned
+    status: in_library
   - title: Made to Stick
     author: Chip Heath,Dan Heath
+    slug: made-to-stick
+    path: books/商业产品/市场增长/Chip Heath,Dan Heath-Made to Stick.md
     role: 信息设计
     reason: 分析一条信息怎样变得清楚、具体、可信，并被人记住和转述。
-    status: planned
+    status: in_library
   - title: Contagious
     author: Jonah Berger
+    slug: contagious
+    path: books/商业产品/市场增长/Jonah Berger-Contagious.md
     role: 社会传播
     reason: 用传播研究校准分享动机，减少对爆款案例和平台口诀的依赖。
-    status: planned
+    status: in_library
   - title: Get Together
     author: Bailey Richardson,Kevin Huynh,Kai Elmer Sotto
+    slug: get-together
+    path: books/商业产品/商业模式/Bailey Richardson,Kevin Huynh,Kai Elmer Sotto-Get Together.md
     role: 社群关系
     reason: 把受众建设推进到归属、参与、成员关系和共同活动。
-    status: planned
+    status: in_library
   - title: The Content Trap
     author: Bharat Anand
+    slug: the-content-trap
+    path: books/商业产品/商业战略/Bharat Anand-The Content Trap.md
     role: 连接战略
     reason: 把注意力从内容数量移向用户、内容、产品和分发之间的连接。
-    status: planned
+    status: in_library
   - title: 一人企业
     author: 保罗·贾维斯
     slug: yi-ren-qi-ye
@@ -41,19 +51,25 @@ books:
     status: in_library
   - title: The Influencer Industry
     author: Emily Hund
+    slug: the-influencer-industry
+    path: books/社会公共/媒介传播/Emily Hund-The Influencer Industry.md
     role: 产业历史
     reason: 追溯网红产业如何形成，以及平台、品牌和真实性话语怎样塑造创作者。
-    status: planned
+    status: in_library
   - title: Social Media Entertainment
     author: Stuart Cunningham,David Craig
+    slug: social-media-entertainment
+    path: books/社会公共/媒介传播/Stuart Cunningham,David Craig-Social Media Entertainment.md
     role: 创作者生态
     reason: 观察多平台创作者、经纪体系、广告市场和文化生产如何协同运转。
-    status: planned
+    status: in_library
   - title: Platforms and Cultural Production
     author: Thomas Poell,David B. Nieborg,Brooke Erin Duffy
+    slug: platforms-and-cultural-production
+    path: books/科技媒介/平台算法/Thomas Poell,David B. Nieborg,Brooke Erin Duffy-Platforms and Cultural Production.md
     role: 平台化批判
     reason: 最后检查可见性、收入、劳动关系和创作自主权如何受平台规则影响。
-    status: planned
+    status: in_library
 ---
 
 # 如何把自媒体做成长期事业
