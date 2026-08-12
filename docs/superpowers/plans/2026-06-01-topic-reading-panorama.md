@@ -21,7 +21,7 @@ V9.2 answers the user's review request directly:
 3. **Each domain has enough depth for a full-site roadmap.** Every domain includes at least one entry path, one framework path, and one system/critique path. This prevents the library from becoming either a light self-help shelf or an inaccessible classics list.
 4. **The 8 published topics are inputs, not constraints.** Six are kept and deepened, one is renamed, and the product topic keeps its slug while being retitled and rebuilt as the consolidated 0-to-1 path. Existing topic files may be removed later, but only in an explicit migration batch after replacement pages and required books are ready.
 
-The final V9.2 panorama uses **12 domains and 73 topic candidates**. This is a full-site roadmap, not a publication batch. Future batches should select **4-8 topics** at a time. V9.2 keeps system-level book paths intact where depth is justified, while tightening publication sequencing and high-risk boundary rules.
+The current panorama uses **12 domains and 74 topic candidates**. This is a full-site roadmap, not a publication batch. Future batches should select **4-8 topics** at a time. V9.2 keeps system-level book paths intact where depth is justified, while tightening publication sequencing and high-risk boundary rules. The creator-business path was added after a dedicated August 2026 research pass; it fills the gap between writing craft, growth marketing, and platform critique.
 
 ## Key V9.2 Decisions
 
@@ -82,7 +82,7 @@ V9.2 length audit:
 | 6 | 15 | Narrow practical or boundary-sensitive topics. |
 | 7 | 26 | Normal single-problem paths. |
 | 8 | 25 | Standard system paths with adjacent-domain coverage. |
-| 9 | 3 | Deeper interdisciplinary paths. |
+| 9 | 4 | Deeper interdisciplinary paths. |
 | 10 | 4 | Full system paths: major decision-making, evidence judgment, deep work, and product 0-to-1. |
 
 ## Domain Depth Standard
@@ -111,7 +111,7 @@ V9.2 length audit:
 | 心理、情绪与修复 | 7 | 2 / 3 / 2 | Keep with boundary. Avoid presenting reading as treatment. |
 | 关系、沟通与家庭教育 | 6 | 2 / 3 / 1 | Strong after removing manipulative dating from the core path. |
 | 职业、管理与组织 | 6 | 1 / 3 / 2 | Strong. Covers individual career capital and organizational reality. |
-| 商业、产品与创业 | 7 | 1 / 4 / 2 | Strongest ladder. Publish carefully: ship the consolidated 0-to-1 page before independent opportunity-validation or discovery pages. |
+| 商业、产品与创业 | 8 | 1 / 5 / 2 | Strongest ladder. The creator-business path connects content practice, audience relationships, independent operation, and platform critique without absorbing the adjacent writing or growth topics. |
 | 金钱、投资与经济 | 7 | 1 / 3 / 3 | Strong with investment boundary notes. |
 | 社会、法律与公共生活 | 7 | 2 / 3 / 2 | Strong after history and technology are split away. |
 | 历史、文明与世界格局 | 5 | 2 / 2 / 1 | Compact but coherent. Do not add more until books are ready. |
@@ -249,7 +249,7 @@ Publication note: first migration should keep the broad `亲密关系阅读路�
 
 ### 6. 商业、产品与创业
 
-**二级组：产品机会 / 产品发现 / 产品组织 / 增长营销 / 战略经营 / 平台网络**
+**二级组：产品机会 / 产品发现 / 产品组织 / 增长营销 / 内容与创作者 / 战略经营 / 平台网络**
 
 | Layer | Topic | Reading Path | Gradient |
 |---|---|---|---|
@@ -258,6 +258,7 @@ Publication note: first migration should keep the broad `亲密关系阅读路�
 | 框架 | 产品从 0 到 1 | 《从零到一》 -> 《精益创业》 -> 《四步创业法》 -> 《客户开发入门》 -> 《妈妈测试》 -> 《启示录》 -> 《用户故事地图》 -> 《产品开发流程原理》 -> 《创业维艰》 -> 《增长黑客》 | 先判断独特命题，再用验证学习和客户开发确认需求，随后进入产品发现、需求组织、交付系统、创业管理和增长实验。 |
 | 框架 | 如何建立产品组织与交付系统 | 《启示录》 -> 《产品开发流程原理》 -> 《用户故事地图》 -> 《精益思维》 -> 《赋能》 -> 《重新定义团队》 -> 《领导梯队》 -> 《无畏的组织》 | 从产品组织进入开发流动、需求地图、精益交付、授权、团队结构、领导梯队和心理安全。 |
 | 框架 | 如何做增长与营销 | 《定位》 -> 《影响力》 -> 《引爆点》 -> 《跨越鸿沟》 -> 《增长黑客》 -> 《营销管理》 -> 《病毒式循环》 -> 《超级符号就是超级创意》 | 从定位、说服和传播扩散入门，再进入早期市场跨越、实验增长、营销体系、病毒循环和符号资产。 |
+| 框架 | 如何把自媒体做成长期事业 | 《Everybody Writes》 -> 《Made to Stick》 -> 《Contagious》 -> 《Get Together》 -> 《The Content Trap》 -> 《一人企业》 -> 《The Influencer Industry》 -> 《Social Media Entertainment》 -> 《Platforms and Cultural Production》 | 先建立内容生产、信息设计和传播判断，再经营社群、连接与个体业务，最后理解创作者产业、生态和平台化约束。 |
 | 系统 | 如何设计商业模式与理解公司经营 | 《商业模式新生代》 -> 《客户开发入门》 -> 《精益创业》 -> 《财务智慧》 -> 《定价制胜》 -> 《创业维艰》 -> 《竞争战略》 -> 《从优秀到卓越》 -> 《原则》 | 从商业模式画布进入客户验证、财务语言、定价、创业经营、竞争、组织卓越和经营原则。 |
 | 系统 | 如何理解商业竞争、战略与平台效应 | 《竞争战略》 -> 《好战略，坏战略》 -> 《创新者的窘境》 -> 《定位》 -> 《规模》 -> 《平台革命》 -> 《从零到一》 -> 《监视资本主义时代》 | 从行业结构和战略质量入门，再看创新冲击、心智定位、规模规律、平台结构、垄断和平台资本主义风险。 |
 
@@ -436,7 +437,7 @@ Only stage and commit files created or modified by that implementation batch. Pr
 
 ## Self-Review Checklist
 
-- The plan records 73 topic candidates across 12 domains.
+- The plan records 74 topic candidates across 12 domains.
 - The plan includes a domain coverage audit, not only a topic list.
 - The plan includes a book-count audit showing that 5-6-book lists are intentionally compact rather than a default template.
 - The 8 published topics are included in the same evaluation system and are not treated as immutable.

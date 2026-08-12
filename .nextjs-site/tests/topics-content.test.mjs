@@ -53,6 +53,7 @@ const slugByTitle = new Map([
   ['如何做增长与营销', 'zeng-zhang-ying-xiao'],
   ['如何设计商业模式与理解公司经营', 'shang-ye-mo-shi-jing-ying'],
   ['如何理解商业竞争、战略与平台效应', 'jing-zheng-zhan-lve-ping-tai'],
+  ['如何把自媒体做成长期事业', 'zi-mei-ti-chang-qi-shi-ye'],
   ['建立财务常识', 'cai-wu-chang-shi'],
   ['普通人如何长期投资', 'chang-qi-tou-zi'],
   ['如何理解价值投资', 'jia-zhi-tou-zi'],
@@ -160,7 +161,7 @@ test('topic markdown files follow the panorama production model', () => {
   assert.equal(existsSync(topicsDir), true, 'topics/ directory should exist');
 
   const expectedTopics = loadExpectedTopics();
-  assert.equal(expectedTopics.length, 73, 'panorama should define 73 topic candidates');
+  assert.equal(expectedTopics.length, 74, 'panorama should define 74 topic candidates');
 
   const expectedBySlug = new Map(expectedTopics.map(topic => [topic.slug, topic]));
   const booksBySlug = loadBooksBySlug();
