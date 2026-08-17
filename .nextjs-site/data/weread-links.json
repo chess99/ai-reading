@@ -948,6 +948,12 @@
     "checkedAt": "2026-07-03",
     "note": "论语 / 孔子及其弟子 / score 130"
   },
+  "lun-zi-you": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/90432eb0813ab8148g0133a8",
+    "checkedAt": "2026-08-17",
+    "note": "人工核验：书名《论自由》，作者[英]约翰·穆勒，与目标原著一致"
+  },
   "ma-ma-ce-shi": {
     "status": "not_found",
     "checkedAt": "2026-07-03",
