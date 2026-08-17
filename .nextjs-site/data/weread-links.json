@@ -285,6 +285,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from broader title and author search"
   },
+  "dang-dai-qian-yan-she-hui-li-lun-shi-jiang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/48d32dd0811e81fe9g013333",
+    "checkedAt": "2026-08-18",
+    "note": "人工核验：《当代前沿社会理论十讲》 / 郑作彧编著，书名精确匹配，作者字段包含郑作彧"
+  },
   "dang-hu-xi-hua-wei-kong-qi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c7932e10813ab92fcg014bc9",
