@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { HomeIcon, LibraryIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
+import { HomeIcon, LibraryIcon, MessageIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
 
 const tabs = [
   {
@@ -21,13 +21,22 @@ const tabs = [
     icon: LibraryIcon,
   },
   {
+    action: 'feedback',
+    label: '交流',
+    icon: MessageIcon,
+  },
+  {
     href: '/settings',
     label: '设置',
     icon: SettingsIcon,
   },
 ] as const;
 
-export default function BottomNav() {
+interface BottomNavProps {
+  onFeedbackClick: () => void;
+}
+
+export default function BottomNav({ onFeedbackClick }: BottomNavProps) {
   const pathname = usePathname();
 
   const isActive = (href: string) => {
@@ -37,10 +46,28 @@ export default function BottomNav() {
 
   return (
     <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#fffdf8]/92 backdrop-blur-xl border-t border-stone-200/90 shadow-[0_-18px_40px_-30px_rgba(79,58,35,0.8)]">
-      <div className="grid grid-cols-4 px-2 pb-[env(safe-area-inset-bottom)]">
+      <div className="grid grid-cols-5 px-1 pb-[env(safe-area-inset-bottom)]">
         {tabs.map(tab => {
-          const active = isActive(tab.href);
           const Icon = tab.icon;
+
+          if ('action' in tab) {
+            return (
+              <button
+                key={tab.action}
+                type="button"
+                onClick={onFeedbackClick}
+                className="flex min-h-[58px] flex-col items-center justify-center gap-1 rounded-lg py-2 text-stone-400 transition-all hover:bg-stone-100 active:scale-95 active:bg-stone-100"
+                aria-label="反馈与交流"
+              >
+                <span className="grid h-7 w-8 place-items-center rounded-md">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <span className="text-[11px] font-semibold leading-none text-stone-500">{tab.label}</span>
+              </button>
+            );
+          }
+
+          const active = isActive(tab.href);
           return (
             <Link
               key={tab.href}

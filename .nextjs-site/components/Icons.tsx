@@ -45,6 +45,15 @@ export function SettingsIcon({ className = 'w-5 h-5' }: IconProps) {
   );
 }
 
+export function MessageIcon({ className = 'w-5 h-5' }: IconProps) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M5 5.5h14a2 2 0 0 1 2 2v8.2a2 2 0 0 1-2 2H9l-5 3v-13.2a2 2 0 0 1 2-2Z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 9.5h8M8 13.5h5" />
+    </svg>
+  );
+}
+
 export function ShareIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

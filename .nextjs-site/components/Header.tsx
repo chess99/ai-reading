@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { getStoredPreviousPath } from '@/lib/navigation-history';
-import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
+import { HomeIcon, LibraryIcon, MenuIcon, MessageIcon, SearchIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
 import ShareButton, { ShareConfig } from '@/components/ShareButton';
 import { BRAND_NAME } from '@/lib/brand';
 
@@ -12,10 +12,11 @@ interface HeaderProps {
   bookTitle?: string;
   shareConfig?: ShareConfig;
   onMenuClick?: () => void;
+  onFeedbackClick?: () => void;
   onSettingsClick?: () => void;
 }
 
-export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuClick, onSettingsClick }: HeaderProps) {
+export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuClick, onFeedbackClick, onSettingsClick }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
   const desktopNav = [
@@ -122,6 +123,16 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
             {mode === 'book' && shareConfig && (
               <ShareButton shareConfig={shareConfig} className="md:hidden p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95" />
             )}
+
+            <button
+              onClick={onFeedbackClick}
+              className="hidden md:flex items-center gap-2 rounded-lg px-2.5 py-2 text-sm font-semibold text-stone-600 transition-colors hover:bg-brand/10 hover:text-brand active:scale-95"
+              aria-label="反馈与交流"
+              title="反馈与交流"
+            >
+              <MessageIcon className="h-5 w-5" />
+              <span className="hidden lg:inline">反馈与交流</span>
+            </button>
 
             {/* Settings: desktop always + mobile home mode */}
             <button
