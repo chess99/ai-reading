@@ -1,16 +1,16 @@
 ---
-slug: the-content-trap
-title: The Content Trap
+slug: nei-rong-xian-jing
+title: 内容陷阱
 author: Bharat Anand
 tags: [商业战略, 数字化]
 date: '2026-08-13'
 ---
 
-# The Content Trap
+# 内容陷阱
 
 ## 问题与范围
 
-《The Content Trap》（副标题 A Strategist's Guide to Digital Change）探讨的是数字技术对内容产业（音乐、报纸、图书、电视、电影、广告、教育）的冲击，以及企业如何应对。作者 Bharat Anand 是哈佛商学院教授，曾参与创建哈佛商学院的在线教育项目 HBX。全书的核心诊断是：绝大多数企业在面对数字变革时陷入了一种他称为"内容陷阱"的思维定式——过度关注内容本身（产品质量、版权保护、降价压力），而忽视了更本质的东西：**连接**（connections）。
+《内容陷阱》（The Content Trap，本站暂译；副标题 A Strategist's Guide to Digital Change）探讨的是数字技术对内容产业（音乐、报纸、图书、电视、电影、广告、教育）的冲击，以及企业如何应对。作者 Bharat Anand 是哈佛商学院教授，曾参与创建哈佛商学院的在线教育项目 HBX。全书的核心诊断是：绝大多数企业在面对数字变革时陷入了一种他称为"内容陷阱"的思维定式——过度关注内容本身（产品质量、版权保护、降价压力），而忽视了更本质的东西：**连接**（connections）。
 
 作者不预测下一项技术；他分析已经发生的变化，寻找企业可以据此行动的战略机制。
 

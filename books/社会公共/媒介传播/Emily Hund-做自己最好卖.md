@@ -1,14 +1,14 @@
 ---
-slug: the-influencer-industry
-title: The Influencer Industry
+slug: zuo-zi-ji-zui-hao-mai
+title: 做自己，最好卖？
 author: Emily Hund
 tags: [创作者经济, 网红产业]
 date: '2026-08-13'
 ---
 
-# The Influencer Industry
+# 做自己，最好卖？
 
-Emily Hund 的《The Influencer Industry: The Quest for Authenticity on Social Media》（2023）追踪了美国网红产业从 2000 年代末到 2020 年代初的形成史。她把"真实性"视为产业各方共同建构、不断重新定义并出售的商品，而非创作者自然流露的稳定品质。全书追问网红产业如何运作、谁有权定义真实，以及这套逻辑如何进入政治传播和日常生活。
+Emily Hund 的《做自己，最好卖？网红产业如何贩售真实性》（The Influencer Industry: The Quest for Authenticity on Social Media，2023）追踪了美国网红产业从 2000 年代末到 2020 年代初的形成史。她把"真实性"视为产业各方共同建构、不断重新定义并出售的商品，而非创作者自然流露的稳定品质。全书追问网红产业如何运作、谁有权定义真实，以及这套逻辑如何进入政治传播和日常生活。
 
 Hund 是宾夕法尼亚大学安纳伯格传播学院的研究员。她在 2014 年启动研究，并在 2015—2021 年访谈了 43 位产业从业者，包括网红、营销机构创始人、品牌主管、经纪人和趋势预测师；她也参加行业活动、分析数千篇新闻报道，持续观察 Instagram 上的内容演变。全书按时间顺序追踪"影响力"和"真实性"产业化的过程。
 

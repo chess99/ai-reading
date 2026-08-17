@@ -1,14 +1,14 @@
 ---
-slug: get-together
-title: Get Together
+slug: gong-jian-she-qu
+title: 共建社群
 author: "Bailey Richardson,Kevin Huynh,Kai Elmer Sotto"
 tags: [社群, 社区营造]
 date: '2026-08-13'
 ---
 
-# Get Together
+# 共建社群
 
-《Get Together》由 People & Company 团队的三位作者撰写，他们曾参与 Instagram、CreativeMornings、eBay 等平台的社群早期建设，后来以顾问身份帮助 Nike、Edcamp 等组织启动和规模化社群。全书处理的问题是：如何培育一个由真实的人组成的社群，并让它持续运转。作者把范围限定在操盘者每一步可以采取的行动，不展开讨论社群需求的社会根源或政治作用。
+《共建社群》（Get Together: How to Build a Community with Your People，本站暂译）由 People & Company 团队的三位作者撰写，他们曾参与 Instagram、CreativeMornings、eBay 等平台的社群早期建设，后来以顾问身份帮助 Nike、Edcamp 等组织启动和规模化社群。全书处理的问题是：如何培育一个由真实的人组成的社群，并让它持续运转。作者把范围限定在操盘者每一步可以采取的行动，不展开讨论社群需求的社会根源或政治作用。
 
 全书以"和 people 一起建设"（build with people）为主线，按三个递进阶段组织：**点燃火焰**（Spark the flame）、**添柴加火**（Stoke the fire）、**传递火炬**（Pass the torch）。每个阶段对应一组具体行动，成员始终参与建设过程。
 

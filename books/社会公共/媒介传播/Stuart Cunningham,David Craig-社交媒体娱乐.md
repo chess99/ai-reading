@@ -1,16 +1,16 @@
 ---
-slug: social-media-entertainment
-title: Social Media Entertainment
+slug: she-jiao-mei-ti-yu-le
+title: 社交媒体娱乐
 author: "Stuart Cunningham,David Craig"
 tags: [创作者经济, 媒介产业]
 date: '2026-08-13'
 ---
 
-# Social Media Entertainment
+# 社交媒体娱乐
 
 ## 问题与范围
 
-《Social Media Entertainment: The New Intersection of Hollywood and Silicon Valley》（2019, NYU Press）研究的是2010年代兴起的一个"原初产业"（proto-industry）：专业化的前业余内容创作者，利用 YouTube、Facebook、Instagram、Snapchat、Twitch 等兼具视频播放与社交网络功能的平台，发展出可持续的媒体生意。作者 Stuart Cunningham 和 David Craig 基于超过150场行业访谈，从平台策略、创作者劳动、中介机构、真实性话语、文化政治和全球化六个维度解剖了这个产业。
+《社交媒体娱乐》（Social Media Entertainment: The New Intersection of Hollywood and Silicon Valley，2019，NYU Press）研究的是2010年代兴起的一个"原初产业"（proto-industry）：专业化的前业余内容创作者，利用 YouTube、Facebook、Instagram、Snapchat、Twitch 等兼具视频播放与社交网络功能的平台，发展出可持续的媒体生意。作者 Stuart Cunningham 和 David Craig 基于超过150场行业访谈，从平台策略、创作者劳动、中介机构、真实性话语、文化政治和全球化六个维度解剖了这个产业。
 
 作者把 SME 视为与好莱坞并行的新屏幕生态，它在文化逻辑和商业模式上都有自己的组织方式。硅谷（NoCal）与好莱坞（SoCal）两种工业文化既冲突又相互依赖，这组关系贯穿全书分析。
 

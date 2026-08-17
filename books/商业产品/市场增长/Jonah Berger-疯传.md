@@ -1,14 +1,14 @@
 ---
-slug: contagious
-title: Contagious
+slug: feng-chuan
+title: 疯传
 author: Jonah Berger
 tags: [传播, 口碑营销]
 date: '2026-08-13'
 ---
 
-# Contagious
+# 疯传
 
-Jonah Berger 是沃顿商学院市场营销学教授。他在本书中回答的问题是：为什么某些产品、理念和行为会比另一些更容易流行，以及能否通过工程手段让任何内容变得更"可传播"。全书的核心是六条原则——STEPPS 框架，分别对应 Social Currency（社交货币）、Triggers（触发器）、Emotion（情绪）、Public（公共可见性）、Practical Value（实用价值）、Stories（故事）。这六条原则解释了口碑传播的心理与社交机制，并提供了可操作的设计方法。
+Jonah Berger 是沃顿商学院市场营销学教授。《疯传》（Contagious）回答的问题是：为什么某些产品、理念和行为会比另一些更容易流行，以及能否通过工程手段让任何内容变得更"可传播"。全书的核心是六条原则——STEPPS 框架，分别对应 Social Currency（社交货币）、Triggers（触发器）、Emotion（情绪）、Public（公共可见性）、Practical Value（实用价值）、Stories（故事）。这六条原则解释了口碑传播的心理与社交机制，并提供了可操作的设计方法。
 
 ## 口碑传播的基本事实
 

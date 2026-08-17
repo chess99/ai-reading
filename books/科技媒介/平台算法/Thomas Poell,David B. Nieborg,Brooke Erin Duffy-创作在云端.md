@@ -1,16 +1,16 @@
 ---
-slug: platforms-and-cultural-production
-title: Platforms and Cultural Production
+slug: chuang-zuo-zai-yun-duan
+title: 创作在云端：平台与文化生产
 author: "Thomas Poell,David B. Nieborg,Brooke Erin Duffy"
 tags: [平台化, 文化生产]
 date: '2026-08-13'
 ---
 
-# Platforms and Cultural Production
+# 创作在云端：平台与文化生产
 
 ## 全书框架
 
-Thomas Poell、David B. Nieborg 和 Brooke Erin Duffy 在 2022 年出版的《Platforms and Cultural Production》中，试图回答一个核心问题：当文化生产者（从个体内容创作者到新闻机构、唱片公司、游戏发行商）将操作流程嵌入数字平台时，创作、分发、营销和变现这四个环节如何被重新配置。全书分为两大部分。前半部分从**制度层面**分析平台化如何改变文化产业的**市场、基础设施和治理**；后半部分从**实践层面**考察平台化如何重塑**劳动、创意和民主**这三大文化实践。作者主张，制度变革与实践变迁相互缠绕，不可分割。
+Thomas Poell、David B. Nieborg 和 Brooke Erin Duffy 在 2022 年出版的《创作在云端：平台与文化生产》（Platforms and Cultural Production）中，试图回答一个核心问题：当文化生产者（从个体内容创作者到新闻机构、唱片公司、游戏发行商）将操作流程嵌入数字平台时，创作、分发、营销和变现这四个环节如何被重新配置。全书分为两大部分。前半部分从**制度层面**分析平台化如何改变文化产业的**市场、基础设施和治理**；后半部分从**实践层面**考察平台化如何重塑**劳动、创意和民主**这三大文化实践。作者主张，制度变革与实践变迁相互缠绕，不可分割。
 
 研究对象聚焦于 Google、Apple、Facebook、Amazon、ByteDance（字节跳动）、Spotify 和 Tencent（腾讯）等商业平台企业，以及它们控制的具体平台实例，如 YouTube、App Store、Twitch、Instagram、TikTok/Douyin、WeChat 等。三个贯穿全书的行业是社交媒体娱乐、数字游戏和新闻。作者用收入模式和开放边界划分平台公司与媒体公司：Netflix、纽约时报、迪士尼虽然数字化程度高，却主要生产和授权自有内容，也没有向第三方开放基础设施与经济通道，因此不属于本书所定义的平台。
 

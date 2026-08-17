@@ -7,38 +7,38 @@ domain: 商业
 group: 内容与创作者
 date: '2026-08-12'
 books:
-  - title: Everybody Writes
+  - title: 众媒时代，我们该如何做内容
     author: Ann Handley
-    slug: everybody-writes
-    path: books/人文艺术/写作技艺/Ann Handley-Everybody Writes.md
+    slug: zhong-mei-shi-dai
+    path: books/人文艺术/写作技艺/Ann Handley-众媒时代，我们该如何做内容.md
     role: 内容生产
     reason: 先建立面向数字媒介的写作、修改、语气和编辑流程。
     status: in_library
-  - title: Made to Stick
+  - title: 让创意更有黏性
     author: Chip Heath,Dan Heath
-    slug: made-to-stick
-    path: books/商业产品/市场增长/Chip Heath,Dan Heath-Made to Stick.md
+    slug: rang-chuang-yi-geng-you-nian-xing
+    path: books/商业产品/市场增长/Chip Heath,Dan Heath-让创意更有黏性.md
     role: 信息设计
     reason: 分析一条信息怎样变得清楚、具体、可信，并被人记住和转述。
     status: in_library
-  - title: Contagious
+  - title: 疯传
     author: Jonah Berger
-    slug: contagious
-    path: books/商业产品/市场增长/Jonah Berger-Contagious.md
+    slug: feng-chuan
+    path: books/商业产品/市场增长/Jonah Berger-疯传.md
     role: 社会传播
     reason: 用传播研究校准分享动机，减少对爆款案例和平台口诀的依赖。
     status: in_library
-  - title: Get Together
+  - title: 共建社群
     author: Bailey Richardson,Kevin Huynh,Kai Elmer Sotto
-    slug: get-together
-    path: books/商业产品/商业模式/Bailey Richardson,Kevin Huynh,Kai Elmer Sotto-Get Together.md
+    slug: gong-jian-she-qu
+    path: books/商业产品/商业模式/Bailey Richardson,Kevin Huynh,Kai Elmer Sotto-共建社群.md
     role: 社群关系
     reason: 把受众建设推进到归属、参与、成员关系和共同活动。
     status: in_library
-  - title: The Content Trap
+  - title: 内容陷阱
     author: Bharat Anand
-    slug: the-content-trap
-    path: books/商业产品/商业战略/Bharat Anand-The Content Trap.md
+    slug: nei-rong-xian-jing
+    path: books/商业产品/商业战略/Bharat Anand-内容陷阱.md
     role: 连接战略
     reason: 把注意力从内容数量移向用户、内容、产品和分发之间的连接。
     status: in_library
@@ -49,24 +49,24 @@ books:
     role: 个体经营
     reason: 用规模边界、直接受众、产品化和利润意识保护创作者的长期生活。
     status: in_library
-  - title: The Influencer Industry
+  - title: 做自己，最好卖？
     author: Emily Hund
-    slug: the-influencer-industry
-    path: books/社会公共/媒介传播/Emily Hund-The Influencer Industry.md
+    slug: zuo-zi-ji-zui-hao-mai
+    path: books/社会公共/媒介传播/Emily Hund-做自己最好卖.md
     role: 产业历史
     reason: 追溯网红产业如何形成，以及平台、品牌和真实性话语怎样塑造创作者。
     status: in_library
-  - title: Social Media Entertainment
+  - title: 社交媒体娱乐
     author: Stuart Cunningham,David Craig
-    slug: social-media-entertainment
-    path: books/社会公共/媒介传播/Stuart Cunningham,David Craig-Social Media Entertainment.md
+    slug: she-jiao-mei-ti-yu-le
+    path: books/社会公共/媒介传播/Stuart Cunningham,David Craig-社交媒体娱乐.md
     role: 创作者生态
     reason: 观察多平台创作者、经纪体系、广告市场和文化生产如何协同运转。
     status: in_library
-  - title: Platforms and Cultural Production
+  - title: 创作在云端：平台与文化生产
     author: Thomas Poell,David B. Nieborg,Brooke Erin Duffy
-    slug: platforms-and-cultural-production
-    path: books/科技媒介/平台算法/Thomas Poell,David B. Nieborg,Brooke Erin Duffy-Platforms and Cultural Production.md
+    slug: chuang-zuo-zai-yun-duan
+    path: books/科技媒介/平台算法/Thomas Poell,David B. Nieborg,Brooke Erin Duffy-创作在云端.md
     role: 平台化批判
     reason: 最后检查可见性、收入、劳动关系和创作自主权如何受平台规则影响。
     status: in_library
@@ -80,17 +80,17 @@ books:
 
 ## 入口：先让内容经得起编辑
 
-《Everybody Writes》处理每天都会碰到的生产问题：如何确定读者、组织材料、写出初稿、修改、形成稳定语气。它适合放在开头，因为持续发布很快会暴露写作流程的缺陷。靠临场灵感更新，常见结果是选题越来越散，修改越来越仓促，创作者也越来越怕打开空白文档。
+《众媒时代，我们该如何做内容》处理每天都会碰到的生产问题：如何确定读者、组织材料、写出初稿、修改、形成稳定语气。它适合放在开头，因为持续发布很快会暴露写作流程的缺陷。靠临场灵感更新，常见结果是选题越来越散，修改越来越仓促，创作者也越来越怕打开空白文档。
 
-《Made to Stick》把视线移到信息本身。一条内容需要清楚的核心、具体细节和可信依据，也需要给读者留下可复述的结构。这里训练的是信息设计，标题和开场只占其中一小部分。读者可以拿自己的旧内容做检查：看完之后，别人能否用一句准确的话讲给第三个人听？
+《让创意更有黏性》把视线移到信息本身。一条内容需要清楚的核心、具体细节和可信依据，也需要给读者留下可复述的结构。这里训练的是信息设计，标题和开场只占其中一小部分。读者可以拿自己的旧内容做检查：看完之后，别人能否用一句准确的话讲给第三个人听？
 
-《Contagious》继续追问人为什么愿意分享。身份表达、情绪唤起、实用价值、公共可见性和故事载体，会让内容进入社会传播。把这些机制当作分析问题的工具即可，别把六个原则压成爆款公式。传播结果还受受众关系、分发环境、时机和运气影响。
+《疯传》继续追问人为什么愿意分享。身份表达、情绪唤起、实用价值、公共可见性和故事载体，会让内容进入社会传播。把这些机制当作分析问题的工具即可，别把六个原则压成爆款公式。传播结果还受受众关系、分发环境、时机和运气影响。
 
 ## 受众：关注之后还要发生什么
 
-播放、点赞和关注都很显眼，却很难单独说明关系质量。《Get Together》要求创作者观察成员在做什么：新人怎样进入，老成员怎样参与，谁在组织共同活动，群体靠什么仪式和规则延续。一个愿意回应、贡献和互相认识的小社群，往往比庞大而沉默的关注数字更能支持长期创作。
+播放、点赞和关注都很显眼，却很难单独说明关系质量。《共建社群》要求创作者观察成员在做什么：新人怎样进入，老成员怎样参与，谁在组织共同活动，群体靠什么仪式和规则延续。一个愿意回应、贡献和互相认识的小社群，往往比庞大而沉默的关注数字更能支持长期创作。
 
-《The Content Trap》把内容放进连接网络。读者怎样发现你，内容怎样把读者带向其他内容或产品，成员之间能否产生价值，平台分发和直接渠道如何配合，这些连接会决定单篇作品之外的积累。它也能纠正一种常见的忙碌：产量不断增加，各篇内容之间却没有路径，读者每次都像第一次路过。
+《内容陷阱》把内容放进连接网络。读者怎样发现你，内容怎样把读者带向其他内容或产品，成员之间能否产生价值，平台分发和直接渠道如何配合，这些连接会决定单篇作品之外的积累。它也能纠正一种常见的忙碌：产量不断增加，各篇内容之间却没有路径，读者每次都像第一次路过。
 
 读到这里，可以画一张自己的关系图。至少标出平台推荐、搜索、订阅、社群、邮件或其他直接渠道，以及产品、服务、合作方和读者之间的流向。图上只有平台入口，说明事业仍然很脆弱；图上只有自有渠道，却没有持续发现入口，也很难获得新读者。
 
@@ -102,11 +102,11 @@ books:
 
 ## 系统：创作者也身处一门产业
 
-《The Influencer Industry》回顾社交媒体影响者怎样从边缘实践变成全球产业。品牌希望获得看似亲密、真实的传播，平台需要源源不断的内容，创作者则要把个人生活、专业能力和受众关系持续转化为可见性。所谓“真实”在这里既是表达选择，也是一种商业要求。
+《做自己，最好卖？》回顾社交媒体影响者怎样从边缘实践变成全球产业。品牌希望获得看似亲密、真实的传播，平台需要源源不断的内容，创作者则要把个人生活、专业能力和受众关系持续转化为可见性。所谓“真实”在这里既是表达选择，也是一种商业要求。
 
-《Social Media Entertainment》把视野扩展到多平台创作者生态。创作者、经纪公司、广告主、平台和传统娱乐业彼此合作，也争夺收入、数据和控制权。读这本书时，可以留意不同角色承担的风险：谁投入制作成本，谁决定分发，谁掌握受众数据，谁能在合作失败后全身而退。
+《社交媒体娱乐》把视野扩展到多平台创作者生态。创作者、经纪公司、广告主、平台和传统娱乐业彼此合作，也争夺收入、数据和控制权。读这本书时，可以留意不同角色承担的风险：谁投入制作成本，谁决定分发，谁掌握受众数据，谁能在合作失败后全身而退。
 
-《Platforms and Cultural Production》负责收束全篇。平台通过推荐、审核、接口、收益分配和数据面板改变文化生产。创作者会逐渐学会平台喜欢的题材、节奏和表达，数据反馈也会参与选题判断。理解这些机制之后，长期经营多了一条基本原则：利用平台获得发现，同时建设能够迁移的内容资产、受众关系和收入能力。
+《创作在云端：平台与文化生产》负责收束全篇。平台通过推荐、审核、接口、收益分配和数据面板改变文化生产。创作者会逐渐学会平台喜欢的题材、节奏和表达，数据反馈也会参与选题判断。理解这些机制之后，长期经营多了一条基本原则：利用平台获得发现，同时建设能够迁移的内容资产、受众关系和收入能力。
 
 ## 延伸选读：遇到具体问题时再补
 
@@ -114,7 +114,7 @@ books:
 
 - 《起号》适合第一次运营中国算法内容平台的读者。定位、搭建、起号、运营和变现五阶段能提供完整地图，其中“未来预期”“第 1、2、3 条作品”和长期创作成本尤其有用。书中的平台判断、收入区间和经验比例要重新核验。
 - 《Show Your Work!》适合迟迟不敢公开过程的创作者。篇幅短，作用是帮助起步，不承担内容方法论。
-- 《Content Inc.》适合已经考虑用内容启动产品或业务的人。阅读时把它和《The Content Trap》《一人企业》对照，检查内容、连接、利润与规模是否匹配。
+- 《Content Inc.》适合已经考虑用内容启动产品或业务的人。阅读时把它和《内容陷阱》《一人企业》对照，检查内容、连接、利润与规模是否匹配。
 - 《The YouTube Formula》服务于明确经营 YouTube 的读者。平台分析方法可以借鉴，具体指标、功能和推荐判断要以当期规则为准。
 - 《(Not) Getting Paid to Do What You Love》讨论热爱劳动、无偿投入、性别差异与成功叙事。它适合在“越努力发布越有机会”的阶段补读，帮助识别谁在吸收创作者承担的风险。
 
@@ -126,6 +126,6 @@ books:
 
 ## 建议读法
 
-第一次阅读可以分三轮。先读《Everybody Writes》《Made to Stick》《Contagious》，选三篇旧内容重写，并记录修改理由；再读《Get Together》《The Content Trap》《一人企业》，画出关系图，补齐成本、收入和平台依赖三张表；最后读三本产业研究，检查自己的日常动作究竟服务了作品、读者、业务，还是只服务了平台指标。
+第一次阅读可以分三轮。先读《众媒时代，我们该如何做内容》《让创意更有黏性》《疯传》，选三篇旧内容重写，并记录修改理由；再读《共建社群》《内容陷阱》《一人企业》，画出关系图，补齐成本、收入和平台依赖三张表；最后读三本产业研究，检查自己的日常动作究竟服务了作品、读者、业务，还是只服务了平台指标。
 
 阅读过程中持续追踪五个问题：读者为什么会在下一次回来？哪些内容能在半年后继续带来价值？我能否直接触达真正关心作品的人？收入增长增加了多少固定负担？如果主要平台明天改变规则，哪些内容、关系和能力还能留下？
