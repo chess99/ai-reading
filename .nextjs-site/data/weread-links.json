@@ -743,6 +743,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "jian-shu-you-jian-lin": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cc832ab0811e8113bg013f99",
+    "checkedAt": "2026-08-18",
+    "note": "见树又见林 / 艾伦·G·约翰逊 艾伦·G.约翰逊 / score 130"
+  },
   "jiao-hun": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/675326e0813ab6ffcg019c10",
