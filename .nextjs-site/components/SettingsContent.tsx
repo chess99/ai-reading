@@ -14,6 +14,24 @@ interface BuildManifest {
   books?: Record<string, unknown>;
 }
 
+const feedbackIssueUrl =
+  'https://github.com/chess99/ai-reading/issues/new?' +
+  new URLSearchParams({
+    title: '反馈：',
+    body: [
+      '## 反馈类型',
+      '<!-- Bug / 体验建议 / 内容问题 / 其他 -->',
+      '',
+      '## 具体描述',
+      '',
+      '## 相关页面',
+      '<!-- 如果方便，请粘贴出现问题的页面链接 -->',
+      '',
+      '## 设备与浏览器',
+      '<!-- 例如：iPhone Safari / Windows Chrome -->',
+    ].join('\n'),
+  }).toString();
+
 export default function SettingsContent({ onNavigate }: SettingsContentProps) {
   const [offlineMode, setOfflineMode] = useState(false);
   const [isPrefetching, setIsPrefetching] = useState(false);
@@ -152,6 +170,33 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
         >
           清除所有缓存
         </button>
+      </div>
+
+      {/* 反馈与补充 */}
+      <div className="surface-card p-4">
+        <h3 className="font-bold text-stone-950 mb-1">反馈与补充</h3>
+        <p className="mb-3 text-sm leading-6 text-stone-600">
+          没有找到想看的书？可以提交书名和作者，请求补充到书库。
+        </p>
+        <Link
+          href="/request-book"
+          prefetch={false}
+          onClick={onNavigate}
+          className="btn-outline-brand inline-flex w-full items-center justify-center bg-stone-900 text-[#fffdf8] hover:bg-stone-800 hover:text-[#fffdf8]"
+        >
+          申请加入书库
+        </Link>
+        <div className="mt-3 border-t border-stone-200/80 pt-3">
+          <a
+            href={feedbackIssueUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between gap-3 rounded-md px-1 py-1 text-sm transition-colors hover:text-brand"
+          >
+            <span className="text-stone-600">遇到 Bug、内容错误或体验问题？</span>
+            <span className="font-bold text-brand whitespace-nowrap">提交反馈 →</span>
+          </a>
+        </div>
       </div>
 
       {/* 站点信息 */}

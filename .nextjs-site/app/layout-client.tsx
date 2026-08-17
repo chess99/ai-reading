@@ -7,7 +7,6 @@ import Sidebar from '@/components/Sidebar';
 import BottomNav from '@/components/BottomNav';
 import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
-import FeedbackDialog from '@/components/FeedbackDialog';
 import { updateNavigationHistory } from '@/lib/navigation-history';
 
 interface LayoutClientProps {
@@ -17,7 +16,6 @@ interface LayoutClientProps {
 export default function LayoutClient({ children }: LayoutClientProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [detailTitle, setDetailTitle] = useState('');
   const [detailDescription, setDetailDescription] = useState('');
   const isInitialNavigation = useRef(true);
@@ -86,7 +84,6 @@ export default function LayoutClient({ children }: LayoutClientProps) {
         bookTitle={detailTitle}
         shareConfig={shareConfig}
         onMenuClick={() => setSidebarOpen(open => !open)}
-        onFeedbackClick={() => setFeedbackOpen(true)}
         onSettingsClick={() => setSettingsOpen(true)}
       />
 
@@ -109,9 +106,8 @@ export default function LayoutClient({ children }: LayoutClientProps) {
         </main>
       </div>
 
-      <BottomNav onFeedbackClick={() => setFeedbackOpen(true)} />
+      <BottomNav />
       <UpdateNotification />
-      <FeedbackDialog isOpen={feedbackOpen} onClose={() => setFeedbackOpen(false)} />
       <SettingsDialog isOpen={settingsOpen} onClose={() => setSettingsOpen(false)} />
     </div>
   );
