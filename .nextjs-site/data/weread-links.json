@@ -960,6 +960,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "liu-qing-xi-fang-xian-dai-si-xiang-jiang-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/88f322b0811e73c77g017c03",
+    "checkedAt": "2026-08-18",
+    "note": "人工核验：《刘擎西方现代思想讲义》 / 刘擎，书名与作者均精确匹配"
+  },
   "lu-xi-fa-xiao-ying": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1c632870811e5a163g016943",
