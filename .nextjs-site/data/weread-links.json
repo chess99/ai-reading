@@ -195,6 +195,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "chokepoints": {
+    "status": "not_found",
+    "checkedAt": "2026-08-19",
+    "note": "manual-audit: no reliable match after English title, Edward Fishman, and Chinese title variant searches"
+  },
   "chong-xin-ding-yi-gong-si": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/82d329d07186fbb182d1e1d",
@@ -248,6 +253,11 @@
     "url": "https://weread.qq.com/web/bookDetail/73532f90813ab9e0ag01623c",
     "checkedAt": "2026-08-17",
     "note": "manual-audit: verified Chinese edition title and all three authors"
+  },
+  "cobalt-red": {
+    "status": "not_found",
+    "checkedAt": "2026-08-19",
+    "note": "manual-audit: no reliable match after English title, Siddharth Kara, and Chinese title variant searches"
   },
   "cong-ling-dao-yi": {
     "status": "found",
@@ -661,6 +671,11 @@
     "url": "https://weread.qq.com/web/bookDetail/32e32c707186fbb332e15c0",
     "checkedAt": "2026-07-03",
     "note": "黑天鹅 / 纳西姆·尼古拉斯·塔勒布 / score 130"
+  },
+  "house-of-huawei": {
+    "status": "not_found",
+    "checkedAt": "2026-08-19",
+    "note": "manual-audit: no reliable match after English title, Eva Dou, and Chinese title variant searches"
   },
   "hua-shan-jiang-tou-sun-zi-bing-fa": {
     "status": "found",
@@ -1088,6 +1103,12 @@
     "url": "https://weread.qq.com/web/bookDetail/70932d00813ab9ad0g011a0c",
     "checkedAt": "2026-07-03",
     "note": "尼各马可伦理学 I.1—III.5（希汉英对照） / [古希腊]亚里士多德 / score 110"
+  },
+  "pao-wai-mai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/180321a0811e8a9cag0120db",
+    "checkedAt": "2026-08-19",
+    "note": "manual-audit: exact title and author match, 跑外卖 / 王晚"
   },
   "pi-pan-xing-si-wei-gong-ju": {
     "status": "found",
@@ -2195,6 +2216,12 @@
     "url": "https://weread.qq.com/web/bookDetail/af132b10717c563aaf1555f",
     "checkedAt": "2026-07-03",
     "note": "周期 / 霍华德·马克斯 / score 130"
+  },
+  "zhu-chu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/3903200071bfd2b63905d93",
+    "checkedAt": "2026-08-19",
+    "note": "manual-audit: verified same book under Chinese edition title 扫地出门：美国城市的贫穷与暴利 / 马修·德斯蒙德"
   },
   "zhu-ding-yi-zhan": {
     "status": "found",
