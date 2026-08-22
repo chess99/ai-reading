@@ -1,23 +1,30 @@
 import fs from 'node:fs';
 
 const candidates = [
+  ['jin-rong-guai-jie-2018', 'https://weread.qq.com/web/bookDetail/a25326b0715a4f2ea255814'],
+  ['jin-rong-guai-jie-2015', 'https://weread.qq.com/web/bookDetail/0fc32b90813ab9a57g018df7'],
+  ['jin-rong-guai-jie-en', 'https://weread.qq.com/web/bookDetail/f86323a0811e1cf05g015351'],
+  ['tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu-en', 'https://weread.qq.com/web/bookDetail/2cf325a0811e1ea9fg0142b5'],
+  ['ji-jing-de-chun-tian-guomai', 'https://weread.qq.com/web/bookDetail/749325905e1935749f8f3dd'],
+  ['ji-jing-de-chun-tian-cn', 'https://weread.qq.com/web/bookDetail/5d732430715b9fdf5d75eb6'],
+  ['she-ji-xin-li-xue-1', 'https://weread.qq.com/web/bookDetail/7d1327605cb9857d18702ad'],
+  ['mang-dian-alt', 'https://weread.qq.com/web/bookDetail/f35329e0811e6b021g019e23'],
   ['ding-wei', 'https://weread.qq.com/web/bookDetail/541324705adc9a5414af73f'],
-  ['ling-shou-de-ben-zhi', 'https://weread.qq.com/web/bookDetail/fb032a50718129a2fb0f9af'],
   ['zao-sheng', 'https://weread.qq.com/web/bookDetail/d33327e0726c18a9d335459'],
-  ['zu-zhi-xing-wei-xue', 'https://weread.qq.com/web/bookDetail/80532d20811e4e83fg0188a7'],
-  ['jing-yi-si-wei', 'https://weread.qq.com/web/bookDetail/2c9327b0811e23d4bg017715'],
-  ['zi-zi-zhu-ji', 'https://weread.qq.com/web/bookDetail/5fe32330811e1a7ccg018e38'],
-  ['duan-she-li', 'https://weread.qq.com/web/bookDetail/f9932900717e7a57f99c027'],
   ['duan-she-li-classic', 'https://weread.qq.com/web/bookDetail/03c32ff0813ab8fcdg01192c'],
   ['jin-ri-jian-shi', 'https://weread.qq.com/web/bookDetail/63432820715e8aee634792d'],
-  ['ying-xiao-guan-li', 'https://weread.qq.com/web/bookDetail/037322b0811e7dc65g017493'],
   ['wei-xi-guan', 'https://weread.qq.com/web/bookDetail/495326205de23a49561a05d'],
-  ['mei-de-li-cheng', 'https://weread.qq.com/web/bookDetail/da732820811e7a920g014586'],
-  ['ni-ge-ma-ke-lun-li-xue', 'https://weread.qq.com/web/bookDetail/4fb32310811e3d51dg010fa3'],
   ['guai-dan-xing-wei-xue', 'https://weread.qq.com/web/bookDetail/6a032ae05e12656a076e414'],
   ['wen-xue-li-lun-ru-men', 'https://weread.qq.com/web/bookDetail/d66326105ceaacd66de76db'],
   ['qiong-cha-li-bao-dian', 'https://weread.qq.com/web/bookDetail/2e0320e05cc92c2e0796c5a'],
-  ['rang-chuang-yi-geng-you-nian-xing', 'https://weread.qq.com/web/bookDetail/65632e90716aecd5656b7e1']
+  ['rang-chuang-yi-geng-you-nian-xing', 'https://weread.qq.com/web/bookDetail/65632e90716aecd5656b7e1'],
+  ['ying-xiao-guan-li-full', 'https://weread.qq.com/web/bookDetail/037322b0811e7dc65g017493'],
+  ['mei-de-li-cheng', 'https://weread.qq.com/web/bookDetail/da732820811e7a920g014586'],
+  ['ni-ge-ma-ke-lun-li-xue', 'https://weread.qq.com/web/bookDetail/4fb32310811e3d51dg010fa3'],
+  ['ling-shou-de-ben-zhi', 'https://weread.qq.com/web/bookDetail/fb032a50718129a2fb0f9af'],
+  ['zu-zhi-xing-wei-xue', 'https://weread.qq.com/web/bookDetail/80532d20811e4e83fg0188a7'],
+  ['jing-yi-si-wei', 'https://weread.qq.com/web/bookDetail/2c9327b0811e23d4bg017715'],
+  ['zi-zi-zhu-ji', 'https://weread.qq.com/web/bookDetail/5fe32330811e1a7ccg018e38']
 ];
 
 const decode = value => String(value || '')
@@ -35,7 +42,7 @@ function detail(html, url) {
   const hasRead = /开始阅读|立即阅读|免费阅读/.test(text);
   const unavailableHint = /已下架|暂无版权|版权到期|暂不支持阅读|无法阅读|暂不可读/.test(text);
   const toc = [...html.matchAll(/<li[^>]*class="[^"]*readerCatalog_list_item[^"]*"[^>]*>[\s\S]*?<[^>]+>([\s\S]*?)<\//gi)]
-    .map(match => decode(match[1])).filter(Boolean).slice(0, 60);
+    .map(match => decode(match[1])).filter(Boolean).slice(0, 80);
   return { url, title, author, publisher, publishTime, charCount, hasShelf, hasRead, unavailableHint, available: hasShelf && hasRead && !unavailableHint, toc };
 }
 
