@@ -20,7 +20,7 @@
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://api.github.com/repos/chess99/ai-reading/issues"
+    "url": "https://github.com/chess99/ai-reading/issues"
   },
   "homepage": "https://github.com/chess99/ai-reading#readme",
   "dependencies": {
