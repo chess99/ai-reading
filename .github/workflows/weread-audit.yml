@@ -28,3 +28,5 @@ jobs:
             weread-audit.json
             weread-audit.md
           if-no-files-found: error
+
+# Temporary audit-only workflow; do not merge into main.
