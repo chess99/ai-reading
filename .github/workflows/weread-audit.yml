@@ -1,12 +1,6 @@
 name: WeRead audit helper
 
 on:
-  push:
-    branches:
-      - audit/weread-2026-08-22
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
