@@ -4,7 +4,8 @@ const groups = {
   'jin-rong-guai-jie': ['金融怪杰', 'Market Wizards', '杰克·施瓦格'],
   'ji-jing-de-chun-tian': ['寂静的春天', 'Rachel Carson', '蕾切尔·卡森'],
   'jin-zi-ta-yuan-li': ['金字塔原理', '芭芭拉·明托'],
-  'tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu': ['通向金融王国的自由之路', '通向财务自由之路', 'Trade Your Way to Financial Freedom', '范·K·撒普', 'Van Tharp']
+  'tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu': ['通向金融王国的自由之路', '通向财务自由之路', 'Trade Your Way to Financial Freedom', '范·K·撒普', 'Van Tharp'],
+  'she-ji-xin-li-xue': ['设计心理学1', '设计心理学 日常的设计', '日常的设计', 'The Design of Everyday Things', 'Don Norman', '唐纳德·诺曼']
 };
 
 const decode = value => String(value || '')
