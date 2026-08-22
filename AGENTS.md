@@ -82,6 +82,7 @@ date: 'YYYY-MM-DD'
 ## 微信读书链接
 
 - 微信读书链接是外部增强数据，统一维护在 `.nextjs-site/data/weread-links.json`，不写入书籍 Markdown frontmatter。
+- `found` URL 统一保存为无查询参数的 canonical 形式 `https://weread.qq.com/web/bookDetail/<book-id>`。从 App 分享得到的 `/book-detail?...&v=<book-id>&senderVid=...` 等链接，应提取 `v` 中的 book id 并去掉 `senderVid`、`wtheme`、`wfrom`、`wvid`、`scene` 等分享/追踪参数后再入库。
 - `books/` 中每本书的 `slug` 都必须在链接清单中存在 `found` 或 `not_found` 记录；新增书籍、修改 slug，或实质修正书名/作者时，应在同一迭代完成对应核验和映射更新。
 - **最终映射必须由 agent 人工核验。** 脚本只能搜索、抓取、排序和展示候选，不能凭匹配分数自动写入 `found`、`not_found` 或替换 URL；分数只是缩小人工检查范围的小工具。
 - 人工核验至少同时检查：书名/原著身份、作者、微信读书详情页当前是否仍可正常加入书架并开始阅读，以及是否存在同一本书的其他合理版本。不能只确认“标题和作者对得上”。
