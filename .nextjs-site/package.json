@@ -20,7 +20,7 @@
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/chess99/ai-reading/issues"
+    "url": "https://api.github.com/repos/chess99/ai-reading/issues"
   },
   "homepage": "https://github.com/chess99/ai-reading#readme",
   "dependencies": {
@@ -34,7 +34,7 @@
     "react-markdown": "^10.1.0",
     "rehype-highlight": "^7.0.2",
     "rehype-katex": "^7.0.1",
-    "rehype-raw": "^7.0.2",
+    "rehype-raw": "^7.0.0",
     "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0"
