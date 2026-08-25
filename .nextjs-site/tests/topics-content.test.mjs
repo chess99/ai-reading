@@ -15,12 +15,19 @@ const mergedTopics = new Map([
   ['shu-zi-gong-gong-sheng-huo', 'mei-ti-gong-gong-tao-lun'],
 ]);
 
+const splitTopics = new Map([
+  ['jiao-yi-zhou-qi-feng-xian', ['jiao-yi-xi-tong-ji-lv', 'shi-chang-zhou-qi-hong-guan-feng-xian']],
+  ['jing-zheng-zhan-lve-ping-tai', ['shang-ye-jing-zheng-zhan-lve', 'ping-tai-wang-luo-xiao-ying']],
+  ['er-tong-an-quan-gan', ['er-tong-an-quan-gan-fa-zhan', 'jia-ting-xue-xi-jiao-yu-huan-jing']],
+]);
+
 const specialtyParents = new Map([
   ['jiao-lv-yi-yu', 'qing-xu'],
   ['chan-pin-fa-xian', 'chan-pin-0-dao-1'],
   ['ping-tai-suan-fa-zhu-yi-li', 'ji-shu-she-hui'],
   ['tong-ku-zi-you-yi-yi', 'ren-sheng-zhe-xue'],
   ['ya-li-hui-fu', 'jian-kang-sheng-huo'],
+  ['jia-ting-xue-xi-jiao-yu-huan-jing', 'zu-gou-hao-de-fu-mu'],
 ]);
 
 const bannedTemplatePhrases = [
@@ -52,7 +59,6 @@ function loadBooksBySlug() {
   for (const filePath of scanMarkdownFiles(booksDir)) {
     const relativePath = toRepoPath(filePath);
     const { data } = matter(readFileSync(filePath, 'utf8'));
-
     if (typeof data.slug === 'string' && data.slug.trim()) {
       booksBySlug.set(data.slug, { ...data, relativePath });
     }
@@ -128,6 +134,13 @@ test('topic markdown files follow the current curation and hierarchy model', () 
   for (const [mergedSlug, targetSlug] of mergedTopics) {
     assert.equal(slugs.has(mergedSlug), false, `${mergedSlug} should no longer ship as an independent topic article`);
     assert.equal(slugs.has(targetSlug), true, `${mergedSlug} merge target should exist: ${targetSlug}`);
+  }
+
+  for (const [retiredSlug, replacements] of splitTopics) {
+    assert.equal(slugs.has(retiredSlug), false, `${retiredSlug} should be retired after the structural split`);
+    for (const replacementSlug of replacements) {
+      assert.equal(slugs.has(replacementSlug), true, `${retiredSlug} split replacement should exist: ${replacementSlug}`);
+    }
   }
 
   for (const [specialtySlug, parentSlug] of specialtyParents) {
