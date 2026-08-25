@@ -15,6 +15,18 @@ test('topic detail recommendations use whole-card book links without redundant a
   assert.match(topicPageSource, /ChevronRightIcon/, 'Clickable recommendation cards should use a chevron affordance.');
 });
 
+test('topic detail pages expose specialty hierarchy and merged-topic migration routes', () => {
+  const topicPageSource = readFileSync(new URL('../app/topics/[slug]/page.tsx', import.meta.url), 'utf8');
+  const topicsLibSource = readFileSync(new URL('../lib/topics.ts', import.meta.url), 'utf8');
+
+  assert.match(topicPageSource, /getTopicChildren/, 'Primary topic pages should surface their specialty children.');
+  assert.match(topicPageSource, /主线：\{parentTopic\.title\}/, 'Specialty pages should link back to the primary reading path.');
+  assert.match(topicPageSource, /TOPIC MERGED/, 'Legacy merged topic routes should render a migration notice.');
+  assert.match(topicPageSource, /robots:\s*\{[\s\S]*?index:\s*false[\s\S]*?follow:\s*true/, 'Merged routes should be noindex/follow.');
+  assert.match(topicsLibSource, /TOPIC_MERGES/, 'Merged legacy slugs should be maintained as explicit route mappings.');
+  assert.match(topicsLibSource, /getAllTopicRouteSlugs/, 'Static export should generate routes for active and merged legacy slugs.');
+});
+
 test('home topic carousel ends with a lightweight all-topics entry', () => {
   const topicReadingSource = readFileSync(new URL('../components/TopicReading.tsx', import.meta.url), 'utf8');
 

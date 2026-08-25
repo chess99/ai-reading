@@ -8,94 +8,31 @@ import matter from 'gray-matter';
 const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
 const topicsDir = path.join(repoRoot, 'topics');
 const booksDir = path.join(repoRoot, 'books');
-const panoramaPath = path.join(repoRoot, 'docs/superpowers/plans/2026-06-01-topic-reading-panorama.md');
 
-function toRepoPath(filePath) {
-  return path.relative(repoRoot, filePath).split(path.sep).join('/');
-}
-const topicLayers = new Set(['入门', '框架', '系统']);
-const slugByTitle = new Map([
-  ['如何做重大决策', 'zhong-da-jue-ce'],
-  ['什么是系统思维与复杂性', 'xi-tong-fu-za-xing'],
-  ['如何建立批判性与证据判断', 'zheng-ju-pan-duan'],
-  ['如何识别偏见、从众与服从', 'pian-jian-cong-zhong-fu-cong'],
-  ['如何理解概率、风险与预测', 'gai-lv-feng-xian-yu-ce'],
-  ['如何建立科学世界观', 'ke-xue-shi-jie-guan'],
-  ['如何建立可持续习惯', 'ke-chi-xu-xi-guan'],
-  ['如何提高深度工作能力', 'shen-du-gong-zuo'],
-  ['如何管理时间、精力与个人系统', 'shi-jian-jing-li-xi-tong'],
-  ['如何长期坚持学习', 'chang-qi-xue-xi'],
-  ['阅读、笔记与输出系统', 'yue-du-bi-ji-shu-chu'],
-  ['写作与创意工作', 'xie-zuo-chuang-yi'],
-  ['如何理解情绪', 'qing-xu'],
-  ['理解焦虑与抑郁', 'jiao-lv-yi-yu'],
-  ['如何停止精神内耗', 'jing-shen-nei-hao'],
-  ['如何建立稳定的自尊', 'wen-ding-zi-zun'],
-  ['如何面对创伤与自我修复', 'chuang-shang-xiu-fu'],
-  ['面对丧失、哀伤与死亡', 'sang-shi-ai-shang-si-wang'],
-  ['成瘾、自控与意义重建', 'cheng-yin-zi-kong'],
-  ['亲密关系阅读路径', 'qin-mi-guan-xi'],
-  ['如何处理亲密关系中的冲突', 'qin-mi-chong-tu'],
-  ['如何识别关系中的安全、边界与退出风险', 'guan-xi-an-quan-bian-jie'],
-  ['如何提升沟通与表达', 'gou-tong-biao-da'],
-  ['如何做足够好的父母', 'zu-gou-hao-de-fu-mu'],
-  ['如何理解儿童安全感与教育成长', 'er-tong-an-quan-gan'],
-  ['职业选择阅读路径', 'zhi-ye-xuan-ze'],
-  ['如何建立长期职业资本', 'zhi-ye-zi-ben'],
-  ['如何成为有效管理者', 'you-xiao-guan-li-zhe'],
-  ['如何建立领导力与团队协作', 'ling-dao-li-tuan-dui'],
-  ['看懂组织运转', 'zu-zhi-yun-zhuan'],
-  ['如何理解组织中的权力与变革', 'quan-li-bian-ge'],
-  ['如何验证产品机会', 'chan-pin-ji-hui'],
-  ['如何做好产品发现', 'chan-pin-fa-xian'],
-  ['产品从 0 到 1', 'chan-pin-0-dao-1'],
-  ['如何建立产品组织与交付系统', 'chan-pin-zu-zhi-jiao-fu'],
-  ['如何做增长与营销', 'zeng-zhang-ying-xiao'],
-  ['如何设计商业模式与理解公司经营', 'shang-ye-mo-shi-jing-ying'],
-  ['如何理解商业竞争、战略与平台效应', 'jing-zheng-zhan-lve-ping-tai'],
-  ['如何把自媒体做成长期事业', 'zi-mei-ti-chang-qi-shi-ye'],
-  ['建立财务常识', 'cai-wu-chang-shi'],
-  ['普通人如何长期投资', 'chang-qi-tou-zi'],
-  ['如何理解价值投资', 'jia-zhi-tou-zi'],
-  ['如何理解交易、周期与市场风险', 'jiao-yi-zhou-qi-feng-xian'],
-  ['如何理解经济运行', 'jing-ji-yun-xing'],
-  ['如何理解行为经济学与金钱心理', 'xing-wei-jing-ji-xue'],
-  ['看懂消费主义、财富与阶层机会', 'xiao-fei-zhu-yi-jie-ceng'],
-  ['社会学如何看共同生活', 'she-hui-xue-gong-tong-sheng-huo'],
-  ['如何理解公平与正义', 'gong-ping-zheng-yi'],
-  ['如何识别制度与权力', 'zhi-du-quan-li'],
-  ['如何建立法律常识', 'fa-lv-chang-shi'],
-  ['如何理解媒体、舆论与公共讨论', 'mei-ti-gong-gong-tao-lun'],
-  ['城市、空间与生活方式', 'cheng-shi-kong-jian'],
-  ['如何理解性别与社会结构', 'xing-bie-she-hui-jie-gou'],
-  ['中国社会的现代转型', 'zhong-guo-xian-dai-zhuan-xing'],
-  ['中国历史入门', 'zhong-guo-li-shi'],
-  ['如何理解世界历史', 'shi-jie-li-shi'],
-  ['如何理解文明兴衰', 'wen-ming-xing-shuai'],
-  ['如何理解国际秩序与地缘风险', 'guo-ji-zhi-xu-di-yuan'],
-  ['技术社会读什么', 'ji-shu-she-hui'],
-  ['普通人如何理解 AI 变革', 'ai-bian-ge'],
-  ['AI 风险、治理与技术权力', 'ai-feng-xian-zhi-li'],
-  ['看懂平台、算法与注意力风险', 'ping-tai-suan-fa-zhu-yi-li'],
-  ['数字公共生活与信息网络', 'shu-zi-gong-gong-sheng-huo'],
-  ['文学与人文阅读入门', 'wen-xue-ren-wen'],
-  ['艺术与审美入门', 'yi-shu-shen-mei'],
-  ['如何理解幸福', 'xing-fu'],
-  ['人生哲学入门', 'ren-sheng-zhe-xue'],
-  ['如何读懂痛苦、自由与意义', 'tong-ku-zi-you-yi-yi'],
-  ['如何建立健康生活方式', 'jian-kang-sheng-huo'],
-  ['如何理解压力、恢复与身体信号', 'ya-li-hui-fu'],
-  ['如何理解运动与体能', 'yun-dong-ti-neng'],
-  ['如何理解饮食与代谢', 'yin-shi-dai-xie'],
-  ['面对衰老、疾病与照护', 'shuai-lao-ji-bing-zhao-hu'],
-  ['如何理解环境、气候与可持续生活', 'huan-jing-qi-hou-ke-chi-xu'],
+const mergedTopics = new Map([
+  ['qin-mi-chong-tu', 'qin-mi-guan-xi'],
+  ['chan-pin-ji-hui', 'chan-pin-0-dao-1'],
+  ['shu-zi-gong-gong-sheng-huo', 'mei-ti-gong-gong-tao-lun'],
 ]);
+
+const specialtyParents = new Map([
+  ['jiao-lv-yi-yu', 'qing-xu'],
+  ['chan-pin-fa-xian', 'chan-pin-0-dao-1'],
+  ['ping-tai-suan-fa-zhu-yi-li', 'ji-shu-she-hui'],
+  ['tong-ku-zi-you-yi-yi', 'ren-sheng-zhe-xue'],
+  ['ya-li-hui-fu', 'jian-kang-sheng-huo'],
+]);
+
 const bannedTemplatePhrases = [
   '难点，通常不在于缺少信息',
   '它让前面的入口判断继续向前推进',
   '从一个模糊感受整理成可以分析',
   '真正有用的阅读路径，需要先让问题变清楚',
 ];
+
+function toRepoPath(filePath) {
+  return path.relative(repoRoot, filePath).split(path.sep).join('/');
+}
 
 function scanMarkdownFiles(dir) {
   const files = [];
@@ -108,10 +45,6 @@ function scanMarkdownFiles(dir) {
     }
   }
   return files;
-}
-
-function extractBookTitles(readingPath) {
-  return [...readingPath.matchAll(/《([^》]+)》/g)].map(match => match[1]);
 }
 
 function loadBooksBySlug() {
@@ -127,48 +60,13 @@ function loadBooksBySlug() {
   return booksBySlug;
 }
 
-function loadExpectedTopics() {
-  const rows = [];
-  const rawPlan = readFileSync(panoramaPath, 'utf8');
-
-  for (const line of rawPlan.split(/\r?\n/)) {
-    if (!line.startsWith('|') || !line.includes(' -> ')) continue;
-
-    const columns = line
-      .replace(/^\|/, '')
-      .replace(/\|$/, '')
-      .split('|')
-      .map(column => column.trim());
-
-    const [layer, title, readingPath, gradient] = columns;
-    if (!topicLayers.has(layer)) continue;
-
-    const slug = slugByTitle.get(title);
-    assert.ok(slug, `topic title should have an approved concise slug: ${title}`);
-    rows.push({
-      layer,
-      title,
-      slug,
-      books: extractBookTitles(readingPath),
-      gradient,
-    });
-  }
-
-  return rows;
-}
-
-test('topic markdown files follow the panorama production model', () => {
+test('topic markdown files follow the current curation and hierarchy model', () => {
   assert.equal(existsSync(topicsDir), true, 'topics/ directory should exist');
 
-  const expectedTopics = loadExpectedTopics();
-  assert.equal(expectedTopics.length, 74, 'panorama should define 74 topic candidates');
-
-  const expectedBySlug = new Map(expectedTopics.map(topic => [topic.slug, topic]));
   const booksBySlug = loadBooksBySlug();
   const topicFiles = scanMarkdownFiles(topicsDir);
-  assert.equal(topicFiles.length, expectedBySlug.size, 'topics/ should ship every panorama topic article');
-
   const slugs = new Set();
+  const topicDataBySlug = new Map();
 
   for (const filePath of topicFiles) {
     const relativePath = toRepoPath(filePath);
@@ -178,19 +76,31 @@ test('topic markdown files follow the panorama production model', () => {
     assert.match(data.slug, /^[a-z0-9-]+$/, `${relativePath} slug should be URL-safe`);
     assert.equal(slugs.has(data.slug), false, `${relativePath} slug should be unique`);
     slugs.add(data.slug);
+    topicDataBySlug.set(data.slug, data);
 
-    const expected = expectedBySlug.get(data.slug);
-    assert.ok(expected, `${relativePath} slug should match a panorama topic`);
-    assert.equal(data.title, expected.title, `${relativePath} title should match the panorama`);
+    assert.equal(typeof data.title, 'string', `${relativePath} should have a title`);
     assert.equal(typeof data.description, 'string', `${relativePath} should have a description`);
     assert.ok(Array.isArray(data.tags) && data.tags.length > 0, `${relativePath} should have tags`);
     assert.equal(typeof data.date, 'string', `${relativePath} should have a date`);
     assert.match(data.date, /^\d{4}-\d{2}-\d{2}$/, `${relativePath} date should use YYYY-MM-DD`);
+
+    if (data.kind !== undefined) {
+      assert.match(data.kind, /^(primary|specialty)$/, `${relativePath} should use a supported topic kind`);
+    }
+
+    if (data.kind === 'specialty') {
+      assert.equal(typeof data.parent, 'string', `${relativePath} specialty should declare a parent slug`);
+      assert.match(data.parent, /^[a-z0-9-]+$/, `${relativePath} parent slug should be URL-safe`);
+    } else {
+      assert.equal(data.parent, undefined, `${relativePath} primary topic should not declare a parent`);
+    }
+
     const topicBooks = data.books || [];
     assert.ok(Array.isArray(topicBooks), `${relativePath} books should be an array when present`);
     assert.ok(content.trim().length > 300, `${relativePath} should include a substantive guide body`);
     assert.match(content, /^#\s+/m, `${relativePath} should include a first-level title`);
     assert.match(content, /## 建议读法/, `${relativePath} should include reading advice`);
+
     for (const phrase of bannedTemplatePhrases) {
       assert.equal(content.includes(phrase), false, `${relativePath} should not contain template phrase: ${phrase}`);
     }
@@ -215,5 +125,19 @@ test('topic markdown files follow the panorama production model', () => {
     }
   }
 
-  assert.deepEqual(slugs, new Set(expectedBySlug.keys()), 'topics/ should include exactly the panorama slugs');
+  for (const [mergedSlug, targetSlug] of mergedTopics) {
+    assert.equal(slugs.has(mergedSlug), false, `${mergedSlug} should no longer ship as an independent topic article`);
+    assert.equal(slugs.has(targetSlug), true, `${mergedSlug} merge target should exist: ${targetSlug}`);
+  }
+
+  for (const [specialtySlug, parentSlug] of specialtyParents) {
+    const specialty = topicDataBySlug.get(specialtySlug);
+    const parent = topicDataBySlug.get(parentSlug);
+
+    assert.ok(specialty, `specialty topic should exist: ${specialtySlug}`);
+    assert.ok(parent, `specialty parent should exist: ${parentSlug}`);
+    assert.equal(specialty.kind, 'specialty', `${specialtySlug} should be marked as specialty`);
+    assert.equal(specialty.parent, parentSlug, `${specialtySlug} should point to its approved parent`);
+    assert.notEqual(parent.kind, 'specialty', `${parentSlug} should remain a primary topic`);
+  }
 });

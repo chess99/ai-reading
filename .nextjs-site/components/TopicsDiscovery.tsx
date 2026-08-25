@@ -9,6 +9,11 @@ interface TopicsDiscoveryProps {
   topics: TopicMeta[];
 }
 
+interface TopicGroup {
+  topic: TopicMeta;
+  specialties: TopicMeta[];
+}
+
 const ALL_DOMAINS_LABEL = '全部';
 
 function getTopicDomain(topic: TopicMeta): string {
@@ -19,33 +24,78 @@ function normalizeSearchValue(value: string): string {
   return value.trim().toLowerCase();
 }
 
+function topicMatchesKeyword(topic: TopicMeta, keyword: string): boolean {
+  if (keyword.length === 0) {
+    return true;
+  }
+
+  return (
+    topic.searchText.includes(keyword) ||
+    topic.title.toLowerCase().includes(keyword) ||
+    topic.description.toLowerCase().includes(keyword)
+  );
+}
+
 export default function TopicsDiscovery({ topics }: TopicsDiscoveryProps) {
   const [keyword, setKeyword] = useState('');
   const [selectedDomain, setSelectedDomain] = useState(ALL_DOMAINS_LABEL);
 
+  const topicGroups = useMemo<TopicGroup[]>(() => {
+    const specialtiesByParent = new Map<string, TopicMeta[]>();
+
+    for (const topic of topics) {
+      if (topic.kind !== 'specialty' || !topic.parentSlug) {
+        continue;
+      }
+      const existing = specialtiesByParent.get(topic.parentSlug) || [];
+      existing.push(topic);
+      specialtiesByParent.set(topic.parentSlug, existing);
+    }
+
+    return topics
+      .filter(topic => topic.kind !== 'specialty')
+      .map(topic => ({
+        topic,
+        specialties: specialtiesByParent.get(topic.slug) || [],
+      }));
+  }, [topics]);
+
   const domains = useMemo(() => {
     const domainSet = new Set<string>();
-    for (const topic of topics) {
+    for (const { topic } of topicGroups) {
       domainSet.add(getTopicDomain(topic));
     }
     return [ALL_DOMAINS_LABEL, ...Array.from(domainSet)];
-  }, [topics]);
+  }, [topicGroups]);
 
-  const filteredTopics = useMemo(() => {
+  const filteredGroups = useMemo(() => {
     const normalizedKeyword = normalizeSearchValue(keyword);
 
-    return topics.filter(topic => {
-      const domain = getTopicDomain(topic);
+    return topicGroups.flatMap(group => {
+      const domain = getTopicDomain(group.topic);
       const matchesDomain = selectedDomain === ALL_DOMAINS_LABEL || domain === selectedDomain;
-      const matchesKeyword =
-        normalizedKeyword.length === 0 ||
-        topic.searchText.includes(normalizedKeyword) ||
-        topic.title.toLowerCase().includes(normalizedKeyword) ||
-        topic.description.toLowerCase().includes(normalizedKeyword);
+      if (!matchesDomain) {
+        return [];
+      }
 
-      return matchesDomain && matchesKeyword;
+      const parentMatches = topicMatchesKeyword(group.topic, normalizedKeyword);
+      const matchingSpecialties = group.specialties.filter(topic => topicMatchesKeyword(topic, normalizedKeyword));
+
+      if (normalizedKeyword.length === 0) {
+        return [group];
+      }
+
+      if (parentMatches) {
+        return [group];
+      }
+
+      if (matchingSpecialties.length > 0) {
+        return [{ ...group, specialties: matchingSpecialties }];
+      }
+
+      return [];
     });
-  }, [keyword, selectedDomain, topics]);
+  }, [keyword, selectedDomain, topicGroups]);
 
   return (
     <section aria-label="主题筛选" className="space-y-6">
@@ -85,10 +135,27 @@ export default function TopicsDiscovery({ topics }: TopicsDiscoveryProps) {
         </div>
       </div>
 
-      {filteredTopics.length > 0 ? (
+      {filteredGroups.length > 0 ? (
         <div className="grid gap-4 md:grid-cols-2">
-          {filteredTopics.map(topic => (
-            <TopicCard key={topic.slug} topic={topic} />
+          {filteredGroups.map(({ topic, specialties }) => (
+            <div key={topic.slug} className="space-y-3">
+              <TopicCard topic={topic} />
+              {specialties.length > 0 && (
+                <div className="ml-3 border-l-2 border-brand/15 pl-3">
+                  <p className="mb-2 text-[11px] font-black tracking-[0.14em] text-stone-500">专项深读</p>
+                  <div className="space-y-2">
+                    {specialties.map(specialty => (
+                      <TopicCard
+                        key={specialty.slug}
+                        topic={specialty}
+                        variant="specialty"
+                        parentTitle={topic.title}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </div>
       ) : (

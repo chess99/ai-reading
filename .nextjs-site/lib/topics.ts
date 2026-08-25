@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { BookMeta, getAllBookMetas } from '@/lib/books';
 
 export type TopicBookStatus = 'in_library' | 'planned';
+export type TopicKind = 'primary' | 'specialty';
 
 export interface TopicBookRecommendation {
   title: string;
@@ -24,6 +25,8 @@ export interface TopicMeta {
   bookCount: number;
   domain?: string;
   group?: string;
+  kind: TopicKind;
+  parentSlug?: string;
   searchText: string;
 }
 
@@ -41,8 +44,34 @@ interface TopicFrontmatter {
   date?: string;
   domain?: string;
   group?: string;
+  kind?: TopicKind;
+  parent?: string;
   books?: TopicBookRecommendation[];
 }
+
+export interface TopicMerge {
+  slug: string;
+  title: string;
+  targetSlug: string;
+}
+
+export const TOPIC_MERGES: TopicMerge[] = [
+  {
+    slug: 'qin-mi-chong-tu',
+    title: '如何处理亲密关系中的冲突',
+    targetSlug: 'qin-mi-guan-xi',
+  },
+  {
+    slug: 'chan-pin-ji-hui',
+    title: '如何验证产品机会',
+    targetSlug: 'chan-pin-0-dao-1',
+  },
+  {
+    slug: 'shu-zi-gong-gong-sheng-huo',
+    title: '数字公共生活与信息网络',
+    targetSlug: 'mei-ti-gong-gong-tao-lun',
+  },
+];
 
 const TOPICS_DIR = path.join(process.cwd(), '..', 'topics');
 let cachedTopicDetails: TopicDetail[] | null = null;
@@ -71,6 +100,8 @@ function toTopicMeta(topic: TopicDetail): TopicMeta {
     bookCount: topic.bookCount,
     domain: topic.domain,
     group: topic.group,
+    kind: topic.kind,
+    parentSlug: topic.parentSlug,
     searchText: buildTopicSearchText(topic),
   };
 }
@@ -117,6 +148,7 @@ function loadTopicDetails(): TopicDetail[] {
       const frontmatter = data as TopicFrontmatter;
       const slug = frontmatter.slug || entry.name.replace(/\.md$/, '');
       const books = (frontmatter.books || []).map(book => normalizeTopicBook(book, bookBySlug));
+      const kind: TopicKind = frontmatter.kind === 'specialty' ? 'specialty' : 'primary';
 
       topics.push({
         slug,
@@ -127,6 +159,8 @@ function loadTopicDetails(): TopicDetail[] {
         bookCount: books.length,
         domain: frontmatter.domain,
         group: frontmatter.group,
+        kind,
+        parentSlug: kind === 'specialty' ? frontmatter.parent : undefined,
         searchText: '',
         books,
         content,
@@ -156,6 +190,22 @@ export function getTopicDetailBySlug(slug: string): TopicDetail | null {
   return loadTopicDetails().find(topic => topic.slug === slug) || null;
 }
 
+export function getTopicChildren(parentSlug: string): TopicMeta[] {
+  return loadTopicDetails()
+    .filter(topic => topic.kind === 'specialty' && topic.parentSlug === parentSlug)
+    .map(toTopicMeta);
+}
+
+export function getTopicMergeBySlug(slug: string): TopicMerge | null {
+  return TOPIC_MERGES.find(merge => merge.slug === slug) || null;
+}
+
+export function getAllTopicRouteSlugs(): string[] {
+  return Array.from(new Set([...loadTopicDetails().map(topic => topic.slug), ...TOPIC_MERGES.map(merge => merge.slug)]));
+}
+
 export function getLatestTopics(n = 3): TopicMeta[] {
-  return getAllTopicMetas().slice(0, n);
+  return getAllTopicMetas()
+    .filter(topic => topic.kind === 'primary')
+    .slice(0, n);
 }
