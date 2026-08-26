@@ -16,6 +16,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "a-problem-from-hell": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e3c32370811e2967dg017994",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：A Problem from Hell / Samantha Power，书名与作者均精确匹配"
+  },
   "ai-2041": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/0bc32b20813ab6d9fg0114c1",
@@ -170,6 +176,12 @@
     "url": "https://weread.qq.com/web/bookDetail/5ce32e707198e43e5ce7fe4",
     "checkedAt": "2026-07-03",
     "note": "沉思录 / [古罗马]奥勒留 / score 130"
+  },
+  "chen-yin-ke-de-zui-hou-20-nian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ace32840726918fdace66d6",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《陈寅恪的最后二十年》 / 陆键东，数字写法不同，书名主体与作者匹配"
   },
   "cheng-gong-tou-zi": {
     "status": "found",
@@ -564,6 +576,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "gu-la-ge": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bdd32740811e1a69ag0170dc",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《古拉格》 / 安妮·阿普尔鲍姆，书名精确、作者为中文译名"
+  },
   "gu-piao-da-zuo-shou-hui-yi-lu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1b5325907159cacc1b5e0e1",
@@ -706,6 +724,12 @@
     "url": "https://weread.qq.com/web/bookDetail/c2232db0811e64494g0137e2",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
+  },
+  "invisible-child": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/032320f0813ab7c77g0140d1",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《看不见的孩子》 / 安德里亚·埃利奥特，中文译名与作者匹配"
   },
   "ji-jiang-dao-lai-de-lang-chao": {
     "status": "not_found",
@@ -869,6 +893,12 @@
     "checkedAt": "2026-07-03",
     "note": "旧制度与大革命（中法双语版） / [法]托克维尔 / score 130"
   },
+  "ju-ta-sha-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/156323c0811e1a599g01072f",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《巨塔杀机》 / 劳伦斯·赖特，书名精确、作者为中文译名"
+  },
   "jue-duan-li": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c4132ef0813ab8209g019631",
@@ -993,6 +1023,11 @@
     "checkedAt": "2026-08-18",
     "note": "人工核验：《刘擎西方现代思想讲义》 / 刘擎，书名与作者均精确匹配"
   },
+  "locking-up-our-own": {
+    "status": "not_found",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：按英文书名及 James Forman Jr. 搜索，未找到可靠匹配"
+  },
   "lu-xi-fa-xiao-ying": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1c632870811e5a163g016943",
@@ -1085,6 +1120,12 @@
     "status": "not_found",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
+  },
+  "nan-jing-da-tu-sha": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ed4325105af547ed45154e5",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《南京大屠杀》 / 张纯如，书名与作者均精确匹配"
   },
   "nei-rong-xian-jing": {
     "status": "found",
@@ -1482,6 +1523,11 @@
     "checkedAt": "2026-07-03",
     "note": "施瓦辛格健身全书 / 阿诺德·施瓦辛格 / score 130"
   },
+  "shi-you-feng-yun": {
+    "status": "not_found",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：同名候选作者为毛华鹤，并非 Daniel Yergin；按作者及英文原名继续搜索仍无可靠匹配"
+  },
   "shu-niu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/3ee32110717e5b2f3eedab0",
@@ -1548,11 +1594,21 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "the-thinking-machine": {
+    "status": "not_found",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：英文书名无可靠匹配；《黄仁勋传》候选作者为刘与白，并非 Stephen Witt"
+  },
   "tiao-zhe-ti-ta-wu-qu-shang-ban": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/20932580715608ef2094493",
     "checkedAt": "2026-07-28",
     "note": "跳着踢踏舞去上班 / 卡萝尔·卢米斯 / score 130"
+  },
+  "to-the-success-of-our-hopeless-cause": {
+    "status": "not_found",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：按英文书名及 Benjamin Nathans 搜索，未找到可靠匹配"
   },
   "tong-nian-de-mi-mi": {
     "status": "found",
@@ -1966,6 +2022,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "yong-bao-zhan-bai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/42c32d20811e1a7b8g018bba",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《拥抱战败：第二次世界大战后的日本》 / 约翰·W.道尔，书名主体与作者译名匹配"
+  },
   "yong-hu-gu-shi-di-tu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1f132360811e1a7b9g012873",
@@ -2031,6 +2093,12 @@
     "url": "https://weread.qq.com/web/bookDetail/848324405e0fe08483ab6a4",
     "checkedAt": "2026-07-03",
     "note": "原则 / 瑞·达利欧 / score 130"
+  },
+  "yuan-zi-dan-mi-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a0932580811e3922cg015c01",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《原子弹秘史：图文版》 / 理查德·罗兹，书名主体与作者译名匹配"
   },
   "yun-dong-gai-zao-da-nao": {
     "status": "found",
