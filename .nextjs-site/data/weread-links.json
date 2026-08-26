@@ -212,6 +212,12 @@
     "checkedAt": "2026-08-19",
     "note": "manual-audit: no reliable match after English title, Edward Fishman, and Chinese title variant searches"
   },
+  "ci-wei-yu-hu-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/783322a0811e89267g017c37",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《刺猬与狐狸》/ 以赛亚·伯林，书名与作者均精确匹配"
+  },
   "chong-xin-ding-yi-gong-si": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/82d329d07186fbb182d1e1d",
@@ -411,6 +417,12 @@
     "status": "not_found",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
+  },
+  "fa-guo-ge-ming-lun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/51b3289072051b6151b6b94",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《法国革命论》/ 埃德蒙·柏克；候选作者简写为柏克，原著一致"
   },
   "fa-zhi-ji-qi-ben-tu-zi-yuan": {
     "status": "found",
@@ -683,6 +695,12 @@
     "url": "https://weread.qq.com/web/bookDetail/2cf32d005e0d5a2cf723129",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
+  },
+  "he-yue-de-jing-ji-hou-guo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/94d32c10813ab8279g016ce1",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《和约的经济后果》/ 约翰·梅纳德·凯恩斯，书名与作者均精确匹配"
   },
   "hei-tian-e": {
     "status": "found",
@@ -1145,6 +1163,12 @@
     "checkedAt": "2026-07-03",
     "note": "尼各马可伦理学 I.1—III.5（希汉英对照） / [古希腊]亚里士多德 / score 110"
   },
+  "nv-quan-bian-hu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4443252072040db54440512",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《为女权辩护：关于政治及道德问题的批判》/ 玛丽·沃斯通克拉夫特，与本次完整原著一致"
+  },
   "pao-wai-mai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/180321a0811e8a9cag0120db",
@@ -1582,6 +1606,12 @@
     "checkedAt": "2026-07-03",
     "note": "随机漫步的傻瓜 / 纳西姆·尼古拉斯·塔勒布 / score 130"
   },
+  "tai-yang-de-yin-ying": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d3632980811e8205dg0187d2",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《太阳的阴影》/ 雷沙德·卡普希钦斯基，书名与作者均精确匹配"
+  },
   "tan-mei": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/da032ef072517ae3da039f2",
@@ -1717,6 +1747,12 @@
     "checkedAt": "2026-07-03",
     "note": "文学理论入门 / 乔纳森·卡勒 / score 130"
   },
+  "wo-men-lai-yi-sheng-cun-de-yin-yu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cad32570811e1a397g014198",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《我们赖以生存的隐喻》/ 乔治·莱考夫、马克·约翰逊，书名与两位作者均精确匹配"
+  },
   "wo-men-wei-shen-me-hui-sheng-bing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/631328605e43fa631551a4e",
@@ -1758,6 +1794,12 @@
     "url": "https://weread.qq.com/web/bookDetail/3a832f705d0d1f3a8ec72ff",
     "checkedAt": "2026-07-03",
     "note": "悉达多（果麦经典） / [德]赫尔曼·黑塞 / score 130"
+  },
+  "xi-fang-zhe-xue-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c6832d60813ab7c75g012106",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《西方哲学史（增补修订版）》/ 弗兰克·梯利，与本次原书版本一致"
   },
   "xi-guan-de-li-liang": {
     "status": "found",
