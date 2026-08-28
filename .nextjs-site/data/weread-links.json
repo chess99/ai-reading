@@ -34,6 +34,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "an-shi-zhi-luan": {
+    "status": "not_found",
+    "checkedAt": "2026-08-28",
+    "note": "manual-audit: no reliable match for 张诗坪、胡可奇《安史之乱：历史、宣传与神话》; exact-title results were different books by 石云涛 and 王猛"
+  },
   "an-quan-bian-ji": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/bca32990811e90c66g0129df",
