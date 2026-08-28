@@ -1694,6 +1694,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "the-road-to-oxiana": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f7332200811e29240g013675",
+    "checkedAt": "2026-08-28",
+    "note": "人工核验：The Road to Oxiana / Robert Byron，书名与作者完全匹配"
+  },
   "the-thinking-machine": {
     "status": "not_found",
     "checkedAt": "2026-08-26",
