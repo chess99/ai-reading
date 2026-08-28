@@ -1700,6 +1700,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "the-double-x-economy": {
+    "status": "not_found",
+    "checkedAt": "2026-08-28",
+    "note": "人工核验：英文书名无候选；继续搜索“双X经济”“双重X经济”和 Linda Scott，均无书名与作者可靠匹配"
+  },
   "the-road-to-oxiana": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f7332200811e29240g013675",
