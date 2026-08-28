@@ -34,6 +34,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "an-dou": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/244326a0813abb8f7g010574",
+    "checkedAt": "2026-08-28",
+    "note": "人工核验：《暗斗：一个书生的文化抗战》 / 吴真，副标题与作者完全匹配"
+  },
   "an-shi-zhi-luan": {
     "status": "not_found",
     "checkedAt": "2026-08-28",
