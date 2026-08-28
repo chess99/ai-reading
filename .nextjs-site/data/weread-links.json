@@ -2277,6 +2277,12 @@
     "checkedAt": "2026-08-18",
     "note": "manual-audit: exact title and author match（哲学家的最后一课 / 朱锐）"
   },
+  "zhen-han-shi-jie-de-shi-tian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7ba32270811e33cfdg011db0",
+    "checkedAt": "2026-08-28",
+    "note": "人工核验：《震撼世界的十天》 / 约翰·里德，书名和作者姓名匹配；微信读书将作者国籍误标为英国"
+  },
   "zhen-shi-de-xing-fu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/27c328705ae2c427ca53ff0",
