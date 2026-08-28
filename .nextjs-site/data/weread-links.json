@@ -800,6 +800,12 @@
     "checkedAt": "2026-07-03",
     "note": "寂静的春天（英文原版）Silent Spring / Rachel Carson / score 110"
   },
+  "ji-kang-chuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2ae321c0813ab738ag0179e3",
+    "checkedAt": "2026-08-29",
+    "note": "人工核验：《嵇康传》 / 王晓毅，书名与作者均精确匹配"
+  },
   "ji-shu-de-ben-zhi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/4d83260071c034e34d8523f",
@@ -1858,6 +1864,12 @@
     "checkedAt": "2026-07-03",
     "note": "我们为什么要睡觉？ / 马修·沃克 / score 130"
   },
+  "wu-gu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/28f32a90813abafa1g01939f",
+    "checkedAt": "2026-08-29",
+    "note": "人工核验：《巫蛊：中国文化的历史暗流》 / 邓启耀，完整书名与作者均匹配；已排除同名网络小说"
+  },
   "wu-he-zhi-zhong": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/d1732010813ab983cg012120",
@@ -2012,6 +2024,12 @@
     "url": "https://weread.qq.com/web/bookDetail/65e328b05e10e265eb76e03",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from broader title and author search"
+  },
+  "xin-qi-ji-chuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f7632fa0813ab9ff0g0117dd",
+    "checkedAt": "2026-08-29",
+    "note": "人工核验：《辛弃疾传》 / 殷茹，书名与作者均精确匹配"
   },
   "xing-bie-da-jie": {
     "status": "found",
