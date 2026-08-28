@@ -981,6 +981,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "kan-bu-jian-de-zhong-dong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ee032940811e81c81g016152",
+    "checkedAt": "2026-08-28",
+    "note": "人工核验：《看不见的中东》 / 姚璐，书名与作者完全匹配"
+  },
   "kan-de-jian-de-zheng-yi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/49e3293071726aa249e527f",
