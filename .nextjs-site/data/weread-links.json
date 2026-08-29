@@ -2526,6 +2526,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "zong-jiao-jing-yan-zhi-zhong-zhong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/20832ba0813ab91a5g012d93",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：宗教经验之种种 / [美]威廉·詹姆斯，书名与作者均精确匹配"
+  },
   "zu-zhi-xing-wei-xue": {
     "status": "not_found",
     "checkedAt": "2026-07-03",
