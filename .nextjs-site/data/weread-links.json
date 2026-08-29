@@ -2367,6 +2367,12 @@
     "checkedAt": "2026-08-26",
     "note": "人工核验：《原子弹秘史：图文版》 / 理查德·罗兹，书名主体与作者译名匹配"
   },
+  "yue-han-sheng-chuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/41f32410813ab7d79g017ed1",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：《约翰生传：插图珍藏本（全三卷）》/ 詹姆斯·鲍斯威尔，书名主体与 James Boswell 的中文译名精确匹配；排除相关研究著作《灵魂的挣扎》"
+  },
   "yun-dong-gai-zao-da-nao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1f4326e0813ab7e0fg0167ca",
