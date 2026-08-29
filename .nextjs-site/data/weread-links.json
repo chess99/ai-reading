@@ -1404,6 +1404,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "ren-jian-ci-hua": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/97f32cc05c6d4f97f65e89c",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：人间词话 / [清]王国维，书名与作者均精确匹配"
+  },
   "ren-lei-jian-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/d4a322a05d0f04d4a01f0d6",
