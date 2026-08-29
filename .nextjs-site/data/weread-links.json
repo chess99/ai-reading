@@ -400,6 +400,12 @@
     "checkedAt": "2026-08-18",
     "note": "人工核验：书名《东方学》，作者爱德华·W·萨义德，与目标原著一致"
   },
+  "dong-wu-nong-chang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ce332d50813abab1fg014aaa",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：《动物农场》/ [英]乔治·奥威尔，书名与作者精确匹配；排除同名异书、套装及解读书"
+  },
   "dong-xue-qi-an": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/70132e70813ab9f22g016f9c",
