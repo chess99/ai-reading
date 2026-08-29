@@ -1076,6 +1076,12 @@
     "checkedAt": "2026-08-17",
     "note": "人工核验：书名《联邦党人文集》，作者亚历山大·汉密尔顿、詹姆斯·麦迪逊、约翰·杰伊，排除英文版、导读版与讲稿"
   },
+  "liao-fan-si-xun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/39c32bc05df50939cb38080",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：了凡四训 / [明]袁了凡，书名与作者精确匹配；选用无副标题的原著版本"
+  },
   "li-jie-mei-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c1132dd07185cddac112890",
