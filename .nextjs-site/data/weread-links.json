@@ -40,16 +40,16 @@
     "checkedAt": "2026-08-28",
     "note": "人工核验：《暗斗：一个书生的文化抗战》 / 吴真，副标题与作者完全匹配"
   },
-  "an-shi-zhi-luan": {
-    "status": "not_found",
-    "checkedAt": "2026-08-28",
-    "note": "manual-audit: no reliable match for 张诗坪、胡可奇《安史之乱：历史、宣传与神话》; exact-title results were different books by 石云涛 and 王猛"
-  },
   "an-quan-bian-ji": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/bca32990811e90c66g0129df",
     "checkedAt": "2026-07-03",
     "note": "安全边际 / 塞思·卡拉曼 / score 130"
+  },
+  "an-shi-zhi-luan": {
+    "status": "not_found",
+    "checkedAt": "2026-08-28",
+    "note": "manual-audit: no reliable match for 张诗坪、胡可奇《安史之乱：历史、宣传与神话》; exact-title results were different books by 石云涛 and 王猛"
   },
   "ba-bi-lun-zui-fu-you-de-ren": {
     "status": "found",
@@ -229,12 +229,6 @@
     "checkedAt": "2026-08-19",
     "note": "manual-audit: no reliable match after English title, Edward Fishman, and Chinese title variant searches"
   },
-  "ci-wei-yu-hu-li": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/783322a0811e89267g017c37",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《刺猬与狐狸》/ 以赛亚·伯林，书名与作者均精确匹配"
-  },
   "chong-xin-ding-yi-gong-si": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/82d329d07186fbb182d1e1d",
@@ -288,6 +282,12 @@
     "url": "https://weread.qq.com/web/bookDetail/73532f90813ab9e0ag01623c",
     "checkedAt": "2026-08-17",
     "note": "manual-audit: verified Chinese edition title and all three authors"
+  },
+  "ci-wei-yu-hu-li": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/783322a0811e89267g017c37",
+    "checkedAt": "2026-08-26",
+    "note": "人工核验：《刺猬与狐狸》/ 以赛亚·伯林，书名与作者均精确匹配"
   },
   "cobalt-red": {
     "status": "not_found",
@@ -842,6 +842,12 @@
     "checkedAt": "2026-07-03",
     "note": "技术交易系统新概念 / 威尔斯·威尔德 / score 130"
   },
+  "ji-ti-xing-dong-de-luo-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b7e326b071cd7c7cb7e4b03",
+    "checkedAt": "2026-08-18",
+    "note": "人工核验：《集体行动的逻辑：公共物品与集团理论》 / 曼瑟·奥尔森，书名主体、作者及副标题均与目标版本一致"
+  },
   "ji-xie-jiao-yi-xi-tong": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/279329f0811e1e7d9g011604",
@@ -1005,12 +1011,6 @@
     "checkedAt": "2026-07-03",
     "note": "开放社会及其敌人（全二卷） / 波普尔 / score 130"
   },
-  "ji-ti-xing-dong-de-luo-ji": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/b7e326b071cd7c7cb7e4b03",
-    "checkedAt": "2026-08-18",
-    "note": "人工核验：《集体行动的逻辑：公共物品与集团理论》 / 曼瑟·奥尔森，书名主体、作者及副标题均与目标版本一致"
-  },
   "kan-bu-jian-de-nv-xing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f1532210813ab7439g018060",
@@ -1088,18 +1088,6 @@
     "checkedAt": "2026-07-03",
     "note": "新朗读手册 / [美]吉姆•崔利斯 / score 110"
   },
-  "lian-bang-dang-ren-wen-ji": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/2c432fb071f8f0d52c44f19",
-    "checkedAt": "2026-08-17",
-    "note": "人工核验：书名《联邦党人文集》，作者亚历山大·汉密尔顿、詹姆斯·麦迪逊、约翰·杰伊，排除英文版、导读版与讲稿"
-  },
-  "liao-fan-si-xun": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/39c32bc05df50939cb38080",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：了凡四训 / [明]袁了凡，书名与作者精确匹配；选用无副标题的原著版本"
-  },
   "li-jie-mei-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c1132dd07185cddac112890",
@@ -1111,6 +1099,18 @@
     "url": "https://weread.qq.com/web/bookDetail/b8a320d071f1909cb8a36bc",
     "checkedAt": "2026-08-27",
     "note": "人工核验：《历史深处的忧虑：近距离看美国之一》 / 林达，书名与作者均精确匹配"
+  },
+  "lian-bang-dang-ren-wen-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2c432fb071f8f0d52c44f19",
+    "checkedAt": "2026-08-17",
+    "note": "人工核验：书名《联邦党人文集》，作者亚历山大·汉密尔顿、詹姆斯·麦迪逊、约翰·杰伊，排除英文版、导读版与讲稿"
+  },
+  "liao-fan-si-xun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/39c32bc05df50939cb38080",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：了凡四训 / [明]袁了凡，书名与作者精确匹配；选用无副标题的原著版本"
   },
   "lin-jia-de-bai-wan-fu-weng": {
     "status": "found",
@@ -1764,6 +1764,12 @@
     "status": "not_found",
     "checkedAt": "2026-08-28",
     "note": "人工核验：英文书名无候选；继续搜索“双X经济”“双重X经济”和 Linda Scott，均无书名与作者可靠匹配"
+  },
+  "the-interesting-narrative-of-olaudah-equiano": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/76232700811e2429ag018fee",
+    "checkedAt": "2026-08-30",
+    "note": "人工扩展搜索：The Interesting Narrative of the Life of Olaudah Equiano / Olaudah Equiano，完整英文题名与作者均精确匹配"
   },
   "the-road-to-oxiana": {
     "status": "found",
@@ -2558,6 +2564,12 @@
     "checkedAt": "2026-08-30",
     "note": "人工核验：自深深处 / [英]奥斯卡·王尔德，书名与 Oscar Wilde 均精确匹配"
   },
+  "zi-you-yu-fan-rong-de-guo-du": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ad632180813ab7414g0158c6",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：自由与繁荣的国度 / 路德维希·冯·米瑟斯；书名精确匹配，作者为米塞斯的常见异译"
+  },
   "zi-zi-zhu-ji": {
     "status": "not_found",
     "checkedAt": "2026-07-03",
@@ -2569,22 +2581,16 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from broader title and author search"
   },
-  "zi-you-yu-fan-rong-de-guo-du": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/ad632180813ab7414g0158c6",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：自由与繁荣的国度 / 路德维希·冯·米瑟斯；书名精确匹配，作者为米塞斯的常见异译"
-  },
-  "zou-chu-wei-ji": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
-  },
   "zong-jiao-jing-yan-zhi-zhong-zhong": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/20832ba0813ab91a5g012d93",
     "checkedAt": "2026-08-30",
     "note": "人工核验：宗教经验之种种 / [美]威廉·詹姆斯，书名与作者均精确匹配"
+  },
+  "zou-chu-wei-ji": {
+    "status": "not_found",
+    "checkedAt": "2026-07-03",
+    "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
   "zu-zhi-xing-wei-xue": {
     "status": "not_found",
