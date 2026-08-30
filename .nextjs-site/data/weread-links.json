@@ -1807,6 +1807,12 @@
     "checkedAt": "2026-08-28",
     "note": "人工核验：英文书名无候选；继续搜索“双X经济”“双重X经济”和 Linda Scott，均无书名与作者可靠匹配"
   },
+  "the-female-eunuch": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/13332ed0811e21fa4g01822a",
+    "checkedAt": "2026-08-30",
+    "note": "人工核验：The Female Eunuch / Germaine Greer，英文书名与作者均精确匹配"
+  },
   "the-great-tradition": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f2532460813ab9fb6g01605c",
