@@ -1801,6 +1801,12 @@
     "checkedAt": "2026-08-28",
     "note": "人工核验：英文书名无候选；继续搜索“双X经济”“双重X经济”和 Linda Scott，均无书名与作者可靠匹配"
   },
+  "the-great-tradition": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f2532460813ab9fb6g01605c",
+    "checkedAt": "2026-08-30",
+    "note": "人工扩展搜索：中文第三版《伟大的传统》/ [英]利维斯，与 The Great Tradition / F. R. Leavis 的书名译名和作者均匹配；排除 Annette T. Rubinstein 的同名异书"
+  },
   "the-interesting-narrative-of-olaudah-equiano": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/76232700811e2429ag018fee",
