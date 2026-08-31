@@ -1790,6 +1790,11 @@
     "checkedAt": "2026-07-03",
     "note": "随机漫步的傻瓜 / 纳西姆·尼古拉斯·塔勒布 / score 130"
   },
+  "supremacy": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按 Supremacy 与 Parmy Olson 搜索，未找到书名、作者相符的版本；最高候选为 John Piper 的 A Godward Life，属于误匹配"
+  },
   "tai-yang-de-yin-ying": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/d3632980811e8205dg0187d2",
@@ -2239,6 +2244,12 @@
     "url": "https://weread.qq.com/web/bookDetail/67632250813ab6d7bg014522",
     "checkedAt": "2026-07-03",
     "note": "厌女（增订本） / [日]上野千鹤子 / score 130"
+  },
+  "yao-you-guang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/38632c10811e8a9cfg018084",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：要有光 / 梁鸿，书名与作者精确匹配"
   },
   "ye-xu-ni-gai-zhao-ge-ren-liao-liao": {
     "status": "found",
