@@ -1808,6 +1808,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "testament-of-youth": {
+    "status": "not_found",
+    "checkedAt": "2026-08-31",
+    "note": "manual-audit: searched Testament of Youth, Vera Brittain, 维拉·布里顿/布里坦, 青春誓言, 青春作证 and 青春的证明; results were unrelated books, including 森村诚一《青春的证明》"
+  },
   "the-double-x-economy": {
     "status": "not_found",
     "checkedAt": "2026-08-28",
