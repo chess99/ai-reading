@@ -22,6 +22,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "a-bright-shining-lie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/57332720811e23a13g0138d2",
+    "checkedAt": "2026-09-01",
+    "note": "A Bright Shining Lie / Neil Sheehan / score 130"
+  },
   "a-problem-from-hell": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/e3c32370811e2967dg017994",
