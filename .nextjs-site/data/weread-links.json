@@ -300,6 +300,11 @@
     "checkedAt": "2026-08-19",
     "note": "manual-audit: no reliable match after English title, Siddharth Kara, and Chinese title variant searches"
   },
+  "common-ground": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "manual-audit: no reliable match after exact title, full subtitle, author, and Chinese title variant searches"
+  },
   "cong-ling-dao-yi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/3973284058a49f39706f0c0",
