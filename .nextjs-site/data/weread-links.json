@@ -484,6 +484,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "ends-of-the-earth": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按英文书名、完整副标题、Neil Shubin、尼尔·舒彬及‘世界尽头/地球尽头’等可能译名搜索，未发现原书或可靠中文版本；已排除 Paul Theroux 的同名异书"
+  },
   "everything-is-predictable": {
     "status": "not_found",
     "checkedAt": "2026-09-01",
