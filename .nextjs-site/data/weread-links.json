@@ -799,6 +799,11 @@
     "checkedAt": "2026-08-19",
     "note": "manual-audit: no reliable match after English title, Eva Dou, and Chinese title variant searches"
   },
+  "how-to-change-a-memory": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：以英文书名、Steve Ramirez、改变记忆、如何改变记忆分别搜索，未找到书名与作者可靠匹配的微信读书版本；排除 Steven Ramirez 的近似作者作品及记忆术、创伤疗法等异书"
+  },
   "hua-shan-jiang-tou-sun-zi-bing-fa": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/df53233058b19fdf50fa893",
