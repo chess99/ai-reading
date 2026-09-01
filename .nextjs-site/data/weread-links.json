@@ -850,6 +850,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "imperial-reckoning": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/97632f60811e2c52dg01757a",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：《Imperial Reckoning》/ Caroline Elkins，英文书名与作者均精确匹配"
+  },
   "invisible-child": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/032320f0813ab7c77g0140d1",
