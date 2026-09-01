@@ -91,6 +91,11 @@
     "checkedAt": "2026-07-03",
     "note": "巴菲特致股东的信（修订版） / 沃伦·巴菲特 查理·芒格 / score 130"
   },
+  "bad-influence": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按英文书名、副标题 How the Internet Hijacked Our Health 与作者 Deborah Cohen 搜索，未发现原书或可靠中文版本；已排除同名异书和仅含 influence 词项的无关结果"
+  },
   "bao-jin-wo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/63732280811e1c521g017743",
