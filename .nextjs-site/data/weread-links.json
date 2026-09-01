@@ -1579,6 +1579,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "science-fictions": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c20320e0813abbeabg012cea",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：《被败坏的学术：科研中的造假、偏见、疏忽与炒作》 / [英]斯图尔特·里奇；中文书名对应 Science Fictions，作者精确匹配，排除同名科幻类结果"
+  },
   "shang-ye-mo-shi-xin-sheng-dai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/5c1324d0813ab6cf2g01739a",
