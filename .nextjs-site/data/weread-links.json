@@ -1872,6 +1872,12 @@
     "checkedAt": "2026-08-31",
     "note": "manual-audit: searched Testament of Youth, Vera Brittain, 维拉·布里顿/布里坦, 青春誓言, 青春作证 and 青春的证明; results were unrelated books, including 森村诚一《青春的证明》"
   },
+  "the-dead-hand": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/45b326d0811e2b8ffg011d6c",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：The Dead Hand / David Hoffman，与 David E. Hoffman 的书名和作者精确匹配"
+  },
   "the-double-x-economy": {
     "status": "not_found",
     "checkedAt": "2026-08-28",
