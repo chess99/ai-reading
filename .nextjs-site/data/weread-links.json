@@ -1950,6 +1950,11 @@
     "checkedAt": "2026-08-30",
     "note": "人工扩展搜索：中文第三版《伟大的传统》/ [英]利维斯，与 The Great Tradition / F. R. Leavis 的书名译名和作者均匹配；排除 Annette T. Rubinstein 的同名异书"
   },
+  "the-greywacke": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按 The Greywacke、Nick Davidson、灰瓦克、杂砂岩及副标题人物组合扩展搜索，未发现书名与作者可靠匹配的微信读书版本；已排除无关地质教材与科学史书"
+  },
   "the-interesting-narrative-of-olaudah-equiano": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/76232700811e2429ag018fee",
