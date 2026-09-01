@@ -804,6 +804,12 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：按英文书名、Hannah Fry、汉娜·弗莱及算法时代相关译名搜索；作者结果仅有《爱情数学》和套装，未发现 Hello World 或可靠中文译本匹配"
   },
+  "hirohito-and-the-making-of-modern-japan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b3d32a40813ab6c6bg018076",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：《真相：裕仁天皇与现代日本的形成》/ 赫伯特·比克斯，官方中文译名与 Herbert P. Bix 原书精确匹配；排除题名不同的《真相：裕仁天皇与侵华战争》"
+  },
   "house-of-huawei": {
     "status": "not_found",
     "checkedAt": "2026-08-19",
