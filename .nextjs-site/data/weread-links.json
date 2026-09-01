@@ -1918,6 +1918,12 @@
     "checkedAt": "2026-08-26",
     "note": "人工核验：英文书名无可靠匹配；《黄仁勋传》候选作者为刘与白，并非 Stephen Witt"
   },
+  "the-years-of-extermination": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f1e32ce0811e26424g018fd7",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：The Years of Extermination / Saul Friedlander，与 Saul Friedländer 的书名和作者精确匹配"
+  },
   "tiao-zhe-ti-ta-wu-qu-shang-ban": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/20932580715608ef2094493",
