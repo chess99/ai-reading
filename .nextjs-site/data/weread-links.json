@@ -479,6 +479,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "everything-is-predictable": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按英文书名、Tom Chivers 及‘一切皆可预测/一切都可预测/贝叶斯’等可能译名搜索，未发现原书或可靠中文版本；已排除《可预测的非理性》等同题材异书"
+  },
   "fa-guo-ge-ming-lun": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/51b3289072051b6151b6b94",
