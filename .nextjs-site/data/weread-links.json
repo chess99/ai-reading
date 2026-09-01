@@ -1374,6 +1374,11 @@
     "checkedAt": "2026-08-30",
     "note": "人工扩展搜索：《NO LOGO：颠覆品牌全球统治》/ 娜奥米·克莱恩，与 No Logo / Naomi Klein 的题名、中文副标题和作者译名匹配"
   },
+  "nuts-and-bolts": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按英文书名、完整副标题 Seven Small Inventions That Changed the World in a Big Way、Roma Agrawal、作者音译及‘七个/七种小发明’等可能译名搜索，未发现原书或可靠中文版本；已排除 Jon Elster 的同名异书"
+  },
   "nv-quan-bian-hu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/4443252072040db54440512",
