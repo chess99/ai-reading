@@ -1949,6 +1949,11 @@
     "checkedAt": "2026-07-03",
     "note": "万历十五年（经典版） / [美]黄仁宇 / score 130"
   },
+  "wan-wu-de-shi-jie": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：以中文书名含/不含引号、英文原名 An Immense World、Ed Yong、埃德·扬分别搜索，未找到书名与作者可靠匹配的微信读书版本；排除《眼生万物》及作者其他作品《我包罗万象》"
+  },
   "wan-zheng-de-cheng-zhang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/16632f60813ab7edcg013bcd",
