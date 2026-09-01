@@ -820,6 +820,11 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：按英文书名、Hannah Fry、汉娜·弗莱及算法时代相关译名搜索；作者结果仅有《爱情数学》和套装，未发现 Hello World 或可靠中文译本匹配"
   },
+  "hidden-guests": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "人工核验：按英文书名、法文原名 Les cellules buissonnières 与作者 Lise Barnéoud 搜索，未发现原书或可靠中文版本；已排除唯一返回的无关技术书"
+  },
   "hirohito-and-the-making-of-modern-japan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b3d32a40813ab6c6bg018076",
