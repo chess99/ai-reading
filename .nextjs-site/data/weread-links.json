@@ -63,6 +63,11 @@
     "checkedAt": "2026-08-28",
     "note": "manual-audit: no reliable match for 张诗坪、胡可奇《安史之乱：历史、宣传与神话》; exact-title results were different books by 石云涛 and 王猛"
   },
+  "arab-and-jew": {
+    "status": "not_found",
+    "checkedAt": "2026-09-01",
+    "note": "manual-audit: searched Arab and Jew / David K. Shipler; returned results had unrelated titles or authors, with no reliable match"
+  },
   "ba-bi-lun-zui-fu-you-de-ren": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/060323f0813abb3adg010047",
