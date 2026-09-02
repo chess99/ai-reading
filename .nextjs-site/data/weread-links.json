@@ -57,6 +57,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "amity-and-prosperity": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
+  },
   "an-dou": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/244326a0813abb8f7g010574",
@@ -173,6 +178,11 @@
     "url": "https://weread.qq.com/web/bookDetail/2a032890811e1a664g012565",
     "checkedAt": "2026-07-03",
     "note": "财务智慧 / 卡伦.伯曼 / score 130"
+  },
+  "carry-me-home": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
   },
   "ceng-guo-fan-chuan": {
     "status": "found",
@@ -653,6 +663,12 @@
     "checkedAt": "2026-08-30",
     "note": "人工核验：格兰特将军回忆录 / 格兰特，中文书名与作者译名均精确匹配"
   },
+  "ge-wai-de-huo-fa": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/77032840811e81ee1g0177cb",
+    "checkedAt": "2026-09-02",
+    "note": "格外的活法 / [日]吉井忍 / score 130"
+  },
   "gei-hai-zi-yi-sheng-de-an-quan-gan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/68132520811e3287cg016e70",
@@ -826,6 +842,11 @@
     "checkedAt": "2026-07-03",
     "note": "黑天鹅 / 纳西姆·尼古拉斯·塔勒布 / score 130"
   },
+  "hei-xiao-zi": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
+  },
   "hello-world": {
     "status": "not_found",
     "checkedAt": "2026-09-01",
@@ -841,6 +862,11 @@
     "url": "https://weread.qq.com/web/bookDetail/b3d32a40813ab6c6bg018076",
     "checkedAt": "2026-09-01",
     "note": "人工核验：《真相：裕仁天皇与现代日本的形成》/ 赫伯特·比克斯，官方中文译名与 Herbert P. Bix 原书精确匹配；排除题名不同的《真相：裕仁天皇与侵华战争》"
+  },
+  "his-name-is-george-floyd": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
   },
   "house-of-huawei": {
     "status": "not_found",
@@ -1169,11 +1195,23 @@
     "checkedAt": "2026-07-03",
     "note": "控制论与科学方法论 / 金观涛 华国凡 / score 130"
   },
+  "ku-se-de-ling-yao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cd332570813ab99dfg015ec7",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：《苦涩的灵药：沙利度胺、“海豹儿”和拉响警报的英雄》/ [美]詹妮弗·范德贝斯，书名主体、作者及主题精确匹配"
+  },
   "kua-yue-hong-gou": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/71832a90813ab779fg012d02",
     "checkedAt": "2026-07-03",
     "note": "跨越鸿沟：颠覆性产品营销指南（原书第3版） / 杰弗里·摩尔 / score 110"
+  },
+  "kuan-rong-yu-zhi-niu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/94532890813ab8a69g01879a",
+    "checkedAt": "2026-09-02",
+    "note": "宽容与执拗 ： 迂夫司马光和北宋政治 / 赵冬梅 / score 110"
   },
   "la-fa-ye-te": {
     "status": "found",
@@ -1251,6 +1289,12 @@
     "checkedAt": "2026-07-03",
     "note": "论人类不平等的起源和基础（果麦经典） / [法]卢梭 / score 130"
   },
+  "lun-ren-xing": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4c932c20811e5a161g016bbf",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：《论人性》/ 威尔逊，书名精确匹配且作者为 Edward O. Wilson 的中文译名；排除休谟《人性论》及同名异书"
+  },
   "lun-yu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/764323c05c6f3a764c8daf8",
@@ -1309,6 +1353,12 @@
     "checkedAt": "2026-07-03",
     "note": "煤气灯效应 / [美]罗宾·斯特恩 / score 130"
   },
+  "mei-xue-yu-zheng-zhi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2b732840813aba0e0g016875",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：《美学与政治》/ 西奥多·阿多诺、瓦尔特·本雅明、恩斯特·布洛赫，书名及主要作者精确匹配"
+  },
   "mei-zhou-gong-zuo-4-xiao-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/6e332dc0811e1a5eag017be3",
@@ -1326,6 +1376,11 @@
     "url": "https://weread.qq.com/web/bookDetail/acd32cc0813ab6fa4g015172",
     "checkedAt": "2026-07-03",
     "note": "民法典与日常生活 / 彭诚信 主编 陈吉栋 副主编 / score 130"
+  },
+  "minor-feelings": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
   },
   "my-early-life": {
     "status": "found",
@@ -1538,6 +1593,12 @@
     "status": "not_found",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
+  },
+  "quan-qiu-zhen-shi-gu-shi-ji-ii": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b1132fd0813abb085g010530",
+    "checkedAt": "2026-09-02",
+    "note": "单读40∙全球真实故事集II / 吴琦 / score 110"
   },
   "rang-chuang-yi-geng-you-nian-xing": {
     "status": "found",
@@ -1833,6 +1894,12 @@
     "checkedAt": "2026-08-28",
     "note": "始于极限：女性主义往复书简 / [日]上野千鹤子 [日]铃木凉美；书名主体和两位作者均匹配"
   },
+  "shi-zi-de-yong-tu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d3c32be071ec9881d3cedab",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：《识字的用途：工人阶级生活面貌》/ 理查德·霍加特，书名主体与作者精确匹配"
+  },
   "shu-niu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/3ee32110717e5b2f3eedab0",
@@ -1874,6 +1941,11 @@
     "url": "https://weread.qq.com/web/bookDetail/6c6328a07298174d6c6a1c5",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
+  },
+  "slavery-by-another-name": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
   },
   "su-fei-de-shi-jie": {
     "status": "found",
@@ -1932,6 +2004,11 @@
     "checkedAt": "2026-08-28",
     "note": "人工核验：英文书名无候选；继续搜索“双X经济”“双重X经济”和 Linda Scott，均无书名与作者可靠匹配"
   },
+  "the-exceptions": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
+  },
   "the-female-eunuch": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/13332ed0811e21fa4g01822a",
@@ -1978,6 +2055,11 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：The Years of Extermination / Saul Friedlander，与 Saul Friedländer 的书名和作者精确匹配"
   },
+  "there-is-no-place-for-us": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
+  },
   "tiao-zhe-ti-ta-wu-qu-shang-ban": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/20932580715608ef2094493",
@@ -1988,6 +2070,12 @@
     "status": "not_found",
     "checkedAt": "2026-08-26",
     "note": "人工核验：按英文书名及 Benjamin Nathans 搜索，未找到可靠匹配"
+  },
+  "tong-chuan-gen-zong-kuang-sha-ren-shi-jian": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/63332500724cc5686333355",
+    "checkedAt": "2026-09-02",
+    "note": "桶川跟踪狂杀人事件 / 清水洁 / score 130"
   },
   "tong-nian-de-mi-mi": {
     "status": "found",
@@ -2107,6 +2195,11 @@
     "checkedAt": "2026-07-03",
     "note": "文学理论入门 / 乔纳森·卡勒 / score 130"
   },
+  "wilmingtons-lie": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "No high-confidence WeRead match from title search"
+  },
   "wo-men-lai-yi-sheng-cun-de-yin-yu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/cad32570811e1a397g014198",
@@ -2124,6 +2217,17 @@
     "url": "https://weread.qq.com/web/bookDetail/121323f0729ac578121ce6f",
     "checkedAt": "2026-07-03",
     "note": "我们为什么要睡觉？ / 马修·沃克 / score 130"
+  },
+  "wo-shi-zhai-zi-li-zhang-da-de-nv-hai": {
+    "status": "not_found",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：仅检索到《我是寨子里长大的女孩（节选）》及相关杂志文章，未发现完整图书详情页；不以节选链接代替原书"
+  },
+  "wu-fa-zhi-mian-de-ren-sheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/bd932b707273eabebd9ca90",
+    "checkedAt": "2026-09-02",
+    "note": "无法直面的人生：鲁迅传（修订本） / 王晓明 / score 110"
   },
   "wu-gu": {
     "status": "found",
@@ -2286,6 +2390,12 @@
     "checkedAt": "2026-07-03",
     "note": "写作这回事：创作生涯回忆录（经典写作课） / [美]斯蒂芬·金 / score 110"
   },
+  "xin-ji-qi-de-ling-hun": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/34432670811e1a952g014227",
+    "checkedAt": "2026-09-02",
+    "note": "新机器的灵魂 / [美] Tracy Kidder / score 130"
+  },
   "xin-jin-rong-guai-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/8e2323d0720528388e25b6d",
@@ -2406,6 +2516,12 @@
     "checkedAt": "2026-07-03",
     "note": "以交易为生（原书第2版） / 亚历山大·埃尔德 / score 130"
   },
+  "yi-lang-jian-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/45c32d50811e73abeg016354",
+    "checkedAt": "2026-09-02",
+    "note": "伊朗简史 / Michael Axworthy / score 130"
+  },
   "yi-lian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/6dc32c70721eb3da6dc6921",
@@ -2441,6 +2557,18 @@
     "url": "https://weread.qq.com/web/bookDetail/36a320b0813ab7713g016e4b",
     "checkedAt": "2026-07-03",
     "note": "因果推断与机器学习 / 郭若城 等 / score 110"
+  },
+  "yin-mi-de-jiao-luo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/2d932ef0813ab9cedg0170b3",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：《隐秘的角落：无孔不入的厌女症》/ [英]劳拉·贝茨，书名主体、作者与主题精确匹配；排除紫金陈小说及影视解读书"
+  },
+  "ying-guo-gong-ren-jie-ji-de-xing-cheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/cd232500811e1a936g012029",
+    "checkedAt": "2026-09-02",
+    "note": "人工核验：《英国工人阶级的形成（上下）》/ [英] E.P. 汤普森，书名主体与作者精确匹配"
   },
   "ying-wei-da-zhi-dao": {
     "status": "found",
@@ -2637,6 +2765,12 @@
     "url": "https://weread.qq.com/web/bookDetail/be232300813ab6c03g015645",
     "checkedAt": "2026-07-03",
     "note": "这才是心理学（第11版，中文版） / 基思·斯坦诺维奇 著 / score 130"
+  },
+  "zhe-xue-de-zhi-yin": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/c5032dc0813ab89bcg0194e1",
+    "checkedAt": "2026-09-02",
+    "note": "哲学的指引 / [意]马西莫·匹格里奇 / score 130"
   },
   "zhe-xue-jia-de-zui-hou-yi-ke": {
     "status": "found",
