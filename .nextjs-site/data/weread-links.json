@@ -107,6 +107,12 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：按英文书名、副标题 How the Internet Hijacked Our Health 与作者 Deborah Cohen 搜索，未发现原书或可靠中文版本；已排除同名异书和仅含 influence 词项的无关结果"
   },
+  "bai-ban": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6f232ab05d20736f2d6d72b",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《白板》/ [美]史蒂芬·平克，书名与作者精确匹配；版本出版时间为 2016-12，与本次中译本一致"
+  },
   "bao-jin-wo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/63732280811e1c521g017743",
@@ -377,6 +383,12 @@
     "url": "https://weread.qq.com/web/bookDetail/320322b0811e81ff6g011037",
     "checkedAt": "2026-09-02",
     "note": "人工核验：《大道》/ 赵理亚选、芒格书院编；书名、编选者及段永平投资问答录内容精确匹配，排除同名小说和二手解读书"
+  },
+  "da-er-wen-de-wei-xian-si-xiang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/76632d30813ab7a43g0100b9",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《达尔文的危险思想》/ 丹尼尔·丹尼特，书名与作者精确匹配"
   },
   "da-guo-de-xing-shuai": {
     "status": "found",
@@ -781,6 +793,12 @@
     "url": "https://weread.qq.com/web/bookDetail/6c4324d059eee96c43a4b3e",
     "checkedAt": "2026-07-03",
     "note": "国富论 / 亚当·斯密 / score 130"
+  },
+  "guo-jia-wei-shen-me-hui-po-chan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/6ed320a0811e8205cg012eca",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《国家为什么会破产》/ [美]瑞·达利欧，书名精确匹配，作者为 Ray Dalio 的通行中文译名"
   },
   "guo-jia-wei-shen-me-hui-shi-bai": {
     "status": "found",
@@ -1261,6 +1279,12 @@
     "checkedAt": "2026-08-30",
     "note": "人工核验：了凡四训 / [明]袁了凡，书名与作者精确匹配；选用无副标题的原著版本"
   },
+  "life-s-greatest-secret": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/da6327f0813ab9153g018459",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：中文版《解码生命：破解遗传密码的竞赛与 20 世纪以来的分子生物学革命》/ [英]马修·科布，作者与原书主题精确匹配"
+  },
   "lin-jia-de-bai-wan-fu-weng": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/26532c00813ab83dbg0183ba",
@@ -1676,6 +1700,12 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：依次按英文书名、常见译名“正确犯错”“正确的错”和作者 Amy Edmondson / 艾米·埃德蒙森搜索；仅找到作者的《无畏的组织》等异书，没有书名与作者同时匹配的版本"
   },
+  "ru-he-kuai-su-liao-jie-yi-ge-hang-ye": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4a1321f0813aba52eg011a0a",
+    "checkedAt": "2026-09-03",
+    "note": "如何快速了解一个行业 / 肖璟 / score 130"
+  },
   "ru-he-rang-ni-ai-de-ren-ai-shang-ni": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/df032310715aa36edf07717",
@@ -1859,6 +1889,12 @@
     "checkedAt": "2026-07-03",
     "note": "时间的玫瑰（全新升级版） / 但斌 / score 130"
   },
+  "shi-jian-jian-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5c6321005a99cf5c649fade",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《时间简史》/ 史蒂芬·霍金，原作与作者精确匹配；平台为 2018 年版本，本次原文为 2010 年插图本"
+  },
   "shi-jie-guan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/61f322a071fac4b261f20c8",
@@ -1917,6 +1953,12 @@
     "url": "https://weread.qq.com/web/bookDetail/3ee32110717e5b2f3eedab0",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from broader title and author search"
+  },
+  "shuang-luo-xuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f18320c07182db1ff182119",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《双螺旋：发现DNA结构的故事》/ 詹姆斯·沃森，平台 ISBN 9787532770717 与本次原文一致"
   },
   "shuo-fu": {
     "status": "found",
@@ -2005,6 +2047,11 @@
     "checkedAt": "2026-08-31",
     "note": "manual-audit: searched Testament of Youth, Vera Brittain, 维拉·布里顿/布里坦, 青春誓言, 青春作证 and 青春的证明; results were unrelated books, including 森村诚一《青春的证明》"
   },
+  "the-age-of-alchemy": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按英文书名、Kit Chapman 与炼金术关键词搜索，未找到可靠微信读书版本"
+  },
   "the-dead-hand": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/45b326d0811e2b8ffg011d6c",
@@ -2056,10 +2103,25 @@
     "checkedAt": "2026-08-28",
     "note": "人工核验：The Road to Oxiana / Robert Byron，书名与作者完全匹配"
   },
+  "the-second-kind-of-impossible": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按英文书名、Paul J. Steinhardt、中文音译与准晶体关键词搜索，未找到可靠微信读书版本"
+  },
+  "the-social-transformation-of-american-medicine": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按英文书名、Paul Starr 及常见中文译名搜索，未找到可靠微信读书版本"
+  },
   "the-thinking-machine": {
     "status": "not_found",
     "checkedAt": "2026-08-26",
     "note": "人工核验：英文书名无可靠匹配；《黄仁勋传》候选作者为刘与白，并非 Stephen Witt"
+  },
+  "the-world-according-to-physics": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按英文书名、Jim Al-Khalili、中文音译与物理关键词搜索，未找到可靠微信读书版本"
   },
   "the-years-of-extermination": {
     "status": "found",
@@ -2211,6 +2273,18 @@
     "status": "not_found",
     "checkedAt": "2026-09-02",
     "note": "No high-confidence WeRead match from title search"
+  },
+  "wo-bao-luo-wan-xiang": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/86832d60719875af8681cf7",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《我包罗万象》/ 埃德·扬，书名精确匹配，作者为 Ed Yong 的通行中文译名"
+  },
+  "wo-cong-da-er-wen-na-li-xue-dao-de-tou-zi-zhi-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b1b326b0813abb75ag014f79",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《我从达尔文那里学到的投资知识》/ [印]普拉克·普拉萨德，书名精确匹配，作者为 Pulak Prasad 的中文译名"
   },
   "wo-men-lai-yi-sheng-cun-de-yin-yu": {
     "status": "found",
@@ -2576,6 +2650,12 @@
     "checkedAt": "2026-09-02",
     "note": "人工核验：《隐秘的角落：无孔不入的厌女症》/ [英]劳拉·贝茨，书名主体、作者与主题精确匹配；排除紫金陈小说及影视解读书"
   },
+  "yin-wei-du-te": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/55e32900813ab9640g017ec0",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《因为独特》/ 李翔，书名与作者精确匹配；排除同名解读书"
+  },
   "ying-guo-gong-ren-jie-ji-de-xing-cheng": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/cd232500811e1a936g012029",
@@ -2671,6 +2751,12 @@
     "checkedAt": "2026-07-03",
     "note": "娱乐至死 / 尼尔·波兹曼 / score 130"
   },
+  "yuan-dai-ma": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b7932540813ab9ecdg014812",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《源代码》/ [美]比尔·盖茨，书名与作者精确匹配；排除同名小说和技术书"
+  },
   "yuan-ding-yu-mu-jiang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/42432e707190d338424666e",
@@ -2765,6 +2851,12 @@
     "url": "https://weread.qq.com/web/bookDetail/bcb32150719afe3bbcbad52",
     "checkedAt": "2026-07-03",
     "note": "掌控习惯：如何养成好习惯并戒除坏习惯（《原子习惯》中文版）（新版） / 詹姆斯·克利尔 / score 110"
+  },
+  "zhang-yu-hai-yang-yu-shen-ceng-qi-yuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a0b32110811e743abg01094b",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：平台书名《章鱼的心灵》/ [澳]彼得·戈弗雷-史密斯，作者、章鱼与意识演化主题及八章结构均与 Other Minds 对应"
   },
   "zhao-hui-zhuan-zhu-li": {
     "status": "found",
