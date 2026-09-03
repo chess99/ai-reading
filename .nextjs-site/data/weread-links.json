@@ -57,6 +57,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "ai-zheng-chuan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b0e32b807292e185b0e7a13",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《癌症传（新版）》/ 悉达多·穆克吉，主标题与作者匹配；排除解读书、合集及旧版候选"
+  },
   "amity-and-prosperity": {
     "status": "not_found",
     "checkedAt": "2026-09-02",
@@ -932,6 +938,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "i-heard-there-was-a-secret-chord": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按 I Heard There Was a Secret Chord、Music as Medicine、Daniel J. Levitin 及中文译名关键词搜索，仅出现作者的其他著作，未找到可靠匹配"
+  },
   "igen": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c2232db0811e64494g0137e2",
@@ -1487,6 +1498,11 @@
     "url": "https://weread.qq.com/web/bookDetail/ba232180811e80546g0176d4",
     "checkedAt": "2026-08-31",
     "note": "人工核验：《女性的奥秘》/ [美]贝蒂·弗里丹；书名精确匹配，作者为 Betty Friedan 的通行中文译名"
+  },
+  "our-brains-our-selves": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按 Our Brains, Our Selves、Masud Husain 及中文题名关键词搜索，未找到可靠匹配"
   },
   "pao-wai-mai": {
     "status": "found",
@@ -2047,6 +2063,12 @@
     "checkedAt": "2026-08-31",
     "note": "manual-audit: searched Testament of Youth, Vera Brittain, 维拉·布里顿/布里坦, 青春誓言, 青春作证 and 青春的证明; results were unrelated books, including 森村诚一《青春的证明》"
   },
+  "testosterone-rex": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/1b632f8071665a9e1b6668e",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：微信版《荷尔蒙战争》/ 科迪莉亚·法恩；获奖信息及果蝇、性选择、大脑、风险、睾酮、雷曼姐妹和玩具性别化等章节与 Testosterone Rex 完整对应"
+  },
   "the-age-of-alchemy": {
     "status": "not_found",
     "checkedAt": "2026-09-03",
@@ -2139,6 +2161,11 @@
     "url": "https://weread.qq.com/web/bookDetail/20932580715608ef2094493",
     "checkedAt": "2026-07-28",
     "note": "跳着踢踏舞去上班 / 卡萝尔·卢米斯 / score 130"
+  },
+  "to-be-a-machine": {
+    "status": "not_found",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：按 To Be a Machine、Mark O'Connell、《成为机器》及《成为一台机器》等中英文题名搜索，未找到可靠匹配"
   },
   "to-the-success-of-our-hopeless-cause": {
     "status": "not_found",
@@ -2911,6 +2938,12 @@
     "url": "https://weread.qq.com/web/bookDetail/89c32460813aba25fg01310e",
     "checkedAt": "2026-07-03",
     "note": "证券分析（全新升级版） / [美]本杰明·格雷厄姆 [美]戴维·多德 / score 130"
+  },
+  "zheng-wu-zhi-mo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/83632e40720ef9d58369519",
+    "checkedAt": "2026-09-03",
+    "note": "人工核验：《正午之魔：抑郁是你我共有的秘密》/ 安德鲁·所罗门，主标题、副标题与作者均匹配"
   },
   "zheng-yi-lun": {
     "status": "found",
