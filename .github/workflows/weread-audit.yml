@@ -1,0 +1,26 @@
+name: WeRead audit helper
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Collect WeRead audit evidence
+        run: node .github/scripts/weread-audit.mjs
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: weread-audit-report
+          path: |
+            weread-audit.json
+            weread-audit.md
+          if-no-files-found: error
+
+# Temporary audit-only workflow; do not merge into main.

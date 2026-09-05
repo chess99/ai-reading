@@ -7,13 +7,10 @@ const siteRoot = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 const repoRoot = path.resolve(siteRoot, '..');
 const booksDir = path.join(repoRoot, 'books');
 const linksPath = path.join(siteRoot, 'data', 'weread-links.json');
-const today = new Date().toISOString().slice(0, 10);
 
 const args = new Set(process.argv.slice(2));
-const force = args.has('--force');
-const includeManual = args.has('--include-manual');
-const dryRun = args.has('--dry-run');
 const candidatesOnly = args.has('--candidates');
+const includeReviewed = args.has('--include-reviewed');
 const slugArg = process.argv.find(arg => arg.startsWith('--slug='));
 const targetSlug = slugArg ? slugArg.slice('--slug='.length).trim() : '';
 const limitArg = process.argv.find(arg => arg.startsWith('--limit='));
@@ -117,7 +114,6 @@ function parseSearchResults(html) {
       title: titleMatch ? decodeHtml(titleMatch[1]) : '',
       author: authorMatch ? decodeHtml(authorMatch[1]) : '',
       id: idMatch?.[1] || '',
-      href: hrefMatch?.[1]?.replace(/&amp;/g, '&') || '',
     };
   }).filter(result => result.title && result.id);
 }
@@ -149,23 +145,15 @@ function scoreCandidate(book, candidate) {
   };
 }
 
-function pickBestCandidate(book, candidates) {
-  const scored = scoreCandidates(book, candidates);
-  const best = scored[0];
-  if (!best || best.titleScore < 70 || best.authorScore === 0) {
-    return null;
-  }
-  return best;
-}
-
 function scoreCandidates(book, candidates) {
   return candidates
     .map(candidate => ({ candidate, ...scoreCandidate(book, candidate) }))
     .sort((a, b) => b.score - a.score);
 }
 
-function printCandidates(book, candidates) {
+function printCandidates(book, currentEntry, candidates) {
   console.log(`BOOK ${book.slug}: ${book.title} / ${book.author}`);
+  console.log(`CURRENT ${JSON.stringify(currentEntry ?? null)}`);
   const scored = scoreCandidates(book, candidates);
   if (scored.length === 0) {
     console.log('CANDIDATES []');
@@ -200,87 +188,44 @@ async function fetchCandidates(book) {
   return parseSearchResults(html);
 }
 
-function writeLinks(links) {
-  const ordered = Object.fromEntries(Object.entries(links).sort(([a], [b]) => a.localeCompare(b)));
-  fs.writeFileSync(linksPath, `${JSON.stringify(ordered, null, 2)}\n`);
-}
-
 const allBooks = loadBooks();
-const books = targetSlug
-  ? allBooks.filter(book => book.slug === targetSlug)
-  : allBooks;
+const links = loadLinks();
+let books;
 
-if (targetSlug && books.length === 0) {
-  throw new Error(`Unknown book slug: ${targetSlug}`);
+if (targetSlug) {
+  books = allBooks.filter(book => book.slug === targetSlug);
+  if (books.length === 0) {
+    throw new Error(`Unknown book slug: ${targetSlug}`);
+  }
+} else if (includeReviewed) {
+  books = allBooks;
+} else {
+  books = allBooks.filter(book => !(book.slug in links));
 }
 
-const links = loadLinks();
 let processed = 0;
-let found = 0;
-let notFound = 0;
-let skipped = 0;
+let skipped = allBooks.length - books.length;
 let errors = 0;
 
 for (const book of books) {
-  if (!candidatesOnly && links[book.slug]?.note?.startsWith('manual-audit') && !includeManual) {
-    skipped++;
-    continue;
-  }
-  if (!candidatesOnly && !force && links[book.slug]) {
-    skipped++;
-    continue;
-  }
   if (processed >= limit) {
     break;
   }
-
   processed++;
   try {
     const candidates = await fetchCandidates(book);
-    if (candidatesOnly) {
-      printCandidates(book, candidates);
-      continue;
-    }
-    const best = pickBestCandidate(book, candidates);
-    if (best) {
-      const { candidate, score } = best;
-      links[book.slug] = {
-        status: 'found',
-        url: `https://weread.qq.com/web/bookDetail/${candidate.id}`,
-        checkedAt: today,
-        note: `${candidate.title} / ${candidate.author} / score ${score}`,
-      };
-      found++;
-      console.log(`FOUND ${book.slug}: ${candidate.title} / ${candidate.author}`);
-    } else {
-      links[book.slug] = {
-        status: 'not_found',
-        checkedAt: today,
-        note: 'No high-confidence WeRead match from title search',
-      };
-      notFound++;
-      console.log(`MISS  ${book.slug}: ${book.title} / ${book.author}`);
-    }
+    printCandidates(book, links[book.slug], candidates);
   } catch (error) {
     errors++;
     console.log(`ERROR ${book.slug}: ${error.message}`);
   }
-
-  if (!dryRun && !candidatesOnly) {
-    writeLinks(links);
-  }
   await sleep(350);
 }
 
-if (candidatesOnly) {
-  console.log('Candidate mode: weread-links.json was not written; an agent must verify and record the result.');
-  if (errors > 0) {
-    process.exitCode = 1;
-  }
-} else if (dryRun) {
-  console.log('Dry run: weread-links.json was not written.');
-} else {
-  writeLinks(links);
-}
+console.log('Review-only mode: weread-links.json was not written.');
+console.log('An agent must inspect the real detail page, current readability, title/author identity, and plausible alternate editions before recording found or not_found.');
+console.log(`Done. processed=${processed} skipped=${skipped} errors=${errors}`);
 
-console.log(`Done. processed=${processed} found=${found} not_found=${notFound} skipped=${skipped} errors=${errors}`);
+if (errors > 0) {
+  process.exitCode = 1;
+}

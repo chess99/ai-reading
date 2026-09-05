@@ -7,7 +7,7 @@
     "dev": "node scripts/generate-manifest.js && next dev",
     "build": "node scripts/generate-manifest.js && next build && pagefind --site out",
     "preview": "node scripts/preview.mjs",
-    "weread:fetch": "node scripts/fetch-weread-links.mjs",
+    "weread:candidates": "node scripts/fetch-weread-links.mjs",
     "test": "node --test tests/*.test.mjs",
     "lint": "next lint"
   },

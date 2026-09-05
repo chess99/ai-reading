@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { test } from 'node:test';
@@ -26,4 +27,13 @@ test('candidate mode rejects an unknown target slug before searching', () => {
 
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Unknown book slug: __unknown_book_slug__/);
+});
+
+test('WeRead lookup helper is review-only and cannot write mappings', () => {
+  const source = readFileSync(scriptPath, 'utf8');
+
+  assert.match(source, /Review-only mode: weread-links\.json was not written/);
+  assert.match(source, /An agent must inspect the real detail page/);
+  assert.doesNotMatch(source, /writeFileSync/);
+  assert.doesNotMatch(source, /pickBestCandidate/);
 });
