@@ -930,6 +930,11 @@
     "checkedAt": "2026-08-19",
     "note": "manual-audit: no reliable match after English title, Eva Dou, and Chinese title variant searches"
   },
+  "how-progress-ends": {
+    "status": "not_found",
+    "checkedAt": "2026-09-11",
+    "note": "人工核验：按 How Progress Ends / Carl Benedikt Frey 搜索，微信读书未返回候选，未找到可靠匹配"
+  },
   "how-to-change-a-memory": {
     "status": "not_found",
     "checkedAt": "2026-09-01",
