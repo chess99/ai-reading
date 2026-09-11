@@ -551,6 +551,11 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：按英文书名、完整副标题、Neil Shubin、尼尔·舒彬及‘世界尽头/地球尽头’等可能译名搜索，未发现原书或可靠中文版本；已排除 Paul Theroux 的同名异书"
   },
+  "exactly": {
+    "status": "not_found",
+    "checkedAt": "2026-09-11",
+    "note": "人工核验：已按 Exactly / Simon Winchester 及完整副标题搜索；同名结果作者为落逸尘，属于异书，未找到可靠匹配"
+  },
   "everything-is-predictable": {
     "status": "not_found",
     "checkedAt": "2026-09-01",
