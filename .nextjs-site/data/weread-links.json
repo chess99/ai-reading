@@ -2432,6 +2432,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from broader title and author search"
   },
+  "xiang-yu-qi-xiang-ren": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/34132b0071a256903410e86",
+    "checkedAt": "2026-09-11",
+    "note": "人工核验：《象与骑象人》/ 乔纳森·海特，浙江人民出版社 2012 年版，ISBN 9787213050145；与本次原书版本一致，排除 2023 年《全新升级版》"
+  },
   "xiang-yue-xing-qi-er": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/083322407246320408351fc",
