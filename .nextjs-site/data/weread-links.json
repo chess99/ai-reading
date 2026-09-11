@@ -2167,6 +2167,11 @@
     "checkedAt": "2026-09-03",
     "note": "人工核验：按英文书名、Paul J. Steinhardt、中文音译与准晶体关键词搜索，未找到可靠微信读书版本"
   },
+  "the-sleeping-beauties": {
+    "status": "not_found",
+    "checkedAt": "2026-09-11",
+    "note": "人工核验：按 The Sleeping Beauties / Suzanne O'Sullivan 搜索；近似结果为川端康成小说 House of the Sleeping Beauties，属于异书，未找到可靠匹配"
+  },
   "the-social-transformation-of-american-medicine": {
     "status": "not_found",
     "checkedAt": "2026-09-03",
