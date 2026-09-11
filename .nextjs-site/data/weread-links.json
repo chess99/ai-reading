@@ -45,6 +45,11 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：《地球生命小史》/ 亨利·吉，中文译名与 Henry Gee 原书 A (Very) Short History of Life on Earth 对应；排除其他作者的同类生命史书"
   },
+  "abundance": {
+    "status": "not_found",
+    "checkedAt": "2026-09-11",
+    "note": "人工核验：已按 Abundance / Ezra Klein / Derek Thompson 搜索；唯一标题近似结果作者为 Peter H. Diamandis、Steven Kotler，属于异书，未找到可靠匹配"
+  },
   "ai-2041": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/0bc32b20813ab6d9fg0114c1",
