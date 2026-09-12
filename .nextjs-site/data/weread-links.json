@@ -2709,6 +2709,11 @@
     "checkedAt": "2026-07-03",
     "note": "一本书读懂财报 / 肖星 / score 130"
   },
+  "yi-dian-yuan-zhi-long": {
+    "status": "not_found",
+    "checkedAt": "2026-09-12",
+    "note": "人工核验：按《伊甸园之龙》/ Carl Sagan 搜索，候选均为同词网络小说、龙族作品或无关脑科学读物，未发现书名与作者可靠匹配的微信读书版本"
+  },
   "yi-jian-zi-ji-de-fang-jian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/423320f0813ab8f58g01571e",
