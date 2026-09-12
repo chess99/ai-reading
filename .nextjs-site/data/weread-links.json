@@ -2613,6 +2613,12 @@
     "checkedAt": "2026-08-29",
     "note": "人工核验：《辛弃疾传》 / 殷茹，书名与作者均精确匹配"
   },
+  "xin-zhi-tan-qi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/79b32a00813ab7f2cg016306",
+    "checkedAt": "2026-09-12",
+    "note": "人工核验：《心智探奇：人类心智的起源与进化》/ [美]史蒂芬·平克，对应 How the Mind Works，中文书名与作者精确匹配；选用作者字段未混入译者的条目"
+  },
   "xing-bie-da-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/34032c20813ab94b8g0106d5",
