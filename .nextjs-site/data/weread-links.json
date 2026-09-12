@@ -1356,6 +1356,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "liquid": {
+    "status": "not_found",
+    "checkedAt": "2026-09-12",
+    "note": "人工核验：按 Liquid / Mark Miodownik 搜索，未发现书名与作者可靠匹配的微信读书版本；候选均为无关材料、流体教材或技术规范"
+  },
   "liu-qing-xi-fang-xian-dai-si-xiang-jiang-yi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/88f322b0811e73c77g017c03",
