@@ -2055,6 +2055,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "six-impossible-things": {
+    "status": "not_found",
+    "checkedAt": "2026-09-12",
+    "note": "人工核验：按 Six Impossible Things / John Gribbin 搜索，未发现书名与作者可靠匹配的微信读书版本；排除《爱丽丝梦游仙境》、无关通识套装及仅在套装作者中提及 John Gribbin 的条目"
+  },
   "slavery-by-another-name": {
     "status": "not_found",
     "checkedAt": "2026-09-02",
