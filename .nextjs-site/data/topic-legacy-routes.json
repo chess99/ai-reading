@@ -1,0 +1,561 @@
+[
+  {
+    "slug": "pu-tong-ren-ru-he-li-jie-ai-bian-ge",
+    "title": "普通人如何理解 AI 变革",
+    "targets": [
+      "ai-bian-ge"
+    ]
+  },
+  {
+    "slug": "ai-feng-xian-zhi-li-yu-ji-shu-quan-li",
+    "title": "AI 风险、治理与技术权力",
+    "targets": [
+      "ai-feng-xian-zhi-li"
+    ]
+  },
+  {
+    "slug": "jian-li-cai-wu-chang-shi",
+    "title": "建立财务常识",
+    "targets": [
+      "cai-wu-chang-shi"
+    ]
+  },
+  {
+    "slug": "cong-0-dao-1-zuo-chan-pin",
+    "title": "产品从 0 到 1",
+    "targets": [
+      "chan-pin-0-dao-1"
+    ]
+  },
+  {
+    "slug": "ru-he-zuo-hao-chan-pin-fa-xian",
+    "title": "如何做好产品发现",
+    "targets": [
+      "chan-pin-fa-xian"
+    ]
+  },
+  {
+    "slug": "ru-he-yan-zheng-chan-pin-ji-hui",
+    "title": "如何验证产品机会",
+    "targets": [
+      "chan-pin-0-dao-1"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-chan-pin-zu-zhi-yu-jiao-fu-xi-tong",
+    "title": "如何建立产品组织与交付系统",
+    "targets": [
+      "chan-pin-zu-zhi-jiao-fu"
+    ]
+  },
+  {
+    "slug": "pu-tong-ren-ru-he-chang-qi-tou-zi",
+    "title": "普通人如何长期投资",
+    "targets": [
+      "chang-qi-tou-zi"
+    ]
+  },
+  {
+    "slug": "ru-he-chang-qi-jian-chi-xue-xi",
+    "title": "如何长期坚持学习",
+    "targets": [
+      "chang-qi-xue-xi"
+    ]
+  },
+  {
+    "slug": "cheng-shi-kong-jian-yu-sheng-huo-fang-shi",
+    "title": "城市、空间与生活方式",
+    "targets": [
+      "cheng-shi-kong-jian"
+    ]
+  },
+  {
+    "slug": "cheng-yin-zi-kong-yu-yi-yi-chong-jian",
+    "title": "成瘾、自控与意义重建",
+    "targets": [
+      "cheng-yin-shi-kong-hui-fu"
+    ]
+  },
+  {
+    "slug": "chuang-shang-yu-zi-wo-xiu-fu",
+    "title": "如何面对创伤与自我修复",
+    "targets": [
+      "chuang-shang-xiu-fu"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-er-tong-an-quan-gan-yu-jiao-yu-cheng-zhang",
+    "title": "如何理解儿童安全感与教育成长",
+    "targets": [
+      "er-tong-an-quan-gan-fa-zhan",
+      "jia-ting-xue-xi-jiao-yu-huan-jing"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-fa-lv-chang-shi",
+    "title": "如何建立法律常识",
+    "targets": [
+      "fa-lv-chang-shi"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-gai-lv-feng-xian-yu-yu-ce",
+    "title": "如何理解概率、风险与预测",
+    "targets": [
+      "gai-lv-feng-xian-yu-ce"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-gong-ping-yu-zheng-yi",
+    "title": "如何理解公平与正义",
+    "targets": [
+      "gong-ping-zheng-yi"
+    ]
+  },
+  {
+    "slug": "ru-he-ti-sheng-gou-tong-yu-biao-da",
+    "title": "如何提升沟通与表达",
+    "targets": [
+      "gou-tong-biao-da"
+    ]
+  },
+  {
+    "slug": "ru-he-shi-bie-guan-xi-zhong-de-an-quan-bian-jie-yu-tui-chu-feng-xian",
+    "title": "如何识别关系中的安全、边界与退出风险",
+    "targets": [
+      "guan-xi-an-quan-bian-jie"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-guo-ji-zhi-xu-yu-di-yuan-feng-xian",
+    "title": "如何理解国际秩序与地缘风险",
+    "targets": [
+      "guo-ji-zhi-xu-di-yuan"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-huan-jing-qi-hou-yu-ke-chi-xu-sheng-huo",
+    "title": "如何理解环境、气候与可持续生活",
+    "targets": [
+      "huan-jing-qi-hou-ke-chi-xu"
+    ]
+  },
+  {
+    "slug": "ji-shu-she-hui-du-shen-me",
+    "title": "技术社会读什么",
+    "targets": [
+      "ji-shu-she-hui"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-jia-zhi-tou-zi",
+    "title": "如何理解价值投资",
+    "targets": [
+      "jia-zhi-tou-zi"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-jian-kang-sheng-huo-fang-shi",
+    "title": "如何建立健康生活方式",
+    "targets": [
+      "jian-kang-sheng-huo"
+    ]
+  },
+  {
+    "slug": "li-jie-jiao-lv-yu-yi-yu",
+    "title": "理解焦虑与抑郁",
+    "targets": [
+      "jiao-lv-yi-yu"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-jiao-yi-zhou-qi-yu-shi-chang-feng-xian",
+    "title": "如何理解交易、周期与市场风险",
+    "targets": [
+      "jiao-yi-xi-tong-ji-lv",
+      "shi-chang-zhou-qi-hong-guan-feng-xian"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-jing-ji-yun-xing",
+    "title": "如何理解经济运行",
+    "targets": [
+      "jing-ji-yun-xing"
+    ]
+  },
+  {
+    "slug": "ru-he-ting-zhi-jing-shen-nei-hao",
+    "title": "如何停止精神内耗",
+    "targets": [
+      "jing-shen-nei-hao"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-shang-ye-jing-zheng-zhan-lve-yu-ping-tai-xiao-ying",
+    "title": "如何理解商业竞争、战略与平台效应",
+    "targets": [
+      "shang-ye-jing-zheng-zhan-lve",
+      "ping-tai-wang-luo-xiao-ying"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-ke-xue-shi-jie-guan",
+    "title": "如何建立科学世界观",
+    "targets": [
+      "ke-xue-shi-jie-guan"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-ling-dao-li-yu-tuan-dui-xie-zuo",
+    "title": "如何建立领导力与团队协作",
+    "targets": [
+      "tuan-dui-xie-zuo"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-mei-ti-yu-lun-yu-gong-gong-tao-lun",
+    "title": "如何理解媒体、舆论与公共讨论",
+    "targets": [
+      "mei-ti-gong-gong-tao-lun"
+    ]
+  },
+  {
+    "slug": "pian-jian-yu-qun-ti-ying-xiang",
+    "title": "如何识别偏见、从众与服从",
+    "targets": [
+      "pian-jian-cong-zhong-fu-cong"
+    ]
+  },
+  {
+    "slug": "kan-dong-ping-tai-suan-fa-yu-zhu-yi-li-feng-xian",
+    "title": "看懂平台、算法与注意力风险",
+    "targets": [
+      "ping-tai-suan-fa-zhu-yi-li"
+    ]
+  },
+  {
+    "slug": "ru-he-chu-li-qin-mi-guan-xi-zhong-de-chong-tu",
+    "title": "如何处理亲密关系中的冲突",
+    "targets": [
+      "qin-mi-guan-xi"
+    ]
+  },
+  {
+    "slug": "li-jie-qin-mi-guan-xi",
+    "title": "亲密关系阅读路径",
+    "targets": [
+      "qin-mi-guan-xi"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-qing-xu",
+    "title": "如何理解情绪",
+    "targets": [
+      "qing-xu"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-zu-zhi-zhong-de-quan-li-yu-bian-ge",
+    "title": "如何理解组织中的权力与变革",
+    "targets": [
+      "quan-li-bian-ge"
+    ]
+  },
+  {
+    "slug": "ren-sheng-zhe-xue-ru-men",
+    "title": "人生哲学入门",
+    "targets": [
+      "ren-sheng-zhe-xue"
+    ]
+  },
+  {
+    "slug": "mian-dui-sang-shi-ai-shang-yu-si-wang",
+    "title": "面对丧失、哀伤与死亡",
+    "targets": [
+      "sang-shi-ai-shang-si-wang"
+    ]
+  },
+  {
+    "slug": "ru-he-she-ji-shang-ye-mo-shi-yu-li-jie-gong-si-jing-ying",
+    "title": "如何设计商业模式与理解公司经营",
+    "targets": [
+      "shang-ye-mo-shi-jing-ying"
+    ]
+  },
+  {
+    "slug": "she-hui-xue-ru-he-kan-gong-tong-sheng-huo",
+    "title": "社会学如何看共同生活",
+    "targets": [
+      "she-hui-xue-gong-tong-sheng-huo"
+    ]
+  },
+  {
+    "slug": "ti-gao-shen-du-gong-zuo-neng-li",
+    "title": "如何提高深度工作能力",
+    "targets": [
+      "shen-du-gong-zuo"
+    ]
+  },
+  {
+    "slug": "ru-he-guan-li-shi-jian-jing-li-yu-ge-ren-xi-tong",
+    "title": "如何管理时间、精力与个人系统",
+    "targets": [
+      "shi-jian-jing-li-xi-tong"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-shi-jie-li-shi",
+    "title": "如何理解世界历史",
+    "targets": [
+      "shi-jie-li-shi"
+    ]
+  },
+  {
+    "slug": "shu-zi-gong-gong-sheng-huo-yu-xin-xi-wang-luo",
+    "title": "数字公共生活与信息网络",
+    "targets": [
+      "mei-ti-gong-gong-tao-lun"
+    ]
+  },
+  {
+    "slug": "mian-dui-shuai-lao-ji-bing-yu-zhao-hu",
+    "title": "面对衰老、疾病与照护",
+    "targets": [
+      "shuai-lao-ji-bing-zhao-hu"
+    ]
+  },
+  {
+    "slug": "ru-he-du-dong-tong-ku-zi-you-yu-yi-yi",
+    "title": "如何读懂痛苦、自由与意义",
+    "targets": [
+      "tong-ku-zi-you-yi-yi"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-wen-ding-de-zi-zun",
+    "title": "如何建立稳定的自尊",
+    "targets": [
+      "wen-ding-zi-zun"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-wen-ming-xing-shuai",
+    "title": "如何理解文明兴衰",
+    "targets": [
+      "wen-ming-xing-shuai"
+    ]
+  },
+  {
+    "slug": "wen-xue-yu-ren-wen-yue-du-ru-men",
+    "title": "文学与人文阅读入门",
+    "targets": [
+      "wen-xue-ren-wen"
+    ]
+  },
+  {
+    "slug": "xi-tong-yu-fu-za-xing",
+    "title": "什么是系统思维与复杂性",
+    "targets": [
+      "xi-tong-fu-za-xing"
+    ]
+  },
+  {
+    "slug": "kan-dong-xiao-fei-zhu-yi-cai-fu-yu-jie-ceng-ji-hui",
+    "title": "看懂消费主义、财富与阶层机会",
+    "targets": [
+      "xiao-fei-zhu-yi-jie-ceng"
+    ]
+  },
+  {
+    "slug": "xie-zuo-yu-chuang-yi-gong-zuo",
+    "title": "写作与创意工作",
+    "targets": [
+      "xie-zuo-chuang-yi"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-xing-bie-yu-she-hui-jie-gou",
+    "title": "如何理解性别与社会结构",
+    "targets": [
+      "xing-bie-she-hui-jie-gou"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-xing-fu",
+    "title": "如何理解幸福",
+    "targets": [
+      "xing-fu"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-xing-wei-jing-ji-xue-yu-jin-qian-xin-li",
+    "title": "如何理解行为经济学与金钱心理",
+    "targets": [
+      "xing-wei-jing-ji-xue"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-ya-li-hui-fu-yu-shen-ti-xin-hao",
+    "title": "如何理解压力、恢复与身体信号",
+    "targets": [
+      "ya-li-hui-fu"
+    ]
+  },
+  {
+    "slug": "yi-shu-yu-shen-mei-ru-men",
+    "title": "艺术与审美入门",
+    "targets": [
+      "yi-shu-shen-mei"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-yin-shi-yu-dai-xie",
+    "title": "如何理解饮食与代谢",
+    "targets": [
+      "yin-shi-dai-xie"
+    ]
+  },
+  {
+    "slug": "ru-he-cheng-wei-you-xiao-guan-li-zhe",
+    "title": "如何成为有效管理者",
+    "targets": [
+      "you-xiao-guan-li-zhe"
+    ]
+  },
+  {
+    "slug": "yue-du-bi-ji-yu-shu-chu-xi-tong",
+    "title": "阅读、笔记与输出系统",
+    "targets": [
+      "yue-du-bi-ji-shu-chu"
+    ]
+  },
+  {
+    "slug": "ru-he-li-jie-yun-dong-yu-ti-neng",
+    "title": "如何理解运动与体能",
+    "targets": [
+      "yun-dong-ti-neng"
+    ]
+  },
+  {
+    "slug": "ru-he-zuo-zeng-zhang-yu-ying-xiao",
+    "title": "如何做增长与营销",
+    "targets": [
+      "zeng-zhang-ying-xiao"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-pi-pan-xing-yu-zheng-ju-pan-duan",
+    "title": "如何建立批判性与证据判断",
+    "targets": [
+      "zheng-ju-pan-duan"
+    ]
+  },
+  {
+    "slug": "ru-he-shi-bie-zhi-du-yu-quan-li",
+    "title": "如何识别制度与权力",
+    "targets": [
+      "zhi-du-quan-li"
+    ]
+  },
+  {
+    "slug": "zhi-ye-xuan-ze-yue-du-lu-jing",
+    "title": "职业选择阅读路径",
+    "targets": [
+      "zhi-ye-xuan-ze"
+    ]
+  },
+  {
+    "slug": "ru-he-jian-li-chang-qi-zhi-ye-zi-ben",
+    "title": "如何建立长期职业资本",
+    "targets": [
+      "zhi-ye-zi-ben"
+    ]
+  },
+  {
+    "slug": "zhong-guo-li-shi-ru-men",
+    "title": "中国历史入门",
+    "targets": [
+      "zhong-guo-li-shi"
+    ]
+  },
+  {
+    "slug": "zhong-guo-she-hui-de-xian-dai-zhuan-xing",
+    "title": "中国社会的现代转型",
+    "targets": [
+      "zhong-guo-xian-dai-zhuan-xing"
+    ]
+  },
+  {
+    "slug": "ru-he-zuo-zu-gou-hao-de-fu-mu",
+    "title": "如何做足够好的父母",
+    "targets": [
+      "zu-gou-hao-de-fu-mu"
+    ]
+  },
+  {
+    "slug": "kan-dong-zu-zhi-yun-zhuan",
+    "title": "看懂组织运转",
+    "targets": [
+      "zu-zhi-yun-zhuan"
+    ]
+  },
+  {
+    "slug": "qin-mi-chong-tu",
+    "title": "如何处理亲密关系中的冲突",
+    "targets": [
+      "qin-mi-guan-xi"
+    ]
+  },
+  {
+    "slug": "chan-pin-ji-hui",
+    "title": "如何验证产品机会",
+    "targets": [
+      "chan-pin-0-dao-1"
+    ]
+  },
+  {
+    "slug": "shu-zi-gong-gong-sheng-huo",
+    "title": "数字公共生活与信息网络",
+    "targets": [
+      "mei-ti-gong-gong-tao-lun"
+    ]
+  },
+  {
+    "slug": "jiao-yi-zhou-qi-feng-xian",
+    "title": "如何理解交易、周期与市场风险",
+    "targets": [
+      "jiao-yi-xi-tong-ji-lv",
+      "shi-chang-zhou-qi-hong-guan-feng-xian"
+    ]
+  },
+  {
+    "slug": "jing-zheng-zhan-lve-ping-tai",
+    "title": "如何理解商业竞争、战略与平台效应",
+    "targets": [
+      "shang-ye-jing-zheng-zhan-lve",
+      "ping-tai-wang-luo-xiao-ying"
+    ]
+  },
+  {
+    "slug": "er-tong-an-quan-gan",
+    "title": "如何理解儿童安全感与教育成长",
+    "targets": [
+      "er-tong-an-quan-gan-fa-zhan",
+      "jia-ting-xue-xi-jiao-yu-huan-jing"
+    ]
+  },
+  {
+    "slug": "cheng-yin-zi-kong",
+    "title": "成瘾、自控与意义重建",
+    "targets": [
+      "cheng-yin-shi-kong-hui-fu"
+    ]
+  },
+  {
+    "slug": "ling-dao-li-tuan-dui",
+    "title": "如何建立领导力与团队协作",
+    "targets": [
+      "tuan-dui-xie-zuo"
+    ]
+  }
+]

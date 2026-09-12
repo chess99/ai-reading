@@ -1,91 +1,77 @@
 ---
 slug: ji-shu-she-hui
-title: 技术社会读什么
-description: 从技术演化、媒介环境和平台结构理解技术如何改变社会生活。
-tags: [技术社会, 媒介, 平台]
+title: 技术怎样进入社会
+description: 从发明、工程、采用与制度理解技术变化，观察效率以外的劳动、基础设施和权力。
+tags:
+  - 科技
+  - 社会
+  - 技术社会
+  - 媒介
+  - 平台
 domain: 科技
-group: 技术社会
-date: '2026-06-06'
+domains:
+  - 科技
+  - 社会
+mode: comparison
+entry: 想理解技术如何改变生活，也想知道改变为何受到现实条件限制。
+related:
+  - wu-zhi-ji-shu
+  - ai-bian-ge
+  - ping-tai-suan-fa-zhu-yi-li
+date: '2026-09-12'
 books:
   - title: 技术的本质
     author: 布莱恩·阿瑟
     slug: ji-shu-de-ben-zhi
     path: books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md
-    role: 技术演化
-    reason: 先把技术看成会组合、演进和扩散的系统，而不是单个工具。
     status: in_library
-  - title: 必然
-    author: 凯文·凯利
-    slug: bi-ran
-    path: books/科技媒介/未来技术/凯文·凯利-必然.md
-    role: 网络趋势
-    reason: 用网络化、流动化和协作化理解数字社会的长期倾向。
+    reading: start
+    role: 组合与演化
+    reason: 理解技术由已有组件形成并继续演化的解释。
+  - title: Nuts and Bolts
+    author: Roma Agrawal
+    slug: nuts-and-bolts
+    path: books/科技媒介/未来技术/Roma Agrawal-Nuts and Bolts.md
     status: in_library
-  - title: 失控
-    author: 凯文·凯利
-    slug: shi-kong
-    path: books/科技媒介/未来技术/凯文·凯利-失控.md
-    role: 复杂系统
-    reason: 帮助读者看见技术系统中的涌现、自组织和不可完全控制。
+    reading: next
+    role: 具体工程
+    reason: 从日常工程构件认识技术的物质条件和人的设计工作。
+  - title: 技术的社会形成
+    author: '唐纳德·麦肯齐,朱迪·瓦吉曼'
+    originalTitle: The Social Shaping of Technology
+    status: planned
+    reading: compare
+    role: 社会选择与技术
+    reason: 比较组织、制度与使用者怎样参与技术形成，避免技术决定论。
+  - title: How Progress Ends
+    author: Carl Benedikt Frey
+    slug: how-progress-ends
+    path: books/社会公共/技术社会/Carl Benedikt Frey-How Progress Ends.md
     status: in_library
-  - title: 理解媒介
-    author: 马歇尔·麦克卢汉
-    slug: li-jie-mei-jie
-    path: books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md
-    role: 媒介环境
-    reason: 把注意力从内容转向媒介形式如何改变感知和社会关系。
+    reading: optional
+    role: 创新与权力
+    reason: 讨论创新路径与制度力量之间的关系，检查历史比较的依据。
+  - title: Cobalt Red
+    author: Siddharth Kara
+    slug: cobalt-red
+    path: books/社会公共/技术社会/Siddharth Kara-Cobalt Red.md
     status: in_library
-  - title: 娱乐至死
-    author: 尼尔·波兹曼
-    slug: yu-le-zhi-si
-    path: books/社会公共/媒介传播/尼尔·波兹曼-娱乐至死.md
-    role: 娱乐化风险
-    reason: 说明媒介形式如何把公共讨论推向轻快、碎片和表演。
-    status: in_library
-  - title: 监视资本主义时代
-    author: Shoshana Zuboff
-    slug: jian-shi-zi-ben-zhu-yi-shi-dai
-    path: books/社会公共/技术社会/Shoshana Zuboff-监视资本主义时代.md
-    role: 数据权力
-    reason: 解释平台如何把行为数据、预测和商业利益连接起来。
-    status: in_library
-  - title: 平台革命
-    author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
-    slug: ping-tai-ge-ming
-    path: books/商业产品/商业模式/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
-    role: 平台结构
-    reason: 用平台商业和治理机制补足技术社会的组织形态。
-    status: in_library
+    reading: optional
+    role: 供应链与劳动
+    reason: 通过钴开采调查观察数字技术背后的劳动和资源代价。
 ---
+# 技术怎样进入社会
 
-# 技术社会读什么
+技术并不只是一项发明。材料、制造、能源、标准、维护与使用习惯，都会影响它怎样进入日常生活，以及谁承担代价。
 
-技术社会难理解，不只是因为新工具太多，更因为工具、商业模式、媒介形式和人的行为会互相塑造。只盯着某个产品，很容易把短期功能误当成长期趋势；只谈趋势，又容易忽略技术如何进入日常生活。
+《技术的本质》讨论组合与演化，《Nuts and Bolts》让这些问题落到工程构件。《技术的社会形成》则提醒读者关注组织、制度和使用者的选择，技术的发展不必然沿唯一道路展开。
 
-这条路径先看技术如何演化，再进入网络和复杂系统，随后转向媒介环境、娱乐化公共讨论、数据权力和平台结构。
+## 同时看采用与分配
 
-## 入口：技术不是孤立工具
+《How Progress Ends》把创新与制度、权力联系起来。《Cobalt Red》通过供应链调查呈现更具体的劳动与资源处境。读后者需要保留地点与证据范围，也应追问最终产品的便利怎样连接远处的成本。
 
-《技术的本质》适合作为入口。它把技术看成由既有技术组合而来的演化系统，让读者先理解“新技术”为什么常常来自旧模块的新连接。
-
-《必然》把视角推到数字网络的长期趋势。它不适合当成预言书读，而适合用来观察流动、共享、协作和筛选如何改变信息生产与社会组织。
-
-## 框架：从网络走向媒介环境
-
-《失控》补上复杂系统视角。技术系统一旦足够大，就会出现涌现、反馈和局部适应，很多后果不是单个设计者能完全安排的。
-
-《理解媒介》提醒读者，媒介本身会改变人的感知、时间感和社会关系。它让这条路径从“技术做了什么”转向“技术让我们怎样看、怎样说、怎样组织生活”。
-
-## 系统：商业、权力与平台
-
-《娱乐至死》处理媒介环境中的公共讨论问题：当信息被娱乐形式主导，严肃议题也会被压成短促、可消费的片段。
-
-《监视资本主义时代》进一步解释数据收集、行为预测和商业激励如何结合。读到这里，技术不再只是效率工具，也是一种分配注意力和塑造行为的权力。
-
-《平台革命》放在最后，用平台的网络效应、规则设计和生态治理收束这条路径。它帮助读者理解为什么平台不是普通公司，而是很多交易、表达和协作的基础设施。
+技术带来的收益可以真实存在，分配方式仍值得讨论。效率提高与所有人获益不是同一个命题。
 
 ## 建议读法
 
-先用《技术的本质》和《必然》建立技术演化和数字趋势的基本视角，再读《失控》和《理解媒介》，观察技术系统如何超出单点功能。最后读《娱乐至死》《监视资本主义时代》和《平台革命》，把媒介、数据和平台权力连起来。
-
-阅读时可以持续追问：这项技术由哪些旧技术组合而来？它改变的是内容、媒介还是关系？谁从数据和注意力中获益？平台规则如何改变参与者行为？
+选一项常用技术，追踪材料、制造、能源、维护、规则和使用者。分别记录哪些变化来自技术能力，哪些来自商业或公共制度的选择。理解数字平台或 AI 时，可继续进入相应主题。

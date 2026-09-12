@@ -1,91 +1,83 @@
 ---
 slug: shi-jie-li-shi
-title: 如何理解世界历史
-description: "围绕理解世界历史，从《全球通史》进入，逐步建立框架、实践判断和系统视角。"
-tags: [历史, 文明, 世界格局]
+title: 世界历史：时间、连接与经验
+description: 用通史定位，再沿贸易、帝国与普通人的经历理解不同地区怎样相互影响。
+tags:
+  - 历史
+  - 文明
+  - 世界格局
 domain: 历史
-group: 世界历史
-date: '2026-06-06'
+domains:
+  - 历史
+mode: path
+entry: 想建立世界历史的地图，并逐步接近具体时代和人群。
+related:
+  - wen-ming-xing-shuai
+  - guo-ji-zhi-xu-di-yuan
+  - zhan-zheng-yu-ren
+date: '2026-09-12'
 books:
   - title: 全球通史
     author: 斯塔夫里阿诺斯
     slug: quan-qiu-tong-shi
     path: books/历史世界/世界历史/斯塔夫里阿诺斯-全球通史.md
-    role: 通史入口
-    reason: 先建立世界史的大时间线和区域框架。
     status: in_library
-  - title: 人类简史
-    author: 尤瓦尔·赫拉利
-    slug: ren-lei-jian-shi
-    path: books/历史世界/世界历史/尤瓦尔·赫拉利-人类简史.md
-    role: 人类叙事
-    reason: 用认知、农业、国家和科技等大叙事提供跨区域比较入口。
-    status: in_library
-  - title: 枪炮、病菌与钢铁
-    author: 贾雷德·戴蒙德
-    slug: qiang-pao-bing-jun-yu-gang-tie
-    path: books/历史世界/世界历史/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
-    role: 地理条件
-    reason: 解释地理、物种、疾病和技术扩散如何影响长期差异。
-    status: in_library
+    reading: start
+    role: 跨区域地图
+    reason: 建立主要时代与区域连接的基本框架，注意通史的取舍。
   - title: 丝绸之路
     author: 彼得·弗兰科潘
     slug: si-chou-zhi-lu
     path: books/历史世界/世界历史/彼得·弗兰科潘-丝绸之路.md
-    role: 贸易网络
-    reason: 把世界史从国家列表改写为欧亚交流、贸易和文化流动。
     status: in_library
-  - title: 大国的兴衰
-    author: 保罗·肯尼迪
-    slug: da-guo-de-xing-shuai
-    path: books/历史世界/世界历史/保罗·肯尼迪-大国的兴衰.md
-    role: 大国兴衰
-    reason: 用经济、军事和财政压力理解霸权更替。
+    reading: compare
+    role: 交流与网络
+    reason: 从贸易、宗教和欧亚交流重新观察历史重心。
+  - title: 人类新史
+    author: '大卫·格雷伯,大卫·温格罗'
+    slug: ren-lei-xin-shi
+    path: 'books/社会公共/社会理论/大卫·格雷伯,大卫·温格罗-人类新史.md'
     status: in_library
-  - title: 世界秩序
-    author: 亨利·基辛格
-    slug: shi-jie-zhi-xu
-    path: books/历史世界/国际秩序/亨利·基辛格-世界秩序.md
-    role: 秩序框架
-    reason: 把历史经验接到国际秩序、外交传统和大国关系。
+    reading: compare
+    role: 早期社会的不同可能
+    reason: 比较早期社会组织与不平等起源的解释，关注考古与人类学依据。
+  - title: 英国工人阶级的形成
+    author: E. P. Thompson
+    slug: ying-guo-gong-ren-jie-ji-de-xing-cheng
+    path: books/历史世界/世界历史/E. P. Thompson-英国工人阶级的形成.md
     status: in_library
-  - title: 未来简史
-    author: 尤瓦尔·赫拉利
-    slug: wei-lai-jian-shi
-    path: books/科技媒介/未来技术/尤瓦尔·赫拉利-未来简史.md
-    role: 现代风险
-    reason: 放在末尾，提醒读者现代技术和未来想象也会重写历史问题。
+    reading: optional
+    role: 社会史的尺度
+    reason: 研究劳动、经验与集体身份，进入宏大国家叙事之外的历史。
+  - title: 拥抱战败
+    author: John W. Dower
+    slug: yong-bao-zhan-bai
+    path: books/历史世界/世界历史/John W. Dower-拥抱战败.md
     status: in_library
+    reading: optional
+    role: 战争之后的社会
+    reason: 通过战后日本的具体转变理解占领、制度和日常生活。
+  - title: 昨日的世界
+    author: Stefan Zweig
+    slug: zuo-ri-de-shi-jie
+    path: books/历史世界/传记回忆/Stefan Zweig-昨日的世界.md
+    status: in_library
+    reading: optional
+    role: 回忆中的时代
+    reason: 从个人回忆接近欧洲的变化，区分记忆、经验和总体史。
 ---
+# 世界历史：时间、连接与经验
 
-# 如何理解世界历史
+世界史的地图需要时间，也需要连接。贸易、战争、迁徙和技术传播会让不同地区相互改变，单个文明的故事并不能独立解释所有结果。
 
-世界历史难读，主要难在尺度太多：地理、疾病、贸易、帝国、宗教、技术、战争和国际秩序都在同一张图里。入门时需要先建立框架，再逐步补充解释变量。
+《全球通史》适合定位，《丝绸之路》改变观察重心。通史必然有取舍，读者可以比较作者把哪些地区放在中心、哪些经验写得很少。
 
-这条路径按计划中的“入门”层级组织。从通史和人类叙事入门，再看地理、贸易网络、国家兴衰、国际秩序和现代风险。
+## 从总图进入一个具体问题
 
-## 入口：先搭世界图景
+《人类新史》对早期社会提出不同解释，适合与既有发展叙事比较。《英国工人阶级的形成》观察阶级怎样在经验与行动中形成，《拥抱战败》聚焦战后社会的变化。
 
-《全球通史》适合作为第一本，因为它提供跨区域的时间线。读它时不要只记欧洲、中国或中东，而要看各区域何时相互连接。
-
-《人类简史》提供更高层的人类叙事。认知革命、农业、国家、金钱、宗教和科技，让读者获得跨文明比较的入口。
-
-## 框架：长期力量如何展开
-
-《枪炮、病菌与钢铁》把历史差异推向地理、物种、疾病和技术传播。它适合帮助读者避免只用民族性格解释文明差异。
-
-《丝绸之路》把世界史写成交流史。贸易、宗教、疾病、商品和思想沿着道路移动，世界历史因此不是封闭文明的并列。
-
-《大国的兴衰》关注经济、军事和财政能力。它让读者理解霸权更替常常不是一场战役决定，而是长期资源负担的结果。
-
-## 系统：秩序与未来
-
-《世界秩序》把历史经验接到国际关系。不同文明对秩序、合法性和均势的理解，会影响现代大国关系。
-
-《未来简史》放在最后，是为了提醒读者，世界历史并未停在现代国家形成。技术、算法、生命科学和未来想象，正在改变人类叙事的边界。
+《昨日的世界》是个人回忆。它能呈现时代感受，却不能替代对所有群体的历史研究。
 
 ## 建议读法
 
-读这组书时，建议同时画两条线：一条是时间线，一条是连接线。时间线帮助定位事件，连接线帮助看见贸易、技术、疾病和制度如何跨区域移动。
-
-可以带着四个问题阅读：一个地区的优势来自内部制度还是外部连接？地理条件如何变成历史机会？大国为什么会在扩张中积累负担？现代技术会延续还是打断过去的历史逻辑？
+先选一个时间段或连接问题，再决定读哪条分支。把作者使用的史料、叙述对象与解释分开记录，尤其留意被统一进“一个时代”的人是否拥有相同经历。

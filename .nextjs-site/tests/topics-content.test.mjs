@@ -1,156 +1,89 @@
 import assert from 'node:assert/strict';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { test } from 'node:test';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+const root = fileURLToPath(new URL('../..', import.meta.url));
+const scan = dir => readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? scan(path.join(dir, e.name)) : e.name.endsWith('.md') ? [path.join(dir, e.name)] : []);
+const load = file => ({ ...matter(readFileSync(file, 'utf8')), file });
+const topics = scan(path.join(root, 'topics')).map(load);
+const library = new Map(scan(path.join(root, 'books')).map(file => { const { data } = load(file); return [data.slug, { ...data, path: path.relative(root, file).split(path.sep).join('/') }]; }));
+const legacy = JSON.parse(readFileSync(new URL('../data/topic-legacy-routes.json', import.meta.url), 'utf8'));
+const bySlug = new Map(topics.map(t => [t.data.slug, t]));
 
-const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
-const topicsDir = path.join(repoRoot, 'topics');
-const booksDir = path.join(repoRoot, 'books');
-
-const mergedTopics = new Map([
-  ['qin-mi-chong-tu', 'qin-mi-guan-xi'],
-  ['chan-pin-ji-hui', 'chan-pin-0-dao-1'],
-  ['shu-zi-gong-gong-sheng-huo', 'mei-ti-gong-gong-tao-lun'],
-]);
-
-const splitTopics = new Map([
-  ['jiao-yi-zhou-qi-feng-xian', ['jiao-yi-xi-tong-ji-lv', 'shi-chang-zhou-qi-hong-guan-feng-xian']],
-  ['jing-zheng-zhan-lve-ping-tai', ['shang-ye-jing-zheng-zhan-lve', 'ping-tai-wang-luo-xiao-ying']],
-  ['er-tong-an-quan-gan', ['er-tong-an-quan-gan-fa-zhan', 'jia-ting-xue-xi-jiao-yu-huan-jing']],
-]);
-
-const specialtyParents = new Map([
-  ['jiao-lv-yi-yu', 'qing-xu'],
-  ['chan-pin-fa-xian', 'chan-pin-0-dao-1'],
-  ['ping-tai-suan-fa-zhu-yi-li', 'ji-shu-she-hui'],
-  ['tong-ku-zi-you-yi-yi', 'ren-sheng-zhe-xue'],
-  ['ya-li-hui-fu', 'jian-kang-sheng-huo'],
-  ['jia-ting-xue-xi-jiao-yu-huan-jing', 'zu-gou-hao-de-fu-mu'],
-]);
-
-const bannedTemplatePhrases = [
-  '难点，通常不在于缺少信息',
-  '它让前面的入口判断继续向前推进',
-  '从一个模糊感受整理成可以分析',
-  '真正有用的阅读路径，需要先让问题变清楚',
-];
-
-function toRepoPath(filePath) {
-  return path.relative(repoRoot, filePath).split(path.sep).join('/');
-}
-
-function scanMarkdownFiles(dir) {
-  const files = [];
-  for (const entry of readdirSync(dir, { withFileTypes: true })) {
-    const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      files.push(...scanMarkdownFiles(fullPath));
-    } else if (entry.isFile() && entry.name.endsWith('.md')) {
-      files.push(fullPath);
-    }
-  }
-  return files;
-}
-
-function loadBooksBySlug() {
-  const booksBySlug = new Map();
-  for (const filePath of scanMarkdownFiles(booksDir)) {
-    const relativePath = toRepoPath(filePath);
-    const { data } = matter(readFileSync(filePath, 'utf8'));
-    if (typeof data.slug === 'string' && data.slug.trim()) {
-      booksBySlug.set(data.slug, { ...data, relativePath });
-    }
-  }
-  return booksBySlug;
-}
-
-test('topic markdown files follow the current curation and hierarchy model', () => {
-  assert.equal(existsSync(topicsDir), true, 'topics/ directory should exist');
-
-  const booksBySlug = loadBooksBySlug();
-  const topicFiles = scanMarkdownFiles(topicsDir);
-  const slugs = new Set();
-  const topicDataBySlug = new Map();
-
-  for (const filePath of topicFiles) {
-    const relativePath = toRepoPath(filePath);
-    const { data, content } = matter(readFileSync(filePath, 'utf8'));
-
-    assert.equal(typeof data.slug, 'string', `${relativePath} should have a slug`);
-    assert.match(data.slug, /^[a-z0-9-]+$/, `${relativePath} slug should be URL-safe`);
-    assert.equal(slugs.has(data.slug), false, `${relativePath} slug should be unique`);
-    slugs.add(data.slug);
-    topicDataBySlug.set(data.slug, data);
-
-    assert.equal(typeof data.title, 'string', `${relativePath} should have a title`);
-    assert.equal(typeof data.description, 'string', `${relativePath} should have a description`);
-    assert.ok(Array.isArray(data.tags) && data.tags.length > 0, `${relativePath} should have tags`);
-    assert.equal(typeof data.date, 'string', `${relativePath} should have a date`);
-    assert.match(data.date, /^\d{4}-\d{2}-\d{2}$/, `${relativePath} date should use YYYY-MM-DD`);
-
-    if (data.kind !== undefined) {
-      assert.match(data.kind, /^(primary|specialty)$/, `${relativePath} should use a supported topic kind`);
-    }
-
-    if (data.kind === 'specialty') {
-      assert.equal(typeof data.parent, 'string', `${relativePath} specialty should declare a parent slug`);
-      assert.match(data.parent, /^[a-z0-9-]+$/, `${relativePath} parent slug should be URL-safe`);
-    } else {
-      assert.equal(data.parent, undefined, `${relativePath} primary topic should not declare a parent`);
-    }
-
-    const topicBooks = data.books || [];
-    assert.ok(Array.isArray(topicBooks), `${relativePath} books should be an array when present`);
-    assert.ok(content.trim().length > 300, `${relativePath} should include a substantive guide body`);
-    assert.match(content, /^#\s+/m, `${relativePath} should include a first-level title`);
-    assert.match(content, /## 建议读法/, `${relativePath} should include reading advice`);
-
-    for (const phrase of bannedTemplatePhrases) {
-      assert.equal(content.includes(phrase), false, `${relativePath} should not contain template phrase: ${phrase}`);
-    }
-
-    for (const [index, book] of topicBooks.entries()) {
-      const label = `${relativePath} books[${index}]`;
-      assert.equal(typeof book.title, 'string', `${label} should have a title`);
-      assert.equal(typeof book.author, 'string', `${label} should have an author`);
-      assert.equal(typeof book.role, 'string', `${label} should have a role`);
-      assert.equal(typeof book.reason, 'string', `${label} should have a reason`);
-      assert.match(book.status, /^(in_library|planned)$/, `${label} should have a supported status`);
-
-      if (book.slug || book.status === 'in_library') {
-        assert.equal(typeof book.slug, 'string', `${label} in-library reference should have a slug`);
-        const referencedBook = booksBySlug.get(book.slug);
-        assert.ok(referencedBook, `${label} should reference an existing book slug: ${book.slug}`);
-
-        if (book.path) {
-          assert.equal(book.path, referencedBook.relativePath, `${label} path should match referenced book file`);
-        }
+test('topics declare usable entry points, reading choices and valid related topics', () => {
+  assert.ok(topics.length > 0);
+  assert.equal(bySlug.size, topics.length, 'topic slugs must be unique');
+  for (const { data: t, content, file } of topics) {
+    assert.match(t.slug, /^[a-z0-9-]+$/, file);
+    assert.equal(path.basename(file), `${t.slug}.md`);
+    for (const field of ['title', 'description', 'entry']) assert.ok(typeof t[field] === 'string' && t[field].trim(), `${file}: ${field}`);
+    assert.match(t.date, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(['path', 'comparison', 'collection'].includes(t.mode));
+    assert.ok(t.domains.length > 0 && t.domains.every(d => typeof d === 'string' && d.trim()));
+    assert.equal(new Set(t.domains).size, t.domains.length);
+    assert.equal(t.domain, t.domains[0]);
+    assert.ok(Array.isArray(t.tags) && t.tags.length);
+    assert.equal(t.parent, undefined, 'reading access must not require a parent topic');
+    assert.ok(Array.isArray(t.books) && t.books.some(b => b.reading === 'start'), `${file}: missing start`);
+    assert.ok(content.trim().length > 300, `${file}: insufficient editorial content`);
+    assert.ok(content.trimStart().startsWith(`# ${t.title}\n`), `${file}: title mismatch`);
+    assert.equal(new Set(t.related).size, t.related.length);
+    for (const slug of t.related) { assert.notEqual(slug, t.slug); assert.ok(bySlug.has(slug), `${file}: missing related ${slug}`); }
+    const identities = new Set();
+    for (const b of t.books) {
+      const label = `${t.slug}: ${b.title}`;
+      for (const field of ['title', 'author', 'role', 'reason']) assert.ok(typeof b[field] === 'string' && b[field].trim(), `${label}: ${field}`);
+      assert.ok(['start', 'next', 'compare', 'optional', 'reference'].includes(b.reading), label);
+      const identity = `${b.title}|${b.author}`;
+      assert.equal(identities.has(identity), false, `${label}: duplicate`); identities.add(identity);
+      assert.ok(['in_library', 'planned'].includes(b.status), label);
+      if (b.status === 'planned') {
+        assert.equal(b.slug, undefined, `${label}: planned books cannot invent library routes`);
+        assert.equal(b.path, undefined, `${label}: planned books cannot invent paths`);
+      } else {
+        const actual = library.get(b.slug);
+        assert.ok(actual, `${label}: missing book`);
+        assert.equal(b.title, actual.title, `${label}: title identity`);
+        assert.equal(b.author, actual.author, `${label}: author identity`);
+        assert.equal(b.path, actual.path, `${label}: path identity`);
+        assert.ok(existsSync(path.join(root, b.path)));
       }
     }
   }
+});
 
-  for (const [mergedSlug, targetSlug] of mergedTopics) {
-    assert.equal(slugs.has(mergedSlug), false, `${mergedSlug} should no longer ship as an independent topic article`);
-    assert.equal(slugs.has(targetSlug), true, `${mergedSlug} merge target should exist: ${targetSlug}`);
+test('historical URLs resolve directly to active topics, including splits', () => {
+  assert.equal(new Set(legacy.map(route => route.slug)).size, legacy.length);
+  for (const route of legacy) {
+    assert.match(route.slug, /^[a-z0-9-]+$/);
+    assert.equal(bySlug.has(route.slug), false, `${route.slug}: must not shadow active content`);
+    assert.ok(route.targets.length > 0);
+    assert.equal(new Set(route.targets).size, route.targets.length);
+    for (const target of route.targets) assert.ok(bySlug.has(target), `${route.slug}: invalid target ${target}`);
   }
-
-  for (const [retiredSlug, replacements] of splitTopics) {
-    assert.equal(slugs.has(retiredSlug), false, `${retiredSlug} should be retired after the structural split`);
-    for (const replacementSlug of replacements) {
-      assert.equal(slugs.has(replacementSlug), true, `${retiredSlug} split replacement should exist: ${replacementSlug}`);
-    }
+  for (const retired of ['cong-0-dao-1-zuo-chan-pin', 'qin-mi-chong-tu', 'cheng-yin-zi-kong', 'ling-dao-li-tuan-dui']) {
+    assert.ok(legacy.some(route => route.slug === retired), `missing historical route ${retired}`);
   }
+  assert.equal(legacy.find(route => route.slug === 'jiao-yi-zhou-qi-feng-xian').targets.length, 2);
+});
 
-  for (const [specialtySlug, parentSlug] of specialtyParents) {
-    const specialty = topicDataBySlug.get(specialtySlug);
-    const parent = topicDataBySlug.get(parentSlug);
+test('same-title replacements preserve the intended work rather than reusing an unrelated library book', () => {
+  const decisionBook = bySlug.get('zhong-da-jue-ce').data.books.find(book => book.title === '对赌');
+  assert.equal(decisionBook.author, '安妮·杜克');
+  assert.equal(decisionBook.originalTitle, 'Thinking in Bets');
+  assert.equal(decisionBook.status, 'planned');
+  const relationshipBook = bySlug.get('guan-xi-an-quan-bian-jie').data.books.find(book => book.title === '情绪勒索');
+  assert.equal(relationshipBook.originalTitle, 'Emotional Blackmail');
+  assert.equal(relationshipBook.status, 'planned');
+  assert.equal(bySlug.get('xi-tong-fu-za-xing').data.books.some(book => book.slug === 'tan-xing'), false);
+  assert.equal(bySlug.get('ya-li-hui-fu').data.books.some(book => book.slug === 'shen-ti-shi-yong-shou-ce'), false);
+});
 
-    assert.ok(specialty, `specialty topic should exist: ${specialtySlug}`);
-    assert.ok(parent, `specialty parent should exist: ${parentSlug}`);
-    assert.equal(specialty.kind, 'specialty', `${specialtySlug} should be marked as specialty`);
-    assert.equal(specialty.parent, parentSlug, `${specialtySlug} should point to its approved parent`);
-    assert.notEqual(parent.kind, 'specialty', `${parentSlug} should remain a primary topic`);
+test('public guides do not contain production history or prescribed book counts', () => {
+  const production = /按计划|计划中的|保持\s*\d+\s*本|本轮|上一轮|用户要求|controller|worker|不再借.{0,40}撑篇幅|从“金钱”领域移回|逐步建立框架、实践判断和系统视角/;
+  for (const { data, content } of topics) {
+    assert.doesNotMatch(`${data.description}\n${data.entry}\n${content}`, production, data.slug);
   }
 });

@@ -1,84 +1,76 @@
 ---
 slug: ai-bian-ge
-title: 普通人如何理解 AI 变革
-description: 从 AI 协作、未来场景和技术扩散理解普通人如何判断 AI 变化。
-tags: [AI, 技术变革, 人机协作]
+title: 理解 AI 的能力与实际影响
+description: 从协作经验、智能研究和现实部署进入，区分模型能做什么、怎样使用以及产业如何变化。
+tags:
+  - 科技
+  - AI
+  - 技术变革
+  - 人机协作
 domain: 科技
-group: AI 变革
-date: '2026-06-06'
+domains:
+  - 科技
+mode: path
+entry: 想判断 AI 对工作和社会的实际影响，不只追逐功能或遥远预测。
+related:
+  - ai-feng-xian-zhi-li
+  - ji-shu-she-hui
+  - zhi-ye-zi-ben
+date: '2026-09-12'
 books:
   - title: 人机共智
     author: Ethan Mollick
     slug: ren-ji-gong-zhi
     path: books/科技媒介/AI变革/Ethan Mollick-人机共智.md
-    role: 协作入口
-    reason: 从普通人如何和生成式 AI 协作进入，而不是先讨论抽象未来。
     status: in_library
+    reading: start
+    role: 协作与检验
+    reason: 用实际任务理解生成式 AI 的协作方式，重要输出需要独立核验。
+  - title: 智能简史
+    author: Max Bennett
+    slug: zhi-neng-jian-shi
+    path: books/科技媒介/AI变革/Max Bennett-智能简史.md
+    status: in_library
+    reading: next
+    role: 智能研究背景
+    reason: 沿智能演化与计算问题理解能力来源，区分解释和类比。
+  - title: Hello World
+    author: Hannah Fry
+    slug: hello-world
+    path: books/科技媒介/AI变革/Hannah Fry-Hello World.md
+    status: in_library
+    reading: compare
+    role: 算法进入现实
+    reason: 通过医疗、司法等场景观察部署条件、错误成本与人的判断。
+  - title: Supremacy
+    author: Parmy Olson
+    slug: supremacy
+    path: books/科技媒介/AI变革/Parmy Olson-Supremacy.md
+    status: in_library
+    reading: optional
+    role: 产业与竞争
+    reason: 了解企业竞争、组织决策与技术发展之间的关系。
   - title: AI 2041
-    author: 李开复,陈楸帆
+    author: '李开复, 陈楸帆'
     slug: ai-2041
-    path: books/科技媒介/AI变革/李开复,陈楸帆-AI 2041.md
-    role: 场景想象
-    reason: 用具体故事和行业场景帮助读者理解 AI 可能进入哪些生活领域。
+    path: 'books/科技媒介/AI变革/李开复,陈楸帆-AI 2041.md'
     status: in_library
-  - title: 生命3.0
-    author: 迈克斯·泰格马克
-    slug: sheng-ming-3-0
-    path: books/科技媒介/AI变革/迈克斯·泰格马克-生命3.0.md
-    role: 智能边界
-    reason: 把 AI 放到智能、生命和目标设定的更大问题中讨论。
-    status: in_library
-  - title: 即将到来的浪潮
-    author: Mustafa Suleyman,Michael Bhaskar
-    slug: ji-jiang-dao-lai-de-lang-chao
-    path: books/科技媒介/AI变革/Mustafa Suleyman,Michael Bhaskar-即将到来的浪潮.md
-    role: 扩散风险
-    reason: 说明 AI 与其他通用技术扩散后会带来的机会、失控和治理压力。
-    status: in_library
-  - title: 未来呼啸而来
-    author: 彼得·戴曼迪斯,史蒂芬·科特勒
-    slug: wei-lai-hu-xiao-er-lai
-    path: books/科技媒介/未来技术/彼得·戴曼迪斯,史蒂芬·科特勒-未来呼啸而来.md
-    role: 产业变化
-    reason: 把 AI 放进更广泛的技术加速和产业重组中理解。
-    status: in_library
-  - title: 技术的本质
-    author: 布莱恩·阿瑟
-    slug: ji-shu-de-ben-zhi
-    path: books/社会公共/技术社会/布莱恩·阿瑟-技术的本质.md
-    role: 技术演化
-    reason: 回到技术如何组合与演进，避免只追逐最新工具。
-    status: in_library
+    reading: optional
+    role: 情景想象
+    reason: 把故事作为探索可能影响的工具，不当作年份预测或事实证据。
 ---
+# 理解 AI 的能力与实际影响
 
-# 普通人如何理解 AI 变革
+模型在一次演示中完成任务，不等于在所有真实工作中都可靠。输入条件、评估方式、错误代价和人怎样参与，会改变使用结果。
 
-普通人面对 AI 的困难，常常不在某个工具怎么用，而在如何判断它的位置：它是搜索替代品、写作助手、自动化系统，还是会改变行业分工的通用技术。过度乐观和过度恐慌都会让判断变粗。
+《人机共智》适合从自己的工作任务开始，记录何时有帮助、何时需要重做。《智能简史》提供背景，《Hello World》让能力问题进入具体部署，避免只用一个总分判断所有用途。
 
-AI 工具和模型变化很快，这条阅读路径只提供理解框架。使用 AI 输出时需要独立核验，不应把模型回答当作专业判断、事实来源或最终决策依据。
+## 实际影响还经过组织与市场
 
-这条路径从实际协作开始，再看未来场景、智能边界、扩散风险、产业变化和技术演化。
+《Supremacy》讨论 AI 企业的竞争和选择，可以帮助理解技术为何以某种方式被推出。《AI 2041》属于情景想象，适合提出问题，不作为当代事实来源。
 
-## 入口：先理解协作方式
-
-《人机共智》放在第一位，是因为普通人需要先知道 AI 在工作中怎样参与思考、写作、搜索、整理和试错。它处理的是使用场景和协作习惯，而不是把 AI 神秘化。
-
-《AI 2041》用场景化方式扩展想象。与其把它当作年份预测，不如把它看成一组情境练习：教育、医疗、金融、娱乐和社会治理会怎样被 AI 改写。
-
-## 框架：智能、扩散与产业变化
-
-《生命3.0》把问题推到智能本身：当系统可以学习、优化和追求目标时，人类需要重新理解能力边界、目标设定和控制问题。
-
-《即将到来的浪潮》补上扩散压力。AI 不是单独出现的工具，它会和生物技术、自动化、网络系统一起扩散，带来开放创新，也带来滥用和治理难题。
-
-《未来呼啸而来》把 AI 放进更宽的技术加速中。它适合帮助读者理解行业变化、职业重组和商业模式更新，而不是只盯着单个模型能力。
-
-## 系统：回到技术如何演化
-
-《技术的本质》放在最后，是为了降温。AI 再新，也仍然处在技术组合、演化和社会采纳的规律中。读完前面几本后回到这本书，可以避免把 AI 变化看成凭空发生的断裂。
+模型和工具更新很快。书中的操作、能力比较和产品案例需要结合当前文档与独立测试；不能把一次模型回答当作事实核验本身。
 
 ## 建议读法
 
-先读《人机共智》，用自己的工作或学习任务做小规模实验。再读《AI 2041》和《生命3.0》，区分具体应用场景和更深的智能问题。随后读《即将到来的浪潮》《未来呼啸而来》和《技术的本质》，把 AI 放进扩散、产业和技术演化中。
-
-阅读时重点问：哪些任务适合交给 AI 辅助，哪些必须由人核验？AI 改变的是效率、判断还是权力分配？一个新工具是短期功能，还是更大技术组合的一部分？
+选一个可核对结果的任务，比较使用前后的质量、成本与返工。涉及隐私、医疗、法律或重大决策时，先明确边界与责任。观察任务怎样变化，比简单预测整个职业是否消失更具体。

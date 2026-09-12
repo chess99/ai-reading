@@ -1,100 +1,83 @@
 ---
 slug: chan-pin-fa-xian
-title: 如何做好产品发现
-description: 从现代产品发现、用户任务、价值假设、体验层次、行为心理、冲刺验证和开发流动理解产品发现。
-tags: [产品发现, 用户体验, 产品管理]
+title: 持续发现值得做的产品
+description: 从用户机会与业务结果出发，设计访谈、原型和假设测试，让新旧产品都能持续学习。
+tags:
+  - 商业
+  - 产品发现
+  - 用户体验
+  - 产品管理
 domain: 商业
-group: 产品发现
-kind: specialty
-parent: chan-pin-0-dao-1
-date: '2026-08-22'
+domains:
+  - 商业
+mode: path
+entry: 需要决定下一项机会或方案，团队却总是直接讨论功能和排期。
+related:
+  - chan-pin-0-dao-1
+  - chan-pin-zu-zhi-jiao-fu
+  - zheng-ju-pan-duan
+date: '2026-09-12'
 books:
+  - title: 持续发现
+    author: 特蕾莎·托雷斯
+    originalTitle: Continuous Discovery Habits
+    status: planned
+    reading: start
+    role: 持续探索的节奏
+    reason: 围绕结果、机会与方案建立持续访谈和假设验证的习惯。
   - title: 启示录
     author: Marty Cagan
     slug: qi-shi-lu
     path: books/商业产品/产品管理/Marty Cagan-启示录.md
-    role: 产品发现
-    reason: 先建立现代产品团队如何发现机会、定义价值和降低风险。
     status: in_library
-  - title: 用户故事地图
-    author: Jeff Patton
-    slug: yong-hu-gu-shi-di-tu
-    path: books/商业产品/用户体验/Jeff Patton-用户故事地图.md
-    role: 用户任务
-    reason: 把用户旅程、任务、优先级和版本切分组织起来。
+    reading: next
+    role: 产品团队的责任
+    reason: 理解产品、设计与工程怎样共同降低风险。
+  - title: 妈妈测试
+    author: Rob Fitzpatrick
+    slug: ma-ma-ce-shi
+    path: books/商业产品/创业方法/Rob Fitzpatrick-妈妈测试.md
     status: in_library
-  - title: 精益产品手册
-    author: Dan Olsen
-    slug: jing-yi-chan-pin-shou-ce
-    path: books/商业产品/创业方法/Dan Olsen-精益产品手册.md
-    role: 产品市场匹配
-    reason: 连接目标用户、痛点、价值主张、功能集合和 MVP 测试。
-    status: in_library
+    reading: optional
+    role: 访谈质量
+    reason: 在提问时关注过去行为，避免得到客套与想象中的需求。
   - title: 俞军产品方法论
     author: 俞军
     slug: yu-jun-chan-pin-fang-fa-lun
     path: books/商业产品/产品管理/俞军-俞军产品方法论.md
+    status: in_library
+    reading: compare
     role: 用户价值
-    reason: 用效用、成本、交易和用户价值判断产品是否成立。
+    reason: 从效用、成本、替代方案和交易条件判断改变行为的理由。
+  - title: 设计冲刺
+    author: 'Jake Knapp, John Zeratsky, Braden Kowitz'
+    slug: she-ji-chong-ci
+    path: 'books/商业产品/用户体验/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md'
     status: in_library
-  - title: 用户体验要素
-    author: Jesse James Garrett
-    slug: yong-hu-ti-yan-yao-su
-    path: books/商业产品/用户体验/Jesse James Garrett-用户体验要素.md
-    role: 体验层次
-    reason: 把产品体验拆成战略、范围、结构、框架和表现。
-    status: in_library
+    reading: optional
+    role: 原型测试
+    reason: 面对集中且明确的方案问题时，用短周期组织原型与反馈。
   - title: 设计心理学
     author: Don Norman
     slug: she-ji-xin-li-xue
     path: books/商业产品/用户体验/Don Norman-设计心理学.md
-    role: 行为心理
-    reason: 解释可供性、反馈、映射和错误如何影响用户使用。
     status: in_library
-  - title: 设计冲刺
-    author: Jake Knapp, John Zeratsky, Braden Kowitz
-    slug: she-ji-chong-ci
-    path: books/商业产品/用户体验/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md
-    role: 冲刺验证
-    reason: 提供短周期原型、测试和团队对齐的方法。
-    status: in_library
-  - title: 产品开发流程原理
-    author: 唐纳德·莱纳特森
-    slug: chan-pin-kai-fa-liu-cheng-yuan-li
-    path: books/商业产品/产品管理/唐纳德·莱纳特森-产品开发流程原理.md
-    role: 开发流动
-    reason: 最后把发现连接到交付系统中的队列、批量和反馈周期。
-    status: in_library
+    reading: reference
+    role: 使用与反馈
+    reason: 按反馈、映射、可供性和错误问题查阅设计原则。
 ---
+# 持续发现值得做的产品
 
-# 如何做好产品发现
+一个功能被提出之后，仍要问它对应什么用户问题、为什么比其他机会重要，以及什么证据会让团队放弃当前方案。产品发现并不从“已经证明值得做”之后才开始。
 
-产品发现的难点通常不在想法数量，而在想法太容易被当成需求，需求太容易被当成方案，方案又太容易被排期。好的产品发现要持续降低风险：用户是否真的需要，价值是否足够，体验是否可用，团队是否能交付，业务是否能成立。
+《持续发现》围绕结果、机会与解决方案安排探索。《启示录》讨论团队责任，帮助产品、设计和工程共同面对风险。它们适合用于持续工作，不只是一次立项会。
 
-这是“产品从 0 到 1”主线下的专项深读。主线负责从机会验证走到市场，这一页专门深入产品已经值得做之后，团队如何持续发现、验证和组织方案。
+## 访谈与原型回答不同问题
 
-这条路径先理解现代产品发现，再组织用户任务和价值假设，随后进入体验层次、行为心理、冲刺验证和开发流动。
+《妈妈测试》帮助了解用户已经怎样行动。《设计冲刺》更适合检验一个可呈现的方案。用户能看懂原型，不等于愿意付费或持续使用；一次谈话中表示喜欢，也不能证明需求强度。
 
-## 入口：发现不是收需求
-
-《启示录》适合作为第一本，因为它把产品团队的工作从需求接收转向风险发现。产品经理、设计和工程需要一起判断价值、可用性、可行性和商业风险，而不是等需求写完再执行。
-
-《用户故事地图》把用户任务组织起来。它帮助团队从用户旅程出发，看清主路径、关键任务、版本切分和优先级。这样需求不再是一串孤立条目，而是围绕用户完成任务的结构。
-
-## 框架：价值假设要能被测试
-
-《精益产品手册》把目标用户、痛点、价值主张、功能集合和 MVP 测试连起来。它适合帮助团队检查产品市场匹配，而不是只讨论单个功能是否好看。
-
-《俞军产品方法论》补上用户价值判断。用户会权衡收益、成本、替代方案和情境限制。读这本书时，要把“用户想要”换成“用户为什么愿意改变当前行为”。
-
-## 系统：体验、行为和交付
-
-《用户体验要素》把体验分层：战略、范围、结构、框架和表现。它让团队知道，一个界面问题可能来自更上层的目标或信息结构。《设计心理学》继续解释可供性、反馈、映射和错误，帮助产品发现回到真实使用行为。
-
-《设计冲刺》提供短周期验证方法，适合在团队意见分散时用原型和测试推进学习。《产品开发流程原理》放在最后，是因为发现和交付不能割裂。发现得再好，如果交付队列太长、反馈太慢，学习仍然会失真。
+《俞军产品方法论》让价值判断回到替代方案与成本。《设计心理学》帮助分析使用障碍，属于需要时查阅的工具。
 
 ## 建议读法
 
-先读《启示录》和《用户故事地图》，把团队从收需求转向发现用户任务；再读《精益产品手册》和《俞军产品方法论》，验证价值假设；随后用《用户体验要素》《设计心理学》《设计冲刺》检查体验和行为；最后读《产品开发流程原理》，把发现连接到交付流动。
-
-阅读时可以问：这个需求对应的用户任务是什么？我们验证的是价值，还是只验证了用户能看懂？体验问题来自界面，还是来自结构和战略？发现结果能否快速进入交付反馈？
+从一个希望改变的用户或业务结果开始，分别写下机会、方案和待验证假设。优先检验最可能改变决定的部分。保留放弃方案的证据，避免把发现活动变成替已经决定的功能寻找理由。

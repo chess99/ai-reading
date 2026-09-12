@@ -2,20 +2,24 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { BookMeta, getAllBookMetas } from '@/lib/books';
+import legacyRoutes from '@/data/topic-legacy-routes.json';
+import { DOMAIN_ORDER, normalizeTopicSearch } from '@/lib/topic-discovery';
 
 export type TopicBookStatus = 'in_library' | 'planned';
-export type TopicKind = 'primary' | 'specialty';
-
+export type TopicMode = 'path' | 'comparison' | 'collection';
+export type ReadingUse = 'start' | 'next' | 'compare' | 'optional' | 'reference';
 export interface TopicBookRecommendation {
   title: string;
   author: string;
+  originalTitle?: string;
   role: string;
   reason: string;
+  reading: ReadingUse;
   status: TopicBookStatus;
   slug?: string;
+  path?: string;
   book?: BookMeta;
 }
-
 export interface TopicMeta {
   slug: string;
   title: string;
@@ -23,189 +27,73 @@ export interface TopicMeta {
   tags: string[];
   date: string;
   bookCount: number;
-  domain?: string;
-  group?: string;
-  kind: TopicKind;
-  parentSlug?: string;
+  availableCount: number;
+  domain: string;
+  domains: string[];
+  mode: TopicMode;
+  entry: string;
+  related: string[];
   searchText: string;
 }
-
 export interface TopicDetail extends TopicMeta {
   content: string;
   books: TopicBookRecommendation[];
   filePath: string;
 }
-
-interface TopicFrontmatter {
-  slug?: string;
-  title?: string;
-  description?: string;
-  tags?: string[];
-  date?: string;
-  domain?: string;
-  group?: string;
-  kind?: TopicKind;
-  parent?: string;
-  books?: TopicBookRecommendation[];
-}
-
-export interface TopicMerge {
+export interface TopicLegacyRoute {
   slug: string;
   title: string;
-  targetSlug: string;
+  targets: string[];
 }
-
-export const TOPIC_MERGES: TopicMerge[] = [
-  {
-    slug: 'qin-mi-chong-tu',
-    title: '如何处理亲密关系中的冲突',
-    targetSlug: 'qin-mi-guan-xi',
-  },
-  {
-    slug: 'chan-pin-ji-hui',
-    title: '如何验证产品机会',
-    targetSlug: 'chan-pin-0-dao-1',
-  },
-  {
-    slug: 'shu-zi-gong-gong-sheng-huo',
-    title: '数字公共生活与信息网络',
-    targetSlug: 'mei-ti-gong-gong-tao-lun',
-  },
-];
-
 const TOPICS_DIR = path.join(process.cwd(), '..', 'topics');
 let cachedTopicDetails: TopicDetail[] | null = null;
-
-function buildTopicSearchText(topic: Pick<TopicDetail, 'title' | 'description' | 'tags' | 'domain' | 'group' | 'books'>): string {
-  return [
-    topic.title,
-    topic.description,
-    topic.domain,
-    topic.group,
-    ...topic.tags,
-    ...topic.books.flatMap(book => [book.title, book.author, book.role, book.reason]),
-  ]
-    .filter(Boolean)
-    .join(' ')
-    .toLowerCase();
+function toTopicMeta({ content: _content, books: _books, filePath: _filePath, ...meta }: TopicDetail): TopicMeta {
+  return meta;
 }
-
-function toTopicMeta(topic: TopicDetail): TopicMeta {
-  return {
-    slug: topic.slug,
-    title: topic.title,
-    description: topic.description,
-    tags: topic.tags,
-    date: topic.date,
-    bookCount: topic.bookCount,
-    domain: topic.domain,
-    group: topic.group,
-    kind: topic.kind,
-    parentSlug: topic.parentSlug,
-    searchText: buildTopicSearchText(topic),
-  };
-}
-
-function normalizeTopicBook(book: TopicBookRecommendation, bookBySlug: Map<string, BookMeta>): TopicBookRecommendation {
-  const normalized: TopicBookRecommendation = {
-    title: book.title,
-    author: book.author,
-    role: book.role,
-    reason: book.reason,
-    status: book.status,
-    slug: book.slug,
-  };
-
-  if (book.status === 'in_library' && book.slug) {
-    normalized.book = bookBySlug.get(book.slug);
-  }
-
-  return normalized;
-}
-
 function loadTopicDetails(): TopicDetail[] {
-  if (cachedTopicDetails) {
-    return cachedTopicDetails;
-  }
-
-  if (!fs.existsSync(TOPICS_DIR)) {
-    cachedTopicDetails = [];
-    return cachedTopicDetails;
-  }
-
+  if (cachedTopicDetails) return cachedTopicDetails;
+  if (!fs.existsSync(TOPICS_DIR)) return [];
   const bookBySlug = new Map(getAllBookMetas().map(book => [book.slug, book]));
-  const topics: TopicDetail[] = [];
-
-  for (const entry of fs.readdirSync(TOPICS_DIR, { withFileTypes: true })) {
-    if (!entry.isFile() || !entry.name.endsWith('.md')) {
-      continue;
-    }
-
-    const filePath = path.join(TOPICS_DIR, entry.name);
-    try {
-      const raw = fs.readFileSync(filePath, 'utf-8');
-      const { data, content } = matter(raw);
-      const frontmatter = data as TopicFrontmatter;
-      const slug = frontmatter.slug || entry.name.replace(/\.md$/, '');
-      const books = (frontmatter.books || []).map(book => normalizeTopicBook(book, bookBySlug));
-      const kind: TopicKind = frontmatter.kind === 'specialty' ? 'specialty' : 'primary';
-
-      topics.push({
-        slug,
-        title: frontmatter.title || slug,
-        description: frontmatter.description || '',
-        tags: frontmatter.tags || [],
-        date: frontmatter.date || '',
-        bookCount: books.length,
-        domain: frontmatter.domain,
-        group: frontmatter.group,
-        kind,
-        parentSlug: kind === 'specialty' ? frontmatter.parent : undefined,
-        searchText: '',
-        books,
-        content,
-        filePath,
-      });
-    } catch (error) {
-      console.error(`Error parsing topic ${filePath}:`, error);
-    }
-  }
-
+  const topics = fs.readdirSync(TOPICS_DIR).filter(name => name.endsWith('.md')).map(name => {
+    const filePath = path.join(TOPICS_DIR, name);
+    const { data, content } = matter(fs.readFileSync(filePath, 'utf8'));
+    const books: TopicBookRecommendation[] = (data.books || []).map((item: TopicBookRecommendation) => {
+      const book = item.status === 'in_library' && item.slug ? bookBySlug.get(item.slug) : undefined;
+      if (item.status === 'in_library' && !book) throw new Error(`Unresolved book in ${name}: ${item.title}`);
+      return { ...item, book };
+    });
+    const domains: string[] = data.domains || [data.domain];
+    return {
+      slug: data.slug, title: data.title, description: data.description, tags: data.tags || [], date: data.date,
+      domain: domains[0], domains, mode: data.mode, entry: data.entry, related: data.related || [],
+      bookCount: books.length, availableCount: books.filter(book => book.book).length, books, content, filePath,
+      searchText: normalizeTopicSearch([data.title, data.description, data.entry, ...domains, ...(data.tags || []),
+        ...books.flatMap(book => [book.title, book.originalTitle, book.author, book.role, book.reason])].filter(Boolean).join(' ')),
+    } as TopicDetail;
+  });
   cachedTopicDetails = topics.sort((a, b) => {
-    const dateCompare = new Date(b.date).getTime() - new Date(a.date).getTime();
-    return dateCompare || a.title.localeCompare(b.title, 'zh-CN');
+    const rank = (domain: string) => { const i = DOMAIN_ORDER.indexOf(domain); return i === -1 ? DOMAIN_ORDER.length : i; };
+    return rank(a.domain) - rank(b.domain) || a.title.localeCompare(b.title, 'zh-CN');
   });
   return cachedTopicDetails;
 }
-
-export function getAllTopicMetas(): TopicMeta[] {
-  return loadTopicDetails().map(toTopicMeta);
-}
-
-export function getAllTopicDetails(): TopicDetail[] {
-  return loadTopicDetails();
-}
-
+export function getAllTopicMetas(): TopicMeta[] { return loadTopicDetails().map(toTopicMeta); }
+export function getAllTopicDetails(): TopicDetail[] { return loadTopicDetails(); }
 export function getTopicDetailBySlug(slug: string): TopicDetail | null {
   return loadTopicDetails().find(topic => topic.slug === slug) || null;
 }
-
-export function getTopicChildren(parentSlug: string): TopicMeta[] {
-  return loadTopicDetails()
-    .filter(topic => topic.kind === 'specialty' && topic.parentSlug === parentSlug)
-    .map(toTopicMeta);
+export function getRelatedTopics(topic: TopicDetail): TopicMeta[] {
+  return topic.related.flatMap(slug => { const related = getTopicDetailBySlug(slug); return related ? [toTopicMeta(related)] : []; });
 }
-
-export function getTopicMergeBySlug(slug: string): TopicMerge | null {
-  return TOPIC_MERGES.find(merge => merge.slug === slug) || null;
+export function getTopicLegacyRoute(slug: string): TopicLegacyRoute | null {
+  return legacyRoutes.find(route => route.slug === slug) || null;
 }
-
 export function getAllTopicRouteSlugs(): string[] {
-  return Array.from(new Set([...loadTopicDetails().map(topic => topic.slug), ...TOPIC_MERGES.map(merge => merge.slug)]));
+  return [...new Set([...loadTopicDetails().map(topic => topic.slug), ...legacyRoutes.map(route => route.slug)])];
 }
-
 export function getLatestTopics(n = 3): TopicMeta[] {
-  return getAllTopicMetas()
-    .filter(topic => topic.kind === 'primary')
-    .slice(0, n);
+  const selected = ['zhong-da-jue-ce', 'wen-xue-ren-wen', 'sheng-ming-yan-hua', 'ai-bian-ge', 'qin-mi-guan-xi'];
+  const topics = getAllTopicMetas();
+  return [...selected.flatMap(slug => topics.filter(topic => topic.slug === slug)),
+    ...topics.filter(topic => !selected.includes(topic.slug))].slice(0, n);
 }

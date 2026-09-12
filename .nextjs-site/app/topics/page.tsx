@@ -6,7 +6,7 @@ import { getAllTopicMetas } from '@/lib/topics';
 
 export const metadata: Metadata = {
   title: `主题阅读 | ${BRAND_NAME}`,
-  description: '围绕真实问题组织阅读路径，帮你用一组关键书建立判断框架，逐步深入一个主题。',
+  description: '按问题选读，比较不同观点，或从一部作品进入新的经验。找到适合自己的起点。',
   alternates: {
     canonical: `${BASE_URL}/topics/`,
   },
@@ -22,7 +22,7 @@ export default function TopicsPage() {
           <p className="text-xs font-black tracking-[0.16em] text-brand mb-2">TOPICS</p>
           <h1 className="text-3xl md:text-4xl font-black tracking-tight text-stone-950">主题阅读</h1>
           <p className="mt-3 max-w-2xl text-sm md:text-base leading-7 text-stone-600">
-            带着一个具体问题开始阅读：先建立判断框架，再沿着一组关键书逐层深入。
+            带着问题选书，也可以从一部作品开始。找到起点，再按需要读下去。
           </p>
         </div>
 

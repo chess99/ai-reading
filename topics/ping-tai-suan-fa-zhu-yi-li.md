@@ -1,95 +1,78 @@
 ---
 slug: ping-tai-suan-fa-zhu-yi-li
-title: 看懂平台、算法与注意力风险
-description: 从媒介娱乐化、注意力商业和算法治理理解平台如何塑造选择。
-tags: [平台, 算法, 注意力]
+title: 平台、算法与注意力
+description: 理解推荐、广告和规则怎样塑造信息环境，区分个人选择与平台激励。
+tags:
+  - 科技
+  - 社会
+  - 平台
+  - 算法
+  - 注意力
 domain: 科技
-group: 平台算法
-kind: specialty
-parent: ji-shu-she-hui
-date: '2026-08-22'
+domains:
+  - 科技
+  - 社会
+mode: comparison
+entry: 想知道自己看到什么为何被决定，以及平台怎样影响创作者和用户。
+related:
+  - mei-ti-gong-gong-tao-lun
+  - ping-tai-wang-luo-xiao-ying
+  - zi-mei-ti-chang-qi-shi-ye
+date: '2026-09-12'
 books:
-  - title: 娱乐至死
-    author: 尼尔·波兹曼
-    slug: yu-le-zhi-si
-    path: books/社会公共/媒介传播/尼尔·波兹曼-娱乐至死.md
-    role: 媒介入口
-    reason: "先看媒介形式如何把公共讨论推向娱乐化。"
-    status: in_library
   - title: 注意力商人
     author: Tim Wu
     slug: zhu-yi-li-shang-ren
     path: books/社会公共/媒介传播/Tim Wu-注意力商人.md
-    role: 注意力商业
-    reason: "解释注意力如何被捕获、包装和出售。"
     status: in_library
+    reading: start
+    role: 注意力的商业史
+    reason: 追踪广告与媒介怎样把观看时间转为收入。
   - title: 过滤泡
     author: 伊莱·帕里泽
     slug: guo-lv-pao
     path: books/科技媒介/平台算法/伊莱·帕里泽-过滤泡.md
-    role: 信息茧房
-    reason: "说明个性化推荐如何改变信息接触和公共事实。"
     status: in_library
+    reading: compare
+    role: 个性化与信息接触
+    reason: 讨论筛选的可能影响，并比较自我选择与社交等其他因素。
   - title: 监视资本主义时代
     author: Shoshana Zuboff
     slug: jian-shi-zi-ben-zhu-yi-shi-dai
     path: books/社会公共/技术社会/Shoshana Zuboff-监视资本主义时代.md
-    role: 数据监控
-    reason: "把注意力机制连接到行为数据和预测商业。"
     status: in_library
-  - title: 算法霸权
-    author: 凯西·奥尼尔
-    slug: suan-fa-ba-quan
-    path: books/科技媒介/平台算法/凯西·奥尼尔-算法霸权.md
-    role: 算法伤害
-    reason: "用算法决策案例呈现偏见、责任和制度风险。"
+    reading: compare
+    role: 行为数据与权力
+    reason: 研究数据收集、预测与控制的批判性论述，辨认适用的商业模式。
+  - title: Bad Influence
+    author: Deborah Cohen
+    slug: bad-influence
+    path: books/科技媒介/平台算法/Deborah Cohen-Bad Influence.md
     status: in_library
-  - title: 平台革命
-    author: 杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利
-    slug: ping-tai-ge-ming
-    path: books/商业产品/商业模式/杰奥夫雷G. 帕克,马歇尔W. 范·埃尔斯泰恩,桑基特·保罗·邱达利-平台革命.md
-    role: 平台治理
-    reason: "解释平台规则、网络效应和生态治理如何运作。"
+    reading: optional
+    role: 平台的具体经验
+    reason: 通过健康信息、网红与商业医疗调查，观察平台如何影响健康判断。
+  - title: 创作在云端：平台与文化生产
+    author: 'Thomas Poell,David B. Nieborg,Brooke Erin Duffy'
+    slug: chuang-zuo-zai-yun-duan
+    path: 'books/科技媒介/平台算法/Thomas Poell,David B. Nieborg,Brooke Erin Duffy-创作在云端.md'
     status: in_library
-  - title: 理解媒介
-    author: 马歇尔·麦克卢汉
-    slug: li-jie-mei-jie
-    path: books/社会公共/媒介传播/马歇尔·麦克卢汉-理解媒介.md
-    role: 媒介理论
-    reason: "回到媒介形式本身，整理前面各书的共同基础。"
-    status: in_library
+    reading: optional
+    role: 规则与内容劳动
+    reason: 分析分发、收益和数据反馈怎样影响文化生产。
 ---
+# 平台、算法与注意力
 
-# 看懂平台、算法与注意力风险
+推荐内容、广告投放与平台审核不是同一件事。它们可能一起影响用户与创作者，但目标、数据和责任机制不同。
 
-注意力风险不只是“手机太好玩”。更深的问题是，平台通过推荐、排序、通知和激励，把人的停留时间、情绪反应和社会表达纳入商业系统。个人自控当然重要，但只谈自控会忽略结构。
+《注意力商人》提供商业史入口。《过滤泡》提出个性化环境的担忧，实际效果还需要考虑主动选择、社交关系和使用场景，不能从“每个人看到不同内容”直接推出所有社会分歧。
 
-这是“技术社会读什么”主线下的专项深读。主线负责理解技术、媒介与平台的整体社会影响，这一页把镜头收窄到推荐算法、注意力商业、数据监控和平台治理。
+## 谁制定规则，谁能离开
 
-这条路径从媒介和注意力商业入门，再看信息茧房、监控资本主义、算法伤害、平台治理，最后回到媒介理论。
+《监视资本主义时代》讨论数据权力，适合与平台实际收入和产品机制对照。《Bad Influence》以健康信息与商业医疗为具体切口；《创作在云端》分析文化生产与劳动。两本解释的行业不同，可以比较平台如何影响可见性和信任。
 
-## 入口：媒介先改变讨论方式
-
-《娱乐至死》让读者先看到，媒介形式会影响公共讨论的样子。当信息为了适配娱乐形式而变短、变轻、变刺激，严肃议题也会被推向表演。
-
-《注意力商人》接着解释注意力如何成为商业资源。平台不是偶然让人分心，而是在争夺可售卖的停留时间和可预测的行为。
-
-## 框架：推荐、数据与算法
-
-《过滤泡》处理个性化推荐的后果。它提醒读者，信息环境不是中性的，算法筛选会改变人看到什么、相信什么，以及和不同立场的人是否还能共享事实。
-
-《监视资本主义时代》把注意力风险推进到数据权力。平台收集行为、预测倾向、影响选择，商业模式越依赖预测，越会把人当成可调节的对象。
-
-《算法霸权》补上制度层面的伤害。算法一旦用于评分、分配和惩罚，就可能把偏见变成看似客观的规则，并让受影响的人很难申诉。
-
-## 系统：平台不是普通工具
-
-《平台革命》说明平台如何通过规则、接口、审核和激励组织生态。理解平台风险，不能只看用户体验，还要看平台如何连接多方、如何决定可见性和收益。
-
-《理解媒介》放在最后，用更抽象的媒介理论整理前面的问题：平台、算法和注意力机制都是媒介环境的一部分，它们改变的不只是信息内容，还有人的感知和社会关系。
+个人可以调整使用方式，平台也可以改变默认项与制度。两种层面的行动不能彼此替代。
 
 ## 建议读法
 
-先读《娱乐至死》和《注意力商人》，理解注意力为什么会被商业化。再读《过滤泡》《监视资本主义时代》和《算法霸权》，观察推荐、数据和自动化决策的风险。最后读《平台革命》和《理解媒介》，把平台结构和媒介形式连起来。
-
-阅读时重点问：我看到的信息由谁排序？平台奖励什么行为？数据怎样回流成新的推荐？当算法出错时，谁能解释、修正和承担责任？
+选一个平台，分别观察推荐、广告、审核、创作者收益和数据权限。尽量从官方说明和实际功能核对，不把书中某个时期的产品行为当永久规则。

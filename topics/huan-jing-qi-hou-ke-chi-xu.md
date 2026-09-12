@@ -1,91 +1,88 @@
 ---
 slug: huan-jing-qi-hou-ke-chi-xu
-title: 如何理解环境、气候与可持续生活
-description: 从环境危机、增长边界和公共资本理解可持续生活的系统条件。
-tags: [环境, 气候, 可持续生活]
-domain: 健康
-group: 环境气候
-date: '2026-06-06'
+title: 气候、能源与环境选择
+description: 理解气候证据、能源约束和生态代价，再比较技术、制度与生活方式能够改变什么。
+tags:
+  - 科学
+  - 社会
+  - 环境
+  - 气候
+  - 可持续生活
+domain: 科学
+domains:
+  - 科学
+  - 社会
+mode: comparison
+entry: 想判断环境主张，理解个人选择与系统改变分别能做什么。
+related:
+  - wu-zhi-ji-shu
+  - xi-tong-fu-za-xing
+  - cheng-shi-kong-jian
+date: '2026-09-12'
 books:
-  - title: 寂静的春天
-    author: Rachel Carson
-    slug: ji-jing-de-chun-tian
-    path: books/社会公共/城市环境/Rachel Carson-寂静的春天.md
-    role: 环境危机
-    reason: 先从具体环境伤害理解人类活动的外部代价。
-    status: in_library
-  - title: 增长的极限
-    author: 丹尼斯·米都斯等
-    slug: zeng-zhang-de-ji-xian
-    path: books/社会公共/城市环境/丹尼斯·米都斯等-增长的极限.md
-    role: 增长边界
-    reason: 用资源、人口、工业和污染的系统关系理解边界问题。
-    status: in_library
-  - title: 小即是美
-    author: E. F. Schumacher
-    slug: xiao-ji-shi-mei
-    path: books/社会公共/城市环境/E. F. Schumacher-小即是美.md
-    role: 适度经济
-    reason: 从经济尺度、技术选择和生活方式反思无限增长。
-    status: in_library
-  - title: 失控的农业
-    author: Philip Lymbery, Isabel Oakeshott
-    slug: shi-kong-de-nong-ye
-    path: books/科技媒介/未来技术/Philip Lymbery,Isabel Oakeshott-失控的农业.md
-    role: 农业系统
-    reason: 把环境问题落到农业、食物系统和土地使用中。
-    status: in_library
+  - title: 'Climate Change: A Very Short Introduction'
+    author: 马克·马斯林
+    originalTitle: 'Climate Change: A Very Short Introduction'
+    status: planned
+    reading: start
+    role: 气候科学与影响
+    reason: 用简明科学背景理解气候变化、证据和响应问题。
+  - title: Sustainable Energy — Without the Hot Air
+    author: 戴维·麦凯
+    originalTitle: Sustainable Energy — Without the Hot Air
+    status: planned
+    reading: next
+    role: 能源的数量尺度
+    reason: 用功率、消耗与供给比较能源方案，具体数据需按年代和地区更新。
   - title: 气候经济与人类未来
     author: Bill Gates
     slug: qi-hou-jing-ji-yu-ren-lei-wei-lai
     path: books/社会公共/城市环境/Bill Gates-气候经济与人类未来.md
-    role: 气候经济
-    reason: 解释气候变化如何影响经济决策、风险和未来分配。
     status: in_library
-  - title: 社会共通资本
-    author: 宇泽弘文
-    slug: she-hui-gong-tong-zi-ben
-    path: books/社会公共/城市环境/宇泽弘文-社会共通资本.md
-    role: 公共资本
-    reason: 把自然、基础设施和制度看作需要共同维护的资本。
+    reading: compare
+    role: 减排技术路线
+    reason: 比较盖茨提出的减排问题与技术选择，不把方案清单当唯一政策路径。
+  - title: 寂静的春天
+    author: Rachel Carson
+    slug: ji-jing-de-chun-tian
+    path: books/社会公共/城市环境/Rachel Carson-寂静的春天.md
     status: in_library
-  - title: 枪炮、病菌与钢铁
-    author: 贾雷德·戴蒙德
-    slug: qiang-pao-bing-jun-yu-gang-tie
-    path: books/历史世界/世界历史/贾雷德·戴蒙德-枪炮、病菌与钢铁.md
-    role: 地理约束
-    reason: 用地理和生态约束补足文明发展与资源环境的长期视角。
+    reading: optional
+    role: 环境伤害的历史
+    reason: 从农药与生态影响理解技术应用如何产生被忽略的代价。
+  - title: 增长的极限
+    author: 丹尼斯·米都斯等
+    slug: zeng-zhang-de-ji-xian
+    path: books/社会公共/城市环境/丹尼斯·米都斯等-增长的极限.md
     status: in_library
+    reading: compare
+    role: 系统情景与边界
+    reason: 阅读资源、人口、污染的模型情景，区分假设、情景和确定预测。
+  - title: 小即是美
+    author: E. F. Schumacher
+    slug: xiao-ji-shi-mei
+    path: books/社会公共/城市环境/E. F. Schumacher-小即是美.md
+    status: in_library
+    reading: optional
+    role: 规模与人的生活
+    reason: 从适度技术和经济尺度讨论技术选择的价值取向。
 ---
+# 气候、能源与环境选择
 
-# 如何理解环境、气候与可持续生活
+气候变暖是否发生、某种能源能提供多少电、哪项政策更公平，是不同类型的问题。证据、工程约束和价值取舍需要分别说明，才能进行有意义的比较。
 
-可持续生活如果只变成个人消费建议，很容易失真。少买一点、少浪费一点当然有意义，但环境和气候问题还牵涉农业、能源、增长模式、公共资本和地理约束。
+## 先对齐尺度
 
-这条路径从环境危机和增长边界入门，再看适度经济、农业系统、气候经济、公共资本和地理文明约束。
+简明气候入门书负责科学背景。《Sustainable Energy — Without the Hot Air》帮助读者建立数量感：一种方案即使可行，也需要看能提供多大规模、占用哪些资源。书中的具体数值有时间与地域背景，方法可以借鉴，数据需要更新。
 
-## 入口：先看见外部代价
+《气候经济与人类未来》强调减排领域与技术方案。与它比较时，还要问部署条件、制度选择以及成本由谁承担。
 
-《寂静的春天》适合作为入口。它从具体环境伤害出发，让读者看到看似高效的生产方式如何把成本转嫁给生态系统和未来生活。
+## 技术以外还有什么
 
-《增长的极限》把问题推进到系统边界。资源、人口、工业、污染和食物并不是彼此独立的变量，增长会遇到反馈和限制。
+《寂静的春天》呈现被忽略的生态损害。《增长的极限》使用系统模型探索情景，不是一张已经确定的未来时间表。《小即是美》讨论规模、技术与人的生活，也包含值得讨论的价值选择。
 
-## 框架：经济尺度与食物系统
-
-《小即是美》提供适度经济的视角。它提醒读者，技术和经济并非越大越好，尺度、地方性和人的生活质量也应进入判断。
-
-《失控的农业》把可持续问题落到农业系统。食物不是超市货架上的孤立商品，而连接土地、水、能源、化学投入、劳动和生态后果。
-
-《气候经济与人类未来》补上气候经济框架。气候变化不是遥远背景，而会影响风险定价、产业选择、公共投资和代际分配。
-
-## 系统：公共资本与长期约束
-
-《社会共通资本》把自然环境、基础设施和制度看作共同资本。可持续生活不能只靠个人道德，还需要公共资源被维护、治理和公平使用。
-
-《枪炮、病菌与钢铁》放在最后，提供更长的地理和生态约束视角。文明发展从来离不开环境条件，这有助于读者避免把所有差异都解释成文化或意志。
+当前科学评估可查[IPCC 报告](https://www.ipcc.ch/reports/)，能源统计与情景可查[国际能源署](https://www.iea.org/)。比较结论时保留年份、范围与假设。
 
 ## 建议读法
 
-先读《寂静的春天》和《增长的极限》，理解环境危机和系统边界。再读《小即是美》《失控的农业》和《气候经济与人类未来》，把生活方式放进经济、食物和气候系统。最后读《社会共通资本》和《枪炮、病菌与钢铁》，补上公共资本和长期约束。
-
-阅读时可以问：这个选择的环境成本由谁承担？增长的边界在哪里显现？个人生活方式和制度条件如何连接？哪些资源需要作为共同资本被保护？
+选择交通、用电或饮食中的一个问题，分别记录个人可改变的部分、基础设施条件和公共政策。用同一尺度比较方案，不把某个日常动作当作整个环境问题的答案。
