@@ -10,6 +10,7 @@ import path from 'path';
 import crypto from 'crypto';
 import matter from 'gray-matter';
 import { fileURLToPath } from 'url';
+import { buildBookTopicIndex, bookPageHash } from '../lib/book-topic-index.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -136,9 +137,10 @@ function buildBookTree(bookMetas) {
 
 function scanTopics(dir) {
   const topics = {};
+  const details = [];
 
   if (!fs.existsSync(dir)) {
-    return topics;
+    return { topics, details };
   }
 
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -150,9 +152,10 @@ function scanTopics(dir) {
     try {
       const content = fs.readFileSync(fullPath, 'utf-8');
       const hash = generateHash(content);
-      const slug = entry.name.replace(/\.md$/, '');
-      const titleMatch = content.match(/^title:\s*(.+)$/m);
-      const title = titleMatch ? titleMatch[1].replace(/^['"]|['"]$/g, '') : slug;
+      const { data } = matter(content);
+      const slug = data.slug || entry.name.replace(/\.md$/, '');
+      const title = data.title || slug;
+      details.push({ ...data, slug, title });
 
       topics[slug] = {
         hash,
@@ -165,17 +168,19 @@ function scanTopics(dir) {
     }
   }
 
-  return topics;
+  return { topics, details };
 }
 
 function generateManifest() {
   console.log('🔨 Generating build manifest...');
 
   const { books, metas: bookMetas } = scanBooks(BOOKS_DIR);
-  const topics = scanTopics(TOPICS_DIR);
+  const { topics, details } = scanTopics(TOPICS_DIR);
+  const bookTopics = buildBookTopicIndex(details, new Set(Object.keys(books)));
   const content = {};
 
   for (const [slug, info] of Object.entries(books)) {
+    info.hash = bookPageHash(info.hash, bookTopics.get(slug) || []);
     content[`/books/${slug}/`] = {
       ...info,
       type: 'book',

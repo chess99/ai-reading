@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { BookMeta, getAllBookMetas } from '@/lib/books';
 import legacyRoutes from '@/data/topic-legacy-routes.json';
 import { DOMAIN_ORDER, normalizeTopicSearch } from '@/lib/topic-discovery';
+import { buildBookTopicIndex, type BookTopicLink } from '@/lib/book-topic-index.mjs';
 
 export type TopicBookStatus = 'in_library' | 'planned';
 export type TopicMode = 'path' | 'comparison' | 'collection';
@@ -47,6 +48,7 @@ export interface TopicLegacyRoute {
 }
 const TOPICS_DIR = path.join(process.cwd(), '..', 'topics');
 let cachedTopicDetails: TopicDetail[] | null = null;
+let cachedBookTopicIndex: Map<string, BookTopicLink[]> | null = null;
 function toTopicMeta({ content: _content, books: _books, filePath: _filePath, ...meta }: TopicDetail): TopicMeta {
   return meta;
 }
@@ -79,6 +81,15 @@ function loadTopicDetails(): TopicDetail[] {
 }
 export function getAllTopicMetas(): TopicMeta[] { return loadTopicDetails().map(toTopicMeta); }
 export function getAllTopicDetails(): TopicDetail[] { return loadTopicDetails(); }
+export function getTopicsForBook(bookSlug: string): readonly BookTopicLink[] {
+  if (!cachedBookTopicIndex) {
+    cachedBookTopicIndex = buildBookTopicIndex(
+      loadTopicDetails(),
+      new Set(getAllBookMetas().map(book => book.slug)),
+    );
+  }
+  return cachedBookTopicIndex.get(bookSlug) || [];
+}
 export function getTopicDetailBySlug(slug: string): TopicDetail | null {
   return loadTopicDetails().find(topic => topic.slug === slug) || null;
 }

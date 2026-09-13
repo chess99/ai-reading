@@ -13,6 +13,8 @@ import BookPageClient from './page-client';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME } from '@/lib/brand';
 import { getWereadUrlForBook } from '@/lib/external-links';
+import { getTopicsForBook } from '@/lib/topics';
+import BookRelatedTopics from '@/components/BookRelatedTopics';
 
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
@@ -96,6 +98,7 @@ export default async function BookPage({ params }: BookPageProps) {
 
   const pageUrl = `${BASE_URL}/books/${slug}/`;
   const wereadUrl = getWereadUrlForBook(book.slug);
+  const relatedTopics = getTopicsForBook(book.slug);
   const displayContent = injectBookLinks(book.content, book.slug).replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
   const bookJsonLd = {
     '@context': 'https://schema.org',
@@ -156,6 +159,8 @@ export default async function BookPage({ params }: BookPageProps) {
           bookAuthor={book.author}
           bookTags={book.tags}
           wereadUrl={wereadUrl}
+          relatedTopicCount={relatedTopics.length}
+          relatedTopics={<BookRelatedTopics topics={relatedTopics} />}
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm, remarkMath]}
