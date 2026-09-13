@@ -75,8 +75,15 @@ test('WeRead links map points to existing books and allowed URLs', () => {
 
     assert.equal(typeof entry.url, 'string', `${slug} found entry should include a URL string`);
     const parsed = new URL(entry.url);
+    assert.equal(parsed.protocol, 'https:', `${slug} WeRead URL should use https`);
     assert.equal(parsed.hostname, 'weread.qq.com', `${slug} WeRead URL should use weread.qq.com`);
-    assert.match(parsed.pathname, /^\/(web\/bookDetail\/|book-detail)/, `${slug} WeRead URL should be a book detail URL`);
+    assert.match(
+      parsed.pathname,
+      /^\/web\/bookDetail\/[^/?#]+$/,
+      `${slug} WeRead URL should use canonical /web/bookDetail/<book-id>`
+    );
+    assert.equal(parsed.search, '', `${slug} WeRead URL should not include share or tracking query parameters`);
+    assert.equal(parsed.hash, '', `${slug} WeRead URL should not include a fragment`);
 
     const previousSlug = seenUrls.get(entry.url);
     assert.equal(previousSlug, undefined, `${slug} duplicates WeRead URL already used by ${previousSlug}`);

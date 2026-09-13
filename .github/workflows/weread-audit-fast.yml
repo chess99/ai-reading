@@ -1,0 +1,23 @@
+name: WeRead fast audit helper
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Collect fast WeRead audit evidence
+        run: node .github/scripts/weread-audit-fast.mjs
+      - name: Upload fast audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: weread-audit-fast-report
+          path: weread-audit-fast.json
+          if-no-files-found: error

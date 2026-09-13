@@ -1,0 +1,20 @@
+name: WeRead extra search
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node .github/scripts/weread-extra-search.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weread-extra-search
+          path: weread-extra-search.json

@@ -82,7 +82,13 @@ date: 'YYYY-MM-DD'
 ## 微信读书链接
 
 - 微信读书链接是外部增强数据，统一维护在 `.nextjs-site/data/weread-links.json`，不写入书籍 Markdown frontmatter。
+- `found` URL 统一保存为无查询参数的 canonical 形式 `https://weread.qq.com/web/bookDetail/<book-id>`。从 App 分享得到的 `/book-detail?...&v=<book-id>&senderVid=...` 等链接，应提取 `v` 中的 book id 并去掉 `senderVid`、`wtheme`、`wfrom`、`wvid`、`scene` 等分享/追踪参数后再入库。
 - `books/` 中每本书的 `slug` 都必须在链接清单中存在 `found` 或 `not_found` 记录；新增书籍、修改 slug，或实质修正书名/作者时，应在同一迭代完成对应核验和映射更新。
-- 链接匹配由 agent 根据书名和作者核验。脚本搜索结果和匹配分数只作为候选，不得仅凭模糊标题自动认定；排除同名异书、解读书、套装/合集及作者不符的结果。
-- 确实搜索过但没有可靠匹配时记录 `not_found`。网络、页面或工具失败不等于 `not_found`，不得伪造检查结果或 URL。
-- 提交前运行 `.nextjs-site/tests/weread-links.test.mjs`，确保每本书均有状态，且不存在未知 slug、非法链接或重复 URL。
+- **最终映射必须由 agent 人工核验。** 脚本只能搜索、抓取、排序和展示候选，不能凭匹配分数自动写入 `found`、`not_found` 或替换 URL；分数只是缩小人工检查范围的小工具。
+- 人工核验至少同时检查：书名/原著身份、作者、微信读书详情页当前是否仍可正常加入书架并开始阅读，以及是否存在同一本书的其他合理版本。不能只确认“标题和作者对得上”。
+- 同一本书存在多个版本时，**当前可正常阅读的正式版本优先于已下架/不可读版本**；多个版本都可读时，通常优先较新的正式中文版，但如果本站提炼明确基于某个特定版本，需先比较内容差异再决定，不机械追新。
+- 版本名、系列名、副标题、修订版/典藏版等差异不自动视为不同书；同时要排除同名异书、解读书、导读版、节选版、套装/合集及作者不符的结果。AI 导读版等二次加工版本只有在确认正文仍是完整原书且没有更合适正式版本时才可使用。
+- `checkedAt` 表示该条映射在该日期完成了**书目身份 + 当前可读性 + 合理版本候选**的人工复核，而不只是搜索命中日期。
+- 确实人工搜索过书名、作者及必要的译名/版本变体，仍没有可靠且当前可读的匹配时才记录 `not_found`。网络、页面或工具失败不等于 `not_found`，不得伪造检查结果或 URL。
+- 维护时可使用 `.nextjs-site/scripts/fetch-weread-links.mjs` 输出候选；该脚本必须保持 review-only，不得直接修改 `.nextjs-site/data/weread-links.json`。
+- 提交前运行 `.nextjs-site/tests/weread-links.test.mjs` 和 `.nextjs-site/tests/weread-fetch-cli.test.mjs`，确保每本书均有状态、不存在未知 slug/非法链接/重复 URL，并确保候选工具仍为只读。
