@@ -546,6 +546,11 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "elderhood": {
+    "status": "not_found",
+    "checkedAt": "2026-09-13",
+    "note": "人工核验：按 Elderhood / Louise Aronson、作者译名及重新定义衰老等副标题关键词扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除其他老龄主题书及埃利奥特·阿伦森作品"
+  },
   "ends-of-the-earth": {
     "status": "not_found",
     "checkedAt": "2026-09-01",
