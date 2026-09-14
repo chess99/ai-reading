@@ -366,6 +366,11 @@
     "checkedAt": "2026-08-26",
     "note": "人工核验：《刺猬与狐狸》/ 以赛亚·伯林，书名与作者均精确匹配"
   },
+  "clearing-the-air": {
+    "status": "not_found",
+    "checkedAt": "2026-09-14",
+    "note": "人工核验：按 Clearing the Air、完整副标题、Tim Smedley 及空气污染相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除无关城市空气治理教材"
+  },
   "cobalt-red": {
     "status": "not_found",
     "checkedAt": "2026-08-19",
