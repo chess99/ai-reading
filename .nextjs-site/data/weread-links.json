@@ -981,6 +981,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
+  "hu-xi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/78432500813ab7b46g0144a1",
+    "checkedAt": "2026-09-14",
+    "note": "人工核验：中文版《呼吸革命》/ 詹姆斯·内斯特，对应 James Nestor 的 Breath；作者、呼吸演化与训练主题精确匹配，排除特德·姜小说及其他同名作品"
+  },
   "i-heard-there-was-a-secret-chord": {
     "status": "not_found",
     "checkedAt": "2026-09-03",
