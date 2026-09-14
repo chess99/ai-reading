@@ -1,0 +1,34 @@
+name: Fix 运营之光 whitespace
+
+on:
+  push:
+    branches:
+      - book/yun-ying-zhi-guang
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: ${{ !contains(github.event.head_commit.message, '[skip-fix]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: book/yun-ying-zhi-guang
+
+      - name: Remove trailing whitespace from new book
+        run: sed -i 's/[[:blank:]]\+$//' 'books/商业产品/市场增长/黄有璨-运营之光.md'
+
+      - name: Commit formatting fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'books/商业产品/市场增长/黄有璨-运营之光.md'
+          if git diff --cached --quiet; then
+            echo "No whitespace changes"
+            exit 0
+          fi
+          git commit -m "fix: remove trailing whitespace from 运营之光 [skip-fix]"
+          git push origin HEAD:book/yun-ying-zhi-guang
