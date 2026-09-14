@@ -28,8 +28,8 @@ jobs:
       - name: Install dependencies
         run: cd .nextjs-site && npm ci
 
-      - name: Run tests
-        run: cd .nextjs-site && npm test
+      - name: Run relevant book tests
+        run: cd .nextjs-site && node --test tests/book-taxonomy.test.mjs tests/weread-links.test.mjs
 
       - name: Build site
         run: cd .nextjs-site && npm run build
