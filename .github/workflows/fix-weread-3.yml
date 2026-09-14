@@ -19,6 +19,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: .nextjs-site/package-lock.json
+      - name: Install dependencies
+        run: cd .nextjs-site && npm ci
       - name: Update exact 3.0 mapping
         run: |
           node --input-type=module <<'NODE'
