@@ -1,0 +1,47 @@
+name: Restore WeRead map and set 运营之光3.0
+
+on:
+  push:
+    branches:
+      - book/yun-ying-zhi-guang
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: ${{ !contains(github.event.head_commit.message, '[skip-restore-weread]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: book/yun-ying-zhi-guang
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: .nextjs-site/package-lock.json
+      - name: Install dependencies
+        run: cd .nextjs-site && npm ci
+      - name: Restore map from main and insert exact 3.0 mapping
+        run: |
+          git fetch origin main
+          git show origin/main:.nextjs-site/data/weread-links.json > /tmp/weread-main.json
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const source = fs.readFileSync('/tmp/weread-main.json', 'utf8');
+          const needle = '  "zai-huo-xing-mai-fang": {';
+          if (!source.includes(needle)) throw new Error('insertion point not found');
+          const entry = `  "yun-ying-zhi-guang": {\n    "status": "found",\n    "url": "https://weread.qq.com/web/bookDetail/10532370813ab6e95g011c6a",\n    "checkedAt": "2026-09-14",\n    "note": "人工核验：《运营之光：我的互联网运营方法论与自白3.0》/ 黄有璨，完整书名与本次 EPUB 的 3.0 版本一致；EPUB ISBN 9787121434822"\n  },\n`;
+          fs.writeFileSync('.nextjs-site/data/weread-links.json', source.replace(needle, entry + needle));
+          NODE
+      - name: Validate mapping
+        run: cd .nextjs-site && node --test tests/weread-links.test.mjs
+      - name: Commit restored map
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .nextjs-site/data/weread-links.json
+          git commit -m "fix: restore WeRead map with 运营之光3.0 [skip-restore-weread]"
+          git push origin HEAD:book/yun-ying-zhi-guang
