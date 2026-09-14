@@ -1,4 +1,4 @@
-name: Diagnose 运营之光 branch
+name: Validate 运营之光 branch
 
 on:
   push:
@@ -6,11 +6,10 @@ on:
       - book/yun-ying-zhi-guang
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  diagnose:
-    if: ${{ !contains(github.event.head_commit.message, '[validation-log]') }}
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -29,18 +28,28 @@ jobs:
       - name: Install dependencies
         run: cd .nextjs-site && npm ci
 
-      - name: Capture relevant test output
+      - name: Validate new book frontmatter and shelf
         run: |
           cd .nextjs-site
-          set +e
-          node --test tests/book-taxonomy.test.mjs tests/weread-links.test.mjs > ../validation-output.txt 2>&1
-          echo "exit_code=$?" >> ../validation-output.txt
-          exit 0
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import fs from 'node:fs';
+          import matter from 'gray-matter';
+          const path = '../books/商业产品/市场增长/黄有璨-运营之光.md';
+          const { data, content } = matter(fs.readFileSync(path, 'utf8'));
+          assert.equal(data.slug, 'yun-ying-zhi-guang');
+          assert.equal(data.title, '运营之光');
+          assert.equal(data.author, '黄有璨');
+          assert.ok(Array.isArray(data.tags));
+          assert.equal(String(data.date), '2026-09-14');
+          assert.match(content, /^\s*# 运营之光\s*$/m);
+          NODE
 
-      - name: Commit diagnostic output
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add validation-output.txt
-          git commit -m "chore: capture validation output [validation-log]"
-          git push origin HEAD:book/yun-ying-zhi-guang
+      - name: Validate WeRead mapping
+        run: cd .nextjs-site && node --test tests/weread-links.test.mjs
+
+      - name: Build site
+        run: cd .nextjs-site && npm run build
+
+      - name: Check diff whitespace
+        run: git diff --check origin/main...HEAD
