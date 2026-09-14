@@ -619,6 +619,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "fire-weather": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f1e32ad0813abb265g013c68",
+    "checkedAt": "2026-09-14",
+    "note": "人工核验：中文版《火灾天气：来自更炎热世界的真实故事》/ [加]约翰·瓦利恩特，对应 Fire Weather / John Vaillant；书名译名、作者及麦克默里堡野火主题精确匹配"
+  },
   "feng-chuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/38732fe0725a6913387e6bd",
