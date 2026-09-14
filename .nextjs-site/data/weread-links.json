@@ -959,6 +959,12 @@
     "checkedAt": "2026-09-02",
     "note": "No high-confidence WeRead match from title search"
   },
+  "hot-air": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5b1328e0813abb3dcg013cf0",
+    "checkedAt": "2026-09-14",
+    "note": "人工扩展搜索：中文版《谎言的温度》/ [英]彼得·斯托特，对应 Hot Air / Peter Stott；作者与气候归因、气候否认主题精确匹配，排除 David MacKay 的 Sustainable Energy 同名片段"
+  },
   "house-of-huawei": {
     "status": "not_found",
     "checkedAt": "2026-08-19",
