@@ -2267,6 +2267,11 @@
     "checkedAt": "2026-09-12",
     "note": "人工核验：The Perfect Theory / Prof. Pedro G. Ferreira，英文书名与作者精确匹配，作者头衔不影响判断"
   },
+  "the-planet-remade": {
+    "status": "not_found",
+    "checkedAt": "2026-09-15",
+    "note": "人工核验：按 The Planet Remade / Oliver Morton、作者译名及气候工程相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除其他气候政策书"
+  },
   "the-remarkable-life-of-the-skin": {
     "status": "not_found",
     "checkedAt": "2026-09-13",
