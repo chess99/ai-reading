@@ -2261,6 +2261,12 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：按 The Greywacke、Nick Davidson、灰瓦克、杂砂岩及副标题人物组合扩展搜索，未发现书名与作者可靠匹配的微信读书版本；已排除无关地质教材与科学史书"
   },
+  "the-hunt-for-vulcan": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ec8329b0811e242bfg01788e",
+    "checkedAt": "2026-09-15",
+    "note": "人工核验：英文完整版 The Hunt for Vulcan / Thomas Levenson，书名、作者及副标题均精确匹配"
+  },
   "the-interesting-narrative-of-olaudah-equiano": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/76232700811e2429ag018fee",
