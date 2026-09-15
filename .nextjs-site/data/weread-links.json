@@ -2155,6 +2155,12 @@
     "checkedAt": "2026-09-02",
     "note": "No high-confidence WeRead match from title search"
   },
+  "smashing-physics": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/30d32d70811e1f865g018e11",
+    "checkedAt": "2026-09-15",
+    "note": "人工核验：英文版 Smashing Physics / Jon Butterworth，书名与作者精确匹配"
+  },
   "spike": {
     "status": "not_found",
     "checkedAt": "2026-09-13",
