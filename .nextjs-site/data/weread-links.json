@@ -2258,6 +2258,11 @@
     "checkedAt": "2026-09-03",
     "note": "人工核验：按英文书名、Kit Chapman 与炼金术关键词搜索，未找到可靠微信读书版本"
   },
+  "the-ants": {
+    "status": "not_found",
+    "checkedAt": "2026-09-16",
+    "note": "人工核验：按 The Ants 与 Bert Hölldobler、Edward O. Wilson 搜索，未发现原书；排除同作者但内容与篇幅不同的 Journey to the Ants"
+  },
   "the-dead-hand": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/45b326d0811e2b8ffg011d6c",
