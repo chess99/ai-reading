@@ -2406,6 +2406,12 @@
     "checkedAt": "2026-09-02",
     "note": "No high-confidence WeRead match from title search"
   },
+  "tiao-chu-tou-nao-rong-ru-sheng-huo": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/14332a10813ab7dbcg013723",
+    "checkedAt": "2026-09-16",
+    "note": "人工核验：《跳出头脑，融入生活》/ 史蒂文·C·海斯，书名精确匹配，作者为 Steven C. Hayes 的通行中文译名"
+  },
   "tiao-zhe-ti-ta-wu-qu-shang-ban": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/20932580715608ef2094493",
