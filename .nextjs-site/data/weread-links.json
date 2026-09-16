@@ -2275,6 +2275,12 @@
     "checkedAt": "2026-09-16",
     "note": "人工核验：按 The Ants 与 Bert Hölldobler、Edward O. Wilson 搜索，未发现原书；排除同作者但内容与篇幅不同的 Journey to the Ants"
   },
+  "the-beak-of-the-finch": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/20e32b40811e2268eg0114b6",
+    "checkedAt": "2026-09-16",
+    "note": "人工核验：The Beak of the Finch: A Story of Evolution in Our Time / Jonathan Weiner，书名主体、副标题及作者匹配"
+  },
   "the-dead-hand": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/45b326d0811e2b8ffg011d6c",
