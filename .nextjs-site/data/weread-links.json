@@ -1726,6 +1726,12 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
+  "qi-miao-de-sheng-ming": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/08332c50724ad3440838e70",
+    "checkedAt": "2026-09-16",
+    "note": "人工核验：《奇妙的生命》/ 斯蒂芬·杰·古尔德，书名与作者精确匹配；排除同名幼儿绘本"
+  },
   "qi-shi-lu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c3b32f70811e360efg010362",
