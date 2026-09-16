@@ -73,6 +73,11 @@
     "checkedAt": "2026-09-03",
     "note": "人工核验：《癌症传（新版）》/ 悉达多·穆克吉，主标题与作者匹配；排除解读书、合集及旧版候选"
   },
+  "alex-through-the-looking-glass": {
+    "status": "not_found",
+    "checkedAt": "2026-09-16",
+    "note": "人工核验：按英文书名与 Alex Bellos 搜索未发现原书；排除刘易斯·卡罗尔同名文学作品，以及内容对应作者前作的《数学王国的冒险之旅》"
+  },
   "amity-and-prosperity": {
     "status": "not_found",
     "checkedAt": "2026-09-02",
