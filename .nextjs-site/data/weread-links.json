@@ -2580,6 +2580,11 @@
     "checkedAt": "2026-08-26",
     "note": "人工核验：《我们赖以生存的隐喻》/ 乔治·莱考夫、马克·约翰逊，书名与两位作者均精确匹配"
   },
+  "wo-men-wei-he-hui-si": {
+    "status": "not_found",
+    "checkedAt": "2026-09-18",
+    "note": "人工核验：分别搜索《我们为何会死》、Why We Die、Venki Ramakrishnan 及作者常见中文译名，未发现书名与作者可靠匹配的微信读书条目"
+  },
   "wo-men-wei-shen-me-hui-sheng-bing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/631328605e43fa631551a4e",
