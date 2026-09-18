@@ -1,0 +1,20 @@
+name: WeRead candidate detail checker
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node .github/scripts/weread-candidate-details.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weread-candidate-details
+          path: weread-candidate-details.json
