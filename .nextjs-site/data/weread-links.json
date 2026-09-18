@@ -55,6 +55,11 @@
     "checkedAt": "2026-09-15",
     "note": "人工核验：按 Adventures in the Anthropocene / Gaia Vince、作者译名及人类世相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除无关人类史与气候书"
   },
+  "age-proof": {
+    "status": "not_found",
+    "checkedAt": "2026-09-18",
+    "note": "人工核验：按英文书名、Rose Anne Kenny、副标题 The New Science of Living a Longer and Healthier Life 及作者中文音译组合搜索，未发现书名与作者可靠匹配的微信读书版本"
+  },
   "ai-2041": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/0bc32b20813ab6d9fg0114c1",
