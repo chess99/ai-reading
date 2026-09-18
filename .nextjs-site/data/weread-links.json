@@ -1018,6 +1018,11 @@
     "checkedAt": "2026-08-19",
     "note": "manual-audit: no reliable match after English title, Eva Dou, and Chinese title variant searches"
   },
+  "household-education": {
+    "status": "not_found",
+    "checkedAt": "2026-09-19",
+    "note": "人工核验：按 Household Education、Harriet Martineau、书名作者组合及哈丽雅特·马蒂诺/哈丽特·马蒂诺中文译名搜索，未找到书名与作者可靠匹配的微信读书版本；排除同名家庭教育类异书"
+  },
   "how-progress-ends": {
     "status": "not_found",
     "checkedAt": "2026-09-11",
