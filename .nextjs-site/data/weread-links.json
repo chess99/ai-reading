@@ -1748,9 +1748,10 @@
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "qi-hao": {
-    "status": "not_found",
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/dc332870813ab8d1ag011a4d",
     "checkedAt": "2026-09-24",
-    "note": "人工核验：按《起号：给自媒体人的60条实操干货》/池骋及 ISBN 9787111749486 搜索微信读书，未发现可靠匹配；未以豆瓣阅读或其他电子书平台链接代替"
+    "note": "人工核验：用户提供微信读书分享页《起号：给自媒体人的60条实操干货》/池骋；分享参数 v=dc332870813ab8d1ag011a4d，书名与作者精确匹配"
   },
   "qi-hou-jing-ji-yu-ren-lei-wei-lai": {
     "status": "found",
