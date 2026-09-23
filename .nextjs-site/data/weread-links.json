@@ -611,11 +611,6 @@
     "checkedAt": "2026-09-18",
     "note": "人工核验：按 Eve、完整英文副标题、Cat Bohannon 及女性身体相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书条目；已排除 EVE 游戏小说及其他同名异书"
   },
-  "exactly": {
-    "status": "not_found",
-    "checkedAt": "2026-09-11",
-    "note": "人工核验：已按 Exactly / Simon Winchester 及完整副标题搜索；同名结果作者为落逸尘，属于异书，未找到可靠匹配"
-  },
   "every-last-fish": {
     "status": "not_found",
     "checkedAt": "2026-09-14",
@@ -625,6 +620,11 @@
     "status": "not_found",
     "checkedAt": "2026-09-01",
     "note": "人工核验：按英文书名、Tom Chivers 及‘一切皆可预测/一切都可预测/贝叶斯’等可能译名搜索，未发现原书或可靠中文版本；已排除《可预测的非理性》等同题材异书"
+  },
+  "exactly": {
+    "status": "not_found",
+    "checkedAt": "2026-09-11",
+    "note": "人工核验：已按 Exactly / Simon Winchester 及完整副标题搜索；同名结果作者为落逸尘，属于异书，未找到可靠匹配"
   },
   "fa-guo-ge-ming-lun": {
     "status": "found",
@@ -661,12 +661,6 @@
     "checkedAt": "2026-07-03",
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
-  "fire-weather": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/f1e32ad0813abb265g013c68",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：中文版《火灾天气：来自更炎热世界的真实故事》/ [加]约翰·瓦利恩特，对应 Fire Weather / John Vaillant；书名译名、作者及麦克默里堡野火主题精确匹配"
-  },
   "feng-chuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/38732fe0725a6913387e6bd",
@@ -694,6 +688,12 @@
     "status": "not_found",
     "checkedAt": "2026-09-16",
     "note": "人工核验：按《丰裕社会》、The Affluent Society 与 John Kenneth Galbraith 搜索，未发现原书或可靠中文版本；排除刘敏所著《丰裕社会的贫困及其治理》"
+  },
+  "fire-weather": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/f1e32ad0813abb265g013c68",
+    "checkedAt": "2026-09-14",
+    "note": "人工核验：中文版《火灾天气：来自更炎热世界的真实故事》/ [加]约翰·瓦利恩特，对应 Fire Weather / John Vaillant；书名译名、作者及麦克默里堡野火主题精确匹配"
   },
   "fu-ba-ba-qiong-ba-ba": {
     "status": "found",
@@ -1033,6 +1033,12 @@
     "checkedAt": "2026-09-01",
     "note": "人工核验：以英文书名、Steve Ramirez、改变记忆、如何改变记忆分别搜索，未找到书名与作者可靠匹配的微信读书版本；排除 Steven Ramirez 的近似作者作品及记忆术、创伤疗法等异书"
   },
+  "hu-xi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/78432500813ab7b46g0144a1",
+    "checkedAt": "2026-09-14",
+    "note": "人工核验：中文版《呼吸革命》/ 詹姆斯·内斯特，对应 James Nestor 的 Breath；作者、呼吸演化与训练主题精确匹配，排除特德·姜小说及其他同名作品"
+  },
   "hua-shan-jiang-tou-sun-zi-bing-fa": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/df53233058b19fdf50fa893",
@@ -1062,12 +1068,6 @@
     "url": "https://weread.qq.com/web/bookDetail/f9b32d30813ab82d5g015c99",
     "checkedAt": "2026-07-03",
     "note": "manual-audit: verified from WeRead search result title and author variant"
-  },
-  "hu-xi": {
-    "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/78432500813ab7b46g0144a1",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：中文版《呼吸革命》/ 詹姆斯·内斯特，对应 James Nestor 的 Breath；作者、呼吸演化与训练主题精确匹配，排除特德·姜小说及其他同名作品"
   },
   "i-heard-there-was-a-secret-chord": {
     "status": "not_found",
@@ -1431,6 +1431,12 @@
     "url": "https://weread.qq.com/web/bookDetail/773326f0813ab8774g01247d",
     "checkedAt": "2026-07-03",
     "note": "新朗读手册 / [美]吉姆•崔利斯 / score 110"
+  },
+  "li-dan-gong-zuo-shou-ce": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/17e324b07268888017e4c11",
+    "checkedAt": "2026-09-24",
+    "note": "人工核验：李诞工作手册（万字全新增订） / 李诞，书名版本标识与作者均精确匹配"
   },
   "li-jie-mei-jie": {
     "status": "found",
