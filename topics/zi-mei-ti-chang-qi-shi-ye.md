@@ -50,7 +50,9 @@ books:
     reason: 让信息更具体、清楚和可复述，不把传播结构当真实性保证。
   - title: 运营之光
     author: 黄有璨
-    status: planned
+    slug: yun-ying-zhi-guang
+    path: books/商业产品/市场增长/黄有璨-运营之光.md
+    status: in_library
     reading: next
     role: 用户与运营
     reason: 理解内容、触达、留存和业务的关系，区分长期方法与平台时期经验。
