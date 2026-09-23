@@ -22,7 +22,9 @@ date: '2026-09-12'
 books:
   - title: 李诞工作手册
     author: 李诞
-    status: planned
+    slug: li-dan-gong-zuo-shou-ce
+    path: books/自我管理/表达输出/李诞-李诞工作手册.md
+    status: in_library
     reading: start
     role: 让创作持续发生
     reason: 借口播与表演工作经验理解练习、逐字稿和持续生产。
