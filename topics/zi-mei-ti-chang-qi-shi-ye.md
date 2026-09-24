@@ -36,7 +36,9 @@ books:
     reason: 从选题、材料、初稿和修改建立可持续的内容生产。
   - title: 起号
     author: 池骋
-    status: planned
+    slug: qi-hao
+    path: books/商业产品/市场增长/池骋-起号.md
+    status: in_library
     reading: optional
     role: 中国平台起步
     reason: 按账号定位和起步问题参考经验，具体平台规则与流量判断需看当期信息。
