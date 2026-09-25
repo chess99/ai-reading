@@ -3531,5 +3531,11 @@
     "status": "not_found",
     "checkedAt": "2026-08-17",
     "note": "manual-audit: no reliable match after English title, Emily Hund, and official Traditional Chinese title searches"
+  },
+  "yu-yu-qi-xing-jiao-lu-gong-wu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/eb932eb0811e8d7fcg013da1",
+    "checkedAt": "2026-09-25",
+    "note": "用户提供并确认该微信读书详情页对应《与预期性焦虑共舞》；链接为 weread.qq.com 官方 bookDetail 页面。"
   }
 }
