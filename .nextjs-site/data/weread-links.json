@@ -3525,5 +3525,10 @@
     "status": "not_found",
     "checkedAt": "2026-08-17",
     "note": "manual-audit: no reliable match after English title, Emily Hund, and official Traditional Chinese title searches"
+  },
+  "yu-yu-qi-xing-jiao-lu-gong-wu": {
+    "status": "not_found",
+    "checkedAt": "2026-09-25",
+    "note": "人工检索微信读书：按《与预期性焦虑共舞》、莎莉·M·温斯顿/马丁·N·塞夫及 ISBN 9787547861554 检索，未找到可可靠匹配的详情页。"
   }
 }
