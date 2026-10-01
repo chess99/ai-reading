@@ -143,6 +143,25 @@ function loadBooks(booksDir, siteUrl) {
   });
 }
 
+function topicReadingListHtml(data, siteUrl) {
+  const books = Array.isArray(data.books) ? data.books : [];
+  if (books.length === 0) return '';
+
+  const items = books.map(book => {
+    const title = escapeXml(book.title || '未命名书籍');
+    const author = book.author ? ` · ${escapeXml(book.author)}` : '';
+    const bookLabel = book.status === 'in_library' && book.slug
+      ? `<a href="${escapeXml(`${siteUrl}/books/${encodeURIComponent(book.slug)}/`)}">《${title}》</a>${author}`
+      : `《${title}》${author}`;
+    const role = book.role ? `<strong>${escapeXml(book.role)}</strong>：` : '';
+    const reason = book.reason ? `${role}${escapeXml(book.reason)}` : role;
+
+    return `<li><p>${bookLabel}</p>${reason ? `<p>${reason}</p>` : ''}</li>`;
+  }).join('');
+
+  return `<h2>书单与读法</h2><ol>${items}</ol>`;
+}
+
 function loadTopics(topicsDir, siteUrl) {
   return scanMarkdownFiles(topicsDir).map(filePath => {
     const raw = fs.readFileSync(filePath, 'utf8');
@@ -151,6 +170,15 @@ function loadTopics(topicsDir, siteUrl) {
     const title = data.title || slug;
     const stat = fs.statSync(filePath);
     const date = parseDate(data.date, stat.mtimeMs);
+    const description = data.description || markdownToSummary(content);
+    const entry = data.entry
+      ? `<p><strong>从这里开始：</strong>${escapeXml(data.entry)}</p>`
+      : '';
+    const structuredHtml = [
+      description ? `<p><strong>主题简介：</strong>${escapeXml(description)}</p>` : '',
+      entry,
+      topicReadingListHtml(data, siteUrl),
+    ].join('');
 
     return {
       type: 'topic',
@@ -162,7 +190,8 @@ function loadTopics(topicsDir, siteUrl) {
       category: '主题阅读',
       categoryPath: [],
       url: `${siteUrl}/topics/${encodeURIComponent(slug)}/`,
-      summary: data.description || markdownToSummary(content),
+      summary: description,
+      structuredHtml,
       html: markdownToFeedHtml(content, { siteUrl }),
     };
   });
@@ -183,7 +212,7 @@ function feedItemTitle(item) {
 function itemContent(item) {
   const meta = item.type === 'book'
     ? `<p><strong>作者：</strong>${escapeXml(item.author)}</p>`
-    : '<p><strong>类型：</strong>主题阅读</p>';
+    : `<p><strong>类型：</strong>主题阅读</p>${item.structuredHtml || ''}`;
   return `${meta}${item.html}`;
 }
 

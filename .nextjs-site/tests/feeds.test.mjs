@@ -83,6 +83,15 @@ title: 测试主题
 description: 一个用于验证主题 Feed 的主题。
 tags: [测试]
 date: '2026-09-29'
+entry: 先从测试新书开始。
+books:
+  - title: 测试新书
+    author: 作者甲
+    slug: ce-shi-xin-shu
+    status: in_library
+    reading: start
+    role: 起点
+    reason: 用它验证主题书单也进入全文 Feed。
 ---
 # 测试主题
 
@@ -102,6 +111,10 @@ date: '2026-09-29'
   assert.equal(countItems(booksFeed), 2, 'books feed should be capped to recent items');
   assert.equal(countItems(topicsFeed), 1);
   assert.equal(countItems(categoryFeed), 3, 'category feed should retain the full archive');
+  assert.match(topicsFeed, /从这里开始/);
+  assert.match(topicsFeed, /书单与读法/);
+  assert.match(topicsFeed, /测试新书/);
+  assert.match(topicsFeed, /用它验证主题书单也进入全文 Feed/);
 
   assert.match(mainFeed, /xmlns:content="http:\/\/purl\.org\/rss\/1\.0\/modules\/content\/"/);
   assert.match(mainFeed, /<content:encoded><!\[CDATA\[/);
