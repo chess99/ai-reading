@@ -22,9 +22,12 @@ test('offline settings loads the book list from the static build manifest on dem
   assert.doesNotMatch(settingsContentSource, /allBooks\.map/);
 });
 
-test('dev server generates static library manifests before serving', () => {
+test('dev server generates static library manifests and feeds before serving', () => {
   const packageJson = JSON.parse(packageJsonSource);
-  assert.match(packageJson.scripts.dev, /node scripts\/generate-manifest\.js && next dev/);
+  assert.match(
+    packageJson.scripts.dev,
+    /node scripts\/generate-manifest\.js && node scripts\/generate-feeds\.mjs && next dev/,
+  );
 });
 
 test('desktop sidebar retries library tree loading after media query state resolves', () => {
