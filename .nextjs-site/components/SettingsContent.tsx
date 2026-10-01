@@ -204,6 +204,18 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
         <h3 className="font-bold text-stone-950 mb-3">站点信息</h3>
         <div className="divide-y divide-stone-200/80 text-sm">
           <Link
+            href="/listen"
+            prefetch={false}
+            onClick={onNavigate}
+            className="flex items-center justify-between gap-3 rounded-md py-2.5 transition-colors hover:text-brand"
+          >
+            <span>
+              <span className="block font-semibold text-stone-950">订阅收听</span>
+              <span className="mt-0.5 block leading-5 text-stone-500">用全文 RSS 在朗读器中听书籍解读与主题阅读</span>
+            </span>
+            <span className="font-bold text-brand">→</span>
+          </Link>
+          <Link
             href="/about"
             prefetch={false}
             onClick={onNavigate}

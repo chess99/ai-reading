@@ -85,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        <link rel="alternate" type="application/rss+xml" title={`${BRAND_NAME} 全文 RSS`} href={`${BASE_URL}/feed.xml`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }}

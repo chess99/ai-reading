@@ -4,9 +4,10 @@
   "description": "AI 驱动的书籍解读与知识分享平台",
   "main": "index.js",
   "scripts": {
-    "dev": "node scripts/generate-manifest.js && next dev",
-    "build": "node scripts/generate-manifest.js && next build && pagefind --site out",
+    "dev": "node scripts/generate-manifest.js && node scripts/generate-feeds.mjs && next dev",
+    "build": "node scripts/generate-manifest.js && node scripts/generate-feeds.mjs && next build && pagefind --site out",
     "preview": "node scripts/preview.mjs",
+    "feeds:generate": "node scripts/generate-feeds.mjs",
     "weread:fetch": "node scripts/fetch-weread-links.mjs",
     "test": "node --test tests/*.test.mjs",
     "lint": "next lint"
