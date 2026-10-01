@@ -15,6 +15,8 @@ pnpm-lock.yaml
 .nextjs-site/public/build-manifest.json
 .nextjs-site/public/library-books.json
 .nextjs-site/public/library-tree.json
+.nextjs-site/public/feed.xml
+.nextjs-site/public/feeds/
 .nextjs-site/tsconfig.tsbuildinfo
 
 # Astro (legacy)
