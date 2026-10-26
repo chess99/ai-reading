@@ -3549,5 +3549,23 @@
     "url": "https://weread.qq.com/web/bookDetail/2f032be0813aba75fg011b7a",
     "checkedAt": "2026-10-26",
     "note": "详情页书名、作者与微信读书导出原书一致：雪球股票投资24章，雪球。"
+  },
+  "gao-min-gan-you-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8b032990726c2b478b0b8ae",
+    "checkedAt": "2026-10-26",
+    "note": "书名、长沼睦雄、中国友谊出版公司2021年6月及五章目录一致。"
+  },
+  "ru-he-cheng-wei-bu-wan-mei-zhu-yi-zhe": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/be732b507248f2b8be78bb7",
+    "checkedAt": "2026-10-26",
+    "note": "书名、斯蒂芬·盖斯及江西人民出版社2021年版匹配，目录含第六章“纠结者的错误认识”。"
+  },
+  "gui-gu-zi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7aa323f0813ab91aag011d1a",
+    "checkedAt": "2026-10-26",
+    "note": "许富宏整理译注本，商务印书馆2022年版；目录含前十二篇、亡佚篇名、本经阴符七术、持枢及中经。选作读者阅读版本，提炼依据为中华书局升级版。"
   }
 }
