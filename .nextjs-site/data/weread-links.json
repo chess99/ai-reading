@@ -3579,5 +3579,17 @@
     "url": "https://weread.qq.com/web/bookDetail/36532ca071eba0903651b8a",
     "checkedAt": "2026-10-28",
     "note": "人工核验：《长日将尽（译文经典）》/ 石黑一雄，上海译文出版社2020年6月版；目录含六日旅程及译后记，匹配完整小说，排除双语版和作者访谈录。"
+  },
+  "san-guo-yan-yi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/73c32c5071c790f073c460a",
+    "checkedAt": "2026-10-28",
+    "note": "人工核验：《三国演义（人民文学版）》/ [明]罗贯中，目录120回至“降孙皓三分归一统”；匹配完整原著，排除白话改写及少儿版。"
+  },
+  "xi-you-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/64032210721070a5640294f",
+    "checkedAt": "2026-10-28",
+    "note": "人工核验：《西游记（人民文学版）》/ [明]吴承恩，人民文学出版社2019年版，目录至第100回；排除白话直解与少儿改写。"
   }
 }
