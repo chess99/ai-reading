@@ -3615,5 +3615,11 @@
     "url": "https://weread.qq.com/web/bookDetail/16b327b052b9f516bffa427",
     "note": "三体1，刘慈欣，重庆出版社2022年版；单独第一部，排除全集、同人和解读。",
     "checkedAt": "2026-10-28"
+  },
+  "ji-du-shan-bo-jue": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/96932f2071690470969a980",
+    "note": "大仲马，周克希译，江苏凤凰文艺2018年全三册同一部完整小说，117章至十月五日；PG源元数据另署合作作者Auguste Maquet，中文通行版只署大仲马。",
+    "checkedAt": "2026-10-28"
   }
 }
