@@ -3609,5 +3609,11 @@
     "url": "https://weread.qq.com/web/bookDetail/54c32520715e229954c8b8a",
     "note": "钱钟书（钱锺书），人民文学2017年版，九章及杨绛附录。",
     "checkedAt": "2026-10-28"
+  },
+  "san-ti": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/16b327b052b9f516bffa427",
+    "note": "三体1，刘慈欣，重庆出版社2022年版；单独第一部，排除全集、同人和解读。",
+    "checkedAt": "2026-10-28"
   }
 }
