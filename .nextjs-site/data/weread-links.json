@@ -3638,5 +3638,10 @@
     "url": "https://weread.qq.com/web/bookDetail/734325d052b9f4734d6a816",
     "note": "三体3·死神永生，刘慈欣，重庆出版社2022年版，六部正文完整目录，排除图文版与同人。",
     "checkedAt": "2026-10-29"
+  },
+  "xiao-ao-jiang-hu": {
+    "status": "not_found",
+    "note": "实际搜索书名及书名加金庸，未找到金庸原著；排除李志清漫画、同人及研究书。原始结果保存于weread-search。",
+    "checkedAt": "2026-10-29"
   }
 }
