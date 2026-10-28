@@ -3591,5 +3591,11 @@
     "url": "https://weread.qq.com/web/bookDetail/64032210721070a5640294f",
     "checkedAt": "2026-10-28",
     "note": "人工核验：《西游记（人民文学版）》/ [明]吴承恩，人民文学出版社2019年版，目录至第100回；排除白话直解与少儿改写。"
+  },
+  "huo-zhe": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/33332bf05cbba0333b1efb4",
+    "checkedAt": "2026-10-28",
+    "note": "人工核验：《活着》/ 余华，北京十月文艺出版社2021年版，目录为完整小说及各语种版自序；排除同名战略书、其他作者作品与解读。"
   }
 }
