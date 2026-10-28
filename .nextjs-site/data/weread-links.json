@@ -3603,5 +3603,11 @@
     "url": "https://weread.qq.com/web/bookDetail/d6332fd05b1dc2d63df8938",
     "checkedAt": "2026-10-28",
     "note": "人工核验：《无人生还（同名英剧原著）》/ 阿加莎·克里斯蒂，新星出版社2013年版，目录含尾声与拖网渔船船主寄给苏格兰场的手稿；匹配小说原著，排除其他作者的同名网文及影视解说。"
+  },
+  "wei-cheng": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/54c32520715e229954c8b8a",
+    "note": "钱钟书（钱锺书），人民文学2017年版，九章及杨绛附录。",
+    "checkedAt": "2026-10-28"
   }
 }
