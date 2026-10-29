@@ -1,4 +1,4 @@
-import { getAllBookMetas, getLatestBooks } from '@/lib/books';
+import { getAllBookMetas } from '@/lib/books';
 import SearchBar from '@/components/SearchBar';
 import ContinueReading from '@/components/ContinueReading';
 import NewBooks from '@/components/NewBooks';
@@ -7,7 +7,7 @@ import HomeModuleAnalytics from '@/components/HomeModuleAnalytics';
 
 export default function HomePage() {
   const allBooks = getAllBookMetas();
-  const latestBooks = getLatestBooks(8);
+  const renderedAt = Date.now();
 
   return (
     <div className="page-container">
@@ -29,9 +29,9 @@ export default function HomePage() {
           </div>
         </HomeModuleAnalytics>
 
-        {/* New Books */}
+        {/* Recent Updates */}
         <HomeModuleAnalytics module="latest">
-          <NewBooks books={latestBooks} />
+          <NewBooks books={allBooks} renderedAt={renderedAt} />
         </HomeModuleAnalytics>
       </div>
     </div>

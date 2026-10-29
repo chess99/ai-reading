@@ -198,13 +198,6 @@ export function getAllTags(): { tag: string; count: number }[] {
     .sort((a, b) => b.count - a.count);
 }
 
-export function getLatestBooks(n = 6): BookMeta[] {
-  return getAllBookMetas()
-    .slice()
-    .sort((a, b) => b.addedAt - a.addedAt)
-    .slice(0, n);
-}
-
 export function searchBooks(keyword: string): BookMeta[] {
   const lowerKeyword = keyword.toLowerCase();
   return getAllBookMetas().filter(book => {
