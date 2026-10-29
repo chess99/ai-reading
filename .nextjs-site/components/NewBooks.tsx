@@ -44,7 +44,7 @@ export default function NewBooks({ books, renderedAt }: NewBooksProps) {
 
   return (
     <section className="mb-10 md:mb-14" aria-labelledby="latest-books-title">
-      <div className="flex items-center justify-between mb-4">
+      <div data-home-impression-target className="flex items-center justify-between mb-4">
         <h2 id="latest-books-title" className="section-title">
           最近更新
         </h2>

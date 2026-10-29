@@ -37,6 +37,8 @@ export function useHomeModuleImpression<T extends HTMLElement>(module: HomeModul
       return;
     }
 
+    // A long update list can exceed the viewport; measure its header when provided.
+    const impressionTarget = element.querySelector('[data-home-impression-target]') || element;
     const observer = new IntersectionObserver(
       entries => {
         const entry = entries[0];
@@ -52,7 +54,7 @@ export function useHomeModuleImpression<T extends HTMLElement>(module: HomeModul
       { threshold: [0.25], rootMargin: '0px 0px -10% 0px' }
     );
 
-    observer.observe(element);
+    observer.observe(impressionTarget);
     return () => {
       window.clearTimeout(impressionTimer);
       observer.disconnect();
