@@ -72,34 +72,27 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
   const expandAll = () => setExpandedCategories(new Set(getAllCategoryPaths(bookTree)));
   const collapseAll = () => setExpandedCategories(new Set());
 
-  const findCurrentBook = () => {
-    if (!pathname.startsWith('/books/')) return null;
+  // Metadata can arrive after the tree mounts, without a route change.
+  useEffect(() => {
+    if (!pathname.startsWith('/books/')) return;
     const slug = pathname.replace('/books/', '').replace(/\/$/, '');
     const book = allBooks.find(b => b.slug === slug);
-    if (!book) return null;
+    if (!book) return;
+
     const categoryPaths: string[] = [];
     let pathSoFar = '';
     for (const cat of book.categoryPath) {
       pathSoFar = pathSoFar ? `${pathSoFar}/${cat}` : cat;
       categoryPaths.push(pathSoFar);
     }
-    return { book, categoryPaths };
-  };
-
-  const revealActiveFile = () => {
-    const current = findCurrentBook();
-    if (!current) return;
-    setExpandedCategories(new Set(current.categoryPaths));
-    setTimeout(() => {
+    setExpandedCategories(new Set(categoryPaths));
+    const scrollTimer = window.setTimeout(() => {
       const activeLink = document.querySelector('.sidebar-link-active');
       if (activeLink) activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, 100);
-  };
 
-  useEffect(() => {
-    if (pathname.startsWith('/books/')) revealActiveFile();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
+    return () => window.clearTimeout(scrollTimer);
+  }, [pathname, allBooks]);
 
   const toggleCategory = (categoryPath: string) => {
     const next = new Set(expandedCategories);
