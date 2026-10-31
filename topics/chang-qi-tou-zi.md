@@ -16,19 +16,23 @@ related:
   - cai-wu-chang-shi
   - jia-zhi-tou-zi
   - shi-chang-zhou-qi-hong-guan-feng-xian
-date: '2026-09-12'
+date: '2026-11-01'
 books:
   - title: 漫步华尔街
-    author: 伯顿·马尔基尔
+    author: 伯顿·G.马尔基尔
     originalTitle: A Random Walk Down Wall Street
-    status: planned
+    slug: man-bu-hua-er-jie
+    path: books/金钱投资/理财入门/伯顿·G.马尔基尔-漫步华尔街.md
+    status: in_library
     reading: start
     role: 市场与分散
     reason: 理解价格、随机性、市场效率与分散投资，注意市场和年代背景。
   - title: 投资四大支柱
-    author: 威廉·伯恩斯坦
+    author: 威廉·J.伯恩斯坦
     originalTitle: The Four Pillars of Investing
-    status: planned
+    slug: tou-zi-si-da-zhi-zhu
+    path: books/金钱投资/理财入门/威廉·J.伯恩斯坦-投资四大支柱.md
+    status: in_library
     reading: next
     role: 配置的整体框架
     reason: 把投资理论、市场历史、行为与行业激励放在一起考虑。

@@ -16,7 +16,7 @@ related:
   - chang-qi-tou-zi
   - shuai-lao-ji-bing-zhao-hu
   - gong-zuo-zhu-fang
-date: '2026-09-12'
+date: '2026-11-01'
 books:
   - title: 小狗钱钱
     author: 博多·舍费尔
@@ -43,9 +43,11 @@ books:
     role: 行为与安全余地
     reason: 理解经历、比较和不确定性怎样改变金钱选择。
   - title: 投资四大支柱
-    author: 威廉·伯恩斯坦
+    author: 威廉·J.伯恩斯坦
     originalTitle: The Four Pillars of Investing
-    status: planned
+    slug: tou-zi-si-da-zhi-zhu
+    path: books/金钱投资/理财入门/威廉·J.伯恩斯坦-投资四大支柱.md
+    status: in_library
     reading: optional
     role: 走向投资
     reason: 需要配置长期资产时，理解理论、历史、心理与行业激励。

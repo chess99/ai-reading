@@ -1,6 +1,6 @@
 # 主题书单待入库作品
 
-当前有 78 部作品待补解读，涉及 58 个主题。
+当前有 73 部作品待补解读，涉及 55 个主题。
 
 本表从主题书单汇总，以作品与作者区分同名书；起读用途和出现次数用于安排入库，不代表作品质量排名。版本、译名和购买信息需在入库时核对，不能把同名馆藏直接替换进来。
 
@@ -18,8 +18,6 @@
 | 格鲁夫给经理人的第一课 | 安迪·格鲁夫 | High Output Management | 1 | [从自己做好到带人做好](../topics/you-xiao-guan-li-zhe.md) |
 | 给孩子的诗 | 北岛 | — | 1 | [怎样接近一首诗](../topics/shi-ge-yue-du.md) |
 | 克服焦虑 | 埃德蒙·伯恩 | The Anxiety and Phobia Workbook | 1 | [理解焦虑与抑郁](../topics/jiao-lv-yi-yu.md) |
-| 李诞工作手册 | 李诞 | — | 1 | [把内容创作做成长期事业](../topics/zi-mei-ti-chang-qi-shi-ye.md) |
-| 漫步华尔街 | 伯顿·马尔基尔 | A Random Walk Down Wall Street | 1 | [普通人怎样长期投资](../topics/chang-qi-tou-zi.md) |
 | 魔鬼数学 | 乔丹·艾伦伯格 | How Not to Be Wrong | 1 | [数学怎样帮助理解问题](../topics/shu-xue-si-wei.md) |
 | 呐喊 | 鲁迅 | — | 1 | [怎样读一篇小说](../topics/wen-xue-ren-wen.md) |
 | 七堂极简物理课 | 卡洛·罗韦利 | Seven Brief Lessons on Physics | 1 | [物理学怎样描述世界](../topics/wu-li-shi-jie.md) |
@@ -35,7 +33,6 @@
 | It's OK That You're Not OK | 梅根·迪瓦恩 | It's OK That You're Not OK | 1 | [面对丧失与哀伤](../topics/sang-shi-ai-shang-si-wang.md) |
 | Unbroken Brain | 玛雅·萨拉维茨 | Unbroken Brain | 1 | [理解成瘾与恢复](../topics/cheng-yin-shi-kong-hui-fu.md) |
 | 光环效应 | 菲尔·罗森茨维格 | The Halo Effect | 0 | [组织中的权力与变革](../topics/quan-li-bian-ge.md)、[商业竞争与战略选择](../topics/shang-ye-jing-zheng-zhan-lve.md)、[看懂商业模式与公司经营](../topics/shang-ye-mo-shi-jing-ying.md) |
-| 投资四大支柱 | 威廉·伯恩斯坦 | The Four Pillars of Investing | 0 | [个人与家庭财务基础](../topics/cai-wu-chang-shi.md)、[普通人怎样长期投资](../topics/chang-qi-tou-zi.md) |
 | 为什么学生不喜欢上学 | 丹尼尔·威林厄姆 | Why Don't Students Like School? | 0 | [怎样学得会、记得住、用得上](../topics/chang-qi-xue-xi.md)、[营造家庭学习与阅读环境](../topics/jia-ting-xue-xi-jiao-yu-huan-jing.md) |
 | 政治秩序与政治衰败 | 弗朗西斯·福山 | Political Order and Political Decay | 0 | [国家与文明兴衰的不同解释](../topics/wen-ming-xing-shuai.md)、[制度、公共权力与纠错](../topics/zhi-du-quan-li.md) |
 | 自我关怀 | 克里斯廷·内夫 | Self-Compassion | 0 | [反复想、迟迟不行动时读什么](../topics/jing-shen-nei-hao.md)、[怎样建立更稳定的自我评价](../topics/wen-ding-zi-zun.md) |
@@ -53,7 +50,6 @@
 | 冷启动 | 安德鲁·陈 | The Cold Start Problem | 0 | [平台、网络效应与冷启动](../topics/ping-tai-wang-luo-xiao-ying.md) |
 | 力量训练基础 | 马克·瑞比托 | Starting Strength | 0 | [按目标理解运动与体能](../topics/yun-dong-ti-neng.md) |
 | 量化交易 | 欧内斯特·陈 | Quantitative Trading | 0 | [理解交易系统、检验与纪律](../topics/jiao-yi-xi-tong-ji-lv.md) |
-| 起号 | 池骋 | — | 0 | [把内容创作做成长期事业](../topics/zi-mei-ti-chang-qi-shi-ye.md) |
 | 情绪勒索 | 苏珊·福沃德,唐娜·弗雷泽 | Emotional Blackmail | 0 | [关系中的控制、边界与安全](../topics/guan-xi-an-quan-bian-jie.md) |
 | 社会学 | 安东尼·吉登斯,菲利普·萨顿 | Sociology | 0 | [从日常生活进入社会学](../topics/she-hui-xue-gong-tong-sheng-huo.md) |
 | 诗的八堂课 | 江弱水 | — | 0 | [怎样接近一首诗](../topics/shi-ge-yue-du.md) |
@@ -66,7 +62,6 @@
 | 信息规则 | 卡尔·夏皮罗,哈尔·瓦里安 | Information Rules | 0 | [平台、网络效应与冷启动](../topics/ping-tai-wang-luo-xiao-ying.md) |
 | 音乐的故事 | 霍华德·古多尔 | The Story of Music | 0 | [怎样更细致地听音乐](../topics/yin-yue-qing-ting.md) |
 | 由内而外的教养 | 丹尼尔·西格尔,玛丽·哈策尔 | Parenting from the Inside Out | 0 | [做足够好的父母](../topics/zu-gou-hao-de-fu-mu.md) |
-| 运营之光 | 黄有璨 | — | 0 | [把内容创作做成长期事业](../topics/zi-mei-ti-chang-qi-shi-ye.md) |
 | 怎样解题 | 乔治·波利亚 | How to Solve It | 0 | [数学怎样帮助理解问题](../topics/shu-xue-si-wei.md) |
 | 照护 | 凯博文 | The Soul of Care | 0 | [面对衰老与长期照护](../topics/shuai-lao-ji-bing-zhao-hu.md) |
 | 正义的理念 | 阿马蒂亚·森 | The Idea of Justice | 0 | [公平与正义：不同原则怎样争论](../topics/gong-ping-zheng-yi.md) |

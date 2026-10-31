@@ -3643,5 +3643,53 @@
     "status": "not_found",
     "note": "实际搜索书名及书名加金庸，未找到金庸原著；排除李志清漫画、同人及研究书。原始结果保存于weread-search。",
     "checkedAt": "2026-10-29"
+  },
+  "tou-zi-zhe-de-wei-lai": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/8f632810723fb5458f6b19b",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《投资者的未来（珍藏版）》/ 杰里米 J.西格尔，书名与作者匹配，排除解读及合集。"
+  },
+  "man-bu-hua-er-jie": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/77232330813ab9312g018232",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《漫步华尔街（原书第13版）》/ 伯顿·G.马尔基尔，书名与作者匹配，选择第13版。"
+  },
+  "yu-qi-tou-zi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/71b32a30813ab7f0dg0176f6",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《预期投资：未来投资机会分析与估值方法》/ 迈克尔·J.莫布森等，对应同一作品，排除近名投资书。"
+  },
+  "cai-wu-gui-ji": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d71328307187fc82d71fb54",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《财务诡计：如何识别财务报告中的会计诡计和舞弊（原书第4版）》/ 霍华德·M.施利特、杰里米·佩勒、尤尼·恩格尔哈特，三位作者与版本匹配，排除第3版。"
+  },
+  "gu-shi-chang-xian-fa-bao": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5ef32a20724ad4895efd547",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《股市长线法宝（典藏版）》/ 杰里米J.西格尔，与原作 Stocks for the Long Run 为同一作品，排除金融投资六册合集；链接版本与本轮英文第6版书源分别记录。"
+  },
+  "fei-fan-de-cheng-gong": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/52632500813ab73fbg01210d",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《非凡的成功：个人投资的制胜之道》/ 大卫·F.史文森，书名与作者匹配，排除近名成功学书籍。"
+  },
+  "tou-zi-si-da-zhi-zhu": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/59232ee0811e1ad8fg015b6b",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《投资的四大支柱》/ 威廉·伯恩斯坦，对应 The Four Pillars of Investing，与《投资金律》为同一作品的不同译本；链接版次与本轮第二版书源分别记录。"
+  },
+  "tou-zi-shou-yi-bai-nian-shi": {
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a5c32090811e1c389g012126",
+    "checkedAt": "2026-11-01",
+    "note": "人工核验：《基金产业发展丛书：投资收益百年史》/ E.迪姆森、P.马什、M.斯汤腾，分别对应 Elroy Dimson、Paul Marsh、Mike Staunton，确认为 Triumph of the Optimists 的中文译本。"
   }
 }
