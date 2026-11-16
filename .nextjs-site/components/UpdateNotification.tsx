@@ -1,169 +1,162 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { CloseIcon } from '@/components/Icons';
+import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { getUpdateKind, preparePageUpdate, UPDATE_CHECK_EVENT, type UpdateCheckResult, type UpdateKind, type UpdateManifest } from '@/lib/pwa-updates';
+import { savePositionForReload } from '@/lib/reading-position';
 
-interface ContentUpdate {
-  slug: string;
-  title: string;
-  author?: string;
-  url?: string;
-  type?: 'book' | 'topic';
-}
+interface AvailableUpdate { version: string; kind: UpdateKind }
 
 export default function UpdateNotification() {
-  const [updates, setUpdates] = useState<ContentUpdate[]>([]);
+  const pathname = usePathname();
+  const [available, setAvailable] = useState<AvailableUpdate | null>(null);
   const [isUpdating, setIsUpdating] = useState(false);
+  const [error, setError] = useState('');
+  const registrationRef = useRef<ServiceWorkerRegistration | null>(null);
+  const dismissed = useRef(new Set<string>());
 
   useEffect(() => {
-    if (!('serviceWorker' in navigator)) return;
-
-    const handleMessage = (event: MessageEvent) => {
-      const { type, count, updates: bookUpdates } = event.data;
-
-      if (type === 'BOOKS_UPDATED' || type === 'CONTENT_UPDATED') {
-        console.log(`发现 ${count} 项内容有更新`);
-        setUpdates(bookUpdates || []);
-      } else if (type === 'UPDATE_COMPLETE') {
-        console.log(`已更新 ${count} 项内容`);
-        setIsUpdating(false);
-        setUpdates([]);
+    if (process.env.NODE_ENV !== 'production' || !('serviceWorker' in navigator)) return;
+    let cancelled = false;
+    let checking = false;
+    let lastCheck = 0;
+    let installing: ServiceWorker | null = null;
+    setAvailable(null);
+    setError('');
+    const show = (update: AvailableUpdate) => {
+      if (update.kind === 'app' && dismissed.current.has(`${pathname}:worker`)) return;
+      if (!cancelled && !dismissed.current.has(`${pathname}:${update.version}`)) setAvailable(update);
+    };
+    const onInstalled = () => {
+      if (installing?.state === 'installed' && navigator.serviceWorker.controller) {
+        show({ version: 'worker', kind: 'app' });
       }
     };
-
-    navigator.serviceWorker.addEventListener('message', handleMessage);
-
-    return () => {
-      navigator.serviceWorker.removeEventListener('message', handleMessage);
+    const onUpdateFound = () => {
+      installing?.removeEventListener('statechange', onInstalled);
+      installing = registrationRef.current?.installing ?? null;
+      installing?.addEventListener('statechange', onInstalled);
     };
-  }, []);
+    const meta = (name: string) => document.querySelector<HTMLMetaElement>(`meta[name="ai-reading-${name}"]`)?.content ?? '';
+    const check = async (force = false): Promise<UpdateCheckResult> => {
+      if (!navigator.onLine) return 'offline';
+      if (cancelled || document.hidden || checking || (!force && Date.now() - lastCheck < 60_000)) return 'failed';
+      checking = true;
+      lastCheck = Date.now();
+      let found = Boolean(registrationRef.current?.waiting);
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 10_000);
+      try {
+        const response = await fetch('/build-manifest.json', { cache: 'no-store', signal: controller.signal });
+        if (!response.ok) throw new Error('Update check failed');
+        const manifest: UpdateManifest = await response.json();
+        const kind = getUpdateKind(manifest, { app: meta('app'), library: meta('library'), content: meta('content') }, pathname);
+        if (kind) {
+          found = true;
+          const url = `${pathname.replace(/\/$/, '')}/`;
+          const version = kind === 'app' ? manifest.appVersion : kind === 'library'
+            ? manifest.contentVersion : manifest.content?.[url]?.hash ?? `removed-${meta('content')}`;
+          show({ version: version || manifest.version, kind });
+        }
+        await registrationRef.current?.update();
+        if (registrationRef.current?.waiting) {
+          found = true;
+          show({ version: 'worker', kind: 'app' });
+        }
+        return found ? 'available' : 'current';
+      } catch { return found ? 'available' : 'failed'; }
+      finally { window.clearTimeout(timeout); checking = false; }
+    };
+    const checkWhenVisible = () => { void check(); };
+    const checkWhenOnline = () => { void check(true); };
+    const checkManually = (event: Event) => {
+      for (const key of dismissed.current) {
+        if (key.startsWith(`${pathname}:`)) dismissed.current.delete(key);
+      }
+      void check(true).then((event as CustomEvent<(result: UpdateCheckResult) => void>).detail);
+    };
+    navigator.serviceWorker.register('/sw.js', { scope: '/', updateViaCache: 'none' }).then(registration => {
+      if (cancelled) return;
+      registrationRef.current = registration;
+      registration.addEventListener('updatefound', onUpdateFound);
+      if (registration.waiting) show({ version: 'worker', kind: 'app' });
+      if (registration.installing) onUpdateFound();
+    }).catch(() => {});
+
+    // 在页面显示后检查；由页面定时器承担周期任务，避免依赖随时会被回收的 worker。
+    const initialTimer = window.setTimeout(checkWhenVisible, 3000);
+    const interval = window.setInterval(checkWhenVisible, 5 * 60_000);
+    document.addEventListener('visibilitychange', checkWhenVisible);
+    window.addEventListener('online', checkWhenOnline);
+    window.addEventListener(UPDATE_CHECK_EVENT, checkManually);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(initialTimer);
+      window.clearInterval(interval);
+      document.removeEventListener('visibilitychange', checkWhenVisible);
+      window.removeEventListener('online', checkWhenOnline);
+      window.removeEventListener(UPDATE_CHECK_EVENT, checkManually);
+      registrationRef.current?.removeEventListener('updatefound', onUpdateFound);
+      installing?.removeEventListener('statechange', onInstalled);
+    };
+  }, [pathname]);
 
   const handleUpdate = async () => {
-    if (!navigator.serviceWorker.controller) return;
-
     setIsUpdating(true);
-    const urls = updates.map(u => u.url).filter((url): url is string => Boolean(url));
-
-    if (urls.length > 0) {
-      navigator.serviceWorker.controller.postMessage({
-        type: 'UPDATE_CONTENT',
-        data: { urls },
-      });
-      return;
+    setError('');
+    try {
+      const registration = registrationRef.current ?? await navigator.serviceWorker.getRegistration();
+      const worker = registration?.waiting ?? navigator.serviceWorker.controller ?? registration?.active;
+      if (!worker) throw new Error('更新尚未就绪，请稍后重试');
+      // 页面下载成功后才刷新，失败时保留当前正文与位置。
+      await preparePageUpdate(worker, window.location.href);
+      if (registration?.waiting) {
+        await new Promise<void>((resolve, reject) => {
+          const onChange = () => { cleanup(); resolve(); };
+          const timer = window.setTimeout(() => { cleanup(); reject(new Error('更新超时，请重试')); }, 10_000);
+          const cleanup = () => {
+            window.clearTimeout(timer);
+            navigator.serviceWorker.removeEventListener('controllerchange', onChange);
+          };
+          navigator.serviceWorker.addEventListener('controllerchange', onChange);
+          registration.waiting!.postMessage({ type: 'SKIP_WAITING' });
+        });
+      }
+      savePositionForReload();
+      window.location.reload();
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : '更新未完成，请重试');
+      setIsUpdating(false);
     }
-
-    navigator.serviceWorker.controller.postMessage({
-      type: 'UPDATE_BOOKS',
-      data: {
-        slugs: updates.map(u => u.slug),
-      },
-    });
   };
 
-  const handleDismiss = () => {
-    setUpdates([]);
-  };
-
-  if (updates.length === 0) return null;
-
+  if (!available) return null;
+  const isReading = /^\/(books|topics)\/[^/]+\/?$/.test(pathname);
+  const title = { app: '有新版本可用', content: '这篇内容有更新', library: '书库有更新' }[available.kind];
   return (
-    <div className="fixed bottom-4 right-4 z-50 max-w-sm animate-slide-up">
-      <div className="surface-card p-5 border-brand/20">
-        {/* Header */}
-        <div className="flex items-start gap-3 mb-4">
-          <div className="flex-shrink-0 w-10 h-10 icon-tile">
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-              />
-            </svg>
-          </div>
-          <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-stone-950 mb-1">
-              发现内容更新
-            </h3>
-            <p className="text-sm text-stone-600">
-              有 {updates.length} 项内容有新内容
-            </p>
-          </div>
-          <button
-            onClick={handleDismiss}
-            className="flex-shrink-0 p-1 hover:bg-stone-100 rounded transition-colors"
-            aria-label="关闭"
-          >
-            <CloseIcon className="w-5 h-5 text-stone-400" />
-          </button>
+    <aside aria-label="更新提示" className="fixed inset-x-4 bottom-[calc(5rem+env(safe-area-inset-bottom))] z-50 mx-auto max-w-md md:inset-x-auto md:bottom-6 md:right-6 animate-slide-up">
+      <div className="surface-floating rounded-lg p-4">
+        <div role="status" aria-live="polite">
+          <p className="font-bold text-stone-950">{title}</p>
+          <p className="mt-1 text-sm leading-6 text-stone-600">
+            {isReading ? '更新后将回到当前阅读位置。' : '刷新即可查看最新内容。'}
+          </p>
         </div>
-
-        {/* Book List */}
-        {updates.length <= 3 && (
-          <div className="mb-4 space-y-2">
-            {updates.map(book => (
-              <div
-                key={book.slug}
-                className="text-sm p-2 bg-stone-50 rounded-lg"
-              >
-                <div className="font-medium text-stone-950 line-clamp-1">
-                  {book.title}
-                </div>
-                <div className="text-xs text-stone-500">
-                  {book.author || (book.type === 'topic' ? '主题阅读' : '书籍提炼')}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Actions */}
-        <div className="flex gap-2">
-          <button
-            onClick={handleUpdate}
-            disabled={isUpdating}
-            className="flex-1 px-4 py-2.5 bg-stone-900 text-[#fffdf8] rounded-lg font-semibold hover:bg-stone-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isUpdating ? (
-              <span className="flex items-center justify-center gap-2">
-                <svg
-                  className="animate-spin w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                  />
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  />
-                </svg>
-                更新中...
-              </span>
-            ) : (
-              '立即更新'
-            )}
+        {error && <p role="alert" className="mt-2 text-sm text-red-700">{error}</p>}
+        <div className="mt-3 flex gap-2">
+          <button onClick={handleUpdate} disabled={isUpdating}
+            className="min-h-11 flex-1 rounded-lg bg-stone-900 px-4 py-2 text-sm font-semibold text-[#fffdf8] hover:bg-stone-800 disabled:opacity-50">
+            {isUpdating ? '正在更新…' : isReading ? '更新并继续阅读' : '刷新查看'}
           </button>
-          <button
-            onClick={handleDismiss}
-            className="px-4 py-2.5 border border-stone-200 text-stone-600 rounded-lg font-semibold hover:bg-stone-50 transition-colors"
-          >
+          <button disabled={isUpdating} onClick={() => {
+            dismissed.current.add(`${pathname}:${available.version}`);
+            if (available.kind === 'app') dismissed.current.add(`${pathname}:worker`);
+            setAvailable(null);
+          }} className="min-h-11 rounded-lg border border-stone-200 px-4 py-2 text-sm font-semibold text-stone-600 hover:bg-stone-100 disabled:opacity-50">
             稍后
           </button>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }

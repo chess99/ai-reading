@@ -20,6 +20,7 @@ import { remarkTopicBookLinks } from '@/lib/topic-book-links';
 import { rehypeSearchAnchors } from '@/lib/search-anchors.mjs';
 import SearchHighlights from '@/components/SearchHighlights';
 import { getAllTopicRouteSlugs, getTopicDetailBySlug, getTopicLegacyRoute, getRelatedTopics } from '@/lib/topics';
+import { getContentVersion } from '@/lib/build-info';
 interface TopicPageProps { params: Promise<{ slug: string }>; }
 export async function generateStaticParams() { return getAllTopicRouteSlugs().map(slug => ({ slug })); }
 export async function generateMetadata({ params }: TopicPageProps): Promise<Metadata> {
@@ -34,6 +35,7 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
   if (!topic) return { title: `主题未找到 - ${BRAND_NAME}` };
   const url = `${BASE_URL}/topics/${topic.slug}/`;
   return { title: `${topic.title} | ${BRAND_NAME}`, description: topic.description,
+    other: { 'ai-reading-content': getContentVersion(`/topics/${topic.slug}/`) },
     keywords: [topic.title, '主题阅读', ...topic.tags], alternates: { canonical: url },
     openGraph: { title: topic.title, description: topic.description, url, type: 'article', locale: 'zh_CN', siteName: BRAND_NAME,
       images: [{ url: `${BASE_URL}/share-image.png`, width: 512, height: 512, alt: topic.title }] } };

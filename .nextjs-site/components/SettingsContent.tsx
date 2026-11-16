@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReadingEvents } from '@/lib/analytics';
 import { BRAND_NAME } from '@/lib/brand';
+import { requestUpdateCheck } from '@/lib/pwa-updates';
 
 interface SettingsContentProps {
   onNavigate?: () => void;
@@ -38,6 +39,18 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
   const [cachedCount, setCachedCount] = useState(0);
   const [bookCount, setBookCount] = useState(0);
   const [prefetchProgress, setPrefetchProgress] = useState(0);
+  const [isCheckingUpdate, setIsCheckingUpdate] = useState(false);
+  const [updateStatus, setUpdateStatus] = useState('');
+
+  const handleCheckUpdate = async () => {
+    setIsCheckingUpdate(true);
+    const result = await requestUpdateCheck();
+    setUpdateStatus({
+      available: '有更新可用', current: '已是最新版本', offline: '当前离线，联网后再检查',
+      failed: '暂时无法检查，请稍后重试', unsupported: '请刷新页面获取最新内容',
+    }[result]);
+    setIsCheckingUpdate(false);
+  };
 
   useEffect(() => {
     const saved = localStorage.getItem('offline-mode');
@@ -203,6 +216,16 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
       <div className="surface-card p-4">
         <h3 className="font-bold text-stone-950 mb-3">站点信息</h3>
         <div className="divide-y divide-stone-200/80 text-sm">
+          <div className="flex items-center justify-between gap-3 py-2.5">
+            <div>
+              <p className="font-semibold text-stone-950">版本更新</p>
+              <p aria-live="polite" className="mt-0.5 leading-5 text-stone-500">{updateStatus || '检查最新内容和版本'}</p>
+            </div>
+            <button onClick={handleCheckUpdate} disabled={isCheckingUpdate}
+              className="min-h-11 shrink-0 rounded-lg border border-stone-200 px-3 font-semibold text-stone-700 hover:bg-stone-50 disabled:opacity-50">
+              {isCheckingUpdate ? '检查中…' : '检查更新'}
+            </button>
+          </div>
           <Link
             href="/listen"
             prefetch={false}

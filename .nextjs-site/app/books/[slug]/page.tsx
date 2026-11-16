@@ -16,6 +16,7 @@ import { getWereadUrlForBook } from '@/lib/external-links';
 import { getTopicsForBook } from '@/lib/topics';
 import BookRelatedTopics from '@/components/BookRelatedTopics';
 import { rehypeSearchAnchors } from '@/lib/search-anchors.mjs';
+import { getContentVersion } from '@/lib/build-info';
 
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
@@ -60,6 +61,7 @@ export async function generateMetadata({ params }: BookPageProps) {
   return {
     title: `《${book.title}》书籍解读：核心观点与读书笔记 | ${BRAND_NAME}`,
     description,
+    other: { 'ai-reading-content': getContentVersion(`/books/${slug}/`) },
     keywords: [book.title, book.author, '书籍解读', '读书笔记', '核心观点', book.category, ...book.tags],
     alternates: {
       canonical: pageUrl,

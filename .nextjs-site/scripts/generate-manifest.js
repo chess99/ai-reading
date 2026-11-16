@@ -21,6 +21,25 @@ const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'build-manifest.json');
 const LIBRARY_TREE_FILE = path.join(__dirname, '..', 'public', 'library-tree.json');
 const LIBRARY_BOOKS_FILE = path.join(__dirname, '..', 'public', 'library-books.json');
 
+// 与内容版本分开：加书不应在读另一篇文章时触发应用更新提示。
+function generateAppVersion() {
+  const hash = crypto.createHash('sha256');
+  const siteDir = path.join(__dirname, '..');
+  function add(relativePath) {
+    const fullPath = path.join(siteDir, relativePath);
+    if (fs.statSync(fullPath).isDirectory()) {
+      for (const name of fs.readdirSync(fullPath).sort()) add(path.join(relativePath, name));
+    } else {
+      hash.update(relativePath).update(fs.readFileSync(fullPath));
+    }
+  }
+  for (const entry of ['app', 'components', 'hooks', 'lib', 'next.config.ts', 'package-lock.json',
+    'public/sw.js', 'public/manifest.webmanifest']) {
+    if (fs.existsSync(path.join(siteDir, entry))) add(entry);
+  }
+  return hash.digest('hex').slice(0, 16);
+}
+
 function generateHash(content) {
   return crypto.createHash('md5').update(content).digest('hex').substring(0, 8);
 }
@@ -198,6 +217,8 @@ function generateManifest() {
 
   const manifest = {
     version: new Date().toISOString(),
+    appVersion: generateAppVersion(),
+    contentVersion: generateHash(JSON.stringify(content)),
     buildTime: Date.now(),
     booksCount: Object.keys(books).length,
     topicsCount: Object.keys(topics).length,

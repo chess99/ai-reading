@@ -5,6 +5,7 @@ import BaiduAnalytics from '@/components/BaiduAnalytics';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME, SITE_DESCRIPTION, SITE_TITLE } from '@/lib/brand';
+import { appVersion, buildVersion, libraryVersion } from '@/lib/build-info';
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -85,6 +86,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        <meta name="ai-reading-build" content={buildVersion} />
+        <meta name="ai-reading-app" content={appVersion} />
+        <meta name="ai-reading-library" content={libraryVersion} />
         <link rel="alternate" type="application/rss+xml" title={`${BRAND_NAME} 全文 RSS`} href={`${BASE_URL}/feed.xml`} />
         <script
           type="application/ld+json"

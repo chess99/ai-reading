@@ -8,6 +8,7 @@ import BottomNav from '@/components/BottomNav';
 import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
 import { updateNavigationHistory } from '@/lib/navigation-history';
+import { useReadingPosition } from '@/hooks/use-reading-position';
 
 interface LayoutClientProps {
   children: React.ReactNode;
@@ -40,11 +41,6 @@ export default function LayoutClient({ children }: LayoutClientProps) {
         }
       : undefined;
 
-  useEffect(() => {
-    if (!('serviceWorker' in navigator)) return;
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
-  }, []);
-
   const saveCurrentScrollPosition = () => {
     const main = mainRef.current;
     if (!main) return;
@@ -56,6 +52,8 @@ export default function LayoutClient({ children }: LayoutClientProps) {
     const savedPosition = scrollPositionsRef.current[pathname] ?? { top: 0, left: 0 };
     mainRef.current?.scrollTo({ top: savedPosition.top, left: savedPosition.left });
   }, [pathname]);
+
+  useReadingPosition(mainRef, pathname);
 
   useEffect(() => {
     updateNavigationHistory(window.sessionStorage, pathname, {

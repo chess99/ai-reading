@@ -63,7 +63,9 @@ export default function SearchHighlights() {
       Boolean(anchor.compareDocumentPosition(range.startContainer) & Node.DOCUMENT_POSITION_FOLLOWING));
     const frame = requestAnimationFrame(() => {
       if (!first) return;
-      const main = document.querySelector('main.overflow-auto');
+      const main = document.querySelector<HTMLElement>('main.overflow-auto');
+      // 主动更新后的阅读进度优先于最初的搜索命中位置，仍保留高亮。
+      if (main?.dataset.readingPositionRestored === 'true') return;
       const top = first.getBoundingClientRect().top;
       if (main) main.scrollTo({ top: main.scrollTop + top - main.getBoundingClientRect().top - main.clientHeight / 3 });
       else window.scrollTo({ top: window.scrollY + top - window.innerHeight / 3 });
