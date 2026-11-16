@@ -269,6 +269,12 @@ body {
   background: #9ca3af;
 }
 
+.search-excerpt mark {
+  background-color: #fef3c7;
+  color: #78350f;
+  border-radius: 2px;
+}
+
 /* Markdown 内容样式优化 */
 .markdown-content {
   @apply leading-relaxed;

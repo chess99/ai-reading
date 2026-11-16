@@ -6,36 +6,37 @@ import { useSearchParams } from 'next/navigation';
 import { BookMeta } from '@/lib/books';
 import { ReadingEvents } from '@/lib/analytics';
 import { BookIcon, CloseIcon, SearchIcon } from '@/components/Icons';
+import { loadFulltextPage, searchFulltext } from '@/lib/fulltext-search.mjs';
+import type { FulltextItem, PagefindModule, PagefindResult } from '@/lib/fulltext-search.mjs';
+import { devDependencies } from '@/package.json';
 
 type SearchTab = 'books' | 'fulltext';
-
-interface PagefindResultData {
-  url: string;
-  excerpt: string;
-  meta?: { title?: string };
-}
-
-interface SearchResultItem {
-  url: string;
-  title: string;
-  excerptHtml: string;
-}
-
-interface PagefindModule {
-  search: (term: string) => Promise<{
-    results: Array<{ data: () => Promise<PagefindResultData> }>;
-  }>;
-}
 
 interface SearchPageClientProps {
   allBooks: BookMeta[];
 }
 
-function normalizeResultUrl(url: string): string {
-  if (!url) return '/';
-  if (url.startsWith('http://') || url.startsWith('https://')) return url;
-  if (url.startsWith('/')) return url;
-  return `/${url}`;
+let pagefindPromise: Promise<PagefindModule> | null = null;
+
+function getPagefind(): Promise<PagefindModule> {
+  if (!pagefindPromise) {
+    const scriptUrl = `/pagefind/pagefind.js?v=${encodeURIComponent(devDependencies.pagefind)}`;
+    pagefindPromise = import(/* webpackIgnore: true */ scriptUrl).then(async imported => {
+      const pagefind = (imported.default ?? imported) as PagefindModule;
+      try {
+        await pagefind.init();
+        await pagefind.preload('');
+      } catch (error) {
+        await pagefind.destroy();
+        throw error;
+      }
+      return pagefind;
+    }).catch(error => {
+      pagefindPromise = null;
+      throw error;
+    });
+  }
+  return pagefindPromise;
 }
 
 export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
@@ -44,11 +45,12 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
   const [activeTab, setActiveTab] = useState<SearchTab>(
     () => (searchParams.get('tab') === 'fulltext' ? 'fulltext' : 'books')
   );
+  const [isComposing, setIsComposing] = useState(false);
 
   // ── Books tab: instant title/author/category/tags search ──────────────
   const bookResults = useMemo((): BookMeta[] => {
     if (!keyword.trim()) return [];
-    const kw = keyword.toLowerCase();
+    const kw = keyword.trim().toLowerCase();
     return allBooks
       .filter(b =>
         b.title.toLowerCase().includes(kw) ||
@@ -60,57 +62,83 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
   }, [keyword, allBooks]);
 
   // ── Fulltext tab: Pagefind ─────────────────────────────────────────────
-  const [fulltextResults, setFulltextResults] = useState<SearchResultItem[]>([]);
+  const [fulltext, setFulltext] = useState<{ query: string; items: FulltextItem[]; total: number; phraseCount: number }>(
+    { query: '', items: [], total: 0, phraseCount: 0 }
+  );
   const [isSearching, setIsSearching] = useState(false);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [isIndexReady, setIsIndexReady] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const pagefindRef = useRef<PagefindModule | null>(null);
+  const [retry, setRetry] = useState(0);
+  const searchIdRef = useRef(0);
+  const loadingMoreRef = useRef(false);
+  const resultsRef = useRef<{ query: string; results: PagefindResult[] }>({ query: '', results: [] });
   const trimmedKeyword = useMemo(() => keyword.trim(), [keyword]);
+  const isCurrentResult = fulltext.query === trimmedKeyword;
 
   useEffect(() => {
-    if (activeTab !== 'fulltext') return;
     let cancelled = false;
+    getPagefind().then(() => {
+      if (!cancelled) setIsIndexReady(true);
+    }).catch(() => { /* A failed preload is retried when searching. */ });
+    return () => { cancelled = true; };
+  }, []);
+
+  useEffect(() => {
+    searchIdRef.current++;
+    loadingMoreRef.current = false;
+    setIsLoadingMore(false);
+    setErrorMessage('');
+    if (activeTab !== 'fulltext' || !trimmedKeyword || isComposing) {
+      setIsSearching(false);
+      return;
+    }
+    let cancelled = false;
+    setIsSearching(true);
     const run = async () => {
-      if (!trimmedKeyword) {
-        setFulltextResults([]);
-        setErrorMessage('');
-        return;
-      }
-      setIsSearching(true);
-      setErrorMessage('');
       try {
-        if (!pagefindRef.current) {
-          const pagefindScriptUrl = `/pagefind/pagefind.js`;
-          const imported = await import(/* webpackIgnore: true */ pagefindScriptUrl);
-          pagefindRef.current = (imported.default || imported) as PagefindModule;
-          if (!cancelled) setIsIndexReady(true);
-        }
-        const res = await pagefindRef.current.search(trimmedKeyword);
-        const details = await Promise.all(res.results.slice(0, 50).map(r => r.data()));
+        const pagefind = await getPagefind();
         if (cancelled) return;
-        const items = details.map(item => ({
-          url: normalizeResultUrl(item.url),
-          title: item.meta?.title ?? '未命名书籍',
-          excerptHtml: item.excerpt ?? '',
-        }));
-        setFulltextResults(items);
+        setIsIndexReady(true);
+        const results = await searchFulltext(pagefind, trimmedKeyword);
+        if (cancelled) return;
+        const items = await loadFulltextPage(results, trimmedKeyword);
+        if (cancelled) return;
+        resultsRef.current = { query: trimmedKeyword, results };
+        setFulltext({ query: trimmedKeyword, items, total: results.length, phraseCount: results.filter(result => result.phraseMatch).length });
         if (items.length > 0) ReadingEvents.trackSearch(trimmedKeyword);
       } catch {
         if (!cancelled) {
-          setFulltextResults([]);
-          setErrorMessage(
-            process.env.NODE_ENV === 'development'
-              ? '开发模式下请先执行 npm run build 生成 pagefind 索引，再使用 npm run preview 验证全文搜索。'
-              : '搜索索引加载失败，请稍后刷新页面重试。'
-          );
+          setFulltext({ query: trimmedKeyword, items: [], total: 0, phraseCount: 0 });
+          setErrorMessage('搜索暂时不可用，请重试。');
         }
       } finally {
         if (!cancelled) setIsSearching(false);
       }
     };
-    run();
-    return () => { cancelled = true; };
-  }, [trimmedKeyword, activeTab]);
+    const timer = window.setTimeout(run, 250);
+    return () => { cancelled = true; window.clearTimeout(timer); };
+  }, [trimmedKeyword, activeTab, isComposing, retry]);
+
+  const loadMore = async () => {
+    if (loadingMoreRef.current || resultsRef.current.query !== trimmedKeyword) return;
+    const searchId = searchIdRef.current;
+    loadingMoreRef.current = true;
+    setIsLoadingMore(true);
+    setErrorMessage('');
+    try {
+      const items = await loadFulltextPage(resultsRef.current.results, trimmedKeyword, fulltext.items.length);
+      if (searchId !== searchIdRef.current) return;
+      setFulltext(current => ({ ...current, items: [...current.items, ...items] }));
+    } catch {
+      if (searchId === searchIdRef.current) setErrorMessage('更多结果加载失败，请重试。');
+    } finally {
+      if (searchId === searchIdRef.current) {
+        loadingMoreRef.current = false;
+        setIsLoadingMore(false);
+      }
+    }
+  };
 
   return (
     <div className="page-container">
@@ -126,7 +154,10 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
             type="text"
             value={keyword}
             onChange={e => setKeyword(e.target.value)}
-            placeholder="搜索书名、作者、内容..."
+            onCompositionStart={() => setIsComposing(true)}
+            onCompositionEnd={e => { setKeyword(e.currentTarget.value); setIsComposing(false); }}
+            placeholder={activeTab === 'books' ? '搜索书名、作者、分类、标签' : '搜索正文中的人物、概念或句子'}
+            aria-label={activeTab === 'books' ? '搜索书籍' : '搜索正文'}
             className="input-brand"
             autoFocus
           />
@@ -150,6 +181,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
+              aria-pressed={activeTab === tab}
               className={`px-5 py-2.5 text-sm font-medium transition-colors ${
                 activeTab === tab
                   ? 'text-brand border-b-2 border-brand'
@@ -219,49 +251,69 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                 {isIndexReady ? '正在检索...' : '正在加载搜索索引...'}
               </p>
             )}
-            {errorMessage && <p className="text-sm text-rose-600 mt-3 mb-4">{errorMessage}</p>}
+            {errorMessage && (
+              <p role="alert" className="text-sm text-rose-600 mt-3 mb-4">
+                {errorMessage}
+                {!fulltext.items.length && (
+                  <button onClick={() => setRetry(value => value + 1)} className="ml-3 underline underline-offset-4">重试</button>
+                )}
+              </p>
+            )}
             {!trimmedKeyword ? (
               <div className="text-center py-16">
                 <div className="icon-tile w-14 h-14 mx-auto mb-4">
                   <BookIcon className="w-7 h-7" />
                 </div>
-                <p className="px-4 text-stone-500 text-base md:text-lg">输入关键词搜索书摘内容</p>
-                <p className="text-stone-400 text-sm mt-2">全文检索基于静态索引，按需加载，避免首屏大包。</p>
+                <p className="px-4 text-stone-500 text-base md:text-lg">输入人物、概念或句子，查找相关正文</p>
               </div>
-            ) : fulltextResults.length > 0 ? (
+            ) : isCurrentResult && !isSearching && !isComposing && fulltext.items.length > 0 ? (
               <>
-                <p className="text-sm text-stone-500 mb-4">找到 {fulltextResults.length} 个结果</p>
+                <p role="status" className="text-sm text-stone-500 mb-4">
+                  找到 {fulltext.total} 个结果{fulltext.items.length < fulltext.total && `，已显示 ${fulltext.items.length} 个`}
+                </p>
                 <div className="space-y-6">
-                  {fulltextResults.map(result => (
-                    <a key={result.url} href={result.url} className="surface-card surface-card-hover block p-6">
-                      <div className="flex items-start gap-4">
-                        <span className="icon-tile w-10 h-10 flex-shrink-0">
-                          <BookIcon className="w-5 h-5" />
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="text-xl font-bold mb-2 text-stone-950">{result.title}</h3>
-                          {result.excerptHtml && (
-                            <p
-                              className="text-sm text-stone-700 mb-2 line-clamp-3"
-                              dangerouslySetInnerHTML={{ __html: result.excerptHtml }}
-                            />
-                          )}
+                  {fulltext.items.map((result, index) => (
+                    <div key={result.id}>
+                      {!result.phraseMatch && fulltext.phraseCount > 0 && (index === 0 || fulltext.items[index - 1].phraseMatch) && (
+                        <p className="mb-4 text-sm text-stone-500">其他相关结果</p>
+                      )}
+                      <a href={result.url} className="surface-card surface-card-hover block p-6">
+                        <div className="flex items-start gap-4">
+                          <span className="icon-tile w-10 h-10 flex-shrink-0">
+                            <BookIcon className="w-5 h-5" />
+                          </span>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="text-xl font-bold mb-2 text-stone-950">{result.title}</h3>
+                            {result.section && result.section !== result.title && (
+                              <p className="mb-2 text-xs text-stone-500">{result.section}</p>
+                            )}
+                            {result.excerptHtml && (
+                              <p
+                                className="search-excerpt text-sm text-stone-700 mb-2 line-clamp-3"
+                                dangerouslySetInnerHTML={{ __html: result.excerptHtml }}
+                              />
+                            )}
+                          </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
                   ))}
                 </div>
+                {fulltext.items.length < fulltext.total && (
+                  <div className="mt-6 text-center">
+                    <button onClick={loadMore} disabled={isLoadingMore} className="btn-outline-brand disabled:opacity-50">
+                      {isLoadingMore ? '正在加载...' : '加载更多'}
+                    </button>
+                  </div>
+                )}
               </>
-            ) : !isSearching ? (
+            ) : isCurrentResult && !isSearching && !isComposing && !errorMessage ? (
               <div className="text-center py-16">
                 <div className="icon-tile w-14 h-14 mx-auto mb-4">
                   <SearchIcon className="w-7 h-7" />
                 </div>
-                <p className="px-4 text-stone-500 text-base md:text-lg">未找到匹配的书籍</p>
-                <p className="text-stone-400 text-sm mt-2 mb-5">试试其他关键词，或者提交一本想看的书。</p>
-                <Link href="/request-book" prefetch={false} className="btn-outline-brand inline-flex items-center justify-center">
-                  申请加入书库
-                </Link>
+                <p className="px-4 text-stone-500 text-base md:text-lg">正文中未找到匹配内容</p>
+                <p className="text-stone-400 text-sm mt-2 mb-5">试试更短的关键词或其他表达。</p>
               </div>
             ) : null}
           </>

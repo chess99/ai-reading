@@ -10,6 +10,7 @@
     "feeds:generate": "node scripts/generate-feeds.mjs",
     "weread:fetch": "node scripts/fetch-weread-links.mjs",
     "test": "node --test tests/*.test.mjs",
+    "test:search-index": "node scripts/check-search-index.mjs",
     "lint": "next lint"
   },
   "repository": {
@@ -45,7 +46,7 @@
     "@types/node": "^25.2.3",
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.24",
-    "pagefind": "^1.4.0",
+    "pagefind": "1.6.0",
     "postcss": "^8.5.6",
     "serve": "^14.2.4",
     "tailwindcss": "^4.1.18",

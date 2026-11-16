@@ -15,6 +15,7 @@ import { BRAND_NAME } from '@/lib/brand';
 import { getWereadUrlForBook } from '@/lib/external-links';
 import { getTopicsForBook } from '@/lib/topics';
 import BookRelatedTopics from '@/components/BookRelatedTopics';
+import { rehypeSearchAnchors } from '@/lib/search-anchors.mjs';
 
 function injectBookLinks(content: string, currentSlug: string): string {
   const books = getAllBookMetas();
@@ -164,7 +165,7 @@ export default async function BookPage({ params }: BookPageProps) {
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm, remarkMath]}
-            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeKatex, rehypeHighlight]}
+            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeSearchAnchors, rehypeKatex, rehypeHighlight]}
             components={{
               table: ({ children, ...props }) => (
                 <div className="markdown-table-wrapper">

@@ -17,6 +17,8 @@ import { BRAND_NAME } from '@/lib/brand';
 import { BASE_URL } from '@/lib/config';
 import { TOPIC_MODE_LABELS } from '@/lib/topic-discovery';
 import { remarkTopicBookLinks } from '@/lib/topic-book-links';
+import { rehypeSearchAnchors } from '@/lib/search-anchors.mjs';
+import SearchHighlights from '@/components/SearchHighlights';
 import { getAllTopicRouteSlugs, getTopicDetailBySlug, getTopicLegacyRoute, getRelatedTopics } from '@/lib/topics';
 interface TopicPageProps { params: Promise<{ slug: string }>; }
 export async function generateStaticParams() { return getAllTopicRouteSlugs().map(slug => ({ slug })); }
@@ -58,16 +60,17 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const jsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: topic.title, description: topic.description,
     url, inLanguage: 'zh-CN', dateModified: topic.date, author: { '@type': 'Organization', name: BRAND_NAME, url: BASE_URL } };
   return <article className="mx-auto w-full px-4 py-6 md:px-8 md:py-8">
+    <SearchHighlights />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <div className="mx-auto max-w-7xl">
       <Link href="/topics/" prefetch={false} className="mb-5 inline-block text-sm font-semibold text-brand">← 全部主题</Link>
       <div className="flex flex-col gap-6 2xl:flex-row 2xl:items-start 2xl:gap-8">
         <div className="min-w-0 flex-1">
-          <section className="surface-card px-5 py-7 md:px-9 md:py-10">
+          <section data-pagefind-body className="surface-card px-5 py-7 md:px-9 md:py-10">
             <header className="border-b border-stone-200 pb-6">
-              <p className="mb-3 text-xs font-bold text-brand">{topic.domains.join(' · ')} <span className="mx-2 text-stone-300">/</span> {TOPIC_MODE_LABELS[topic.mode]}</p>
+              <p data-pagefind-ignore className="mb-3 text-xs font-bold text-brand">{topic.domains.join(' · ')} <span className="mx-2 text-stone-300">/</span> {TOPIC_MODE_LABELS[topic.mode]}</p>
               <div className="flex items-start justify-between gap-4">
-                <h1 className="text-balance text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-4xl">{topic.title}</h1>
+                <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="text-balance text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-4xl">{topic.title}</h1>
                 <ShareButton shareConfig={{ title: topic.title, text: topic.description, url, eventAction: 'share_topic', eventLabel: topic.title }}
                   className="hidden h-10 flex-shrink-0 items-center gap-2 rounded-lg border border-stone-200 px-3 text-sm font-semibold text-stone-700 md:inline-flex"
                   iconClassName="h-4 w-4" showLabel />
@@ -83,9 +86,9 @@ export default async function TopicPage({ params }: TopicPageProps) {
               </div>
               <a href="#reading-list" className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">查看完整书单与读法 ↓</a>
             </section>
-            <div className="markdown-content">
+            <div data-search-content className="markdown-content">
               <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath, [remarkTopicBookLinks, topic.books]]}
-                rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeKatex, rehypeHighlight]}
+                rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeSearchAnchors, rehypeKatex, rehypeHighlight]}
                 components={{ a: ({ href, children }) => href?.startsWith('/books/') ? <Link href={href} prefetch={false}>{children}</Link> : <a href={href}>{children}</a>,
                   table: ({ children, ...props }) => <div className="markdown-table-wrapper"><table {...props}>{children}</table></div> }}>
                 {content}

@@ -69,7 +69,7 @@ test('server-rendered related topics are placed outside article headings and bef
   assert.match(client, /relatedTopicCount > 0/);
   assert.match(client, /href="#book-related-topics"/);
   assert.match(client, /<Link href="#book-related-topics" prefetch=\{false\}/);
-  assert.match(client, /<div className="markdown-content">\s*\{children\}\s*<\/div>\s*\{relatedTopics\}/);
+  assert.match(client, /<div data-search-content className="markdown-content">\s*\{children\}\s*<\/div>\s*<div data-pagefind-ignore>\{relatedTopics\}<\/div>/);
   assert.ok(client.indexOf('{relatedTopics}') < client.indexOf('{/* Tag chips */}'));
   assert.match(server, /relatedTopics=\{<BookRelatedTopics topics=\{relatedTopics\} \/>\}/);
   assert.doesNotMatch(client, /getTopicsForBook|buildBookTopicIndex|allTopics/);

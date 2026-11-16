@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import TableOfContents from '@/components/TableOfContents';
 import BookLayout from '@/components/BookLayout';
+import SearchHighlights from '@/components/SearchHighlights';
 import { saveToHistory } from '@/lib/reading-state';
 
 interface BookPageClientProps {
@@ -31,16 +32,17 @@ export default function BookPageClient({ children, bookSlug, bookTitle, bookAuth
 
   return (
     <BookLayout onTocToggle={() => setIsTocOpen(true)}>
+      <SearchHighlights />
       <div className="flex gap-0 lg:gap-8 xl:gap-12 relative">
         {/* Main content */}
         <div className="flex-1 min-w-0 max-w-4xl mx-auto lg:mx-0">
-          <article className="surface-card px-5 py-7 md:px-9 md:py-10 lg:px-12 lg:py-12">
+          <article data-pagefind-body className="surface-card px-5 py-7 md:px-9 md:py-10 lg:px-12 lg:py-12">
             <div className="mb-8 border-b border-stone-200 pb-6">
-              <p className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
-              <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
+              <p data-pagefind-ignore className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
+              <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
               <p className="text-sm md:text-base text-stone-500 mt-3">{bookAuthor}</p>
               {(wereadUrl || relatedTopicCount > 0) && (
-                <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
+                <div data-pagefind-ignore className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
                   {wereadUrl && (
                     <a
                       href={wereadUrl}
@@ -61,15 +63,15 @@ export default function BookPageClient({ children, bookSlug, bookTitle, bookAuth
               )}
             </div>
 
-            <div className="markdown-content">
+            <div data-search-content className="markdown-content">
               {children}
             </div>
 
-            {relatedTopics}
+            <div data-pagefind-ignore>{relatedTopics}</div>
 
             {/* Tag chips */}
             {bookTags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-stone-100">
+              <div data-pagefind-ignore className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-stone-100">
                 {bookTags.map(tag => (
                   <Link
                     key={tag}
