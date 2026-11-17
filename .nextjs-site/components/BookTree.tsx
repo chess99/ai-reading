@@ -17,18 +17,21 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
   const pathname = usePathname();
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filterKeyword, setFilterKeyword] = useState('');
+  const metadataBySlug = useMemo(() => new Map(allBooks.map(book => [book.slug, book])), [allBooks]);
 
   const filteredTree = useMemo(() => {
     if (!filterKeyword.trim()) return bookTree;
-    const kw = filterKeyword.toLowerCase();
+    const kw = filterKeyword.trim().toLowerCase();
 
     function filterNodes(nodes: BookTreeNode[]): BookTreeNode[] {
       return nodes
         .map(node => {
           if (node.type === 'book') {
+            const metadata = node.book ?? metadataBySlug.get(node.path?.replace(/^\/books\//, '').replace(/\/$/, '') ?? '');
             const matches =
-              node.book!.title.toLowerCase().includes(kw) ||
-              node.book!.author.toLowerCase().includes(kw);
+              node.name.toLowerCase().includes(kw) ||
+              metadata?.title.toLowerCase().includes(kw) ||
+              metadata?.author.toLowerCase().includes(kw);
             return matches ? node : null;
           }
           const filteredChildren = filterNodes(node.children ?? []);
@@ -39,7 +42,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
     }
 
     return filterNodes(bookTree);
-  }, [bookTree, filterKeyword]);
+  }, [bookTree, filterKeyword, metadataBySlug]);
 
   useEffect(() => {
     if (!filterKeyword.trim()) return;
@@ -74,7 +77,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
 
   // Metadata can arrive after the tree mounts, without a route change.
   useEffect(() => {
-    if (!pathname.startsWith('/books/')) return;
+    if (!pathname.startsWith('/books/') || filterKeyword.trim()) return;
     const slug = pathname.replace('/books/', '').replace(/\/$/, '');
     const book = allBooks.find(b => b.slug === slug);
     if (!book) return;
@@ -92,7 +95,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
     }, 100);
 
     return () => window.clearTimeout(scrollTimer);
-  }, [pathname, allBooks]);
+  }, [pathname, allBooks, filterKeyword]);
 
   const toggleCategory = (categoryPath: string) => {
     const next = new Set(expandedCategories);
@@ -111,7 +114,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         <div key={currentPath}>
           <button
             onClick={() => toggleCategory(currentPath)}
-            className="w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-stone-100 rounded-md transition-colors"
+            className="book-tree-category w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-stone-100 rounded-md transition-colors"
             style={{ paddingLeft: `${8 + indent}px` }}
           >
             <ChevronRightIcon className={`w-3.5 h-3.5 text-stone-500 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
@@ -155,11 +158,11 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
               value={filterKeyword}
               onChange={e => setFilterKeyword(e.target.value)}
               placeholder="搜索书名、作者..."
-            className="w-full pl-8 pr-3 py-2 text-sm border border-stone-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-brand/15 focus:border-brand/50 bg-[#fffdf8]"
-          />
+              className="min-h-11 w-full pl-8 pr-12 py-2 text-sm border border-stone-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-brand/15 focus:border-brand/50 bg-[#fffdf8]"
+            />
             <SearchIcon className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400" />
             {filterKeyword && (
-              <button onClick={() => setFilterKeyword('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600" aria-label="清除筛选">
+              <button onClick={() => setFilterKeyword('')} className="touch-icon absolute right-0 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600" aria-label="清除筛选">
                 <CloseIcon className="w-3.5 h-3.5" />
               </button>
             )}
@@ -167,10 +170,10 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         </div>
       )}
 
-      <div className="flex items-center gap-2 px-4 py-2 border-b border-stone-100">
-        <button onClick={expandAll} className="text-xs font-medium text-stone-600 hover:text-brand">展开全部</button>
+      <div className="flex items-center gap-2 px-3 py-1 border-b border-stone-100">
+        <button onClick={expandAll} className="min-h-11 px-1 text-xs font-medium text-stone-600 hover:text-brand">展开全部</button>
         <span className="text-stone-300">/</span>
-        <button onClick={collapseAll} className="text-xs font-medium text-stone-600 hover:text-brand">折叠全部</button>
+        <button onClick={collapseAll} className="min-h-11 px-1 text-xs font-medium text-stone-600 hover:text-brand">折叠全部</button>
       </div>
 
       <div className="flex-1 overflow-auto p-2 space-y-1">

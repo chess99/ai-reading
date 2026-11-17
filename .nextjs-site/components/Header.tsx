@@ -13,9 +13,11 @@ interface HeaderProps {
   shareConfig?: ShareConfig;
   onMenuClick?: () => void;
   onSettingsClick?: () => void;
+  sidebarExpanded?: boolean;
+  sidebarControls?: string;
 }
 
-export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuClick, onSettingsClick }: HeaderProps) {
+export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuClick, onSettingsClick, sidebarExpanded, sidebarControls }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
   const desktopNav = [
@@ -39,23 +41,31 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
   };
 
   return (
-    <header className={`sticky top-0 z-50 bg-[#fffdf8]/90 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
-      <div className="mx-auto w-full px-4 md:px-8">
+    <header className={`app-header sticky top-0 z-50 bg-[#fffdf8]/90 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
+      <div className="mx-auto w-full px-4 md:px-6">
         <div className="flex items-center justify-between h-14 md:h-16">
 
           {/* ── Left slot ──────────────────────────────────── */}
 
           {/* Desktop: hamburger always (for sidebar) */}
           <div className="hidden md:flex items-center gap-3 min-w-0">
+            {mode === 'book' && (
+              <button onClick={handleBack} className="touch-icon inline-flex gap-1 text-sm font-semibold text-stone-700 hover:bg-stone-100" aria-label="返回">
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                <span>返回</span>
+              </button>
+            )}
             <button
               onClick={onMenuClick}
-              className="p-2 -ml-2 hover:bg-stone-100 rounded-lg transition-colors text-stone-700 active:scale-95"
-              aria-label="切换侧边栏"
-              title="切换侧边栏"
+              className="touch-icon -ml-2 hover:bg-stone-100 text-stone-700 active:scale-95"
+              aria-label={sidebarExpanded ? '收起书库' : '打开书库'}
+              aria-expanded={sidebarExpanded}
+              aria-controls={sidebarControls}
+              title={sidebarExpanded ? '收起书库' : '打开书库'}
             >
               <MenuIcon className="w-5 h-5" />
             </button>
-            <Link href="/" prefetch={false} className="text-xl md:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
+            <Link href="/" prefetch={false} className="inline-flex min-h-11 items-center whitespace-nowrap text-xl lg:text-2xl font-black hover:opacity-80 transition-opacity heading-gradient">
               {BRAND_NAME}
             </Link>
           </div>
@@ -66,7 +76,7 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
           {mode === 'book' && (
             <button
               onClick={handleBack}
-              className="md:hidden flex items-center gap-1 text-stone-800 font-semibold text-sm -ml-1 p-1 min-w-[56px] active:scale-95"
+              className="md:hidden flex min-h-11 items-center gap-1 text-stone-800 font-semibold text-sm -ml-1 px-1 min-w-[56px] active:scale-95"
               aria-label="返回"
             >
               <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,7 +113,7 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
                     href={item.href}
                     prefetch={false}
                     aria-current={active ? 'page' : undefined}
-                    className={`flex h-9 items-center gap-2 rounded-md px-3 text-sm font-semibold transition-colors ${
+                    className={`flex h-11 items-center gap-2 rounded-md px-3 text-sm font-semibold transition-colors ${
                       active ? 'bg-brand/10 text-brand' : 'text-stone-600 hover:bg-stone-100 hover:text-stone-950'
                     }`}
                   >
@@ -120,13 +130,13 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
 
             {/* Share: mobile detail mode only */}
             {mode === 'book' && shareConfig && (
-              <ShareButton shareConfig={shareConfig} className="md:hidden p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95" />
+              <ShareButton shareConfig={shareConfig} className="touch-icon md:hidden hover:bg-stone-100 group active:scale-95" />
             )}
 
             {/* Settings: desktop always + mobile home mode */}
             <button
               onClick={onSettingsClick}
-              className={`${mode === 'book' ? 'hidden md:block' : ''} p-2 hover:bg-stone-100 rounded-lg transition-colors group active:scale-95`}
+              className={`${mode === 'book' ? 'hidden md:inline-flex' : ''} touch-icon hover:bg-stone-100 group active:scale-95`}
               aria-label="设置"
               title="设置"
             >

@@ -2,38 +2,28 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 import BookTree from '@/components/BookTree';
 import { CloseIcon } from '@/components/Icons';
+import ModalPanel from '@/components/ModalPanel';
 
 interface SidebarProps {
   isOpen: boolean;
   onClose: () => void;
+  docked: boolean;
 }
 
 type TabType = 'files' | 'tags';
 
-export default function Sidebar({ isOpen, onClose }: SidebarProps) {
-  const pathname = usePathname();
+export default function Sidebar({ isOpen, onClose, docked }: SidebarProps) {
   const [activeTab, setActiveTab] = useState<TabType>('files');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [bookTree, setBookTree] = useState<BookTreeNode[] | null>(null);
   const [allBooks, setAllBooks] = useState<BookMeta[] | null>(null);
-  const [isDesktop, setIsDesktop] = useState(false);
   const books = allBooks ?? [];
-  const isBookPage = pathname.startsWith('/books/');
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
-    const syncDesktopState = () => setIsDesktop(mediaQuery.matches);
-    syncDesktopState();
-    mediaQuery.addEventListener('change', syncDesktopState);
-    return () => mediaQuery.removeEventListener('change', syncDesktopState);
-  }, []);
-
-  useEffect(() => {
-    if (!isOpen || !isDesktop || bookTree) return;
+    if (!isOpen || bookTree) return;
     let cancelled = false;
 
     fetch('/library-tree.json')
@@ -46,10 +36,10 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     return () => {
       cancelled = true;
     };
-  }, [isOpen, isDesktop, bookTree]);
+  }, [isOpen, bookTree]);
 
   useEffect(() => {
-    if ((activeTab !== 'tags' && !isBookPage) || allBooks) return;
+    if (!isOpen || allBooks) return;
     let cancelled = false;
 
     fetch('/library-books.json')
@@ -62,7 +52,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     return () => {
       cancelled = true;
     };
-  }, [activeTab, allBooks, isBookPage]);
+  }, [isOpen, allBooks]);
 
   // Get all tags with counts
   const tags = useMemo(() => {
@@ -83,51 +73,13 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     return books.filter(book => book.tags.includes(selectedTag));
   }, [selectedTag, books]);
 
-  return (
-    <>
-      {/* Mobile overlay */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
-          onClick={onClose}
-        />
-      )}
-
-      {/* Sidebar */}
-      <div
-        className={`
-          fixed md:static inset-y-0 left-0 z-50
-          w-80 bg-[#fffdf8] border-r border-stone-200/90
-          transform transition-transform duration-300 ease-in-out
-          flex flex-col h-full
-          ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
-        `}
-      >
-        <div className="p-4 border-b border-stone-200 flex items-center justify-between">
-          <Link
-            href="/"
-            prefetch={false}
-            onClick={onClose}
-            className="min-w-0 hover:opacity-80 transition-opacity"
-          >
-            <span className="block text-xs font-black tracking-[0.16em] text-brand">LIBRARY</span>
-            <span className="block text-lg font-black text-stone-950">书库索引</span>
-          </Link>
-          <button
-            onClick={onClose}
-            className="md:hidden p-2 hover:bg-stone-100 rounded-lg transition-colors"
-            aria-label="关闭侧边栏"
-          >
-            <CloseIcon className="w-5 h-5 text-stone-600" />
-          </button>
-        </div>
-
+  const content = <>
       {/* Tab Navigation */}
       <div className="grid grid-cols-2 gap-1 border-b border-stone-200 bg-[#fffdf8] p-2">
         <button
           onClick={() => setActiveTab('files')}
           aria-pressed={activeTab === 'files'}
-          className={`rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
+          className={`min-h-11 rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
             activeTab === 'files'
               ? 'bg-brand/10 text-brand'
               : 'text-stone-600 hover:text-stone-900'
@@ -138,7 +90,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
         <button
           onClick={() => setActiveTab('tags')}
           aria-pressed={activeTab === 'tags'}
-          className={`rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
+          className={`min-h-11 rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
             activeTab === 'tags'
               ? 'bg-brand/10 text-brand'
               : 'text-stone-600 hover:text-stone-900'
@@ -149,12 +101,14 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       </div>
 
       {/* Content Area */}
-      <div className="flex-1 overflow-hidden flex flex-col">
+      <div className="min-h-0 flex-1 overflow-hidden flex flex-col">
         {activeTab === 'files' && (
           bookTree ? (
             <BookTree
               bookTree={bookTree}
               allBooks={books}
+              showFilterInput
+              onBookClick={docked ? undefined : onClose}
             />
           ) : (
             <div className="p-4 text-sm text-stone-400">正在加载目录...</div>
@@ -171,7 +125,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                   </h3>
                   <button
                     onClick={() => setSelectedTag(null)}
-                    className="text-xs text-brand hover:text-brand-dark"
+                    className="min-h-11 px-2 text-xs text-brand hover:text-brand-dark"
                   >
                     返回
                   </button>
@@ -181,6 +135,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                     <Link
                       key={book.slug}
                       href={`/books/${book.slug}`}
+                      onClick={() => { if (!docked) onClose(); }}
                       prefetch={false}
                       className="block p-2 hover:bg-stone-50 rounded transition-colors"
                     >
@@ -222,7 +177,21 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           </div>
         )}
       </div>
-      </div>
-    </>
-  );
+    </>;
+
+  if (docked) return isOpen ? (
+    <aside id="library-sidebar" aria-label="书库索引" className="flex h-full w-72 flex-col border-r border-stone-200/90 bg-[#fffdf8]">
+      <header className="flex items-center justify-between border-b border-stone-200 px-4 py-3">
+        <h2 className="text-lg font-black text-stone-950">书库索引</h2>
+        <button onClick={onClose} className="touch-icon hover:bg-stone-100" aria-label="收起书库">
+          <CloseIcon className="h-5 w-5" />
+        </button>
+      </header>
+      {content}
+    </aside>
+  ) : null;
+
+  return <ModalPanel id="library-drawer" title="书库索引" placement="left" isOpen={isOpen} onClose={onClose}>
+    {content}
+  </ModalPanel>;
 }

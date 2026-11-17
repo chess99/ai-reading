@@ -11,9 +11,8 @@ test('sidebar book links do not close the desktop sidebar', () => {
     'The sidebar BookTree should not close the sidebar when a book link is clicked.',
   );
 
-  assert.doesNotMatch(
-    sidebarSource,
-    /href=\{`\/books\/\$\{book\.slug\}`\}[\s\S]*?onClick=\{onClose\}/,
-    'Tagged book links in the sidebar should not close the sidebar when clicked.',
-  );
+  const bookLinks = [...sidebarSource.matchAll(/<Link\b[\s\S]*?<\/Link>/g)].map(match => match[0]);
+  const taggedLink = bookLinks.find(link => link.includes('book.slug'));
+  assert.ok(taggedLink);
+  assert.match(taggedLink, /if \(!docked\) onClose\(\)/, 'Only drawer navigation closes after selecting a tagged book.');
 });

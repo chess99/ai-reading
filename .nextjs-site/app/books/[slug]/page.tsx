@@ -149,7 +149,7 @@ export default async function BookPage({ params }: BookPageProps) {
   };
 
   return (
-    <article className="mx-auto w-full px-4 py-6 md:px-8 md:py-8">
+    <article className="reading-page mx-auto w-full">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd).replace(/</g, '\\u003c') }}

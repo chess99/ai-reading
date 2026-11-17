@@ -61,18 +61,18 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const url = `${BASE_URL}/topics/${topic.slug}/`;
   const jsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: topic.title, description: topic.description,
     url, inLanguage: 'zh-CN', dateModified: topic.date, author: { '@type': 'Organization', name: BRAND_NAME, url: BASE_URL } };
-  return <article className="mx-auto w-full px-4 py-6 md:px-8 md:py-8">
+  return <article className="reading-page mx-auto w-full">
     <SearchHighlights />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <div className="mx-auto max-w-7xl">
       <Link href="/topics/" prefetch={false} className="mb-5 inline-block text-sm font-semibold text-brand">← 全部主题</Link>
-      <div className="flex flex-col gap-6 2xl:flex-row 2xl:items-start 2xl:gap-8">
+      <div className="topic-reading-layout">
         <div className="min-w-0 flex-1">
-          <section data-pagefind-body className="surface-card px-5 py-7 md:px-9 md:py-10">
+          <section data-pagefind-body className="reader-card surface-card">
             <header className="border-b border-stone-200 pb-6">
               <p data-pagefind-ignore className="mb-3 text-xs font-bold text-brand">{topic.domains.join(' · ')} <span className="mx-2 text-stone-300">/</span> {TOPIC_MODE_LABELS[topic.mode]}</p>
               <div className="flex items-start justify-between gap-4">
-                <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="text-balance text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-4xl">{topic.title}</h1>
+                <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="text-balance break-words text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-4xl">{topic.title}</h1>
                 <ShareButton shareConfig={{ title: topic.title, text: topic.description, url, eventAction: 'share_topic', eventLabel: topic.title }}
                   className="hidden h-10 flex-shrink-0 items-center gap-2 rounded-lg border border-stone-200 px-3 text-sm font-semibold text-stone-700 md:inline-flex"
                   iconClassName="h-4 w-4" showLabel />
@@ -98,7 +98,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
             </div>
           </section>
         </div>
-        <aside id="reading-list" aria-label="完整书单" className="w-full flex-shrink-0 scroll-mt-24 2xl:w-80">
+        <aside id="reading-list" aria-label="完整书单" className="topic-reading-list min-w-0 scroll-mt-6">
           <div className="surface-card p-5 md:p-6">
             <h2 className="mb-5 text-xl font-black text-stone-950">书单与读法</h2>
             <div className="space-y-3">{topic.books.map((book, index) => <TopicBookCard key={`${book.title}-${book.author}`} book={book} index={index} />)}</div>

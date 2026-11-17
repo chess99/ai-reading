@@ -30,17 +30,16 @@ test('dev server generates static library manifests and feeds before serving', (
   );
 });
 
-test('desktop sidebar retries library tree loading after media query state resolves', () => {
-  assert.match(sidebarSource, /window\.matchMedia\('\(min-width:\s*768px\)'\)/);
+test('library tree loads on demand for both docked navigation and drawers', () => {
+  assert.match(sidebarSource, /if \(!isOpen \|\| bookTree\) return/);
   assert.match(sidebarSource, /fetch\(['"]\/library-tree\.json['"]\)/);
-  assert.match(sidebarSource, /\},\s*\[isOpen,\s*isDesktop,\s*bookTree\]\)/);
+  assert.match(sidebarSource, /\},\s*\[isOpen,\s*bookTree\]\)/);
 });
 
-test('book pages load library metadata for active sidebar reveal without opening tags', () => {
-  assert.match(sidebarSource, /const\s+isBookPage\s*=\s*pathname\.startsWith\('\/books\/'\)/);
+test('opening the library loads metadata for filtering and current-book reveal', () => {
   assert.match(sidebarSource, /fetch\(['"]\/library-books\.json['"]\)/);
-  assert.match(sidebarSource, /activeTab !== 'tags' && !isBookPage/);
-  assert.match(sidebarSource, /\},\s*\[activeTab,\s*allBooks,\s*isBookPage\]\)/);
+  assert.match(sidebarSource, /if \(!isOpen \|\| allBooks\) return/);
+  assert.match(sidebarSource, /\},\s*\[isOpen,\s*allBooks\]\)/);
 });
 
 test('book page keeps markdown rendering out of the client bundle', () => {

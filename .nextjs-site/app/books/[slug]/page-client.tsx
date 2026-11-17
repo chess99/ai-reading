@@ -31,15 +31,15 @@ export default function BookPageClient({ children, bookSlug, bookTitle, bookAuth
   }, [bookSlug, bookTitle, bookAuthor]);
 
   return (
-    <BookLayout onTocToggle={() => setIsTocOpen(true)}>
+    <BookLayout onTocToggle={() => setIsTocOpen(true)} isTocOpen={isTocOpen}>
       <SearchHighlights />
-      <div className="flex gap-0 lg:gap-8 xl:gap-12 relative">
+      <div className="reader-layout">
         {/* Main content */}
-        <div className="flex-1 min-w-0 max-w-4xl mx-auto lg:mx-0">
-          <article data-pagefind-body className="surface-card px-5 py-7 md:px-9 md:py-10 lg:px-12 lg:py-12">
+        <div className="reader-main min-w-0">
+          <article data-pagefind-body className="reader-card surface-card">
             <div className="mb-8 border-b border-stone-200 pb-6">
               <p data-pagefind-ignore className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
-              <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
+              <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="break-words text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
               <p className="text-sm md:text-base text-stone-500 mt-3">{bookAuthor}</p>
               {(wereadUrl || relatedTopicCount > 0) && (
                 <div data-pagefind-ignore className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -87,17 +87,7 @@ export default function BookPageClient({ children, bookSlug, bookTitle, bookAuth
           </article>
         </div>
 
-        {/* Desktop TOC sidebar */}
-        <div className="hidden lg:block lg:w-64 xl:w-72 flex-shrink-0">
-          <div className="sticky top-20">
-            <TableOfContents isOpen={true} onClose={() => {}} />
-          </div>
-        </div>
-
-        {/* Mobile TOC */}
-        <div className="lg:hidden">
-          <TableOfContents isOpen={isTocOpen} onClose={() => setIsTocOpen(false)} />
-        </div>
+        <TableOfContents contentKey={bookSlug} isOpen={isTocOpen} onClose={() => setIsTocOpen(false)} />
       </div>
     </BookLayout>
   );

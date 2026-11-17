@@ -80,7 +80,7 @@ test('table of contents follows the app shell main scroll container', () => {
   );
   assert.match(
     tableOfContentsSource,
-    /scrollContainer\.scrollTo\(\{\s*top:\s*targetScroll,\s*behavior:\s*'smooth'\s*\}\)/,
+    /scrollContainer\.scrollTo\(\{\s*top:\s*targetScroll,\s*behavior:\s*scrollBehavior\(\)\s*\}\)/,
     'TOC section jumps should scroll the main container.',
   );
 });

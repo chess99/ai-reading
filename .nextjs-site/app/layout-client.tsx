@@ -9,13 +9,16 @@ import UpdateNotification from '@/components/UpdateNotification';
 import SettingsDialog from '@/components/SettingsDialog';
 import { updateNavigationHistory } from '@/lib/navigation-history';
 import { useReadingPosition } from '@/hooks/use-reading-position';
+import { useMediaQuery } from '@/hooks/use-media-query';
 
 interface LayoutClientProps {
   children: React.ReactNode;
 }
 
 export default function LayoutClient({ children }: LayoutClientProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [libraryDrawerOpen, setLibraryDrawerOpen] = useState(false);
+  const isSidebarDocked = useMediaQuery('(min-width: 1280px)');
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [detailTitle, setDetailTitle] = useState('');
   const [detailDescription, setDetailDescription] = useState('');
@@ -55,6 +58,8 @@ export default function LayoutClient({ children }: LayoutClientProps) {
 
   useReadingPosition(mainRef, pathname);
 
+  useEffect(() => { setLibraryDrawerOpen(false); }, [pathname, isSidebarDocked]);
+
   useEffect(() => {
     updateNavigationHistory(window.sessionStorage, pathname, {
       isInitialLoad: isInitialNavigation.current,
@@ -81,24 +86,25 @@ export default function LayoutClient({ children }: LayoutClientProps) {
         mode={isDetailPage ? 'book' : 'home'}
         bookTitle={detailTitle}
         shareConfig={shareConfig}
-        onMenuClick={() => setSidebarOpen(open => !open)}
+        onMenuClick={() => isSidebarDocked ? setSidebarOpen(open => !open) : setLibraryDrawerOpen(open => !open)}
+        sidebarExpanded={isSidebarDocked ? sidebarOpen : libraryDrawerOpen}
+        sidebarControls={isSidebarDocked ? 'library-sidebar' : 'library-drawer'}
         onSettingsClick={() => setSettingsOpen(true)}
       />
 
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar: desktop workspace navigation */}
-        <div className={`${sidebarOpen ? 'hidden md:block' : 'hidden'}`}>
+        <div className={`w-0 shrink-0 ${sidebarOpen ? 'xl:w-72' : ''}`}>
           <Sidebar
-            isOpen={sidebarOpen}
-            onClose={() => setSidebarOpen(false)}
+            isOpen={isSidebarDocked ? sidebarOpen : libraryDrawerOpen}
+            docked={isSidebarDocked}
+            onClose={() => isSidebarDocked ? setSidebarOpen(false) : setLibraryDrawerOpen(false)}
           />
         </div>
 
-        {/* Main content: pb-16 on mobile to clear fixed BottomNav */}
         <main
           ref={mainRef}
           onScroll={saveCurrentScrollPosition}
-          className="flex-1 overflow-auto overflow-x-hidden overscroll-contain pb-16 md:pb-0"
+          className="reading-workspace min-w-0 flex-1 overflow-auto overflow-x-hidden overscroll-contain pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0"
         >
           {children}
         </main>
