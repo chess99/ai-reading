@@ -1,42 +1,16 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { BookMeta } from '@/lib/books';
-import { ReadingEvents } from '@/lib/analytics';
 import { BookIcon, CloseIcon, SearchIcon } from '@/components/Icons';
-import { loadFulltextPage, searchFulltext } from '@/lib/fulltext-search.mjs';
-import type { FulltextItem, PagefindModule, PagefindResult } from '@/lib/fulltext-search.mjs';
-import { devDependencies } from '@/package.json';
+import { useFulltextSearch } from '@/hooks/use-fulltext-search';
 
 type SearchTab = 'books' | 'fulltext';
 
 interface SearchPageClientProps {
   allBooks: BookMeta[];
-}
-
-let pagefindPromise: Promise<PagefindModule> | null = null;
-
-function getPagefind(): Promise<PagefindModule> {
-  if (!pagefindPromise) {
-    const scriptUrl = `/pagefind/pagefind.js?v=${encodeURIComponent(devDependencies.pagefind)}`;
-    pagefindPromise = import(/* webpackIgnore: true */ scriptUrl).then(async imported => {
-      const pagefind = (imported.default ?? imported) as PagefindModule;
-      try {
-        await pagefind.init();
-        await pagefind.preload('');
-      } catch (error) {
-        await pagefind.destroy();
-        throw error;
-      }
-      return pagefind;
-    }).catch(error => {
-      pagefindPromise = null;
-      throw error;
-    });
-  }
-  return pagefindPromise;
 }
 
 export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
@@ -61,84 +35,10 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
       .slice(0, 30);
   }, [keyword, allBooks]);
 
-  // ── Fulltext tab: Pagefind ─────────────────────────────────────────────
-  const [fulltext, setFulltext] = useState<{ query: string; items: FulltextItem[]; total: number; phraseCount: number }>(
-    { query: '', items: [], total: 0, phraseCount: 0 }
-  );
-  const [isSearching, setIsSearching] = useState(false);
-  const [isLoadingMore, setIsLoadingMore] = useState(false);
-  const [isIndexReady, setIsIndexReady] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
-  const [retry, setRetry] = useState(0);
-  const searchIdRef = useRef(0);
-  const loadingMoreRef = useRef(false);
-  const resultsRef = useRef<{ query: string; results: PagefindResult[] }>({ query: '', results: [] });
   const trimmedKeyword = useMemo(() => keyword.trim(), [keyword]);
+  const fulltext = useFulltextSearch(trimmedKeyword, activeTab === 'fulltext' && !isComposing);
+  const { isSearching, isIndexReady, errorMessage } = fulltext;
   const isCurrentResult = fulltext.query === trimmedKeyword;
-
-  useEffect(() => {
-    let cancelled = false;
-    getPagefind().then(() => {
-      if (!cancelled) setIsIndexReady(true);
-    }).catch(() => { /* A failed preload is retried when searching. */ });
-    return () => { cancelled = true; };
-  }, []);
-
-  useEffect(() => {
-    searchIdRef.current++;
-    loadingMoreRef.current = false;
-    setIsLoadingMore(false);
-    setErrorMessage('');
-    if (activeTab !== 'fulltext' || !trimmedKeyword || isComposing) {
-      setIsSearching(false);
-      return;
-    }
-    let cancelled = false;
-    setIsSearching(true);
-    const run = async () => {
-      try {
-        const pagefind = await getPagefind();
-        if (cancelled) return;
-        setIsIndexReady(true);
-        const results = await searchFulltext(pagefind, trimmedKeyword);
-        if (cancelled) return;
-        const items = await loadFulltextPage(results, trimmedKeyword);
-        if (cancelled) return;
-        resultsRef.current = { query: trimmedKeyword, results };
-        setFulltext({ query: trimmedKeyword, items, total: results.length, phraseCount: results.filter(result => result.phraseMatch).length });
-        if (items.length > 0) ReadingEvents.trackSearch(trimmedKeyword);
-      } catch {
-        if (!cancelled) {
-          setFulltext({ query: trimmedKeyword, items: [], total: 0, phraseCount: 0 });
-          setErrorMessage('搜索暂时不可用，请重试。');
-        }
-      } finally {
-        if (!cancelled) setIsSearching(false);
-      }
-    };
-    const timer = window.setTimeout(run, 250);
-    return () => { cancelled = true; window.clearTimeout(timer); };
-  }, [trimmedKeyword, activeTab, isComposing, retry]);
-
-  const loadMore = async () => {
-    if (loadingMoreRef.current || resultsRef.current.query !== trimmedKeyword) return;
-    const searchId = searchIdRef.current;
-    loadingMoreRef.current = true;
-    setIsLoadingMore(true);
-    setErrorMessage('');
-    try {
-      const items = await loadFulltextPage(resultsRef.current.results, trimmedKeyword, fulltext.items.length);
-      if (searchId !== searchIdRef.current) return;
-      setFulltext(current => ({ ...current, items: [...current.items, ...items] }));
-    } catch {
-      if (searchId === searchIdRef.current) setErrorMessage('更多结果加载失败，请重试。');
-    } finally {
-      if (searchId === searchIdRef.current) {
-        loadingMoreRef.current = false;
-        setIsLoadingMore(false);
-      }
-    }
-  };
 
   return (
     <div className="page-container">
@@ -254,9 +154,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
             {errorMessage && (
               <p role="alert" className="text-sm text-rose-600 mt-3 mb-4">
                 {errorMessage}
-                {!fulltext.items.length && (
-                  <button onClick={() => setRetry(value => value + 1)} className="ml-3 underline underline-offset-4">重试</button>
-                )}
+                <button onClick={fulltext.retrySearch} className="ml-3 underline underline-offset-4">重试</button>
               </p>
             )}
             {!trimmedKeyword ? (
@@ -266,46 +164,65 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
                 </div>
                 <p className="px-4 text-stone-500 text-base md:text-lg">输入人物、概念或句子，查找相关正文</p>
               </div>
-            ) : isCurrentResult && !isSearching && !isComposing && fulltext.items.length > 0 ? (
+            ) : isCurrentResult && !isSearching && !isComposing && fulltext.entries.length > 0 ? (
               <>
                 <p role="status" className="text-sm text-stone-500 mb-4">
-                  找到 {fulltext.total} 个结果{fulltext.items.length < fulltext.total && `，已显示 ${fulltext.items.length} 个`}
+                  找到 {fulltext.total} 个结果{fulltext.readyCount > 0 && fulltext.readyCount < fulltext.total && `，已显示 ${fulltext.readyCount} 个`}
                 </p>
                 <div className="space-y-6">
-                  {fulltext.items.map((result, index) => (
-                    <div key={result.id}>
-                      {!result.phraseMatch && fulltext.phraseCount > 0 && (index === 0 || fulltext.items[index - 1].phraseMatch) && (
-                        <p className="mb-4 text-sm text-stone-500">其他相关结果</p>
-                      )}
-                      <a href={result.url} className="surface-card surface-card-hover block p-6">
-                        <div className="flex items-start gap-4">
-                          <span className="icon-tile w-10 h-10 flex-shrink-0">
-                            <BookIcon className="w-5 h-5" />
-                          </span>
-                          <div className="flex-1 min-w-0">
-                            <h3 className="text-xl font-bold mb-2 text-stone-950">{result.title}</h3>
-                            {result.section && result.section !== result.title && (
-                              <p className="mb-2 text-xs text-stone-500">{result.section}</p>
-                            )}
-                            {result.excerptHtml && (
-                              <p
-                                className="search-excerpt text-sm text-stone-700 mb-2 line-clamp-3"
-                                dangerouslySetInnerHTML={{ __html: result.excerptHtml }}
-                              />
-                            )}
+                  {fulltext.entries.map((entry, index) => {
+                    const result = entry.status === 'ready' ? entry.item : null;
+                    return (
+                      <div key={entry.id} data-result-state={entry.status}>
+                        {!entry.phraseMatch && fulltext.phraseCount > 0 && (index === 0 || fulltext.entries[index - 1].phraseMatch) && (
+                          <p className="mb-4 text-sm text-stone-500">其他相关结果</p>
+                        )}
+                        {result ? <a href={result.url} className="surface-card surface-card-hover block p-6">
+                          <div className="flex items-start gap-4">
+                            <span className="icon-tile w-10 h-10 flex-shrink-0">
+                              <BookIcon className="w-5 h-5" />
+                            </span>
+                            <div className="flex-1 min-w-0">
+                              <h3 className="text-xl font-bold mb-2 text-stone-950">{result.title}</h3>
+                              {result.section && result.section !== result.title && (
+                                <p className="mb-2 text-xs text-stone-500">{result.section}</p>
+                              )}
+                              {result.excerptHtml && (
+                                <p
+                                  className="search-excerpt text-sm text-stone-700 mb-2 line-clamp-3"
+                                  dangerouslySetInnerHTML={{ __html: result.excerptHtml }}
+                                />
+                              )}
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </div>
-                  ))}
+                        </a> : entry.status === 'loading' ? (
+                          <div aria-hidden="true" className="surface-card min-h-44 animate-pulse space-y-3 p-6">
+                            <div className="h-5 w-1/3 rounded bg-stone-200" />
+                            <div className="h-3 w-2/3 rounded bg-stone-100" />
+                            <div className="h-3 rounded bg-stone-100" />
+                          </div>
+                        ) : (
+                          <div className="surface-card p-5 text-sm text-stone-500">这条结果暂时无法显示，可在下方重试。</div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
-                {fulltext.items.length < fulltext.total && (
-                  <div className="mt-6 text-center">
-                    <button onClick={loadMore} disabled={isLoadingMore} className="btn-outline-brand disabled:opacity-50">
-                      {isLoadingMore ? '正在加载...' : '加载更多'}
-                    </button>
-                  </div>
-                )}
+                <div ref={fulltext.sentinelRef} className="mt-6 pb-4 text-center text-sm text-stone-500">
+                  {fulltext.failedCount > 0 ? (
+                    <>
+                      <p className="mb-3" role="status">{fulltext.failedCount} 条结果尚未加载，其他结果可继续查看。</p>
+                      <button onClick={() => void fulltext.retryFailed()} disabled={fulltext.isLoadingMore} className="btn-outline-brand disabled:opacity-50">
+                        {fulltext.isLoadingMore ? '正在重试...' : '重试未加载的结果'}
+                      </button>
+                    </>
+                  ) : fulltext.isLoadingMore ? (
+                    <p role="status">正在加载结果...</p>
+                  ) : fulltext.hasMore ? (
+                    fulltext.automaticLoading ? null :
+                      <button onClick={() => void fulltext.loadMore()} className="btn-outline-brand">加载更多</button>
+                  ) : <p role="status">已显示全部结果</p>}
+                </div>
               </>
             ) : isCurrentResult && !isSearching && !isComposing && !errorMessage ? (
               <div className="text-center py-16">

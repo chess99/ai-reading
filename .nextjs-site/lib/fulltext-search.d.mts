@@ -28,6 +28,23 @@ export interface FulltextItem {
   section: string;
   excerptHtml: string;
 }
+interface FulltextIdentity { id: string; phraseMatch: boolean; }
+export type FulltextEntry = FulltextIdentity & (
+  { status: 'loading' } |
+  { status: 'ready'; item: FulltextItem } |
+  { status: 'error'; error: unknown }
+);
+export interface FulltextLoadOptions {
+  signal?: AbortSignal;
+  onSettled?: (entry: FulltextEntry) => void;
+  concurrency?: number;
+  retries?: number;
+  retryDelayMs?: number;
+  timeoutMs?: number;
+}
 export const FULLTEXT_PAGE_SIZE: number;
 export function searchFulltext(pagefind: PagefindModule, keyword: string): Promise<PagefindResult[]>;
-export function loadFulltextPage(results: PagefindResult[], keyword: string, offset?: number): Promise<FulltextItem[]>;
+export function loadFulltextBatch(results: PagefindResult[], keyword: string, offset?: number, options?: FulltextLoadOptions): Promise<{
+  entries: FulltextEntry[];
+  nextOffset: number;
+}>;
