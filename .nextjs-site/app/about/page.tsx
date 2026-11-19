@@ -29,6 +29,11 @@ const aboutJsonLd = {
     '@type': 'Organization',
     name: BRAND_NAME,
     url: BASE_URL,
+    logo: `${BASE_URL}/icon-512.png`,
+    sameAs: [
+      'https://github.com/chess99/ai-reading',
+      'https://cearl.cc',
+    ],
   },
   about: ['书籍解读', '读书笔记', 'AI 辅助阅读', '人工校审'],
 };

@@ -58,6 +58,7 @@ const websiteJsonLd = {
     {
       '@type': 'WebSite',
       name: BRAND_NAME,
+      alternateName: ['ai-reading', 'ChenSheng Reading', '晨笙阅读网'],
       url: BASE_URL,
       description: SITE_DESCRIPTION,
       inLanguage: 'zh-CN',
@@ -74,6 +75,11 @@ const websiteJsonLd = {
       '@type': 'Organization',
       name: BRAND_NAME,
       url: BASE_URL,
+      logo: `${BASE_URL}/icon-512.png`,
+      sameAs: [
+        'https://github.com/chess99/ai-reading',
+        'https://cearl.cc',
+      ],
     },
   ],
 };
