@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${BASE_URL}/listen/`,
   },
+  openGraph: {
+    title: `订阅收听 | ${BRAND_NAME}`,
+    description: `通过全文 RSS 在支持文字朗读的阅读器中订阅并收听${BRAND_NAME}。`,
+    url: `${BASE_URL}/listen/`,
+    siteName: BRAND_NAME,
+    type: 'website',
+    locale: 'zh_CN',
+  },
 };
 
 const feeds = [

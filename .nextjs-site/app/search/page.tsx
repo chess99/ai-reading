@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${BASE_URL}/search/`,
   },
+  openGraph: {
+    title: `全文搜索 | ${BRAND_NAME}`,
+    description: `在${BRAND_NAME}的全部书籍解读和读书笔记中搜索关键词、作者、书名、分类与核心观点。`,
+    url: `${BASE_URL}/search/`,
+    siteName: BRAND_NAME,
+    type: 'website',
+    locale: 'zh_CN',
+  },
 };
 
 export default function SearchPage() {

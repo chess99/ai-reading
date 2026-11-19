@@ -125,15 +125,23 @@ export default async function BookPage({ params }: BookPageProps) {
         inLanguage: 'zh-CN',
         datePublished: new Date(book.addedAt).toISOString(),
         dateModified: new Date(book.addedAt).toISOString(),
+        isPartOf: {
+          '@id': `${BASE_URL}/#website`,
+          '@type': 'WebSite',
+          name: BRAND_NAME,
+          url: `${BASE_URL}/`,
+        },
         author: {
           '@type': 'Organization',
+          '@id': `${BASE_URL}/#organization`,
           name: BRAND_NAME,
-          url: BASE_URL,
+          url: `${BASE_URL}/`,
         },
         publisher: {
           '@type': 'Organization',
+          '@id': `${BASE_URL}/#organization`,
           name: BRAND_NAME,
-          url: BASE_URL,
+          url: `${BASE_URL}/`,
         },
         about: {
           '@type': 'Book',

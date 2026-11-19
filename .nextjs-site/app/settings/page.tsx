@@ -1,4 +1,19 @@
+import type { Metadata } from 'next';
 import SettingsContent from '@/components/SettingsContent';
+import { BRAND_NAME } from '@/lib/brand';
+import { BASE_URL } from '@/lib/config';
+
+export const metadata: Metadata = {
+  title: `设置 | ${BRAND_NAME}`,
+  description: `${BRAND_NAME}离线缓存、存储管理与站点偏好设置。`,
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: `${BASE_URL}/settings/`,
+  },
+};
 
 export default function SettingsPage() {
   return (

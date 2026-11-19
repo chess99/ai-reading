@@ -3,6 +3,8 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 
 const homeSource = readFileSync(new URL('../app/page.tsx', import.meta.url), 'utf8');
+const layoutSource = readFileSync(new URL('../app/layout.tsx', import.meta.url), 'utf8');
+const librarySource = readFileSync(new URL('../app/library/page.tsx', import.meta.url), 'utf8');
 const introSource = readFileSync(new URL('../components/HomeIntro.tsx', import.meta.url), 'utf8');
 const globalStylesSource = readFileSync(new URL('../app/globals.css', import.meta.url), 'utf8');
 const brandSource = readFileSync(new URL('../lib/brand.ts', import.meta.url), 'utf8');
@@ -49,4 +51,16 @@ test('public positioning describes reader value before the production method', (
 
 test('baidu verification file is published from the static root', () => {
   assert.equal(verificationSource, 'd52c4a03c59c518d3b465e73df77f2f6');
+});
+
+test('home intro exposes visible brand identity and links to about without hidden h1 text', () => {
+  assert.match(introSource, /晨笙阅读/);
+  assert.match(introSource, /href="\/about"/);
+  assert.doesNotMatch(introSource, /<h1[^>]*>[\s\S]*sr-only[\s\S]*<\/h1>/);
+});
+
+test('root layout avoids hardcoding homepage canonical while home and library set distinct canonicals', () => {
+  assert.doesNotMatch(layoutSource, /canonical:/);
+  assert.match(homeSource, /canonical:\s*`\$\{BASE_URL\}\/`/);
+  assert.match(librarySource, /canonical:\s*`\$\{BASE_URL\}\/library\/`/);
 });

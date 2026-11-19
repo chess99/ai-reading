@@ -25,15 +25,31 @@ const aboutJsonLd = {
   description: `${BRAND_NAME}是${BRAND_TAGLINE}。${CONTENT_PROCESS_SUMMARY}`,
   url: `${BASE_URL}/about/`,
   inLanguage: 'zh-CN',
-  publisher: {
+  isPartOf: {
+    '@id': `${BASE_URL}/#website`,
+  },
+  mainEntity: {
     '@type': 'Organization',
+    '@id': `${BASE_URL}/#organization`,
     name: BRAND_NAME,
-    url: BASE_URL,
+    url: `${BASE_URL}/`,
     logo: `${BASE_URL}/icon-512.png`,
+    founder: {
+      '@type': 'Person',
+      '@id': 'https://cearl.cc/#person',
+      name: '晨笙',
+      alternateName: 'Cearl',
+      url: 'https://cearl.cc/',
+    },
     sameAs: [
       'https://github.com/chess99/ai-reading',
-      'https://cearl.cc',
     ],
+  },
+  publisher: {
+    '@type': 'Organization',
+    '@id': `${BASE_URL}/#organization`,
+    name: BRAND_NAME,
+    url: `${BASE_URL}/`,
   },
   about: ['书籍解读', '读书笔记', 'AI 辅助阅读', '人工校审'],
 };

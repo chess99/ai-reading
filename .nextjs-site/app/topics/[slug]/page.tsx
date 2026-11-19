@@ -59,8 +59,18 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const content = topic.content.replace(/^\s*#\s+[^\n\r]+(?:\r?\n)+/, '');
   const starters = topic.books.map((book, index) => ({ book, index })).filter(item => item.book.reading === 'start');
   const url = `${BASE_URL}/topics/${topic.slug}/`;
-  const jsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: topic.title, description: topic.description,
-    url, inLanguage: 'zh-CN', dateModified: topic.date, author: { '@type': 'Organization', name: BRAND_NAME, url: BASE_URL } };
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: topic.title,
+    description: topic.description,
+    url,
+    inLanguage: 'zh-CN',
+    dateModified: topic.date,
+    isPartOf: { '@id': `${BASE_URL}/#website`, '@type': 'WebSite', name: BRAND_NAME, url: `${BASE_URL}/` },
+    author: { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, name: BRAND_NAME, url: `${BASE_URL}/` },
+    publisher: { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, name: BRAND_NAME, url: `${BASE_URL}/` },
+  };
   return <article className="reading-page mx-auto w-full">
     <SearchHighlights />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />

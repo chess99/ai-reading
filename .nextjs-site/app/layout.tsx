@@ -8,9 +8,10 @@ import { BRAND_NAME, SITE_DESCRIPTION, SITE_TITLE } from '@/lib/brand';
 import { appVersion, buildVersion, libraryVersion } from '@/lib/build-info';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
-  keywords: ['晨笙阅读', '书籍解读', '读书笔记', 'AI 辅助阅读', '好书精读', '投资', '心理学', '个人成长', '商业管理'],
+  keywords: ['晨笙阅读', '书籍解读', '读书笔记', '主题阅读', '好书精读', '投资', '心理学', '个人成长', '商业管理'],
   manifest: '/manifest.webmanifest',
   icons: {
     icon: '/icon.svg',
@@ -21,13 +22,9 @@ export const metadata: Metadata = {
     title: BRAND_NAME,
     statusBarStyle: 'default',
   },
-  alternates: {
-    canonical: BASE_URL + '/',
-  },
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    url: BASE_URL + '/',
     siteName: BRAND_NAME,
     type: 'website',
     locale: 'zh_CN',
@@ -52,38 +49,6 @@ export const viewport: Viewport = {
   themeColor: '#9a6b2f',
 };
 
-const websiteJsonLd = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebSite',
-      name: BRAND_NAME,
-      alternateName: ['ai-reading', 'ChenSheng Reading', '晨笙阅读网'],
-      url: BASE_URL,
-      description: SITE_DESCRIPTION,
-      inLanguage: 'zh-CN',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: `${BASE_URL}/search/?q={search_term_string}`,
-        },
-        'query-input': 'required name=search_term_string',
-      },
-    },
-    {
-      '@type': 'Organization',
-      name: BRAND_NAME,
-      url: BASE_URL,
-      logo: `${BASE_URL}/icon-512.png`,
-      sameAs: [
-        'https://github.com/chess99/ai-reading',
-        'https://cearl.cc',
-      ],
-    },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -96,10 +61,6 @@ export default function RootLayout({
         <meta name="ai-reading-app" content={appVersion} />
         <meta name="ai-reading-library" content={libraryVersion} />
         <link rel="alternate" type="application/rss+xml" title={`${BRAND_NAME} 全文 RSS`} href={`${BASE_URL}/feed.xml`} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }}
-        />
       </head>
       <body>
         <BaiduAnalytics />

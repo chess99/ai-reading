@@ -27,7 +27,7 @@ export default function LayoutClient({ children }: LayoutClientProps) {
   const scrollPositionsRef = useRef<Record<string, { top: number; left: number }>>({});
   const pathname = usePathname();
   const isBookPage = pathname.startsWith('/books/');
-  const isTopicPage = pathname.startsWith('/topics/') && pathname !== '/topics';
+  const isTopicPage = pathname.startsWith('/topics/') && pathname !== '/topics' && pathname !== '/topics/';
   const isDetailPage = isBookPage || isTopicPage;
   const shareConfig = isBookPage
     ? {

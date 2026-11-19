@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${BASE_URL}/topics/`,
   },
+  openGraph: {
+    title: `主题阅读 | ${BRAND_NAME}`,
+    description: '按问题选读，比较不同观点，或从一部作品进入新的经验。找到适合自己的起点。',
+    url: `${BASE_URL}/topics/`,
+    siteName: BRAND_NAME,
+    type: 'website',
+    locale: 'zh_CN',
+  },
 };
 
 export default function TopicsPage() {
