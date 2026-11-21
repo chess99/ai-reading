@@ -62,9 +62,9 @@ books:
     role: 繁荣、集权与革命悖论
     reason: 查证法国旧王朝档案，揭开中央集权、特权脱离义务和经济繁荣恰恰在大革命前夜催化剧烈崩塌的内在机制。
   - title: 国家为什么会破产
-    author: Ray Dalio
+    author: 瑞·达利欧
     slug: guo-jia-wei-shen-me-hui-po-chan
-    path: books/金钱投资/宏观周期/Ray Dalio-国家为什么会破产.md
+    path: books/金钱投资/宏观周期/瑞·达利欧-国家为什么会破产.md
     status: in_library
     reading: optional
     role: 储备货币与大债务周期

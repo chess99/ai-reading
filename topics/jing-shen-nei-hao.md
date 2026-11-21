@@ -46,9 +46,9 @@ books:
     role: 看清拖延背后的自尊防御
     reason: 基于二十五年高校咨询经验，揭示失败恐惧、控制权焦虑和自我设限怎样让开始变得困难。
   - title: 跳出头脑，融入生活
-    author: Steven C. Hayes、Spencer Smith
+    author: 史蒂文·C.海斯,斯宾斯·史密斯
     slug: tiao-chu-tou-nao-rong-ru-sheng-huo
-    path: 'books/心理修复/情绪内耗/Steven C. Hayes,Spencer Smith-跳出头脑，融入生活.md'
+    path: books/心理修复/情绪内耗/史蒂文·C.海斯,斯宾斯·史密斯-跳出头脑，融入生活.md
     status: in_library
     reading: reference
     role: ACT 原典实操训练手册
@@ -69,7 +69,7 @@ books:
     reading: optional
     role: 拆穿灾难化与预测误差
     reason: 借助反拖延表把动工前的畏难猜测与实际完成后的愉悦感摆在一起对比，用事实破除脑补。
-  - title: 自我关怀
+  - title: 自我关怀的力量
     author: 克里斯廷·内夫
     originalTitle: Self-Compassion
     status: planned
@@ -95,4 +95,4 @@ books:
 
 ## 停掉拿自我厌恶当发条
 
-计划落空时习惯加倍责骂自己，往往只会让自尊越塌越低、逃避越深。《自我关怀》在此时换掉那套苛刻鞭子，教人在卡壳时用安慰朋友的口吻稳住自己。如果反复停滞同时伴随明显工作过载、长久失眠或持续低落，除了调整思维习惯，也记得回看现实排期或找医生做一次评估。
+计划落空时习惯加倍责骂自己，往往只会让自尊越塌越低、逃避越深。《自我关怀的力量》在此时换掉那套苛刻鞭子，教人在卡壳时用安慰朋友的口吻稳住自己。如果反复停滞同时伴随明显工作过载、长久失眠或持续低落，除了调整思维习惯，也记得回看现实排期或找医生做一次评估。

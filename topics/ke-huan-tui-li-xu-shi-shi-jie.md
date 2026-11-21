@@ -45,9 +45,9 @@ books:
     role: 高维尺度与道德困境
     reason: 借助四维碎片、曲率驱动与降维打击，追问在宇宙尺度面前个人善意与文明存续之间残酷的换算关系。
   - title: 平面国
-    author: Edwin A. Abbott
+    author: 埃德温·A.艾勃特
     slug: ping-mian-guo
-    path: books/人文艺术/文学阅读/Edwin A. Abbott-平面国.md
+    path: books/人文艺术/文学阅读/埃德温·A.艾勃特-平面国.md
     status: in_library
     reading: compare
     role: 维度寓言与阶层讽刺

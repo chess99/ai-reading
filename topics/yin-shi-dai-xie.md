@@ -21,17 +21,17 @@ related:
 date: '2026-11-21'
 books:
   - title: 营养学：概念与争论
-    author: 'Frances Sizer, Eleanor Whitney'
+    author: 弗朗西斯·显凯维奇·赛泽,埃莉诺·诺斯·惠特尼
     slug: ying-yang-xue
-    path: 'books/健康身体/营养代谢/Frances Sizer,Eleanor Whitney-营养学.md'
+    path: books/健康身体/营养代谢/弗朗西斯·显凯维奇·赛泽,埃莉诺·诺斯·惠特尼-营养学.md
     status: in_library
     reading: start
     role: 营养概念与证据层级
     reason: 从四级科学研究证据阶梯讲起，系统拆解六大营养素、代谢途径及各章末尾直面的未定论科学争端。
   - title: 我们为什么会生病
-    author: 'Randolph M. Nesse, George C. Williams'
+    author: 伦道夫·M.尼斯,乔治·C.威廉斯
     slug: wo-men-wei-shen-me-hui-sheng-bing
-    path: 'books/健康身体/衰老照护/Randolph M. Nesse,George C. Williams-我们为什么会生病.md'
+    path: books/健康身体/衰老照护/伦道夫·M.尼斯,乔治·C.威廉斯-我们为什么会生病.md
     status: in_library
     reading: next
     role: 味觉偏好与演化失配
@@ -44,9 +44,9 @@ books:
     role: 哈佛营养流行病学路线
     reason: 依托十余万人跨数十年的前瞻人群队列追踪，主张以全谷物、蔬果与非氢化植物油替代精制谷物和红肉黄油。
   - title: 肥胖代码
-    author: Jason Fung
+    author: 冯子新
     slug: fei-pang-dai-ma
-    path: books/健康身体/营养代谢/Jason Fung-肥胖代码.md
+    path: books/健康身体/营养代谢/冯子新-肥胖代码.md
     status: in_library
     reading: compare
     role: 胰岛素模型与体重设定点
@@ -68,7 +68,7 @@ books:
 
 ## 流行病学队列与胰岛素模型的正面碰撞
 
-立稳证据观和演化底座，再看两派如何正面过招。肾脏科医生 Jason Fung 在《肥胖代码》里直接掀翻沿用半世纪的“摄入减消耗”简化公式：他眼见注射胰岛素的糖尿病患者体重越治越高，又翻出明尼苏达饥饿试验证明硬砍热量只会被身体用暴跌四成的静息代谢报复回去，主张决定体重设定点的是胰岛素水平，关键在压低精制糖、果糖与全天加餐频率。
+立稳证据观和演化底座，再看两派如何正面过招。肾脏科医生冯子新在《肥胖代码》里直接掀翻沿用半世纪的“摄入减消耗”简化公式：他眼见注射胰岛素的糖尿病患者体重越治越高，又翻出明尼苏达饥饿试验证明硬砍热量只会被身体用暴跌四成的静息代谢报复回去，主张决定体重设定点的是胰岛素水平，关键在压低精制糖、果糖与全天加餐频率。
 
 把这本临床挑战派著作和哈佛公共卫生学院团队的《Eat, Drink, and Be Healthy》摆在一块，交锋格外精彩：沃尔特·威利特依托追踪十余万人长达数十年的前瞻人群队列数据，一边同样痛批精制淀粉、反式脂肪和含糖饮料，另一边却拿长期心血管与全因死亡终点数据支持全谷物和非氢化植物油，提醒读者谨慎对待高饱和脂肪路线。两派在“少吃精制糖与超加工食品”上高度一致，真正的分歧留在进食窗口、碳水比例以及激素设定点假说能在多大程度上推广到普通人群。
 

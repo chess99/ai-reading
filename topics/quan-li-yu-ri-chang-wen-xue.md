@@ -19,25 +19,25 @@ related:
 date: '2026-11-20'
 books:
   - title: 动物农场
-    author: George Orwell
+    author: 乔治·奥威尔
     slug: dong-wu-nong-chang
-    path: books/人文艺术/文学阅读/George Orwell-动物农场.md
+    path: books/人文艺术/文学阅读/乔治·奥威尔-动物农场.md
     status: in_library
     reading: start
     role: 寓言与口号篡改
     reason: 用一场动物起义浓缩革命理想如何退化成特权阶层，墙上悄悄多出的半句戒律比枪杆子更有说服力。
-  - title: '1984'
-    author: George Orwell
+  - title: "1984"
+    author: 乔治·奥威尔
     slug: '1984'
-    path: books/人文艺术/文学阅读/George Orwell-1984.md
+    path: books/人文艺术/文学阅读/乔治·奥威尔-1984.md
     status: in_library
     reading: next
     role: 记忆抹除与恐惧渗透
     reason: 紧盯电幕、新话词典与温斯顿隐秘的恋情，看国家机器怎样把爱意与历史感连根拔起。
   - title: 美丽新世界
-    author: Aldous Huxley
+    author: 阿道斯·赫胥黎
     slug: mei-li-xin-shi-jie
-    path: books/人文艺术/文学阅读/Aldous Huxley-美丽新世界.md
+    path: books/人文艺术/文学阅读/阿道斯·赫胥黎-美丽新世界.md
     status: in_library
     reading: compare
     role: 舒适与快乐驯化

@@ -20,25 +20,25 @@ related:
 date: '2026-11-20'
 books:
   - title: 黄色墙纸
-    author: Charlotte Perkins Gilman
+    author: 夏洛特·帕金斯·吉尔曼
     slug: huang-se-qiang-zhi
-    path: books/人文艺术/文学阅读/Charlotte Perkins Gilman-黄色墙纸.md
+    path: books/人文艺术/文学阅读/夏洛特·帕金斯·吉尔曼-黄色墙纸.md
     status: in_library
     reading: start
     role: 医疗凝视与失声
     reason: 当医生丈夫用“彻底休息”禁止产后沮丧的妻子写作和见客，房间里的黄色墙纸便成了压抑精神崩溃的实体。
   - title: 献给阿尔吉侬的花束
-    author: Daniel Keyes
+    author: 丹尼尔·凯斯
     slug: xian-gei-a-er-ji-nong-de-hua-shu
-    path: books/人文艺术/文学阅读/Daniel Keyes-献给阿尔吉侬的花束.md
+    path: books/人文艺术/文学阅读/丹尼尔·凯斯-献给阿尔吉侬的花束.md
     status: in_library
     reading: next
     role: 智力与尊严边界
     reason: 借助主角从满篇错字到逻辑严密又跌回混沌的日记体，迫使读者检验人们对智障者与天才的态度差异。
   - title: 一间自己的房间
-    author: Virginia Woolf
+    author: 弗吉尼亚·伍尔夫
     slug: yi-jian-zi-ji-de-fang-jian
-    path: books/人文艺术/文学阅读/Virginia Woolf-一间自己的房间.md
+    path: books/人文艺术/文学阅读/弗吉尼亚·伍尔夫-一间自己的房间.md
     status: in_library
     reading: compare
     role: 表达的物质前提

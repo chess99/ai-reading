@@ -19,9 +19,9 @@ related:
 date: '2026-11-21'
 books:
   - title: 好战略，坏战略
-    author: Richard Rumelt
+    author: 理查德·鲁梅尔特
     slug: hao-zhan-l-e-huai-zhan-l-e
-    path: books/商业产品/商业战略/Richard Rumelt-好战略，坏战略.md
+    path: books/商业产品/商业战略/理查德·鲁梅尔特-好战略，坏战略.md
     status: in_library
     reading: start
     role: 厘清战略内核
@@ -59,9 +59,9 @@ books:
     role: 主张非对称垄断
     reason: 直接反对在红海里拼运营效率，主张靠技术代差、网络效应与品牌占住独一份的市场位置。
   - title: 英伟达之道
-    author: Tae Kim
+    author: 金泰
     slug: ying-wei-da-zhi-dao
-    path: books/商业产品/商业战略/Tae Kim-英伟达之道.md
+    path: books/商业产品/商业战略/金泰-英伟达之道.md
     status: in_library
     reading: next
     role: 检视三十年战史
@@ -75,7 +75,7 @@ books:
     role: 追问长期组织飞轮
     reason: 通过跨度十五年的配对企业对照，提出第 5 级经理人、先人后事与刺猬理念推动的持续跃迁。
   - title: 光环效应
-    author: 菲尔·罗森茨维格
+    author: 菲尔·罗森维
     originalTitle: The Halo Effect
     status: planned
     reading: compare

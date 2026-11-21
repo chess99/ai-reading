@@ -29,17 +29,17 @@ books:
     role: 守住稳定输出
     reason: 拆解口播、脱口秀逐字稿打磨与上场前后的工作纪律，把创作从等灵感拉回可重复的手艺。
   - title: 众媒时代，我们该如何做内容
-    author: Ann Handley
+    author: 安·汉德利
     slug: zhong-mei-shi-dai
-    path: books/人文艺术/写作技艺/Ann Handley-众媒时代，我们该如何做内容.md
+    path: books/人文艺术/写作技艺/安·汉德利-众媒时代，我们该如何做内容.md
     status: in_library
     reading: start
     role: 理顺书面写作流
     reason: 从选题角度、材料积累、硬写完烂初稿到反复编修，建立能够常年运转的书面内容生产流。
   - title: 让创意更有黏性
-    author: 'Chip Heath,Dan Heath'
+    author: 奇普·希思,丹·希思
     slug: rang-chuang-yi-geng-you-nian-xing
-    path: 'books/商业产品/市场增长/Chip Heath,Dan Heath-让创意更有黏性.md'
+    path: books/商业产品/市场增长/奇普·希思,丹·希思-让创意更有黏性.md
     status: in_library
     reading: next
     role: 让表达被记住和复述
@@ -60,10 +60,10 @@ books:
     reading: next
     role: 搭建用户留存系统
     reason: 跳出只盯单篇播放量的焦灼，用拉新、留存、转化与商业价值公式把散客流转成用户资产。
-  - title: 共建社群
-    author: 'Bailey Richardson,Kevin Huynh,Kai Elmer Sotto'
+  - title: 聚众商机
+    author: 贝莉·理查森,黄凯文,凯伊·埃尔默·索托
     slug: gong-jian-she-qu
-    path: 'books/商业产品/商业模式/Bailey Richardson,Kevin Huynh,Kai Elmer Sotto-共建社群.md'
+    path: books/商业产品/商业模式/贝莉·理查森,黄凯文,凯伊·埃尔默·索托-聚众商机.md
     status: in_library
     reading: optional
     role: 经营成员互相连接
@@ -77,25 +77,25 @@ books:
     role: 守住规模与利润边界
     reason: 挑战“团队越大、粉丝越多越成功”的惯性，靠低固定成本与清晰边界把生意留在可控尺寸内。
   - title: 社交媒体娱乐
-    author: 'Stuart Cunningham,David Craig'
+    author: 斯图尔特·坎宁安,大卫·克雷格
     slug: she-jiao-mei-ti-yu-le
-    path: books/社会公共/媒介传播/Stuart Cunningham,David Craig-社交媒体娱乐.md
+    path: books/社会公共/媒介传播/斯图尔特·坎宁安,大卫·克雷格-社交媒体娱乐.md
     status: in_library
     reading: compare
     role: 看懂创作者经济全貌
     reason: 基于百余场全球访谈剖开硅谷平台策略、广告分成滑坡、品牌赞助与 MCN 夹缝生存的真实账本。
   - title: 创作在云端：平台与文化生产
-    author: 'Thomas Poell,David B. Nieborg,Brooke Erin Duffy'
+    author: 托马斯·玻尔,戴维·尼尔伯格,布鲁克·埃琳·达菲
     slug: chuang-zuo-zai-yun-duan
-    path: 'books/科技媒介/平台算法/Thomas Poell,David B. Nieborg,Brooke Erin Duffy-创作在云端.md'
+    path: books/科技媒介/平台算法/托马斯·玻尔,戴维·尼尔伯格,布鲁克·埃琳·达菲-创作在云端.md
     status: in_library
     reading: compare
     role: 识别平台规则依赖
     reason: 从市场、API 接口与算法策展拆解文化生产如何被平台绑定，提示创作者建设多端与自有阵地。
   - title: 做自己，最好卖？
-    author: Emily Hund
+    author: 艾蜜莉·洪德
     slug: zuo-zi-ji-zui-hao-mai
-    path: books/社会公共/媒介传播/Emily Hund-做自己最好卖.md
+    path: books/社会公共/媒介传播/艾蜜莉·洪德-做自己最好卖.md
     status: in_library
     reading: optional
     role: 审视真实性商品化
@@ -111,7 +111,7 @@ books:
 
 ## 搭起运营闭环，同时克制膨胀
 
-爆款能带来一阵热闹，撑不住长期现金流。《运营之光》替创作者补上生意账本：回到单体用户价值、获客代价与交付成本这条主线，看清读者为什么点进来、凭什么留下来买单。如果粉丝之间原本就有同好相认和互助需要，《共建社群》能教你筛选前几十位种子成员并立下共同仪式，免得拉出一堆死气沉沉的广告群。收入明显上扬时，先读《一人企业》压住盲目扩张的冲动：急着租大办公室招十几个人往往把利润和自由全吞进协调成本里，低固定开销和克制的客户边界反而走得更远。
+爆款能带来一阵热闹，撑不住长期现金流。《运营之光》替创作者补上生意账本：回到单体用户价值、获客代价与交付成本这条主线，看清读者为什么点进来、凭什么留下来买单。如果粉丝之间原本就有同好相认和互助需要，《聚众商机》能教你筛选前几十位种子成员并立下共同仪式，免得拉出一堆死气沉沉的广告群。收入明显上扬时，先读《一人企业》压住盲目扩张的冲动：急着租大办公室招十几个人往往把利润和自由全吞进协调成本里，低固定开销和克制的客户边界反而走得更远。
 
 ## 抬头看清平台格局与生活底线
 

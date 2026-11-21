@@ -27,9 +27,9 @@ books:
     role: 日常问题里的数学直觉
     reason: 用线性误判、幸存者偏差、期望计算与回归均值，拆解选举、彩票与新闻数字里的推理漏洞。
   - title: 平面国
-    author: Edwin A. Abbott
+    author: 埃德温·A.艾勃特
     slug: ping-mian-guo
-    path: books/人文艺术/文学阅读/Edwin A. Abbott-平面国.md
+    path: books/人文艺术/文学阅读/埃德温·A.艾勃特-平面国.md
     status: in_library
     reading: start
     role: 维度想象与类比思维
@@ -49,10 +49,10 @@ books:
     reading: optional
     role: 数理连通自然尺度
     reason: 从大数记法、虚数、四维时空一路连通到原子与基因尺度，把纸面算式接进真实宇宙的尺度感。
-  - title: Infinite Powers
-    author: Steven Strogatz
+  - title: 微积分的力量
+    author: 史蒂夫·斯托加茨
     slug: infinite-powers
-    path: books/思维科学/证据科学/Steven Strogatz-Infinite Powers.md
+    path: books/思维科学/证据科学/史蒂夫·斯托加茨-微积分的力量.md
     status: in_library
     reading: next
     role: 连续变化与微积分思维
@@ -65,9 +65,9 @@ books:
     role: 求解难题的启发式步骤
     reason: 将无从下手时的摸索提炼为理解题目、特例试探、寻找关联与回顾检验，培养拆解陌生问题的思考习惯。
   - title: Alex Through the Looking-Glass
-    author: Alex Bellos
+    author: 亚历克斯·贝洛斯
     slug: alex-through-the-looking-glass
-    path: books/思维科学/证据科学/Alex Bellos-Alex Through the Looking-Glass.md
+    path: books/思维科学/证据科学/亚历克斯·贝洛斯-Alex Through the Looking-Glass.md
     status: in_library
     reading: optional
     role: 日常现象里的数字与模式
@@ -102,7 +102,7 @@ books:
 
 跨进大门之后，接下来要驯服两只日常常识管不住的猛兽：无穷与连续变化。尤金妮娅·程的《超越无穷大》最擅长用清晰推理破解悖论——先用“无穷加一还是无穷”推出 1 等于 0 的荒谬算式，再请出住满客人仍能不断腾出新房间的希尔伯特旅馆，一路解释为什么实数比自然数“更大”、数学家又如何用严格定义把悖论变成新工具。如果想把数的妙用接回真实物理宇宙，乔治·伽莫夫的《从一到无穷大》用生动插图把大数阶梯、虚数、四维时空与原子微观世界连成一体。
 
-处理弯曲轨迹、变速运动与波动现象，则要靠微积分这一套看家本领。《Infinite Powers》用一条朴素的“无穷原则”贯通两千五百年微积分史：先将弯曲的曲线和变动不居的速度切成无穷多段极小的直线与恒速片段，逐段算清再累加复原，阿基米德的圆面积逼近、牛顿的行星力学和傅里叶的波形分解全落进同一座逻辑大厅。至于面对一道陌生难题真正卡壳时该怎么办，波利亚的《怎样解题》留下了一套至今好用的启发式习惯：先拿极端特例试探、改画一张草图、试着从结论倒推一步，解出之后再追问“换个条件这招还灵吗”。
+处理弯曲轨迹、变速运动与波动现象，则要靠微积分这一套看家本领。《微积分的力量》用一条朴素的“无穷原则”贯通两千五百年微积分史：先将弯曲的曲线和变动不居的速度切成无穷多段极小的直线与恒速片段，逐段算清再累加复原，阿基米德的圆面积逼近、牛顿的行星力学和傅里叶的波形分解全落进同一座逻辑大厅。至于面对一道陌生难题真正卡壳时该怎么办，波利亚的《怎样解题》留下了一套至今好用的启发式习惯：先拿极端特例试探、改画一张草图、试着从结论倒推一步，解出之后再追问“换个条件这招还灵吗”。
 
 ## 当确定性动摇：形式系统的根基与边界
 

@@ -36,9 +36,9 @@ books:
     role: 私人部门与典型去杠杆
     reason: 梳理48个历史债务周期案例，拆解通缩性萧条、通胀性货币危机及“和谐去杠杆”所需的政策配比。
   - title: 国家为什么会破产
-    author: Ray Dalio
+    author: 瑞·达利欧
     slug: guo-jia-wei-shen-me-hui-po-chan
-    path: books/金钱投资/宏观周期/Ray Dalio-国家为什么会破产.md
+    path: books/金钱投资/宏观周期/瑞·达利欧-国家为什么会破产.md
     status: in_library
     reading: next
     role: 主权债务极限与央行破产
@@ -68,7 +68,7 @@ books:
     role: 赔率思维与逆向防御
     reason: 把宏观环境判断接回资产买价本身，看清看对经济方向后却因共识已兑现、杠杆过高而亏损的陷阱。
   - title: 货币金融学
-    author: 弗雷德里克·米什金
+    author: 弗雷德里克·S.米什金
     originalTitle: The Economics of Money, Banking, and Financial Markets
     status: planned
     reading: reference

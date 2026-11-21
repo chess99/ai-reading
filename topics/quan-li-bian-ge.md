@@ -61,7 +61,7 @@ books:
     role: 穿越战略拐点
     reason: 借英特尔放弃存储器转战微处理器的经历，剖析根基动摇时如何听取边缘警报并重配资源。
   - title: 光环效应
-    author: 菲尔·罗森茨维格
+    author: 菲尔·罗森维
     originalTitle: The Halo Effect
     status: planned
     reading: compare

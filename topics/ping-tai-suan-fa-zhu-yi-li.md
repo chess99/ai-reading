@@ -22,9 +22,9 @@ related:
 date: '2026-11-20'
 books:
   - title: 注意力商人
-    author: Tim Wu
+    author: 吴修铭
     slug: zhu-yi-li-shang-ren
-    path: books/社会公共/媒介传播/Tim Wu-注意力商人.md
+    path: books/社会公共/媒介传播/吴修铭-注意力商人.md
     status: in_library
     reading: start
     role: 注意力变现百年史
@@ -37,26 +37,26 @@ books:
     reading: compare
     role: 个性化推送与信息收窄
     reason: 追问点击偏好算法如何把每个人包裹在量身定制的回音室里，同时对照用户主动选择与线下社交等变量。
-  - title: 监视资本主义时代
-    author: Shoshana Zuboff
+  - title: 监控资本主义时代
+    author: 肖莎娜·祖博夫
     slug: jian-shi-zi-ben-zhu-yi-shi-dai
-    path: books/社会公共/技术社会/Shoshana Zuboff-监视资本主义时代.md
+    path: books/社会公共/技术社会/肖莎娜·祖博夫-监控资本主义时代.md
     status: in_library
     reading: compare
     role: 行为剩余提取与预测权
     reason: 拆穿数字平台免费便利表象下的“行为剩余”掠夺逻辑——从收集点击轨迹演进到预测、微调乃至诱导现实行动。
   - title: 创作在云端：平台与文化生产
-    author: 'Thomas Poell,David B. Nieborg,Brooke Erin Duffy'
+    author: 托马斯·玻尔,戴维·尼尔伯格,布鲁克·埃琳·达菲
     slug: chuang-zuo-zai-yun-duan
-    path: books/科技媒介/平台算法/Thomas Poell,David B. Nieborg,Brooke Erin Duffy-创作在云端.md
+    path: books/科技媒介/平台算法/托马斯·玻尔,戴维·尼尔伯格,布鲁克·埃琳·达菲-创作在云端.md
     status: in_library
     reading: next
     role: 平台接口、策展与内容劳动
     reason: 剖析 YouTube、TikTok 与应用商店如何靠 API 权限、榜单排序和变现规则单方面拿捏创作者生计。
   - title: 做自己，最好卖？
-    author: Emily Hund
+    author: 艾蜜莉·洪德
     slug: zuo-zi-ji-zui-hao-mai
-    path: books/社会公共/媒介传播/Emily Hund-做自己最好卖.md
+    path: books/社会公共/媒介传播/艾蜜莉·洪德-做自己最好卖.md
     status: in_library
     reading: optional
     role: 网红产业与真实性商品化
@@ -77,10 +77,10 @@ books:
     reading: next
     role: 算法派单下的骑手现场
     reason: 凭北京众包骑手一年的抢单、超时扣款与路线纠偏日记，让热力地图和等级积分对一线劳动的挤压触手可及。
-  - title: 找回专注力
+  - title: 注意力危机
     author: 约翰·海利
     slug: zhao-hui-zhuan-zhu-li
-    path: books/自我管理/专注效率/约翰·海利-找回专注力.md
+    path: books/自我管理/专注效率/约翰·海利-注意力危机.md
     status: in_library
     reading: optional
     role: 注意力掠夺与大脑代价
@@ -92,9 +92,9 @@ books:
 
 ## 从买卖眼球到买卖未来行为
 
-打开全局最顺手的入口是《注意力商人》。Tim Wu 梳理百余年媒体史，指出今天的信息流只是把一八三〇年代便士报靠免费花边新闻聚拢人头转卖广告主的套路，做成了全天候自动化机器。《过滤泡》紧接着追问个性化推送的后果：点击偏好把人包裹在量身剪裁的视野里时，公共讨论所需的共同事实还剩多少？并读时也适合掂量用户自身主动偏食与社交圈层占多大权重。
+打开全局最顺手的入口是《注意力商人》。吴修铭梳理百余年媒体史，指出今天的信息流只是把一八三〇年代便士报靠免费花边新闻聚拢人头转卖广告主的套路，做成了全天候自动化机器。《过滤泡》紧接着追问个性化推送的后果：点击偏好把人包裹在量身剪裁的视野里时，公共讨论所需的共同事实还剩多少？并读时也适合掂量用户自身主动偏食与社交圈层占多大权重。
 
-真正往后台深挖一镐的是《监视资本主义时代》。Shoshana Zuboff 指出平台抽走的不止是停留秒数，而是把搜索词、步态定位和日常互动打包成训练行为期货的原料，借微调界面把人的下一步行动推进广告主预设的轨道。
+真正往后台深挖一镐的是《监控资本主义时代》。肖莎娜·祖博夫指出平台抽走的不止是停留秒数，而是把搜索词、步态定位和日常互动打包成训练行为期货的原料，借微调界面把人的下一步行动推进广告主预设的轨道。
 
 ## 当平台改写创作、医疗信任与街头劳动
 
@@ -104,4 +104,4 @@ books:
 
 ## 个人的大脑还留着多少余地
 
-看完平台与劳动两头，再翻《找回专注力》，便不会把刷屏停不下来全怪到“意志力差”。约翰·海利摆出话题寿命逐年缩短、每三分钟被打断一次恢复却要二十三分钟的实验室数据，说明碎片流和商业模型是在直接与人脑前额叶的工作记忆抢地盘。选一个最常用的 App 查一次账：弄清它靠什么留住你、靠谁付钱，再试着把首页推荐关成主动订阅，看看生活会空出哪一块时间。
+看完平台与劳动两头，再翻《注意力危机》，便不会把刷屏停不下来全怪到“意志力差”。约翰·海利摆出话题寿命逐年缩短、每三分钟被打断一次恢复却要二十三分钟的实验室数据，说明碎片流和商业模型是在直接与人脑前额叶的工作记忆抢地盘。选一个最常用的 App 查一次账：弄清它靠什么留住你、靠谁付钱，再试着把首页推荐关成主动订阅，看看生活会空出哪一块时间。

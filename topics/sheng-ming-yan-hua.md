@@ -25,66 +25,66 @@ books:
     reading: start
     role: 演化证据全景拼图
     reason: 汇集过渡化石、胚胎发育、退化器官与岛屿生物地理分布四路独立证据，直截了当展示演化论为什么经得起反复检验。
-  - title: The Beak of the Finch
-    author: Jonathan Weiner
+  - title: 鸟喙：加拉帕戈斯群岛考察记
+    author: 乔纳生·威诺
     slug: the-beak-of-the-finch
-    path: books/思维科学/证据科学/Jonathan Weiner-The Beak of the Finch.md
+    path: books/思维科学/证据科学/乔纳生·威诺-鸟喙.md
     status: in_library
     reading: start
     role: 野外实时自然选择
     reason: 跟着格兰特夫妇在加拉帕戈斯岛追踪二十年，亲眼见证旱灾与厄尔尼诺如何在短短几代鸟雀里实时逆转喙深的选择方向。
   - title: 物种起源
-    author: Charles Darwin
+    author: 查尔斯·达尔文
     slug: wu-zhong-qi-yuan
-    path: books/思维科学/证据科学/Charles Darwin-物种起源.md
+    path: books/思维科学/证据科学/查尔斯·达尔文-物种起源.md
     status: in_library
     reading: next
     role: 共同祖先与自然选择原典
     reason: 回到 1859 年原典，看达尔文在完全不知遗传机制的前提下，如何靠家养育种、化石与地理分布架起演化论证。
   - title: 基因传
-    author: Siddhartha Mukherjee
+    author: 悉达多·穆克吉
     slug: ji-yin-chuan
-    path: books/健康身体/医学生理/Siddhartha Mukherjee-基因传.md
+    path: books/健康身体/医学生理/悉达多·穆克吉-基因传.md
     status: in_library
     reading: next
     role: 遗传物质与基因史
     reason: 沿着孟德尔豌豆、双螺旋密码到基因编辑的百年脉络，补全达尔文当年缺席的遗传实体与社会伦理边界。
   - title: 自私的基因
-    author: Richard Dawkins
+    author: 理查德·道金斯
     slug: zi-si-de-ji-yin
-    path: books/思维科学/系统复杂/Richard Dawkins-自私的基因.md
+    path: books/思维科学/系统复杂/理查德·道金斯-自私的基因.md
     status: in_library
     reading: next
     role: 基因视角与博弈选择
     reason: 将自然选择单位聚焦到跨代复制的基因上，借亲缘选择与演化稳定策略解开生物合作、自私与牺牲的账本。
   - title: 奇妙的生命
-    author: Stephen Jay Gould
+    author: 斯蒂芬·杰·古尔德
     slug: qi-miao-de-sheng-ming
-    path: books/思维科学/证据科学/Stephen Jay Gould-奇妙的生命.md
+    path: books/思维科学/证据科学/斯蒂芬·杰·古尔德-奇妙的生命.md
     status: in_library
     reading: compare
     role: 伯吉斯页岩与历史偶然
     reason: 借寒武纪伯吉斯页岩特异化石提出“重放生命录像带”思想实验，用历史偶然性挑战纯粹的适应主义叙事。
   - title: 达尔文的危险思想
-    author: Daniel Dennett
+    author: 丹尼尔·丹尼特
     slug: da-er-wen-de-wei-xian-si-xiang
-    path: books/思维科学/证据科学/Daniel Dennett-达尔文的危险思想.md
+    path: books/思维科学/证据科学/丹尼尔·丹尼特-达尔文的危险思想.md
     status: in_library
     reading: compare
     role: 算法化演化的哲学推论
     reason: 将自然选择界定为无设计者、无目的的“万能酸”算法，正面迎战古尔德的偶然论并把演化视角推向心灵与文化。
   - title: 我包罗万象
-    author: Ed Yong
+    author: 埃德·扬
     slug: wo-bao-luo-wan-xiang
-    path: books/健康身体/医学生理/Ed Yong-我包罗万象.md
+    path: books/健康身体/医学生理/埃德·扬-我包罗万象.md
     status: in_library
     reading: optional
     role: 动物与微生物共生
     reason: 揭示乌贼发光器官、昆虫共生菌与人类肠道菌群如何重塑宿主的免疫、消化和行为，打破“孤立个体”边界。
   - title: 菌络万象
-    author: Merlin Sheldrake
+    author: 默林·谢尔德雷克
     slug: jun-luo-wan-xiang
-    path: books/思维科学/证据科学/Merlin Sheldrake-菌络万象.md
+    path: books/思维科学/证据科学/默林·谢尔德雷克-菌络万象.md
     status: in_library
     reading: optional
     role: 真菌网络与共生生态
@@ -96,7 +96,7 @@ books:
 
 ## 证据拼图、实时选汰与遗传底座
 
-立稳证据底座，可以从《为什么要相信达尔文》起步。演化生物学家杰里·科因不急着抛宏大哲学，而是像刑侦队长那样摊开四桌独立证物：填上鱼类到两栖类缺环的提塔利克鱼过渡化石、鲸鱼骨盆残迹与人耳动耳肌等退化器官、胚胎发育中的鳃弓同源结构，加上大洋孤岛上恰巧缺失原生陆生哺乳动物的地理分布——四条线索彼此印证，演化早已是可交叉检验的历史事实。想破除“演化慢得肉眼看不见”的错觉，紧接着登上加拉帕戈斯群岛：《The Beak of the Finch》跟着格兰特夫妇在达芙妮火山岩驻守二十余年，逐只给地雀脚环编号、测量鸟喙毫米级的长短厚薄；1977 年大旱筛光小种子，喙深差半毫米就决定生死；几年后厄尔尼诺暴雨催生漫山小种子，自然选择的指针当场反向摆动。
+立稳证据底座，可以从《为什么要相信达尔文》起步。演化生物学家杰里·科因不急着抛宏大哲学，而是像刑侦队长那样摊开四桌独立证物：填上鱼类到两栖类缺环的提塔利克鱼过渡化石、鲸鱼骨盆残迹与人耳动耳肌等退化器官、胚胎发育中的鳃弓同源结构，加上大洋孤岛上恰巧缺失原生陆生哺乳动物的地理分布——四条线索彼此印证，演化早已是可交叉检验的历史事实。想破除“演化慢得肉眼看不见”的错觉，紧接着登上加拉帕戈斯群岛：《鸟喙：加拉帕戈斯群岛考察记》跟着格兰特夫妇在达芙妮火山岩驻守二十余年，逐只给地雀脚环编号、测量鸟喙毫米级的长短厚薄；1977 年大旱筛光小种子，喙深差半毫米就决定生死；几年后厄尔尼诺暴雨催生漫山小种子，自然选择的指针当场反向摆动。
 
 带着这种现场感翻回《物种起源》，才读得出达尔文当年有多难。1859 年的科学界既不知基因也未见 DNA，他全凭鸽子育种记录、南美岛屿分布与化石序列硬搭出共同祖先的论证大厦。《基因传》恰好补全后来一百五十年的遗传实体——穆克吉从孟德尔豌豆、果蝇杂交一路写到人类基因组计划与基因编辑，也直面优生学把遗传当作命运判决书的惨痛历史。
 

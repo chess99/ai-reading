@@ -35,9 +35,9 @@ books:
     role: 放下塑造执念
     reason: 从发展心理学证明父母难以按预设图纸决定孩子性格，帮助大人卸下焦虑、退回安全基地角色。
   - title: 自驱型成长
-    author: William Stixrud、Ned Johnson
+    author: 威廉·斯蒂克斯鲁德,奈德·约翰逊
     slug: zi-qu-xing-cheng-zhang
-    path: books/关系家庭/家庭教育/William Stixrud,Ned Johnson-自驱型成长.md
+    path: books/关系家庭/家庭教育/威廉·斯蒂克斯鲁德,奈德·约翰逊-自驱型成长.md
     status: in_library
     reading: next
     role: 顾问型放手模型

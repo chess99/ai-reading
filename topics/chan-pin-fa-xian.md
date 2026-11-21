@@ -26,9 +26,9 @@ books:
     role: 建立日常发现节奏
     reason: 用机会解决方案树把业务结果、用户机会、候选方案与最小假设测试拧成每周闭环。
   - title: 启示录
-    author: Marty Cagan
+    author: 马丁·卡根
     slug: qi-shi-lu
-    path: books/商业产品/产品管理/Marty Cagan-启示录.md
+    path: books/商业产品/产品管理/马丁·卡根-启示录.md
     status: in_library
     reading: start
     role: 明确团队共担责任
@@ -50,33 +50,33 @@ books:
     role: 核算多边交易成本
     reason: 用约束条件下的效用组合与新旧体验替换公式，推演产品改动到底撬动多少增量交易。
   - title: 妈妈测试
-    author: Rob Fitzpatrick
+    author: 罗伯·菲茨帕特里克
     slug: ma-ma-ce-shi
-    path: books/商业产品/创业方法/Rob Fitzpatrick-妈妈测试.md
+    path: books/商业产品/创业方法/罗伯·菲茨帕特里克-妈妈测试.md
     status: in_library
     reading: optional
     role: 守住访谈证据质量
     reason: 避开引导性和假设性提问，从用户过去做过的具体行动里还原真实阻力与替代选择。
   - title: 设计冲刺
-    author: 'Jake Knapp, John Zeratsky, Braden Kowitz'
+    author: 杰克·纳普,约翰·泽拉茨基,布拉登·科维茨
     slug: she-ji-chong-ci
-    path: 'books/商业产品/用户体验/Jake Knapp,John Zeratsky,Braden Kowitz-设计冲刺.md'
+    path: books/商业产品/用户体验/杰克·纳普,约翰·泽拉茨基,布拉登·科维茨-设计冲刺.md
     status: in_library
     reading: optional
     role: 五天测通大方向
     reason: 当重要方案内部争执不下时，用五天做完高保真原型并让真实用户上手试错。
   - title: 用户体验要素
-    author: Jesse James Garrett
+    author: 杰西·詹姆斯·加勒特
     slug: yong-hu-ti-yan-yao-su
-    path: books/商业产品/用户体验/Jesse James Garrett-用户体验要素.md
+    path: books/商业产品/用户体验/杰西·詹姆斯·加勒特-用户体验要素.md
     status: in_library
     reading: reference
     role: 排查五层结构错位
     reason: 自下而上对照战略、范围、结构、框架与表现五层，查清项目卡在理念还是界面。
   - title: 设计心理学
-    author: Don Norman
+    author: 唐纳德·A.诺曼
     slug: she-ji-xin-li-xue
-    path: books/商业产品/用户体验/Don Norman-设计心理学.md
+    path: books/商业产品/用户体验/唐纳德·A.诺曼-设计心理学.md
     status: in_library
     reading: reference
     role: 诊断可用性障碍

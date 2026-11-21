@@ -2,8 +2,8 @@
   "1984": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/aba32c80813abad58g0189a1",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：《1984》/ [英]乔治·奥威尔，书名与作者精确匹配；排除同名年代题材网络小说及合集"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《1984》／[英]乔治·奥威尔，与站内《1984》对应同一作品"
   },
   "10-bei-bi-liang-bei-geng-rong-yi": {
     "status": "found",
@@ -25,25 +25,25 @@
   "a-bright-shining-lie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/57332720811e23a13g0138d2",
-    "checkedAt": "2026-09-01",
-    "note": "A Bright Shining Lie / Neil Sheehan / score 130"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《A Bright Shining Lie》／Neil Sheehan，与站内《A Bright Shining Lie》对应同一作品"
   },
   "a-day-in-the-life-of-abed-salama": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按英文书名与 Nathan Thrall、繁中书名《五岁米拉德的末班车》及作者译名内森·萨拉尔搜索，未发现可靠匹配；排除同名末班车网络小说"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「五岁米拉德的末班车」、「内森·萨拉尔」，未找到可靠的同书条目"
   },
   "a-problem-from-hell": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/e3c32370811e2967dg017994",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：A Problem from Hell / Samantha Power，书名与作者均精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《A Problem from Hell》／Samantha Power，与站内《地狱的难题》对应同一作品"
   },
   "a-short-history-of-life-on-earth": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/a5d32090813ab7ca8g0126f9",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《地球生命小史》/ 亨利·吉，中文译名与 Henry Gee 原书 A (Very) Short History of Life on Earth 对应；排除其他作者的同类生命史书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《地球生命小史》／亨利·吉"
   },
   "abundance": {
     "status": "not_found",
@@ -52,8 +52,8 @@
   },
   "adventures-in-the-anthropocene": {
     "status": "not_found",
-    "checkedAt": "2026-09-15",
-    "note": "人工核验：按 Adventures in the Anthropocene / Gaia Vince、作者译名及人类世相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除无关人类史与气候书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「人类世的冒险」、「加亚·文斯」，未找到可靠的同书条目"
   },
   "age-proof": {
     "status": "not_found",
@@ -63,8 +63,8 @@
   "ai-2041": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/0bc32b20813ab6d9fg0114c1",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《AI未来进行式（豆包的情感陪伴、机器人的情绪价值、宇树科技……AI未来全部预言）》／李开复 陈楸帆，与站内《AI未来进行式》对应同一作品"
   },
   "ai-de-yi-shu": {
     "status": "found",
@@ -75,18 +75,19 @@
   "ai-zheng-chuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b0e32b807292e185b0e7a13",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《癌症传（新版）》/ 悉达多·穆克吉，主标题与作者匹配；排除解读书、合集及旧版候选"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《癌症传（新版）》／悉达多·穆克吉，与站内《癌症传》对应同一作品"
   },
   "alex-through-the-looking-glass": {
     "status": "not_found",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：按英文书名与 Alex Bellos 搜索未发现原书；排除刘易斯·卡罗尔同名文学作品，以及内容对应作者前作的《数学王国的冒险之旅》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「Alex Through the Looking-Glass」、「亚历克斯·贝洛斯」，未找到可靠的同书条目"
   },
   "amity-and-prosperity": {
-    "status": "not_found",
-    "checkedAt": "2026-09-02",
-    "note": "No high-confidence WeRead match from title search"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/79032810813ab6ff2g013018",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《压裂的底层》／伊丽莎·格里斯沃尔德"
   },
   "an-dou": {
     "status": "found",
@@ -107,9 +108,9 @@
   },
   "annals-of-the-former-world": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/29532e60811e23806g019d21",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：Annals of the Former World / John McPhee，英文书名与作者精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/67532370811e7eb4bg018eab",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《昔日的世界》／约翰·麦克菲"
   },
   "arab-and-jew": {
     "status": "not_found",
@@ -142,8 +143,8 @@
   "bai-ban": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/6f232ab05d20736f2d6d72b",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《白板》/ [美]史蒂芬·平克，书名与作者精确匹配；版本出版时间为 2016-12，与本次中译本一致"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《白板》／[美]史蒂芬·平克，与站内《白板》对应同一作品"
   },
   "bao-jin-wo": {
     "status": "found",
@@ -160,8 +161,8 @@
   "bi-er-mi-le-tou-zi-zhi-dao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1f532e50811e75381g013e96",
-    "checkedAt": "2026-07-03",
-    "note": "比尔·米勒投资之道 / [美]珍妮特·洛 / score 130"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《比尔·米勒投资之道》／[美]珍妮特·洛，与站内《比尔·米勒投资之道》对应同一作品"
   },
   "bi-lu-wei-jian": {
     "status": "found",
@@ -190,14 +191,14 @@
   "bing-du-shi-xun-huan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b3a32a105ae271b3a408ea4",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《病毒循环》／亚当·潘恩伯格"
   },
   "black-flags": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/8f232390811e1c99bg01124e",
-    "checkedAt": "2026-08-28",
-    "note": "人工核验：Black Flags / Joby Warrick，书名与作者完全匹配"
+    "url": "https://weread.qq.com/web/bookDetail/657327f071838aff65740ec",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《黑旗：ISIS的崛起》／乔比·沃里克"
   },
   "bo-en-si-xin-qing-xu-liao-fa": {
     "status": "found",
@@ -219,8 +220,8 @@
   "cai-fu-zi-you-zhi-lu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c3f32970813ab9918g01643e",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《简单致富：实现财务自由与富足人生的路线图》／[美]J.L. 柯林斯，与站内《简单致富》对应同一作品"
   },
   "cai-wu-zhi-hui": {
     "status": "found",
@@ -265,8 +266,8 @@
   "chao-ji-yu-ce": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c49328f0811e76853g014e1c",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《超预测（市场版）》／菲利普·泰洛克 [美]丹·加德纳，与站内《超预测》对应同一作品"
   },
   "chao-yue-bai-sui": {
     "status": "found",
@@ -295,14 +296,14 @@
   "chen-yin-ke-de-zui-hou-20-nian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/ace32840726918fdace66d6",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《陈寅恪的最后二十年》 / 陆键东，数字写法不同，书名主体与作者匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《陈寅恪的最后二十年》／陆键东"
   },
   "cheng-gong-tou-zi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/cd632df05e4e8acd67586ab",
-    "checkedAt": "2026-07-03",
-    "note": "彼得·林奇的成功投资（典藏版） / [美]彼得·林奇 [美]约翰·罗瑟查尔德 / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《彼得·林奇的成功投资（典藏版）》／[美]彼得·林奇 [美]约翰·罗瑟查尔德，与站内《彼得·林奇的成功投资》对应同一作品"
   },
   "cheng-shi-de-sheng-li": {
     "status": "found",
@@ -319,13 +320,13 @@
   "chi-luo-luo-de-tong-ji-xue": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/7dc32220813ab885dg013f54",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《赤裸裸的统计学：除去大数据的枯燥外衣，呈现真实的数字之美》／[美]查尔斯·惠伦，与站内《赤裸裸的统计学》对应同一作品"
   },
   "chokepoints": {
     "status": "not_found",
-    "checkedAt": "2026-08-19",
-    "note": "manual-audit: no reliable match after English title, Edward Fishman, and Chinese title variant searches"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「经济战争时代」、「爱德华·费什曼」，未找到可靠的同书条目"
   },
   "chong-xin-ding-yi-gong-si": {
     "status": "found",
@@ -378,14 +379,14 @@
   "chuang-yi-xing-wei": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/5a332100813ab9d83g018139",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：《创意行为：存在即答案》 / [美]里克·鲁宾，书名主体与作者 Rick Rubin 精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《创意行为：存在即答案》／[美]里克·鲁宾，与站内《创意行为》对应同一作品"
   },
   "chuang-zuo-zai-yun-duan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/73532f90813ab9e0ag01623c",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: verified Chinese edition title and all three authors"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《创作在云端：平台与文化生产》／[荷]托马斯·玻尔  [荷]戴维·尼尔伯格  [美]布鲁克·埃琳·达菲，与站内《创作在云端：平台与文化生产》对应同一作品"
   },
   "ci-wei-yu-hu-li": {
     "status": "found",
@@ -395,13 +396,14 @@
   },
   "clearing-the-air": {
     "status": "not_found",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：按 Clearing the Air、完整副标题、Tim Smedley 及空气污染相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除无关城市空气治理教材"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「终结空气污染」、「提姆·史梅德利」，未找到可靠的同书条目"
   },
   "cobalt-red": {
-    "status": "not_found",
-    "checkedAt": "2026-08-19",
-    "note": "manual-audit: no reliable match after English title, Siddharth Kara, and Chinese title variant searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/4b732710813aba12ag011c8a",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《血钴：刚果人的血液如何支撑我们的生活（财之道丛书）》／[美]悉达多·卡拉，与站内《血钴》对应同一作品"
   },
   "common-ground": {
     "status": "not_found",
@@ -435,8 +437,8 @@
   "cure": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f7a32b70718032d9f7a4c60",
-    "checkedAt": "2026-09-14",
-    "note": "人工扩展搜索：中文版《自愈力的真相》/ 乔·马钱特，对应 Cure: A Journey into the Science of Mind Over Body；作者与心身医学、安慰剂主题精确匹配，排除 Timothy Brantley 的同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《自愈力的真相》／乔·马钱特"
   },
   "da-dao": {
     "status": "found",
@@ -447,8 +449,8 @@
   "da-er-wen-de-wei-xian-si-xiang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/76632d30813ab7a43g0100b9",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《达尔文的危险思想》/ 丹尼尔·丹尼特，书名与作者精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《达尔文的危险思想》／丹尼尔·丹尼特"
   },
   "da-guo-de-xing-shuai": {
     "status": "found",
@@ -471,8 +473,8 @@
   "dang-hu-xi-hua-wei-kong-qi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c7932e10813ab92fcg014bc9",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《当呼吸化为空气（修订版）》／[美]保罗·卡拉尼什，与站内《当呼吸化为空气》对应同一作品"
   },
   "dang-xia-de-li-liang": {
     "status": "found",
@@ -495,14 +497,14 @@
   "deng-xiao-ping-shi-dai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/00f325d05a490000f72bda9",
-    "checkedAt": "2026-09-11",
-    "note": "人工核验：《邓小平时代》/ 傅高义（Ezra Vogel），书名精确匹配，作者为同一人的中英文名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《邓小平时代》／傅高义"
   },
   "di-er-da-nao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f3032e10813ab88b1g011a36",
-    "checkedAt": "2026-07-03",
-    "note": "打造第二大脑 / [美]蒂亚戈·福特 / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《打造第二大脑》／[美]蒂亚戈·福特，与站内《打造第二大脑》对应同一作品"
   },
   "di-er-xing": {
     "status": "found",
@@ -513,8 +515,8 @@
   "di-liu-ci-da-mie-jue": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/51932190811e1cf4ag015e3b",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：《第六次大灭绝》/ Elizabeth Kolbert（伊丽莎白·寇伯特），书名与作者精确匹配；排除同作者不同译名版本《大灭绝时代》和套装"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《第六次大灭绝》／Elizabeth Kolbert 伊丽莎白寇伯特，与站内《大灭绝时代》对应同一作品"
   },
   "di-wu-xiang-xiu-lian": {
     "status": "found",
@@ -547,8 +549,8 @@
   "dong-wu-nong-chang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/ce332d50813abab1fg014aaa",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：《动物农场》/ [英]乔治·奥威尔，书名与作者精确匹配；排除同名异书、套装及解读书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《动物农场》／[英]乔治·奥威尔，与站内《动物农场》对应同一作品"
   },
   "dong-xue-qi-an": {
     "status": "found",
@@ -581,9 +583,10 @@
     "note": "对工作说不 / [英]大卫·弗雷恩 / score 130"
   },
   "dui-qi-wen-ti": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d2a32120811e7e9a5g015994",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《人机对齐》／布莱恩·克里斯汀"
   },
   "dui-quan-wei-de-fu-cong": {
     "status": "found",
@@ -593,28 +596,31 @@
   },
   "duo-ba-an-guo-du": {
     "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「多巴胺国度」、「安娜·兰布克」，未找到可靠的同书条目"
   },
   "elderhood": {
-    "status": "not_found",
-    "checkedAt": "2026-09-13",
-    "note": "人工核验：按 Elderhood / Louise Aronson、作者译名及重新定义衰老等副标题关键词扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除其他老龄主题书及埃利奥特·阿伦森作品"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/93b329d0813ab70f7g015836",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《银发世代：重新定义老年、反思医疗体系、重构老年生活》／路易斯·阿伦森，与站内《银发世代》对应同一作品"
   },
   "ends-of-the-earth": {
-    "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按英文书名、完整副标题、Neil Shubin、尼尔·舒彬及‘世界尽头/地球尽头’等可能译名搜索，未发现原书或可靠中文版本；已排除 Paul Theroux 的同名异书"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/0a032630813abb516g011d35",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《地球的尽头》／[美]尼尔·舒宾，与站内《地球的尽头》对应同一作品"
   },
   "eve": {
     "status": "not_found",
-    "checkedAt": "2026-09-18",
-    "note": "人工核验：按 Eve、完整英文副标题、Cat Bohannon 及女性身体相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书条目；已排除 EVE 游戏小说及其他同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「夏娃：女性身体如何推动两亿年的人类演化」、「夏娃」、「薄翰侬」，未找到可靠的同书条目"
   },
   "exactly": {
-    "status": "not_found",
-    "checkedAt": "2026-09-11",
-    "note": "人工核验：已按 Exactly / Simon Winchester 及完整副标题搜索；同名结果作者为落逸尘，属于异书，未找到可靠匹配"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/15232fe0813ab7dbag018317",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《追求精确》／西蒙·温切斯特"
   },
   "every-last-fish": {
     "status": "not_found",
@@ -641,8 +647,8 @@
   "facebook-xiao-ying": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/34a32340811e1a33fg016ba0",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《Facebook效应》／大卫·柯克帕特里克"
   },
   "fan-cui-ruo": {
     "status": "found",
@@ -657,21 +663,22 @@
     "note": "非暴力沟通（修订版） / 马歇尔·卢森堡 / score 130"
   },
   "fei-pang-dai-ma": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/62c3216071a5256362c483d",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《肥胖代码：减肥的秘密》／冯子新，与站内《肥胖代码》对应同一作品"
   },
   "fire-weather": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f1e32ad0813abb265g013c68",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：中文版《火灾天气：来自更炎热世界的真实故事》/ [加]约翰·瓦利恩特，对应 Fire Weather / John Vaillant；书名译名、作者及麦克默里堡野火主题精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《火灾天气：来自更炎热世界的真实故事（译见丛书）》／[加]约翰·瓦利恩特，与站内《火灾天气》对应同一作品"
   },
   "feng-chuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/38732fe0725a6913387e6bd",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: verified Chinese edition title and Jonah Berger"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《疯传：让你的产品、思想、行为像病毒一样入侵（经典平装版）》／乔纳·伯杰，与站内《疯传》对应同一作品"
   },
   "feng-ge-gan-jue": {
     "status": "found",
@@ -692,8 +699,8 @@
   },
   "feng-yu-she-hui": {
     "status": "not_found",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：按《丰裕社会》、The Affluent Society 与 John Kenneth Galbraith 搜索，未发现原书或可靠中文版本；排除刘敏所著《丰裕社会的贫困及其治理》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「丰裕社会」、「约翰·肯尼思·加尔布雷思」，未找到可靠的同书条目"
   },
   "fu-ba-ba-qiong-ba-ba": {
     "status": "found",
@@ -710,14 +717,14 @@
   "fu-lan-ke-lin-zi-zhuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/d1c32df05d106ad1cef92c8",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：富兰克林自传（经典译林） / 本杰明·富兰克林，书名与 Benjamin Franklin 均匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《富兰克林自传（经典译林）》／[美]本杰明·富兰克林，与站内《富兰克林自传》对应同一作品"
   },
   "fu-lei-de-li-ke-dao-ge-la-si-zi-zhuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/e81324305df8e6e810e340b",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：美国奴隶弗雷德里克·道格拉斯的人生自述 / 弗雷德里克·道格拉斯，为同一部 1845 年自传的中文题名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《美国奴隶弗雷德里克·道格拉斯的人生自述》／[美]弗雷德里克·道格拉斯，与站内《弗雷德里克·道格拉斯自传》对应同一作品"
   },
   "fu-neng": {
     "status": "found",
@@ -787,8 +794,8 @@
   "ge-lan-te-jiang-jun-hui-yi-lu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f5a32f50811e506c0g0175f6",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：格兰特将军回忆录 / 格兰特，中文书名与作者译名均精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《格兰特将军回忆录》／[美]格兰特，与站内《格兰特将军回忆录》对应同一作品"
   },
   "ge-wai-de-huo-fa": {
     "status": "found",
@@ -810,8 +817,8 @@
   },
   "gong-jian-she-qu": {
     "status": "not_found",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: no reliable match after English title, all three authors, and Chinese topic searches; no official Chinese edition found"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「聚众商机」、「贝莉·理查森」，未找到可靠的同书条目"
   },
   "gong-tong-ji-jin-chang-shi": {
     "status": "found",
@@ -833,9 +840,9 @@
   },
   "goodbye-to-all-that": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/ab8328c0811e232fcg014e51",
-    "checkedAt": "2026-08-28",
-    "note": "人工核验：《Goodbye to All That》/ Robert Graves，书名与作者均精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/05b32c80813ab8296g0124fb",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《向一切告别》／[英] 罗伯特·格雷夫斯，与站内《向一切告别》对应同一作品"
   },
   "gou-tong-de-ben-zhi": {
     "status": "found",
@@ -846,8 +853,8 @@
   "gu-la-ge": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/bdd32740811e1a69ag0170dc",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《古拉格》 / 安妮·阿普尔鲍姆，书名精确、作者为中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《古拉格》／[美]安妮·阿普尔鲍姆，与站内《古拉格》对应同一作品"
   },
   "gu-piao-da-zuo-shou-hui-yi-lu": {
     "status": "found",
@@ -894,8 +901,8 @@
   "guang-dao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/e1832420813abb25dg013a3d",
-    "checkedAt": "2026-09-15",
-    "note": "人工核验：《广岛》/ [美]约翰·赫西，书名与作者精确匹配；排除玛格丽特·杜拉斯同名作品及二手核爆报道"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《广岛》／[美]约翰·赫西，与站内《广岛》对应同一作品"
   },
   "gui-mo": {
     "status": "found",
@@ -912,8 +919,8 @@
   "guo-jia-wei-shen-me-hui-po-chan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/6ed320a0811e8205cg012eca",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《国家为什么会破产》/ [美]瑞·达利欧，书名精确匹配，作者为 Ray Dalio 的通行中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《国家为什么会破产》／[美]瑞·达利欧，与站内《国家为什么会破产》对应同一作品"
   },
   "guo-jia-wei-shen-me-hui-shi-bai": {
     "status": "found",
@@ -960,8 +967,8 @@
   "hao-zhan-l-e-huai-zhan-l-e": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/2cf32d005e0d5a2cf723129",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《好战略，坏战略（畅销版）》／理查德·鲁梅尔特，与站内《好战略，坏战略》对应同一作品"
   },
   "he-yue-de-jing-ji-hou-guo": {
     "status": "found",
@@ -983,13 +990,14 @@
   },
   "hei-xiao-zi": {
     "status": "not_found",
-    "checkedAt": "2026-09-02",
-    "note": "No high-confidence WeRead match from title search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「黑孩子」、「理查德·赖特」，未找到可靠的同书条目"
   },
   "hello-world": {
-    "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按英文书名、Hannah Fry、汉娜·弗莱及算法时代相关译名搜索；作者结果仅有《爱情数学》和套装，未发现 Hello World 或可靠中文译本匹配"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ca3324e0811e77de8g0105f3",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《算法统治世界》／[英]汉娜·弗莱，与站内《算法统治世界》对应同一作品"
   },
   "hidden-guests": {
     "status": "not_found",
@@ -999,8 +1007,8 @@
   "hirohito-and-the-making-of-modern-japan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b3d32a40813ab6c6bg018076",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《真相：裕仁天皇与现代日本的形成》/ 赫伯特·比克斯，官方中文译名与 Herbert P. Bix 原书精确匹配；排除题名不同的《真相：裕仁天皇与侵华战争》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《真相：裕仁天皇与现代日本的形成》／赫伯特•比克斯，与站内《真相：裕仁天皇与现代日本的形成》对应同一作品"
   },
   "his-name-is-george-floyd": {
     "status": "not_found",
@@ -1010,8 +1018,8 @@
   "hot-air": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/5b1328e0813abb3dcg013cf0",
-    "checkedAt": "2026-09-14",
-    "note": "人工扩展搜索：中文版《谎言的温度》/ [英]彼得·斯托特，对应 Hot Air / Peter Stott；作者与气候归因、气候否认主题精确匹配，排除 David MacKay 的 Sustainable Energy 同名片段"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《谎言的温度》／[英]彼得·斯托特，与站内《谎言的温度》对应同一作品"
   },
   "house-of-huawei": {
     "status": "not_found",
@@ -1030,8 +1038,8 @@
   },
   "how-to-change-a-memory": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：以英文书名、Steve Ramirez、改变记忆、如何改变记忆分别搜索，未找到书名与作者可靠匹配的微信读书版本；排除 Steven Ramirez 的近似作者作品及记忆术、创伤疗法等异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「记忆操控」、「史蒂夫·拉米瑞兹」，未找到可靠的同书条目"
   },
   "hua-shan-jiang-tou-sun-zi-bing-fa": {
     "status": "found",
@@ -1048,8 +1056,8 @@
   "huang-se-qiang-zhi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/34b32580813ab9c62g012ec8",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：黄色墙纸（轻经典） / [美]夏洛特·帕金斯·吉尔曼，书名与 Charlotte Perkins Gilman 均匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《黄色墙纸（轻经典）》／[美]夏洛特·帕金斯·吉尔曼，与站内《黄色墙纸》对应同一作品"
   },
   "hun-dun": {
     "status": "found",
@@ -1066,54 +1074,54 @@
   "hu-xi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/78432500813ab7b46g0144a1",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：中文版《呼吸革命》/ 詹姆斯·内斯特，对应 James Nestor 的 Breath；作者、呼吸演化与训练主题精确匹配，排除特德·姜小说及其他同名作品"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《呼吸革命》／詹姆斯·内斯特"
   },
   "i-heard-there-was-a-secret-chord": {
     "status": "not_found",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：按 I Heard There Was a Secret Chord、Music as Medicine、Daniel J. Levitin 及中文译名关键词搜索，仅出现作者的其他著作，未找到可靠匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「音乐治疗大脑」、「丹尼尔·列维廷」，未找到可靠的同书条目"
   },
   "igen": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c2232db0811e64494g0137e2",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《IGEN》／JEAN M. TWENGE，与站内《i世代报告》对应同一作品"
   },
   "imperial-reckoning": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/97632f60811e2c52dg01757a",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《Imperial Reckoning》/ Caroline Elkins，英文书名与作者均精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《Imperial Reckoning》／Caroline Elkins，与站内《Imperial Reckoning》对应同一作品"
   },
   "in-pursuit-of-memory": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/440325a0811e4d6e9g01439c",
-    "checkedAt": "2026-09-13",
-    "note": "人工扩展搜索：简体中文版《追寻记忆：与阿尔茨海默病抗争》/ [英]约瑟夫·杰贝利，与 In Pursuit of Memory 的书名译名、作者和主题精确匹配；排除无关文化研究条目"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《追寻记忆：与阿尔茨海默病抗争》／[英]约瑟夫·杰贝利，与站内《追寻记忆：与阿尔茨海默病抗争》对应同一作品"
   },
   "infinite-powers": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b0832f2072341655b087db3",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：中文版《微积分的力量》/ 史蒂夫·斯托加茨；内容简介与 Infinite Powers 的微积分史、无穷原则及科技应用完全对应，排除同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《微积分的力量》／史蒂夫·斯托加茨"
   },
   "inventing-ourselves": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/acf321e0811e39e91g014de7",
-    "checkedAt": "2026-09-19",
-    "note": "人工核验：简体中文版《青少年大脑使用说明书》/ [英]萨拉-杰恩·布莱克莫尔，作者与原书一致，简介准确对应 Inventing Ourselves 的青少年大脑发育、行为与自我认同主题"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《青少年大脑使用说明书》／[英]萨拉-杰恩·布莱克莫尔，与站内《青少年大脑使用说明书》对应同一作品"
   },
   "invisible-child": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/032320f0813ab7c77g0140d1",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《看不见的孩子》 / 安德里亚·埃利奥特，中文译名与作者匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《看不见的孩子》／安德里亚·埃利奥特"
   },
   "jellyfish-age-backwards": {
     "status": "not_found",
-    "checkedAt": "2026-09-11",
-    "note": "人工核验：按 Jellyfish Age Backwards / Nicklas Brendborg 搜索，微信读书未返回候选，未找到可靠匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「为何龙虾不会变老，水母会逆龄，人类却无法？」、「尼可拉斯·潘柏格」，未找到可靠的同书条目"
   },
   "ji-e-de-sheng-shi": {
     "status": "found",
@@ -1122,15 +1130,16 @@
     "note": "人工核验：《饥饿的盛世：乾隆时代的得与失》 / 张宏杰，书名与作者完全匹配"
   },
   "ji-jiang-dao-lai-de-lang-chao": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/5ee32670813ab95cfg019619",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《浪潮将至（比尔·盖茨推荐）》／[英]穆斯塔法·苏莱曼  [英]迈克尔·巴斯卡尔，与站内《浪潮将至》对应同一作品"
   },
   "ji-jing-de-chun-tian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/17c323f0813ab6fb3g0116dc",
-    "checkedAt": "2026-07-03",
-    "note": "寂静的春天（英文原版）Silent Spring / Rachel Carson / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《寂静的春天（英文原版）Silent Spring》／Rachel Carson，与站内《寂静的春天》对应同一作品"
   },
   "ji-kang-chuan": {
     "status": "found",
@@ -1171,8 +1180,8 @@
   "ji-yin-chuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b7e323205e1270b7e5f9c0a",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《基因传》/ 悉达多·穆克吉，书名与作者精确匹配；排除精华版、解读书、套装及《基因传：众生之源》精装异版本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《基因传》／悉达多·穆克吉"
   },
   "jia-zhi-tou-zi-cong-ge-lei-e-mu-dao-ba-fei-te": {
     "status": "found",
@@ -1187,8 +1196,8 @@
   },
   "jian-shi-zi-ben-zhu-yi-shi-dai": {
     "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「监控资本主义时代」、「肖莎娜·祖博夫」，未找到可靠的同书条目"
   },
   "jian-shu-you-jian-lin": {
     "status": "found",
@@ -1199,8 +1208,8 @@
   "jiang-cheng": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/0e8325d05e1d650e86e99c7",
-    "checkedAt": "2026-09-15",
-    "note": "人工核验：《江城》/ 彼得·海斯勒，与 Peter Hessler 原书的中文书名和作者译名精确匹配；排除作者名为‘江城’的同名无关作品"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《江城》／彼得·海斯勒，与站内《江城》对应同一作品"
   },
   "jiao-hun": {
     "status": "found",
@@ -1274,9 +1283,10 @@
     "note": "精要主义 / [美]格雷戈·麦吉沃恩 / score 130"
   },
   "jing-yi-chan-pin-shou-ce": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ea932fb0811e7ebe9g01667d",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《精益产品开发手册》／丹·奥尔森"
   },
   "jing-yi-chuang-ye": {
     "status": "found",
@@ -1310,8 +1320,8 @@
   "ju-ta-sha-ji": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/156323c0811e1a599g01072f",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《巨塔杀机》 / 劳伦斯·赖特，书名精确、作者为中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《巨塔杀机》／[美] 劳伦斯·赖特，与站内《巨塔杀机》对应同一作品"
   },
   "ju-wai-ren": {
     "status": "found",
@@ -1328,8 +1338,8 @@
   "jun-luo-wan-xiang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/4a332a20811e81be2g0124d0",
-    "checkedAt": "2026-09-14",
-    "note": "人工核验：《菌络万象》/ [英]默林·谢尔德雷克，与 Merlin Sheldrake 原书的书名和作者精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《菌络万象》／[英]默林·谢尔德雷克，与站内《菌络万象》对应同一作品"
   },
   "ka-pian-bi-ji-xie-zuo-fa": {
     "status": "found",
@@ -1346,8 +1356,8 @@
   "kan-bu-jian-de-nv-xing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f1532210813ab7439g018060",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《看不见的女性》／卡罗琳·克里亚多·佩雷斯"
   },
   "kan-bu-jian-de-zhong-dong": {
     "status": "found",
@@ -1405,8 +1415,8 @@
   "ku-se-de-ling-yao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/cd332570813ab99dfg015ec7",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：《苦涩的灵药：沙利度胺、“海豹儿”和拉响警报的英雄》/ [美]詹妮弗·范德贝斯，书名主体、作者及主题精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《苦涩的灵药：沙利度胺、“海豹儿”和拉响警报的英雄》／[美]詹妮弗·范德贝斯，与站内《苦涩的灵药》对应同一作品"
   },
   "kua-yue-hong-gou": {
     "status": "found",
@@ -1471,20 +1481,20 @@
   "lie-ning-de-fen-mu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b1732980811e1bf35g0126b1",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：《列宁的坟墓：一座共产帝国的崩溃》/ 大卫·雷姆尼克，中文书名与 David Remnick 的通行译名精确匹配；微信读书条目为全两册上卷入口"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《列宁的坟墓：一座共产帝国的崩溃（上卷/全两册）》／大卫.雷姆尼克，与站内《列宁的坟墓》对应同一作品"
   },
   "life-on-the-edge": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/297321b0811e1b286g018411",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：Life on the Edge: The Coming of Age of Quantum Biology / Jim Al-Khalili、Johnjoe McFadden，英文书名、副标题与两位作者均精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/fe232a30813ab843dg0117dc",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《神秘的量子生命（2023新版）》／吉姆·艾尔-哈利利 约翰乔·麦克法登，与站内《神秘的量子生命》对应同一作品"
   },
   "life-s-greatest-secret": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/da6327f0813ab9153g018459",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：中文版《解码生命：破解遗传密码的竞赛与 20 世纪以来的分子生物学革命》/ [英]马修·科布，作者与原书主题精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《解码生命：破解遗传密码的竞赛与 20 世纪以来的分子生物学革命》／[英]马修·科布，与站内《解码生命》对应同一作品"
   },
   "lin-jia-de-bai-wan-fu-weng": {
     "status": "found",
@@ -1504,9 +1514,10 @@
     "note": "manual-audit: no reliable WeRead match after title and author searches"
   },
   "liquid": {
-    "status": "not_found",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：按 Liquid / Mark Miodownik 搜索，未发现书名与作者可靠匹配的微信读书版本；候选均为无关材料、流体教材或技术规范"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/eec327e0813ab83ceg017d5f",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《迷人的液体》／马克•米奥多尼克，与站内《迷人的液体》对应同一作品"
   },
   "liu-qing-xi-fang-xian-dai-si-xiang-jiang-yi": {
     "status": "found",
@@ -1515,9 +1526,10 @@
     "note": "人工核验：《刘擎西方现代思想讲义》 / 刘擎，书名与作者均精确匹配"
   },
   "locking-up-our-own": {
-    "status": "not_found",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：按英文书名及 James Forman Jr. 搜索，未找到可靠匹配"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/7e232390813ab85e5g010dc1",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《当代美国的罪与罚》／詹姆斯•福曼，与站内《当代美国的罪与罚》对应同一作品"
   },
   "lu-xi-fa-xiao-ying": {
     "status": "found",
@@ -1534,8 +1546,8 @@
   "lun-ren-xing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/4c932c20811e5a161g016bbf",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：《论人性》/ 威尔逊，书名精确匹配且作者为 Edward O. Wilson 的中文译名；排除休谟《人性论》及同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《论人性》／威尔逊，与站内《论人性》对应同一作品"
   },
   "lun-yu": {
     "status": "found",
@@ -1546,13 +1558,13 @@
   "lun-zi-you": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/90432eb0813ab8148g0133a8",
-    "checkedAt": "2026-08-17",
-    "note": "人工核验：书名《论自由》，作者[英]约翰·穆勒，与目标原著一致"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《论自由》／[英]约翰·穆勒，与站内《论自由》对应同一作品"
   },
   "ma-ma-ce-shi": {
     "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「妈妈测试」、「罗伯·菲茨帕特里克」，未找到可靠的同书条目"
   },
   "man-sheng-chan-li": {
     "status": "found",
@@ -1592,8 +1604,8 @@
   "mei-li-xin-shi-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/eb232b50813abbb25g013c9c",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：《美丽新世界（英文原版）Brave New World》/ Aldous Huxley，中文书名、英文原名与作者均匹配；排除亦舒同名作品及《重返美丽新世界》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《美丽新世界（英文原版）Brave New World》／Aldous Huxley，与站内《美丽新世界》对应同一作品"
   },
   "mei-qi-deng-xiao-ying": {
     "status": "found",
@@ -1604,8 +1616,8 @@
   "mei-xue-yu-zheng-zhi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/2b732840813aba0e0g016875",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：《美学与政治》/ 西奥多·阿多诺、瓦尔特·本雅明、恩斯特·布洛赫，书名及主要作者精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《美学与政治》／[德]西奥多·阿多诺   [德]瓦尔特·本雅明   [德]恩斯特·布洛赫，与站内《美学与政治》对应同一作品"
   },
   "mei-zhou-gong-zuo-4-xiao-shi": {
     "status": "found",
@@ -1616,14 +1628,14 @@
   "mi-ren-de-cai-liao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/82332c50813ab83ceg016aa8",
-    "checkedAt": "2026-09-15",
-    "note": "人工核验：《迷人的材料》/ 马克·米奥多尼克，与 Mark Miodownik 原书的中文书名和作者译名均精确匹配；排除合辑版"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《迷人的材料》／马克•米奥多尼克，与站内《迷人的材料》对应同一作品"
   },
   "mi-xi-xi-bi-he-shang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c1632ce0813abb7c1g012926",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：Life on the Mississippi 密西西比河上（英文原版，插图版） / 马克·吐温，排除青少改写本后采用原著版本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《Life on the Mississippi密西西比河上（英文原版，有大量原版插图）》／[美]马克·吐温，与站内《密西西比河上》对应同一作品"
   },
   "min-fa-dian-yu-ri-chang-sheng-huo": {
     "status": "found",
@@ -1633,20 +1645,20 @@
   },
   "minor-feelings": {
     "status": "not_found",
-    "checkedAt": "2026-09-02",
-    "note": "No high-confidence WeRead match from title search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「我受伤，故而我存在」、「洪朴凯西」，未找到可靠的同书条目"
   },
   "my-early-life": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/2a332a50811e21a64g010082",
-    "checkedAt": "2026-08-28",
-    "note": "人工核验：My Early Life / Winston S. Churchill，书名与作者匹配"
+    "url": "https://weread.qq.com/web/bookDetail/8ed32690811e80ba4g018fb5",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《我的早年生活》／[英]W.L.丘吉尔，与站内《我的早年生活》对应同一作品"
   },
   "n-shi-pin-cha": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/997328307239e753997d337",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《女士品茶（新版）》／[美]戴维·萨尔斯伯格，与站内《女士品茶》对应同一作品"
   },
   "na-wa-er-bao-dian": {
     "status": "found",
@@ -1655,9 +1667,10 @@
     "note": "纳瓦尔宝典 / 埃里克·乔根森 / score 130"
   },
   "nai-li": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/22232e00813ab81f2g0108ce",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《忍耐力：关于大脑和身体极限的科学》／亚力克斯·哈钦森，与站内《忍耐力》对应同一作品"
   },
   "nan-jing-da-tu-sha": {
     "status": "found",
@@ -1674,8 +1687,8 @@
   "nei-rong-xian-jing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/a4f32850811e64482g0122cc",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: exact English title, subtitle, and Bharat Anand match; no Chinese edition found"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《The Content Trap: A Strategist'S Guide To Digita》／Bharat Anand，与站内《引火线》对应同一作品"
   },
   "ni-de-jiang-luo-san-shi-shen-me-yan-se": {
     "status": "found",
@@ -1692,13 +1705,13 @@
   "no-logo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/75332e705e1092753cc63a6",
-    "checkedAt": "2026-08-30",
-    "note": "人工扩展搜索：《NO LOGO：颠覆品牌全球统治》/ 娜奥米·克莱恩，与 No Logo / Naomi Klein 的题名、中文副标题和作者译名匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《NO LOGO：颠覆品牌全球统治》／娜奥米·克莱恩"
   },
   "nuts-and-bolts": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按英文书名、完整副标题 Seven Small Inventions That Changed the World in a Big Way、Roma Agrawal、作者音译及‘七个/七种小发明’等可能译名搜索，未发现原书或可靠中文版本；已排除 Jon Elster 的同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「小零件改变大世界」、「罗玛·艾葛拉瓦」，未找到可靠的同书条目"
   },
   "nv-quan-bian-hu": {
     "status": "found",
@@ -1709,8 +1722,8 @@
   "nv-xing-de-ao-mi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/ba232180811e80546g0176d4",
-    "checkedAt": "2026-08-31",
-    "note": "人工核验：《女性的奥秘》/ [美]贝蒂·弗里丹；书名精确匹配，作者为 Betty Friedan 的通行中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《女性的奥秘》／[美]贝蒂·弗里丹，与站内《女性的奥秘》对应同一作品"
   },
   "our-brains-our-selves": {
     "status": "not_found",
@@ -1750,8 +1763,8 @@
   "ping-mian-guo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/309326c0813ab8223g010a55",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：平面国 / [英]埃德温·A.艾勃特，中文译名与 Edwin A. Abbott 均匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《平面国》／[英]埃德温·A.艾勃特，与站内《平面国》对应同一作品"
   },
   "ping-tai-ge-ming": {
     "status": "found",
@@ -1762,8 +1775,8 @@
   "qi-dian-lin-jin": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/85d326e05c079285d02a273",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《奇点临近》／雷·库兹韦尔"
   },
   "qi-hao": {
     "status": "found",
@@ -1774,8 +1787,8 @@
   "qi-hou-jing-ji-yu-ren-lei-wei-lai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/85132ca0813ab9ecdg0167f9",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《气候经济与人类未来》／[美]比尔·盖茨，与站内《气候经济与人类未来》对应同一作品"
   },
   "qi-huo-shi-chang-de-ji-suan-ji-fen-xi": {
     "status": "not_found",
@@ -1785,14 +1798,14 @@
   "qi-miao-de-sheng-ming": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/08332c50724ad3440838e70",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：《奇妙的生命》/ 斯蒂芬·杰·古尔德，书名与作者精确匹配；排除同名幼儿绘本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《奇妙的生命》／斯蒂芬·杰·古尔德"
   },
   "qi-shi-lu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c3b32f70811e360efg010362",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《启示录： 如何创造用户喜爱的产品（第二版）》／马丁·卡根　，与站内《启示录》对应同一作品"
   },
   "qiang-pao-bing-jun-yu-gang-tie": {
     "status": "found",
@@ -1880,8 +1893,8 @@
   "rang-chuang-yi-geng-you-nian-xing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/02f323405cedc502f95f0ae",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: verified Chinese edition title and both Heath authors"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《让创意更有黏性：创意直抵人心的六条路径（希思作品系列）》／奇普·希思 丹·希思，与站内《让创意更有黏性》对应同一作品"
   },
   "ren-de-jing-kuang": {
     "status": "found",
@@ -1890,9 +1903,10 @@
     "note": "人的境况 / 汉娜·阿伦特 / score 130"
   },
   "ren-ji-gong-zhi": {
-    "status": "not_found",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: no reliable WeRead match after title and author searches"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a4832270811e81fa6g015d15",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《共智时代》／[美]伊桑·莫里克，与站内《共智时代》对应同一作品"
   },
   "ren-jian-ci-hua": {
     "status": "found",
@@ -1938,8 +1952,8 @@
   },
   "right-kind-of-wrong": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：依次按英文书名、常见译名“正确犯错”“正确的错”和作者 Amy Edmondson / 艾米·埃德蒙森搜索；仅找到作者的《无畏的组织》等异书，没有书名与作者同时匹配的版本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「正确犯错」、「艾米·埃德蒙森」，未找到可靠的同书条目"
   },
   "ru-he-kuai-su-liao-jie-yi-ge-hang-ye": {
     "status": "found",
@@ -1974,8 +1988,8 @@
   "sai-er-bo-en-bo-wu-zhi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/856324a05e44d5856685761",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：塞尔伯恩博物志 / 吉尔伯特·怀特，书名与作者均精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《塞尔伯恩博物志》／吉尔伯特·怀特"
   },
   "save-the-cat-xie-qing-shao-nian-xiao-shuo": {
     "status": "not_found",
@@ -1985,19 +1999,20 @@
   "science-fictions": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c20320e0813abbeabg012cea",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《被败坏的学术：科研中的造假、偏见、疏忽与炒作》 / [英]斯图尔特·里奇；中文书名对应 Science Fictions，作者精确匹配，排除同名科幻类结果"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《被败坏的学术：科研中的造假、偏见、疏忽与炒作》／[英]斯图尔特·里奇，与站内《被败坏的学术》对应同一作品"
   },
   "seven-elements-that-have-changed-the-world": {
-    "status": "not_found",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：按 Seven Elements That Have Changed the World / John Browne 搜索，微信读书未返回任何候选"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/554328507159f19b5545007",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《我们如何走到今天：改变世界的7种元素》／约翰·布朗"
   },
   "shang-di-zhi-tou-zi-ma": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/bd5320f07186f617bd52222",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《上帝掷骰子吗？：量子物理史话（升级版）》 / 曹天元；书名、作者及本次 2019 升级版均精确匹配，排除王了了同名异书与后续精装修订版"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《上帝掷骰子吗？：量子物理史话（升级版）》／曹天元，与站内《上帝掷骰子吗？》对应同一作品"
   },
   "shang-ye-mo-shi-xin-sheng-dai": {
     "status": "found",
@@ -2061,20 +2076,20 @@
   "she-ji-chong-ci": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b7832d607235ae06b7875c2",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《设计冲刺：谷歌风投如何5天完成产品迭代》／杰克·纳普 约翰·泽拉茨基 布拉登·科维茨，与站内《设计冲刺》对应同一作品"
   },
   "she-ji-xin-li-xue": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/ad932ca05d1509ad998f4ff",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《设计心理学（1-4册）》／唐纳德·A·诺曼，与站内《设计心理学》对应同一作品"
   },
   "she-jiao-mei-ti-yu-le": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/52a323a0811e8a9a3g010294",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: verified Chinese edition title and both authors"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《社交媒体娱乐》／斯图尔特·坎宁安 大卫·克雷格，与站内《社交媒体娱乐》对应同一作品"
   },
   "she-qun-ying-xiao-yu-yun-ying": {
     "status": "found",
@@ -2138,8 +2153,8 @@
   "shi-jian-jian-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/5c6321005a99cf5c649fade",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《时间简史》/ 史蒂芬·霍金，原作与作者精确匹配；平台为 2018 年版本，本次原文为 2010 年插图本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《时间简史（第一推动丛书·宇宙系列）》／史蒂芬·霍金，与站内《时间简史》对应同一作品"
   },
   "shi-jie-guan": {
     "status": "found",
@@ -2162,8 +2177,8 @@
   "shi-kong-de-nong-ye": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/169320b0811e360b8g01360e",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《失控的农业：廉价肉品的真实代价》／[英]菲利普·林伯里 伊莎贝尔·奥克肖特，与站内《失控的农业》对应同一作品"
   },
   "shi-shi": {
     "status": "found",
@@ -2179,8 +2194,8 @@
   },
   "shi-you-feng-yun": {
     "status": "not_found",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：同名候选作者为毛华鹤，并非 Daniel Yergin；按作者及英文原名继续搜索仍无可靠匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「石油风云」、「丹尼尔·耶金」，同名条目作者不同，耶金所著《石油大博弈》仅检到下册"
   },
   "shi-yu-ji-xian": {
     "status": "found",
@@ -2191,8 +2206,8 @@
   "shi-zi-de-yong-tu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/d3c32be071ec9881d3cedab",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：《识字的用途：工人阶级生活面貌》/ 理查德·霍加特，书名主体与作者精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《识字的用途：工人阶级生活面貌》／理查德·霍加特，与站内《识字的用途》对应同一作品"
   },
   "shu-niu": {
     "status": "found",
@@ -2203,8 +2218,8 @@
   "shuang-luo-xuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f18320c07182db1ff182119",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《双螺旋：发现DNA结构的故事》/ 詹姆斯·沃森，平台 ISBN 9787532770717 与本次原文一致"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《双螺旋：发现DNA结构的故事（睿文馆）》／詹姆斯·沃森，与站内《双螺旋》对应同一作品"
   },
   "shuo-fu": {
     "status": "found",
@@ -2243,9 +2258,10 @@
     "note": "manual-audit: verified from WeRead search result title and author variant"
   },
   "six-impossible-things": {
-    "status": "not_found",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：按 Six Impossible Things / John Gribbin 搜索，未发现书名与作者可靠匹配的微信读书版本；排除《爱丽丝梦游仙境》、无关通识套装及仅在套装作者中提及 John Gribbin 的条目"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/489326b071f8efcf489f4a2",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《不可能的六件事：一看就懂的量子物理课》／约翰·格里宾，与站内《不可能的六件事》对应同一作品"
   },
   "slavery-by-another-name": {
     "status": "not_found",
@@ -2282,9 +2298,10 @@
     "note": "随机漫步的傻瓜 / 纳西姆·尼古拉斯·塔勒布 / score 130"
   },
   "supremacy": {
-    "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按 Supremacy 与 Parmy Olson 搜索，未找到书名、作者相符的版本；最高候选为 John Piper 的 A Godward Life，属于误匹配"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/b8232980813aba436g011f16",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《至高无上：一场颠覆世界的人工智能竞赛》／[美]帕米·奥尔森，与站内《至高无上》对应同一作品"
   },
   "tai-yang-de-yin-ying": {
     "status": "found",
@@ -2301,19 +2318,19 @@
   "tan-xing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/ead32b40718caa23eadedc6",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《弹性》／列纳德·蒙洛迪诺"
   },
   "testament-of-youth": {
     "status": "not_found",
-    "checkedAt": "2026-08-31",
-    "note": "manual-audit: searched Testament of Youth, Vera Brittain, 维拉·布里顿/布里坦, 青春誓言, 青春作证 and 青春的证明; results were unrelated books, including 森村诚一《青春的证明》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「Testament of Youth」、「维拉·布里顿」，未找到可靠的同书条目"
   },
   "testosterone-rex": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1b632f8071665a9e1b6668e",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：微信版《荷尔蒙战争》/ 科迪莉亚·法恩；获奖信息及果蝇、性选择、大脑、风险、睾酮、雷曼姐妹和玩具性别化等章节与 Testosterone Rex 完整对应"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《荷尔蒙战争》／科迪莉亚·法恩"
   },
   "the-age-of-alchemy": {
     "status": "not_found",
@@ -2322,20 +2339,20 @@
   },
   "the-ants": {
     "status": "not_found",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：按 The Ants 与 Bert Hölldobler、Edward O. Wilson 搜索，未发现原书；排除同作者但内容与篇幅不同的 Journey to the Ants"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「The Ants」、「博尔特·霍尔多布勒」，未找到可靠的同书条目"
   },
   "the-beak-of-the-finch": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/20e32b40811e2268eg0114b6",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：The Beak of the Finch: A Story of Evolution in Our Time / Jonathan Weiner，书名主体、副标题及作者匹配"
+    "url": "https://weread.qq.com/web/bookDetail/cd7321d0811e1a555g011ad3",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《鸟喙》／[英]乔纳生·威诺，与站内《鸟喙：加拉帕戈斯群岛考察记》对应同一作品"
   },
   "the-dead-hand": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/45b326d0811e2b8ffg011d6c",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：The Dead Hand / David Hoffman，与 David E. Hoffman 的书名和作者精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/c7832500811e336e3g019279",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《死亡之手：超级大国冷战军备竞赛及苏联解体后的核生化武器失控危局》／[美] 戴维·霍夫曼，与站内《死亡之手》对应同一作品"
   },
   "the-double-x-economy": {
     "status": "not_found",
@@ -2343,43 +2360,44 @@
     "note": "人工核验：英文书名无候选；继续搜索“双X经济”“双重X经济”和 Linda Scott，均无书名与作者可靠匹配"
   },
   "the-exceptions": {
-    "status": "not_found",
-    "checkedAt": "2026-09-02",
-    "note": "No high-confidence WeRead match from title search"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/ca8322f0813abc0d5g010841",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《破例者（译文纪实）》／[美]凯特·泽尼克，与站内《破例者》对应同一作品"
   },
   "the-female-eunuch": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/13332ed0811e21fa4g01822a",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：The Female Eunuch / Germaine Greer，英文书名与作者均精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/f3132d70813abc410g015f3b",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《被塑造的女性》／[澳]杰梅茵·格里尔，与站内《被塑造的女性》对应同一作品"
   },
   "the-good-war": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/42f324c0811e243f6g016d2a",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：The Good War / Studs Terkel，英文书名与作者均精确匹配；排除研究该书的《斯特兹·特克尔和他的〈“好战争”〉》"
+    "url": "https://weread.qq.com/web/bookDetail/51a32360811e1dc60g0133eb",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《劫后人语》／斯特兹·特克尔"
   },
   "the-great-pretender": {
     "status": "not_found",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：按 The Great Pretender / Susannah Cahalan 搜索，候选均为书名和作者无关的作品，未发现可靠微信读书版本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「大伪装者」、「苏珊娜·卡哈兰」，未找到可靠的同书条目"
   },
   "the-great-tradition": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f2532460813ab9fb6g01605c",
-    "checkedAt": "2026-08-30",
-    "note": "人工扩展搜索：中文第三版《伟大的传统》/ [英]利维斯，与 The Great Tradition / F. R. Leavis 的书名译名和作者均匹配；排除 Annette T. Rubinstein 的同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《伟大的传统（第三版）》／[英]利维斯，与站内《伟大的传统》对应同一作品"
   },
   "the-greywacke": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按 The Greywacke、Nick Davidson、灰瓦克、杂砂岩及副标题人物组合扩展搜索，未发现书名与作者可靠匹配的微信读书版本；已排除无关地质教材与科学史书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「失落的三亿年」、「尼克·戴维森」，未找到可靠的同书条目"
   },
   "the-hunt-for-vulcan": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/ec8329b0811e242bfg01788e",
-    "checkedAt": "2026-09-15",
-    "note": "人工核验：英文完整版 The Hunt for Vulcan / Thomas Levenson，书名、作者及副标题均精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/74132be0719ea04b7412caf",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《追捕祝融星：爱因斯坦如何摧毁了一颗行星》／托马斯·利文森，与站内《追捕祝融星》对应同一作品"
   },
   "the-interesting-narrative-of-olaudah-equiano": {
     "status": "found",
@@ -2390,14 +2408,14 @@
   "the-most-perfect-thing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f63328b0811e3dbfeg013fba",
-    "checkedAt": "2026-09-15",
-    "note": "人工扩展搜索：中文版《剥开鸟蛋的秘密（自然文库）》/ Tim Birkhead，对应 The Most Perfect Thing；作者及鸟卵形成、演化与研究主题精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《剥开鸟蛋的秘密(自然文库)》／Tim Birkhead，与站内《剥开鸟蛋的秘密》对应同一作品"
   },
   "the-perfect-theory": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/82632650811e230fdg0104a0",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：The Perfect Theory / Prof. Pedro G. Ferreira，英文书名与作者精确匹配，作者头衔不影响判断"
+    "url": "https://weread.qq.com/web/bookDetail/1e632470811e1d141g011f8b",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《完美理论》／[英] 佩德罗·G.费雷拉，与站内《完美理论》对应同一作品"
   },
   "the-planet-remade": {
     "status": "not_found",
@@ -2405,46 +2423,51 @@
     "note": "人工核验：按 The Planet Remade / Oliver Morton、作者译名及气候工程相关中文译名扩展搜索，未发现书名与作者可靠匹配的微信读书版本；排除其他气候政策书"
   },
   "the-remarkable-life-of-the-skin": {
-    "status": "not_found",
-    "checkedAt": "2026-09-13",
-    "note": "人工核验：按 The Remarkable Life of the Skin / Monty Lyman 搜索，微信读书未返回任何候选，未找到可靠匹配"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/e4732db0813ab80dcg012bc9",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《皮肤的非凡生命》／蒙蒂·莱曼"
   },
   "the-road-to-oxiana": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/f7332200811e29240g013675",
-    "checkedAt": "2026-08-28",
-    "note": "人工核验：The Road to Oxiana / Robert Byron，书名与作者完全匹配"
+    "url": "https://weread.qq.com/web/bookDetail/db3327c0811e815c3g0185f0",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《前往阿姆河之乡》／[英]罗伯特·拜伦，与站内《前往阿姆河之乡》对应同一作品"
   },
   "the-second-kind-of-impossible": {
-    "status": "not_found",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：按英文书名、Paul J. Steinhardt、中文音译与准晶体关键词搜索，未找到可靠微信读书版本"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/d1132450813ab8498g01853c",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《第二种不可能》／保罗·斯坦哈特"
   },
   "the-sleeping-beauties": {
     "status": "not_found",
-    "checkedAt": "2026-09-11",
-    "note": "人工核验：按 The Sleeping Beauties / Suzanne O'Sullivan 搜索；近似结果为川端康成小说 House of the Sleeping Beauties，属于异书，未找到可靠匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「谜病睡美人」、「苏珊·欧苏利文」，未找到可靠的同书条目"
   },
   "the-social-transformation-of-american-medicine": {
-    "status": "not_found",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：按英文书名、Paul Starr 及常见中文译名搜索，未找到可靠微信读书版本"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/03332ec0813ab81b7g019cd0",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《美国医疗的社会变迁》／保罗·斯塔尔"
   },
   "the-thinking-machine": {
-    "status": "not_found",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：英文书名无可靠匹配；《黄仁勋传》候选作者为刘与白，并非 Stephen Witt"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/47a32050813ab98e3g013257",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《黄仁勋:英伟达之芯》／[美]斯蒂芬·威特，与站内《黄仁勋：英伟达之芯》对应同一作品"
   },
   "the-world-according-to-physics": {
-    "status": "not_found",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：按英文书名、Jim Al-Khalili、中文音译与物理关键词搜索，未找到可靠微信读书版本"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/21c32510813ab7fcbg019076",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《欢迎来到物理学的世界》／吉姆·勒阿尔-哈利利，与站内《欢迎来到物理学的世界》对应同一作品"
   },
   "the-years-of-extermination": {
     "status": "found",
-    "url": "https://weread.qq.com/web/bookDetail/f1e32ce0811e26424g018fd7",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：The Years of Extermination / Saul Friedlander，与 Saul Friedländer 的书名和作者精确匹配"
+    "url": "https://weread.qq.com/web/bookDetail/97932860811e57d13g011978",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《灭绝的年代：纳粹德国和犹太人（1939-1945）》／[美]弗里德兰德尔，与站内《灭绝的年代》对应同一作品"
   },
   "there-is-no-place-for-us": {
     "status": "not_found",
@@ -2454,8 +2477,8 @@
   "tiao-chu-tou-nao-rong-ru-sheng-huo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/14332a10813ab7dbcg013723",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：《跳出头脑，融入生活》/ 史蒂文·C·海斯，书名精确匹配，作者为 Steven C. Hayes 的通行中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《跳出头脑，融入生活》／史蒂文·C·海斯，与站内《跳出头脑，融入生活》对应同一作品"
   },
   "tiao-zhe-ti-ta-wu-qu-shang-ban": {
     "status": "found",
@@ -2494,8 +2517,8 @@
   "tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1b432530813aba27cg011d0b",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《通向财务自由之路：心理实战篇（珍藏版）》／范·K.撒普，与站内《通向财务自由之路》对应同一作品"
   },
   "tou-zi-zui-zhong-yao-de-shi": {
     "status": "found",
@@ -2523,8 +2546,8 @@
   "wa-er-deng-hu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/11832730813aba87eg0185a0",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：瓦尔登湖（英文原版） / Henry David Thoreau，书名与作者均精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《瓦尔登湖（英文原版）》／Henry David Thoreau，与站内《瓦尔登湖》对应同一作品"
   },
   "wan-li-shi-wu-nian": {
     "status": "found",
@@ -2534,8 +2557,8 @@
   },
   "wan-wu-de-shi-jie": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：以中文书名含/不含引号、英文原名 An Immense World、Ed Yong、埃德·扬分别搜索，未找到书名与作者可靠匹配的微信读书版本；排除《眼生万物》及作者其他作品《我包罗万象》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「万物的“视界”」、「埃德·扬」，未找到可靠的同书条目"
   },
   "wan-zheng-de-cheng-zhang": {
     "status": "found",
@@ -2610,14 +2633,14 @@
   "wo-bao-luo-wan-xiang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/86832d60719875af8681cf7",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《我包罗万象》/ 埃德·扬，书名精确匹配，作者为 Ed Yong 的通行中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《我包罗万象》／埃德·扬"
   },
   "wo-cong-da-er-wen-na-li-xue-dao-de-tou-zi-zhi-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b1b326b0813abb75ag014f79",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《我从达尔文那里学到的投资知识》/ [印]普拉克·普拉萨德，书名精确匹配，作者为 Pulak Prasad 的中文译名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《我从达尔文那里学到的投资知识》／[印]普拉克·普拉萨德，与站内《我从达尔文那里学到的投资知识》对应同一作品"
   },
   "wo-men-lai-yi-sheng-cun-de-yin-yu": {
     "status": "found",
@@ -2627,14 +2650,14 @@
   },
   "wo-men-wei-he-hui-si": {
     "status": "not_found",
-    "checkedAt": "2026-09-18",
-    "note": "人工核验：分别搜索《我们为何会死》、Why We Die、Venki Ramakrishnan 及作者常见中文译名，未发现书名与作者可靠匹配的微信读书条目"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「老化可以改变吗？」、「文基·拉马克里希南」，未找到可靠的同书条目"
   },
   "wo-men-wei-shen-me-hui-sheng-bing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/631328605e43fa631551a4e",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《第一推动丛书·生命系列：我们为什么会生病（新版）》／伦道夫·M.尼斯 乔治·C.威廉斯，与站内《我们为什么会生病》对应同一作品"
   },
   "wo-men-wei-shen-me-yao-shui-jiao": {
     "status": "found",
@@ -2686,8 +2709,8 @@
   "wu-zhong-qi-yuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/773324507200f487773bcc2",
-    "checkedAt": "2026-09-19",
-    "note": "人工核验：《物种起源（英文版）》/ 查尔斯·达尔文，书名、作者及自然选择主题与 On the Origin of Species 匹配；排除少儿改写、图解和解读书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《物种起源（英文版）》／查尔斯·达尔文，与站内《物种起源》对应同一作品"
   },
   "xi-da-duo": {
     "status": "found",
@@ -2722,14 +2745,14 @@
   "xi-xian-wu-zhan-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/df332790721d0c23df352fd",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：《西线无战事》/ 埃里希·玛丽亚·雷马克，书名与作者精确匹配；排除同名网络小说及解读书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《西线无战事（同名电影原著）（果麦经典）》／埃里希·玛丽亚·雷马克，与站内《西线无战事》对应同一作品"
   },
   "xian-gei-a-er-ji-nong-de-hua-shu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/03b326005d170703ba15f85",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：《献给阿尔吉侬的花束》/ 丹尼尔·凯斯，书名与作者精确匹配；排除学生版英文原版、《阿尔吉侬、查理与我》及作者标为‘等’的合集候选"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《献给阿尔吉侬的花束》／丹尼尔·凯斯"
   },
   "xiang-jing-ji-xue-jia-yi-yang-si-kao": {
     "status": "found",
@@ -2788,8 +2811,8 @@
   "xiao-ji-shi-mei": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/aba326c0811e1b627g019d1a",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《小即是美》／修马克，与站内《小即是美》对应同一作品"
   },
   "xiao-mi-chuang-ye-si-kao": {
     "status": "found",
@@ -2806,8 +2829,8 @@
   "xiao-shuo-xie-zuo-zhi-nan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/04c32e00813ab75e0g01180f",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《小说写作：叙事技巧指南（第十版）（创意写作书系）》／珍妮特·伯罗薇  伊丽莎白·斯塔基-弗伦奇，与站内《小说写作：叙事技巧指南》对应同一作品"
   },
   "xie-gei-da-jia-kan-de-she-ji-shu": {
     "status": "found",
@@ -2829,8 +2852,8 @@
   "xin-ji-qi-de-ling-hun": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/34432670811e1a952g014227",
-    "checkedAt": "2026-09-02",
-    "note": "新机器的灵魂 / [美] Tracy Kidder / score 130"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《新机器的灵魂》／[美] Tracy Kidder，与站内《新机器的灵魂》对应同一作品"
   },
   "xin-jin-rong-guai-jie": {
     "status": "found",
@@ -2853,8 +2876,8 @@
   "xin-zhi-tan-qi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/79b32a00813ab7f2cg016306",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：《心智探奇：人类心智的起源与进化》/ [美]史蒂芬·平克，对应 How the Mind Works，中文书名与作者精确匹配；选用作者字段未混入译者的条目"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《心智探奇：人类心智的起源与进化》／[美]史蒂芬·平克，与站内《心智探奇》对应同一作品"
   },
   "xing-bie-da-jie": {
     "status": "found",
@@ -2889,14 +2912,14 @@
   "xing-ge-de-xian-jing": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/4dc32e70718389194dce639",
-    "checkedAt": "2026-07-03",
-    "note": "性格的陷阱：如何修补童年形成的性格缺陷 / 杰弗里·E.杨 珍妮特·S.克罗斯科 / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《性格的陷阱：如何修补童年形成的性格缺陷》／杰弗里·E.杨 珍妮特·S.克罗斯科，与站内《性格的陷阱》对应同一作品"
   },
   "xue-dian-fa-lv-bi-dian-keng": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/5bf329007198d6085bf0fed",
-    "checkedAt": "2026-07-03",
-    "note": "学点法律，避点坑：有趣有料的法律科普 / 隋兵 / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《学点法律，避点坑：有趣有料的法律科普》／隋兵，与站内《学点法律，避点坑》对应同一作品"
   },
   "xue-hui-ti-wen": {
     "status": "found",
@@ -2913,8 +2936,8 @@
   "xun-lu-zhong-guo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/2cb325f0811e1a472g0169a6",
-    "checkedAt": "2026-08-27",
-    "note": "人工核验：《寻路中国》 / 何伟（Peter Hessler），书名精确匹配，作者为中文名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《寻路中国》／何伟"
   },
   "yan-jiang-de-li-liang": {
     "status": "found",
@@ -2947,15 +2970,16 @@
     "note": "一本书读懂财报 / 肖星 / score 130"
   },
   "yi-dian-yuan-zhi-long": {
-    "status": "not_found",
-    "checkedAt": "2026-09-12",
-    "note": "人工核验：按《伊甸园之龙》/ Carl Sagan 搜索，候选均为同词网络小说、龙族作品或无关脑科学读物，未发现书名与作者可靠匹配的微信读书版本"
+    "status": "found",
+    "url": "https://weread.qq.com/web/bookDetail/a0f32020811e1ad93g017ab9",
+    "checkedAt": "2026-11-21",
+    "note": "复核：《伊甸园的飞龙》／卡尔·萨根"
   },
   "yi-jian-zi-ji-de-fang-jian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/423320f0813ab8f58g01571e",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：一间自己的房间 / [英]弗吉尼亚·伍尔夫，书名与作者均精确匹配；排除解读书与套装"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《一间自己的房间》／[英]弗吉尼亚·伍尔夫，与站内《一间自己的房间》对应同一作品"
   },
   "yi-jiao-yi-wei-sheng": {
     "status": "found",
@@ -2966,8 +2990,8 @@
   "yi-lang-jian-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/45c32d50811e73abeg016354",
-    "checkedAt": "2026-09-02",
-    "note": "伊朗简史 / Michael Axworthy / score 130"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《伊朗简史》／Michael Axworthy，与站内《伊朗简史》对应同一作品"
   },
   "yi-lian": {
     "status": "found",
@@ -3002,20 +3026,20 @@
   "yin-bao-dian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/8bf3223071f9ad278bfa5dc",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《引爆点（第五版）》／[加]马尔科姆·格拉德威尔，与站内《引爆点》对应同一作品"
   },
   "yin-guo-tui-duan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/36a320b0813ab7713g016e4b",
-    "checkedAt": "2026-07-03",
-    "note": "因果推断与机器学习 / 郭若城 等 / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《因果推断与机器学习》／郭若城  等，与站内《因果推断与机器学习》对应同一作品"
   },
   "yin-mi-de-jiao-luo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/2d932ef0813ab9cedg0170b3",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：《隐秘的角落：无孔不入的厌女症》/ [英]劳拉·贝茨，书名主体、作者与主题精确匹配；排除紫金陈小说及影视解读书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《隐秘的角落：无孔不入的厌女症》／[英]劳拉·贝茨，与站内《隐秘的角落》对应同一作品"
   },
   "yin-wei-du-te": {
     "status": "found",
@@ -3026,20 +3050,20 @@
   "ying-guo-gong-ren-jie-ji-de-xing-cheng": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/cd232500811e1a936g012029",
-    "checkedAt": "2026-09-02",
-    "note": "人工核验：《英国工人阶级的形成（上下）》/ [英] E.P. 汤普森，书名主体与作者精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《英国工人阶级的形成（上下）》／[英] E.P. 汤普森，与站内《英国工人阶级的形成》对应同一作品"
   },
   "ying-wei-da-zhi-dao": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/9d332070813ab9be3g017d10",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《英伟达之道》/ [美]金泰，中文书名精确匹配；金泰是 Tae Kim 的中文姓名写法，排除英伟达主题解读书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《英伟达之道》／[美]金泰，与站内《英伟达之道》对应同一作品"
   },
   "ying-wen-xie-zuo-zhi-nan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/9c7326e0813ab6c69g012d6c",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《风格的要素：简明英语写作圣经》／威廉·斯特伦克，与站内《风格的要素》对应同一作品"
   },
   "ying-xiang-li": {
     "status": "found",
@@ -3056,26 +3080,26 @@
   "ying-yang-xue": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/22f32d60811e38a34g013f73",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：微信读书页面与清华大学出版社第13版书目 ISBN 9787302451488 一致，作者以出版社署名为准"
   },
   "yong-bao-zhan-bai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/42c32d20811e1a7b8g018bba",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《拥抱战败：第二次世界大战后的日本》 / 约翰·W.道尔，书名主体与作者译名匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《拥抱战败:第二次世界大战后的日本》／约翰·W.道尔   胡博 ，与站内《拥抱战败》对应同一作品"
   },
   "yong-hu-gu-shi-di-tu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/1f132360811e1a7b9g012873",
-    "checkedAt": "2026-07-03",
-    "note": "用户故事地图 / Jeff Patton / score 130"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《用户故事地图》／Jeff Patton，与站内《用户故事地图》对应同一作品"
   },
   "yong-hu-ti-yan-yao-su": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/00232d60811e3a302g0165ef",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《用户体验要素：以用户为中心的产品设计（原书第2版）》／[美]杰西·詹姆斯·加勒特，与站内《用户体验要素》对应同一作品"
   },
   "you-xi-li": {
     "status": "found",
@@ -3097,13 +3121,13 @@
   },
   "your-face-belongs-to-us": {
     "status": "not_found",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：按英文原书名与作者 Kashmir Hill 搜索，未发现原书或可靠中文版本；已排除仅属同类主题的人工智能与隐私书籍"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「你的脸属于我们」、「卡希米尔·希尔」，未找到可靠的同书条目"
   },
   "your-life-is-manufactured": {
     "status": "not_found",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：按英文原书名与作者 Tim Minshall 搜索，微信读书未返回候选，未发现原书或可靠中文版本"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「韧性制造」、「提姆·敏谢尔」，未找到可靠的同书条目"
   },
   "yu-ba-bu-neng": {
     "status": "found",
@@ -3126,14 +3150,14 @@
   "yu-zhou-de-qin-xian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/c00324b05e43eec00c448c3",
-    "checkedAt": "2026-09-16",
-    "note": "人工核验：《宇宙的琴弦（第一推动丛书·物理系列）》/ 布莱恩·R. 格林，书名与作者均匹配；排除量子探秘及弦理论之争套装"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《宇宙的琴弦（第一推动丛书·物理系列）》／布莱恩·R. 格林，与站内《宇宙的琴弦》对应同一作品"
   },
   "yuan-dai-ma": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b7932540813ab9ecdg014812",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《源代码》/ [美]比尔·盖茨，书名与作者精确匹配；排除同名小说和技术书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《源代码》／[美]比尔·盖茨，与站内《源代码》对应同一作品"
   },
   "yuan-ding-yu-mu-jiang": {
     "status": "found",
@@ -3156,14 +3180,14 @@
   "yuan-zi-dan-mi-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/a0932580811e3922cg015c01",
-    "checkedAt": "2026-08-26",
-    "note": "人工核验：《原子弹秘史：图文版》 / 理查德·罗兹，书名主体与作者译名匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《原子弹秘史：图文版》／[美]理查德·罗兹，与站内《原子弹秘史》对应同一作品"
   },
   "yue-han-sheng-chuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/41f32410813ab7d79g017ed1",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：《约翰生传：插图珍藏本（全三卷）》/ 詹姆斯·鲍斯威尔，书名主体与 James Boswell 的中文译名精确匹配；排除相关研究著作《灵魂的挣扎》"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《约翰生传：插图珍藏本（全三卷）》／詹姆斯·鲍斯威尔，与站内《约翰生传》对应同一作品"
   },
   "yun-dong-gai-zao-da-nao": {
     "status": "found",
@@ -3186,8 +3210,8 @@
   "zai-shi-jie-yu-wo-zhi-jian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/b9b323f05dd665b9b7e67d3",
-    "checkedAt": "2026-09-11",
-    "note": "人工核验：《在世界与我之间》/ 塔那西斯·科茨（Ta-Nehisi Coates），书名精确匹配，作者为同一人的中英文名"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《在世界与我之间》／塔那西斯·科茨"
   },
   "zao-sheng": {
     "status": "not_found",
@@ -3197,8 +3221,8 @@
   "zen-yang-jue-ding-da-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/a5332380813ab9fd0g01793a",
-    "checkedAt": "2026-07-03",
-    "note": "怎样决定大事：击退恐惧、拖延和逃避 / [英]劳伦斯·艾莉森 [英]尼尔·肖特兰 / score 110"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《怎样决定大事：击退恐惧、拖延和逃避》／[英]劳伦斯·艾莉森  [英]尼尔·肖特兰，与站内《怎样决定大事》对应同一作品"
   },
   "zen-yang-xuan-ze-cheng-zhang-gu": {
     "status": "found",
@@ -3221,8 +3245,8 @@
   "zhai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/22d324807234166722defe9",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《债：5000年债务史》／大卫·格雷伯"
   },
   "zhai-wu-wei-ji": {
     "status": "found",
@@ -3245,14 +3269,14 @@
   "zhang-yu-hai-yang-yu-shen-ceng-qi-yuan": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/a0b32110811e743abg01094b",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：平台书名《章鱼的心灵》/ [澳]彼得·戈弗雷-史密斯，作者、章鱼与意识演化主题及八章结构均与 Other Minds 对应"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《章鱼的心灵》／[澳]彼得·戈弗雷-史密斯，与站内《章鱼的心灵》对应同一作品"
   },
   "zhao-hui-zhuan-zhu-li": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/83e32d10813ab76f7g0171b6",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《注意力危机：你为什么失去专注力？如何重回深度思考？》／约翰·海利，与站内《注意力危机》对应同一作品"
   },
   "zhe-cai-shi-xin-li-xue": {
     "status": "found",
@@ -3275,8 +3299,8 @@
   "zhen-han-shi-jie-de-shi-tian": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/7ba32270811e33cfdg011db0",
-    "checkedAt": "2026-08-28",
-    "note": "人工核验：《震撼世界的十天》 / 约翰·里德，书名和作者姓名匹配；微信读书将作者国籍误标为英国"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《震撼世界的十天》／[英]约翰·里德，与站内《震撼世界的十天》对应同一作品"
   },
   "zhen-shi-de-xing-fu": {
     "status": "found",
@@ -3305,8 +3329,8 @@
   "zheng-wu-zhi-mo": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/83632e40720ef9d58369519",
-    "checkedAt": "2026-09-03",
-    "note": "人工核验：《正午之魔：抑郁是你我共有的秘密》/ 安德鲁·所罗门，主标题、副标题与作者均匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《正午之魔：抑郁是你我共有的秘密》／安德鲁·所罗门，与站内《正午之魔》对应同一作品"
   },
   "zheng-yi-lun": {
     "status": "found",
@@ -3329,8 +3353,8 @@
   "zhi-neng-jian-shi": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/13732ba0811e82087g012826",
-    "checkedAt": "2026-09-01",
-    "note": "人工核验：《智能简史》/ [美]麦克斯·班尼特，书名精确匹配，作者为 Max Bennett 的通行中文译名；排除多部《人工智能简史》及于非的同名异书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《智能简史》／[美]麦克斯·班尼特，与站内《智能简史》对应同一作品"
   },
   "zhi-ren-zhi-shang": {
     "status": "found",
@@ -3383,8 +3407,8 @@
   "zhong-mei-shi-dai": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/93b32cf0811e35cd8g01650b",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: verified Chinese edition title and Ann Handley; distill source is the 2023 English second edition"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《众媒时代，我们该如何做内容》／[美]安·汉德利，与站内《众媒时代，我们该如何做内容》对应同一作品"
   },
   "zhong-shen-cheng-zhang": {
     "status": "found",
@@ -3407,8 +3431,8 @@
   "zhu-chu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/3903200071bfd2b63905d93",
-    "checkedAt": "2026-08-19",
-    "note": "manual-audit: verified same book under Chinese edition title 扫地出门：美国城市的贫穷与暴利 / 马修·德斯蒙德"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《扫地出门：美国城市的贫穷与暴利》／马修·德斯蒙德，与站内《扫地出门》对应同一作品"
   },
   "zhu-ding-yi-zhan": {
     "status": "found",
@@ -3431,8 +3455,8 @@
   "zhu-yi-li-shang-ren": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/2cc322c0811e8ccc2g018349",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《注意力商人》／吳修銘，与站内《注意力商人》对应同一作品"
   },
   "zhui-qiu-zhuo-yue": {
     "status": "found",
@@ -3467,20 +3491,20 @@
   "zi-qu-xing-cheng-zhang": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/4083237071ddaa4940852a2",
-    "checkedAt": "2026-09-13",
-    "note": "人工核验：《自驱型成长：如何科学有效地培养孩子的自律》/ [美]威廉·斯蒂克斯鲁德、[美]奈德·约翰逊，书名主体及两位作者精确匹配；排除实践篇和其他作者的同名衍生书"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《自驱型成长：如何科学有效地培养孩子的自律》／[美]威廉·斯蒂克斯鲁德 [美]奈德·约翰逊，与站内《自驱型成长》对应同一作品"
   },
   "zi-shen-shen-chu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/2133298071c3a94e2131b61",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：自深深处 / [英]奥斯卡·王尔德，书名与 Oscar Wilde 均精确匹配"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《自深深处》／[爱尔兰]奥斯卡·王尔德，与站内《自深深处》对应同一作品"
   },
   "zi-si-de-ji-yin": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/fb732f6071691b6efb7de4b",
-    "checkedAt": "2026-08-31",
-    "note": "人工核验：《自私的基因（40周年增订版）》/ 理查德·道金斯；书名主体与作者精确匹配，排除读书堂同名解读书。本次原文为 1989 第二版，微信读书链接指向同一原作的后续增订版"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《自私的基因（40周年增订版）》／理查德·道金斯，与站内《自私的基因》对应同一作品"
   },
   "zi-you-yu-fan-rong-de-guo-du": {
     "status": "found",
@@ -3496,8 +3520,8 @@
   "zi-zun": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/d04320f0811e1a954g0190c9",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from broader title and author search"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《Self-Esteem》／Matthew McKay/Patrick Fanning，与站内《自尊》对应同一作品"
   },
   "zong-jiao-jing-yan-zhi-zhong-zhong": {
     "status": "found",
@@ -3518,8 +3542,8 @@
   "zui-hao-de-gao-bie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/f6532270813ab7e0fg015138",
-    "checkedAt": "2026-07-03",
-    "note": "manual-audit: verified from WeRead search result title and author variant"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《最好的告别（全新升级版）》／阿图·葛文德 王一方，与站内《最好的告别》对应同一作品"
   },
   "zui-xiao-zu-li-zhi-lu": {
     "status": "found",
@@ -3530,13 +3554,13 @@
   "zuo-ri-de-shi-jie": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/80a324f0716b1a6480af682",
-    "checkedAt": "2026-08-30",
-    "note": "人工核验：昨日的世界 / 茨威格，书名精确匹配，作者为 Stefan Zweig 的通行中文姓氏；排除《昨日之前的世界》及套装"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《昨日的世界》／茨威格，与站内《昨日的世界》对应同一作品"
   },
   "zuo-zi-ji-zui-hao-mai": {
     "status": "not_found",
-    "checkedAt": "2026-08-17",
-    "note": "manual-audit: no reliable match after English title, Emily Hund, and official Traditional Chinese title searches"
+    "checkedAt": "2026-11-21",
+    "note": "复核：搜索「做自己，最好卖？」、「艾蜜莉·洪德」，未找到可靠的同书条目"
   },
   "yu-yu-qi-xing-jiao-lu-gong-wu": {
     "status": "found",
@@ -3683,8 +3707,8 @@
   "tou-zi-si-da-zhi-zhu": {
     "status": "found",
     "url": "https://weread.qq.com/web/bookDetail/59232ee0811e1ad8fg015b6b",
-    "checkedAt": "2026-11-01",
-    "note": "人工核验：《投资的四大支柱》/ 威廉·伯恩斯坦，对应 The Four Pillars of Investing，与《投资金律》为同一作品的不同译本；链接版次与本轮第二版书源分别记录。"
+    "checkedAt": "2026-11-21",
+    "note": "复核：《投资的四大支柱》／[美] 威廉·伯恩斯坦，与站内《投资的四大支柱》对应同一作品"
   },
   "tou-zi-shou-yi-bai-nian-shi": {
     "status": "found",

@@ -66,7 +66,7 @@ books:
     role: 揪出系统瓶颈
     reason: 用工厂小说拆解约束理论，说明局部环节拼命提速反而推高库存、拖垮现金回流的原因。
   - title: 光环效应
-    author: 菲尔·罗森茨维格
+    author: 菲尔·罗森维
     originalTitle: The Halo Effect
     status: planned
     reading: compare

@@ -27,9 +27,9 @@ books:
     role: 极端境遇的意义追寻
     reason: 心理学家根据奥斯威辛幸存经历提出“意义的意志”，强调人在被剥夺一切后仍保有选择回应姿态的空间。
   - title: 自深深处
-    author: Oscar Wilde
+    author: 奥斯卡·王尔德
     slug: zi-shen-shen-chu
-    path: books/人文艺术/文学阅读/Oscar Wilde-自深深处.md
+    path: books/人文艺术/文学阅读/奥斯卡·王尔德-自深深处.md
     status: in_library
     reading: next
     role: 屈辱后的自我重铸
@@ -66,9 +66,9 @@ books:
     role: 亲历优先于教义
     reason: 主角逐一离开祭司、沙门苦修与名利情欲，证明别人的觉悟语言替不了自己蹚过河水去体味痛苦。
   - title: 论自由
-    author: John Stuart Mill
+    author: 约翰·斯图亚特·穆勒
     slug: lun-zi-you
-    path: books/社会公共/政治制度/John Stuart Mill-论自由.md
+    path: books/社会公共/政治制度/约翰·斯图亚特·穆勒-论自由.md
     status: in_library
     reading: compare
     role: 社会权力与个性自由边界

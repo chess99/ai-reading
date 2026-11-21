@@ -91,9 +91,9 @@ books:
     role: 估值与增长率陷阱
     reason: 用半世纪实盘对比揭穿盲目追买高增长行业带来的“增长率陷阱”，说明估值起点与股息复投对股东回报的决定力。
   - title: 我从达尔文那里学到的投资知识
-    author: Pulak Prasad
+    author: 普拉克·普拉萨德
     slug: wo-cong-da-er-wen-na-li-xue-dao-de-tou-zi-zhi-shi
-    path: books/金钱投资/价值投资/Pulak Prasad-我从达尔文那里学到的投资知识.md
+    path: books/金钱投资/价值投资/普拉克·普拉萨德-我从达尔文那里学到的投资知识.md
     status: in_library
     reading: optional
     role: 历史ROCE与反DCF视角
