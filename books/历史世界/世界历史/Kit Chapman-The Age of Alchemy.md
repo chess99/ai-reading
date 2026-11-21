@@ -4,7 +4,7 @@ title: The Age of Alchemy
 author: Kit Chapman
 tags: [化学史, 炼金术, 科学史, 全球史]
 date: '2026-09-03'
-shareDescription: "从史前营火到拉瓦锡，工匠和炼金术士如何留下化学的雏形。"
+shareDescription: "实验室出现之前，世界各地工匠与炼金士早用双手攒出化学雏形。"
 ---
 
 # The Age of Alchemy

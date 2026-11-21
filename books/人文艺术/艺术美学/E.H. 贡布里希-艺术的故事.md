@@ -4,7 +4,7 @@ title: 艺术的故事
 author: E.H. 贡布里希
 tags: [艺术, 艺术史, 审美]
 date: '2026-06-14'
-shareDescription: "从洞穴壁画到印象派，画家们在各自时代想解决什么难题？"
+shareDescription: "世上本无抽象的艺术，只有历代画家应对各自时代难题的手法。"
 ---
 
 # 艺术的故事

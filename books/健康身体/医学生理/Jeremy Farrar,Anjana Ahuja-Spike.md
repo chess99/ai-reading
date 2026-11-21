@@ -4,7 +4,7 @@ title: Spike
 author: Jeremy Farrar、Anjana Ahuja
 tags: [新冠疫情, 公共卫生, 科学决策, 英国]
 date: '2026-09-13'
-shareDescription: "一位英国科学顾问回看新冠疫情初期，封锁决定是怎样迟来的。"
+shareDescription: "身处政府科学顾问核心，一封封同期邮件还原抗疫封锁为何迟到。"
 ---
 
 # Spike

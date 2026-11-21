@@ -4,7 +4,7 @@ title: MBA一日通
 author: 本·蒂格拉尔
 tags: [商业管理, MBA, 管理学]
 date: '2026-05-26'
-shareDescription: "给刚接手团队和预算的人，从看现金流到准备一场谈判。"
+shareDescription: "专业骨干升主管常怕预算与谈判？把人、财、市和流程拼成一局。"
 ---
 
 # MBA一日通

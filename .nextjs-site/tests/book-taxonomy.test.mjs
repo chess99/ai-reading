@@ -130,6 +130,15 @@ function loadBookBySlug() {
     assert.equal(typeof data.author, 'string', `${relativePath} should have author`);
     assert.ok(Array.isArray(data.tags), `${relativePath} tags should be an inline array parsed as an array`);
     assert.match(String(data.date), /^\d{4}-\d{2}-\d{2}$/, `${relativePath} date should be YYYY-MM-DD`);
+    assert.equal(typeof data.shareDescription, 'string', `${relativePath} should have shareDescription`);
+    assert.doesNotMatch(data.shareDescription, /[\r\n「」]/, `${relativePath} shareDescription should be single-line without 「」`);
+    const shareLength = [...data.shareDescription].length;
+    assert.ok(shareLength >= 15 && shareLength <= 35, `${relativePath} shareDescription length should be 15..35 (got ${shareLength})`);
+    assert.doesNotMatch(
+      data.shareDescription,
+      /作者|书里|(?<!整|那|一)本书|这本|在.+看来|在.+笔下/,
+      `${relativePath} shareDescription should avoid narrator cliches: ${data.shareDescription}`,
+    );
 
     assert.equal(bySlug.has(data.slug), false, `${relativePath} slug should be unique: ${data.slug}`);
     bySlug.set(data.slug, { relativePath, data });

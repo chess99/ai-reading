@@ -4,7 +4,7 @@ title: 高级运动生理学
 author: ACSM
 tags: [健康运动, 运动生理学, 运动科学, 生理学]
 date: '2026-05-27'
-shareDescription: "从短跑到耐力训练，心肺和肌肉怎样跟上不同的负荷？"
+shareDescription: "冲刺和耐力跑动用不同供能链，多次训练重塑心肺与肌肉极限。"
 ---
 
 # 高级运动生理学
