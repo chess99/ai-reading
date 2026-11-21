@@ -6,7 +6,7 @@ import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeKatex from 'rehype-katex';
-import { getAllBookMetas, getBookDetailBySlug } from '@/lib/books';
+import { getAllBookMetas, getBookDetailBySlug, type BookDetail } from '@/lib/books';
 import 'highlight.js/styles/atom-one-dark.css';
 import 'katex/dist/katex.min.css';
 import BookPageClient from './page-client';
@@ -44,7 +44,17 @@ export async function generateStaticParams() {
   }));
 }
 
-// Generate metadata for SEO
+function getBookShareDescription(book: BookDetail): string {
+  if (book.shareDescription) return book.shareDescription;
+
+  const category = book.categoryPath[book.categoryPath.length - 1];
+  const tags = [...new Set(book.tags.map(tag => tag.trim()))]
+    .filter(tag => tag && tag !== '书籍解读' && !book.categoryPath.includes(tag))
+    .slice(0, 2);
+  return ['书籍解读', category, ...tags].filter(Boolean).join(' · ');
+}
+
+// Generate metadata for SEO and sharing
 export async function generateMetadata({ params }: BookPageProps) {
   const { slug } = await params;
   const book = getBookDetailBySlug(slug);
@@ -56,7 +66,8 @@ export async function generateMetadata({ params }: BookPageProps) {
   }
 
   const pageUrl = `${BASE_URL}/books/${slug}/`;
-  const description = `《${book.title}》书籍解读：作者 ${book.author}。由 AI 辅助整理并经人工校审，提炼核心观点、关键框架与实践洞见。分类：${book.category}。`;
+  const description = getBookShareDescription(book);
+  const shareTitle = book.author ? `${book.title} · ${book.author}` : book.title;
 
   return {
     title: `《${book.title}》书籍解读：核心观点与读书笔记 | ${BRAND_NAME}`,
@@ -67,7 +78,7 @@ export async function generateMetadata({ params }: BookPageProps) {
       canonical: pageUrl,
     },
     openGraph: {
-      title: `${book.title} - ${book.author}`,
+      title: shareTitle,
       description,
       url: pageUrl,
       type: 'article',
@@ -84,7 +95,7 @@ export async function generateMetadata({ params }: BookPageProps) {
     },
     twitter: {
       card: 'summary',
-      title: `${book.title} - ${book.author}`,
+      title: shareTitle,
       description,
       images: [`${BASE_URL}/share-image.png`],
     },
@@ -120,7 +131,7 @@ export default async function BookPage({ params }: BookPageProps) {
       {
         '@type': 'Article',
         headline: `《${book.title}》书籍解读：核心观点与读书笔记`,
-        description: `由 AI 辅助整理并经人工校审的《${book.title}》书籍解读，提炼核心观点、关键框架与实践洞见。`,
+        description: getBookShareDescription(book),
         url: pageUrl,
         inLanguage: 'zh-CN',
         datePublished: new Date(book.addedAt).toISOString(),

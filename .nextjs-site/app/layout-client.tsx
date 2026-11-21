@@ -32,6 +32,7 @@ export default function LayoutClient({ children }: LayoutClientProps) {
   const shareConfig = isBookPage
     ? {
         title: detailTitle,
+        text: detailDescription || undefined,
         eventAction: 'share_book',
         eventLabel: detailTitle,
       }

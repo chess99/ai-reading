@@ -55,6 +55,7 @@ title: <网站展示标题，可含副标题>
 author: <作者名>
 tags: [标签1, 标签2]   # 行内数组格式
 date: 'YYYY-MM-DD'
+shareDescription: "<一句书籍分享简介，可选>"
 ---
 ```
 
@@ -63,6 +64,8 @@ date: 'YYYY-MM-DD'
   - ❌ `fei-li-pu-fei-xue-zen-yang-xuan-ze-cheng-zhang-gu`
 - `tags`：使用行内数组 `[tag1, tag2]`，不用多行格式
 - `title` 是网站最终展示标题，允许使用通用全名或带副标题；文件名仍使用便于维护的中文通用主书名，不强制包含副标题
+
+- `shareDescription`：分享卡片使用的一行纯文本，约 20～30 个汉字，依据书稿写一个具体观点、问题、案例或不剧透的故事开端。缺省时站点使用分类及标签。
 
 ## 正文第一级标题
 

@@ -8,6 +8,7 @@ export interface BookFrontmatter {
   author?: string;
   tags?: string[];
   date?: string;
+  shareDescription?: string;
 }
 
 export interface BookMeta {
@@ -21,6 +22,7 @@ export interface BookMeta {
 }
 
 export interface BookDetail extends BookMeta {
+  shareDescription?: string;
   content: string;
   filePath: string;
 }
@@ -103,6 +105,9 @@ function loadBookDetails(): BookDetail[] {
           categoryPath,
           tags: frontmatter.tags || [],
           addedAt,
+          shareDescription: typeof frontmatter.shareDescription === 'string'
+            ? frontmatter.shareDescription.trim() || undefined
+            : undefined,
           content,
           filePath: fullPath,
         });
