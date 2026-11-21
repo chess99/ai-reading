@@ -30,7 +30,7 @@ books:
     reason: 将视觉、推理与情绪视作自然选择塑造的计算器官，用“逆向工程”拆解心智各模块如何解决祖先的生存难题。
   - title: 伊甸园的飞龙
     author: 卡尔·萨根
-    slug: yi-dian-yuan-zhi-long
+    slug: yi-dian-yuan-de-fei-long
     path: books/思维科学/证据科学/卡尔·萨根-伊甸园的飞龙.md
     status: in_library
     reading: start
@@ -46,7 +46,7 @@ books:
     reason: 正面攻击脑内藏着“内在小人”看屏幕的传统错觉，用并行编辑的“多重草稿模型”重新定义主观意识流。
   - title: 章鱼的心灵
     author: 彼得·戈弗雷-史密斯
-    slug: zhang-yu-hai-yang-yu-shen-ceng-qi-yuan
+    slug: zhang-yu-de-xin-ling
     path: books/思维科学/证据科学/彼得·戈弗雷-史密斯-章鱼的心灵.md
     status: in_library
     reading: compare
@@ -62,23 +62,23 @@ books:
     reason: 用“环世界”概念带你穿梭蜜蜂紫外线、蝙蝠回声与电鱼电场，映照出人类感官截取的现实有多狭窄。
   - title: 记忆操控
     author: 史蒂夫·拉米瑞兹
-    slug: how-to-change-a-memory
+    slug: ji-yi-cao-kong
     path: books/健康身体/医学生理/史蒂夫·拉米瑞兹-记忆操控.md
     status: in_library
     reading: next
     role: 光遗传学与重写记忆印迹
     reason: 深入 MIT 实验室一线，记录研究者如何用激光定位并激活小鼠脑内的“记忆印迹”，甚至选择性改写情绪记忆。
-  - title: Our Brains, Our Selves
-    author: Masud Husain
-    slug: our-brains-our-selves
-    path: books/健康身体/医学生理/Masud Husain-Our Brains, Our Selves.md
+  - title: 局外人：当我们的大脑背叛并改变了我们
+    author: 马苏德·侯赛因
+    slug: ju-wai-ren-dang-wo-men-de-da-nao-bei-pan-bing-gai-bian-le-wo-men
+    path: books/健康身体/医学生理/马苏德·侯赛因-局外人.md
     status: in_library
     reading: next
     role: 临床脑损伤与“自我”崩解
     reason: 通过七位卒中、痴呆或脑损伤患者的临床故事，直观呈现特定脑区故障如何立刻改写一个人的动机、记忆与身份感。
   - title: 追寻记忆：与阿尔茨海默病抗争
     author: 约瑟夫·杰贝利
-    slug: in-pursuit-of-memory
+    slug: zhui-xun-ji-yi-yu-a-er-ci-hai-mo-bing-kang-zheng
     path: books/健康身体/医学生理/约瑟夫·杰贝利-追寻记忆.md
     status: in_library
     reading: optional
@@ -101,4 +101,4 @@ books:
 
 ## 当神经科学伸手触碰记忆与“自我”
 
-实验室和病房则把“自我”按到了更实在的物理地面上。《记忆操控》跟进 MIT 光遗传学实验室：史蒂夫·拉米瑞兹与搭档锁定小鼠产生恐惧记忆时亮起的海马体神经元，用激光重新点亮这簇“记忆印迹”，甚至趁安全环境往里嫁接假记忆，由此开辟用积极记忆对冲抑郁与成瘾的前沿实验。回到伦敦诊室，神经科医生 Masud Husain 在《Our Brains, Our Selves》里讲述七位中风或额颞叶痴呆患者——负责动机的脑区一受损，干练的男人瞬间变成呆坐不动的陌生人；而《追寻记忆：与阿尔茨海默病抗争》以科学家兼患者孙辈的视角追溯阿尔茨海默病百年攻坚与试药挫折，让人摸清记忆网络崩塌时一个人与家庭承受的重量。
+实验室和病房则把“自我”按到了更实在的物理地面上。《记忆操控》跟进 MIT 光遗传学实验室：史蒂夫·拉米瑞兹与搭档锁定小鼠产生恐惧记忆时亮起的海马体神经元，用激光重新点亮这簇“记忆印迹”，甚至趁安全环境往里嫁接假记忆，由此开辟用积极记忆对冲抑郁与成瘾的前沿实验。回到伦敦诊室，神经科医生马苏德·侯赛因在《局外人：当我们的大脑背叛并改变了我们》里讲述七位中风或额颞叶痴呆患者——负责动机的脑区一受损，干练的男人瞬间变成呆坐不动的陌生人；而《追寻记忆：与阿尔茨海默病抗争》以科学家兼患者孙辈的视角追溯阿尔茨海默病百年攻坚与试药挫折，让人摸清记忆网络崩塌时一个人与家庭承受的重量。

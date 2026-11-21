@@ -22,7 +22,7 @@ date: '2026-11-20'
 books:
   - title: 共智时代
     author: 伊桑·莫里克
-    slug: ren-ji-gong-zhi
+    slug: gong-zhi-shi-dai
     path: books/科技媒介/AI变革/伊桑·莫里克-共智时代.md
     status: in_library
     reading: start
@@ -38,7 +38,7 @@ books:
     reason: 追溯大脑五次演化突破——转向、强化、模拟、心智化与语言，解释大模型擅长下棋写作却装不好洗碗机的深层原因。
   - title: 黄仁勋：英伟达之芯
     author: 斯蒂芬·威特
-    slug: the-thinking-machine
+    slug: huang-ren-xun-ying-wei-da-zhi-xin
     path: books/科技媒介/AI变革/斯蒂芬·威特-黄仁勋.md
     status: in_library
     reading: next
@@ -46,7 +46,7 @@ books:
     reason: 贴着黄仁勋和英伟达三十年的绝境赌注，揭示游戏显卡和并行计算架构如何意外撬动深度学习时代。
   - title: 算法统治世界
     author: 汉娜·弗莱
-    slug: hello-world
+    slug: suan-fa-tong-zhi-shi-jie
     path: books/科技媒介/AI变革/汉娜·弗莱-算法统治世界.md
     status: in_library
     reading: compare
@@ -54,7 +54,7 @@ books:
     reason: 把算法放进医院影像、司法量刑、警务巡逻和自动驾驶，比较机器统计直觉与人类专家裁量各自的盲点与代价。
   - title: 至高无上
     author: 帕米·奥尔森
-    slug: supremacy
+    slug: zhi-gao-wu-shang
     path: books/科技媒介/AI变革/帕米·奥尔森-至高无上.md
     status: in_library
     reading: compare

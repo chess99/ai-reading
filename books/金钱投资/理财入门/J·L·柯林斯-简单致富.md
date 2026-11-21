@@ -1,5 +1,5 @@
 ---
-slug: cai-fu-zi-you-zhi-lu
+slug: jian-dan-zhi-fu
 title: 简单致富
 author: J·L·柯林斯
 tags: [财务自由, 指数基金, 资产配置, 个人理财]

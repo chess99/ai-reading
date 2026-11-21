@@ -45,7 +45,7 @@ books:
     reason: 讨论在医学无法治愈时，患者和家人如何与医生谈清楚要多抢救几天，还是保住清醒、自主与尊严。
   - title: 银发世代
     author: 路易斯·阿伦森
-    slug: elderhood
+    slug: yin-fa-shi-dai
     path: books/健康身体/衰老照护/路易斯·阿伦森-银发世代.md
     status: in_library
     reading: optional

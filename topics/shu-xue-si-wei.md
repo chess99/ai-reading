@@ -51,7 +51,7 @@ books:
     reason: 从大数记法、虚数、四维时空一路连通到原子与基因尺度，把纸面算式接进真实宇宙的尺度感。
   - title: 微积分的力量
     author: 史蒂夫·斯托加茨
-    slug: infinite-powers
+    slug: wei-ji-fen-de-li-liang
     path: books/思维科学/证据科学/史蒂夫·斯托加茨-微积分的力量.md
     status: in_library
     reading: next

@@ -53,7 +53,7 @@ books:
     reason: 从演化视角解释嗜甜嗜脂、发烧、疼痛与焦虑为何在远古保命却在现代制造慢病，补足“身体为何有漏洞”的底层认识。
   - title: 自愈力的真相
     author: 乔·马钱特
-    slug: cure
+    slug: zi-yu-li-de-zhen-xiang
     path: books/健康身体/医学生理/乔·马钱特-自愈力的真相.md
     status: in_library
     reading: compare

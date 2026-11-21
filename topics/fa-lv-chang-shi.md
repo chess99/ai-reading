@@ -52,7 +52,7 @@ books:
     reason: 借多起美国宪法判例讲清言论内容中性、搜查边界与无罪推定怎样落入日常，看懂守住程序底线需要承担的社会代价。
   - title: 当代美国的罪与罚
     author: 詹姆斯·福曼
-    slug: locking-up-our-own
+    slug: dang-dai-mei-guo-de-zui-yu-fa
     path: books/社会公共/法律公共/詹姆斯·福曼-当代美国的罪与罚.md
     status: in_library
     reading: compare

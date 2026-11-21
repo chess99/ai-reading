@@ -84,7 +84,7 @@ books:
     reason: 沿着一个半世纪的油田争夺、欧佩克博弈与两次石油冲击，看清碳化氢供给线怎样左右海陆霸权与战争胜负。
   - title: 经济战争时代
     author: 爱德华·费什曼
-    slug: chokepoints
+    slug: jing-ji-zhan-zheng-shi-dai
     path: books/历史世界/国际秩序/爱德华·费什曼-经济战争时代.md
     status: in_library
     reading: next
@@ -92,7 +92,7 @@ books:
     reason: 揭开美国财政部如何把美元清算、海运保险和尖端半导体打造成制裁武器，重塑对伊朗、俄罗斯与中国的博弈。
   - title: 死亡之手
     author: 戴维·霍夫曼
-    slug: the-dead-hand
+    slug: si-wang-zhi-shou
     path: books/历史世界/国际秩序/戴维·霍夫曼-死亡之手.md
     status: in_library
     reading: optional

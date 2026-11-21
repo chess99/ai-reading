@@ -37,7 +37,7 @@ books:
     reason: 效仿卢曼的 Zettelkasten 方法，用自己的话写清单一观点并主动建立跨书连接，让笔记自下而上长成文章。
   - title: 打造第二大脑
     author: 蒂亚戈·福特
-    slug: di-er-da-nao
+    slug: da-zao-di-er-da-nao
     path: books/自我管理/学习练习/蒂亚戈·福特-打造第二大脑.md
     status: in_library
     reading: compare

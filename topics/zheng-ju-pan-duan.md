@@ -61,7 +61,7 @@ books:
     reason: 区分真科学与伪科学包装，讲清操作性定义、随机对照、混淆变量和聚沙成塔的证据聚合逻辑。
   - title: 被败坏的学术
     author: 斯图尔特·里奇
-    slug: science-fictions
+    slug: bei-bai-huai-de-xue-shu
     path: books/思维科学/证据科学/斯图尔特·里奇-被败坏的学术.md
     status: in_library
     reading: compare
@@ -85,7 +85,7 @@ books:
     reason: 通过二十世纪统计学家的工作传记，讲清随机化、小样本检验、p值与置信区间究竟为何而发明、边界在哪。
   - title: 因果推断与机器学习
     author: 郭若城
-    slug: yin-guo-tui-duan
+    slug: yin-guo-tui-duan-yu-ji-qi-xue-xi
     path: books/思维科学/证据科学/郭若城-因果推断与机器学习.md
     status: in_library
     reading: reference

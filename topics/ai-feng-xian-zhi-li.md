@@ -23,7 +23,7 @@ date: '2026-11-20'
 books:
   - title: 人机对齐
     author: 布莱恩·克里斯汀
-    slug: dui-qi-wen-ti
+    slug: ren-ji-dui-qi
     path: books/科技媒介/AI变革/布莱恩·克里斯汀-人机对齐.md
     status: in_library
     reading: start
@@ -39,7 +39,7 @@ books:
     reason: 追查数学模型进入大学排名、教师考核、求职筛人与警务预测后，如何用黑箱权威掩盖偏见并堵死申诉。
   - title: 你的脸属于我们
     author: 卡希米尔·希尔
-    slug: your-face-belongs-to-us
+    slug: ni-de-lian-shu-yu-wo-men
     path: books/社会公共/技术社会/卡希米尔·希尔-你的脸属于我们.md
     status: in_library
     reading: optional
@@ -55,7 +55,7 @@ books:
     reason: 把 AI 放进石器时代以来的人类信息网络演变史，指出算法首次作为自主成员介入公共舆论与官僚分类。
   - title: 浪潮将至
     author: 穆斯塔法·苏莱曼,迈克尔·巴斯卡尔
-    slug: ji-jiang-dao-lai-de-lang-chao
+    slug: lang-chao-jiang-zhi
     path: books/科技媒介/AI变革/穆斯塔法·苏莱曼,迈克尔·巴斯卡尔-浪潮将至.md
     status: in_library
     reading: compare
@@ -63,7 +63,7 @@ books:
     reason: 剖析 AI 与合成生物学双双廉价普及后，如何在毁灭性失控与极权监控之间守住遏制底线。
   - title: 至高无上
     author: 帕米·奥尔森
-    slug: supremacy
+    slug: zhi-gao-wu-shang
     path: books/科技媒介/AI变革/帕米·奥尔森-至高无上.md
     status: in_library
     reading: optional

@@ -39,7 +39,7 @@ books:
     reason: 追问点击偏好算法如何把每个人包裹在量身定制的回音室里，同时对照用户主动选择与线下社交等变量。
   - title: 监控资本主义时代
     author: 肖莎娜·祖博夫
-    slug: jian-shi-zi-ben-zhu-yi-shi-dai
+    slug: jian-kong-zi-ben-zhu-yi-shi-dai
     path: books/社会公共/技术社会/肖莎娜·祖博夫-监控资本主义时代.md
     status: in_library
     reading: compare
@@ -79,7 +79,7 @@ books:
     reason: 凭北京众包骑手一年的抢单、超时扣款与路线纠偏日记，让热力地图和等级积分对一线劳动的挤压触手可及。
   - title: 注意力危机
     author: 约翰·海利
-    slug: zhao-hui-zhuan-zhu-li
+    slug: zhu-yi-li-wei-ji
     path: books/自我管理/专注效率/约翰·海利-注意力危机.md
     status: in_library
     reading: optional

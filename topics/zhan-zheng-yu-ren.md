@@ -31,16 +31,16 @@ books:
     reason: 顺着青年士兵保罗的感官、恐惧与休假返乡的失语，写出战争机器怎样碾碎一代年轻人重回日常的能力。
   - title: 向一切告别
     author: 罗伯特·格雷夫斯
-    slug: goodbye-to-all-that
+    slug: xiang-yi-qie-gao-bie
     path: books/历史世界/传记回忆/罗伯特·格雷夫斯-向一切告别.md
     status: in_library
     reading: compare
     role: 军官眼中的西线荒诞
     reason: 用冷峻白描记录英国公学荣誉观在洛斯毒气吹回己方、索姆河重伤与战壕黑色幽默中的碎裂过程。
-  - title: Testament of Youth
+  - title: 青春誓言
     author: 维拉·布里顿
-    slug: testament-of-youth
-    path: books/历史世界/传记回忆/维拉·布里顿-Testament of Youth.md
+    slug: qing-chun-shi-yan
+    path: books/历史世界/传记回忆/维拉·布里顿-青春誓言.md
     status: in_library
     reading: compare
     role: 后方女性的丧失与照护
@@ -55,7 +55,7 @@ books:
     reason: 并置日军士兵日记、受害幸存者采访与安全区外侨记录，还原六周浩劫及其战后数十年的掩埋与拉锯。
   - title: 灭绝的年代
     author: 索尔·弗里德兰德尔
-    slug: the-years-of-extermination
+    slug: mie-jue-de-nian-dai
     path: books/历史世界/世界历史/索尔·弗里德兰德尔-灭绝的年代.md
     status: in_library
     reading: next
@@ -71,7 +71,7 @@ books:
     reason: 紧跟六位平民从原子弹落下清晨八点一刻逃生、感染辐射病到四十年后垂老的命运，让核毁灭落回个体体温。
   - title: 劫后人语
     author: 斯特兹·特克尔
-    slug: the-good-war
+    slug: jie-hou-ren-yu
     path: books/历史世界/世界历史/斯特兹·特克尔-劫后人语.md
     status: in_library
     reading: optional
@@ -92,7 +92,7 @@ books:
 
 ## 西线泥泞里的两种贴肉视角
 
-想直接撞进战争现场，小说和自传各有分量。《西线无战事》把镜头锁在十九岁新兵的感官上——新兵还没学会分辨炮弹啸声就死在弹坑里，活下来的人休假回家，面对长辈嘴里“为国献身”的空话彻底失语。对峙战壕另一侧的英国诗人罗伯特·格雷夫斯，在《向一切告别》里写出更冷峻的黑色实录：毒气扳手不合把氯气吹回自家战壕，阵亡通知比铅笔报平安的信先一步寄到父母手里，公学荣誉观在泥浆里碎得干干净净。再退向后方野战医院，维拉·布里顿在《Testament of Youth》里写下战地护士的双重孤立——前线年轻男性的成批消逝，以及女人在和平年代独自收拾创伤的漫长余生。
+想直接撞进战争现场，小说和自传各有分量。《西线无战事》把镜头锁在十九岁新兵的感官上——新兵还没学会分辨炮弹啸声就死在弹坑里，活下来的人休假回家，面对长辈嘴里“为国献身”的空话彻底失语。对峙战壕另一侧的英国诗人罗伯特·格雷夫斯，在《向一切告别》里写出更冷峻的黑色实录：毒气扳手不合把氯气吹回自家战壕，阵亡通知比铅笔报平安的信先一步寄到父母手里，公学荣誉观在泥浆里碎得干干净净。再退向后方野战医院，维拉·布里顿在《青春誓言》里写下战地护士的双重孤立——前线年轻男性的成批消逝，以及女人在和平年代独自收拾创伤的漫长余生。
 
 ## 当暴力瞄准手无寸铁的平民
 

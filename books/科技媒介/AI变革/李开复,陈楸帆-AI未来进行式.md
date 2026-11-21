@@ -1,5 +1,5 @@
 ---
-slug: ai-2041
+slug: ai-wei-lai-jin-xing-shi
 title: AI未来进行式
 author: 李开复, 陈楸帆
 tags: [人工智能, 科技]

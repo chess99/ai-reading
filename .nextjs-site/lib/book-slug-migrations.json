@@ -1,0 +1,572 @@
+{
+  "a-bright-shining-lie": {
+    "bookSlug": "shan-liang-de-huang-yan",
+    "bookTitle": "闪亮的谎言",
+    "bookAuthor": "尼尔·希恩"
+  },
+  "a-day-in-the-life-of-abed-salama": {
+    "bookSlug": "wu-sui-mi-la-de-de-mo-ban-che",
+    "bookTitle": "五岁米拉德的末班车",
+    "bookAuthor": "内森·萨拉尔"
+  },
+  "a-problem-from-hell": {
+    "bookSlug": "di-yu-de-nan-ti",
+    "bookTitle": "地狱的难题",
+    "bookAuthor": "萨曼莎·鲍尔"
+  },
+  "a-short-history-of-life-on-earth": {
+    "bookSlug": "di-qiu-sheng-ming-xiao-shi",
+    "bookTitle": "地球生命小史",
+    "bookAuthor": "亨利·吉"
+  },
+  "abundance": {
+    "bookSlug": "2050-mai-xiang-feng-yu-zhi-lu",
+    "bookTitle": "2050迈向丰裕之路",
+    "bookAuthor": "伊兹拉·克莱因,德里克·汤普森"
+  },
+  "adventures-in-the-anthropocene": {
+    "bookSlug": "ren-lei-shi-de-mao-xian",
+    "bookTitle": "人类世的冒险",
+    "bookAuthor": "加亚·文斯"
+  },
+  "age-proof": {
+    "bookSlug": "nian-ling-bu-shi-shu-zi",
+    "bookTitle": "年龄不是数字",
+    "bookAuthor": "罗斯·安妮·肯尼"
+  },
+  "ai-2041": {
+    "bookSlug": "ai-wei-lai-jin-xing-shi",
+    "bookTitle": "AI未来进行式",
+    "bookAuthor": "李开复, 陈楸帆"
+  },
+  "amity-and-prosperity": {
+    "bookSlug": "ya-lie-de-di-ceng",
+    "bookTitle": "压裂的底层",
+    "bookAuthor": "伊丽莎·格里斯沃尔德"
+  },
+  "annals-of-the-former-world": {
+    "bookSlug": "xi-ri-de-shi-jie",
+    "bookTitle": "昔日的世界",
+    "bookAuthor": "约翰·麦克菲"
+  },
+  "bing-du-shi-xun-huan": {
+    "bookSlug": "bing-du-xun-huan",
+    "bookTitle": "病毒循环",
+    "bookAuthor": "亚当·潘恩伯格"
+  },
+  "black-flags": {
+    "bookSlug": "hei-qi-isis-de-jue-qi",
+    "bookTitle": "黑旗：ISIS的崛起",
+    "bookAuthor": "乔比·沃里克"
+  },
+  "breakneck": {
+    "bookSlug": "ji-su-qian-jin-zhong-guo-su-zao-wei-lai-de-tan-suo",
+    "bookTitle": "极速前进：中国塑造未来的探索",
+    "bookAuthor": "王旦"
+  },
+  "cai-fu-zi-you-zhi-lu": {
+    "bookSlug": "jian-dan-zhi-fu",
+    "bookTitle": "简单致富",
+    "bookAuthor": "J·L·柯林斯"
+  },
+  "chao-ji-yu-ce": {
+    "bookSlug": "chao-yu-ce",
+    "bookTitle": "超预测",
+    "bookAuthor": "菲利普·泰洛克,丹·加德纳"
+  },
+  "chen-yin-ke-de-zui-hou-20-nian": {
+    "bookSlug": "chen-yin-ke-de-zui-hou-er-shi-nian",
+    "bookTitle": "陈寅恪的最后二十年",
+    "bookAuthor": "陆键东"
+  },
+  "cheng-gong-tou-zi": {
+    "bookSlug": "bi-de-lin-qi-de-cheng-gong-tou-zi",
+    "bookTitle": "彼得·林奇的成功投资",
+    "bookAuthor": "彼得·林奇"
+  },
+  "chokepoints": {
+    "bookSlug": "jing-ji-zhan-zheng-shi-dai",
+    "bookTitle": "经济战争时代",
+    "bookAuthor": "爱德华·费什曼"
+  },
+  "clearing-the-air": {
+    "bookSlug": "zhong-jie-kong-qi-wu-ran",
+    "bookTitle": "终结空气污染",
+    "bookAuthor": "提姆·史梅德利"
+  },
+  "cobalt-red": {
+    "bookSlug": "xue-gu",
+    "bookTitle": "血钴",
+    "bookAuthor": "悉达多·卡拉"
+  },
+  "cure": {
+    "bookSlug": "zi-yu-li-de-zhen-xiang",
+    "bookTitle": "自愈力的真相",
+    "bookAuthor": "乔·马钱特"
+  },
+  "di-er-da-nao": {
+    "bookSlug": "da-zao-di-er-da-nao",
+    "bookTitle": "打造第二大脑",
+    "bookAuthor": "蒂亚戈·福特"
+  },
+  "di-liu-ci-da-mie-jue": {
+    "bookSlug": "da-mie-jue-shi-dai",
+    "bookTitle": "大灭绝时代",
+    "bookAuthor": "伊丽莎白·科尔伯特"
+  },
+  "dui-qi-wen-ti": {
+    "bookSlug": "ren-ji-dui-qi",
+    "bookTitle": "人机对齐",
+    "bookAuthor": "布莱恩·克里斯汀"
+  },
+  "elderhood": {
+    "bookSlug": "yin-fa-shi-dai",
+    "bookTitle": "银发世代",
+    "bookAuthor": "路易斯·阿伦森"
+  },
+  "ends-of-the-earth": {
+    "bookSlug": "di-qiu-de-jin-tou",
+    "bookTitle": "地球的尽头",
+    "bookAuthor": "尼尔·舒宾"
+  },
+  "eve": {
+    "bookSlug": "xia-wa-nv-xing-shen-ti-ru-he-tui-dong-liang-yi-nian-de-ren-lei-yan-hua",
+    "bookTitle": "夏娃：女性身体如何推动两亿年的人类演化",
+    "bookAuthor": "薄翰侬"
+  },
+  "everything-is-predictable": {
+    "bookSlug": "bei-ye-si-ding-li",
+    "bookTitle": "贝叶斯定理",
+    "bookAuthor": "汤姆·奇弗斯"
+  },
+  "exactly": {
+    "bookSlug": "zhui-qiu-jing-que",
+    "bookTitle": "追求精确",
+    "bookAuthor": "西蒙·温切斯特"
+  },
+  "fire-weather": {
+    "bookSlug": "huo-zai-tian-qi",
+    "bookTitle": "火灾天气",
+    "bookAuthor": "约翰·瓦利恩特"
+  },
+  "ghost-wars": {
+    "bookSlug": "you-ling-zhan-zheng",
+    "bookTitle": "幽灵战争",
+    "bookAuthor": "史蒂夫·科尔"
+  },
+  "gong-jian-she-qu": {
+    "bookSlug": "ju-zhong-shang-ji",
+    "bookTitle": "聚众商机",
+    "bookAuthor": "贝莉·理查森,黄凯文,凯伊·埃尔默·索托"
+  },
+  "goodbye-to-all-that": {
+    "bookSlug": "xiang-yi-qie-gao-bie",
+    "bookTitle": "向一切告别",
+    "bookAuthor": "罗伯特·格雷夫斯"
+  },
+  "hei-xiao-zi": {
+    "bookSlug": "hei-hai-zi",
+    "bookTitle": "黑孩子",
+    "bookAuthor": "理查德·赖特"
+  },
+  "hello-world": {
+    "bookSlug": "suan-fa-tong-zhi-shi-jie",
+    "bookTitle": "算法统治世界",
+    "bookAuthor": "汉娜·弗莱"
+  },
+  "hirohito-and-the-making-of-modern-japan": {
+    "bookSlug": "zhen-xiang-yu-ren-tian-huang-yu-xian-dai-ri-ben-de-xing-cheng",
+    "bookTitle": "真相：裕仁天皇与现代日本的形成",
+    "bookAuthor": "赫伯特·比克斯"
+  },
+  "his-name-is-george-floyd": {
+    "bookSlug": "ta-de-ming-zi-shi-qiao-zhi-fu-luo-yi-de",
+    "bookTitle": "他的名字是乔治·弗洛伊德",
+    "bookAuthor": "罗伯特·塞缪尔斯,托鲁泽·奥洛伦尼帕"
+  },
+  "hot-air": {
+    "bookSlug": "huang-yan-de-wen-du",
+    "bookTitle": "谎言的温度",
+    "bookAuthor": "彼得·斯托特"
+  },
+  "house-of-huawei": {
+    "bookSlug": "hua-wei-zhi-jia",
+    "bookTitle": "华为之家",
+    "bookAuthor": "窦伊娃"
+  },
+  "household-education": {
+    "bookSlug": "jia-ting-jiao-yu",
+    "bookTitle": "家庭教育",
+    "bookAuthor": "哈丽雅特·马蒂诺"
+  },
+  "how-progress-ends": {
+    "bookSlug": "jin-bu-he-yi-zhong-jie",
+    "bookTitle": "进步何以终结",
+    "bookAuthor": "卡尔·贝内迪克特·弗雷"
+  },
+  "how-to-change-a-memory": {
+    "bookSlug": "ji-yi-cao-kong",
+    "bookTitle": "记忆操控",
+    "bookAuthor": "史蒂夫·拉米瑞兹"
+  },
+  "hu-xi": {
+    "bookSlug": "hu-xi-ge-ming",
+    "bookTitle": "呼吸革命",
+    "bookAuthor": "詹姆斯·内斯特"
+  },
+  "i-heard-there-was-a-secret-chord": {
+    "bookSlug": "yin-yue-zhi-liao-da-nao",
+    "bookTitle": "音乐治疗大脑",
+    "bookAuthor": "丹尼尔·列维廷"
+  },
+  "igen": {
+    "bookSlug": "i-shi-dai-bao-gao",
+    "bookTitle": "i世代报告",
+    "bookAuthor": "珍·特温格"
+  },
+  "imperial-reckoning": {
+    "bookSlug": "di-guo-de-qing-suan",
+    "bookTitle": "帝国的清算",
+    "bookAuthor": "卡罗琳·埃尔金斯"
+  },
+  "in-pursuit-of-memory": {
+    "bookSlug": "zhui-xun-ji-yi-yu-a-er-ci-hai-mo-bing-kang-zheng",
+    "bookTitle": "追寻记忆：与阿尔茨海默病抗争",
+    "bookAuthor": "约瑟夫·杰贝利"
+  },
+  "infinite-powers": {
+    "bookSlug": "wei-ji-fen-de-li-liang",
+    "bookTitle": "微积分的力量",
+    "bookAuthor": "史蒂夫·斯托加茨"
+  },
+  "inventing-ourselves": {
+    "bookSlug": "qing-shao-nian-da-nao-shi-yong-shuo-ming-shu",
+    "bookTitle": "青少年大脑使用说明书",
+    "bookAuthor": "萨拉-杰恩·布莱克莫尔"
+  },
+  "invisible-child": {
+    "bookSlug": "kan-bu-jian-de-hai-zi",
+    "bookTitle": "看不见的孩子",
+    "bookAuthor": "安德里亚·埃利奥特"
+  },
+  "jellyfish-age-backwards": {
+    "bookSlug": "wei-he-long-xia-bu-hui-bian-lao-shui-mu-hui-ni-ling-ren-lei-que-wu-fa",
+    "bookTitle": "为何龙虾不会变老，水母会逆龄，人类却无法？",
+    "bookAuthor": "尼可拉斯·潘柏格"
+  },
+  "ji-jiang-dao-lai-de-lang-chao": {
+    "bookSlug": "lang-chao-jiang-zhi",
+    "bookTitle": "浪潮将至",
+    "bookAuthor": "穆斯塔法·苏莱曼,迈克尔·巴斯卡尔"
+  },
+  "jian-shi-zi-ben-zhu-yi-shi-dai": {
+    "bookSlug": "jian-kong-zi-ben-zhu-yi-shi-dai",
+    "bookTitle": "监控资本主义时代",
+    "bookAuthor": "肖莎娜·祖博夫"
+  },
+  "jing-yi-chan-pin-shou-ce": {
+    "bookSlug": "jing-yi-chan-pin-kai-fa-shou-ce",
+    "bookTitle": "精益产品开发手册",
+    "bookAuthor": "丹·奥尔森"
+  },
+  "life-on-the-edge": {
+    "bookSlug": "shen-mi-de-liang-zi-sheng-ming",
+    "bookTitle": "神秘的量子生命",
+    "bookAuthor": "吉姆·艾尔-哈利利,约翰乔·麦克法登"
+  },
+  "life-s-greatest-secret": {
+    "bookSlug": "jie-ma-sheng-ming",
+    "bookTitle": "解码生命",
+    "bookAuthor": "马修·科布"
+  },
+  "liquid": {
+    "bookSlug": "mi-ren-de-ye-ti",
+    "bookTitle": "迷人的液体",
+    "bookAuthor": "马克·米奥多尼克"
+  },
+  "locking-up-our-own": {
+    "bookSlug": "dang-dai-mei-guo-de-zui-yu-fa",
+    "bookTitle": "当代美国的罪与罚",
+    "bookAuthor": "詹姆斯·福曼"
+  },
+  "minor-feelings": {
+    "bookSlug": "wo-shou-shang-gu-er-wo-cun-zai",
+    "bookTitle": "我受伤，故而我存在",
+    "bookAuthor": "洪朴凯西"
+  },
+  "my-early-life": {
+    "bookSlug": "wo-de-zao-nian-sheng-huo",
+    "bookTitle": "我的早年生活",
+    "bookAuthor": "温斯顿·丘吉尔"
+  },
+  "nai-li": {
+    "bookSlug": "ren-nai-li",
+    "bookTitle": "忍耐力",
+    "bookAuthor": "亚力克斯·哈钦森"
+  },
+  "nei-rong-xian-jing": {
+    "bookSlug": "yin-huo-xian",
+    "bookTitle": "引火线",
+    "bookAuthor": "巴哈拉特·阿南德"
+  },
+  "no-logo": {
+    "bookSlug": "no-logo-dian-fu-pin-pai-quan-qiu-tong-zhi",
+    "bookTitle": "NO LOGO：颠覆品牌全球统治",
+    "bookAuthor": "娜奥米·克莱恩"
+  },
+  "nuts-and-bolts": {
+    "bookSlug": "xiao-ling-jian-gai-bian-da-shi-jie",
+    "bookTitle": "小零件改变大世界",
+    "bookAuthor": "罗玛·艾葛拉瓦"
+  },
+  "our-brains-our-selves": {
+    "bookSlug": "ju-wai-ren-dang-wo-men-de-da-nao-bei-pan-bing-gai-bian-le-wo-men",
+    "bookTitle": "局外人：当我们的大脑背叛并改变了我们",
+    "bookAuthor": "马苏德·侯赛因"
+  },
+  "ren-ji-gong-zhi": {
+    "bookSlug": "gong-zhi-shi-dai",
+    "bookTitle": "共智时代",
+    "bookAuthor": "伊桑·莫里克"
+  },
+  "right-kind-of-wrong": {
+    "bookSlug": "zheng-que-fan-cuo",
+    "bookTitle": "正确犯错",
+    "bookAuthor": "艾米·埃德蒙森"
+  },
+  "science-fictions": {
+    "bookSlug": "bei-bai-huai-de-xue-shu",
+    "bookTitle": "被败坏的学术",
+    "bookAuthor": "斯图尔特·里奇"
+  },
+  "seven-elements-that-have-changed-the-world": {
+    "bookSlug": "wo-men-ru-he-zou-dao-jin-tian-gai-bian-shi-jie-de-7-zhong-yuan-su",
+    "bookTitle": "我们如何走到今天：改变世界的7种元素",
+    "bookAuthor": "约翰·布朗"
+  },
+  "six-impossible-things": {
+    "bookSlug": "bu-ke-neng-de-liu-jian-shi",
+    "bookTitle": "不可能的六件事",
+    "bookAuthor": "约翰·格里宾"
+  },
+  "slavery-by-another-name": {
+    "bookSlug": "nu-li-zhi-de-ling-yi-ge-ming-cheng",
+    "bookTitle": "奴隶制的另一个名称",
+    "bookAuthor": "道格拉斯·布莱克蒙"
+  },
+  "smashing-physics": {
+    "bookSlug": "xi-ge-si-li-zi-shi-ru-he-zhao-dao-de",
+    "bookTitle": "希格斯粒子是如何找到的",
+    "bookAuthor": "乔恩·巴特沃思"
+  },
+  "supremacy": {
+    "bookSlug": "zhi-gao-wu-shang",
+    "bookTitle": "至高无上",
+    "bookAuthor": "帕米·奥尔森"
+  },
+  "testament-of-youth": {
+    "bookSlug": "qing-chun-shi-yan",
+    "bookTitle": "青春誓言",
+    "bookAuthor": "维拉·布里顿"
+  },
+  "testosterone-rex": {
+    "bookSlug": "he-er-meng-zhan-zheng",
+    "bookTitle": "荷尔蒙战争",
+    "bookAuthor": "科迪莉亚·法恩"
+  },
+  "the-ants": {
+    "bookSlug": "ma-yi",
+    "bookTitle": "蚂蚁",
+    "bookAuthor": "博尔特·霍尔多布勒,爱德华·O.威尔逊"
+  },
+  "the-beak-of-the-finch": {
+    "bookSlug": "niao-hui-jia-la-pa-ge-si-qun-dao-kao-cha-ji",
+    "bookTitle": "鸟喙：加拉帕戈斯群岛考察记",
+    "bookAuthor": "乔纳生·威诺"
+  },
+  "the-dead-hand": {
+    "bookSlug": "si-wang-zhi-shou",
+    "bookTitle": "死亡之手",
+    "bookAuthor": "戴维·霍夫曼"
+  },
+  "the-exceptions": {
+    "bookSlug": "po-li-zhe",
+    "bookTitle": "破例者",
+    "bookAuthor": "凯特·泽尼克"
+  },
+  "the-female-eunuch": {
+    "bookSlug": "bei-su-zao-de-nv-xing",
+    "bookTitle": "被塑造的女性",
+    "bookAuthor": "杰梅茵·格里尔"
+  },
+  "the-good-war": {
+    "bookSlug": "jie-hou-ren-yu",
+    "bookTitle": "劫后人语",
+    "bookAuthor": "斯特兹·特克尔"
+  },
+  "the-great-pretender": {
+    "bookSlug": "da-wei-zhuang-zhe",
+    "bookTitle": "大伪装者",
+    "bookAuthor": "苏珊娜·卡哈兰"
+  },
+  "the-great-tradition": {
+    "bookSlug": "wei-da-de-chuan-tong",
+    "bookTitle": "伟大的传统",
+    "bookAuthor": "F. R. 利维斯"
+  },
+  "the-greywacke": {
+    "bookSlug": "shi-luo-de-san-yi-nian",
+    "bookTitle": "失落的三亿年",
+    "bookAuthor": "尼克·戴维森"
+  },
+  "the-hunt-for-vulcan": {
+    "bookSlug": "zhui-bu-zhu-rong-xing",
+    "bookTitle": "追捕祝融星",
+    "bookAuthor": "托马斯·利文森"
+  },
+  "the-interesting-narrative-of-olaudah-equiano": {
+    "bookSlug": "ao-la-da-ai-kui-ya-nuo-sheng-ping-qi-shi",
+    "bookTitle": "奥拉达·艾奎亚诺生平奇事",
+    "bookAuthor": "奥拉达·艾奎亚诺"
+  },
+  "the-most-perfect-thing": {
+    "bookSlug": "bao-kai-niao-dan-de-mi-mi",
+    "bookTitle": "剥开鸟蛋的秘密",
+    "bookAuthor": "蒂姆·伯克黑德"
+  },
+  "the-perfect-theory": {
+    "bookSlug": "wan-mei-li-lun",
+    "bookTitle": "完美理论",
+    "bookAuthor": "佩德罗·G.费雷拉"
+  },
+  "the-planet-remade": {
+    "bookSlug": "chong-su-di-qiu",
+    "bookTitle": "重塑地球",
+    "bookAuthor": "奥利弗·莫顿"
+  },
+  "the-remarkable-life-of-the-skin": {
+    "bookSlug": "pi-fu-de-fei-fan-sheng-ming",
+    "bookTitle": "皮肤的非凡生命",
+    "bookAuthor": "蒙蒂·莱曼"
+  },
+  "the-road-to-oxiana": {
+    "bookSlug": "qian-wang-a-mu-he-zhi-xiang",
+    "bookTitle": "前往阿姆河之乡",
+    "bookAuthor": "罗伯特·拜伦"
+  },
+  "the-second-kind-of-impossible": {
+    "bookSlug": "di-er-zhong-bu-ke-neng",
+    "bookTitle": "第二种不可能",
+    "bookAuthor": "保罗·斯坦哈特"
+  },
+  "the-sleeping-beauties": {
+    "bookSlug": "mi-bing-shui-mei-ren",
+    "bookTitle": "谜病睡美人",
+    "bookAuthor": "苏珊·欧苏利文"
+  },
+  "the-social-transformation-of-american-medicine": {
+    "bookSlug": "mei-guo-yi-liao-de-she-hui-bian-qian",
+    "bookTitle": "美国医疗的社会变迁",
+    "bookAuthor": "保罗·斯塔尔"
+  },
+  "the-thinking-machine": {
+    "bookSlug": "huang-ren-xun-ying-wei-da-zhi-xin",
+    "bookTitle": "黄仁勋：英伟达之芯",
+    "bookAuthor": "斯蒂芬·威特"
+  },
+  "the-world-according-to-physics": {
+    "bookSlug": "huan-ying-lai-dao-wu-li-xue-de-shi-jie",
+    "bookTitle": "欢迎来到物理学的世界",
+    "bookAuthor": "吉姆·艾尔-哈利利"
+  },
+  "the-years-of-extermination": {
+    "bookSlug": "mie-jue-de-nian-dai",
+    "bookTitle": "灭绝的年代",
+    "bookAuthor": "索尔·弗里德兰德尔"
+  },
+  "there-is-no-place-for-us": {
+    "bookSlug": "wo-men-mei-you-li-zu-zhi-di",
+    "bookTitle": "我们没有立足之地",
+    "bookAuthor": "布莱恩·戈德斯通"
+  },
+  "to-be-a-machine": {
+    "bookSlug": "zui-hou-yi-ge-ren-lei",
+    "bookTitle": "最后一个人类",
+    "bookAuthor": "马克·奥康奈尔"
+  },
+  "to-the-success-of-our-hopeless-cause": {
+    "bookSlug": "zhi-wo-men-wu-wang-shi-ye-de-cheng-gong",
+    "bookTitle": "致我们无望事业的成功",
+    "bookAuthor": "本杰明·内森斯"
+  },
+  "tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu": {
+    "bookSlug": "tong-xiang-cai-wu-zi-you-zhi-lu",
+    "bookTitle": "通向财务自由之路",
+    "bookAuthor": "范·K·撒普"
+  },
+  "tou-zi-si-da-zhi-zhu": {
+    "bookSlug": "tou-zi-de-si-da-zhi-zhu",
+    "bookTitle": "投资的四大支柱",
+    "bookAuthor": "威廉·J.伯恩斯坦"
+  },
+  "wilmingtons-lie": {
+    "bookSlug": "wei-er-ming-dun-de-huang-yan",
+    "bookTitle": "威尔明顿的谎言",
+    "bookAuthor": "David Zucchino"
+  },
+  "wo-men-wei-he-hui-si": {
+    "bookSlug": "lao-hua-ke-yi-gai-bian-ma",
+    "bookTitle": "老化可以改变吗？",
+    "bookAuthor": "文基·拉马克里希南"
+  },
+  "xiao-shuo-xie-zuo-zhi-nan": {
+    "bookSlug": "xiao-shuo-xie-zuo-xu-shi-ji-qiao-zhi-nan",
+    "bookTitle": "小说写作：叙事技巧指南",
+    "bookAuthor": "珍妮特·伯罗薇"
+  },
+  "yi-dian-yuan-zhi-long": {
+    "bookSlug": "yi-dian-yuan-de-fei-long",
+    "bookTitle": "伊甸园的飞龙",
+    "bookAuthor": "卡尔·萨根"
+  },
+  "yin-guo-tui-duan": {
+    "bookSlug": "yin-guo-tui-duan-yu-ji-qi-xue-xi",
+    "bookTitle": "因果推断与机器学习",
+    "bookAuthor": "郭若城"
+  },
+  "ying-wen-xie-zuo-zhi-nan": {
+    "bookSlug": "feng-ge-de-yao-su",
+    "bookTitle": "风格的要素",
+    "bookAuthor": "威廉·斯特伦克"
+  },
+  "your-face-belongs-to-us": {
+    "bookSlug": "ni-de-lian-shu-yu-wo-men",
+    "bookTitle": "你的脸属于我们",
+    "bookAuthor": "卡希米尔·希尔"
+  },
+  "your-life-is-manufactured": {
+    "bookSlug": "ren-xing-zhi-zao",
+    "bookTitle": "韧性制造",
+    "bookAuthor": "提姆·敏谢尔"
+  },
+  "zhai": {
+    "bookSlug": "zhai-5000-nian-zhai-wu-shi",
+    "bookTitle": "债：5000年债务史",
+    "bookAuthor": "大卫·格雷伯"
+  },
+  "zhang-yu-hai-yang-yu-shen-ceng-qi-yuan": {
+    "bookSlug": "zhang-yu-de-xin-ling",
+    "bookTitle": "章鱼的心灵",
+    "bookAuthor": "彼得·戈弗雷-史密斯"
+  },
+  "zhao-hui-zhuan-zhu-li": {
+    "bookSlug": "zhu-yi-li-wei-ji",
+    "bookTitle": "注意力危机",
+    "bookAuthor": "约翰·海利"
+  },
+  "zhu-chu": {
+    "bookSlug": "sao-di-chu-men",
+    "bookTitle": "扫地出门",
+    "bookAuthor": "马修·德斯蒙德"
+  }
+}

@@ -78,7 +78,7 @@ books:
     reason: 跳过关于援助好坏的意识形态争论，用田野随机对照实验查明穷人信贷、健康和教育决策的真实卡点。
   - title: 债：5000年债务史
     author: 大卫·格雷伯
-    slug: zhai
+    slug: zhai-5000-nian-zhai-wu-shi
     path: books/金钱投资/经济学/大卫·格雷伯-债.md
     status: in_library
     reading: optional

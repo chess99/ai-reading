@@ -44,7 +44,7 @@ books:
     reason: 追踪战地、警务与紧急救援中的高压抉择，剖析当所有选项都带沉重代价时人为什么会瘫痪回避。
   - title: 超预测
     author: 菲利普·泰洛克,丹·加德纳
-    slug: chao-ji-yu-ce
+    slug: chao-yu-ce
     path: books/思维科学/概率风险/菲利普·泰洛克,丹·加德纳-超预测.md
     status: in_library
     reading: next

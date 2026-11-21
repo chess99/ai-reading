@@ -44,25 +44,25 @@ books:
     reading: compare
     role: 制度、军工与使用者塑形
     reason: 拆破“技术决定一切”的单一叙事，追踪军费、市场标准、性别分工和用户习惯怎样在设计阶段就改写技术模样。
-  - title: How Progress Ends
-    author: Carl Benedikt Frey
-    slug: how-progress-ends
-    path: books/社会公共/技术社会/Carl Benedikt Frey-How Progress Ends.md
+  - title: 进步何以终结
+    author: 卡尔·贝内迪克特·弗雷
+    slug: jin-bu-he-yi-zhong-jie
+    path: books/社会公共/技术社会/卡尔·贝内迪克特·弗雷-进步何以终结.md
     status: in_library
     reading: compare
     role: 创新探索与追赶停滞之辩
     reason: 横跨东西方工业化史对比，证明去中心化网络孕育前沿发明，而追赶成功的集权官僚结构常在前沿锁死创新。
-  - title: Breakneck
-    author: Dan Wang
-    slug: breakneck
-    path: books/社会公共/政治制度/Dan Wang-Breakneck.md
+  - title: 极速前进：中国塑造未来的探索
+    author: 王旦
+    slug: ji-su-qian-jin-zhong-guo-su-zao-wei-lai-de-tan-suo
+    path: books/社会公共/政治制度/王旦-极速前进.md
     status: in_library
     reading: compare
     role: 工程国家与律师社会镜像
     reason: 把中国高速建造的“工程国家”过程知识与美国诉讼停滞的“律师社会”互作镜像，照出两类体制各自的代价。
   - title: 血钴
     author: 悉达多·卡拉
-    slug: cobalt-red
+    slug: xue-gu
     path: books/社会公共/技术社会/悉达多·卡拉-血钴.md
     status: in_library
     reading: next
@@ -89,9 +89,9 @@ books:
 
 ## 体制怎样决定加速或停滞
 
-同一套现代工业和计算技术，在不同政经制度下跑出的速度与方向截然相反。《How Progress Ends》对比英国行会、德国研究型大学、加州禁止竞业条款与中苏体制，提出一条锐利判断：集权官僚结构擅长在追赶期集中资源铺设基建，可逼近无人区前沿时，真正激发试错的却是允许异见与人才流动的分散网络。
+同一套现代工业和计算技术，在不同政经制度下跑出的速度与方向截然相反。《进步何以终结》对比英国行会、德国研究型大学、加州禁止竞业条款与中苏体制，提出一条锐利判断：集权官僚结构擅长在追赶期集中资源铺设基建，可逼近无人区前沿时，真正激发试错的却是允许异见与人才流动的分散网络。
 
-《Breakneck》把这套张力拉到当下的太平洋两岸。Dan Wang 一边记录中国工程师主导的治理体系凭深圳与贵州的“过程知识”造出惊人基建与制造业，同时写下动态清零、举债与审查控制付出的剧痛；另一边却反照出美国“律师社会”的另一头死结——无穷尽的诉讼与程序审查保住了既有权利，却连一条高铁都造不出来。两相对照，效率与程序约束的代价分毫毕现。
+《极速前进：中国塑造未来的探索》把这套张力拉到当下的太平洋两岸。王旦一边记录中国工程师主导的治理体系凭深圳与贵州的“过程知识”造出惊人基建与制造业，同时写下动态清零、举债与审查控制付出的剧痛；另一边却反照出美国“律师社会”的另一头死结——无穷尽的诉讼与程序审查保住了既有权利，却连一条高铁都造不出来。两相对照，效率与程序约束的代价分毫毕现。
 
 ## 光鲜便利背面的矿坑与星辰幻觉
 

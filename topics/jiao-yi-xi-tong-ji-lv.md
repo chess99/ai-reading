@@ -37,7 +37,7 @@ books:
     reason: 透过实体、影线和支撑阻力极性转换解读盘面即时攻防，示范如何在趋势语境中读取短期反转信号。
   - title: 通向财务自由之路
     author: 范·K·撒普
-    slug: tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu
+    slug: tong-xiang-cai-wu-zi-you-zhi-lu
     path: books/金钱投资/交易心理/范·K·撒普-通向财务自由之路.md
     status: in_library
     reading: next

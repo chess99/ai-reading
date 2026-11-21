@@ -45,7 +45,7 @@ books:
     reason: 用二十年对上千位百万富翁的追踪调查，拆穿高收入与高净资产之间的落差，揭示消费时间与代际补贴怎样拖慢攒钱。
   - title: 简单致富
     author: J·L·柯林斯
-    slug: cai-fu-zi-you-zhi-lu
+    slug: jian-dan-zhi-fu
     path: books/金钱投资/理财入门/J·L·柯林斯-简单致富.md
     status: in_library
     reading: next
@@ -62,7 +62,7 @@ books:
   - title: 投资的四大支柱
     author: 威廉·J.伯恩斯坦
     originalTitle: The Four Pillars of Investing
-    slug: tou-zi-si-da-zhi-zhu
+    slug: tou-zi-de-si-da-zhi-zhu
     path: books/金钱投资/理财入门/威廉·J.伯恩斯坦-投资的四大支柱.md
     status: in_library
     reading: optional

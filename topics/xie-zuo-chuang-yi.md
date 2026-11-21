@@ -62,7 +62,7 @@ books:
     reason: 结合斯蒂芬·金的创作回忆录与修改准则，展现大量阅读、日定额写作和“关门写初稿、开门删一成”的手艺。
   - title: 风格的要素
     author: 威廉·斯特伦克
-    slug: ying-wen-xie-zuo-zhi-nan
+    slug: feng-ge-de-yao-su
     path: books/人文艺术/写作技艺/威廉·斯特伦克-风格的要素.md
     status: in_library
     reading: next
@@ -78,7 +78,7 @@ books:
     reason: 从“知识的诅咒”和工作记忆限制出发，用古典风格替现代读者扫除行文障碍，补充超越死板语法教条的语用依据。
   - title: 小说写作：叙事技巧指南
     author: 珍妮特·伯罗薇
-    slug: xiao-shuo-xie-zuo-zhi-nan
+    slug: xiao-shuo-xie-zuo-xu-shi-ji-qiao-zhi-nan
     path: books/人文艺术/叙事创作/珍妮特·伯罗薇-小说写作.md
     status: in_library
     reading: reference

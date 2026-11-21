@@ -26,7 +26,7 @@ books:
     reason: 著名作曲家把听音乐拆成感官、表现与纯音乐三个层面，教人盯住节奏、旋律、和声、音色和曲式怎样搭起作品。
   - title: 音乐治疗大脑
     author: 丹尼尔·列维廷
-    slug: i-heard-there-was-a-secret-chord
+    slug: yin-yue-zhi-liao-da-nao
     path: books/健康身体/医学生理/丹尼尔·列维廷-音乐治疗大脑.md
     status: in_library
     reading: start

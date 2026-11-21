@@ -27,7 +27,7 @@ books:
     reason: 汇集过渡化石、胚胎发育、退化器官与岛屿生物地理分布四路独立证据，直截了当展示演化论为什么经得起反复检验。
   - title: 鸟喙：加拉帕戈斯群岛考察记
     author: 乔纳生·威诺
-    slug: the-beak-of-the-finch
+    slug: niao-hui-jia-la-pa-ge-si-qun-dao-kao-cha-ji
     path: books/思维科学/证据科学/乔纳生·威诺-鸟喙.md
     status: in_library
     reading: start

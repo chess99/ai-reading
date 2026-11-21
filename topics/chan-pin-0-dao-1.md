@@ -37,7 +37,7 @@ books:
     reason: 教团队在写代码前把模糊直觉写成窄假设，再用草图、人工服务或预售验证需求真假。
   - title: 精益产品开发手册
     author: 丹·奥尔森
-    slug: jing-yi-chan-pin-shou-ce
+    slug: jing-yi-chan-pin-kai-fa-shou-ce
     path: books/商业产品/创业方法/丹·奥尔森-精益产品开发手册.md
     status: in_library
     reading: next

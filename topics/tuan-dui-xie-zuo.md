@@ -29,7 +29,7 @@ books:
     reason: 揭示“沉默立刻保己、开口回报迟缓”的人际算盘，说明如何同时拉高心理安全与绩效标准。
   - title: 正确犯错
     author: 艾米·埃德蒙森
-    slug: right-kind-of-wrong
+    slug: zheng-que-fan-cuo
     path: books/职业组织/组织领导/艾米·埃德蒙森-正确犯错.md
     status: in_library
     reading: next

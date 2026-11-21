@@ -1,5 +1,5 @@
 ---
-slug: igen
+slug: i-shi-dai-bao-gao
 title: i世代报告
 author: 珍·特温格
 tags: [代际研究, 智能手机, 青少年心理, 社会变迁]

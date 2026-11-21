@@ -54,7 +54,7 @@ books:
     reason: 用可信的外部收集与下一步行动清单清空大脑内存，避免琐碎承诺在专注中途反复冒头。
   - title: 注意力危机
     author: 约翰·海利
-    slug: zhao-hui-zhuan-zhu-li
+    slug: zhu-yi-li-wei-ji
     path: books/自我管理/专注效率/约翰·海利-注意力危机.md
     status: in_library
     reading: compare

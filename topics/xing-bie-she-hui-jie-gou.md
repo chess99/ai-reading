@@ -46,7 +46,7 @@ books:
     reason: 借助全球土地继承比例、金融信贷门槛、加纳女童田野与美国商学院匿名访谈，剖析女性劳动怎样被系统排除在计价体系之外。
   - title: 荷尔蒙战争
     author: 科迪莉亚·法恩
-    slug: testosterone-rex
+    slug: he-er-meng-zhan-zheng
     path: books/社会公共/性别结构/科迪莉亚·法恩-荷尔蒙战争.md
     status: in_library
     reading: compare

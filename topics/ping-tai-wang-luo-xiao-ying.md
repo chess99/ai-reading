@@ -45,7 +45,7 @@ books:
     reason: 复盘 Facebook 从哈佛封闭邮箱起步、用圈人照片与信息流拉高密度再到开放平台治理震荡的全过程。
   - title: 引火线
     author: 巴哈拉特·阿南德
-    slug: nei-rong-xian-jing
+    slug: yin-huo-xian
     path: books/商业产品/商业战略/巴哈拉特·阿南德-引火线.md
     status: in_library
     reading: compare
@@ -60,7 +60,7 @@ books:
     reason: 用锁定效应、转换成本、标准之战与版本定价的经济学工具，分辨网络价值与迁移阻力。
   - title: 监控资本主义时代
     author: 肖莎娜·祖博夫
-    slug: jian-shi-zi-ben-zhu-yi-shi-dai
+    slug: jian-kong-zi-ben-zhu-yi-shi-dai
     path: books/社会公共/技术社会/肖莎娜·祖博夫-监控资本主义时代.md
     status: in_library
     reading: optional

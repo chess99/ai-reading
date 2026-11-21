@@ -1,5 +1,5 @@
 ---
-slug: the-great-tradition
+slug: wei-da-de-chuan-tong
 title: 伟大的传统
 author: F. R. 利维斯
 tags: [文学批评, 英国小说, 乔治·艾略特, 亨利·詹姆斯, 康拉德]

@@ -63,7 +63,7 @@ books:
   - title: 投资的四大支柱
     author: 威廉·J.伯恩斯坦
     originalTitle: The Four Pillars of Investing
-    slug: tou-zi-si-da-zhi-zhu
+    slug: tou-zi-de-si-da-zhi-zhu
     path: books/金钱投资/理财入门/威廉·J.伯恩斯坦-投资的四大支柱.md
     status: in_library
     reading: optional
@@ -79,7 +79,7 @@ books:
     reason: 从家庭记忆、从众压力与意外现金需要入手，检查一张漂亮配置表在现实暴跌面前究竟能拿多久。
   - title: 简单致富
     author: J·L·柯林斯
-    slug: cai-fu-zi-you-zhi-lu
+    slug: jian-dan-zhi-fu
     path: books/金钱投资/理财入门/J·L·柯林斯-简单致富.md
     status: in_library
     reading: optional

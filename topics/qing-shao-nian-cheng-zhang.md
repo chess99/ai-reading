@@ -21,7 +21,7 @@ date: '2026-11-21'
 books:
   - title: 青少年大脑使用说明书
     author: 萨拉-杰恩·布莱克莫尔
-    slug: inventing-ourselves
+    slug: qing-shao-nian-da-nao-shi-yong-shuo-ming-shu
     path: books/关系家庭/儿童发展/萨拉-杰恩·布莱克莫尔-青少年大脑使用说明书.md
     status: in_library
     reading: start
@@ -45,7 +45,7 @@ books:
     reason: 以数百小时一线访谈走进休学少年、海淀竞赛家庭与精神科诊室，直击优绩单向轨道下青少年痛苦与失语的真实面孔。
   - title: i世代报告
     author: 珍·特温格
-    slug: igen
+    slug: i-shi-dai-bao-gao
     path: books/社会公共/社会理论/珍·特温格-i世代报告.md
     status: in_library
     reading: compare

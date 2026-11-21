@@ -1,5 +1,5 @@
 ---
-slug: no-logo
+slug: no-logo-dian-fu-pin-pai-quan-qiu-tong-zhi
 title: NO LOGO：颠覆品牌全球统治
 author: 娜奥米·克莱恩
 tags: [品牌, 全球化, 消费文化, 反企业行动主义]

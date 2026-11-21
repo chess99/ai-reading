@@ -29,7 +29,7 @@ books:
     reason: 用相互咬合的拼图比喻梳理从亚里士多德、牛顿到量子与相对论的认知迁徙，讲清事实、观测表征与实在论张力。
   - title: 追捕祝融星
     author: 托马斯·利文森
-    slug: the-hunt-for-vulcan
+    slug: zhui-bu-zhu-rong-xing
     path: books/思维科学/证据科学/托马斯·利文森-追捕祝融星.md
     status: in_library
     reading: next
@@ -53,7 +53,7 @@ books:
     reason: 主张知识增长的发动机是“难以篡改的好解释”与持续猜想批判，正面驳斥将科学等同于学派轮替的相对主义。
   - title: 第二种不可能
     author: 保罗·斯坦哈特
-    slug: the-second-kind-of-impossible
+    slug: di-er-zhong-bu-ke-neng
     path: books/历史世界/传记回忆/保罗·斯坦哈特-第二种不可能.md
     status: in_library
     reading: optional
@@ -69,7 +69,7 @@ books:
     reason: 从修收音机、撬保险柜到剖析“货船崇拜科学”的轶事，还原物理学家亲手验证、绝不盲从术语的求真洁癖。
   - title: 被败坏的学术
     author: 斯图尔特·里奇
-    slug: science-fictions
+    slug: bei-bai-huai-de-xue-shu
     path: books/思维科学/证据科学/斯图尔特·里奇-被败坏的学术.md
     status: in_library
     reading: next

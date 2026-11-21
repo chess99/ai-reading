@@ -52,7 +52,7 @@ books:
     reason: 围绕深蹲、推举、卧推、硬拉与高翻五大复合动作拆解中足受力线和杠杆原理，建立系统化线性渐进力量训练模型。
   - title: 忍耐力
     author: 亚力克斯·哈钦森
-    slug: nai-li
+    slug: ren-nai-li
     path: books/健康身体/运动训练/亚力克斯·哈钦森-忍耐力.md
     status: in_library
     reading: optional

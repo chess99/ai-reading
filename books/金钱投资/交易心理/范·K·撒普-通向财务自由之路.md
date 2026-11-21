@@ -1,5 +1,5 @@
 ---
-slug: tong-xiang-jin-rong-wang-guo-de-zi-you-zhi-lu
+slug: tong-xiang-cai-wu-zi-you-zhi-lu
 title: 通向财务自由之路
 author: 范·K·撒普
 tags: [投资, 交易系统, 仓位管理, 交易心理]

@@ -23,7 +23,7 @@ date: '2026-11-20'
 books:
   - title: 呼吸革命
     author: 詹姆斯·内斯特
-    slug: hu-xi
+    slug: hu-xi-ge-ming
     path: books/健康身体/医学生理/詹姆斯·内斯特-呼吸革命.md
     status: in_library
     reading: start
@@ -39,7 +39,7 @@ books:
     reason: 借职业运动员赛间恢复法则戳穿连轴转硬撑的错觉，把体能、情感、专注与意志放进“高压消耗—彻底撤离”的周期。
   - title: 自愈力的真相
     author: 乔·马钱特
-    slug: cure
+    slug: zi-yu-li-de-zhen-xiang
     path: books/健康身体/医学生理/乔·马钱特-自愈力的真相.md
     status: in_library
     reading: compare
@@ -63,7 +63,7 @@ books:
     reason: 当外部任务停下却管不住脑内焦虑反刍时，用接纳承诺疗法关掉“挣扎开关”，从消除不适的拉锯战中抽身。
   - title: 谜病睡美人
     author: 苏珊·欧苏利文
-    slug: the-sleeping-beauties
+    slug: mi-bing-shui-mei-ren
     path: books/健康身体/医学生理/苏珊·欧苏利文-谜病睡美人.md
     status: in_library
     reading: compare

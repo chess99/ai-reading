@@ -1,5 +1,5 @@
 ---
-slug: the-perfect-theory
+slug: wan-mei-li-lun
 title: 完美理论
 author: 佩德罗·G.费雷拉
 tags: [广义相对论, 物理学史, 宇宙学, 引力]

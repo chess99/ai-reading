@@ -67,7 +67,7 @@ books:
     reason: 以父亲致十五岁儿子的书信形式，把社会等级分类写回街角学校、警察盘查与身体时刻紧绷的日常恐惧里。
   - title: 扫地出门
     author: 马修·德斯蒙德
-    slug: zhu-chu
+    slug: sao-di-chu-men
     path: books/社会公共/城市环境/马修·德斯蒙德-扫地出门.md
     status: in_library
     reading: next

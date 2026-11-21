@@ -30,7 +30,7 @@ books:
     reason: 剖析社会如何从“生产伦理”转向“消费美学”，让买不起新潮商品的人直接被当成多余且可疑的社会边缘人。
   - title: NO LOGO：颠覆品牌全球统治
     author: 娜奥米·克莱恩
-    slug: no-logo
+    slug: no-logo-dian-fu-pin-pai-quan-qiu-tong-zhi
     path: books/社会公共/社会理论/娜奥米·克莱恩-NO LOGO.md
     status: in_library
     reading: next
@@ -54,7 +54,7 @@ books:
     reason: 说明现代人消费的对象早已脱离使用功能，转为一套靠品牌排列组合传递阶层归属的符号代码。
   - title: 扫地出门
     author: 马修·德斯蒙德
-    slug: zhu-chu
+    slug: sao-di-chu-men
     path: books/社会公共/城市环境/马修·德斯蒙德-扫地出门.md
     status: in_library
     reading: next
@@ -62,7 +62,7 @@ books:
     reason: 追踪密尔沃基穷人如何把七到九成收入填进高价破败租房，揭示驱逐怎样把底层住户的困窘直接转化为另一端的暴利。
   - title: 看不见的孩子
     author: 安德里亚·埃利奥特
-    slug: invisible-child
+    slug: kan-bu-jian-de-hai-zi
     path: books/社会公共/社会理论/安德里亚·埃利奥特-看不见的孩子.md
     status: in_library
     reading: next

@@ -1,5 +1,5 @@
 ---
-slug: tou-zi-si-da-zhi-zhu
+slug: tou-zi-de-si-da-zhi-zhu
 title: 投资的四大支柱
 author: 威廉·J.伯恩斯坦
 tags: [投资, 资产配置, 金融史, 投资心理]

@@ -62,7 +62,7 @@ books:
     reason: 跳出只盯单篇播放量的焦灼，用拉新、留存、转化与商业价值公式把散客流转成用户资产。
   - title: 聚众商机
     author: 贝莉·理查森,黄凯文,凯伊·埃尔默·索托
-    slug: gong-jian-she-qu
+    slug: ju-zhong-shang-ji
     path: books/商业产品/商业模式/贝莉·理查森,黄凯文,凯伊·埃尔默·索托-聚众商机.md
     status: in_library
     reading: optional

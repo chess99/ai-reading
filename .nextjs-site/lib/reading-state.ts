@@ -1,3 +1,5 @@
+import slugMigrations from './book-slug-migrations.json' with { type: 'json' };
+
 export interface ReadingState {
   bookSlug: string;
   bookTitle: string;
@@ -8,6 +10,7 @@ export interface ReadingState {
 const HISTORY_KEY = 'reading-state-history';
 const LEGACY_KEY = 'reading-state-last-book';
 const MAX_HISTORY = 5;
+const bookMigrations: Partial<Record<string, Omit<ReadingState, 'timestamp'>>> = slugMigrations;
 
 /** 将当前书插入历史队首，去重，最多保留 MAX_HISTORY 条 */
 export function saveToHistory(state: ReadingState): void {
@@ -39,7 +42,25 @@ export function getReadingHistory(): ReadingState[] {
 
     const saved = localStorage.getItem(HISTORY_KEY);
     if (!saved) return [];
-    return JSON.parse(saved) as ReadingState[];
+    const history = JSON.parse(saved) as ReadingState[];
+    const migrated = history.map(state => {
+      const book = Object.prototype.hasOwnProperty.call(bookMigrations, state.bookSlug)
+        ? bookMigrations[state.bookSlug]
+        : undefined;
+      return book ? { ...state, ...book } : state;
+    });
+    if (migrated.every((state, index) => state === history[index])) return history;
+
+    const seen = new Set<string>();
+    const deduped = migrated.filter(({ bookSlug }) => {
+      if (seen.has(bookSlug)) return false;
+      seen.add(bookSlug);
+      return true;
+    });
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(deduped));
+    } catch { /* 存储暂不可写时，本次仍使用迁移后的地址。 */ }
+    return deduped;
   } catch (error) {
     console.error('Failed to load reading history:', error);
     localStorage.removeItem(HISTORY_KEY);

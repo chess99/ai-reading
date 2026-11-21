@@ -78,7 +78,7 @@ books:
     reason: 围绕诱饵效应、零价格魔力与社会规范和市场规范的冲突，演示实验室实验如何捕捉日常消费里的非理性规律。
   - title: 被败坏的学术
     author: 斯图尔特·里奇
-    slug: science-fictions
+    slug: bei-bai-huai-de-xue-shu
     path: books/思维科学/证据科学/斯图尔特·里奇-被败坏的学术.md
     status: in_library
     reading: compare

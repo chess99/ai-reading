@@ -31,7 +31,7 @@ books:
     reason: 从屋顶一张生活照里的钢、纸、混凝土、巧克力与硅出发，看原子排列和晶体缺陷如何决定手边器物的软硬脆韧。
   - title: 迷人的液体
     author: 马克·米奥多尼克
-    slug: liquid
+    slug: mi-ren-de-ye-ti
     path: books/思维科学/证据科学/马克·米奥多尼克-迷人的液体.md
     status: in_library
     reading: optional
@@ -39,7 +39,7 @@ books:
     reason: 借一趟跨大西洋航程串起煤油、甲醇、水、环氧胶水与液晶，剖析液体分子结构在燃爆、黏合和显示中的双面性。
   - title: 小零件改变大世界
     author: 罗玛·艾葛拉瓦
-    slug: nuts-and-bolts
+    slug: xiao-ling-jian-gai-bian-da-shi-jie
     path: books/科技媒介/未来技术/罗玛·艾葛拉瓦-小零件改变大世界.md
     status: in_library
     reading: next
@@ -47,7 +47,7 @@ books:
     reason: 沿着钉子、轮子、弹簧、磁铁、透镜、绳索与泵七个不起眼的小部件，回溯结构工程师怎样用简单构件搭出复杂机器。
   - title: 追求精确
     author: 西蒙·温切斯特
-    slug: exactly
+    slug: zhui-qiu-jing-que
     path: books/科技媒介/未来技术/西蒙·温切斯特-追求精确.md
     status: in_library
     reading: next
@@ -55,7 +55,7 @@ books:
     reason: 按公差从零点一英寸缩进至原子钟百亿亿分之一秒，讲述车床、量块、涡轮叶片与太空镜片背后的测量革命。
   - title: 我们如何走到今天：改变世界的7种元素
     author: 约翰·布朗
-    slug: seven-elements-that-have-changed-the-world
+    slug: wo-men-ru-he-zou-dao-jin-tian-gai-bian-shi-jie-de-7-zhong-yuan-su
     path: books/历史世界/世界历史/约翰·布朗-我们如何走到今天.md
     status: in_library
     reading: compare
@@ -63,7 +63,7 @@ books:
     reason: 由曾执掌英国石油的作者梳理铁、碳、金、银、铀、钛、硅的冶炼与博弈，展现高密度材料能源如何改写现代世界。
   - title: 韧性制造
     author: 提姆·敏谢尔
-    slug: your-life-is-manufactured
+    slug: ren-xing-zhi-zao
     path: books/科技媒介/未来技术/提姆·敏谢尔-韧性制造.md
     status: in_library
     reading: next
