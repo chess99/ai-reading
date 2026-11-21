@@ -4,6 +4,7 @@ title: 富兰克林自传
 author: Benjamin Franklin
 tags: [自传, 自我教育, 美国历史, 印刷业, 启蒙时代]
 date: '2026-08-30'
+shareDescription: "从印刷学徒到报人，他把十三种美德排进自省表。"
 ---
 
 # 富兰克林自传

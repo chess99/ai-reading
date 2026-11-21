@@ -4,6 +4,7 @@ title: 最好的告别
 author: Atul Gawande
 tags: [医疗, 临终关怀]
 date: '2026-06-13'
+shareDescription: "当治愈已很困难，医生该怎样问病人最想保住什么？"
 ---
 
 # 最好的告别

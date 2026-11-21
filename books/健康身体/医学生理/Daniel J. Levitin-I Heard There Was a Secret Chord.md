@@ -4,6 +4,7 @@ title: I Heard There Was a Secret Chord
 author: Daniel J. Levitin
 tags: [音乐神经科学, 音乐治疗, 认知科学, 脑科学]
 date: '2026-09-03'
+shareDescription: "从音乐怎样唤起旧记忆，到节奏能否帮运动障碍患者迈步。"
 ---
 
 # I Heard There Was a Secret Chord

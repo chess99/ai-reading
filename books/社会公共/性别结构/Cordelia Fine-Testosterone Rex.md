@@ -4,6 +4,7 @@ title: Testosterone Rex
 author: Cordelia Fine
 tags: [性别研究, 演化生物学, 神经科学, 科学写作]
 date: '2026-09-03'
+shareDescription: "敢把一周工资押在赌桌上，不见得就敢向老板提出加薪。"
 ---
 
 # Testosterone Rex

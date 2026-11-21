@@ -4,6 +4,7 @@ title: Everything Is Predictable
 author: Tom Chivers
 tags: [贝叶斯定理, 概率与统计, 科学方法论, 决策理论, 认知科学]
 date: '2026-09-01'
+shareDescription: "同一项筛查呈阳性，换一群人，患病概率就会变。"
 ---
 
 # Everything Is Predictable

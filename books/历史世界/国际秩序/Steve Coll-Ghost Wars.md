@@ -4,6 +4,7 @@ title: Ghost Wars
 author: Steve Coll
 tags: [阿富汗战争, 中央情报局, 塔利班, 反恐, 本·拉登]
 date: '2026-08-29'
+shareDescription: "苏军撤出阿富汗后，美国怎样抽身，又为何重新介入？"
 ---
 
 # Ghost Wars

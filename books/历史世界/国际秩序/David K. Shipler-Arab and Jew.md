@@ -4,6 +4,7 @@ title: Arab and Jew
 author: David K. Shipler
 tags: [中东, 阿以冲突, 刻板印象, 调查报道, 民族心理]
 date: '2026-09-01'
+shareDescription: "在同一片土地上生活的阿拉伯人和犹太人，怎样看待彼此？"
 ---
 
 # Arab and Jew

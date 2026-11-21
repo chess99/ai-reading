@@ -4,6 +4,7 @@ title: Supremacy
 author: Parmy Olson
 tags: [人工智能, 科技垄断, 人物传记, OpenAI, DeepMind]
 date: '2026-09-01'
+shareDescription: "哈萨比斯和奥尔特曼一路创业，后来成了谷歌和微软阵营里的对手。"
 ---
 
 # Supremacy

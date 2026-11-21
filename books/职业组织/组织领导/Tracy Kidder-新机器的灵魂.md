@@ -4,6 +4,7 @@ title: 新机器的灵魂
 author: Tracy Kidder
 tags: [计算机工程, 科技纪实, 团队管理, 非虚构]
 date: '2026-09-02'
+shareDescription: "三十来个工程师赶造一台新电脑，记者坐在格子间里看了两年。"
 ---
 
 # 新机器的灵魂

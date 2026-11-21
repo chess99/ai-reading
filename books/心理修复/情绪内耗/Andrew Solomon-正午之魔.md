@@ -4,6 +4,7 @@ title: 正午之魔
 author: Andrew Solomon
 tags: [抑郁症, 精神健康, 回忆录, 社会观察]
 date: '2026-09-03'
+shareDescription: "他写下自己的三次抑郁发作，也去听其他患者怎么说。"
 ---
 
 # 正午之魔

@@ -4,6 +4,7 @@ title: 震撼世界的十天
 author: John Reed
 tags: [十月革命, 纪实文学, 苏维埃, 俄国革命]
 date: '2026-08-28'
+shareDescription: "美国记者亲历俄国十月革命，记下临时政府倒台前后的见闻。"
 ---
 
 # 震撼世界的十天

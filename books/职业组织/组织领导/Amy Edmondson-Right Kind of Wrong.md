@@ -4,6 +4,7 @@ title: Right Kind of Wrong
 author: Amy Edmondson
 tags: [失败科学, 心理安全, 组织学习, 个人成长, 团队管理]
 date: '2026-09-01'
+shareDescription: "为什么配合更好的医院团队，记录在案的用药错误反而更多？"
 ---
 
 # Right Kind of Wrong

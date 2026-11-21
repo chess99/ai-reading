@@ -4,6 +4,7 @@ title: 黄色墙纸
 author: Charlotte Perkins Gilman
 tags: [短篇小说, 剧情讲述, 女性, 心理]
 date: '2026-10-27'
+shareDescription: "被医生丈夫安排到乡间休养后，她的目光落在卧室的墙纸上。"
 ---
 
 # 黄色墙纸

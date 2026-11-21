@@ -4,6 +4,7 @@ title: 即将到来的浪潮
 author: "Mustafa Suleyman, Michael Bhaskar"
 tags: [人工智能, 科技治理]
 date: '2026-06-13'
+shareDescription: "人工智能和合成生物学发展太快，现有制度能管得住吗？"
 ---
 
 # 即将到来的浪潮

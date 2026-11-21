@@ -4,6 +4,7 @@ title: 寂静的春天
 author: Rachel Carson
 tags: [环境, 公共健康]
 date: '2026-06-13'
+shareDescription: "花园附近喷过药，鸟接连死去。卡森从一封信查起。"
 ---
 
 # 寂静的春天

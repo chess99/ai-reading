@@ -4,6 +4,7 @@ title: 监视资本主义时代
 author: Shoshana Zuboff
 tags: [监视资本主义, 科技]
 date: '2026-06-13'
+shareDescription: "平台从你的点击里预测下一步，再把预测做成生意。"
 ---
 
 # 监视资本主义时代

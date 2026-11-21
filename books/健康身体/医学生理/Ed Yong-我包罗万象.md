@@ -4,6 +4,7 @@ title: 我包罗万象
 author: Ed Yong
 tags: [微生物组, 共生, 科普, 进化]
 date: '2026-09-03'
+shareDescription: "动物走到哪里都带着微生物，有些细菌还参与塑造宿主身体。"
 ---
 
 # 我包罗万象

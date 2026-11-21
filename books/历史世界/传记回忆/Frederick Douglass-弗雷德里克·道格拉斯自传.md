@@ -4,6 +4,7 @@ title: 弗雷德里克·道格拉斯自传
 author: Frederick Douglass
 tags: [自传, 美国奴隶制, 废奴运动, 19世纪美国历史]
 date: '2026-08-30'
+shareDescription: "一个被奴役的人学会读写，后来走上废奴大会的讲台。"
 ---
 
 # 弗雷德里克·道格拉斯自传

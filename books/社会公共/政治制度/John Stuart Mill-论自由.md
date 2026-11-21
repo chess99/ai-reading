@@ -4,6 +4,7 @@ title: 论自由
 author: John Stuart Mill
 tags: [政治哲学, 自由主义, 言论自由, 个性自由, 社会权力]
 date: '2026-08-17'
+shareDescription: "一件事只影响做这件事的人，旁人有什么理由强加干涉？"
 ---
 
 # 论自由

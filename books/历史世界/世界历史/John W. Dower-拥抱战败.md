@@ -4,6 +4,7 @@ title: 拥抱战败
 author: John W. Dower
 tags: [日本战后史, 占领时期, 战争责任, 战争记忆]
 date: '2026-08-26'
+shareDescription: "战败后的日本人一边在黑市找吃的，一边适应占领下的新生活。"
 ---
 
 # 拥抱战败

@@ -4,6 +4,7 @@ title: The Years of Extermination
 author: Saul Friedländer
 tags: [纳粹德国, 大屠杀, 二战, 欧洲史, 日记史料]
 date: '2026-09-01'
+shareDescription: "把纳粹文件与犹太人的日记并读，追踪迫害如何演变成大屠杀。"
 ---
 
 # The Years of Extermination

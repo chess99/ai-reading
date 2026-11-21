@@ -4,6 +4,7 @@ title: How to Change a Memory
 author: Steve Ramirez
 tags: [神经科学, 记忆研究, 科普回忆录, 光遗传学]
 date: '2026-09-02'
+shareDescription: "两位科学家从小鼠的恐惧反应入手，追踪记忆留下的痕迹。"
 ---
 
 # How to Change a Memory

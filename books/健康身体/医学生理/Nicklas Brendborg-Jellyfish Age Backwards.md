@@ -4,6 +4,7 @@ title: Jellyfish Age Backwards
 author: Nicklas Brendborg
 tags: [衰老, 长寿科学, 生物学, 健康]
 date: '2026-09-11'
+shareDescription: "有些水母能从成年退回水螅体。衰老为何会有这样的例外？"
 ---
 
 # Jellyfish Age Backwards

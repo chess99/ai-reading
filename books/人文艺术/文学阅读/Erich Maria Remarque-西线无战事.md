@@ -4,6 +4,7 @@ title: 西线无战事
 author: Erich Maria Remarque
 tags: [战争小说, 剧情讲述, 第一次世界大战, 反战]
 date: '2026-10-27'
+shareDescription: "一战西线，一百五十人的份饭原样送来，回来吃的只剩八十人。"
 ---
 
 # 西线无战事

@@ -4,6 +4,7 @@ title: iGen
 author: 简·腾格
 tags: [代际研究, 智能手机, 青少年心理, 社会变迁]
 date: '2026-05-26'
+shareDescription: "智能手机普及前后，美国中学生的社交和成年步调发生了什么变化？"
 ---
 
 # iGen

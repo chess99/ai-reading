@@ -4,6 +4,7 @@ title: 宇宙的琴弦
 author: Brian Greene
 tags: [弦理论, 相对论, 量子力学, 统一理论]
 date: '2026-09-16'
+shareDescription: "用两套成功的理论一起算黑洞，方程怎么就失灵了？"
 ---
 
 # 宇宙的琴弦

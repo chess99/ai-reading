@@ -4,6 +4,7 @@ title: "Wilmington's Lie"
 author: David Zucchino
 tags: [美国史, 种族主义, 政治暴力, 调查报道]
 date: '2026-09-02'
+shareDescription: "1898年，美国威尔明顿的民选政府被白人武装推翻。"
 ---
 
 # Wilmington's Lie

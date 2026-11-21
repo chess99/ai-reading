@@ -4,6 +4,7 @@ title: How Progress Ends
 author: Carl Benedikt Frey
 tags: [技术进步, 经济史, 创新制度, 增长]
 date: '2026-09-11'
+shareDescription: "追赶时奏效的制度，到了技术前沿可能把新点子堵在门外。"
 ---
 
 # How Progress Ends

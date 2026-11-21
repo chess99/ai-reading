@@ -4,6 +4,7 @@ title: House of Huawei
 author: Eva Dou
 tags: [科技公司史, 中美关系, 电信产业, 任正非, 企业管理]
 date: '2026-08-19'
+shareDescription: "一家深圳交换机销售商，后来站到了中美科技争端的中心。"
 ---
 
 # House of Huawei

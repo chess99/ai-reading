@@ -4,6 +4,7 @@ title: Cure
 author: Jo Marchant
 tags: [心身医学, 安慰剂, 医疗研究, 健康]
 date: '2026-09-14'
+shareDescription: "研究者怎样用安慰剂实验，弄清人的期待能影响多少疼痛？"
 ---
 
 # Cure

@@ -4,6 +4,7 @@ title: 妈妈测试
 author: Rob Fitzpatrick
 tags: [产品, 用户访谈]
 date: '2026-06-13'
+shareDescription: "做用户访谈时，多问上次怎么做，少问以后会不会买。"
 ---
 
 # 妈妈测试

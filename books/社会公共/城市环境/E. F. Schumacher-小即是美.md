@@ -4,6 +4,7 @@ title: 小即是美
 author: E. F. Schumacher
 tags: [生态经济, 可持续发展]
 date: '2026-06-13'
+shareDescription: "煤和石油用一分就少一分，舒马赫提醒我们把它当本钱算。"
 ---
 
 # 小即是美

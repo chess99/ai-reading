@@ -4,6 +4,7 @@ title: 奇点临近
 author: Ray Kurzweil
 tags: [人工智能, 未来学]
 date: '2026-06-04'
+shareDescription: "库兹韦尔把技术进步画成指数曲线，用它推测机器会怎样改变人类。"
 ---
 
 # 奇点临近

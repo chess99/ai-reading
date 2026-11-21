@@ -4,6 +4,7 @@ title: 石油风云
 author: Daniel Yergin
 tags: [石油产业史, 国际关系, 经济史, 能源政治, 商业史]
 date: '2026-08-26'
+shareDescription: "从宾州第一口油井写到两次石油危机，油价和政局相互牵动。"
 ---
 
 # 石油风云

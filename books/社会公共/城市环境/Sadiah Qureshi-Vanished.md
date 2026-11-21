@@ -4,6 +4,7 @@ title: Vanished
 author: Sadiah Qureshi
 tags: [物种灭绝, 科学史, 帝国主义, 环境史]
 date: '2026-09-14'
+shareDescription: "猛犸象的下颌骨，曾是物种可以彻底消失的一份证据。"
 ---
 
 # Vanished

@@ -4,6 +4,7 @@ title: 癌症传
 author: Siddhartha Mukherjee
 tags: [癌症, 医学史, 科学史, 纪实, 靶向治疗]
 date: '2026-09-03'
+shareDescription: "从切除肿瘤到靶向药，医生怎样一步步摸清癌症？"
 ---
 
 # 癌症传

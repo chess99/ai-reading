@@ -4,6 +4,7 @@ title: Elderhood
 author: Louise Aronson
 tags: [老年医学, 衰老, 医疗制度, 生命阶段]
 date: '2026-09-13'
+shareDescription: "老人有好几种慢病时，专治单个器官的办法可能彼此冲突。"
 ---
 
 # Elderhood

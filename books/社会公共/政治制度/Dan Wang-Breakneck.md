@@ -4,6 +4,7 @@ title: Breakneck
 author: Dan Wang
 tags: [中国发展, 工程治理, 政治经济, 中美比较]
 date: '2026-09-11'
+shareDescription: "从贵州的高桥到加州的高铁，对照中美两种做工程的办法。"
 ---
 
 # Breakneck

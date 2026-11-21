@@ -4,6 +4,7 @@ title: Chokepoints
 author: Edward Fishman
 tags: [经济制裁, 地缘政治, 美元霸权, 科技竞争, 国际关系]
 date: '2026-08-19'
+shareDescription: "几条石油制裁新规发布后，油轮在土耳其海峡口排起长队。"
 ---
 
 # Chokepoints

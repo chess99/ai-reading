@@ -4,6 +4,7 @@ title: A (Very) Short History of Life on Earth
 author: Henry Gee
 tags: [演化史, 古生物学, 地球生命, 科普]
 date: '2026-09-01'
+shareDescription: "读地球生命史，从一枚能离开水孵化的蛋看动物如何登陆。"
 ---
 
 # A (Very) Short History of Life on Earth

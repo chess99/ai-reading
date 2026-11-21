@@ -4,6 +4,7 @@ title: A Problem from Hell
 author: Samantha Power
 tags: [种族灭绝, 美国外交政策, 国际法, 人权, 调查报道]
 date: '2026-08-26'
+shareDescription: "从柬埔寨到卢安达，追查美国政府收到预警后如何决策。"
 ---
 
 # A Problem from Hell

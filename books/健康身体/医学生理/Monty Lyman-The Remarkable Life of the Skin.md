@@ -4,6 +4,7 @@ title: The Remarkable Life of the Skin
 author: Monty Lyman
 tags: [皮肤, 医学, 免疫, 感觉]
 date: '2026-09-13'
+shareDescription: "皮肤在挡住外物的同时，还能觉出一阵痒、一丝疼。它是怎么做到的？"
 ---
 
 # The Remarkable Life of the Skin

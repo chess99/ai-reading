@@ -4,6 +4,7 @@ title: 肥胖代码
 author: Jason Fung
 tags: [肥胖, 代谢]
 date: '2026-06-13'
+shareDescription: "一位肾科医生从胰岛素和进食时机入手，解释体重变化。"
 ---
 
 # 肥胖代码

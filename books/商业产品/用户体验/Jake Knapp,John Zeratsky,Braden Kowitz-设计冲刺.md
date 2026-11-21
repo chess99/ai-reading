@@ -4,6 +4,7 @@ title: 设计冲刺
 author: "Jake Knapp, John Zeratsky, Braden Kowitz"
 tags: [产品设计, 创新方法]
 date: '2026-06-13'
+shareDescription: "花五天做一个逼真的原型，请五位用户当面试用。"
 ---
 
 # 设计冲刺

@@ -4,6 +4,7 @@ title: 自尊
 author: "Matthew McKay,Patrick Fanning"
 tags: [自尊, 心理成长]
 date: '2026-06-13'
+shareDescription: "犯了小错就骂自己没用，练习把评价改回事情本身。"
 ---
 
 # 自尊

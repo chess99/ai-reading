@@ -4,6 +4,7 @@ title: His Name Is George Floyd
 author: Robert Samuels、Toluse Olorunnipa
 tags: [传记, 纪实报道, 种族正义, 美国警务, 黑人民权]
 date: '2026-09-02'
+shareDescription: "从弗洛伊德的童年写起，追问他成年后为何屡次入狱。"
 ---
 
 # His Name Is George Floyd

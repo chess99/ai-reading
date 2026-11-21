@@ -4,6 +4,7 @@ title: 菌络万象
 author: Merlin Sheldrake
 tags: [真菌, 生态学, 共生, 生物网络]
 date: '2026-09-14'
+shareDescription: "从地衣到地下的菌丝，真菌与身边的生物怎样一起生活？"
 ---
 
 # 菌络万象

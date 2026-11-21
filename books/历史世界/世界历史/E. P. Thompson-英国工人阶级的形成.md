@@ -4,6 +4,7 @@ title: 英国工人阶级的形成
 author: E. P. Thompson
 tags: [历史, 阶级, 英国, 工业革命, 激进主义]
 date: '2026-09-02'
+shareDescription: "工业革命时期，英国织工和手艺人怎样结成一股政治力量？"
 ---
 
 # 英国工人阶级的形成

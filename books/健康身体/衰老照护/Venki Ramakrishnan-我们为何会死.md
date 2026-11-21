@@ -4,6 +4,7 @@ title: 我们为何会死
 author: Venki Ramakrishnan
 tags: [衰老, 细胞生物学, 寿命, 医学研究]
 date: '2026-09-18'
+shareDescription: "从酵母到灵长类，逐项看看延寿研究做到了哪一步。"
 ---
 
 # 我们为何会死

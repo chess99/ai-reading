@@ -4,6 +4,7 @@ title: The Ants
 author: Bert Hölldobler、Edward O. Wilson
 tags: [蚂蚁, 社会生物学, 演化, 行为生态]
 date: '2026-09-16'
+shareDescription: "少了某种体型的工蚁，整个蚁群的分工会怎么变？"
 ---
 
 # The Ants

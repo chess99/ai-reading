@@ -4,6 +4,7 @@ title: The Road to Oxiana
 author: Robert Byron
 tags: [旅行文学, 波斯建筑, 阿富汗, 中亚, 日记体]
 date: '2026-08-28'
+shareDescription: "1933年，一位旅人经波斯去阿富汗，一路看古建筑。"
 ---
 
 # The Road to Oxiana

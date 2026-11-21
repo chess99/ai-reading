@@ -4,6 +4,7 @@ title: 社交媒体娱乐
 author: "Stuart Cunningham,David Craig"
 tags: [创作者经济, 媒介产业]
 date: '2026-08-13'
+shareDescription: "做视频只占一部分，回复评论、维护粉丝关系也得花时间。"
 ---
 
 # 社交媒体娱乐

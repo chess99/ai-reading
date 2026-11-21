@@ -4,6 +4,7 @@ title: 巨塔杀机
 author: Lawrence Wright
 tags: [基地组织, 奥萨玛·本·拉登, 9·11, 反恐调查, 纪实]
 date: '2026-08-26'
+shareDescription: "回到九一一之前，追查美国反恐部门为何没能拼起线索。"
 ---
 
 # 巨塔杀机

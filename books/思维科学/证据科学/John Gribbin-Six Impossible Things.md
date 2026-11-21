@@ -4,6 +4,7 @@ title: Six Impossible Things
 author: John Gribbin
 tags: [量子力学, 科学哲学, 物理学, 理论解释]
 date: '2026-09-12'
+shareDescription: "电子逐个射向双缝，屏幕上却慢慢显出干涉条纹。"
 ---
 
 # Six Impossible Things

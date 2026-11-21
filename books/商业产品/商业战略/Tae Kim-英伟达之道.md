@@ -4,6 +4,7 @@ title: 英伟达之道
 author: Tae Kim
 tags: [企业史, 芯片, 公司文化, 人工智能, 黄仁勋]
 date: '2026-09-01'
+shareDescription: "黄仁勋押注 CUDA，让游戏显卡也能替科学家做计算。"
 ---
 
 # 英伟达之道

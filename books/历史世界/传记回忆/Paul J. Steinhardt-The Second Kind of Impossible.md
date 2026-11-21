@@ -4,6 +4,7 @@ title: The Second Kind of Impossible
 author: Paul J. Steinhardt
 tags: [科学回忆录, 物理学, 准晶体, 材料科学, 科学史]
 date: '2026-09-03'
+shareDescription: "一种曾被认为不可能的晶体，让物理学家追到勘察加半岛。"
 ---
 
 # The Second Kind of Impossible

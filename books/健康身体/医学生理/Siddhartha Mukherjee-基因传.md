@@ -4,6 +4,7 @@ title: 基因传
 author: Siddhartha Mukherjee
 tags: [遗传学, 科学史, 医学, 基因, 科普]
 date: '2026-09-01'
+shareDescription: "从孟德尔的豌豆出发，追溯人们怎样认识遗传与疾病。"
 ---
 
 # 基因传

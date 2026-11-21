@@ -4,6 +4,7 @@ title: 平面国
 author: Edwin A. Abbott
 tags: [数学小说, 剧情讲述, 维度, 社会讽刺]
 date: '2026-10-27'
+shareDescription: "一个住在二维世界里的方形律师，遇见了来自另一维度的访客。"
 ---
 
 # 平面国

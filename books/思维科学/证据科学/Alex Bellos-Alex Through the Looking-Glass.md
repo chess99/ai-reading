@@ -4,6 +4,7 @@ title: Alex Through the Looking-Glass
 author: Alex Bellos
 tags: [数学, 数字, 概率, 数学文化]
 date: '2026-09-16'
+shareDescription: "为什么有人遇到奇数就多想一会儿？从数字直觉逛进数学。"
 ---
 
 # Alex Through the Looking-Glass

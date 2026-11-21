@@ -4,6 +4,7 @@ title: 女性的奥秘
 author: Betty Friedan
 tags: [女性主义, 性别研究, 女权运动史, 消费文化, 美国家庭]
 date: '2026-08-31'
+shareDescription: "战后美国郊区的主妇难以说出口的烦闷，从哪里来？"
 ---
 
 # 女性的奥秘

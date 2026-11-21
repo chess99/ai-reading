@@ -4,6 +4,7 @@ title: Inventing Ourselves
 author: Sarah-Jayne Blakemore
 tags: [青少年, 大脑发育, 社会认知, 教育]
 date: '2026-09-19'
+shareDescription: "以为同龄人正隔着镜头观察自己，青少年的大脑会怎样反应？"
 ---
 
 # Inventing Ourselves

@@ -4,6 +4,7 @@ title: Invisible Child
 author: Andrea Elliott
 tags: [非虚构, 儿童贫困, 纽约, 儿童保护, 调查报道]
 date: '2026-08-26'
+shareDescription: "十一岁的达萨妮和九位家人同住纽约收容所的一间房。"
 ---
 
 # Invisible Child

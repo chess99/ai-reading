@@ -4,6 +4,7 @@ title: The Interesting Narrative of Olaudah Equiano
 author: Olaudah Equiano
 tags: [回忆录, 奴隶贸易, 废奴运动, 十八世纪, 航海见闻]
 date: '2026-08-30'
+shareDescription: "一名自由海员回忆被掳的童年，以及攒钱赎身的日子。"
 ---
 
 # The Interesting Narrative of Olaudah Equiano

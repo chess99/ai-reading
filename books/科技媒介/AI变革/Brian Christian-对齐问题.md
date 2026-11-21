@@ -4,6 +4,7 @@ title: 对齐问题
 author: Brian Christian
 tags: [人工智能, 科技治理]
 date: '2026-06-13'
+shareDescription: "机器把设定的分数越刷越高，做出的事却可能离人的本意越来越远。"
 ---
 
 # 对齐问题

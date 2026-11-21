@@ -4,6 +4,7 @@ title: 古拉格
 author: Anne Applebaum
 tags: [苏联史, 斯大林, 劳改营, 强制劳动, 历史研究]
 date: '2026-08-26'
+shareDescription: "从囚犯回忆和解密档案里，看苏联劳改营如何建成和运转。"
 ---
 
 # 古拉格

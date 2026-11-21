@@ -4,6 +4,7 @@ title: The Greywacke
 author: Nick Davidson
 tags: [地质学, 科学史, 地层学, 科学争议]
 date: '2026-09-01'
+shareDescription: "地质学家踏遍英国山谷，为一批灰色岩层争了半个世纪。"
 ---
 
 # The Greywacke

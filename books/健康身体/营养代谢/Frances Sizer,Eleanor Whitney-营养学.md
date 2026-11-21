@@ -4,6 +4,7 @@ title: 营养学：概念与争论
 author: "Frances Sizer, Eleanor Whitney"
 tags: [营养, 饮食, 代谢, 健康]
 date: '2026-06-14'
+shareDescription: "燕麦降胆固醇的说法，怎样从一项研究走上食品标签？"
 ---
 
 # 营养学：概念与争论

@@ -4,6 +4,7 @@ title: 设计心理学
 author: Don Norman
 tags: [设计, 用户体验]
 date: '2026-06-13'
+shareDescription: "同一扇门总被人推反，门把手给了什么错误暗示？"
 ---
 
 # 设计心理学

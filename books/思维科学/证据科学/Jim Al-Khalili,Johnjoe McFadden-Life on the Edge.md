@@ -4,6 +4,7 @@ title: Life on the Edge
 author: Jim Al-Khalili、Johnjoe McFadden
 tags: [量子生物学, 生命科学, 量子力学, 生物物理]
 date: '2026-09-12'
+shareDescription: "从候鸟感知地磁的本领，追查生命活动里的量子线索。"
 ---
 
 # Life on the Edge

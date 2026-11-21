@@ -4,6 +4,7 @@ title: The Planet Remade
 author: Oliver Morton
 tags: [气候工程, 气候变化, 公共政策, 风险治理]
 date: '2026-09-15'
+shareDescription: "一次火山喷发让地球降温，也给气候工程提供了参照。"
 ---
 
 # The Planet Remade

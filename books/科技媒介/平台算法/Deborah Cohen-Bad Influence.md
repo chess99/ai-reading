@@ -4,6 +4,7 @@ title: Bad Influence
 author: Deborah Cohen
 tags: [社交媒体, 健康信息, 公共卫生, 医学营销]
 date: '2026-09-01'
+shareDescription: "一款家用生育检测如何走红？记者顺着社交媒体的健康建议追查。"
 ---
 
 # Bad Influence

@@ -4,6 +4,7 @@ title: 丰裕社会
 author: John Kenneth Galbraith
 tags: [经济学, 消费社会, 公共财政, 社会政策]
 date: '2026-09-16'
+shareDescription: "汽车越造越豪华，道路却越来越堵。富裕社会的钱花到哪了？"
 ---
 
 # 丰裕社会

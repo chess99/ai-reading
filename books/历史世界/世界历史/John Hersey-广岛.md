@@ -4,6 +4,7 @@ title: 广岛
 author: John Hersey
 tags: [广岛原爆, 战争, 纪实文学, 幸存者]
 date: '2026-09-15'
+shareDescription: "原子弹落下那天，跟随六名幸存者走过广岛的街道。"
 ---
 
 # 广岛

@@ -4,6 +4,7 @@ title: 身体使用手册
 author: Kelly Starrett
 tags: [健康运动, 功能训练, 移动性, 康复]
 date: '2026-05-27'
+shareDescription: "借深蹲和硬拉看动作哪里变形，找出受限的是哪个关节。"
 ---
 
 # 身体使用手册

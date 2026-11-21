@@ -4,6 +4,7 @@ title: "Life's Greatest Secret"
 author: Matthew Cobb
 tags: [遗传密码, 分子生物学史, 信息论, 科学史]
 date: '2026-09-03'
+shareDescription: "从双螺旋到蛋白质，科学家怎样读懂遗传密码的六十四个词？"
 ---
 
 # Life's Greatest Secret

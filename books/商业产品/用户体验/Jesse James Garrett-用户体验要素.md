@@ -4,6 +4,7 @@ title: 用户体验要素
 author: Jesse James Garrett
 tags: [用户体验, 产品设计]
 date: '2026-06-13'
+shareDescription: "网站该放什么，先问清用户要做什么、团队想解决什么。"
 ---
 
 # 用户体验要素

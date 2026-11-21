@@ -4,6 +4,7 @@ title: 达尔文的危险思想
 author: Daniel Dennett
 tags: [演化论, 科学哲学, 达尔文, 模因]
 date: '2026-09-03'
+shareDescription: "微小变化一代代积累，达尔文的解释如何走出生物学？"
 ---
 
 # 达尔文的危险思想

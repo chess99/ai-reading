@@ -4,6 +4,7 @@ title: 苦涩的灵药
 author: Jennifer Vanderbes
 tags: [沙利度胺, 药品监管, 公共卫生, 调查报道]
 date: '2026-09-02'
+shareDescription: "药物沙利度胺曾被当作灵药推销，一些医生怎样发现它的危害？"
 ---
 
 # 苦涩的灵药

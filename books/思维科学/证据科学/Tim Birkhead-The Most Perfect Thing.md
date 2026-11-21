@@ -4,6 +4,7 @@ title: The Most Perfect Thing
 author: Tim Birkhead
 tags: [鸟类, 鸟卵, 演化, 生殖生物学]
 date: '2026-09-15'
+shareDescription: "崖海鸦在悬崖边产卵，它的蛋为什么像一颗尖梨？"
 ---
 
 # The Most Perfect Thing

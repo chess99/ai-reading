@@ -4,6 +4,7 @@ title: The World According to Physics
 author: Jim Al-Khalili
 tags: [物理学, 科普, 宇宙学, 量子力学, 相对论]
 date: '2026-09-03'
+shareDescription: "从钟表怎么走、热量往哪里去，读懂现代物理的三根支柱。"
 ---
 
 # The World According to Physics

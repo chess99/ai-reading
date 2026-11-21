@@ -4,6 +4,7 @@ title: 人机共智
 author: Ethan Mollick
 tags: [人工智能, 工作方法]
 date: '2026-06-13'
+shareDescription: "把手头的活交一小块给 AI 试做，很快就知道哪里该自己把关。"
 ---
 
 # 人机共智

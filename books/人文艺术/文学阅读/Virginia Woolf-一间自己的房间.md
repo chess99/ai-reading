@@ -4,6 +4,7 @@ title: 一间自己的房间
 author: Virginia Woolf
 tags: [女性写作, 文学随笔, 性别研究, 英国文学]
 date: '2026-08-30'
+shareDescription: "一个女人要写小说，先得有五百英镑年收入和一间能锁门的房。"
 ---
 
 # 一间自己的房间

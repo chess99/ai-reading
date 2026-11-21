@@ -4,6 +4,7 @@ title: 伊甸园之龙
 author: Carl Sagan
 tags: [大脑进化, 人类智能, 神经科学史, 意识]
 date: '2026-09-12'
+shareDescription: "把宇宙史压成一本年历，再找找人类心智何时登场。"
 ---
 
 # 伊甸园之龙

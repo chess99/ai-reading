@@ -4,6 +4,7 @@ title: 白板
 author: Steven Pinker
 tags: [进化心理学, 行为遗传学, 人性论, 认知科学]
 date: '2026-09-03'
+shareDescription: "平克从遗传和脑科学谈起，追问后天环境能把人塑造到什么地步。"
 ---
 
 # 白板

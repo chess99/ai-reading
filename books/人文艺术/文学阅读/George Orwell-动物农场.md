@@ -4,6 +4,7 @@ title: 动物农场
 author: George Orwell
 tags: [政治寓言, 剧情讲述, 权力, 反讽]
 date: '2026-10-27'
+shareDescription: "农场主早早醉倒，动物们在谷仓集合，听老少校讲了一个梦。"
 ---
 
 # 动物农场

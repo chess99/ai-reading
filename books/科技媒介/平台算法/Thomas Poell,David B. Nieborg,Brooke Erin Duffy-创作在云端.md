@@ -4,6 +4,7 @@ title: 创作在云端：平台与文化生产
 author: "Thomas Poell,David B. Nieborg,Brooke Erin Duffy"
 tags: [平台化, 文化生产]
 date: '2026-08-13'
+shareDescription: "游戏、新闻和视频都搬上平台，谁能改分成，又是谁挑内容？"
 ---
 
 # 创作在云端：平台与文化生产

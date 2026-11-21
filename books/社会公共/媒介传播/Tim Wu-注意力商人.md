@@ -4,6 +4,7 @@ title: 注意力商人
 author: Tim Wu
 tags: [注意力, 媒体]
 date: '2026-06-13'
+shareDescription: "早期的肥皂剧由洗衣粉厂商赞助，角色也在戏里夸产品。"
 ---
 
 # 注意力商人

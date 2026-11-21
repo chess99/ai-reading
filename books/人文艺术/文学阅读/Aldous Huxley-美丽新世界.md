@@ -4,6 +4,7 @@ title: 美丽新世界
 author: Aldous Huxley
 tags: [反乌托邦, 剧情讲述, 科幻小说, 自由]
 date: '2026-10-27'
+shareDescription: "未来的伦敦，孩子在瓶中培育，出生前已有了社会等级。"
 ---
 
 # 美丽新世界

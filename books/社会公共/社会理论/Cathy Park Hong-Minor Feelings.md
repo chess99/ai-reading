@@ -4,6 +4,7 @@ title: Minor Feelings
 author: Cathy Park Hong
 tags: [种族, 亚裔美国, 散文, 回忆录, 身份政治]
 date: '2026-09-02'
+shareDescription: "被人一句「你想多了」打发，一位韩裔诗人写下这样的羞耻和愤怒。"
 ---
 
 # Minor Feelings

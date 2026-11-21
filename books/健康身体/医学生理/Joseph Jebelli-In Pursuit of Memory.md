@@ -4,6 +4,7 @@ title: In Pursuit of Memory
 author: Joseph Jebelli
 tags: [阿尔茨海默病, 神经科学, 医学研究, 认知衰退]
 date: '2026-09-13'
+shareDescription: "祖父的记忆逐渐消失，一位神经科学家由此追查阿尔茨海默病。"
 ---
 
 # In Pursuit of Memory

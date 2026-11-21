@@ -4,6 +4,7 @@ title: The Social Transformation of American Medicine
 author: Paul Starr
 tags: [医学史, 职业社会学, 美国医疗政策, 医疗保险, 医疗产业]
 date: '2026-09-03'
+shareDescription: "梳理美国医生如何取得职业权威，又怎样被医院和保险公司牵制。"
 ---
 
 # The Social Transformation of American Medicine

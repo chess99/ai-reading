@@ -4,6 +4,7 @@ title: My Early Life
 author: Winston Churchill
 tags: [丘吉尔, 自传, 英国政治, 战地记者, 帝国史]
 date: '2026-08-28'
+shareDescription: "丘吉尔回望公学、军校和南非战场上那个年轻的自己。"
 ---
 
 # My Early Life

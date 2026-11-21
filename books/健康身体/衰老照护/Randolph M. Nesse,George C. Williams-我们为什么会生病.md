@@ -4,6 +4,7 @@ title: 我们为什么会生病
 author: "Randolph M. Nesse, George C. Williams"
 tags: [进化医学, 疾病]
 date: '2026-06-13'
+shareDescription: "自然选择为何留下人体这些弱点？两位作者从疾病谈起。"
 ---
 
 # 我们为什么会生病

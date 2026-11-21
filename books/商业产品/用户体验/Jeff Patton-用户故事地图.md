@@ -4,6 +4,7 @@ title: 用户故事地图
 author: Jeff Patton
 tags: [产品, 用户故事, 敏捷]
 date: '2026-06-13'
+shareDescription: "把需求卡片按用户做事的顺序排开，才看得出哪一步漏了。"
 ---
 
 # 用户故事地图

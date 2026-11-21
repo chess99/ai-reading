@@ -4,6 +4,7 @@ title: Cobalt Red
 author: Siddharth Kara
 tags: [调查报道, 钴矿, 刚果（金）, 童工与奴役, 锂电池供应链]
 date: '2026-08-19'
+shareDescription: "沿着手机电池的供应链往回走，直到刚果的钴矿坑。"
 ---
 
 # Cobalt Red

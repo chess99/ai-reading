@@ -4,6 +4,7 @@ title: 奇妙的生命
 author: Stephen Jay Gould
 tags: [演化, 伯吉斯页岩, 古生物学, 科学史]
 date: '2026-09-16'
+shareDescription: "伯吉斯页岩连软组织都保存下来，留下寒武纪动物的奇特模样。"
 ---
 
 # 奇妙的生命

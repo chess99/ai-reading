@@ -4,6 +4,7 @@ title: 多巴胺国度
 author: Anna Lembke
 tags: [成瘾, 神经科学]
 date: '2026-06-13'
+shareDescription: "从酒精到手机，精神科医生借病例讲快感与痛苦的消长。"
 ---
 
 # 多巴胺国度

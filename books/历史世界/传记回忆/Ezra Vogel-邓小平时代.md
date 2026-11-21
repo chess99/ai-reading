@@ -4,6 +4,7 @@ title: 邓小平时代
 author: Ezra Vogel
 tags: [人物传记, 中国改革, 当代史, 政治经济]
 date: '2026-09-11'
+shareDescription: "恢复高考、设经济特区，再到南方谈话，改革一步步展开。"
 ---
 
 # 邓小平时代

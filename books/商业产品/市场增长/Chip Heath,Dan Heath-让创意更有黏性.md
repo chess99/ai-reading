@@ -4,6 +4,7 @@ title: 让创意更有黏性
 author: "Chip Heath,Dan Heath"
 tags: [传播, 信息设计]
 date: '2026-09-12'
+shareDescription: "一桶爆米花有多少饱和脂肪？作者用一桌饭菜把它讲清。"
 ---
 
 # 让创意更有黏性

@@ -4,6 +4,7 @@ title: Save the Cat! 写青少年小说
 author: 杰西卡·布鲁迪
 tags: [小说写作, 青少年小说, 叙事结构, Save the Cat]
 date: '2026-05-26'
+shareDescription: "把电影的十五个节拍放进青少年小说，看情节怎样催着主角改变。"
 ---
 
 # Save the Cat! 写青少年小说

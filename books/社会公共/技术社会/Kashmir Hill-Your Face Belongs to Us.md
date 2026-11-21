@@ -4,6 +4,7 @@ title: Your Face Belongs to Us
 author: Kashmir Hill
 tags: [人脸识别, 隐私, 科技伦理, 调查报道]
 date: '2026-09-01'
+shareDescription: "凭一张脸就能搜出网上留过的照片，谁在做这门生意？"
 ---
 
 # Your Face Belongs to Us

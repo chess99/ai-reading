@@ -4,6 +4,7 @@ title: No Logo
 author: Naomi Klein
 tags: [品牌, 全球化, 消费文化, 反企业行动主义]
 date: '2026-08-30'
+shareDescription: "同一个服装品牌，串起多伦多的旧外套厂与雅加达的缝纫女工。"
 ---
 
 # No Logo

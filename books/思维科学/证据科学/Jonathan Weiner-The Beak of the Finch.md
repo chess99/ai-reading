@@ -4,6 +4,7 @@ title: The Beak of the Finch
 author: Jonathan Weiner
 tags: [演化, 达尔文雀, 自然选择, 野外研究]
 date: '2026-09-16'
+shareDescription: "岛上一场旱灾，研究者用卡尺量出了雀鸟喙部的世代变化。"
 ---
 
 # The Beak of the Finch

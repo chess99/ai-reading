@@ -4,6 +4,7 @@ title: 列宁的坟墓
 author: David Remnick
 tags: [苏联史, 政治转型, 纪实文学, 社会变迁]
 date: '2026-09-12'
+shareDescription: "从克里姆林宫到西伯利亚矿区，一位记者亲历苏联解体。"
 ---
 
 # 列宁的坟墓

@@ -4,6 +4,7 @@ title: 章鱼、海洋与深层起源
 author: Peter Godfrey-Smith
 tags: [头足类动物, 意识演化, 动物行为学, 海洋生物学]
 date: '2026-09-03'
+shareDescription: "章鱼的大多数神经元长在腕足里，每只吸盘都能尝到味道。"
 ---
 
 # 章鱼、海洋与深层起源

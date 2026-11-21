@@ -4,6 +4,7 @@ title: 源代码
 author: Bill Gates
 tags: [回忆录, 微软, 个人电脑, 编程]
 date: '2026-09-03'
+shareDescription: "从给学校编排课程序，到为早期个人电脑写 BASIC。"
 ---
 
 # 源代码

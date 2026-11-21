@@ -4,6 +4,7 @@ title: 识字的用途
 author: Richard Hoggart
 tags: [英国工人阶级, 大众文化, 文化研究, 报刊与阅读]
 date: '2026-09-02'
+shareDescription: "从利兹的排屋街区到战后报刊，看英国工人怎样接受新娱乐。"
 ---
 
 # 识字的用途

@@ -4,6 +4,7 @@ title: "Our Brains, Our Selves"
 author: Masud Husain
 tags: [神经病学, 身份认同, 认知障碍, 记忆]
 date: '2026-09-03'
+shareDescription: "七位神经科病人的故事里，有人失去了对眼前半边世界的注意。"
 ---
 
 # Our Brains, Our Selves

@@ -4,6 +4,7 @@ title: 黑小子
 author: Richard Wright
 tags: [回忆录, 自传, 美国南方, 种族隔离, 写作]
 date: '2026-09-02'
+shareDescription: "在种族隔离下长大的男孩，借别人的借书卡读起了小说。"
 ---
 
 # 黑小子

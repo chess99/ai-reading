@@ -4,6 +4,7 @@ title: Goodbye to All That
 author: Robert Graves
 tags: [回忆录, 第一次世界大战, 西线战场, 英国公学]
 date: '2026-08-28'
+shareDescription: "从英国公学到一战西线，一个年轻士兵记下的战壕日常。"
 ---
 
 # Goodbye to All That

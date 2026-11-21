@@ -4,6 +4,7 @@ title: The Good War
 author: Studs Terkel
 tags: [口述史, 二战, 美国社会, 战时记忆, 核时代]
 date: '2026-09-01'
+shareDescription: "士兵、护士和工厂女工开口，讲述各自记得的第二次世界大战。"
 ---
 
 # The Good War

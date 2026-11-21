@@ -4,6 +4,7 @@ title: Adventures in the Anthropocene
 author: Gaia Vince
 tags: [人类世, 气候变化, 环境适应, 全球调查]
 date: '2026-09-15'
+shareDescription: "拉达克一位退休工程师想了个办法：冬天造冰，春天灌田。"
 ---
 
 # Adventures in the Anthropocene

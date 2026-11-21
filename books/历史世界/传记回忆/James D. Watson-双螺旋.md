@@ -4,6 +4,7 @@ title: 双螺旋
 author: James D. Watson
 tags: [分子生物学, 科学史, 回忆录, DNA双螺旋]
 date: '2026-09-03'
+shareDescription: "从剑桥的模型到伦敦的衍射照片，回看 DNA 结构之争。"
 ---
 
 # 双螺旋

@@ -4,6 +4,7 @@ title: 昨日的世界
 author: Stefan Zweig
 tags: [回忆录, 欧洲, 两次世界大战, 文学, 流亡]
 date: '2026-08-30'
+shareDescription: "流亡中的作家靠记忆写下维也纳的咖啡馆和战前欧洲。"
 ---
 
 # 昨日的世界

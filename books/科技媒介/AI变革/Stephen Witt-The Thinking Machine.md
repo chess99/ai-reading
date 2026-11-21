@@ -4,6 +4,7 @@ title: The Thinking Machine
 author: Stephen Witt
 tags: [人物传记, 人工智能, 半导体, 商业史]
 date: '2026-08-26'
+shareDescription: "从游戏显卡到 AI 芯片，黄仁勋和英伟达走了三十年。"
 ---
 
 # The Thinking Machine

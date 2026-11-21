@@ -4,6 +4,7 @@ title: 心智探奇
 author: Steven Pinker
 tags: [认知科学, 进化心理学, 心智计算, 人类行为]
 date: '2026-09-12'
+shareDescription: "走路、认人、听懂笑话，这些日常本领是怎么演化来的？"
 ---
 
 # 心智探奇

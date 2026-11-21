@@ -4,6 +4,7 @@ title: Science Fictions
 author: Stuart Ritchie
 tags: [科学方法, 复制性危机, 元科学, 科研伦理]
 date: '2026-09-01'
+shareDescription: "一项超感知觉实验没能复现，期刊又拒绝发表复现结果。"
 ---
 
 # Science Fictions

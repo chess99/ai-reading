@@ -4,6 +4,7 @@ title: To the Success of Our Hopeless Cause
 author: Benjamin Nathans
 tags: [苏联史, 异见运动, 人权, 冷战, 撒米兹达特]
 date: '2026-08-26'
+shareDescription: "一群苏联异见者试着让政府兑现它亲手写下的宪法。"
 ---
 
 # To the Success of Our Hopeless Cause

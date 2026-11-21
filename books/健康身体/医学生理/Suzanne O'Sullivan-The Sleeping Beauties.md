@@ -4,6 +4,7 @@ title: The Sleeping Beauties
 author: "Suzanne O'Sullivan"
 tags: [功能性神经症状, 医疗人类学, 心身医学, 诊断]
 date: '2026-09-11'
+shareDescription: "瑞典一些寻求庇护的孩子陷入昏睡，一位神经科医生追查缘由。"
 ---
 
 # The Sleeping Beauties

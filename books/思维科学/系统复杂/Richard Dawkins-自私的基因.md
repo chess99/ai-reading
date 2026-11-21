@@ -4,6 +4,7 @@ title: 自私的基因
 author: Richard Dawkins
 tags: [演化生物学, 动物行为, 亲缘选择, 演化稳定策略, 社会生物学]
 date: '2026-08-31'
+shareDescription: "鸟为什么要冒险叫一声，给周围的同类预警？"
 ---
 
 # 自私的基因

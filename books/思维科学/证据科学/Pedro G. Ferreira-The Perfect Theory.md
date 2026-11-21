@@ -4,6 +4,7 @@ title: The Perfect Theory
 author: Pedro G. Ferreira
 tags: [广义相对论, 物理学史, 宇宙学, 引力]
 date: '2026-09-12'
+shareDescription: "从用日食检验广义相对论，到用仪器捕捉时空的涟漪。"
 ---
 
 # The Perfect Theory

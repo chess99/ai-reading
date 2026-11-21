@@ -4,6 +4,7 @@ title: Testament of Youth
 author: Vera Brittain
 tags: [回忆录, 第一次世界大战, 女性主义, 英国]
 date: '2026-08-31'
+shareDescription: "一位原本想去牛津求学的英国少女，走进了一战的战地医院。"
 ---
 
 # Testament of Youth

@@ -4,6 +4,7 @@ title: 塞尔伯恩博物志
 author: Gilbert White
 tags: [博物学, 鸟类学, 书信体, 自然观察]
 date: '2026-08-30'
+shareDescription: "英国乡村教士写信讨论，燕子过冬是飞走了还是藏起来了？"
 ---
 
 # 塞尔伯恩博物志

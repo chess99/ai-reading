@@ -4,6 +4,7 @@ title: The Dead Hand
 author: David E. Hoffman
 tags: [冷战, 核武器, 生物武器, 军备竞赛, 苏联]
 date: '2026-09-01'
+shareDescription: "冷战末年美苏的裁军谈判，以及苏联解体后留下的核风险。"
 ---
 
 # The Dead Hand

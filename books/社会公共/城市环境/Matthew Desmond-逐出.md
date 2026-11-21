@@ -4,6 +4,7 @@ title: 逐出
 author: Matthew Desmond
 tags: [驱逐, 住房危机, 城市贫穷, 非虚构调查, 美国社会学]
 date: '2026-08-19'
+shareDescription: "密尔沃基八户租客忙着凑房租，房东在同一门生意里赚钱。"
 ---
 
 # 逐出

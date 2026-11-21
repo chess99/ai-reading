@@ -4,6 +4,7 @@ title: 时间简史
 author: Stephen Hawking
 tags: [宇宙学, 广义相对论, 黑洞, 量子力学]
 date: '2026-09-03'
+shareDescription: "星光红移告诉我们宇宙在膨胀，往回推能找到时间的起点吗？"
 ---
 
 # 时间简史

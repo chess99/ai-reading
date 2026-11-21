@@ -4,6 +4,7 @@ title: 共建社群
 author: "Bailey Richardson,Kevin Huynh,Kai Elmer Sotto"
 tags: [社群, 社区营造]
 date: '2026-08-13'
+shareDescription: "一场生日会上的合唱，后来成了每周二都有人来的聚会。"
 ---
 
 # 共建社群

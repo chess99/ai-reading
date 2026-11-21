@@ -4,6 +4,7 @@ title: Imperial Reckoning
 author: Caroline Elkins
 tags: [肯尼亚史, 殖民主义, 毛茅起义, 集中营, 口述历史]
 date: '2026-09-01'
+shareDescription: "英国殖民档案大量缺失，历史学家从幸存者口中重建肯尼亚拘禁史。"
 ---
 
 # Imperial Reckoning

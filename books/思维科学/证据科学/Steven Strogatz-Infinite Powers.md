@@ -4,6 +4,7 @@ title: Infinite Powers
 author: Steven Strogatz
 tags: [微积分, 数学史, 应用数学, 科学史]
 date: '2026-09-02'
+shareDescription: "把披萨切成越来越细的片，再拼起来，就能看懂圆的面积。"
 ---
 
 # Infinite Powers

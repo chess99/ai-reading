@@ -4,6 +4,7 @@ title: Slavery by Another Name
 author: Douglas A. Blackmon
 tags: [美国史, 黑奴制度, 监狱出租制, 种族问题, 调查报道]
 date: '2026-09-02'
+shareDescription: "废奴后的美国南方，黑人怎样又被送进矿井做苦役？"
 ---
 
 # Slavery by Another Name

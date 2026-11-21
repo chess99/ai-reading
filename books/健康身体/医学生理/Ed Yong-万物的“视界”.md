@@ -4,6 +4,7 @@ title: 万物的“视界”
 author: Ed Yong
 tags: [感官生物学, 动物行为, 生态学, 科普]
 date: '2026-09-01'
+shareDescription: "在人眼看来完全相同的两种颜色，蜂鸟有时却能辨出来。"
 ---
 
 # 万物的“视界”

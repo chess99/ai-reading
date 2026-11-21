@@ -4,6 +4,7 @@ title: 耐力
 author: Alex Hutchinson
 tags: [运动, 耐力]
 date: '2026-06-13'
+shareDescription: "一场意外跑快的比赛，让跑者追问是谁在给身体踩刹车。"
 ---
 
 # 耐力

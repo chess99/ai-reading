@@ -4,6 +4,7 @@ title: 气候经济与人类未来
 author: Bill Gates
 tags: [气候, 能源转型]
 date: '2026-06-13'
+shareDescription: "从水泥到航空燃油，算算改用低碳方案要多花多少钱。"
 ---
 
 # 气候经济与人类未来

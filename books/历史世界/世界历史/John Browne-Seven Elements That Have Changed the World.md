@@ -4,6 +4,7 @@ title: Seven Elements That Have Changed the World
 author: John Browne
 tags: [材料史, 能源, 工业文明, 科技史]
 date: '2026-09-12'
+shareDescription: "从铁轨到硅芯片，七种元素怎样改变人们制造东西的方式。"
 ---
 
 # Seven Elements That Have Changed the World

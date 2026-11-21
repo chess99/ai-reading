@@ -4,6 +4,7 @@ title: 迷人的材料
 author: Mark Miodownik
 tags: [材料科学, 工程, 制造, 日常技术]
 date: '2026-09-15'
+shareDescription: "一张屋顶喝茶的照片，藏着十种材料的由来和做法。"
 ---
 
 # 迷人的材料

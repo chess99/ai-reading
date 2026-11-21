@@ -4,6 +4,7 @@ title: 内容陷阱
 author: Bharat Anand
 tags: [商业战略, 数字化]
 date: '2026-08-13'
+shareDescription: "报纸的分类广告去了哪儿，又为什么带走了养新闻的钱？"
 ---
 
 # 内容陷阱

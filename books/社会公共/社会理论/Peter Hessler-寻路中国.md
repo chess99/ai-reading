@@ -4,6 +4,7 @@ title: 寻路中国
 author: Peter Hessler
 tags: [非虚构, 中国乡村, 城市化, 汽车, 打工]
 date: '2026-08-27'
+shareDescription: "何伟拿到中国驾照，沿长城向西开，也在山村和工厂停下来。"
 ---
 
 # 寻路中国

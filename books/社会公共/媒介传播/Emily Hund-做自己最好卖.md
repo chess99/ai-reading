@@ -4,6 +4,7 @@ title: 做自己，最好卖？
 author: Emily Hund
 tags: [创作者经济, 网红产业]
 date: '2026-08-13'
+shareDescription: "一条看似网友自发声援的帖子，可能是竞选团队买的广告。"
 ---
 
 # 做自己，最好卖？

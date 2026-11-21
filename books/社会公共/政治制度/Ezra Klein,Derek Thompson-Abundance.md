@@ -4,6 +4,7 @@ title: Abundance
 author: Ezra Klein、Derek Thompson
 tags: [公共政策, 供给能力, 自由主义, 科技创新]
 date: '2026-09-11'
+shareDescription: "美国想多建住宅、多接入绿电，项目为什么迟迟开不了工？"
 ---
 
 # Abundance

@@ -4,6 +4,7 @@ title: 物种起源
 author: Charles Darwin
 tags: [进化论, 自然选择, 生物学, 科学方法]
 date: '2026-09-19'
+shareDescription: "从家养动植物的差异起步，推想野生物种怎样逐代变化。"
 ---
 
 # 物种起源

@@ -4,6 +4,7 @@ title: Common Ground
 author: J. Anthony Lukas
 tags: [种族与教育, 城市史, 非虚构, 民权运动, 波士顿]
 date: '2026-09-01'
+shareDescription: "波士顿用校车推动学校种族融合，三个家庭卷入争执。"
 ---
 
 # Common Ground

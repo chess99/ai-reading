@@ -4,6 +4,7 @@ title: 在世界与我之间
 author: Ta-Nehisi Coates
 tags: [种族问题, 美国社会, 身体经验, 书信]
 date: '2026-09-11'
+shareDescription: "一位黑人父亲写信给十五岁的儿子，讲自己在巴尔的摩长大的恐惧。"
 ---
 
 # 在世界与我之间

@@ -4,6 +4,7 @@ title: 隐秘的角落
 author: Laura Bates
 tags: [manosphere, 厌女, 性别暴力, 网络极端主义, 男性气概]
 date: '2026-09-02'
+shareDescription: "记者假扮一名年轻男子，走进把厌女挂在嘴边的网络社群。"
 ---
 
 # 隐秘的角落

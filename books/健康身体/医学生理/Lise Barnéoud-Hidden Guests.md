@@ -4,6 +4,7 @@ title: Hidden Guests
 author: Lise Barnéoud
 tags: [微嵌合体, 免疫学, 妊娠, 科学纪实]
 date: '2026-09-01'
+shareDescription: "孩子出生后，胎儿来源的细胞还可能留在母亲体内许多年。"
 ---
 
 # Hidden Guests

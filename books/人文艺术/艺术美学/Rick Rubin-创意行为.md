@@ -4,6 +4,7 @@ title: 创意行为
 author: Rick Rubin
 tags: [创作, 艺术实践, 灵感, 完稿]
 date: '2026-09-16'
+shareDescription: "先把触动你的声音、片段和点子攒起来，动手试过再挑选。"
 ---
 
 # 创意行为

@@ -4,6 +4,7 @@ title: Smashing Physics
 author: Jon Butterworth
 tags: [粒子物理, 大型强子对撞机, 希格斯玻色子, 科学实践]
 date: '2026-09-15'
+shareDescription: "希格斯粒子藏在哪些信号里？对撞机实验亲历者记下搜寻过程。"
 ---
 
 # Smashing Physics

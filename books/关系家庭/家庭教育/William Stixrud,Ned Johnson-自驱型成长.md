@@ -4,6 +4,7 @@ title: 自驱型成长
 author: William Stixrud、Ned Johnson
 tags: [养育, 自主性, 压力管理, 学习]
 date: '2026-09-13'
+shareDescription: "父母可以做顾问，把孩子能承担的小决定逐步交还给他。"
 ---
 
 # 自驱型成长

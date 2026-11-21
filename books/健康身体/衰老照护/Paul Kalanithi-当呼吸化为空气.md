@@ -4,6 +4,7 @@ title: 当呼吸化为空气
 author: Paul Kalanithi
 tags: [疾病, 生命意义]
 date: '2026-06-13'
+shareDescription: "一位神经外科医生确诊肺癌，开始写下成为病人的经历。"
 ---
 
 # 当呼吸化为空气

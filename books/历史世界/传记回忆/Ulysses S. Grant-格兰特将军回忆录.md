@@ -4,6 +4,7 @@ title: 格兰特将军回忆录
 author: Ulysses S. Grant
 tags: [美国内战, 回忆录, 墨西哥战争, 军事史, 奴隶制]
 date: '2026-08-30'
+shareDescription: "从墨西哥战争写到南北战争，格兰特回看自己带兵的年月。"
 ---
 
 # 格兰特将军回忆录

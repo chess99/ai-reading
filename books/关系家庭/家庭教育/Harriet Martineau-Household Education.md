@@ -4,6 +4,7 @@ title: Household Education
 author: Harriet Martineau
 tags: [家庭教育, 儿童发展, 习惯养成, 教育史]
 date: '2026-09-19'
+shareDescription: "十九世纪的一位作家谈家教，连孩子为什么怕黑都认真琢磨。"
 ---
 
 # Household Education

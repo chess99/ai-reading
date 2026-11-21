@@ -4,6 +4,7 @@ title: 约翰生传
 author: James Boswell
 tags: [传记, 英国文学, 十八世纪, 文人]
 date: '2026-08-30'
+shareDescription: "他曾说三年能编完《英语词典》，实际花了近九年。"
 ---
 
 # 约翰生传

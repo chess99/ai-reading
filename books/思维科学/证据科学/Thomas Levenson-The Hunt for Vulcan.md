@@ -4,6 +4,7 @@ title: The Hunt for Vulcan
 author: Thomas Levenson
 tags: [科学史, 天文学, 物理学, 科学方法]
 date: '2026-09-15'
+shareDescription: "为解释水星轨道的异常，天文学家找了半个世纪的祝融星。"
 ---
 
 # The Hunt for Vulcan

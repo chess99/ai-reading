@@ -4,6 +4,7 @@ title: Clearing the Air
 author: Tim Smedley
 tags: [空气污染, 公共健康, 城市治理, 环境政策]
 date: '2026-09-14'
+shareDescription: "新德里让公交改烧天然气，机动车猛增又抵消了减排效果。"
 ---
 
 # Clearing the Air

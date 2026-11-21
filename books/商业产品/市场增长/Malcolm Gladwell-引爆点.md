@@ -4,6 +4,7 @@ title: 引爆点
 author: Malcolm Gladwell
 tags: [传播, 市场营销]
 date: '2026-06-13'
+shareDescription: "几位东村年轻人穿上暇步士后，这款老牌休闲鞋突然红了。"
 ---
 
 # 引爆点

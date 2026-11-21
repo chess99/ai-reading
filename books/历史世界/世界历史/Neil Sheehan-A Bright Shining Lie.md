@@ -4,6 +4,7 @@ title: A Bright Shining Lie
 author: Neil Sheehan
 tags: [越南战争, 传记, 调查报道, 军事历史]
 date: '2026-09-01'
+shareDescription: "跟着一位驻越美军顾问，看前线战况如何被上报成捷报。"
 ---
 
 # A Bright Shining Lie

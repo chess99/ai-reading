@@ -4,6 +4,7 @@ title: 瓦尔登湖
 author: Henry David Thoreau
 tags: [简朴生活, 自然观察, 美国文学, 哲理散文]
 date: '2026-08-30'
+shareDescription: "梭罗借来斧头，在湖边盖小屋，把开销一项项记下来。"
 ---
 
 # 瓦尔登湖

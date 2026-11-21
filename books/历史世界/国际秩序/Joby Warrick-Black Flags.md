@@ -4,6 +4,7 @@ title: Black Flags
 author: Joby Warrick
 tags: [ISIS, 中东政治, 反恐, 调查报道, 扎卡维]
 date: '2026-08-28'
+shareDescription: "伊拉克战争与叙利亚内乱，给了 ISIS 崛起的机会。"
 ---
 
 # Black Flags

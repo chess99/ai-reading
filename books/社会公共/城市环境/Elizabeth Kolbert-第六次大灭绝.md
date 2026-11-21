@@ -4,6 +4,7 @@ title: 第六次大灭绝
 author: Elizabeth Kolbert
 tags: [物种灭绝, 生态环境, 演化, 人类世]
 date: '2026-09-14'
+shareDescription: "从巴拿马的蛙群到大堡礁，跟着记者追查物种消失的原因。"
 ---
 
 # 第六次大灭绝

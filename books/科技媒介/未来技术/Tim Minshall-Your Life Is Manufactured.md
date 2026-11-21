@@ -4,6 +4,7 @@ title: Your Life Is Manufactured
 author: Tim Minshall
 tags: [制造业, 供应链, 工业技术, 可持续发展]
 date: '2026-09-16'
+shareDescription: "拆解卫生纸、自行车和手机，看看日用品从原料到回收要走多远。"
 ---
 
 # Your Life Is Manufactured

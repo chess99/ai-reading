@@ -4,6 +4,7 @@ title: 智能简史
 author: Max Bennett
 tags: [进化神经科学, 人工智能, 大脑演化, 认知科学]
 date: '2026-09-01'
+shareDescription: "从动物遇险会掉头，到人类能用语言交流，大脑经历了哪些变化？"
 ---
 
 # 智能简史

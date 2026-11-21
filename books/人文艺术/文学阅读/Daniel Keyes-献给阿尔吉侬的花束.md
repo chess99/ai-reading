@@ -4,6 +4,7 @@ title: 献给阿尔吉侬的花束
 author: Daniel Keyes
 tags: [科幻小说, 剧情讲述, 智力, 尊严]
 date: '2026-10-27'
+shareDescription: "面包店的查理想和别人自在交谈，于是报名参加一项智力实验。"
 ---
 
 # 献给阿尔吉侬的花束

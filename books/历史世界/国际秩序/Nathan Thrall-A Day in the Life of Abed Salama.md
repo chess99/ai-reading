@@ -4,6 +4,7 @@ title: A Day in the Life of Abed Salama
 author: Nathan Thrall
 tags: [巴勒斯坦, 以色列, 纪实文学, 隔离墙与占领]
 date: '2026-09-01'
+shareDescription: "校车起火后，一位巴勒斯坦父亲被拦在赶去找儿子的路上。"
 ---
 
 # A Day in the Life of Abed Salama

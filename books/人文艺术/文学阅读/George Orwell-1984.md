@@ -4,6 +4,7 @@ title: '1984'
 author: George Orwell
 tags: [反乌托邦, 剧情讲述, 极权, 语言]
 date: '2026-10-27'
+shareDescription: "温斯顿挪到电幕照不到的角落，偷偷写下了日记的第一行。"
 ---
 
 # 1984

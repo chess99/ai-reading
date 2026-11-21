@@ -4,6 +4,7 @@ title: 论人性
 author: Edward O. Wilson
 tags: [社会生物学, 人性, 演化论, 伦理, 宗教]
 date: '2026-09-02'
+shareDescription: "从利他到宗教，威尔逊试着用自然选择解释人的行为。"
 ---
 
 # 论人性

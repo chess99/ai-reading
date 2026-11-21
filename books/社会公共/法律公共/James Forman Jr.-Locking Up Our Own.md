@@ -4,6 +4,7 @@ title: Locking Up Our Own
 author: James Forman Jr.
 tags: [大规模监禁, 刑事司法, 美国社会, 种族与阶级]
 date: '2026-08-26'
+shareDescription: "华盛顿特区一些黑人官员，为什么曾经支持加重刑罚？"
 ---
 
 # Locking Up Our Own

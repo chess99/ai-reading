@@ -4,6 +4,7 @@ title: Annals of the Former World
 author: John McPhee
 tags: [地质学, 美国地理, 科学纪实, 深时]
 date: '2026-09-16'
+shareDescription: "沿美国八十号州际公路看切开的岩层，读北美大陆的来路。"
 ---
 
 # Annals of the Former World

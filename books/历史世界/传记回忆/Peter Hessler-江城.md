@@ -4,6 +4,7 @@ title: 江城
 author: Peter Hessler
 tags: [纪实文学, 中国观察, 城市社会, 教育]
 date: '2026-09-15'
+shareDescription: "两名美国教师在涪陵教英语，记下大坝建成前的小城。"
 ---
 
 # 江城

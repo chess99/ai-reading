@@ -4,6 +4,7 @@ title: 疯传
 author: Jonah Berger
 tags: [传播, 口碑营销]
 date: '2026-08-13'
+shareDescription: "把奇巧和咖啡放在一起，让人喝咖啡时顺带想起巧克力。"
 ---
 
 # 疯传

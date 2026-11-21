@@ -4,6 +4,7 @@ title: 好战略，坏战略
 author: Richard Rumelt
 tags: [战略, 管理]
 date: '2026-06-13'
+shareDescription: "星巴克陷入困境，该找新增长点，还是修复原有优势？"
 ---
 
 # 好战略，坏战略

@@ -4,6 +4,7 @@ title: 美学与政治
 author: Theodor Adorno、Walter Benjamin、Ernst Bloch、Bertolt Brecht、Georg Lukács
 tags: [现实主义, 现代主义, 表现主义, 马克思主义美学, 流亡文学]
 date: '2026-09-02'
+shareDescription: "布莱希特和卢卡奇在流亡中争论，小说该怎样写才算写实？"
 ---
 
 # 美学与政治

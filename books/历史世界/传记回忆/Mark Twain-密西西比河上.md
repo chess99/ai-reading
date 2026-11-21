@@ -4,6 +4,7 @@ title: 密西西比河上
 author: Mark Twain
 tags: [回忆录, 旅行记, 密西西比河, 蒸汽船时代, 美国南方]
 date: '2026-08-30'
+shareDescription: "一位蒸汽船引航员隔了二十一年重返旧河，认河道也认旧人。"
 ---
 
 # 密西西比河上

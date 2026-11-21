@@ -4,6 +4,7 @@ title: Hot Air
 author: Peter Stott
 tags: [气候科学, 气候否认, 科学传播, 公共政策]
 date: '2026-09-14'
+shareDescription: "科学家模拟两个版本的气候，估算人类活动对热浪的影响。"
 ---
 
 # Hot Air

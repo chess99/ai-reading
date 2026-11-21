@@ -4,6 +4,7 @@ title: 自深深处
 author: Oscar Wilde
 tags: [书信, 唯美主义, 监狱书写, 自传]
 date: '2026-08-30'
+shareDescription: "雷丁监狱里，一封写给旧日爱人的长信从痛苦谈到艺术。"
 ---
 
 # 自深深处

@@ -4,6 +4,7 @@ title: Hello World
 author: Hannah Fry
 tags: [算法, 人工智能, 数据, 科技与社会]
 date: '2026-09-01'
+shareDescription: "从法庭的再犯评分到病理科的玻片，哪些判断适合交给算法？"
 ---
 
 # Hello World

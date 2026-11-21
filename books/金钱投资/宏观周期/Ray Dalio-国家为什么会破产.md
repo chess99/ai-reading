@@ -4,6 +4,7 @@ title: 国家为什么会破产
 author: Ray Dalio
 tags: [债务周期, 债务危机, 货币政策, 宏观投资]
 date: '2026-09-03'
+shareDescription: "政府能用自己的货币还债，为何仍可能陷入偿债危机？"
 ---
 
 # 国家为什么会破产

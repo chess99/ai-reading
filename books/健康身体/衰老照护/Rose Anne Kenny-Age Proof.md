@@ -4,6 +4,7 @@ title: Age Proof
 author: Rose Anne Kenny
 tags: [衰老, 健康寿命, 老年医学, 生活方式]
 date: '2026-09-18'
+shareDescription: "追踪近九千人的生活，看看同龄人的身体为何老得不一样。"
 ---
 
 # Age Proof

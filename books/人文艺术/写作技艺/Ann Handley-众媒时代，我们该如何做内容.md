@@ -4,6 +4,7 @@ title: 众媒时代，我们该如何做内容
 author: Ann Handley
 tags: [写作, 内容创作]
 date: '2026-08-13'
+shareDescription: "邮件、社交帖子和营销文案，开写之前先想读的人需要什么。"
 ---
 
 # 众媒时代，我们该如何做内容

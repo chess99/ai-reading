@@ -4,6 +4,7 @@ title: Amity and Prosperity
 author: Eliza Griswold
 tags: [非虚构, 环境正义, 页岩气, 调查报道, 美国]
 date: '2026-09-02'
+shareDescription: "宾州一户人家附近开了页岩气井，饮用水成了诉讼的焦点。"
 ---
 
 # Amity and Prosperity

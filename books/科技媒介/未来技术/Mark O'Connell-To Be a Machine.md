@@ -4,6 +4,7 @@ title: To Be a Machine
 author: "Mark O'Connell"
 tags: [超人类主义, 人工智能, 永生, 身体与技术, 非虚构]
 date: '2026-09-03'
+shareDescription: "一位记者去见想用冷冻遗体、上传大脑来对抗死亡的人。"
 ---
 
 # To Be a Machine

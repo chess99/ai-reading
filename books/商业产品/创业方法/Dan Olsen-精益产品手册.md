@@ -4,6 +4,7 @@ title: 精益产品手册
 author: Dan Olsen
 tags: [产品管理, 精益创业]
 date: '2026-06-13'
+shareDescription: "把用户、需求和方案逐层拆开，用原型一步步验证。"
 ---
 
 # 精益产品手册

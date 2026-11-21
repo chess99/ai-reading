@@ -4,6 +4,7 @@ title: Ends of the Earth
 author: Neil Shubin
 tags: [极地科学, 冰川学, 古生物学, 气候变化, 科学考察]
 date: '2026-09-01'
+shareDescription: "南极蓝冰上九块黑石头，后来证实来自九次陨石坠落。"
 ---
 
 # Ends of the Earth

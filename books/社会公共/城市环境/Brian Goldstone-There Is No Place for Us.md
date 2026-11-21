@@ -4,6 +4,7 @@ title: There Is No Place for Us
 author: Brian Goldstone
 tags: [住房危机, 无家可归, 亚特兰大, 非虚构调查]
 date: '2026-09-02'
+shareDescription: "在亚特兰大，有工作的人也可能在汽车和廉价旅馆间辗转。"
 ---
 
 # There Is No Place for Us

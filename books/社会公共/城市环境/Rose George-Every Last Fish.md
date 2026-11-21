@@ -4,6 +4,7 @@ title: Every Last Fish
 author: Rose George
 tags: [渔业, 海洋生态, 食物系统, 劳工]
 date: '2026-09-14'
+shareDescription: "猫粮罐头里是鲣鱼，鱼从哪片海来，标签上看不出来。"
 ---
 
 # Every Last Fish

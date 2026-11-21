@@ -4,6 +4,7 @@ title: Liquid
 author: Mark Miodownik
 tags: [材料科学, 液体, 化学, 日常生活]
 date: '2026-09-12'
+shareDescription: "跟着一次长途飞行，看看煤油等液体有哪些不同的脾气。"
 ---
 
 # Liquid

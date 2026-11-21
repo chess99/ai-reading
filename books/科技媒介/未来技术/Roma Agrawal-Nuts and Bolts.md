@@ -4,6 +4,7 @@ title: Nuts and Bolts
 author: Roma Agrawal
 tags: [工程, 科技史, 科普, 发明]
 date: '2026-09-01'
+shareDescription: "工程师走进铁匠铺和钟表作坊，从钉子、弹簧讲现代机器。"
 ---
 
 # Nuts and Bolts

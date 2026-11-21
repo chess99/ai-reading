@@ -4,6 +4,7 @@ title: 启示录
 author: Marty Cagan
 tags: [产品管理, 用户, 产品发现]
 date: '2026-06-07'
+shareDescription: "把原型交给真实用户试用，再决定产品值不值得开发。"
 ---
 
 # 启示录

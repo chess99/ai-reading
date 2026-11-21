@@ -4,6 +4,7 @@ title: Fire Weather
 author: John Vaillant
 tags: [野火, 气候变化, 能源工业, 灾害]
 date: '2026-09-14'
+shareDescription: "一场林火烧进加拿大石油重镇，居民和消防员怎样应对？"
 ---
 
 # Fire Weather

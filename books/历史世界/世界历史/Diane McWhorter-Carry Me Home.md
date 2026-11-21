@@ -4,6 +4,7 @@ title: Carry Me Home
 author: Diane McWhorter
 tags: [民权运动, 种族隔离, 伯明翰, 美国南方史]
 date: '2026-09-02'
+shareDescription: "伯明翰一位白人家庭的女儿回望教堂爆炸与城市的种族隔离。"
 ---
 
 # Carry Me Home

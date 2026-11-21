@@ -4,6 +4,7 @@ title: The Double X Economy
 author: Linda Scott
 tags: [女性经济赋权, 性别不平等, 发展经济学, 劳动市场, 全球贸易]
 date: '2026-08-28'
+shareDescription: "许多女性在田里干活，却拿不到地契，也就难以借到钱。"
 ---
 
 # The Double X Economy

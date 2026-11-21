@@ -4,6 +4,7 @@ title: 失控的农业
 author: "Philip Lymbery, Isabel Oakeshott"
 tags: [农业, 食物系统]
 date: '2026-06-13'
+shareDescription: "从加州奶牛场到苏格兰鱼场，追查廉价养殖把成本转给了谁。"
 ---
 
 # 失控的农业

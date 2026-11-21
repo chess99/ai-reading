@@ -4,6 +4,7 @@ title: 伊朗简史
 author: Michael Axworthy
 tags: [伊朗史, 波斯, 什叶派, 伊斯兰, 中东]
 date: '2026-09-02'
+shareDescription: "从古波斯帝国讲到伊斯兰共和国，追溯伊朗的千年变迁。"
 ---
 
 # 伊朗简史

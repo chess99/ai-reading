@@ -4,6 +4,7 @@ title: Exactly
 author: Simon Winchester
 tags: [精密工程, 制造业, 技术史, 测量]
 date: '2026-09-11'
+shareDescription: "从漏气的蒸汽机到太空望远镜，制造业如何把误差一再缩小。"
 ---
 
 # Exactly

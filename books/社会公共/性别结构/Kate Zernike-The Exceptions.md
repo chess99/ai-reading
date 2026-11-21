@@ -4,6 +4,7 @@ title: The Exceptions
 author: Kate Zernike
 tags: [科学, 传记, 女性与科学, MIT]
 date: '2026-09-02'
+shareDescription: "一位麻省理工教授拿着卷尺，查了查实验室的面积分配。"
 ---
 
 # The Exceptions

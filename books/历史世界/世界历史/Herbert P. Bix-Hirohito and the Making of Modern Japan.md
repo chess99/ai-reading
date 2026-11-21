@@ -4,6 +4,7 @@ title: Hirohito and the Making of Modern Japan
 author: Herbert P. Bix
 tags: [日本现代史, 昭和天皇, 太平洋战争, 天皇制, 政治传记]
 date: '2026-09-01'
+shareDescription: "从日本开战到投降，昭和天皇在哪些关头作过决定？"
 ---
 
 # Hirohito and the Making of Modern Japan

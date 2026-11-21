@@ -4,6 +4,7 @@ title: Facebook效应
 author: David Kirkpatrick
 tags: [创业产品, 公司史, 社交网络, 平台]
 date: '2026-05-27'
+shareDescription: "一个哥伦比亚人建的脸书群组，怎么让抗议走到街头？"
 ---
 
 # Facebook效应

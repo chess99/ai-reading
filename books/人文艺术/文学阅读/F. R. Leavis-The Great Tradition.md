@@ -4,6 +4,7 @@ title: The Great Tradition
 author: F. R. Leavis
 tags: [文学批评, 英国小说, 乔治·艾略特, 亨利·詹姆斯, 康拉德]
 date: '2026-08-30'
+shareDescription: "为什么要把乔治·艾略特、亨利·詹姆斯和康拉德放在一起读？"
 ---
 
 # The Great Tradition

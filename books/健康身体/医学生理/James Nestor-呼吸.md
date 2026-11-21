@@ -4,6 +4,7 @@ title: 呼吸
 author: James Nestor
 tags: [呼吸, 生理学, 睡眠, 健康]
 date: '2026-09-14'
+shareDescription: "同样是呼吸，经鼻子或嘴有什么差别？从亲身实验追到生理研究。"
 ---
 
 # 呼吸

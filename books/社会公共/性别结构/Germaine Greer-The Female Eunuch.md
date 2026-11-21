@@ -4,6 +4,7 @@ title: The Female Eunuch
 author: Germaine Greer
 tags: [女性主义, 性别, 身体, 父权制]
 date: '2026-08-30'
+shareDescription: "格里尔追问，女孩是怎样学会藏起自己的欲望来讨好别人的。"
 ---
 
 # The Female Eunuch

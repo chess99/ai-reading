@@ -4,6 +4,7 @@ title: The Great Pretender
 author: Susannah Cahalan
 tags: [精神医学, 科学史, 研究伦理, 调查报道]
 date: '2026-09-12'
+shareDescription: "一位曾被误诊的记者，翻查一桩精神病院卧底实验的旧病历。"
 ---
 
 # The Great Pretender

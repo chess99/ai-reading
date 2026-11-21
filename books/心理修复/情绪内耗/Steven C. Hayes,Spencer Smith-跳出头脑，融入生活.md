@@ -4,6 +4,7 @@ title: 跳出头脑，融入生活
 author: Steven C. Hayes、Spencer Smith
 tags: [接纳承诺疗法, 心理灵活性, 正念, 价值行动]
 date: '2026-09-16'
+shareDescription: "焦虑还在时，也可以从一件自己看重的小事开始做起。"
 ---
 
 # 跳出头脑，融入生活
