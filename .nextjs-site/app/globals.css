@@ -339,12 +339,6 @@ body {
   color: #047857;
 }
 
-.stat-card {
-  border-radius: 14px;
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  backdrop-filter: blur(4px);
-}
-
 .sidebar-link {
   @apply block px-2 py-1.5 text-sm rounded-md transition-colors text-stone-700 hover:text-brand hover:bg-brand/10;
 }
@@ -550,7 +544,8 @@ body {
 
 /* 强调样式 */
 .markdown-content strong {
-  @apply font-semibold text-gray-900;
+  @apply font-semibold;
+  color: var(--color-ink-strong);
 }
 
 .markdown-content em {
@@ -663,7 +658,8 @@ body {
 
 /* 水平线样式 */
 .markdown-content hr {
-  @apply my-8 border-t-2 border-gray-200;
+  @apply my-8;
+  border-top: 1px solid var(--color-border);
 }
 
 /* 图片样式 */

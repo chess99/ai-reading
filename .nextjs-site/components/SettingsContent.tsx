@@ -140,7 +140,7 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
         <div className="flex items-start justify-between mb-3">
           <div className="flex-1">
             <h3 className="font-bold text-stone-950 mb-1">离线模式</h3>
-            <p className="text-sm text-stone-600">开启后将下载所有书籍供离线阅读（约 10MB）</p>
+            <p className="text-sm text-stone-600">开启后将缓存站内全部书籍解读，方便无网络时离线阅读</p>
           </div>
           <button
             onClick={handleOfflineModeToggle}

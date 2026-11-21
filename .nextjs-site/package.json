@@ -1,7 +1,7 @@
 {
   "name": "ai-reading",
   "version": "1.0.0",
-  "description": "AI 驱动的书籍解读与知识分享平台",
+  "description": "晨笙阅读：用于选书、复盘与主题学习的书籍解读",
   "main": "index.js",
   "scripts": {
     "dev": "node scripts/generate-manifest.js && node scripts/generate-feeds.mjs && next dev",

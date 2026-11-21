@@ -118,9 +118,9 @@ export default function ListenPage() {
         </section>
 
         <section className="surface-card border-l-4 border-l-brand p-5 md:p-6">
-          <h2 className="mb-2 text-lg font-black text-stone-950">这不是播客音频源</h2>
+          <h2 className="mb-2 text-lg font-black text-stone-950">全文订阅与语音朗读说明</h2>
           <p className="text-sm leading-7 text-stone-600">
-            Feed 中没有 MP3，也没有音频 enclosure；每一条订阅都直接包含完整 HTML 正文。声音、倍速、后台播放和离线能力由你选择的客户端负责，因此本站不需要保存或重新生成音频文件。
+            这里的每一条 RSS 订阅都直接输出完整 HTML 正文，不包含预录制的 MP3 音频文件。音色选择、语速调节、后台连播与离线朗读均由你常用的阅读器或朗读客户端直接完成。
           </p>
         </section>
       </div>

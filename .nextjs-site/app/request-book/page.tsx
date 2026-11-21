@@ -21,8 +21,9 @@ export default function RequestBookPage() {
       <div className="mx-auto w-full max-w-3xl">
         <div className="px-5 py-4 md:px-0 md:pb-6 md:pt-0">
           <p className="text-xs font-black tracking-[0.16em] text-brand">BOOK REQUEST</p>
+          <h1 className="mt-2 text-2xl md:text-3xl font-black tracking-tight text-stone-950">申请加入书库</h1>
           <p className="mt-2 text-sm leading-6 text-stone-600 md:text-base">
-            提交希望补充到书库的书籍线索。已收录书籍可通过搜索页直接查找。
+            遇到想看却尚未收录的书，可以在下方留下书名与作者。已收录书籍请直接前往搜索页或书库查看。
           </p>
         </div>
         <RequestBookForm />
