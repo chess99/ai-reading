@@ -140,12 +140,12 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-10">
-          <div className="surface-card border-l-4 border-l-brand p-5 md:p-6">
+          <div className="surface-card border-l-4 border-l-brand bg-(--color-surface-muted)/45 p-5 md:p-6">
             <h2 className="mb-3 text-xl font-black tracking-tight text-stone-950">与原书的关系</h2>
             <p className="max-w-3xl text-sm leading-7 text-stone-700 md:text-base">
               书籍解读不能完全替代原书。它更适合作为阅读前的地图、阅读后的复盘，或主题学习时的索引。真正重要的书，仍然值得回到原文细读。
             </p>
-            <div className="mt-5 grid gap-4 border-t border-stone-200 pt-5 md:grid-cols-3">
+            <div className="mt-5 grid gap-4 border-t border-[#e4dccf] pt-5 md:grid-cols-3">
               {relationshipPoints.map(item => (
                 <div key={item.title}>
                   <h3 className="mb-1 text-sm font-black text-stone-950">{item.title}</h3>
@@ -174,7 +174,7 @@ export default function AboutPage() {
             <p className="mb-5 text-sm leading-7 text-stone-700 md:text-base">
               {CONTENT_PROCESS_SUMMARY}
             </p>
-            <div className="grid gap-4 border-t border-stone-200 pt-5 md:grid-cols-2">
+            <div className="grid gap-4 border-t border-[#e4dccf] pt-5 md:grid-cols-2">
               {processSteps.map(item => (
                 <div key={item.title}>
                   <h3 className="mb-2 text-base font-black text-stone-950">{item.title}</h3>

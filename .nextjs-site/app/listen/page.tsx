@@ -62,7 +62,7 @@ export default function ListenPage() {
                   <div className="min-w-0">
                     <h3 className="mb-1 text-base font-black text-stone-950">{feed.title}</h3>
                     <p className="text-sm leading-6 text-stone-600">{feed.description}</p>
-                    <code className="mt-3 block overflow-x-auto rounded-md bg-stone-100 px-3 py-2 text-xs text-stone-700">{feed.url}</code>
+                    <code className="mt-3 block overflow-x-auto rounded-md bg-(--color-field) px-3 py-2 text-xs text-stone-700">{feed.url}</code>
                   </div>
                   <div className="flex flex-shrink-0 gap-2">
                     <CopyFeedButton value={feed.url} />
@@ -87,7 +87,7 @@ export default function ListenPage() {
             </p>
             <div className="flex flex-wrap gap-2">
               {clients.map(client => (
-                <span key={client} className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1.5 text-sm font-semibold text-stone-700">
+                <span key={client} className="rounded-full border border-[rgba(79,58,35,0.14)] bg-(--color-field) px-3 py-1.5 text-sm font-semibold text-stone-700">
                   {client}
                 </span>
               ))}
@@ -102,7 +102,7 @@ export default function ListenPage() {
             <p className="text-sm leading-7 text-stone-600">
               为避免单个 RSS 过大，日常 Feed 只保留最近内容；完整书库按一级书架拆成分类 Feed。支持 OPML 的客户端可以一次导入全部分类与主题阅读。
             </p>
-            <code className="mt-3 block overflow-x-auto rounded-md bg-stone-100 px-3 py-2 text-xs text-stone-700">{opmlUrl}</code>
+            <code className="mt-3 block overflow-x-auto rounded-md bg-(--color-field) px-3 py-2 text-xs text-stone-700">{opmlUrl}</code>
             <div className="mt-4 flex gap-2">
               <CopyFeedButton value={opmlUrl} />
               <a
@@ -115,7 +115,7 @@ export default function ListenPage() {
           </article>
         </section>
 
-        <section className="surface-card border-l-4 border-l-brand p-5 md:p-6">
+        <section className="surface-card border-l-4 border-l-brand bg-(--color-surface-muted)/45 p-5 md:p-6">
           <h2 className="mb-2 text-lg font-black text-stone-950">全文订阅与语音朗读说明</h2>
           <p className="text-sm leading-7 text-stone-600">
             这里的每一条 RSS 订阅都直接输出完整 HTML 正文，不包含预录制的 MP3 音频文件。音色选择、语速调节、后台连播与离线朗读均由你常用的阅读器或朗读客户端直接完成。

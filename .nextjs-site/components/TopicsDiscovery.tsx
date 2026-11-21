@@ -25,7 +25,7 @@ export default function TopicsDiscovery({ topics }: { topics: TopicMeta[] }) {
             placeholder="搜索问题、主题或书名" className="input-brand" />
         </label>
         <select aria-label="主题领域" value={selectedDomain} onChange={event => setSelectedDomain(event.target.value)}
-          className="min-h-11 rounded-lg border border-stone-300 bg-transparent px-2 text-sm text-stone-700">
+          className="min-h-11 shrink-0 rounded-lg border border-[rgba(79,58,35,0.14)] bg-(--color-field) px-3 text-sm font-medium text-stone-700 outline-none transition-colors hover:border-brand/35 focus:border-brand/70 focus:ring-4 focus:ring-brand/15">
           {domains.map(domain => <option key={domain} value={domain}>{domain === '全部' ? '全部领域' : domain}</option>)}
         </select>
       </div>

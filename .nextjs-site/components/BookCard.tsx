@@ -26,7 +26,7 @@ export default function BookCard({
       data-home-item-slug={analyticsPosition ? book.slug : undefined}
       data-home-position={analyticsPosition}
       className={isLatestLayout
-        ? 'group relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1 border-b border-stone-200 py-3 md:flex md:items-start md:rounded-lg md:border md:bg-(--color-surface) md:p-4 md:min-h-[168px] md:flex-col md:gap-2.5'
+        ? 'group relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1 border-b border-[#e4dccf] py-3.5 md:flex md:min-h-[168px] md:flex-col md:items-start md:gap-2.5 md:rounded-lg md:border md:border-[rgba(79,58,35,0.14)] md:bg-(--color-surface) md:p-4 surface-card-hover'
         : 'group surface-card surface-card-hover relative flex min-h-[168px] w-40 flex-shrink-0 flex-col gap-2.5 p-4 md:w-48'}
     >
       {isNew && (
@@ -55,7 +55,7 @@ export default function BookCard({
       </p>
       {book.categoryPath.length > 0 && (
         <span className={isLatestLayout
-          ? 'col-start-2 row-span-2 row-start-1 max-w-28 truncate text-xs text-stone-500 md:mt-auto md:max-w-full md:self-start'
+          ? 'chip-muted col-start-2 row-span-2 row-start-1 max-w-28 truncate !px-2 !py-0.5 !text-[11px] md:mt-auto md:max-w-full md:self-start'
           : 'chip-muted mt-auto max-w-full self-start truncate text-[11px]'}
         >
           {book.categoryPath[book.categoryPath.length - 1]}

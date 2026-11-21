@@ -182,7 +182,7 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
         <h2 className="font-bold text-stone-950 mb-3">存储管理</h2>
         <button
           onClick={handleClearCache}
-          className="min-h-11 px-4 py-2 border border-stone-200 text-stone-700 rounded-lg font-semibold hover:bg-stone-50 transition-colors active:scale-[0.99]"
+          className="min-h-11 px-4 py-2 border border-[#e4dccf] text-stone-700 rounded-lg font-semibold hover:bg-(--color-surface-muted) transition-colors active:scale-[0.99]"
         >
           清除所有缓存
         </button>
@@ -194,22 +194,22 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
         <p className="mb-3 text-sm leading-6 text-stone-600">
           没有找到想看的书？可以提交书名和作者，请求补充到书库。
         </p>
-        <Link
-          href="/request-book"
-          prefetch={false}
-          onClick={onNavigate}
-          className="inline-flex min-h-11 items-center rounded-lg bg-stone-900 px-4 text-sm font-semibold text-white hover:bg-stone-700"
-        >
-          申请加入书库
-        </Link>
-        <div className="mt-3 border-t border-stone-200/80 pt-3">
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <Link
+            href="/request-book"
+            prefetch={false}
+            onClick={onNavigate}
+            className="inline-flex min-h-11 items-center rounded-lg bg-stone-900 px-4 text-sm font-semibold text-white hover:bg-stone-700"
+          >
+            申请加入书库
+          </Link>
           <a
             href={feedbackIssueUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-3 rounded-md px-1 py-1 text-sm transition-colors hover:text-brand"
+            className="inline-flex min-h-11 items-center gap-1.5 text-sm text-stone-600 transition-colors hover:text-brand"
           >
-            <span className="text-stone-600">遇到 Bug、内容错误或体验问题？</span>
+            <span>遇到 Bug 或内容问题？</span>
             <span className="font-bold text-brand whitespace-nowrap">提交反馈 →</span>
           </a>
         </div>
@@ -218,14 +218,14 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
       {/* 站点信息 */}
       <div className="settings-section">
         <h2 className="font-bold text-stone-950 mb-3">站点信息</h2>
-        <div className="divide-y divide-stone-200/80 text-sm">
+        <div className="divide-y divide-[#e4dccf] text-sm">
           <div className="flex items-center justify-between gap-3 py-2.5">
             <div>
               <p className="font-semibold text-stone-950">版本更新</p>
               <p aria-live="polite" className="mt-0.5 leading-5 text-stone-500">{updateStatus || '检查最新内容和版本'}</p>
             </div>
             <button onClick={handleCheckUpdate} disabled={isCheckingUpdate}
-              className="min-h-11 shrink-0 rounded-lg border border-stone-200 px-3 font-semibold text-stone-700 hover:bg-stone-50 disabled:opacity-50">
+              className="min-h-11 shrink-0 rounded-lg border border-[#e4dccf] px-3 font-semibold text-stone-700 hover:bg-(--color-surface-muted) disabled:opacity-50">
               {isCheckingUpdate ? '检查中…' : '检查更新'}
             </button>
           </div>

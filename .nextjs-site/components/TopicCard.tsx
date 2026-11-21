@@ -1,12 +1,17 @@
 import Link from 'next/link';
 import type { TopicMeta } from '@/lib/topics';
 import { TOPIC_MODE_LABELS } from '@/lib/topic-discovery';
-interface TopicCardProps { topic: TopicMeta; compact?: boolean; analyticsPosition?: number; }
-export default function TopicCard({ topic, compact = false, analyticsPosition }: TopicCardProps) {
+interface TopicCardProps { topic: TopicMeta; compact?: boolean; variant?: 'row' | 'card'; analyticsPosition?: number; }
+export default function TopicCard({ topic, compact = false, variant = 'row', analyticsPosition }: TopicCardProps) {
+  const cardClass = compact
+    ? 'surface-card surface-card-hover p-5 min-w-[280px] md:min-w-[340px]'
+    : variant === 'card'
+      ? 'surface-card surface-card-hover h-full p-5'
+      : 'border-b border-[#e4dccf] py-5 transition-colors';
   return (
     <Link href={`/topics/${topic.slug}/`} prefetch={false}
       data-home-item-slug={analyticsPosition ? topic.slug : undefined} data-home-position={analyticsPosition}
-      className={`group block ${compact ? 'surface-card surface-card-hover p-5 min-w-[280px] md:min-w-[340px]' : 'border-b border-stone-200 py-5'}`}>
+      className={`group block ${cardClass}`}>
       <div className="mb-1.5 flex flex-wrap items-center justify-between gap-2">
         <span className="text-xs font-bold text-brand">{topic.domains.join(' · ')}</span>
         <span className="text-xs text-stone-500">{TOPIC_MODE_LABELS[topic.mode]}</span>

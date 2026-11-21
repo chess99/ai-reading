@@ -49,7 +49,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
     return <article className="page-container"><div className="mx-auto max-w-3xl py-8">
       <h1 className="page-title">{legacy.title}</h1>
       <p className="my-6 leading-7 text-stone-600">{targets.length === 1 ? '继续阅读这个主题：' : '选择你想了解的问题：'}</p>
-      <div className="space-y-4">{targets.map(topic => <TopicCard key={topic.slug} topic={topic} />)}</div>
+      <div className="space-y-4">{targets.map(topic => <TopicCard key={topic.slug} topic={topic} variant="card" />)}</div>
       <Link href="/topics/" className="mt-6 inline-block text-sm font-bold text-brand">浏览全部主题</Link>
     </div></article>;
   }
@@ -75,11 +75,11 @@ export default async function TopicPage({ params }: TopicPageProps) {
     <SearchHighlights />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <div className="mx-auto max-w-7xl">
-      <Link href="/topics/" prefetch={false} className="mb-5 inline-block text-sm font-semibold text-brand">← 全部主题</Link>
+      <Link href="/topics/" prefetch={false} className="mb-5 hidden text-sm font-semibold text-brand md:inline-block">← 全部主题</Link>
       <div className="topic-reading-layout">
         <div className="min-w-0 flex-1">
           <section data-pagefind-body className="reader-card surface-card">
-            <header className="border-b border-stone-200 pb-6">
+            <header className="border-b border-[#e4dccf] pb-6">
               <p data-pagefind-ignore className="mb-3 text-xs font-bold text-brand">{topic.domains.join(' · ')} <span className="mx-2 text-stone-300">/</span> {TOPIC_MODE_LABELS[topic.mode]}</p>
               <div className="flex items-start justify-between gap-4">
                 <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="page-title break-words">{topic.title}</h1>
@@ -90,7 +90,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
               <p className="mt-4 text-base leading-7 text-stone-600">{topic.description}</p>
               <p className="mt-4 text-xs text-stone-500">书单 {topic.bookCount} 本 · 解读 {topic.availableCount} 本可读</p>
             </header>
-            <section aria-labelledby="starting-books" className="my-7">
+            <section aria-labelledby="starting-books" className="my-7 rounded-xl border border-[#e4dccf] bg-(--color-surface-muted)/60 p-4 md:p-5">
               <h2 id="starting-books" className="text-lg font-black text-stone-950">从这里开始</h2>
               <p className="mb-4 mt-2 text-sm leading-6 text-stone-600">{topic.entry}</p>
               <div className={`grid gap-3 ${starters.length > 1 ? 'sm:grid-cols-2' : ''}`}>
@@ -109,7 +109,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
           </section>
         </div>
         <aside id="reading-list" aria-label="完整书单" className="topic-reading-list min-w-0 scroll-mt-6">
-          <div className="surface-card p-5 md:p-6">
+          <div className="surface-card bg-(--color-surface-muted)/45 p-5 md:p-6">
             <h2 className="mb-5 text-xl font-black text-stone-950">书单与读法</h2>
             <div className="space-y-3">{topic.books.map((book, index) => <TopicBookCard key={`${book.title}-${book.author}`} book={book} index={index} />)}</div>
           </div>
@@ -117,7 +117,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
       </div>
       {related.length > 0 && <section aria-labelledby="related-topics" className="mt-7">
         <h2 id="related-topics" className="mb-4 text-xl font-black text-stone-950">继续探索</h2>
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{related.map(item => <TopicCard key={item.slug} topic={item} />)}</div>
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{related.map(item => <TopicCard key={item.slug} topic={item} variant="card" />)}</div>
       </section>}
     </div>
   </article>;

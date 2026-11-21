@@ -45,12 +45,6 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
 
           {/* Desktop: hamburger always (for sidebar) */}
           <div className="hidden md:flex items-center gap-3 min-w-0">
-            {mode === 'book' && (
-              <button onClick={handleBack} className="touch-icon inline-flex gap-1 text-sm font-semibold text-stone-700 hover:bg-stone-100" aria-label="返回">
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-                <span>返回</span>
-              </button>
-            )}
             <button
               onClick={onMenuClick}
               className="touch-icon -ml-2 hover:bg-stone-100 text-stone-700 active:scale-95"
