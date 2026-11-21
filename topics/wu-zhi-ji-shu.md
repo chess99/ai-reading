@@ -1,74 +1,98 @@
 ---
 slug: wu-zhi-ji-shu
 title: 技术背后的材料、工程与能源
-description: 沿构件、制造、能源和供应链理解日常技术，看见便利背后的物质条件与劳动。
+description: 从日常材料的原子晶体性格与流体物理性格出发，经由七大工程元件、精密公差测量和关键元素工业史，直抵现代全球制造业与能源物质底盘。
 tags:
   - 科技
   - 科学
+  - 材料科学
+  - 精密制造
+  - 能源
 domain: 科技
 domains:
   - 科技
   - 科学
 mode: path
-entry: 想知道熟悉的产品怎样被制造、供能和维护。
+entry: 手机、高楼、飞机和芯片用得太顺手，反倒让人忘了它们是由哪些原子结构、微米级公差和跨洋货轮一步步撑起来的。
 related:
   - ji-shu-she-hui
   - huan-jing-qi-hou-ke-chi-xu
-  - sheng-ming-yan-hua
-date: '2026-09-12'
+  - wu-li-shi-jie
+  - ke-xue-shi-jie-guan
+date: '2026-11-20'
 books:
-  - title: Nuts and Bolts
-    author: Roma Agrawal
-    slug: nuts-and-bolts
-    path: books/科技媒介/未来技术/Roma Agrawal-Nuts and Bolts.md
+  - title: 迷人的材料
+    author: Mark Miodownik
+    slug: mi-ren-de-cai-liao
+    path: books/思维科学/证据科学/Mark Miodownik-迷人的材料.md
     status: in_library
     reading: start
-    role: 工程构件
-    reason: 从具体构件及其历史理解工程如何让复杂系统成为可能。
-  - title: Exactly
-    author: Simon Winchester
-    slug: exactly
-    path: books/科技媒介/未来技术/Simon Winchester-Exactly.md
-    status: in_library
-    reading: next
-    role: 精密制造
-    reason: 追踪精度、测量与制造技术，理解可靠性怎样被逐步建立。
-  - title: How the World Really Works
-    author: 瓦茨拉夫·斯米尔
-    originalTitle: How the World Really Works
-    status: planned
-    reading: compare
-    role: 物质与能源尺度
-    reason: 把食物、材料和能源放进数量尺度，检验日常技术想象。
+    role: 日常材料的微观物理性格
+    reason: 从屋顶一张生活照里的钢、纸、混凝土、巧克力与硅出发，看原子排列和晶体缺陷如何决定手边器物的软硬脆韧。
   - title: Liquid
     author: Mark Miodownik
     slug: liquid
     path: books/思维科学/证据科学/Mark Miodownik-Liquid.md
     status: in_library
     reading: optional
-    role: 材料的行为
-    reason: 从液体经验理解物性与工程用途，让日常观察连接材料科学。
-  - title: Cobalt Red
-    author: Siddharth Kara
-    slug: cobalt-red
-    path: books/社会公共/技术社会/Siddharth Kara-Cobalt Red.md
+    role: 流体的破坏与精密功用
+    reason: 借一趟跨大西洋航程串起煤油、甲醇、水、环氧胶水与液晶，剖析液体分子结构在燃爆、黏合和显示中的双面性。
+  - title: Nuts and Bolts
+    author: Roma Agrawal
+    slug: nuts-and-bolts
+    path: books/科技媒介/未来技术/Roma Agrawal-Nuts and Bolts.md
     status: in_library
-    reading: optional
-    role: 资源与劳动
-    reason: 通过钴开采调查检视技术供应链的社会代价。
+    reading: next
+    role: 七大基础工程元件
+    reason: 沿着钉子、轮子、弹簧、磁铁、透镜、绳索与泵七个不起眼的小部件，回溯结构工程师怎样用简单构件搭出复杂机器。
+  - title: Exactly
+    author: Simon Winchester
+    slug: exactly
+    path: books/科技媒介/未来技术/Simon Winchester-Exactly.md
+    status: in_library
+    reading: next
+    role: 公差压缩与精密制造史
+    reason: 按公差从零点一英寸缩进至原子钟百亿亿分之一秒，讲述车床、量块、涡轮叶片与太空镜片背后的测量革命。
+  - title: Seven Elements That Have Changed the World
+    author: John Browne
+    slug: seven-elements-that-have-changed-the-world
+    path: books/历史世界/世界历史/John Browne-Seven Elements That Have Changed the World.md
+    status: in_library
+    reading: compare
+    role: 七种元素的工业与能源史
+    reason: 由曾执掌英国石油的作者梳理铁、碳、金、银、铀、钛、硅的冶炼与博弈，展现高密度材料能源如何改写现代世界。
+  - title: Your Life Is Manufactured
+    author: Tim Minshall
+    slug: your-life-is-manufactured
+    path: books/科技媒介/未来技术/Tim Minshall-Your Life Is Manufactured.md
+    status: in_library
+    reading: next
+    role: 现代制造系统与全球工厂
+    reason: 拆解卫生纸、自行车、电动车和光刻机的生产物流链，对比精益零库存效率与苏伊士运河堵船暴露的脆弱性。
+  - title: How the World Really Works
+    author: 瓦茨拉夫·斯米尔
+    originalTitle: How the World Really Works
+    status: planned
+    reading: compare
+    role: 物质与能源数量级核算
+    reason: 用水泥、钢铁、塑料和合成氨四大物质支柱与能源密度算术，逐一检验能源转型和“无物质经济”设想的物理约束。
 ---
 # 技术背后的材料、工程与能源
 
-手机、建筑和交通系统依赖的不只是设计图，还包括材料、测量、能源、供应链和维护。一个部分做到极致，其他约束仍可能决定整个系统能否工作。
+人们习惯从屏幕、代码和商业新闻里理解现代科技，仿佛一切进步都只发生在比特世界。只要把身边任意一件器具拆开——屏幕里的液晶和钛合金框、运送芯片的货轮或电站涡轮叶片——撑住现代生活的，全是一层层实打实的材料、公差、工艺与焦耳。
 
-《Nuts and Bolts》从构件开始，《Exactly》把视线带到精度与制造。它们让技术进步成为可以追踪的具体工作，而不只是关于天才发明的故事。
+## 从原子排列与流体性格说起
 
-## 数量与代价也属于技术
+推开物质世界大门最生动的向导是 Mark Miodownik。《迷人的材料》从伦敦屋顶喝茶的一张生活照出发，把钢、纸、混凝土、巧克力与硅拆到纳米尺度：钢之所以韧而可弯，靠晶体里允许滑移的位错；水泥硬化源自水合硅酸钙结晶；好巧克力的清脆口感，则靠把可可脂精准控制在三十四摄氏度融化的 V 型晶体。接着读同作者的《Liquid》，随跨大西洋航班看清机翼下的航空煤油、粘合复合材料的环氧树脂和屏幕上响应电压的液晶分子——固体撑起轮廓，液体则在供能、黏合和显示之间游走在精密与险境边缘。
 
-《How the World Really Works》讨论物质与能源的尺度。《Liquid》可以按材料兴趣阅读。《Cobalt Red》则把供应链中的人和劳动放回画面，提醒读者最终产品的价格未必包含全部代价。
+## 七个小部件与越来越窄的公差
 
-不同作者的取舍与论证需要比较，具体数据也要保留时间、地点和单位。
+材料备齐了，怎么咬合进严丝合缝的机器？结构工程师 Roma Agrawal 在《Nuts and Bolts》里绕开高塔奇观，只盯钉子、轮子、弹簧、磁铁、透镜、绳索与泵七个基础部件：铜钉抵抗海水腐蚀，蒙古复合弓用羊角和骨胶储存弹性能，阿基米德螺旋摇身变成城市钻孔桩机，整套工程世界原是由这些小元件层层叠出来的。
 
-## 建议读法
+元件咬合后，真正决定可靠性与量产成本的密码是“公差”。《Exactly》按公差由大到小一路推进：瓦特蒸汽机早年漏气停摆，靠炮筒镗床才把气缸误差压进一枚先令硬币厚；福特装配线仰赖可借分子引力贴合的量块；直到今天航发涡轮叶片的气膜微孔与原子钟定标——精度逼近极限时，一毫米涂层误差就会让哈勃太空望远镜失焦或酿成空难。
 
-选一个日常物品，追踪它需要的材料、制造精度、能源和维修方式。找出最难替代的环节，再问谁承担环境与劳动成本。这些问题能帮助理解技术采用的现实速度。
+## 元素版图、全球工厂与硬核能量账
+
+把车间放大到全球尺度，工业文明露出沉甸甸的物质底色。《Seven Elements That Have Changed the World》由前能源掌门人盘点铁、碳、金、银、铀、钛、硅：鲁尔区煤铁在法德三度交兵后促成欧洲煤钢共同体，化石能源推高生产力又在钻井爆炸与气候账单里显出两难。
+
+《Your Life Is Manufactured》紧盯当代厂房与海运网络，比较单件手工、汽车流水线与高速造纸机，拆出“精益零库存”在运河堵船时如何暴露脆弱命门。待《How the World Really Works》补齐后，斯米尔关于水泥、钢铁、塑料与合成氨的数量级核算还会替整个主题压上一块硬核砝码——挑一件天天上手的日用品，查清它的合金配方、加工公差和跨洋物流线，物质世界的实在感立刻就回来了。

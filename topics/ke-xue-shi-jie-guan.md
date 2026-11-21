@@ -1,7 +1,7 @@
 ---
 slug: ke-xue-shi-jie-guan
 title: 科学知识如何形成与改变
-description: 比较科学史、范式和解释观，理解研究为什么可信，也为什么需要持续修正。
+description: 穿行世界观拼图、范式危机与科学史公案，看清科学为何在不断推翻旧说中反而更值得信赖。
 tags:
   - 科学
   - 思维
@@ -11,12 +11,13 @@ domains:
   - 科学
   - 思维
 mode: comparison
-entry: 关心科学怎样知道一件事，而不只是想记住结论。
+entry: 听到医学建议隔几年就反转、学派之间互相驳斥，想知道科学结论到底凭什么算数、旧理论又是怎样被新理论换掉的。
 related:
   - zheng-ju-pan-duan
   - wu-li-shi-jie
   - sheng-ming-yan-hua
-date: '2026-09-12'
+  - xi-tong-fu-za-xing
+date: '2026-11-20'
 books:
   - title: 世界观
     author: 理查德·德威特
@@ -24,57 +25,73 @@ books:
     path: books/思维科学/证据科学/理查德·德威特-世界观.md
     status: in_library
     reading: start
-    role: 科学史与哲学
-    reason: 沿科学观念的变化理解事实、理论和证据标准之间的关系。
-  - title: 别逗了费曼先生
-    author: 费曼
-    slug: bie-dou-le-fei-man-xian-sheng
-    path: books/历史世界/传记回忆/费曼-别逗了费曼先生.md
+    role: 科学史与世界观拼图
+    reason: 用相互咬合的拼图比喻梳理从亚里士多德、牛顿到量子与相对论的认知迁徙，讲清事实、观测表征与实在论张力。
+  - title: The Hunt for Vulcan
+    author: Thomas Levenson
+    slug: the-hunt-for-vulcan
+    path: books/思维科学/证据科学/Thomas Levenson-The Hunt for Vulcan.md
     status: in_library
-    reading: optional
-    role: 研究者的经验
-    reason: 从回忆中的好奇与实践接近科学生活，区分个人故事与通用方法。
+    reading: next
+    role: 反常观测与旧理论打补丁
+    reason: 追踪水星轨道出现异常后天文学界苦寻“祝融星”五十年的公案，还原旧框架如何在新理论站稳前拼命修补自身。
   - title: 科学革命的结构
     author: 托马斯·库恩
     slug: ke-xue-ge-ming-de-jie-gou
     path: books/思维科学/证据科学/托马斯·库恩-科学革命的结构.md
     status: in_library
     reading: compare
-    role: 范式与共同体
-    reason: 研究常规科学、异常和框架变更如何发生。
+    role: 范式与共同体革命
+    reason: 把科学演进拆成常规解谜、反常累积、危机与范式转换，揭示旧理论当年也曾具备严密的自洽逻辑。
   - title: 无穷的开始
     author: 戴维·多伊奇
     slug: wu-qiong-de-kai-shi
     path: books/思维科学/证据科学/戴维·多伊奇-无穷的开始.md
     status: in_library
     reading: compare
-    role: 解释与知识进步
-    reason: 考察好解释、批判和知识增长的哲学主张。
+    role: 好解释与客观进步
+    reason: 主张知识增长的发动机是“难以篡改的好解释”与持续猜想批判，正面驳斥将科学等同于学派轮替的相对主义。
+  - title: The Second Kind of Impossible
+    author: Paul J. Steinhardt
+    slug: the-second-kind-of-impossible
+    path: books/历史世界/传记回忆/Paul J. Steinhardt-The Second Kind of Impossible.md
+    status: in_library
+    reading: optional
+    role: 异端假说与跨界实证
+    reason: 记录准晶体构想如何在权威嘲讽下熬过数十年质疑，最终凭俄罗斯堪察加半岛天然陨石样本改写晶体学铁律。
+  - title: 别逗了费曼先生
+    author: 费曼
+    slug: bie-dou-le-fei-man-xian-sheng
+    path: books/历史世界/传记回忆/费曼-别逗了费曼先生.md
+    status: in_library
+    reading: optional
+    role: 一线求真与反欺骗直觉
+    reason: 从修收音机、撬保险柜到剖析“货船崇拜科学”的轶事，还原物理学家亲手验证、绝不盲从术语的求真洁癖。
   - title: Science Fictions
     author: Stuart Ritchie
     slug: science-fictions
     path: books/思维科学/证据科学/Stuart Ritchie-Science Fictions.md
     status: in_library
     reading: next
-    role: 制度与可靠性
-    reason: 观察科研激励、数据实践和发表机制怎样影响可信度。
+    role: 期刊激励与复制性危机
+    reason: 把现代科研体制放上手术台，揭露发表偏见、p值操纵、数据疏忽与过度公关怎样制造虚假结论又该如何修补。
 ---
 # 科学知识如何形成与改变
 
-科学知识具有可修正性，并不意味着它与任意意见同样可靠。关键在于一个解释怎样受到观察约束，其他人能否检查它，以及研究共同体如何处理错误。
+昨天还被奉为长寿法则的饮食建议，今年就被新论文推翻；人类信奉千年的宇宙图景，也曾在几个世纪里接连重画。科学之所以越改越可信，正因为这套规则允许反常观测把旧解释逼进死角，也允许后来者用公开可核查的证据推翻前人的结论。
 
-## 不同作者在解释什么
+## 拼图松动与追寻“祝融星”
 
-《世界观》提供问题背景。《科学革命的结构》关注共同体如何在一个框架中研究，以及何时改变框架；《无穷的开始》更强调解释、批判和知识进步。两本回答的侧重点不同，不能简单理解为后一种理论取代前一种。
+《世界观》用拼图作比：人脑里的信念彼此咬合，地心说这类核心拼板一旦抽掉，力学、天文学和常识就会整片塌方。理查德·德威特顺着从亚里士多德、牛顿到相对论和量子的几次迁徙，讲清人们当年死守旧说是因为整套推理在当时的尺度里严丝合缝。Thomas Levenson 的《The Hunt for Vulcan》把塌方前的挣扎拍成五十年的悬疑剧：水星近日点出现牛顿引力算不准的微小偏差后，天文学界整整半个世纪宁可硬生生脑补出一颗“祝融星”去替牛顿打补丁，直到爱因斯坦用广义相对论弯折时空，这颗幽灵行星才退场。
 
-费曼的回忆可以让科学活动变得具体，但个性、轶事和成功经历本身不是科学方法的证明。读它时留意他实际如何检查想法，而非只记住反权威的姿态。
+## 范式更替还是解释越来越好
 
-## 可信度也需要制度支持
+这段公案正好引出科学哲学里最激烈的交锋：旧理论下台时，科学到底算集体“换频道”，还是真往实在迈了一步？
 
-《Science Fictions》把视线转向研究实践与激励。公开资料、方法透明、复核和纠错之所以重要，正因为研究者也会受到偏好和职业压力影响。
+《科学革命的结构》里，库恩把科学史拆成“常规科学”和“科学革命”两个节拍：多数岁月里共同体共享一套范式在既定规则内解谜，直到“祝融星”之类的反常压垮信心，危机才逼出替代范式。由于不同范式连评价标准都各异，不少人将库恩读成“科学和流行换季一样全看投票”。戴维·多伊奇在《无穷的开始》里正面驳斥这种相对主义：知识进步的发动机是“难以篡改的好解释”——牛顿引力必须虚构行星才能圆场，广义相对论连光线弯曲和引力红移一并锁死，动一发则全身报废，解释抓住了客观世界更深的规律，进步才会无限推进。
 
-承认错误机制，不需要走向“科学都不可信”；更有用的是比较一个结论所经受的检查强度。
+## 一线实验室与学术出版的暗面
 
-## 建议读法
+真正在实验室干活的人怎么冲破成见？《The Second Kind of Impossible》记录物理学家 Paul J. Steinhardt 顶着化学泰斗鲍林的公开嘲讽，把教科书判定“绝不可能”的五重对称准晶体，一路追到俄罗斯堪察加半岛河滩的天然陨石标本上。《别逗了费曼先生》用另一副幽默面孔守住求真底线：无论修收音机还是在巴西教物理，费曼最警惕“货船崇拜科学”——把流程和术语学得有模有样，独独忘了交代自己可能在哪里出错。
 
-选择一项科学观念的变化，追踪旧解释解决过什么、新观察带来什么困难、后来的理论多解释了什么。想了解自然世界本身，可直接进入生命演化或物理主题，不必先读完科学哲学。
+到了今天，威胁可信度的往往还有学术出版的激励机制。Stuart Ritchie 在《Science Fictions》里揭开期刊重阳轻阴的疮疤：欺诈、p 值微调、样本疏忽和公关夸大在多学科造出复现危机，而预注册实验、强制开放原始数据与奖励重复验证正是对症药方。再遇“最新研究反转常识”时，顺手核查三件事：它给出什么可证伪预测、原始数据公开了吗、独立团队重复出来了吗。
