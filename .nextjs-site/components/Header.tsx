@@ -41,7 +41,7 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
   };
 
   return (
-    <header className={`app-header sticky top-0 z-50 bg-[#fffdf8]/90 backdrop-blur-xl border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
+    <header className={`app-header sticky top-0 z-50 bg-(--color-surface) border-b border-stone-200/80 shadow-[0_1px_0_rgba(79,58,35,0.08)] ${mode === 'home' ? 'hidden md:block' : 'block'}`}>
       <div className="mx-auto w-full px-4 md:px-6">
         <div className="flex items-center justify-between h-14 md:h-16">
 

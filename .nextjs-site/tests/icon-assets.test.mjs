@@ -26,6 +26,25 @@ test('PNG app and share icons use opaque square backgrounds', async () => {
   ]);
 });
 
+test('Android launcher masks preserve the entire book outline', async () => {
+  const { data, info } = await sharp(path.join(siteRoot, 'public/maskable-icon.png'))
+    .removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const center = info.width / 2;
+  let outlinePixels = 0;
+
+  for (let y = 0; y < info.height; y++) {
+    for (let x = 0; x < info.width; x++) {
+      const offset = (y * info.width + x) * info.channels;
+      // 书封轮廓色 #4f3a23，含抗锯齿边缘。
+      if (data[offset] > 110 || data[offset + 1] > 90 || data[offset + 2] > 70) continue;
+      outlinePixels++;
+      assert.ok(Math.hypot(x + 0.5 - center, y + 0.5 - center) <= info.width * 0.4,
+        `Book outline at (${x}, ${y}) exceeds the maskable safe area`);
+    }
+  }
+  assert.ok(outlinePixels > 0, 'The book outline must be visible');
+});
+
 test('metadata uses the dedicated share image instead of the app icon', async () => {
   const files = [
     'app/layout.tsx',
@@ -50,7 +69,7 @@ test('web app manifest separates standard and maskable PNG icons', async () => {
     'manifest should expose /icon-512.png for standard app icon use'
   );
   assert.ok(
-    icons.some(icon => icon.src === '/maskable-icon.png' && icon.purpose === 'maskable'),
+    icons.some(icon => new URL(icon.src, 'https://example.test').pathname === '/maskable-icon.png' && icon.purpose === 'maskable'),
     'manifest should expose /maskable-icon.png for maskable app icon use'
   );
   assert.equal(
