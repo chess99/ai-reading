@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
     other: { 'ai-reading-content': getContentVersion(`/topics/${topic.slug}/`) },
     keywords: [topic.title, '主题阅读', ...topic.tags], alternates: { canonical: url },
     openGraph: { title: topic.title, description: topic.description, url, type: 'article', locale: 'zh_CN', siteName: BRAND_NAME,
-      images: [{ url: `${BASE_URL}/share-image.png`, width: 512, height: 512, alt: topic.title }] } };
+      images: [{ url: `${BASE_URL}/share-image.png?v=5`, width: 512, height: 512, alt: topic.title }] } };
 }
 export default async function TopicPage({ params }: TopicPageProps) {
   const { slug } = await params;

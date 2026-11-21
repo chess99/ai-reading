@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   keywords: ['晨笙阅读', '书籍解读', '读书笔记', '主题阅读', '好书精读', '投资', '心理学', '个人成长', '商业管理'],
   manifest: '/manifest.webmanifest',
   icons: {
-    icon: '/icon.svg?v=4',
-    apple: '/apple-touch-icon.png?v=4',
+    icon: '/icon.svg?v=5',
+    apple: '/apple-touch-icon.png?v=5',
   },
   appleWebApp: {
     capable: true,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     images: [
       {
-        url: BASE_URL + '/share-image.png',
+        url: BASE_URL + '/share-image.png?v=5',
         width: 512,
         height: 512,
         alt: BRAND_NAME,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [BASE_URL + '/share-image.png'],
+    images: [BASE_URL + '/share-image.png?v=5'],
   },
 };
 

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     images: [
       {
-        url: `${BASE_URL}/share-image.png`,
+        url: `${BASE_URL}/share-image.png?v=5`,
         width: 512,
         height: 512,
         alt: BRAND_NAME,
@@ -70,7 +70,7 @@ const websiteJsonLd = {
       description: SITE_DESCRIPTION,
       logo: {
         '@type': 'ImageObject',
-        url: `${BASE_URL}/icon-512.png`,
+        url: `${BASE_URL}/icon-512.png?v=5`,
         width: 512,
         height: 512,
       },

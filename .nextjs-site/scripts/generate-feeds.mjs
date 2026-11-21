@@ -254,7 +254,7 @@ export function buildRss({ title, description, feedUrl, siteUrl = DEFAULT_SITE_U
     `    <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />`,
     '    <generator>晨笙阅读 feed generator</generator>',
     '    <image>',
-    `      <url>${escapeXml(siteUrl)}/icon-512.png</url>`,
+    `      <url>${escapeXml(siteUrl)}/icon-512.png?v=5</url>`,
     `      <title>${escapeXml(title)}</title>`,
     `      <link>${escapeXml(siteUrl)}/</link>`,
     '    </image>',

@@ -34,7 +34,7 @@ const aboutJsonLd = {
     '@id': `${BASE_URL}/#organization`,
     name: BRAND_NAME,
     url: `${BASE_URL}/`,
-    logo: `${BASE_URL}/icon-512.png`,
+    logo: `${BASE_URL}/icon-512.png?v=5`,
     founder: {
       '@type': 'Person',
       '@id': 'https://cearl.cc/#person',

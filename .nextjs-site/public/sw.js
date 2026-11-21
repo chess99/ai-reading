@@ -1,6 +1,6 @@
 const CACHE_NAME = 'reading-v2';
-const INSTALL_ICONS = ['/icon-192.png?v=4', '/icon-512.png?v=4'];
-const PRECACHE_URLS = ['/', '/manifest.webmanifest', '/icon.svg?v=4', ...INSTALL_ICONS];
+const INSTALL_ICONS = ['/icon-192.png?v=5', '/icon-512.png?v=5'];
+const PRECACHE_URLS = ['/', '/manifest.webmanifest', '/icon.svg?v=5', ...INSTALL_ICONS];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(PRECACHE_URLS)));
