@@ -99,14 +99,12 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }}
       />
       <div className="page-content-6xl">
-        {/* Continue Reading */}
-        <HomeModuleAnalytics module="continue">
-          <ContinueReading />
-        </HomeModuleAnalytics>
-
-        {/* What this library helps readers do */}
         <HomeModuleAnalytics module="intro">
           <HomeIntro />
+        </HomeModuleAnalytics>
+
+        <HomeModuleAnalytics module="continue">
+          <ContinueReading />
         </HomeModuleAnalytics>
 
         {/* Search Bar */}

@@ -58,7 +58,7 @@ export default function NewBooks({ books, renderedAt }: NewBooksProps) {
           <ChevronRightIcon className="h-4 w-4" />
         </Link>
       </div>
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-[repeat(auto-fit,minmax(15rem,1fr))]">
+      <div className="grid grid-cols-1 md:gap-3 md:grid-cols-[repeat(auto-fit,minmax(15rem,1fr))]">
         {recentBooks.map((book, index) => (
           <BookCard
             key={book.slug}

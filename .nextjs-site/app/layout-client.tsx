@@ -82,7 +82,7 @@ export default function LayoutClient({ children }: LayoutClientProps) {
   }, [isDetailPage, pathname, children]);
 
   return (
-    <div className="flex flex-col h-screen h-[100dvh] overflow-hidden overscroll-none">
+    <div className="app-shell flex flex-col h-screen h-[100dvh] overflow-hidden overscroll-none">
       <Header
         mode={isDetailPage ? 'book' : 'home'}
         bookTitle={detailTitle}
@@ -105,6 +105,7 @@ export default function LayoutClient({ children }: LayoutClientProps) {
         <main
           ref={mainRef}
           onScroll={saveCurrentScrollPosition}
+          data-home={pathname === '/' || undefined}
           className="reading-workspace min-w-0 flex-1 overflow-auto overflow-x-hidden overscroll-contain pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0"
         >
           {children}

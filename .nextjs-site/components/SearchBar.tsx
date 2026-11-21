@@ -26,18 +26,18 @@ export default function SearchBar({ books, onRandomBook }: SearchBarProps) {
   };
 
   return (
-    <div className="grid gap-3 md:grid-cols-[1fr_auto] md:items-center">
+    <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
       <Link
         href="/search"
         prefetch={false}
-        className="input-brand surface-card-hover relative flex items-center gap-3 text-left no-underline"
+        className="flex min-h-11 min-w-0 items-center gap-2 rounded-lg bg-stone-100 px-3 text-left text-stone-600 hover:bg-stone-200"
         aria-label="打开搜索"
       >
-        <span className="absolute left-[17px] top-1/2 -translate-y-1/2 flex items-center text-stone-500">
+        <span className="shrink-0">
           <SearchIcon className="w-5 h-5" />
         </span>
-        <span className="min-w-0 flex-1 truncate text-base font-medium text-stone-400">
-          搜索书名、作者、内容...
+        <span className="truncate text-sm">
+          搜索书名、作者或内容
         </span>
       </Link>
 
@@ -46,7 +46,7 @@ export default function SearchBar({ books, onRandomBook }: SearchBarProps) {
         onClick={handleRandomBook}
         data-home-analytics-direct="true"
         data-home-module="random"
-        className="btn-outline-brand flex w-full items-center justify-center gap-3 md:w-auto"
+        className="flex min-h-11 items-center justify-center gap-1.5 rounded-lg px-2 text-sm font-medium text-stone-700 hover:bg-stone-100"
         title="随机一本书"
       >
         <ShuffleIcon className="w-5 h-5" />

@@ -31,12 +31,20 @@
 html,
 body {
   overflow-x: hidden;
+  background-color: var(--color-surface);
 }
 
 body {
   font-family: "Geist", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   font-feature-settings: "tnum";
   color: var(--color-text);
+}
+
+.app-shell {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left);
+}
+
+.reading-workspace:not([data-home]) {
   background:
     linear-gradient(90deg, rgba(79, 58, 35, 0.035) 1px, transparent 1px),
     linear-gradient(180deg, rgba(79, 58, 35, 0.025) 1px, transparent 1px),
@@ -118,7 +126,6 @@ body {
   padding: 0.5rem;
 }
 .touch-icon svg { margin-inline: auto; }
-.app-header { padding-top: env(safe-area-inset-top); }
 
 .app-dialog {
   position: fixed;
@@ -164,6 +171,7 @@ body {
 }
 
 @media (min-width: 768px) {
+  .app-shell { padding-bottom: env(safe-area-inset-bottom); }
   .reading-page { padding-block: 2rem; }
   .reader-toc-trigger { bottom: max(1.5rem, env(safe-area-inset-bottom)); }
 }
@@ -244,31 +252,6 @@ body {
   border-color: rgba(154, 107, 47, 0.34);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-2px);
-}
-
-.brand-soft-panel {
-  position: relative;
-  isolation: isolate;
-  border-color: rgba(154, 107, 47, 0.22);
-  background:
-    radial-gradient(540px 260px at 100% 0%, rgba(154, 107, 47, 0.1), transparent 67%),
-    linear-gradient(135deg, rgba(154, 107, 47, 0.11), rgba(255, 253, 248, 0.92) 54%, rgba(255, 253, 248, 0.82));
-}
-
-.brand-soft-panel::after {
-  content: "";
-  position: absolute;
-  right: -62px;
-  bottom: -110px;
-  z-index: 0;
-  width: 300px;
-  height: 300px;
-  border: 1px solid rgba(154, 107, 47, 0.09);
-  border-radius: 999px;
-  box-shadow:
-    0 0 0 38px rgba(154, 107, 47, 0.025),
-    0 0 0 76px rgba(154, 107, 47, 0.018);
-  pointer-events: none;
 }
 
 .btn-outline-brand {

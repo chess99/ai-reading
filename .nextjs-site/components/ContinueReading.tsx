@@ -42,8 +42,8 @@ export default function ContinueReading() {
   }
 
   return (
-    <div className="mb-6 md:mb-8">
-      <div className="surface-card overflow-hidden">
+    <div className="mb-4 md:mb-6">
+      <div className="overflow-hidden rounded-lg bg-[#f4efe6]">
 
         {/* 主行 */}
         <Link
@@ -55,7 +55,7 @@ export default function ContinueReading() {
           onClick={handleMainClick}
         >
           {/* Icon */}
-          <div className="flex-shrink-0 w-11 h-11 icon-tile">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center text-brand-dark">
             <BookIcon className="w-6 h-6" />
           </div>
 
@@ -86,11 +86,11 @@ export default function ContinueReading() {
         {rest.length > 0 && (
           <>
             <button
-              className="min-h-11 w-full flex items-center justify-between px-5 md:px-6 py-2 border-t border-stone-100 text-left hover:bg-stone-50 transition-colors"
+              className="min-h-11 w-full flex items-center justify-between px-5 md:px-6 py-2 border-t border-stone-300/50 text-left hover:bg-stone-50 transition-colors"
               onClick={() => setIsOpen(v => !v)}
               aria-expanded={isOpen}
             >
-              <span className="text-xs text-stone-400 flex items-center gap-2">
+              <span className="text-xs text-stone-600 flex items-center gap-2">
                 最近读过
                 <span className="bg-stone-100 text-stone-600 text-[10px] font-semibold px-1.5 py-0.5 rounded">
                   +{rest.length}

@@ -1,57 +1,20 @@
 import Link from 'next/link';
-import { ChevronRightIcon } from '@/components/Icons';
 
 export default function HomeIntro() {
   return (
-    <section
-      aria-labelledby="home-intro-title"
-      className="brand-soft-panel surface-card mb-6 overflow-hidden p-6 md:mb-8 md:px-10 md:py-8"
-    >
-      <div className="relative z-[1] max-w-3xl">
-        <p className="mb-2.5 text-[10px] font-black tracking-[0.19em] text-brand md:mb-3 md:text-[11px]">
-          晨笙阅读 · BOOK NOTES & READING PATHS
-        </p>
-        <h1
-          id="home-intro-title"
-          className="text-[28px] font-bold leading-[1.3] tracking-[-0.02em] text-stone-950 md:text-[44px] md:leading-[1.2]"
-        >
-          从一本书出发，<br className="sm:hidden" />读清一个问题
-        </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-700 md:mt-4 md:text-base md:leading-8">
-          单本解读帮助你选书和复盘，主题阅读围绕一个问题串联多本书，形成一条理解路径。
-        </p>
-        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 md:mt-6">
-          <Link
-            href="/topics"
-            prefetch={false}
-            data-home-module="topics"
-            data-home-item-slug="all-topics"
-            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-stone-950 px-5 text-sm font-bold text-[#fffdf8] shadow-[0_9px_18px_-13px_rgba(0,0,0,0.75)] transition-colors hover:bg-brand focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/20"
-          >
-            浏览主题阅读
-            <ChevronRightIcon className="h-4 w-4 text-[#d7b47d]" />
-          </Link>
-          <Link
-            href="/library"
-            prefetch={false}
-            data-home-module="library"
-            data-home-item-slug="library"
-            className="inline-flex min-h-12 items-center gap-1.5 text-sm font-bold text-stone-700 transition-colors hover:text-brand focus-visible:rounded-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/20"
-          >
-            进入书库
-            <ChevronRightIcon className="h-4 w-4 text-brand" />
-          </Link>
-          <Link
-            href="/about"
-            prefetch={false}
-            data-home-module="about"
-            data-home-item-slug="about"
-            className="inline-flex min-h-12 items-center text-xs font-semibold text-stone-500 transition-colors hover:text-brand focus-visible:rounded-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/20"
-          >
-            关于晨笙阅读
-          </Link>
-        </div>
+    <header className="mb-5 flex flex-wrap items-center justify-between gap-x-4 border-b border-stone-300/70 pb-4 md:mb-8 md:pb-6">
+      <div>
+        <h1 className="font-serif text-3xl font-bold tracking-wide text-stone-950 md:text-4xl">晨笙阅读</h1>
+        <p className="mt-1.5 text-sm text-stone-600">书籍解读与主题阅读</p>
       </div>
-    </section>
+      <div className="flex items-center gap-5 text-sm text-stone-600">
+        <Link href="/topics" prefetch={false} data-home-module="topics" data-home-item-slug="all-topics"
+          className="hidden min-h-11 items-center hover:text-brand md:inline-flex">浏览主题阅读</Link>
+        <Link href="/library" prefetch={false} data-home-module="library" data-home-item-slug="library"
+          className="hidden min-h-11 items-center hover:text-brand md:inline-flex">进入书库</Link>
+        <Link href="/about" prefetch={false} data-home-module="about" data-home-item-slug="about"
+          className="inline-flex min-h-11 items-center hover:text-brand" aria-label="关于晨笙阅读">关于</Link>
+      </div>
+    </header>
   );
 }

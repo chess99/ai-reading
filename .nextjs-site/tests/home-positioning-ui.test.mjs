@@ -6,7 +6,6 @@ const homeSource = readFileSync(new URL('../app/page.tsx', import.meta.url), 'ut
 const layoutSource = readFileSync(new URL('../app/layout.tsx', import.meta.url), 'utf8');
 const librarySource = readFileSync(new URL('../app/library/page.tsx', import.meta.url), 'utf8');
 const introSource = readFileSync(new URL('../components/HomeIntro.tsx', import.meta.url), 'utf8');
-const globalStylesSource = readFileSync(new URL('../app/globals.css', import.meta.url), 'utf8');
 const brandSource = readFileSync(new URL('../lib/brand.ts', import.meta.url), 'utf8');
 const verificationSource = readFileSync(
   new URL('../public/baidu_verify_codeva-szqh50c7hX.html', import.meta.url),
@@ -20,27 +19,17 @@ test('home prioritizes return tasks and recent content without duplicating disco
   const newBooksIndex = homeSource.indexOf('<NewBooks');
 
   assert.notEqual(introIndex, -1, 'Home page should include the positioning intro.');
-  assert.ok(continueIndex < introIndex, 'Continue reading should remain the first returning-reader task.');
-  assert.ok(introIndex < searchIndex, 'The compact reader promise should introduce search for new readers.');
+  assert.ok(introIndex < continueIndex && continueIndex < searchIndex, 'Returning readers can resume directly below the masthead.');
   assert.ok(searchIndex < newBooksIndex, 'Search should appear before discovery modules.');
   assert.doesNotMatch(homeSource, /<TopicReading/, 'Topic cards should live on the dedicated topics page.');
   assert.doesNotMatch(homeSource, /按分类浏览全部书籍/, 'The home page should not duplicate the library entry.');
 });
 
-test('home intro aligns its reading-path promise and primary action', () => {
-  assert.match(introSource, /从一本书出发，/);
-  assert.match(introSource, /读清一个问题/);
-  assert.match(introSource, /单本解读帮助你选书和复盘/);
-  assert.match(introSource, /主题阅读围绕一个问题串联多本书/);
-  assert.match(introSource, /浏览主题阅读/);
-  assert.match(introSource, /text-\[28px\] font-bold/);
-  assert.doesNotMatch(introSource, /<h1[^>]*[\s\S]*?font-black[\s\S]*?<\/h1>/);
-  assert.match(introSource, /href="\/topics"/);
-  assert.match(introSource, /href="\/library"/);
+test('home masthead identifies the library and its reading formats', () => {
+  assert.match(introSource, /<h1[^>]*>晨笙阅读<\/h1>/);
+  assert.match(introSource, /书籍解读与主题阅读/);
   assert.match(introSource, /data-home-module="topics"/);
   assert.match(introSource, /data-home-module="library"/);
-  assert.match(globalStylesSource, /\.brand-soft-panel\s*\{[^}]*linear-gradient/s);
-  assert.doesNotMatch(globalStylesSource, /body::before/);
 });
 
 test('public positioning describes reader value before the production method', () => {

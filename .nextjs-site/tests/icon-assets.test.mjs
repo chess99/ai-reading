@@ -26,6 +26,24 @@ test('PNG app and share icons use opaque square backgrounds', async () => {
   ]);
 });
 
+test('every install icon blends into the splash background around the book', async () => {
+  const publicDir = path.join(siteRoot, 'public');
+  const manifest = JSON.parse(await fs.readFile(path.join(publicDir, 'manifest.webmanifest'), 'utf8'));
+  const expected = Buffer.from(manifest.background_color.slice(1), 'hex');
+  for (const { src } of manifest.icons) {
+    const file = new URL(src, 'https://example.test').pathname;
+    const { data, info } = await sharp(path.join(publicDir, file)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    for (let y = 0; y < info.height; y++) {
+      for (let x = 0; x < info.width; x++) {
+        if (Math.min(x, y, info.width - 1 - x, info.height - 1 - y) >= 48) continue;
+        const offset = (y * info.width + x) * info.channels;
+        assert.ok(data[offset + 3] === 255 && data.subarray(offset, offset + 3).equals(expected),
+          `${src} differs from the splash background at (${x}, ${y})`);
+      }
+    }
+  }
+});
+
 test('Android launcher masks preserve the entire book outline', async () => {
   const { data, info } = await sharp(path.join(siteRoot, 'public/maskable-icon.png'))
     .removeAlpha().raw().toBuffer({ resolveWithObject: true });
@@ -65,7 +83,7 @@ test('web app manifest separates standard and maskable PNG icons', async () => {
   const icons = manifest.icons ?? [];
 
   assert.ok(
-    icons.some(icon => icon.src === '/icon-512.png' && icon.purpose === 'any'),
+    icons.some(icon => new URL(icon.src, 'https://example.test').pathname === '/icon-512.png' && icon.purpose === 'any'),
     'manifest should expose /icon-512.png for standard app icon use'
   );
   assert.ok(
