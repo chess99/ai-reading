@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { navigationCurrent } from '@/lib/navigation-section';
 import { usePathname, useRouter } from 'next/navigation';
 import { getStoredPreviousPath } from '@/lib/navigation-history';
 import { HomeIcon, LibraryIcon, MenuIcon, SearchIcon, SettingsIcon, TopicIcon } from '@/components/Icons';
@@ -26,11 +27,6 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
     { href: '/library', label: '书库', icon: LibraryIcon },
     { href: '/search', label: '搜索', icon: SearchIcon },
   ] as const;
-
-  const isActive = (href: string) => {
-    if (href === '/') return pathname === '/';
-    return pathname.startsWith(href);
-  };
 
   const handleBack = () => {
     if (typeof window !== 'undefined' && getStoredPreviousPath(window.sessionStorage)) {
@@ -106,13 +102,13 @@ export default function Header({ mode = 'home', bookTitle, shareConfig, onMenuCl
             <nav className="hidden md:flex items-center gap-1 rounded-lg border border-stone-200/80 bg-[#fffdf8]/70 p-1">
               {desktopNav.map(item => {
                 const Icon = item.icon;
-                const active = isActive(item.href);
+                const active = navigationCurrent(pathname, item.href);
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
                     prefetch={false}
-                    aria-current={active ? 'page' : undefined}
+                    aria-current={active}
                     className={`flex h-11 items-center gap-2 rounded-md px-3 text-sm font-semibold transition-colors ${
                       active ? 'bg-brand/10 text-brand' : 'text-stone-600 hover:bg-stone-100 hover:text-stone-950'
                     }`}

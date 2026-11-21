@@ -19,48 +19,36 @@ async function assertOpaquePng(relativePath) {
 test('PNG app and share icons use opaque square backgrounds', async () => {
   await Promise.all([
     assertOpaquePng('public/icon.png'),
-    assertOpaquePng('public/icon-512.png'),
     assertOpaquePng('public/apple-touch-icon.png'),
-    assertOpaquePng('public/maskable-icon.png'),
     assertOpaquePng('public/share-image.png'),
   ]);
 });
 
-test('every install icon blends into the splash background around the book', async () => {
+test('every Android install candidate has a transparent margin and a centered, legible book', async () => {
   const publicDir = path.join(siteRoot, 'public');
   const manifest = JSON.parse(await fs.readFile(path.join(publicDir, 'manifest.webmanifest'), 'utf8'));
-  const expected = Buffer.from(manifest.background_color.slice(1), 'hex');
-  for (const { src } of manifest.icons) {
-    const file = new URL(src, 'https://example.test').pathname;
-    const { data, info } = await sharp(path.join(publicDir, file)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  assert.deepEqual(manifest.icons.map(icon => icon.sizes).sort(), ['192x192', '512x512']);
+  for (const icon of manifest.icons) {
+    const file = new URL(icon.src, 'https://example.test').pathname;
+    const { data, info } = await sharp(path.join(publicDir, file)).raw().toBuffer({ resolveWithObject: true });
+    assert.equal(info.channels, 4, file);
+    assert.equal(icon.sizes, `${info.width}x${info.height}`);
+    let left = info.width, right = -1, top = info.height, bottom = -1;
     for (let y = 0; y < info.height; y++) {
       for (let x = 0; x < info.width; x++) {
-        if (Math.min(x, y, info.width - 1 - x, info.height - 1 - y) >= 48) continue;
-        const offset = (y * info.width + x) * info.channels;
-        assert.ok(data[offset + 3] === 255 && data.subarray(offset, offset + 3).equals(expected),
-          `${src} differs from the splash background at (${x}, ${y})`);
+        if (!data[(y * info.width + x) * 4 + 3]) continue;
+        left = Math.min(x, left);
+        right = Math.max(x, right);
+        top = Math.min(y, top);
+        bottom = Math.max(y, bottom);
       }
     }
+    const height = (bottom - top + 1) / info.height;
+    assert.ok(height > 0.42 && height < 0.53, file);
+    assert.ok(left > info.width * 0.2 && right < info.width * 0.8, file);
+    assert.ok(Math.abs(left + right + 1 - info.width) < info.width * 0.08, file);
+    assert.ok(Math.abs(top + bottom + 1 - info.height) < info.height * 0.08, file);
   }
-});
-
-test('Android launcher masks preserve the entire book outline', async () => {
-  const { data, info } = await sharp(path.join(siteRoot, 'public/maskable-icon.png'))
-    .removeAlpha().raw().toBuffer({ resolveWithObject: true });
-  const center = info.width / 2;
-  let outlinePixels = 0;
-
-  for (let y = 0; y < info.height; y++) {
-    for (let x = 0; x < info.width; x++) {
-      const offset = (y * info.width + x) * info.channels;
-      // 书封轮廓色 #4f3a23，含抗锯齿边缘。
-      if (data[offset] > 110 || data[offset + 1] > 90 || data[offset + 2] > 70) continue;
-      outlinePixels++;
-      assert.ok(Math.hypot(x + 0.5 - center, y + 0.5 - center) <= info.width * 0.4,
-        `Book outline at (${x}, ${y}) exceeds the maskable safe area`);
-    }
-  }
-  assert.ok(outlinePixels > 0, 'The book outline must be visible');
 });
 
 test('metadata uses the dedicated share image instead of the app icon', async () => {
@@ -75,24 +63,4 @@ test('metadata uses the dedicated share image instead of the app icon', async ()
     assert.match(content, /share-image\.png/, `${file} should reference share-image.png`);
     assert.doesNotMatch(content, /\/icon\.png/, `${file} should not use icon.png as a social image`);
   }
-});
-
-test('web app manifest separates standard and maskable PNG icons', async () => {
-  const manifestPath = path.join(siteRoot, 'public/manifest.webmanifest');
-  const manifest = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
-  const icons = manifest.icons ?? [];
-
-  assert.ok(
-    icons.some(icon => new URL(icon.src, 'https://example.test').pathname === '/icon-512.png' && icon.purpose === 'any'),
-    'manifest should expose /icon-512.png for standard app icon use'
-  );
-  assert.ok(
-    icons.some(icon => new URL(icon.src, 'https://example.test').pathname === '/maskable-icon.png' && icon.purpose === 'maskable'),
-    'manifest should expose /maskable-icon.png for maskable app icon use'
-  );
-  assert.equal(
-    icons.some(icon => String(icon.purpose).includes('any maskable')),
-    false,
-    'manifest should not reuse one asset for both any and maskable purposes'
-  );
 });

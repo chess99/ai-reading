@@ -30,7 +30,7 @@ export default function SearchBar({ books, onRandomBook }: SearchBarProps) {
       <Link
         href="/search"
         prefetch={false}
-        className="flex min-h-11 min-w-0 items-center gap-2 rounded-lg bg-stone-100 px-3 text-left text-stone-600 hover:bg-stone-200"
+        className="flex min-h-11 min-w-0 items-center gap-2 rounded-lg bg-(--color-field) px-3 text-left text-stone-600 hover:bg-stone-200"
         aria-label="打开搜索"
       >
         <span className="shrink-0">

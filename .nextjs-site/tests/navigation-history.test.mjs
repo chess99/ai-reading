@@ -6,6 +6,18 @@ import {
   updateNavigationHistory,
 } from '../lib/navigation-history.js';
 
+import { navigationCurrent } from '../lib/navigation-section.ts';
+
+test('primary navigation distinguishes a tab from pages inside that section', () => {
+  assert.equal(navigationCurrent('/', '/'), 'page');
+  assert.equal(navigationCurrent('/library/', '/library'), 'page');
+  assert.equal(navigationCurrent('/topics/example/', '/topics'), 'location');
+  assert.equal(navigationCurrent('/books/example/', '/library'), 'location');
+  assert.equal(navigationCurrent('/request-book/', '/settings'), 'location');
+  assert.equal(navigationCurrent('/search/', '/'), undefined);
+  assert.equal(navigationCurrent('/topicstore/', '/topics'), undefined);
+});
+
 function createStorage(entries = []) {
   const data = new Map(entries);
 

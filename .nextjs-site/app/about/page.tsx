@@ -1,3 +1,4 @@
+import PageHeading from '@/components/PageHeading';
 import type { Metadata } from 'next';
 import { BASE_URL } from '@/lib/config';
 import { BRAND_NAME, BRAND_TAGLINE, CONTENT_PROCESS_SUMMARY } from '@/lib/brand';
@@ -131,11 +132,8 @@ export default function AboutPage() {
       />
 
       <div className="page-content-4xl">
-        <section className="mb-8 border-b border-stone-200 pb-8">
-          <p className="mb-3 text-xs font-black tracking-[0.18em] text-brand">ABOUT</p>
-          <h1 className="mb-5 text-3xl font-black leading-tight text-stone-950 md:text-5xl">
-            关于{BRAND_NAME}
-          </h1>
+        <section className="mb-8">
+          <PageHeading title={`关于${BRAND_NAME}`} />
           <p className="max-w-3xl text-base leading-8 text-stone-600 md:text-lg">
             {BRAND_NAME}是{BRAND_TAGLINE}，收录商业、投资、心理学、科学、历史与人文文学等领域的好书。无论是决定要不要花十几个小时精读一本厚书，还是读完后重温脉络、顺着一个具体问题跨书对照，这里都试图给你一份扎实、好读的参照。
           </p>
@@ -143,7 +141,6 @@ export default function AboutPage() {
 
         <section className="mb-10">
           <div className="surface-card border-l-4 border-l-brand p-5 md:p-6">
-            <p className="mb-2 text-[11px] font-black tracking-[0.16em] text-brand">READING BOUNDARY</p>
             <h2 className="mb-3 text-xl font-black tracking-tight text-stone-950">与原书的关系</h2>
             <p className="max-w-3xl text-sm leading-7 text-stone-700 md:text-base">
               书籍解读不能完全替代原书。它更适合作为阅读前的地图、阅读后的复盘，或主题学习时的索引。真正重要的书，仍然值得回到原文细读。
@@ -162,9 +159,8 @@ export default function AboutPage() {
         <section className="mb-10">
           <h2 className="section-title mb-5">你可以这样用</h2>
           <div className="grid gap-3 md:grid-cols-2">
-            {useCases.map((item, index) => (
+            {useCases.map((item) => (
               <article key={item.title} className="surface-card p-5">
-                <p className="mb-3 text-xs font-black text-brand">{String(index + 1).padStart(2, '0')}</p>
                 <h3 className="mb-2 text-base font-black text-stone-950">{item.title}</h3>
                 <p className="text-sm leading-7 text-stone-600">{item.body}</p>
               </article>

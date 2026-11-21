@@ -47,7 +47,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
     const targets = legacy.targets.flatMap(target => { const topic = getTopicDetailBySlug(target); return topic ? [topic] : []; });
     if (!targets.length) notFound();
     return <article className="page-container"><div className="mx-auto max-w-3xl py-8">
-      <h1 className="text-3xl font-black text-stone-950">{legacy.title}</h1>
+      <h1 className="page-title">{legacy.title}</h1>
       <p className="my-6 leading-7 text-stone-600">{targets.length === 1 ? '继续阅读这个主题：' : '选择你想了解的问题：'}</p>
       <div className="space-y-4">{targets.map(topic => <TopicCard key={topic.slug} topic={topic} />)}</div>
       <Link href="/topics/" className="mt-6 inline-block text-sm font-bold text-brand">浏览全部主题</Link>
@@ -82,7 +82,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
             <header className="border-b border-stone-200 pb-6">
               <p data-pagefind-ignore className="mb-3 text-xs font-bold text-brand">{topic.domains.join(' · ')} <span className="mx-2 text-stone-300">/</span> {TOPIC_MODE_LABELS[topic.mode]}</p>
               <div className="flex items-start justify-between gap-4">
-                <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="text-balance break-words text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-4xl">{topic.title}</h1>
+                <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="page-title break-words">{topic.title}</h1>
                 <ShareButton shareConfig={{ title: topic.title, text: topic.description, url, eventAction: 'share_topic', eventLabel: topic.title }}
                   className="hidden h-10 flex-shrink-0 items-center gap-2 rounded-lg border border-stone-200 px-3 text-sm font-semibold text-stone-700 md:inline-flex"
                   iconClassName="h-4 w-4" showLabel />

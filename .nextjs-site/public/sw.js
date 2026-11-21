@@ -1,5 +1,6 @@
 const CACHE_NAME = 'reading-v2';
-const PRECACHE_URLS = ['/', '/manifest.webmanifest', '/icon.svg'];
+const INSTALL_ICONS = ['/icon-192.png?v=4', '/icon-512.png?v=4'];
+const PRECACHE_URLS = ['/', '/manifest.webmanifest', '/icon.svg?v=4', ...INSTALL_ICONS];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(PRECACHE_URLS)));
@@ -65,7 +66,7 @@ self.addEventListener('fetch', event => {
   // Next.js 路由数据由框架处理，避免把数据响应当成 HTML 缓存。
   if (url.pathname.includes('__next_tree') || url.pathname.endsWith('/index.txt') ||
     request.headers.get('RSC') === '1') return;
-  if (url.pathname.startsWith('/_next/static/')) {
+  if (url.pathname.startsWith('/_next/static/') || INSTALL_ICONS.includes(url.pathname + url.search)) {
     event.respondWith(cacheFirst(request));
     return;
   }

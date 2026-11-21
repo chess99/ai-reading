@@ -114,6 +114,7 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         <div key={currentPath}>
           <button
             onClick={() => toggleCategory(currentPath)}
+            aria-expanded={isExpanded}
             className="book-tree-category w-full flex items-center gap-2 px-2 py-1.5 text-sm hover:bg-stone-100 rounded-md transition-colors"
             style={{ paddingLeft: `${8 + indent}px` }}
           >
@@ -151,16 +152,17 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
   return (
     <div className="flex flex-col h-full">
       {showFilterInput && (
-        <div className="px-3 py-2 border-b border-stone-100">
+        <div className="book-tree-filter px-3 py-2">
           <div className="relative">
             <input
               type="text"
               value={filterKeyword}
               onChange={e => setFilterKeyword(e.target.value)}
-              placeholder="搜索书名、作者..."
-              className="min-h-11 w-full pl-8 pr-12 py-2 text-sm border border-stone-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-brand/15 focus:border-brand/50 bg-[#fffdf8]"
+              aria-label="筛选书库"
+              placeholder="搜索书名或作者"
+              className="input-brand pe-11"
             />
-            <SearchIcon className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400" />
+            <SearchIcon className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
             {filterKeyword && (
               <button onClick={() => setFilterKeyword('')} className="touch-icon absolute right-0 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600" aria-label="清除筛选">
                 <CloseIcon className="w-3.5 h-3.5" />
@@ -170,13 +172,13 @@ export default function BookTree({ bookTree, allBooks, onBookClick, showFilterIn
         </div>
       )}
 
-      <div className="flex items-center gap-2 px-3 py-1 border-b border-stone-100">
+      <div className="book-tree-tools flex items-center gap-2 px-3 py-1 border-b border-stone-200">
         <button onClick={expandAll} className="min-h-11 px-1 text-xs font-medium text-stone-600 hover:text-brand">展开全部</button>
         <span className="text-stone-300">/</span>
         <button onClick={collapseAll} className="min-h-11 px-1 text-xs font-medium text-stone-600 hover:text-brand">折叠全部</button>
       </div>
 
-      <div className="flex-1 overflow-auto p-2 space-y-1">
+      <div className="book-tree-list flex-1 overflow-auto p-2 space-y-1">
         {filteredTree.length > 0
           ? filteredTree.map(node => renderNode(node, ''))
           : <p className="text-sm text-stone-400 text-center py-8">没有匹配的书籍</p>

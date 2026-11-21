@@ -1,3 +1,4 @@
+import PageHeading from '@/components/PageHeading';
 import type { Metadata } from 'next';
 import RequestBookForm from './RequestBookForm';
 import { BRAND_NAME } from '@/lib/brand';
@@ -17,17 +18,11 @@ export const metadata: Metadata = {
 
 export default function RequestBookPage() {
   return (
-    <main className="mx-auto w-full px-0 py-0 md:px-8 md:py-10">
-      <div className="mx-auto w-full max-w-3xl">
-        <div className="px-5 py-4 md:px-0 md:pb-6 md:pt-0">
-          <p className="text-xs font-black tracking-[0.16em] text-brand">BOOK REQUEST</p>
-          <h1 className="mt-2 text-2xl md:text-3xl font-black tracking-tight text-stone-950">申请加入书库</h1>
-          <p className="mt-2 text-sm leading-6 text-stone-600 md:text-base">
-            遇到想看却尚未收录的书，可以在下方留下书名与作者。已收录书籍请直接前往搜索页或书库查看。
-          </p>
-        </div>
+    <div className="page-container">
+      <div className="page-content-4xl">
+        <PageHeading title="申请加入书库" description="留下希望收录的书名与作者。" />
         <RequestBookForm />
       </div>
-    </main>
+    </div>
   );
 }

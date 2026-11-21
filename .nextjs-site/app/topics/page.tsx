@@ -1,3 +1,4 @@
+import PageHeading from '@/components/PageHeading';
 import type { Metadata } from 'next';
 import TopicsDiscovery from '@/components/TopicsDiscovery';
 import { BRAND_NAME } from '@/lib/brand';
@@ -26,14 +27,7 @@ export default function TopicsPage() {
   return (
     <div className="page-container">
       <div className="page-content-6xl">
-        <div className="mb-8 md:mb-10">
-          <p className="text-xs font-black tracking-[0.16em] text-brand mb-2">TOPICS</p>
-          <h1 className="text-3xl md:text-4xl font-black tracking-tight text-stone-950">主题阅读</h1>
-          <p className="mt-3 max-w-2xl text-sm md:text-base leading-7 text-stone-600">
-            带着问题选书，也可以从一部作品开始。找到起点，再按需要读下去。
-          </p>
-        </div>
-
+        <PageHeading title="主题阅读" description={`${topics.length} 个主题书单，按问题或领域选读`} />
         <TopicsDiscovery topics={topics} />
       </div>
     </div>

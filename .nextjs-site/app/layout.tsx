@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   keywords: ['晨笙阅读', '书籍解读', '读书笔记', '主题阅读', '好书精读', '投资', '心理学', '个人成长', '商业管理'],
   manifest: '/manifest.webmanifest',
   icons: {
-    icon: '/icon.svg?v=3',
-    apple: '/apple-touch-icon.png?v=3',
+    icon: '/icon.svg?v=4',
+    apple: '/apple-touch-icon.png?v=4',
   },
   appleWebApp: {
     capable: true,

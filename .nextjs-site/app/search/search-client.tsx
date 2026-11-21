@@ -1,5 +1,6 @@
 'use client';
 
+import PageHeading from '@/components/PageHeading';
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -43,10 +44,7 @@ export default function SearchPageClient({ allBooks }: SearchPageClientProps) {
   return (
     <div className="page-container">
       <div className="page-content-4xl">
-        <div className="mb-5">
-          <p className="text-xs font-black tracking-[0.16em] text-brand mb-2">SEARCH</p>
-          <h1 className="text-2xl md:text-3xl font-black tracking-tight text-stone-950">搜索</h1>
-        </div>
+        <PageHeading title="搜索" description="查找书籍，或在正文中定位一段话" />
 
         {/* Search input */}
         <div className="mb-4 relative">

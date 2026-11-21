@@ -38,8 +38,7 @@ export default function BookPageClient({ children, bookSlug, bookTitle, bookAuth
         <div className="reader-main min-w-0">
           <article data-pagefind-body className="reader-card surface-card">
             <div className="mb-8 border-b border-stone-200 pb-6">
-              <p data-pagefind-ignore className="text-xs font-black tracking-[0.16em] text-brand mb-3">BOOK NOTES</p>
-              <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="break-words text-3xl md:text-4xl font-black tracking-tight leading-tight text-stone-950">{bookTitle}</h1>
+              <h1 data-pagefind-meta="title" data-pagefind-weight="5" className="page-title break-words">{bookTitle}</h1>
               <p className="text-sm md:text-base text-stone-500 mt-3">{bookAuthor}</p>
               {(wereadUrl || relatedTopicCount > 0) && (
                 <div data-pagefind-ignore className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">

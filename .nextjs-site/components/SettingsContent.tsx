@@ -134,18 +134,21 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
   };
 
   return (
-    <div className="space-y-6">
+    <div>
       {/* 离线模式 */}
-      <div className="surface-card p-4">
+      <div className="settings-section">
         <div className="flex items-start justify-between mb-3">
           <div className="flex-1">
-            <h3 className="font-bold text-stone-950 mb-1">离线模式</h3>
+            <h2 className="font-bold text-stone-950 mb-1">离线模式</h2>
             <p className="text-sm text-stone-600">开启后将缓存站内全部书籍解读，方便无网络时离线阅读</p>
           </div>
           <button
+            role="switch"
+            aria-label="离线模式"
+            aria-checked={offlineMode}
             onClick={handleOfflineModeToggle}
             disabled={isPrefetching}
-            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 ${
+            className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full before:absolute before:-inset-y-3 before:inset-x-0 transition-colors focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 ${
               offlineMode ? 'bg-brand' : 'bg-stone-300'
             } ${isPrefetching ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
@@ -166,7 +169,7 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
             </div>
           </div>
         )}
-        <div className="mt-3 p-3 bg-stone-50 rounded-lg">
+        <div className="mt-3 rounded-lg bg-(--color-field) px-3 py-2.5">
           <div className="flex items-center justify-between text-sm">
             <span className="text-stone-600">已缓存书籍</span>
             <span className="font-semibold text-stone-950">{cachedCount} / {bookCount}</span>
@@ -175,19 +178,19 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
       </div>
 
       {/* 存储管理 */}
-      <div className="surface-card p-4">
-        <h3 className="font-bold text-stone-950 mb-3">存储管理</h3>
+      <div className="settings-section">
+        <h2 className="font-bold text-stone-950 mb-3">存储管理</h2>
         <button
           onClick={handleClearCache}
-          className="w-full px-4 py-2.5 border border-stone-200 text-stone-700 rounded-lg font-semibold hover:bg-stone-50 transition-colors active:scale-[0.99]"
+          className="min-h-11 px-4 py-2 border border-stone-200 text-stone-700 rounded-lg font-semibold hover:bg-stone-50 transition-colors active:scale-[0.99]"
         >
           清除所有缓存
         </button>
       </div>
 
       {/* 反馈与补充 */}
-      <div className="surface-card p-4">
-        <h3 className="font-bold text-stone-950 mb-1">反馈与补充</h3>
+      <div className="settings-section">
+        <h2 className="font-bold text-stone-950 mb-1">反馈与补充</h2>
         <p className="mb-3 text-sm leading-6 text-stone-600">
           没有找到想看的书？可以提交书名和作者，请求补充到书库。
         </p>
@@ -195,7 +198,7 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
           href="/request-book"
           prefetch={false}
           onClick={onNavigate}
-          className="btn-outline-brand inline-flex w-full items-center justify-center bg-stone-900 text-[#fffdf8] hover:bg-stone-800 hover:text-[#fffdf8]"
+          className="inline-flex min-h-11 items-center rounded-lg bg-stone-900 px-4 text-sm font-semibold text-white hover:bg-stone-700"
         >
           申请加入书库
         </Link>
@@ -213,8 +216,8 @@ export default function SettingsContent({ onNavigate }: SettingsContentProps) {
       </div>
 
       {/* 站点信息 */}
-      <div className="surface-card p-4">
-        <h3 className="font-bold text-stone-950 mb-3">站点信息</h3>
+      <div className="settings-section">
+        <h2 className="font-bold text-stone-950 mb-3">站点信息</h2>
         <div className="divide-y divide-stone-200/80 text-sm">
           <div className="flex items-center justify-between gap-3 py-2.5">
             <div>

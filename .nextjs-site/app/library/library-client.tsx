@@ -1,5 +1,6 @@
 'use client';
 
+import PageHeading from '@/components/PageHeading';
 import BookTree from '@/components/BookTree';
 import { BookTreeNode, BookMeta } from '@/lib/books';
 
@@ -10,20 +11,12 @@ interface LibraryClientProps {
 
 export default function LibraryClient({ bookTree, allBooks }: LibraryClientProps) {
   return (
-    <div className="h-full flex flex-col bg-[#fffdf8]/50">
-      <div className="px-4 pt-5 pb-3 border-b border-stone-200/80">
-        <p className="text-xs font-black tracking-[0.16em] text-brand mb-2">LIBRARY</p>
-        <h1 className="text-2xl font-black tracking-tight text-stone-950">书库</h1>
-        <p className="text-sm text-stone-500 mt-1">
-          按分类书架浏览全部 {allBooks.length} 本书籍解读，也可通过下方搜索框按书名、作者或标签即时筛选。
-        </p>
-      </div>
-      <div className="flex-1 min-h-0">
-        <BookTree
-          bookTree={bookTree}
-          allBooks={allBooks}
-          showFilterInput
-        />
+    <div className="page-container">
+      <div className="page-content-6xl">
+        <PageHeading title="书库" description={`${allBooks.length} 本书籍解读，按分类浏览`} />
+        <div className="library-shelves max-w-3xl">
+          <BookTree bookTree={bookTree} allBooks={allBooks} showFilterInput />
+        </div>
       </div>
     </div>
   );

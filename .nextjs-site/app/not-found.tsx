@@ -10,15 +10,9 @@ export default function NotFoundPage() {
   return (
     <div className="page-container">
       <div className="page-content-4xl">
-        <section className="surface-card relative overflow-hidden">
-          <div className="relative px-6 py-10 md:px-12 md:py-14">
-            <div className="mb-6 inline-flex items-center rounded-md border border-brand/20 bg-brand/10 px-3 py-1.5 text-xs font-black tracking-wide text-brand">
-              ERROR 404 · PAGE NOT FOUND
-            </div>
-
-            <h1 className="mb-4 text-3xl font-black leading-tight tracking-tight text-stone-950 md:text-5xl">
-              找不到这个页面
-            </h1>
+        <section>
+          <div>
+            <h1 className="page-title mb-4">找不到这个页面</h1>
             <p className="max-w-2xl text-base leading-7 text-stone-600 md:text-lg">
               你访问的地址可能已迁移或输入有误。可以直接回到首页，或者从下面的入口重新查找想读的内容。
             </p>

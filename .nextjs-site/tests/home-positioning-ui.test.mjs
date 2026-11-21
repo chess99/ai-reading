@@ -26,7 +26,7 @@ test('home prioritizes return tasks and recent content without duplicating disco
 });
 
 test('home masthead identifies the library and its reading formats', () => {
-  assert.match(introSource, /<h1[^>]*>晨笙阅读<\/h1>/);
+  assert.match(introSource, /<PageHeading title="晨笙阅读"/);
   assert.match(introSource, /书籍解读与主题阅读/);
   assert.match(introSource, /data-home-module="topics"/);
   assert.match(introSource, /data-home-module="library"/);

@@ -1,3 +1,4 @@
+import PageHeading from '@/components/PageHeading';
 import type { Metadata } from 'next';
 import CopyFeedButton from '@/components/CopyFeedButton';
 import { BRAND_NAME } from '@/lib/brand';
@@ -45,9 +46,8 @@ export default function ListenPage() {
   return (
     <div className="page-container">
       <div className="page-content-4xl">
-        <section className="mb-8 border-b border-stone-200 pb-8">
-          <p className="mb-3 text-xs font-black tracking-[0.18em] text-brand">LISTEN WITH RSS</p>
-          <h1 className="mb-5 text-3xl font-black leading-tight text-stone-950 md:text-5xl">把文字交给你喜欢的朗读器</h1>
+        <section className="mb-8">
+          <PageHeading title="订阅收听" />
           <p className="max-w-3xl text-base leading-8 text-stone-600 md:text-lg">
             {BRAND_NAME}提供标准的全文 RSS，不预生成音频。把下面的地址添加到支持 RSS 与文字转语音的客户端，客户端即可直接朗读正文。
           </p>
@@ -81,7 +81,6 @@ export default function ListenPage() {
 
         <section className="mb-10 grid gap-4 md:grid-cols-2">
           <article className="surface-card p-5 md:p-6">
-            <p className="mb-2 text-[11px] font-black tracking-[0.16em] text-brand">CLIENTS</p>
             <h2 className="mb-3 text-xl font-black text-stone-950">可用于哪些客户端</h2>
             <p className="mb-4 text-sm leading-7 text-stone-600">
               只要客户端能订阅标准 RSS 并朗读文章正文即可。当前可以优先尝试：
@@ -99,7 +98,6 @@ export default function ListenPage() {
           </article>
 
           <article className="surface-card p-5 md:p-6">
-            <p className="mb-2 text-[11px] font-black tracking-[0.16em] text-brand">FULL LIBRARY</p>
             <h2 className="mb-3 text-xl font-black text-stone-950">导入完整旧书库</h2>
             <p className="text-sm leading-7 text-stone-600">
               为避免单个 RSS 过大，日常 Feed 只保留最近内容；完整书库按一级书架拆成分类 Feed。支持 OPML 的客户端可以一次导入全部分类与主题阅读。
